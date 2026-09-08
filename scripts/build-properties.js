@@ -1,0 +1,217 @@
+// Genera páginas estáticas por propiedad + inserta las tarjetas en index.html + sitemap.xml
+// Se ejecuta automáticamente vía GitHub Actions cada vez que se publica una propiedad.
+
+const fs = require('fs');
+const path = require('path');
+
+const ROOT = path.join(__dirname, '..');
+const PROP_DIR = path.join(ROOT, 'propiedades');
+const SITE_URL = 'https://arenasrealtygroup.com'; // se puede ajustar cuando el dominio quede conectado
+
+function esc(str){
+  return String(str == null ? '' : str)
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function waNumero(data){
+  return (data.whatsapp_asesor || '584149218120').replace(/\D/g,'');
+}
+
+function videoHTML(url){
+  if(!url) return '';
+  const yt = url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|shorts\/|embed\/))([\w-]{11})/);
+  if(yt){
+    return `<div class="video-wrap"><iframe src="https://www.youtube.com/embed/${yt[1]}" allowfullscreen loading="lazy"></iframe></div>`;
+  }
+  return `<p><a href="${esc(url)}" target="_blank" rel="noopener" class="btn-ghost">▶ Ver video de la propiedad</a></p>`;
+}
+
+function galeriaHTML(fotos){
+  if(!fotos || !fotos.length){
+    return '<div class="gallery-empty"></div>';
+  }
+  return `<div class="gallery">${fotos.map(f => `<img src="${esc(f)}" alt="" loading="lazy">`).join('')}</div>`;
+}
+
+function caracteristicasHTML(texto){
+  if(!texto) return '';
+  const items = texto.split('\n').map(s => s.trim()).filter(Boolean);
+  if(!items.length) return '';
+  return `<h2 class="section-title">Características</h2>
+  <ul class="features">${items.map(i => `<li>${esc(i)}</li>`).join('')}</ul>`;
+}
+
+function paginaHTML(slug, d){
+  const titulo = esc(d.titulo);
+  const descripcionCorta = esc((d.descripcion || '').slice(0, 155));
+  const wa = waNumero(d);
+  const msg = encodeURIComponent(`Hola, me interesa la propiedad "${d.titulo}"`);
+
+  const specs = [];
+  if(d.area_terreno) specs.push(`<div><strong>${esc(d.area_terreno)}</strong> m² terreno</div>`);
+  if(d.area_construccion) specs.push(`<div><strong>${esc(d.area_construccion)}</strong> m² construcción</div>`);
+  if(d.habitaciones) specs.push(`<div><strong>${esc(d.habitaciones)}</strong> habitaciones</div>`);
+  if(d.banos) specs.push(`<div><strong>${esc(d.banos)}</strong> baños</div>`);
+  if(d.estacionamientos) specs.push(`<div><strong>${esc(d.estacionamientos)}</strong> puestos</div>`);
+
+  return `<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>${titulo} — ${esc(d.operacion)} | Arenas Realty Group</title>
+<meta name="description" content="${descripcionCorta}">
+<link rel="canonical" href="${SITE_URL}/propiedades/${slug}.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --sand:#F6EFD9; --clay:#0B2A4A; --clay-soft:#3D6690;
+    --terracotta:#D9A438; --teal:#17A679; --cream:#FBF9F4; --line:rgba(11,42,74,0.15);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Work Sans',sans-serif;color:var(--clay);background:var(--cream);line-height:1.6;}
+  h1,h2{font-family:'Fraunces',serif;font-weight:500;}
+  a{color:inherit;}
+  .wrap{max-width:960px;margin:0 auto;padding:0 24px;}
+  header{padding:20px 0;border-bottom:1px solid var(--line);}
+  header a{font-weight:600;text-decoration:none;}
+  main{padding:40px 0 90px;}
+  .gallery{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;margin-bottom:28px;}
+  .gallery img{width:85%;flex:none;aspect-ratio:4/3;object-fit:cover;scroll-snap-align:start;background:var(--sand);}
+  .gallery-empty{width:100%;aspect-ratio:16/9;background:var(--sand);margin-bottom:28px;}
+  .badge{display:inline-block;font-size:0.78rem;font-weight:600;padding:5px 12px;border-radius:20px;background:var(--terracotta);color:var(--clay);margin-bottom:14px;}
+  h1{font-size:clamp(1.6rem,3.6vw,2.2rem);margin-bottom:10px;}
+  .price{font-size:1.25rem;color:var(--terracotta);font-weight:600;margin-bottom:4px;}
+  .loc{color:var(--clay-soft);margin-bottom:24px;}
+  .specs{display:flex;gap:22px;flex-wrap:wrap;padding:16px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:24px;font-size:0.9rem;color:var(--clay-soft);}
+  .specs strong{display:block;color:var(--clay);font-size:1.05rem;font-family:'Fraunces',serif;}
+  .desc{color:var(--clay-soft);margin-bottom:24px;white-space:pre-line;}
+  .section-title{font-size:1.1rem;margin:28px 0 14px;}
+  .features{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px 20px;margin-bottom:28px;}
+  .features li{color:var(--clay-soft);font-size:0.92rem;padding-left:18px;position:relative;}
+  .features li::before{content:"✓";position:absolute;left:0;color:var(--teal);font-weight:600;}
+  .video-wrap{margin-bottom:24px;}
+  .video-wrap iframe{width:100%;aspect-ratio:16/9;border:none;display:block;}
+  .btn-ghost{display:inline-block;color:var(--clay);border:1px solid var(--clay);padding:10px 20px;text-decoration:none;font-size:0.9rem;}
+  .card{background:var(--sand);padding:22px;margin-top:10px;}
+  .card .k{font-size:0.78rem;color:var(--clay-soft);display:block;margin-bottom:4px;}
+  .card .v{margin-bottom:16px;}
+  .btn-wa{display:block;text-align:center;background:var(--clay);color:var(--cream);padding:14px;text-decoration:none;font-weight:500;}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a href="/">← Arenas Realty Group</a></div></header>
+<main><div class="wrap">
+  ${galeriaHTML(d.fotos)}
+  <span class="badge">${esc(d.operacion)} · ${esc(d.tipo)}</span>
+  <h1>${titulo}</h1>
+  <div class="price">${esc(d.precio)}</div>
+  <div class="loc">${esc(d.ubicacion)}${d.mapa_url ? ` · <a href="${esc(d.mapa_url)}" target="_blank" rel="noopener">📍 Ver ubicación en el mapa</a>` : ''}</div>
+  ${specs.length ? `<div class="specs">${specs.join('')}</div>` : ''}
+  <p class="desc">${esc(d.descripcion)}</p>
+  ${caracteristicasHTML(d.caracteristicas)}
+  ${videoHTML(d.video_url)}
+  <div class="card">
+    <span class="k">Asesor</span>
+    <div class="v">${esc(d.asesor || 'Arenas Realty Group')}</div>
+    <a class="btn-wa" href="https://wa.me/${wa}?text=${msg}" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+  </div>
+</div></main>
+</body>
+</html>`;
+}
+
+function tarjetaHTML(slug, d){
+  const foto = (d.fotos && d.fotos[0]) ? esc(d.fotos[0]) : '';
+  return `<a class="prop-card" href="/propiedades/${slug}.html">
+    ${foto ? `<img class="thumb" src="${foto}" alt="${esc(d.titulo)}" loading="lazy">` : `<div class="thumb"></div>`}
+    <div class="body">
+      <span class="badge">${esc(d.tipo)}</span>
+      <h4>${esc(d.titulo)}</h4>
+      <div class="price">${esc(d.precio)}</div>
+      <div class="loc">${esc(d.ubicacion)}</div>
+    </div>
+  </a>`;
+}
+
+function emptyStateHTML(tipo){
+  const color = tipo === 'venta' ? 'var(--terracotta)' : 'var(--teal)';
+  const mark = tipo === 'venta' ? 'Ve' : 'Al';
+  const label = tipo === 'venta' ? 'venta' : 'alquiler';
+  return `<div class="prop-empty" id="empty-${tipo}">
+    <div class="mark" style="color:${color};">${mark}</div>
+    <div>
+      <h3>Estamos cargando el catálogo de ${label}.</h3>
+      <p>Escríbenos por WhatsApp y te contamos qué propiedades tenemos disponibles para ${tipo === 'venta' ? 'comprar' : 'alquilar'} ahora mismo.</p>
+      <a href="https://wa.me/584149218120" target="_blank" rel="noopener" class="btn btn-primary">Consultar propiedades en ${label}</a>
+    </div>
+  </div>`;
+}
+
+function main(){
+  if(!fs.existsSync(PROP_DIR)){
+    console.log('No existe la carpeta propiedades, nada que generar.');
+    return;
+  }
+
+  const archivos = fs.readdirSync(PROP_DIR).filter(f => f.endsWith('.json'));
+  const venta = [];
+  const alquiler = [];
+  const urlsSitemap = [`${SITE_URL}/`];
+
+  archivos.forEach(nombre => {
+    const slug = nombre.replace(/\.json$/, '');
+    let data;
+    try{
+      data = JSON.parse(fs.readFileSync(path.join(PROP_DIR, nombre), 'utf-8'));
+    }catch(e){
+      console.log('No se pudo leer', nombre, e.message);
+      return;
+    }
+    if(data.publicada === false) return;
+
+    // Generar la página individual
+    fs.writeFileSync(path.join(PROP_DIR, `${slug}.html`), paginaHTML(slug, data));
+    urlsSitemap.push(`${SITE_URL}/propiedades/${slug}.html`);
+
+    const tarjeta = tarjetaHTML(slug, data);
+    if((data.operacion || '').toLowerCase() === 'alquiler'){
+      alquiler.push(tarjeta);
+    } else {
+      venta.push(tarjeta);
+    }
+  });
+
+  // Insertar tarjetas (o estado vacío) en index.html
+  const indexPath = path.join(ROOT, 'index.html');
+  let html = fs.readFileSync(indexPath, 'utf-8');
+
+  function reemplazarBloque(html, tag, lista, tipo){
+    const start = `<!--PROPS:${tag}:START-->`;
+    const end = `<!--PROPS:${tag}:END-->`;
+    const i = html.indexOf(start);
+    const j = html.indexOf(end);
+    if(i === -1 || j === -1) return html;
+    const contenido = lista.length
+      ? `<div class="prop-grid" id="grid-${tipo}">${lista.join('')}</div>`
+      : `<div class="prop-grid" id="grid-${tipo}"></div>${emptyStateHTML(tipo)}`;
+    return html.slice(0, i + start.length) + '\n' + contenido + '\n' + html.slice(j);
+  }
+
+  html = reemplazarBloque(html, 'VENTA', venta, 'venta');
+  html = reemplazarBloque(html, 'ALQUILER', alquiler, 'alquiler');
+
+  fs.writeFileSync(indexPath, html);
+
+  // Sitemap para Google
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${urlsSitemap.map(u => `  <url><loc>${u}</loc></url>`).join('\n')}
+</urlset>`;
+  fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), sitemap);
+
+  console.log(`Generadas ${venta.length} propiedades en venta y ${alquiler.length} en alquiler.`);
+}
+
+main();
