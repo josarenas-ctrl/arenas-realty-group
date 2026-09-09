@@ -33,5 +33,5 @@ descripcion: >-
 fotos: /images/uploads/img-20201115-wa0006.jpg
 asesor: Jose Alberto Arenas Davila
 whatsapp_asesor: +58-414-9218120
-publicada: true
+publicada: true 
 ---
