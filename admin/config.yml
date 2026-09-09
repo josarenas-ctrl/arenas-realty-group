@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: josarenas-ctrl/arenas-realty-group
-  branch: main
+  branch: cloudflare-test
   base_url: https://arenas-auth.arenasrealtygroup1.workers.dev
   auth_endpoint: auth
 
