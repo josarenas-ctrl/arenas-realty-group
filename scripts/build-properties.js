@@ -6,7 +6,7 @@ const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
 const PROP_DIR = path.join(ROOT, 'propiedades');
-const SITE_URL = 'https://arenasrealtygroup.com'; // se puede ajustar cuando el dominio quede conectado
+const SITE_URL = 'https://www.arenasrealtygroup.com';
 
 function esc(str){
   return String(str == null ? '' : str)
@@ -46,6 +46,9 @@ function paginaHTML(slug, d){
   const descripcionCorta = esc((d.descripcion || '').slice(0, 155));
   const wa = waNumero(d);
   const msg = encodeURIComponent(`Hola, me interesa la propiedad "${d.titulo}"`);
+  const urlPropiedad = `${SITE_URL}/propiedades/${slug}.html`;
+  const fotoOG = (d.fotos && d.fotos[0]) ? `${SITE_URL}${d.fotos[0]}` : '';
+  const shareMsg = encodeURIComponent(`${d.titulo} — ${d.precio}\n${urlPropiedad}`);
 
   const specs = [];
   if(d.area_terreno) specs.push(`<div><strong>${esc(d.area_terreno)}</strong> m² terreno</div>`);
@@ -62,6 +65,12 @@ function paginaHTML(slug, d){
 <title>${titulo} — ${esc(d.operacion)} | Arenas Realty Group</title>
 <meta name="description" content="${descripcionCorta}">
 <link rel="canonical" href="${SITE_URL}/propiedades/${slug}.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="${titulo} — ${esc(d.precio)}">
+<meta property="og:description" content="${descripcionCorta}">
+<meta property="og:url" content="${urlPropiedad}">
+${fotoOG ? `<meta property="og:image" content="${esc(fotoOG)}">` : ''}
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -98,6 +107,8 @@ function paginaHTML(slug, d){
   .card .k{font-size:0.78rem;color:var(--clay-soft);display:block;margin-bottom:4px;}
   .card .v{margin-bottom:16px;}
   .btn-wa{display:block;text-align:center;background:var(--clay);color:var(--cream);padding:14px;text-decoration:none;font-weight:500;}
+  .btn-share{display:block;width:100%;text-align:center;background:transparent;color:var(--clay);border:1px solid var(--clay);padding:12px;margin-top:10px;font-weight:500;font-size:0.92rem;cursor:pointer;font-family:'Work Sans',sans-serif;}
+  .btn-share:hover{background:var(--sand);}
 </style>
 </head>
 <body>
@@ -116,7 +127,18 @@ function paginaHTML(slug, d){
     <span class="k">Asesor</span>
     <div class="v">${esc(d.asesor || 'Arenas Realty Group')}</div>
     <a class="btn-wa" href="https://wa.me/${wa}?text=${msg}" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+    <button class="btn-share" onclick="compartirPropiedad()">🔗 Compartir esta propiedad</button>
   </div>
+  <script>
+    function compartirPropiedad(){
+      const data = { title: ${JSON.stringify(d.titulo)}, text: ${JSON.stringify(d.titulo + ' — ' + d.precio)}, url: ${JSON.stringify(urlPropiedad)} };
+      if(navigator.share){
+        navigator.share(data).catch(()=>{});
+      } else {
+        window.open('https://wa.me/?text=${shareMsg}', '_blank');
+      }
+    }
+  </script>
 </div></main>
 </body>
 </html>`;
