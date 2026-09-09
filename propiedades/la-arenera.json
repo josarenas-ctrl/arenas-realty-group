@@ -1,0 +1,19 @@
+{
+  "habitaciones": "5",
+  "area_terreno": "1294",
+  "asesor": "Jose A. Arenas D",
+  "precio": "500000",
+  "caracteristicas": "cuartos \nbaños \nestacionamientos",
+  "descripcion": "bella",
+  "fotos": "/images/uploads/img-20200930-wa0074.jpg",
+  "whatsapp_asesor": "+584149218120",
+  "estacionamientos": "6",
+  "banos": "5",
+  "area_construccion": "1000",
+  "tipo": "Casa",
+  "mapa_url": "https://maps.app.goo.gl/RWTM1VB3iRhuxgmU7",
+  "publicada": true,
+  "operacion": "Venta",
+  "titulo": "La Arenera",
+  "ubicacion": "Club de Campo"
+}
