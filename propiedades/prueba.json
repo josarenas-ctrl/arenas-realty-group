@@ -5,6 +5,10 @@
   "precio": "1000",
   "caracteristicas": "agua y luz",
   "descripcion": "bello ",
+  "fotos": [
+    "/images/uploads/foto-terreno.jpg",
+    "/images/uploads/img-20200930-wa0074.jpg"
+  ],
   "whatsapp_asesor": "+584149218120",
   "estacionamientos": "1",
   "banos": "2",
