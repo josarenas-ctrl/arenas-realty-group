@@ -5,7 +5,10 @@
   "precio": "35000",
   "caracteristicas": "Agua\nElectricidad",
   "descripcion": "Bello terreno, con papeles y permiso de construccion al dia.",
-  "fotos": ["/images/uploads/foto-terreno.jpg"],
+  "fotos": [
+    "/images/uploads/foto-terreno.jpg",
+    "/images/uploads/img-20200930-wa0074.jpg"
+  ],
   "whatsapp_asesor": "+584149218120",
   "estacionamientos": "",
   "banos": "",
