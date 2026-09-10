@@ -41,7 +41,7 @@ collections:
       - { label: "Estacionamientos", name: "estacionamientos", widget: "string", required: false }
       - { label: "Descripción", name: "descripcion", widget: "text" }
       - { label: "Características (una por línea)", name: "caracteristicas", widget: "text", required: false, hint: "Ej: Jardín, Cocina tipo americano, Área social, Seguridad 24h — una en cada línea." }
-      - { label: "Fotos"
+      - label: "Fotos"
           name: "fotos"
           widget: "list"
           required: false
