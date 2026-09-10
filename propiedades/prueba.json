@@ -1,0 +1,18 @@
+{
+  "habitaciones": "3",
+  "area_terreno": "1184",
+  "asesor": "Jose Arenas",
+  "precio": "1000",
+  "caracteristicas": "agua y luz",
+  "descripcion": "bello ",
+  "whatsapp_asesor": "+584149218120",
+  "estacionamientos": "1",
+  "banos": "2",
+  "area_construccion": "500",
+  "tipo": "Local",
+  "mapa_url": "https://maps.app.goo.gl/NhSMzhrS1GX3mDFM7",
+  "publicada": true,
+  "operacion": "Venta",
+  "titulo": "prueba",
+  "ubicacion": "San antonio"
+}
