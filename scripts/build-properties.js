@@ -245,4 +245,4 @@ ${urlsSitemap.map(u => `  <url><loc>${u}</loc></url>`).join('\n')}
   console.log(`Generadas ${venta.length} propiedades en venta y ${alquiler.length} en alquiler.`);
 }
 
-main();
+main(); 
