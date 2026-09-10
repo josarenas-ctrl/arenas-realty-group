@@ -1,0 +1,18 @@
+{
+  "habitaciones": "3",
+  "area_terreno": "100",
+  "asesor": "Jose A. Arenas D",
+  "precio": "100000",
+  "descripcion": "fino",
+  "fotos": "/images/uploads/img-20200930-wa0074.jpg",
+  "whatsapp_asesor": "+584149218120",
+  "estacionamientos": "1",
+  "banos": "2",
+  "area_construccion": "100",
+  "tipo": "Apartamento",
+  "mapa_url": "https://maps.app.goo.gl/NhSMzhrS1GX3mDFM7",
+  "publicada": true,
+  "operacion": "Venta",
+  "titulo": "prueba",
+  "ubicacion": "Las minas"
+}
