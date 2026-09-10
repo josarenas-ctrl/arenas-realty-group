@@ -191,6 +191,15 @@ function main(){
       console.log('No se pudo leer', nombre, e.message);
       return;
     }
+    if(!data || typeof data !== 'object') return;
+
+    // El CMS guarda "fotos" como STRING cuando hay una sola imagen y como
+    // ARRAY cuando hay varias. Normalizar siempre a array para evitar el crash.
+    let fotos = data.fotos;
+    if(typeof fotos === 'string') fotos = fotos.trim() ? [fotos.trim()] : [];
+    if(!Array.isArray(fotos)) fotos = [];
+    data.fotos = fotos.filter(f => typeof f === 'string' && f.trim());
+
     if(data.publicada === false) return;
 
     // Generar la página individual
