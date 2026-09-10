@@ -4,7 +4,7 @@
   "asesor": "Jose A. Arenas D",
   "precio": "100000",
   "descripcion": "fino",
-  "fotos": "/images/uploads/img-20200930-wa0074.jpg",
+  "fotos": [{"foto": "/images/uploads/img-20200930-wa0074.jpg"}],
   "whatsapp_asesor": "+584149218120",
   "estacionamientos": "1",
   "banos": "2",
