@@ -6,7 +6,6 @@
 <title>Panel de administración - Arenas Realty Group</title>
 <style>
   #admin-tools-link{
-    display: none;
     position: fixed;
     bottom: 12px;
     left: 12px;
@@ -18,7 +17,7 @@
     padding: 7px 12px;
     border-radius: 20px;
     text-decoration: none;
-    opacity: 0.85;
+    opacity: 0.55;
     box-shadow: 0 2px 8px rgba(0,0,0,0.25);
   }
   #admin-tools-link:hover{ opacity: 1; }
@@ -26,36 +25,6 @@
 </head>
 <body>
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-  <a id="admin-tools-link" href="https://arenas-auth.arenasrealtygroup1.workers.dev/invitar" target="_blank" rel="noopener">⚙ Autorizar asesor</a>
-  <script>
-    // El botón solo se muestra si el usuario logueado en el CMS es el admin (josarenas-ctrl).
-    // Esto es solo una comodidad visual: la seguridad real la da la contraseña de /invitar.
-    (function(){
-      var ADMIN_USERNAME = 'josarenas-ctrl';
-      function intentarMostrar(){
-        if(typeof CMS === 'undefined' || !CMS.registerEventListener) return false;
-        CMS.registerEventListener({
-          name: 'login',
-          handler: function(user){
-            try{
-              var login = ((user && (user.login || user.name)) || '').toString().toLowerCase();
-              if(login === ADMIN_USERNAME){
-                var link = document.getElementById('admin-tools-link');
-                if(link) link.style.display = 'inline-block';
-              }
-            }catch(e){}
-          }
-        });
-        return true;
-      }
-      if(!intentarMostrar()){
-        var intentos = 0;
-        var t = setInterval(function(){
-          intentos++;
-          if(intentarMostrar() || intentos > 40) clearInterval(t);
-        }, 250);
-      }
-    })();
-  </script>
+  <a id="admin-tools-link" href="https://arenas-auth.arenasrealtygroup1.workers.dev/invitar" target="_blank" rel="noopener">⚙</a>
 </body>
 </html>
