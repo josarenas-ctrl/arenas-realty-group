@@ -30,7 +30,13 @@ function galeriaHTML(fotos){
   if(!fotos || !fotos.length){
     return '<div class="gallery-empty"></div>';
   }
-  return `<div class="gallery">${fotos.map(f => `<img src="${esc(f)}" alt="" loading="lazy">`).join('')}</div>`;
+  return `<div class="gallery">${fotos.map(f => `
+    <div class="gallery-item">
+      <div class="g-skel"></div>
+      <img src="${esc(f)}" alt="" loading="lazy" decoding="async"
+           onload="this.classList.add('loaded'); var s=this.previousElementSibling; if(s) s.remove();"
+           onerror="this.closest('.gallery-item').classList.add('g-error'); this.remove();">
+    </div>`).join('')}</div>`;
 }
 
 function caracteristicasHTML(texto){
@@ -87,7 +93,13 @@ ${fotoOG ? `<meta property="og:image" content="${esc(fotoOG)}">` : ''}
   header a{font-weight:600;text-decoration:none;}
   main{padding:40px 0 90px;}
   .gallery{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;margin-bottom:28px;}
-  .gallery img{width:85%;flex:none;aspect-ratio:4/3;object-fit:cover;scroll-snap-align:start;background:var(--sand);}
+  .gallery-item{position:relative;width:85%;flex:none;aspect-ratio:4/3;overflow:hidden;scroll-snap-align:start;background:var(--sand);}
+  .gallery-item img{width:100%;height:100%;object-fit:cover;display:block;opacity:0;transition:opacity .5s ease;position:relative;z-index:1;}
+  .gallery-item img.loaded{opacity:1;}
+  .gallery-item .g-skel{position:absolute;inset:0;background:var(--sand);overflow:hidden;}
+  .gallery-item .g-skel::after{content:"";position:absolute;inset:0;transform:translateX(-100%);background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);animation:g-shimmer 1.3s infinite;}
+  @keyframes g-shimmer{to{transform:translateX(100%);}}
+  .gallery-item.g-error::after{content:"Foto no disponible";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--clay-soft);font-size:0.85rem;z-index:2;}
   .gallery-empty{width:100%;aspect-ratio:16/9;background:var(--sand);margin-bottom:28px;}
   .badge{display:inline-block;font-size:0.78rem;font-weight:600;padding:5px 12px;border-radius:20px;background:var(--terracotta);color:var(--clay);margin-bottom:14px;}
   h1{font-size:clamp(1.6rem,3.6vw,2.2rem);margin-bottom:10px;}
@@ -146,8 +158,16 @@ ${fotoOG ? `<meta property="og:image" content="${esc(fotoOG)}">` : ''}
 
 function tarjetaHTML(slug, d){
   const foto = (d.fotos && d.fotos[0]) ? esc(d.fotos[0]) : '';
+  const imgBlock = foto
+    ? `<div class="thumb-wrap">
+        <div class="thumb-skel"></div>
+        <img class="thumb" src="${foto}" alt="${esc(d.titulo)}" loading="lazy" decoding="async"
+             onload="this.classList.add('loaded'); var s=this.previousElementSibling; if(s) s.remove();"
+             onerror="this.closest('.thumb-wrap').classList.add('thumb-error'); this.remove();">
+      </div>`
+    : `<div class="thumb-wrap"></div>`;
   return `<a class="prop-card" href="/propiedades/${slug}.html">
-    ${foto ? `<img class="thumb" src="${foto}" alt="${esc(d.titulo)}" loading="lazy">` : `<div class="thumb"></div>`}
+    ${imgBlock}
     <div class="body">
       <span class="badge">${esc(d.tipo)}</span>
       <h4>${esc(d.titulo)}</h4>
@@ -193,12 +213,15 @@ function main(){
     }
     if(!data || typeof data !== 'object') return;
 
-    // El CMS guarda "fotos" como STRING cuando hay una sola imagen y como
-    // ARRAY cuando hay varias. Normalizar siempre a array para evitar el crash.
-    let fotos = data.fotos;
-    if(typeof fotos === 'string') fotos = fotos.trim() ? [fotos.trim()] : [];
-    if(!Array.isArray(fotos)) fotos = [];
-    data.fotos = fotos.filter(f => typeof f === 'string' && f.trim());
+    // El CMS puede guardar "fotos" como STRING (1 sola foto, formato viejo),
+    // ARRAY DE STRINGS (formato manual), o ARRAY DE OBJETOS { foto: "url" }
+    // (widget tipo "list" del CMS). Normalizar todo a un array de strings.
+    let fotosRaw = data.fotos;
+    if(typeof fotosRaw === 'string') fotosRaw = fotosRaw.trim() ? [fotosRaw.trim()] : [];
+    if(!Array.isArray(fotosRaw)) fotosRaw = [];
+    data.fotos = fotosRaw
+      .map(f => (typeof f === 'string') ? f : (f && typeof f === 'object' ? f.foto : null))
+      .filter(f => typeof f === 'string' && f.trim());
 
     if(data.publicada === false) return;
 
@@ -245,4 +268,4 @@ ${urlsSitemap.map(u => `  <url><loc>${u}</loc></url>`).join('\n')}
   console.log(`Generadas ${venta.length} propiedades en venta y ${alquiler.length} en alquiler.`);
 }
 
-main(); 
+main();
