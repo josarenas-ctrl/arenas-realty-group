@@ -1,13 +1,19 @@
 {
   "habitaciones": "5",
+  "area_terreno": "1294",
   "asesor": "Jose Arenas",
   "precio": "500000",
-  "area_terreno": "1294",
-  "descripcion": "Una propiedad que no solo es una casa, es un patrimonio. En el corazón de la urbanización más exclusiva de San Antonio de los Altos, esta finca de 1.294 m² te ofrece lo que pocos pueden soñar: una residencia principal de 888 m² + 2 apartamentos independientes.\n\n**Para el que quiere vivir con renta:**\nLos anexos te permiten generar ingresos pasivos desde el día 1. Alquila uno, vive en el otro, o ten a tu familia cerca sin perder privacidad.\n\n**Datos que enamoran:**\n- 5 habitaciones principales | 3.5 baños\n- 2 apartamentos independientes (100 m² y 65 m² + terraza de 60 m²)\n- Acceso individual desde la calle para los anexos\n- En proceso de refacción para que tú pongas tu sello",
-  "fotos": ["/images/uploads/img-20200930-wa0074.jpg"],
+  "descripcion": "Una propiedad que no solo es una casa, es un patrimonio. En el corazón de la urbanización más exclusiva de San Antonio de los Altos, esta finca de 1.294 m² te ofrece lo que pocos pueden soñar: una residencia principal de alrededor de 600 m² + 2 apartamentos independientes.\n\n**Para el que quiere vivir con renta:**\nLos anexos te permiten generar ingresos pasivos desde el día 1. Alquila uno, vive en el otro, o ten a tu familia cerca sin perder privacidad.\n\n**Datos que enamoran:**\n- 5 habitaciones principales | 3.5 baños\n- 2 apartamentos independientes (100 m² y 65 m² + terraza de 60 m²)\n- Salon de Fiestas o eventos.\n- Jacuzzi con solarium \n- Acceso individual desde la calle para los anexos\n- En proceso de refacción para que tú pongas tu sello mas de un 80 % Culminado.",
+  "fotos": [
+    "/images/uploads/img_20170316_163435.jpg",
+    "/images/uploads/img-20200706-wa0011.jpg",
+    "/images/uploads/img-20200706-wa0013.jpg",
+    "/images/uploads/img-20200706-wa0014.jpg"
+  ],
   "whatsapp_asesor": "+584149218120",
   "estacionamientos": "6",
   "banos": "4",
+  "area_construccion": "1000 Aprox",
   "tipo": "Casa",
   "mapa_url": "https://maps.app.goo.gl/tUS82YrNzLMSTx9K9",
   "publicada": true,
@@ -15,4 +21,3 @@
   "titulo": "La Arenera Club de Campo",
   "ubicacion": "Club de Campo, San Antonio de los Altos"
 }
-
