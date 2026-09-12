@@ -41,7 +41,10 @@ collections:
       - { label: "Estacionamientos", name: "estacionamientos", widget: "string", required: false }
       - { label: "Descripción", name: "descripcion", widget: "text" }
       - { label: "Características (una por línea)", name: "caracteristicas", widget: "text", required: false, hint: "Ej: Jardín, Cocina tipo americano, Área social, Seguridad 24h — una en cada línea." }
-      - { label: "Fotos", name: "fotos", widget: "image", multiple: true, required: false }       
+      - label: "Fotos"
+        name: "fotos"
+        widget: "list"
+        field: { label: "Imagen", name: "imagen", widget: "image" }    
       - { label: "Link de video (YouTube, Instagram, TikTok, etc.)", name: "video_url", widget: "string", required: false, hint: "Pega el link del video, no subas el archivo directamente." }
       - { label: "Nombre del asesor", name: "asesor", widget: "string" }
       - { label: "WhatsApp del asesor", name: "whatsapp_asesor", widget: "string" }
