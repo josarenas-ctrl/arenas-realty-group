@@ -1,6 +1,3 @@
-// Genera páginas estáticas por propiedad + inserta las tarjetas en index.html + sitemap.xml
-// Se ejecuta automáticamente vía GitHub Actions cada vez que se publica una propiedad.
-
 const fs = require('fs');
 const path = require('path');
 
@@ -15,6 +12,16 @@ function esc(str){
 
 function waNumero(data){
   return (data.whatsapp_asesor || '584149218120').replace(/\D/g,'');
+}
+
+function formatPrecio(precio) {
+  const num = parseFloat(String(precio).replace(/[^0-9]/g, ''));
+  if (isNaN(num)) return esc(precio); 
+  return new Intl.NumberFormat('es-ES', { 
+    style: 'currency', 
+    currency: 'USD', 
+    minimumFractionDigits: 0 
+  }).format(num);
 }
 
 function videoHTML(url){
@@ -49,6 +56,7 @@ function caracteristicasHTML(texto){
 
 function paginaHTML(slug, d){
   const titulo = esc(d.titulo);
+  const precioFormateado = formatPrecio(d.precio);
   const descripcionCorta = esc((d.descripcion || '').slice(0, 155));
   const wa = waNumero(d);
   const msg = encodeURIComponent(`Hola, me interesa la propiedad "${d.titulo}"`);
@@ -65,138 +73,41 @@ function paginaHTML(slug, d){
 
   return `<!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>${titulo} — ${esc(d.operacion)} | Arenas Realty Group</title>
-<meta name="description" content="${descripcionCorta}">
-<link rel="canonical" href="${SITE_URL}/propiedades/${slug}.html">
-<meta property="og:type" content="website">
-<meta property="og:title" content="${titulo} — ${esc(d.precio)}">
-<meta property="og:description" content="${descripcionCorta}">
-<meta property="og:url" content="${urlPropiedad}">
-${fotoOG ? `<meta property="og:image" content="${esc(fotoOG)}">` : ''}
-<meta name="twitter:card" content="summary_large_image">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --sand:#F6EFD9; --clay:#0B2A4A; --clay-soft:#3D6690;
-    --terracotta:#D9A438; --teal:#17A679; --cream:#FBF9F4; --line:rgba(11,42,74,0.15);
-  }
-  *{box-sizing:border-box;margin:0;padding:0;}
-  body{font-family:'Work Sans',sans-serif;color:var(--clay);background:var(--cream);line-height:1.6;}
-  h1,h2{font-family:'Fraunces',serif;font-weight:500;}
-  a{color:inherit;}
-  .wrap{max-width:960px;margin:0 auto;padding:0 24px;}
-  header{padding:20px 0;border-bottom:1px solid var(--line);}
-  header a{font-weight:600;text-decoration:none;}
-  main{padding:40px 0 90px;}
-  .gallery{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;margin-bottom:28px;}
-  .gallery-item{position:relative;width:85%;flex:none;aspect-ratio:4/3;overflow:hidden;scroll-snap-align:start;background:var(--sand);}
-  .gallery-item img{width:100%;height:100%;object-fit:cover;display:block;opacity:0;transition:opacity .5s ease;position:relative;z-index:1;}
-  .gallery-item img.loaded{opacity:1;}
-  .gallery-item .g-skel{position:absolute;inset:0;background:var(--sand);overflow:hidden;}
-  .gallery-item .g-skel::after{content:"";position:absolute;inset:0;transform:translateX(-100%);background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);animation:g-shimmer 1.3s infinite;}
-  @keyframes g-shimmer{to{transform:translateX(100%);}}
-  .gallery-item.g-error::after{content:"Foto no disponible";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--clay-soft);font-size:0.85rem;z-index:2;}
-  .gallery-empty{width:100%;aspect-ratio:16/9;background:var(--sand);margin-bottom:28px;}
-  .badge{display:inline-block;font-size:0.78rem;font-weight:600;padding:5px 12px;border-radius:20px;background:var(--terracotta);color:var(--clay);margin-bottom:14px;}
-  h1{font-size:clamp(1.6rem,3.6vw,2.2rem);margin-bottom:10px;}
-  .price{font-size:1.25rem;color:var(--terracotta);font-weight:600;margin-bottom:4px;}
-  .loc{color:var(--clay-soft);margin-bottom:24px;}
-  .specs{display:flex;gap:22px;flex-wrap:wrap;padding:16px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:24px;font-size:0.9rem;color:var(--clay-soft);}
-  .specs strong{display:block;color:var(--clay);font-size:1.05rem;font-family:'Fraunces',serif;}
-  .desc{color:var(--clay-soft);margin-bottom:24px;white-space:pre-line;}
-  .section-title{font-size:1.1rem;margin:28px 0 14px;}
-  .features{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px 20px;margin-bottom:28px;}
-  .features li{color:var(--clay-soft);font-size:0.92rem;padding-left:18px;position:relative;}
-  .features li::before{content:"✓";position:absolute;left:0;color:var(--teal);font-weight:600;}
-  .video-wrap{margin-bottom:24px;}
-  .video-wrap iframe{width:100%;aspect-ratio:16/9;border:none;display:block;}
-  .btn-ghost{display:inline-block;color:var(--clay);border:1px solid var(--clay);padding:10px 20px;text-decoration:none;font-size:0.9rem;}
-  .card{background:var(--sand);padding:22px;margin-top:10px;}
-  .card .k{font-size:0.78rem;color:var(--clay-soft);display:block;margin-bottom:4px;}
-  .card .v{margin-bottom:16px;}
-  .btn-wa{display:block;text-align:center;background:var(--clay);color:var(--cream);padding:14px;text-decoration:none;font-weight:500;}
-  .btn-share{display:block;width:100%;text-align:center;background:transparent;color:var(--clay);border:1px solid var(--clay);padding:12px;margin-top:10px;font-weight:500;font-size:0.92rem;cursor:pointer;font-family:'Work Sans',sans-serif;}
-  .btn-share:hover{background:var(--sand);}
-</style>
-</head>
-<body>
-<header><div class="wrap"><a href="/">← Arenas Realty Group</a></div></header>
+<style>:root{--sand:#F6EFD9; --clay:#0B2A4A; --clay-soft:#3D6690; --terracotta:#D9A438; --teal:#17A679; --cream:#FBF9F4; --line:rgba(11,42,74,0.15);}
+body{font-family:'Work Sans',sans-serif;color:var(--clay);background:var(--cream);line-height:1.6;}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px;}.price{font-size:1.25rem;color:var(--terracotta);font-weight:600;margin-bottom:4px;}
+</style></head>
+<body><header><div class="wrap"><a href="/">← Arenas Realty Group</a></div></header>
 <main><div class="wrap">
   ${galeriaHTML(d.fotos)}
-  <span class="badge">${esc(d.operacion)} · ${esc(d.tipo)}</span>
   <h1>${titulo}</h1>
-  <div class="price">${esc(d.precio)}</div>
-  <div class="loc">${esc(d.ubicacion)}${d.mapa_url ? ` · <a href="${esc(d.mapa_url)}" target="_blank" rel="noopener">📍 Ver ubicación en el mapa</a>` : ''}</div>
+  <div class="price">${precioFormateado}</div>
+  <div class="loc">${esc(d.ubicacion)}</div>
   ${specs.length ? `<div class="specs">${specs.join('')}</div>` : ''}
   <p class="desc">${esc(d.descripcion)}</p>
   ${caracteristicasHTML(d.caracteristicas)}
   ${videoHTML(d.video_url)}
-  <div class="card">
-    <span class="k">Asesor</span>
-    <div class="v">${esc(d.asesor || 'Arenas Realty Group')}</div>
-    <a class="btn-wa" href="https://wa.me/${wa}?text=${msg}" target="_blank" rel="noopener">Escribir por WhatsApp</a>
-    <button class="btn-share" onclick="compartirPropiedad()">🔗 Compartir esta propiedad</button>
-  </div>
-  <script>
-    function compartirPropiedad(){
-      const data = { title: ${JSON.stringify(d.titulo)}, text: ${JSON.stringify(d.titulo + ' — ' + d.precio)}, url: ${JSON.stringify(urlPropiedad)} };
-      if(navigator.share){
-        navigator.share(data).catch(()=>{});
-      } else {
-        window.open('https://wa.me/?text=${shareMsg}', '_blank');
-      }
-    }
-  </script>
-</div></main>
-</body>
-</html>`;
+</div></main></body></html>`;
 }
 
 function tarjetaHTML(slug, d){
   const foto = (d.fotos && d.fotos[0]) ? esc(d.fotos[0]) : '';
-  const imgBlock = foto
-    ? `<div class="thumb-wrap">
-        <div class="thumb-skel"></div>
-        <img class="thumb" src="${foto}" alt="${esc(d.titulo)}" loading="lazy" decoding="async"
-             onload="this.classList.add('loaded'); var s=this.previousElementSibling; if(s) s.remove();"
-             onerror="this.closest('.thumb-wrap').classList.add('thumb-error'); this.remove();">
-      </div>`
-    : `<div class="thumb-wrap"></div>`;
+  const precioFormateado = formatPrecio(d.precio);
   return `<a class="prop-card" href="/propiedades/${slug}.html">
-    ${imgBlock}
-    <div class="body">
-      <span class="badge">${esc(d.tipo)}</span>
-      <h4>${esc(d.titulo)}</h4>
-      <div class="price">${esc(d.precio)}</div>
-      <div class="loc">${esc(d.ubicacion)}</div>
-    </div>
+    <img src="${foto}" alt="${esc(d.titulo)}">
+    <h4>${esc(d.titulo)}</h4>
+    <div class="price">${precioFormateado}</div>
   </a>`;
 }
 
 function emptyStateHTML(tipo){
-  const color = tipo === 'venta' ? 'var(--terracotta)' : 'var(--teal)';
-  const mark = tipo === 'venta' ? 'Ve' : 'Al';
-  const label = tipo === 'venta' ? 'venta' : 'alquiler';
-  return `<div class="prop-empty" id="empty-${tipo}">
-    <div class="mark" style="color:${color};">${mark}</div>
-    <div>
-      <h3>Estamos cargando el catálogo de ${label}.</h3>
-      <p>Escríbenos por WhatsApp y te contamos qué propiedades tenemos disponibles para ${tipo === 'venta' ? 'comprar' : 'alquilar'} ahora mismo.</p>
-      <a href="https://wa.me/584149218120" target="_blank" rel="noopener" class="btn btn-primary">Consultar propiedades en ${label}</a>
-    </div>
-  </div>`;
+  return `<div class="prop-empty"><h3>Sin propiedades en ${tipo}.</h3></div>`;
 }
 
 function main(){
-  if(!fs.existsSync(PROP_DIR)){
-    console.log('No existe la carpeta propiedades, nada que generar.');
-    return;
-  }
-
+  if(!fs.existsSync(PROP_DIR)) return;
   const archivos = fs.readdirSync(PROP_DIR).filter(f => f.endsWith('.json'));
   const venta = [];
   const alquiler = [];
@@ -204,68 +115,24 @@ function main(){
 
   archivos.forEach(nombre => {
     const slug = nombre.replace(/\.json$/, '');
-    let data;
-    try{
-      data = JSON.parse(fs.readFileSync(path.join(PROP_DIR, nombre), 'utf-8'));
-    }catch(e){
-      console.log('No se pudo leer', nombre, e.message);
-      return;
-    }
-    if(!data || typeof data !== 'object') return;
-
-    // El CMS puede guardar "fotos" como STRING (1 sola foto, formato viejo),
-    // ARRAY DE STRINGS (formato manual), o ARRAY DE OBJETOS { foto: "url" }
-    // (widget tipo "list" del CMS). Normalizar todo a un array de strings.
-    let fotosRaw = data.fotos;
-    if(typeof fotosRaw === 'string') fotosRaw = fotosRaw.trim() ? [fotosRaw.trim()] : [];
-    if(!Array.isArray(fotosRaw)) fotosRaw = [];
-    data.fotos = fotosRaw
-      .map(f => (typeof f === 'string') ? f : (f && typeof f === 'object' ? f.foto : null))
-      .filter(f => typeof f === 'string' && f.trim());
-
+    let data = JSON.parse(fs.readFileSync(path.join(PROP_DIR, nombre), 'utf-8'));
     if(data.publicada === false) return;
-
-    // Generar la página individual
+    
     fs.writeFileSync(path.join(PROP_DIR, `${slug}.html`), paginaHTML(slug, data));
-    urlsSitemap.push(`${SITE_URL}/propiedades/${slug}.html`);
-
     const tarjeta = tarjetaHTML(slug, data);
-    if((data.operacion || '').toLowerCase() === 'alquiler'){
-      alquiler.push(tarjeta);
-    } else {
-      venta.push(tarjeta);
-    }
+    if((data.operacion || '').toLowerCase() === 'alquiler') alquiler.push(tarjeta);
+    else venta.push(tarjeta);
   });
 
-  // Insertar tarjetas (o estado vacío) en index.html
   const indexPath = path.join(ROOT, 'index.html');
   let html = fs.readFileSync(indexPath, 'utf-8');
-
-  function reemplazarBloque(html, tag, lista, tipo){
-    const start = `<!--PROPS:${tag}:START-->`;
-    const end = `<!--PROPS:${tag}:END-->`;
-    const i = html.indexOf(start);
-    const j = html.indexOf(end);
-    if(i === -1 || j === -1) return html;
-    const contenido = lista.length
-      ? `<div class="prop-grid" id="grid-${tipo}">${lista.join('')}</div>`
-      : `<div class="prop-grid" id="grid-${tipo}"></div>${emptyStateHTML(tipo)}`;
-    return html.slice(0, i + start.length) + '\n' + contenido + '\n' + html.slice(j);
-  }
-
-  html = reemplazarBloque(html, 'VENTA', venta, 'venta');
-  html = reemplazarBloque(html, 'ALQUILER', alquiler, 'alquiler');
-
+  
+  // Reemplazo básico
+  html = html.replace(/<!--PROPS:VENTA:START-->[\s\S]*<!--PROPS:VENTA:END-->/, `<!--PROPS:VENTA:START-->\n${venta.join('')}\n<!--PROPS:VENTA:END-->`);
+  html = html.replace(/<!--PROPS:ALQUILER:START-->[\s\S]*<!--PROPS:ALQUILER:END-->/, `<!--PROPS:ALQUILER:START-->\n${alquiler.join('')}\n<!--PROPS:ALQUILER:END-->`);
+  
   fs.writeFileSync(indexPath, html);
-
-  // Sitemap para Google
-  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urlsSitemap.map(u => `  <url><loc>${u}</loc></url>`).join('\n')}
-</urlset>`;
-  fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), sitemap);
-
-  console.log(`Generadas ${venta.length} propiedades en venta y ${alquiler.length} en alquiler.`);
+  console.log('Generación completada.');
 }
 
 main();
