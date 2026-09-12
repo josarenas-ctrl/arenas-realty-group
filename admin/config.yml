@@ -8,6 +8,11 @@ backend:
   base_url: https://arenas-auth.arenasrealtygroup1.workers.dev
   auth_endpoint: auth
 
+media_library:
+  name: uploadcare
+  config:
+    publicKey: "3e92d430cda93f1accf6"
+
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
@@ -44,7 +49,7 @@ collections:
       - label: "Fotos"
         name: "fotos"
         widget: "list"
-        field: { label: "Imagen", name: "imagen", widget: "image" }    
+        field: { label: "Imagen", name: "imagen", widget: "image" }
       - { label: "Link de video (YouTube, Instagram, TikTok, etc.)", name: "video_url", widget: "string", required: false, hint: "Pega el link del video, no subas el archivo directamente." }
       - { label: "Nombre del asesor", name: "asesor", widget: "string" }
       - { label: "WhatsApp del asesor", name: "whatsapp_asesor", widget: "string" }
