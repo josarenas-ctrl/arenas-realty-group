@@ -26,6 +26,25 @@ function waNumero(data){
   return (data.whatsapp_asesor || '584149218120').replace(/\D/g,'');
 }
 
+// Devuelve un link de Google Maps: usa el mapa interactivo nuevo (ubicacion_mapa)
+// si tiene coordenadas marcadas; si no, usa el link de texto viejo (mapa_url).
+function mapaUrl(d){
+  if(d.ubicacion_mapa){
+    try{
+      const geo = JSON.parse(d.ubicacion_mapa);
+      if(geo && geo.type === 'Point' && Array.isArray(geo.coordinates)){
+        const [lng, lat] = geo.coordinates;
+        if(typeof lat === 'number' && typeof lng === 'number'){
+          return `https://www.google.com/maps?q=${lat},${lng}`;
+        }
+      }
+    }catch(e){
+      // Si no es un GeoJSON válido, seguimos al link de texto de abajo.
+    }
+  }
+  return d.mapa_url || '';
+}
+
 function videoHTML(url){
   if(!url) return '';
   const yt = url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|shorts\/|embed\/))([\w-]{11})/);
@@ -65,6 +84,7 @@ function paginaHTML(slug, d){
   const urlPropiedad = `${SITE_URL}/propiedades/${slug}.html`;
   const fotoOG = (d.fotos && d.fotos[0]) ? `${SITE_URL}${d.fotos[0]}` : '';
   const shareMsg = encodeURIComponent(`${d.titulo} — ${precioFormateado}\n${urlPropiedad}`);
+  const mapaLink = mapaUrl(d);
 
   const specs = [];
   if(d.area_terreno) specs.push(`<div><strong>${esc(d.area_terreno)}</strong> m² terreno</div>`);
@@ -140,7 +160,7 @@ ${fotoOG ? `<meta property="og:image" content="${esc(fotoOG)}">` : ''}
   <span class="badge">${esc(d.operacion)} · ${esc(d.tipo)}</span>
   <h1>${titulo}</h1>
   <div class="price">${precioFormateado}</div>
-  <div class="loc">${esc(d.ubicacion)}${d.mapa_url ? ` · <a href="${esc(d.mapa_url)}" target="_blank" rel="noopener">📍 Ver ubicación en el mapa</a>` : ''}</div>
+  <div class="loc">${esc(d.ubicacion)}${mapaLink ? ` · <a href="${esc(mapaLink)}" target="_blank" rel="noopener">📍 Ver ubicación en el mapa</a>` : ''}</div>
   ${specs.length ? `<div class="specs">${specs.join('')}</div>` : ''}
   <p class="desc">${esc(d.descripcion)}</p>
   ${caracteristicasHTML(d.caracteristicas)}
@@ -175,6 +195,7 @@ function paginaCompartirHTML(slug, d){
   const descripcionCorta = esc((d.descripcion || '').slice(0, 155));
   const urlPropiedad = `${SITE_URL}/propiedades/${slug}-compartir.html`;
   const fotoOG = (d.fotos && d.fotos[0]) ? `${SITE_URL}${d.fotos[0]}` : '';
+  const mapaLink = mapaUrl(d);
 
   const specs = [];
   if(d.area_terreno) specs.push(`<div><strong>${esc(d.area_terreno)}</strong> m² terreno</div>`);
@@ -248,7 +269,7 @@ ${fotoOG ? `<meta property="og:image" content="${esc(fotoOG)}">` : ''}
   <span class="badge">${esc(d.operacion)} · ${esc(d.tipo)}</span>
   <h1>${titulo}</h1>
   <div class="price">${precioFormateado}</div>
-  <div class="loc">${esc(d.ubicacion)}${d.mapa_url ? ` · <a href="${esc(d.mapa_url)}" target="_blank" rel="noopener">📍 Ver ubicación en el mapa</a>` : ''}</div>
+  <div class="loc">${esc(d.ubicacion)}${mapaLink ? ` · <a href="${esc(mapaLink)}" target="_blank" rel="noopener">📍 Ver ubicación en el mapa</a>` : ''}</div>
   ${specs.length ? `<div class="specs">${specs.join('')}</div>` : ''}
   <p class="desc">${esc(d.descripcion)}</p>
   ${caracteristicasHTML(d.caracteristicas)}
