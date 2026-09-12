@@ -166,6 +166,97 @@ ${fotoOG ? `<meta property="og:image" content="${esc(fotoOG)}">` : ''}
 </html>`;
 }
 
+// Versión "en blanco" de la página, sin nombre de la marca ni datos del asesor.
+// Pensada para compartir directamente con otros asesores/inmobiliarias.
+function paginaCompartirHTML(slug, d){
+  const titulo = esc(d.titulo);
+  const precioFormateado = formatPrecio(d.precio);
+  const descripcionCorta = esc((d.descripcion || '').slice(0, 155));
+  const urlPropiedad = `${SITE_URL}/propiedades/${slug}-compartir.html`;
+  const fotoOG = (d.fotos && d.fotos[0]) ? `${SITE_URL}${d.fotos[0]}` : '';
+
+  const specs = [];
+  if(d.area_terreno) specs.push(`<div><strong>${esc(d.area_terreno)}</strong> m² terreno</div>`);
+  if(d.area_construccion) specs.push(`<div><strong>${esc(d.area_construccion)}</strong> m² construcción</div>`);
+  if(d.habitaciones) specs.push(`<div><strong>${esc(d.habitaciones)}</strong> habitaciones</div>`);
+  if(d.banos) specs.push(`<div><strong>${esc(d.banos)}</strong> baños</div>`);
+  if(d.estacionamientos) specs.push(`<div><strong>${esc(d.estacionamientos)}</strong> puestos</div>`);
+
+  return `<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>${titulo} — ${esc(d.operacion)}</title>
+<meta name="description" content="${descripcionCorta}">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="${titulo} — ${precioFormateado}">
+<meta property="og:description" content="${descripcionCorta}">
+${fotoOG ? `<meta property="og:image" content="${esc(fotoOG)}">` : ''}
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --sand:#F6EFD9; --clay:#0B2A4A; --clay-soft:#3D6690;
+    --terracotta:#D9A438; --teal:#17A679; --cream:#FBF9F4; --line:rgba(11,42,74,0.15);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Work Sans',sans-serif;color:var(--clay);background:var(--cream);line-height:1.6;}
+  h1,h2{font-family:'Fraunces',serif;font-weight:500;}
+  .wrap{max-width:960px;margin:0 auto;padding:0 24px;}
+  main{padding:40px 0 90px;}
+  .gallery{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;margin-bottom:28px;}
+  .gallery-item{position:relative;width:85%;flex:none;aspect-ratio:4/3;overflow:hidden;scroll-snap-align:start;background:var(--sand);}
+  .gallery-item img{width:100%;height:100%;object-fit:cover;display:block;opacity:0;transition:opacity .5s ease;position:relative;z-index:1;}
+  .gallery-item img.loaded{opacity:1;}
+  .gallery-item .g-skel{position:absolute;inset:0;background:var(--sand);overflow:hidden;}
+  .gallery-item .g-skel::after{content:"";position:absolute;inset:0;transform:translateX(-100%);background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);animation:g-shimmer 1.3s infinite;}
+  @keyframes g-shimmer{to{transform:translateX(100%);}}
+  .gallery-item.g-error::after{content:"Foto no disponible";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--clay-soft);font-size:0.85rem;z-index:2;}
+  .gallery-empty{width:100%;aspect-ratio:16/9;background:var(--sand);margin-bottom:28px;}
+  .badge{display:inline-block;font-size:0.78rem;font-weight:600;padding:5px 12px;border-radius:20px;background:var(--terracotta);color:var(--clay);margin-bottom:14px;}
+  h1{font-size:clamp(1.6rem,3.6vw,2.2rem);margin-bottom:10px;margin-top:20px;}
+  .price{font-size:1.25rem;color:var(--terracotta);font-weight:600;margin-bottom:4px;}
+  .loc{color:var(--clay-soft);margin-bottom:24px;}
+  .specs{display:flex;gap:22px;flex-wrap:wrap;padding:16px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:24px;font-size:0.9rem;color:var(--clay-soft);}
+  .specs strong{display:block;color:var(--clay);font-size:1.05rem;font-family:'Fraunces',serif;}
+  .desc{color:var(--clay-soft);margin-bottom:24px;white-space:pre-line;}
+  .section-title{font-size:1.1rem;margin:28px 0 14px;}
+  .features{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px 20px;margin-bottom:28px;}
+  .features li{color:var(--clay-soft);font-size:0.92rem;padding-left:18px;position:relative;}
+  .features li::before{content:"✓";position:absolute;left:0;color:var(--teal);font-weight:600;}
+  .video-wrap{margin-bottom:24px;}
+  .video-wrap iframe{width:100%;aspect-ratio:16/9;border:none;display:block;}
+  .btn-pdf{display:block;width:100%;text-align:center;background:var(--clay);color:var(--cream);padding:14px;border:none;font-weight:500;font-size:0.95rem;cursor:pointer;font-family:'Work Sans',sans-serif;margin-top:10px;}
+  .btn-pdf:hover{opacity:0.9;}
+  @media print{
+    .btn-pdf{display:none;}
+    .gallery{display:block;overflow:visible;}
+    .gallery-item{width:100%;aspect-ratio:auto;max-height:280px;margin-bottom:10px;page-break-inside:avoid;}
+    .video-wrap{display:none;}
+    body{background:#fff;}
+  }
+</style>
+</head>
+<body>
+<main><div class="wrap">
+  <button class="btn-pdf no-print" onclick="window.print()">📄 Descargar como PDF</button>
+  ${galeriaHTML(d.fotos)}
+  <span class="badge">${esc(d.operacion)} · ${esc(d.tipo)}</span>
+  <h1>${titulo}</h1>
+  <div class="price">${precioFormateado}</div>
+  <div class="loc">${esc(d.ubicacion)}${d.mapa_url ? ` · <a href="${esc(d.mapa_url)}" target="_blank" rel="noopener">📍 Ver ubicación en el mapa</a>` : ''}</div>
+  ${specs.length ? `<div class="specs">${specs.join('')}</div>` : ''}
+  <p class="desc">${esc(d.descripcion)}</p>
+  ${caracteristicasHTML(d.caracteristicas)}
+  ${videoHTML(d.video_url)}
+</div></main>
+</body>
+</html>`;
+}
+
 function tarjetaHTML(slug, d){
   const foto = (d.fotos && d.fotos[0]) ? esc(d.fotos[0]) : '';
   const imgBlock = foto
@@ -238,6 +329,10 @@ function main(){
     // Generar la página individual
     fs.writeFileSync(path.join(PROP_DIR, `${slug}.html`), paginaHTML(slug, data));
     urlsSitemap.push(`${SITE_URL}/propiedades/${slug}.html`);
+
+    // Generar la versión "en blanco" para compartir (sin marca ni asesor).
+    // No se agrega al sitemap a propósito, para que Google no la indexe.
+    fs.writeFileSync(path.join(PROP_DIR, `${slug}-compartir.html`), paginaCompartirHTML(slug, data));
 
     const tarjeta = tarjetaHTML(slug, data);
     if((data.operacion || '').toLowerCase() === 'alquiler'){
