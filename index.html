@@ -455,20 +455,30 @@
 
     <div class="prop-panel active" id="panel-venta">
 <!--PROPS:VENTA:START-->
-<div class="prop-grid"><a class="prop-card" href="/propiedades/club-de-campo-1.html">
-    <div class="thumb-wrap"><div class="thumb-skel"></div><img class="thumb" src="/images/uploads/foto-terreno.jpg" alt="Club de Campo" loading="lazy" decoding="async" onload="this.classList.add('loaded'); var s=this.previousElementSibling; if(s) s.remove();" onerror="this.closest('.thumb-wrap').classList.add('thumb-error'); this.remove();"></div>
+<div class="prop-grid" id="grid-venta"><a class="prop-card" href="/propiedades/club-de-campo-1.html">
+    <div class="thumb-wrap">
+        <div class="thumb-skel"></div>
+        <img class="thumb" src="/images/uploads/foto-terreno.jpg" alt="Club de Campo" loading="lazy" decoding="async"
+             onload="this.classList.add('loaded'); var s=this.previousElementSibling; if(s) s.remove();"
+             onerror="this.closest('.thumb-wrap').classList.add('thumb-error'); this.remove();">
+      </div>
     <div class="body">
       <span class="badge">Terreno</span>
       <h4>Club de Campo</h4>
-      <div class="price">34.500 US$</div>
+      <div class="price">34500</div>
       <div class="loc">Urbanizacion CLub de Campo</div>
     </div>
   </a><a class="prop-card" href="/propiedades/la-arenera-club-de-campo.html">
-    <div class="thumb-wrap"><div class="thumb-skel"></div><img class="thumb" src="/images/uploads/IMG_20170316_163435.jpg" alt="La Arenera Club de Campo" loading="lazy" decoding="async" onload="this.classList.add('loaded'); var s=this.previousElementSibling; if(s) s.remove();" onerror="this.closest('.thumb-wrap').classList.add('thumb-error'); this.remove();"></div>
+    <div class="thumb-wrap">
+        <div class="thumb-skel"></div>
+        <img class="thumb" src="/images/uploads/IMG_20170316_163435.jpg" alt="La Arenera Club de Campo" loading="lazy" decoding="async"
+             onload="this.classList.add('loaded'); var s=this.previousElementSibling; if(s) s.remove();"
+             onerror="this.closest('.thumb-wrap').classList.add('thumb-error'); this.remove();">
+      </div>
     <div class="body">
       <span class="badge">Casa</span>
       <h4>La Arenera Club de Campo</h4>
-      <div class="price">495.000 US$</div>
+      <div class="price">500000</div>
       <div class="loc">Club de Campo, San Antonio de los Altos</div>
     </div>
   </a></div>
@@ -477,7 +487,14 @@
 
     <div class="prop-panel" id="panel-alquiler">
 <!--PROPS:ALQUILER:START-->
-<div class="prop-grid"></div>
+<div class="prop-grid" id="grid-alquiler"></div><div class="prop-empty" id="empty-alquiler">
+    <div class="mark" style="color:var(--teal);">Al</div>
+    <div>
+      <h3>Estamos cargando el catálogo de alquiler.</h3>
+      <p>Escríbenos por WhatsApp y te contamos qué propiedades tenemos disponibles para alquilar ahora mismo.</p>
+      <a href="https://wa.me/584149218120" target="_blank" rel="noopener" class="btn btn-primary">Consultar propiedades en alquiler</a>
+    </div>
+  </div>
 <!--PROPS:ALQUILER:END-->
     </div>
 
