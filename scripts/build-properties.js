@@ -10,6 +10,18 @@ function esc(str){
     .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
+// Convierte "150000", "$150,000" o "150.000" en "USD 150.000".
+// Si el texto no tiene números (ej. "Consultar precio"), lo deja tal cual.
+function formatPrecio(precio){
+  if(precio == null || precio === '') return '';
+  const digitos = String(precio).replace(/[^\d]/g, '');
+  if(!digitos) return esc(precio);
+  const num = parseInt(digitos, 10);
+  if(isNaN(num)) return esc(precio);
+  const conPuntos = num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+  return `USD ${conPuntos}`;
+}
+
 function waNumero(data){
   return (data.whatsapp_asesor || '584149218120').replace(/\D/g,'');
 }
@@ -46,12 +58,13 @@ function caracteristicasHTML(texto){
 
 function paginaHTML(slug, d){
   const titulo = esc(d.titulo);
+  const precioFormateado = formatPrecio(d.precio);
   const descripcionCorta = esc((d.descripcion || '').slice(0, 155));
   const wa = waNumero(d);
   const msg = encodeURIComponent(`Hola, me interesa la propiedad "${d.titulo}"`);
   const urlPropiedad = `${SITE_URL}/propiedades/${slug}.html`;
   const fotoOG = (d.fotos && d.fotos[0]) ? `${SITE_URL}${d.fotos[0]}` : '';
-  const shareMsg = encodeURIComponent(`${d.titulo} — ${d.precio}\n${urlPropiedad}`);
+  const shareMsg = encodeURIComponent(`${d.titulo} — ${precioFormateado}\n${urlPropiedad}`);
 
   const specs = [];
   if(d.area_terreno) specs.push(`<div><strong>${esc(d.area_terreno)}</strong> m² terreno</div>`);
@@ -69,7 +82,7 @@ function paginaHTML(slug, d){
 <meta name="description" content="${descripcionCorta}">
 <link rel="canonical" href="${SITE_URL}/propiedades/${slug}.html">
 <meta property="og:type" content="website">
-<meta property="og:title" content="${titulo} — ${esc(d.precio)}">
+<meta property="og:title" content="${titulo} — ${precioFormateado}">
 <meta property="og:description" content="${descripcionCorta}">
 <meta property="og:url" content="${urlPropiedad}">
 ${fotoOG ? `<meta property="og:image" content="${esc(fotoOG)}">` : ''}
@@ -126,7 +139,7 @@ ${fotoOG ? `<meta property="og:image" content="${esc(fotoOG)}">` : ''}
   ${galeriaHTML(d.fotos)}
   <span class="badge">${esc(d.operacion)} · ${esc(d.tipo)}</span>
   <h1>${titulo}</h1>
-  <div class="price">${esc(d.precio)}</div>
+  <div class="price">${precioFormateado}</div>
   <div class="loc">${esc(d.ubicacion)}${d.mapa_url ? ` · <a href="${esc(d.mapa_url)}" target="_blank" rel="noopener">📍 Ver ubicación en el mapa</a>` : ''}</div>
   ${specs.length ? `<div class="specs">${specs.join('')}</div>` : ''}
   <p class="desc">${esc(d.descripcion)}</p>
@@ -140,7 +153,7 @@ ${fotoOG ? `<meta property="og:image" content="${esc(fotoOG)}">` : ''}
   </div>
   <script>
     function compartirPropiedad(){
-      const data = { title: ${JSON.stringify(d.titulo)}, text: ${JSON.stringify(d.titulo + ' — ' + d.precio)}, url: ${JSON.stringify(urlPropiedad)} };
+      const data = { title: ${JSON.stringify(d.titulo)}, text: ${JSON.stringify(d.titulo + ' — ' + precioFormateado)}, url: ${JSON.stringify(urlPropiedad)} };
       if(navigator.share){
         navigator.share(data).catch(()=>{});
       } else {
@@ -168,7 +181,7 @@ function tarjetaHTML(slug, d){
     <div class="body">
       <span class="badge">${esc(d.tipo)}</span>
       <h4>${esc(d.titulo)}</h4>
-      <div class="price">${esc(d.precio)}</div>
+      <div class="price">${formatPrecio(d.precio)}</div>
       <div class="loc">${esc(d.ubicacion)}</div>
     </div>
   </a>`;
