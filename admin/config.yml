@@ -8,11 +8,6 @@ backend:
   base_url: https://arenas-auth.arenasrealtygroup1.workers.dev
   auth_endpoint: auth
 
-media_library:
-  name: uploadcare
-  config:
-    publicKey: "3e92d430cda93f1accf6"
-
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
