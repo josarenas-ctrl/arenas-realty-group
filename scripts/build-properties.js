@@ -95,10 +95,17 @@ body{font-family:'Work Sans',sans-serif;color:var(--clay);background:var(--cream
 function tarjetaHTML(slug, d){
   const foto = (d.fotos && d.fotos[0]) ? esc(d.fotos[0]) : '';
   const precioFormateado = formatPrecio(d.precio);
+  const imgBlock = foto
+    ? `<div class="thumb-wrap"><div class="thumb-skel"></div><img class="thumb" src="${foto}" alt="${esc(d.titulo)}" loading="lazy" decoding="async" onload="this.classList.add('loaded'); var s=this.previousElementSibling; if(s) s.remove();" onerror="this.closest('.thumb-wrap').classList.add('thumb-error'); this.remove();"></div>`
+    : `<div class="thumb-wrap"></div>`;
   return `<a class="prop-card" href="/propiedades/${slug}.html">
-    <img src="${foto}" alt="${esc(d.titulo)}">
-    <h4>${esc(d.titulo)}</h4>
-    <div class="price">${precioFormateado}</div>
+    ${imgBlock}
+    <div class="body">
+      <span class="badge">${esc(d.tipo)}</span>
+      <h4>${esc(d.titulo)}</h4>
+      <div class="price">${precioFormateado}</div>
+      <div class="loc">${esc(d.ubicacion)}</div>
+    </div>
   </a>`;
 }
 
@@ -111,8 +118,7 @@ function main(){
   const archivos = fs.readdirSync(PROP_DIR).filter(f => f.endsWith('.json'));
   const venta = [];
   const alquiler = [];
-  const urlsSitemap = [`${SITE_URL}/`];
-
+  
   archivos.forEach(nombre => {
     const slug = nombre.replace(/\.json$/, '');
     let data = JSON.parse(fs.readFileSync(path.join(PROP_DIR, nombre), 'utf-8'));
@@ -126,10 +132,8 @@ function main(){
 
   const indexPath = path.join(ROOT, 'index.html');
   let html = fs.readFileSync(indexPath, 'utf-8');
-  
-  // Reemplazo básico
-  html = html.replace(/<!--PROPS:VENTA:START-->[\s\S]*<!--PROPS:VENTA:END-->/, `<!--PROPS:VENTA:START-->\n${venta.join('')}\n<!--PROPS:VENTA:END-->`);
-  html = html.replace(/<!--PROPS:ALQUILER:START-->[\s\S]*<!--PROPS:ALQUILER:END-->/, `<!--PROPS:ALQUILER:START-->\n${alquiler.join('')}\n<!--PROPS:ALQUILER:END-->`);
+  html = html.replace(/<!--PROPS:VENTA:START-->[\s\S]*<!--PROPS:VENTA:END-->/, `<!--PROPS:VENTA:START-->\n<div class="prop-grid">${venta.join('')}</div>\n<!--PROPS:VENTA:END-->`);
+  html = html.replace(/<!--PROPS:ALQUILER:START-->[\s\S]*<!--PROPS:ALQUILER:END-->/, `<!--PROPS:ALQUILER:START-->\n<div class="prop-grid">${alquiler.join('')}</div>\n<!--PROPS:ALQUILER:END-->`);
   
   fs.writeFileSync(indexPath, html);
   console.log('Generación completada.');
