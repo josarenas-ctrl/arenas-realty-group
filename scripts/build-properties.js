@@ -150,6 +150,7 @@ ${fotoOG ? `<meta property="og:image" content="${esc(fotoOG)}">` : ''}
     <div class="v">${esc(d.asesor || 'Arenas Realty Group')}</div>
     <a class="btn-wa" href="https://wa.me/${wa}?text=${msg}" target="_blank" rel="noopener">Escribir por WhatsApp</a>
     <button class="btn-share" onclick="compartirPropiedad()">🔗 Compartir esta propiedad</button>
+    <a class="btn-ghost" style="display:block;text-align:center;margin-top:10px;" href="/propiedades/${slug}-compartir.html" target="_blank" rel="noopener">Versión sin marca (para otros asesores)</a>
   </div>
   <script>
     function compartirPropiedad(){
