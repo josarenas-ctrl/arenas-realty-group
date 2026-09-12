@@ -33,7 +33,12 @@ collections:
         options: ["Casa", "Apartamento", "Local", "Terreno"]
       - { label: "Precio", name: "precio", widget: "string" }
       - { label: "Ubicación", name: "ubicacion", widget: "string" }
-      - { label: "Link de Google Maps", name: "mapa_url", widget: "string", required: false, hint: "Abre Google Maps, busca la propiedad, dale 'Compartir' y pega el link aquí." }
+      - { label: "Link de Google Maps (opcional si usas el mapa de abajo)", name: "mapa_url", widget: "string", required: false, hint: "Puedes pegar aquí el link de Google Maps, o usar el mapa interactivo de abajo para marcar la ubicación." }
+      - label: "Ubicación en el mapa"
+        name: "ubicacion_mapa"
+        widget: "map"
+        required: false
+        hint: "Busca la dirección o haz clic en el mapa para marcar la ubicación exacta de la propiedad."
       - { label: "Área de terreno (m2)", name: "area_terreno", widget: "string", required: false }
       - { label: "Área de construcción (m2)", name: "area_construccion", widget: "string", required: false }
       - { label: "Habitaciones", name: "habitaciones", widget: "string", required: false }
