@@ -3,7 +3,7 @@
   "operacion": "Venta",
   "tipo": "Casa",
   "precio": "Contactame",
-  "ubicacion": "Club de Campo, San Antonio de los Altos",
+  "ubicacion": "Club de Campo, San Antonio de los Altos.",
   "mapa_url": "https://maps.app.goo.gl/tUS82YrNzLMSTx9K9",
   "ubicacion_mapa": "{\"type\":\"Point\",\"coordinates\":[-426.9973406,10.3874014]}",
   "area_terreno": "1294",
