@@ -5,6 +5,7 @@ on:
     branches: [main, cloudflare-test]
     paths:
       - 'propiedades/*.json'
+      - 'scripts/*.js'
   workflow_dispatch:
 
 permissions:
@@ -19,6 +20,14 @@ jobs:
 
       - name: Generar páginas de propiedades
         run: node scripts/build-properties.js
+
+      - name: Sincronizar catálogo con Crisp (Hugo)
+        env:
+          CRISP_WEBSITE_ID: ${{ secrets.CRISP_WEBSITE_ID }}
+          CRISP_TOKEN_ID: ${{ secrets.CRISP_TOKEN_ID }}
+          CRISP_TOKEN_KEY: ${{ secrets.CRISP_TOKEN_KEY }}
+          CRISP_ARTICLE_ID: ${{ secrets.CRISP_ARTICLE_ID }}
+        run: node scripts/sync-crisp.js
 
       - name: Guardar los cambios generados
         run: |
