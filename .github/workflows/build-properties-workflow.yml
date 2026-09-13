@@ -40,4 +40,4 @@ jobs:
           git add index.html propiedades/*.html sitemap.xml
           git diff --cached --quiet || git commit -m "Actualizar páginas de propiedades automáticamente"
           git pull --rebase origin ${{ github.ref_name }}
-          git push
+          git push 
