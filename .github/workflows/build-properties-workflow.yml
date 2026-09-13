@@ -11,6 +11,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: build-properties-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -35,4 +39,5 @@ jobs:
           git config user.email "arenas-bot@users.noreply.github.com"
           git add index.html propiedades/*.html sitemap.xml
           git diff --cached --quiet || git commit -m "Actualizar páginas de propiedades automáticamente"
+          git pull --rebase origin ${{ github.ref_name }}
           git push
