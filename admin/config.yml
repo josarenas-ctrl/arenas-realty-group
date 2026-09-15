@@ -21,6 +21,8 @@ collections:
     format: "json"
     label_singular: "Propiedad"
     summary: "{{titulo}} — {{operacion}} — {{precio}}"
+    media_folder: "/images/propiedades/{{slug}}"
+    public_folder: "/images/propiedades/{{slug}}"
     fields:
       - { label: "Título de la propiedad", name: "titulo", widget: "string" }
       - label: "Operación"
