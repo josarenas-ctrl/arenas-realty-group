@@ -1,11 +1,10 @@
 {
-  "titulo": "Club de Campo",
+  "titulo": "Terreno Club de Campo",
   "operacion": "Venta",
   "tipo": "Terreno",
   "precio": "35000",
   "ubicacion": "Urbanizacion CLub de Campo",
   "mapa_url": "https://maps.app.goo.gl/AunMaRrp2NH45jji8",
-  "ubicacion_mapa": "",
   "area_terreno": "1184",
   "area_construccion": "",
   "habitaciones": "",
@@ -25,5 +24,6 @@
   "video_url": "",
   "asesor": "Jose Arenas",
   "whatsapp_asesor": "+584149218120",
-  "publicada": true
+  "publicada": true,
+  "ubicacion_mapa": ""
 }
