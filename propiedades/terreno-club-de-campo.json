@@ -1,0 +1,28 @@
+{
+  "titulo": "Terreno Club de Campo",
+  "operacion": "Venta",
+  "tipo": "Terreno",
+  "precio": "35000",
+  "ubicacion": "Urbanización Club De Campo, San Antonio De Los Altos, Miranda, Venezuela, Club de Campo, San Antonio, Miranda",
+  "mapa_url": "https://maps.app.goo.gl/LsgTzbo5GEQZ9jWt7",
+  "area_terreno": "1089",
+  "area_construccion": "",
+  "habitaciones": "",
+  "banos": "",
+  "estacionamientos": "",
+  "descripcion": "Venta de Terreno de 1089 Mts2 con Proyecto de vivienda Bifamiliar, cuenta con levantamiento topográfico, con proyecto de un Town house Bifamiliar, estudió de suelo, todos los papeles al día, Listo para construir. El terreno tiene acceso por dos calles, con acceso a todos los servicios, y se encuentra ubicado en una de las urbanizaciones más exclusivas de Los Altos Mirandinos, cuenta con vigilancia privada. Excelente oportunidad “TIENE UNA VISTA INCREÍBLE”... Se escuchan OFERTAS",
+  "caracteristicas": "Agua \nVialidad \nUrbanización Privada \nVigilancia 24/7",
+  "fotos": [
+    "/images/uploads/1.webp",
+    "/images/uploads/2.webp",
+    "/images/uploads/3.webp",
+    "/images/uploads/4.webp",
+    "/images/uploads/5.webp",
+    "/images/uploads/6.webp",
+    "/images/uploads/7.webp"
+  ],
+  "video_url": "",
+  "asesor": "Jose Arenas",
+  "whatsapp_asesor": "+584149218120",
+  "publicada": true
+}
