@@ -25,9 +25,14 @@ jobs:
         working-directory: ari
         run: npm install
 
-      - name: Correr scraper de Mercado Libre
+      - name: Correr scraper de Bienes Online
+        working-directory: ari
+        run: npm run scrape:bienesonline
+
+      - name: Correr scraper de Mercado Libre (puede quedar vacío por bloqueo)
         working-directory: ari
         run: npm run scrape:mercadolibre
+        continue-on-error: true
 
       - name: Commitear datos nuevos (si hay cambios)
         run: |
