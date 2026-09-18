@@ -1,1 +1,13 @@
-
+{
+  "name": "ari",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Arenas Realty Intelligence — scraper y análisis interno de oportunidades para asesores",
+  "scripts": {
+    "scrape:mercadolibre": "node scripts/scrape-mercadolibre.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.4",
+    "cheerio": "^1.0.0"
+  }
+}
