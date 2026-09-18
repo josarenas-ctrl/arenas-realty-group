@@ -314,6 +314,31 @@ function emptyStateHTML(tipo){
   </div>`;
 }
 
+// Lista de archivos que NUNCA deben borrarse aunque no tengan un .json
+// correspondiente (páginas de prueba, backups intencionales, etc).
+// Agrega aquí el nombre exacto del archivo (con extensión) si necesitas
+// conservar algo que no venga de un .json.
+const PROTEGIDOS = new Set([
+  // 'prueba.html',
+]);
+
+// Borra cualquier .html / -compartir.html en propiedades/ que ya no
+// corresponda a ningún .json vigente y publicado. Esto es lo que evita
+// que queden páginas "fantasma" cuando una propiedad cambia de slug,
+// se despublica o se borra.
+function limpiarHTMLHuerfanos(slugsValidos){
+  const archivosDir = fs.readdirSync(PROP_DIR);
+  archivosDir.forEach(nombre => {
+    if(!nombre.endsWith('.html')) return;
+    if(PROTEGIDOS.has(nombre)) return;
+    const slug = nombre.replace(/-compartir\.html$/, '').replace(/\.html$/, '');
+    if(!slugsValidos.has(slug)){
+      fs.unlinkSync(path.join(PROP_DIR, nombre));
+      console.log('Eliminado HTML huérfano:', nombre);
+    }
+  });
+}
+
 function main(){
   if(!fs.existsSync(PROP_DIR)){
     console.log('No existe la carpeta propiedades, nada que generar.');
@@ -321,10 +346,9 @@ function main(){
   }
 
   const archivos = fs.readdirSync(PROP_DIR).filter(f => f.endsWith('.json'));
-  const venta = [];
-  const alquiler = [];
-  const urlsSitemap = [`${SITE_URL}/`];
 
+  // --- Paso 1: leer y normalizar todos los .json que SÍ deben publicarse ---
+  const publicables = []; // [{ slug, data }]
   archivos.forEach(nombre => {
     const slug = nombre.replace(/\.json$/, '');
     let data;
@@ -348,7 +372,19 @@ function main(){
 
     if(data.publicada === false) return;
 
-    // Generar la página individual
+    publicables.push({ slug, data });
+  });
+
+  // --- Paso 2: borrar cualquier HTML que ya no corresponda a un slug vigente ---
+  const slugsValidos = new Set(publicables.map(p => p.slug));
+  limpiarHTMLHuerfanos(slugsValidos);
+
+  // --- Paso 3: generar las páginas y tarjetas de las propiedades vigentes ---
+  const venta = [];
+  const alquiler = [];
+  const urlsSitemap = [`${SITE_URL}/`];
+
+  publicables.forEach(({ slug, data }) => {
     fs.writeFileSync(path.join(PROP_DIR, `${slug}.html`), paginaHTML(slug, data));
     urlsSitemap.push(`${SITE_URL}/propiedades/${slug}.html`);
 
