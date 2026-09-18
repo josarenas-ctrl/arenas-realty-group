@@ -1,0 +1,16 @@
+{
+  "zona": "san-antonio-de-los-altos",
+  "portal": "bienesonline",
+  "operacion": "venta",
+  "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+san+antonio+de+los+altos+",
+  "scrapeado_en": "2026-09-18T12:07:47.998Z",
+  "total": 0,
+  "anuncios": [],
+  "diagnostico": {
+    "http_status": 200,
+    "titulo_pagina_recibida": "Buscar Propiedades - BienesOnLine.ai",
+    "posible_bloqueo": true,
+    "html_length": 121106,
+    "html_muestra": "<!DOCTYPE html>\n<html lang=\"es\">\n<head>\n    <title>Buscar Propiedades - BienesOnLine.ai</title>\n\n<meta charset=\"utf-8\">\n<meta http-equiv=\"x-ua-compatible\" content=\"ie=edge\"> <!-- † -->\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n<meta name=\"csrf-token\" content=\"HCNMPPIJ3dqti7p5XIPrY3tl9WzsKnulLtLLerBR\">\n<meta name=\"url\" content=\"https://bienesonline.ai\">\n\n<link rel=\"icon\" href=\"/storage/demo/icon-192x192.png\" type=\"image/x-icon\">\n<link rel=\"icon\" href=\"/storage/demo/icon-192x192.png\" type=\"image/png\" media=\"(prefers-color-scheme: dark)\">\n\n    <meta property=\"og:title\" content=\"Buscar Propiedades - BienesOnLine.ai\">\n    <meta property=\"og:url\" content=\"https://bienesonline.ai/es/search-properties\">\n    <meta property=\"og:image\" content=\"https://bienesonline.ai/og_image.png\">\n    <meta property=\"og:type\" content=\"website\">\n    <meta property=\"og:description\" content=\"Encuentra tu propiedad ideal con nuestra búsqueda inteligente potenciada por IA. Miles de propiedades en venta y alquiler.\">\n    <meta property=\"og:site_name\" content=\"BienesOnLine.ai\">\n\n    <meta itemprop=\"name\" content=\"Buscar Propiedades - BienesOnLine.ai\">\n    <meta itemprop=\"description\" content=\"Encuentra tu propiedad ideal con nuestra búsqueda inteligente potenciada por IA. Miles de propiedades en venta y alquiler.\">\n    <meta itemprop=\"image\" content=\"https://bienesonline.ai/og_image.png\">\n\n        \n    \n            <meta property=\"og:locale\" content=\"es_ES\">\n     "
+  }
+}
