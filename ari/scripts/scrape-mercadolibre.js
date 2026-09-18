@@ -9,6 +9,12 @@
 // sitio en vivo al escribir este script. La primera corrida es una prueba:
 // si el resultado sale vacío o incompleto, hay que revisar juntos el HTML
 // real y ajustar los selectores.
+//
+// DIAGNÓSTICO: si "total" sale en 0, revisar el campo "diagnostico" del
+// resultado — trae el <title> de la página recibida y si el HTML contiene
+// palabras típicas de un muro de bloqueo/verificación. Eso dice si el
+// problema es que Mercado Libre bloqueó la petición, o que los selectores
+// no coinciden con la estructura real de la página.
 
 const fs = require("fs");
 const path = require("path");
@@ -17,6 +23,15 @@ const cheerio = require("cheerio");
 
 const CONFIG_PATH = path.join(__dirname, "..", "config", "busquedas.json");
 const DATA_DIR = path.join(__dirname, "..", "data");
+
+const PALABRAS_DE_BLOQUEO = [
+  "captcha",
+  "robot",
+  "verifica que no eres",
+  "acceso denegado",
+  "unusual traffic",
+  "blocked",
+];
 
 async function scrapeBusqueda(busqueda) {
   const { zona, portal, operacion, url } = busqueda;
@@ -28,16 +43,19 @@ async function scrapeBusqueda(busqueda) {
 
   console.log(`Scrapeando ${zona} / ${portal} / ${operacion}...`);
 
-  const { data: html } = await axios.get(url, {
+  const respuesta = await axios.get(url, {
     headers: {
       // User-Agent de navegador real: sin esto, muchos sitios devuelven
       // una página distinta o bloquean la petición.
       "User-Agent":
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+      "Accept-Language": "es-VE,es;q=0.9",
     },
     timeout: 20000,
+    validateStatus: () => true, // no lanzar excepción en 4xx/5xx, queremos verlo
   });
 
+  const html = respuesta.data;
   const $ = cheerio.load(html);
   const anuncios = [];
 
@@ -66,7 +84,16 @@ async function scrapeBusqueda(busqueda) {
     }
   });
 
-  console.log(`  → ${anuncios.length} anuncios encontrados`);
+  console.log(`  → ${anuncios.length} anuncios encontrados (HTTP ${respuesta.status})`);
+
+  const tituloPagina = $("title").text().trim();
+  const htmlMinuscula = html.toLowerCase();
+  const posibleBloqueo = PALABRAS_DE_BLOQUEO.some((palabra) => htmlMinuscula.includes(palabra));
+
+  if (anuncios.length === 0) {
+    console.log(`  ⚠️  0 anuncios. Título de la página recibida: "${tituloPagina}"`);
+    console.log(`  ⚠️  ¿Parece un bloqueo/verificación?: ${posibleBloqueo ? "SÍ" : "no detectado"}`);
+  }
 
   return {
     zona,
@@ -76,6 +103,15 @@ async function scrapeBusqueda(busqueda) {
     scrapeado_en: new Date().toISOString(),
     total: anuncios.length,
     anuncios,
+    diagnostico: {
+      http_status: respuesta.status,
+      titulo_pagina_recibida: tituloPagina,
+      posible_bloqueo: posibleBloqueo,
+      html_length: html.length,
+      // Primeros 1500 caracteres del HTML crudo, para inspección manual
+      // si hace falta ajustar selectores o confirmar un bloqueo.
+      html_muestra: html.slice(0, 1500),
+    },
   };
 }
 
