@@ -1,8 +1,8 @@
 {
-  "titulo": "Venta Y Alquiler Oficinas En El Centro Comercial La Colina San Antonio De Los Altos.",
-  "operacion": "Alquiler",
+  "titulo": "Venta  Oficinas En El Centro Comercial La Colina San Antonio De Los Altos.",
+  "operacion": "Venta",
   "tipo": "Local",
-  "precio": "2000",
+  "precio": "120000",
   "ubicacion": "San Antonio De Los Altos, Las Minas, San Antonio, Miranda",
   "mapa_url": "https://maps.app.goo.gl/WfVQkoYFWUh2tHsW8",
   "area_terreno": "95",
@@ -10,7 +10,7 @@
   "habitaciones": "2",
   "banos": "2",
   "estacionamientos": "20",
-  "descripcion": "Se Ofrece en venta y alquiler oficinas en el Centro Comercial La Colina, con accesibilidad a la panamericana. Clima de Montaña, Buena iluminación, oficinas equipada y cuentan con comodidad inigualable, Bellos Diseños y Estructuras. Oficinas con 10 puestos de Trabajo, Sala de Conferencia, Baños, Cocina y Comedor para el personal. Acceso a internet. y Amplio estacionamiento para visitantes. Con una extraordinaria Ubicación.",
+  "descripcion": "Se Ofrece en venta oficinas en el Centro Comercial La Colina, con accesibilidad a la panamericana. Clima de Montaña, Buena iluminación, oficinas equipada y cuentan con comodidad inigualable, Bellos Diseños y Estructuras. Oficinas con 10 puestos de Trabajo, Sala de Conferencia, Baños, Cocina y Comedor para el personal. Acceso a internet. y Amplio estacionamiento para visitantes. Con una extraordinaria Ubicación.",
   "caracteristicas": "",
   "fotos": [
     "/images/uploads/olc-1.webp",
