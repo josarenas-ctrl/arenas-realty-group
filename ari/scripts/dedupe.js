@@ -26,22 +26,43 @@ function normalizarPrecio(precioTexto) {
   return precioTexto.replace(/[^\d]/g, ""); // deja solo dígitos
 }
 
+// Palabras que aparecen en casi cualquier anuncio de la zona y no ayudan a
+// distinguir una propiedad de otra (adjetivos de venta y nombres de la
+// zona/estado que se repiten en todos los títulos). Sin filtrarlas, dos
+// propiedades distintas con el mismo precio terminaban agrupadas solo por
+// compartir palabras como "bella", "amplia" o "san antonio".
+const PALABRAS_COMUNES = new Set([
+  "casa", "apartamento", "apto", "terreno", "local", "oficina",
+  "amplia", "amplio", "bella", "bello", "bellisima", "bellisimo",
+  "hermosa", "hermoso", "linda", "lindo", "bonita", "bonito",
+  "comoda", "comodo", "extraordinario", "extraordinaria",
+  "excelente", "espectacular", "esplendido", "esplendida",
+  "venta", "alquiler", "en", "de", "la", "el", "los", "las",
+  "una", "uno", "con", "para", "por", "sola", "planta", "urb",
+  "urbanizacion", "residencial", "conjunto", "privada", "privado",
+  "san", "antonio", "altos", "miranda", "venezuela", "vzla",
+]);
+
 function palabrasDe(texto) {
   return new Set(
     texto
       .toLowerCase()
       .normalize("NFD")
       .replace(/[\u0300-\u036f]/g, "") // quita acentos
-      .replace(/[^a-z0-9\s]/g, " ")
+      .replace(/\d[\d-]*/g, " ") // quita números y códigos de referencia (24-24691, etc.)
+      .replace(/[^a-z\s]/g, " ")
       .split(/\s+/)
-      .filter((p) => p.length > 2) // ignora palabras muy cortas (en, de, la...)
+      .filter((p) => p.length > 2 && !PALABRAS_COMUNES.has(p))
   );
 }
 
 function similitudTitulos(a, b) {
   const palabrasA = palabrasDe(a);
   const palabrasB = palabrasDe(b);
-  if (palabrasA.size === 0 || palabrasB.size === 0) return 0;
+  // Si a alguno de los dos títulos casi no le quedan palabras distintivas
+  // después de filtrar lo genérico, no hay suficiente señal para comparar
+  // con confianza — mejor no agruparlos por título.
+  if (palabrasA.size < 2 || palabrasB.size < 2) return 0;
 
   let comunes = 0;
   for (const palabra of palabrasA) {
@@ -185,4 +206,4 @@ function main() {
   console.log(`✓ Guardado en ${rutaSalida}`);
 }
 
-main(); 
+main();
