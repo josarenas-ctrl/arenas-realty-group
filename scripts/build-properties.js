@@ -54,6 +54,148 @@ function videoHTML(url){
   return `<p><a href="${esc(url)}" target="_blank" rel="noopener" class="btn-ghost">▶ Ver video de la propiedad</a></p>`;
 }
 
+// ---------------------------------------------------------------------------
+// VISOR DE FOTOS (LIGHTBOX)
+// Se agrega al final de las dos páginas (con marca y "compartir"). No modifica
+// el carrusel: solo escucha los clics sobre las fotos de .gallery y abre una
+// vista ampliada. Las dos constantes se insertan tal cual en el HTML generado.
+// IMPORTANTE: no usar comillas invertidas ni ${...} dentro de estas dos
+// constantes, porque son plantillas de texto de este mismo archivo.
+// ---------------------------------------------------------------------------
+const LIGHTBOX_CSS = `
+  /* Visor de fotos ampliadas */
+  .gallery-item img{cursor:zoom-in;}
+  .lb{position:fixed;inset:0;z-index:9999;background:rgba(6,20,36,.94);display:none;}
+  .lb.open{display:block;}
+  .lb-stage{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:60px 70px;}
+  .lb-img{max-width:100%;max-height:100%;object-fit:contain;display:block;user-select:none;-webkit-user-drag:none;}
+  .lb-close,.lb-prev,.lb-next{position:absolute;z-index:2;width:44px;height:44px;border:none;border-radius:50%;background:rgba(255,255,255,.14);color:#fff;font-size:28px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;font-family:'Work Sans',sans-serif;}
+  .lb-close:hover,.lb-prev:hover,.lb-next:hover{background:rgba(255,255,255,.28);}
+  .lb-close{top:14px;right:14px;}
+  .lb-prev{left:14px;top:50%;transform:translateY(-50%);}
+  .lb-next{right:14px;top:50%;transform:translateY(-50%);}
+  .lb-count{position:absolute;bottom:16px;left:0;right:0;text-align:center;color:rgba(255,255,255,.85);font-size:.85rem;}
+  @media(max-width:640px){
+    .lb-stage{padding:60px 8px;}
+    .lb-prev,.lb-next{width:38px;height:38px;font-size:24px;}
+  }
+  @media print{.lb{display:none !important;}}`;
+
+const LIGHTBOX_JS = `<script>
+(function(){
+  var gal = document.querySelector('.gallery');
+  if(!gal) return;
+  var box = null, imgEl = null, cnt = null, prevB = null, nextB = null, closeB = null;
+  var fotos = [], idx = 0, lastFocus = null, x0 = null;
+
+  function imagenes(){
+    return Array.prototype.slice.call(gal.querySelectorAll('.gallery-item img'));
+  }
+
+  function crear(){
+    box = document.createElement('div');
+    box.className = 'lb';
+    box.setAttribute('role', 'dialog');
+    box.setAttribute('aria-modal', 'true');
+    box.setAttribute('aria-label', 'Galer\u00eda de fotos');
+    box.innerHTML =
+      '<button type="button" class="lb-close" aria-label="Cerrar">&times;</button>' +
+      '<button type="button" class="lb-prev" aria-label="Foto anterior">&#8249;</button>' +
+      '<div class="lb-stage"><img class="lb-img" alt=""></div>' +
+      '<button type="button" class="lb-next" aria-label="Foto siguiente">&#8250;</button>' +
+      '<div class="lb-count"></div>';
+    document.body.appendChild(box);
+    imgEl = box.querySelector('.lb-img');
+    cnt = box.querySelector('.lb-count');
+    prevB = box.querySelector('.lb-prev');
+    nextB = box.querySelector('.lb-next');
+    closeB = box.querySelector('.lb-close');
+
+    closeB.addEventListener('click', cerrar);
+    prevB.addEventListener('click', function(){ mover(-1); });
+    nextB.addEventListener('click', function(){ mover(1); });
+    box.addEventListener('click', function(e){
+      if(e.target === box || e.target.className === 'lb-stage') cerrar();
+    });
+    box.addEventListener('touchstart', function(e){
+      x0 = e.touches[0].clientX;
+    }, {passive:true});
+    box.addEventListener('touchend', function(e){
+      if(x0 === null) return;
+      var dx = e.changedTouches[0].clientX - x0;
+      x0 = null;
+      if(Math.abs(dx) > 50) mover(dx < 0 ? 1 : -1);
+    }, {passive:true});
+  }
+
+  function mostrar(i){
+    var n = fotos.length;
+    idx = (i + n) % n;
+    imgEl.src = fotos[idx];
+    cnt.textContent = (idx + 1) + ' / ' + n;
+    if(n > 1){
+      new Image().src = fotos[(idx + 1) % n];
+      new Image().src = fotos[(idx - 1 + n) % n];
+    }
+  }
+
+  function mover(delta){
+    if(fotos.length > 1) mostrar(idx + delta);
+  }
+
+  function teclas(e){
+    if(e.key === 'Escape') cerrar();
+    else if(e.key === 'ArrowRight') mover(1);
+    else if(e.key === 'ArrowLeft') mover(-1);
+  }
+
+  function abrir(i){
+    fotos = imagenes().map(function(im){ return im.getAttribute('src'); });
+    if(!fotos.length) return;
+    if(!box) crear();
+    lastFocus = document.activeElement;
+    var varias = fotos.length > 1;
+    prevB.style.display = varias ? '' : 'none';
+    nextB.style.display = varias ? '' : 'none';
+    cnt.style.display = varias ? '' : 'none';
+    box.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    mostrar(i);
+    document.addEventListener('keydown', teclas);
+    closeB.focus();
+  }
+
+  function cerrar(){
+    if(!box) return;
+    box.classList.remove('open');
+    document.body.style.overflow = '';
+    imgEl.removeAttribute('src');
+    document.removeEventListener('keydown', teclas);
+    if(lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+
+  gal.addEventListener('click', function(e){
+    var im = e.target.closest ? e.target.closest('.gallery-item img') : null;
+    if(!im) return;
+    abrir(imagenes().indexOf(im));
+  });
+
+  // Accesible con teclado: Tab hasta la foto y Enter para ampliar.
+  gal.addEventListener('keydown', function(e){
+    if(e.key !== 'Enter') return;
+    var im = e.target;
+    if(im && im.tagName === 'IMG'){
+      e.preventDefault();
+      abrir(imagenes().indexOf(im));
+    }
+  });
+  imagenes().forEach(function(im){
+    im.setAttribute('tabindex', '0');
+    im.setAttribute('aria-label', 'Ampliar foto');
+  });
+})();
+</script>`;
+
 function galeriaHTML(fotos){
   if(!fotos || !fotos.length){
     return '<div class="gallery-empty"></div>';
@@ -151,6 +293,7 @@ ${fotoOG ? `<meta property="og:image" content="${esc(fotoOG)}">` : ''}
   .btn-wa{display:block;text-align:center;background:var(--clay);color:var(--cream);padding:14px;text-decoration:none;font-weight:500;}
   .btn-share{display:block;width:100%;text-align:center;background:transparent;color:var(--clay);border:1px solid var(--clay);padding:12px;margin-top:10px;font-weight:500;font-size:0.92rem;cursor:pointer;font-family:'Work Sans',sans-serif;}
   .btn-share:hover{background:var(--sand);}
+${LIGHTBOX_CSS}
 </style>
 </head>
 <body>
@@ -183,6 +326,7 @@ ${fotoOG ? `<meta property="og:image" content="${esc(fotoOG)}">` : ''}
     }
   </script>
 </div></main>
+${LIGHTBOX_JS}
 </body>
 </html>`;
 }
@@ -260,6 +404,7 @@ ${fotoOG ? `<meta property="og:image" content="${esc(fotoOG)}">` : ''}
     .video-wrap{display:none;}
     body{background:#fff;}
   }
+${LIGHTBOX_CSS}
 </style>
 </head>
 <body>
@@ -275,6 +420,7 @@ ${fotoOG ? `<meta property="og:image" content="${esc(fotoOG)}">` : ''}
   ${caracteristicasHTML(d.caracteristicas)}
   ${videoHTML(d.video_url)}
 </div></main>
+${LIGHTBOX_JS}
 </body>
 </html>`;
 }
@@ -431,4 +577,4 @@ ${urlsSitemap.map(u => `  <url><loc>${u}</loc></url>`).join('\n')}
   console.log(`Generadas ${venta.length} propiedades en venta y ${alquiler.length} en alquiler.`);
 }
 
-main(); 
+main();
