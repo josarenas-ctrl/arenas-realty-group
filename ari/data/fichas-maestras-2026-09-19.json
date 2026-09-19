@@ -1,25 +1,20 @@
 {
-  "generado_en": "2026-09-19T21:59:56.770Z",
+  "generado_en": "2026-09-19T22:02:12.269Z",
   "total_anuncios_originales": 60,
-  "total_fichas_maestras": 47,
+  "total_fichas_maestras": 56,
   "fichas": [
     {
-      "titulo": "Bella y Amplia Casa de una Sola Planta En Venta Colinas de San Antonio, San Antonio de Los Altos",
+      "titulo": "Bella y Amplia Casa en Venta Urb. Club de Campo, San Antonio de los Altos 24-24691",
       "precio_texto": "USD 160.000",
-      "habitaciones": "4",
-      "banos": "4",
-      "metros_cuadrados": "350",
+      "habitaciones": "6",
+      "banos": "7",
+      "metros_cuadrados": "279",
       "tipo": "Casa",
       "ubicacion": "San Antonio de Los Altos, Miranda",
-      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/52687-bella-y-amplia-casa-de-una-sola-planta-en-venta-colinas-de-san-antonio-san-antonio-de-los-altos",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/25130-bella-y-amplia-casa-en-venta-urb-club-de-campo-san-antonio-de-los-altos-24-24691",
       "portal_principal": "bienesonline",
-      "total_publicaciones_encontradas": 3,
+      "total_publicaciones_encontradas": 2,
       "todos_los_anuncios": [
-        {
-          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/52687-bella-y-amplia-casa-de-una-sola-planta-en-venta-colinas-de-san-antonio-san-antonio-de-los-altos",
-          "portal": "bienesonline",
-          "titulo": "Bella y Amplia Casa de una Sola Planta En Venta Colinas de San Antonio, San Antonio de Los Altos"
-        },
         {
           "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/25130-bella-y-amplia-casa-en-venta-urb-club-de-campo-san-antonio-de-los-altos-24-24691",
           "portal": "bienesonline",
@@ -29,78 +24,6 @@
           "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77102-linda-y-acogedora-casa-en-venta-club-de-campo-san-antonio-de-los-altos",
           "portal": "bienesonline",
           "titulo": "Linda y Acogedora Casa en Venta Club de Campo, San Antonio de Los Altos"
-        }
-      ]
-    },
-    {
-      "titulo": "Bello y Amplia Casa en Venta Colinas de San Antonio, San Antonio de los Altos 25-7270",
-      "precio_texto": "USD 240.000",
-      "habitaciones": "8",
-      "banos": "8",
-      "metros_cuadrados": "778",
-      "tipo": "Casa",
-      "ubicacion": "San Antonio de Los Altos, Miranda",
-      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/25128-bello-y-amplia-casa-en-venta-colinas-de-san-antonio-san-antonio-de-los-altos-25-7270",
-      "portal_principal": "bienesonline",
-      "total_publicaciones_encontradas": 2,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/25128-bello-y-amplia-casa-en-venta-colinas-de-san-antonio-san-antonio-de-los-altos-25-7270",
-          "portal": "bienesonline",
-          "titulo": "Bello y Amplia Casa en Venta Colinas de San Antonio, San Antonio de los Altos 25-7270"
-        },
-        {
-          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/52685-bella-y-amplia-casa-en-venta-colina-de-san-antonio-san-antonio-de-los-altos",
-          "portal": "bienesonline",
-          "titulo": "Bella y Amplia Casa en Venta Colina de San Antonio, San Antonio de Los Altos"
-        }
-      ]
-    },
-    {
-      "titulo": "Bella y Amplia Casa Dúplex En Venta El Amarillo, San Antonio de Los Altos",
-      "precio_texto": "USD 130.000",
-      "habitaciones": "4",
-      "banos": "4",
-      "metros_cuadrados": "210",
-      "tipo": "Casa",
-      "ubicacion": "San Antonio de Los Altos, Miranda",
-      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/52686-bella-y-amplia-casa-duplex-en-venta-el-amarillo-san-antonio-de-los-altos",
-      "portal_principal": "bienesonline",
-      "total_publicaciones_encontradas": 2,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77330-bonita-casa-en-venta-el-amarillo-san-antonio-de-los-altos-25-17210",
-          "portal": "bienesonline",
-          "titulo": "Bonita casa en venta El Amarillo San Antonio de los Altos 25-17210"
-        },
-        {
-          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/52686-bella-y-amplia-casa-duplex-en-venta-el-amarillo-san-antonio-de-los-altos",
-          "portal": "bienesonline",
-          "titulo": "Bella y Amplia Casa Dúplex En Venta El Amarillo, San Antonio de Los Altos"
-        }
-      ]
-    },
-    {
-      "titulo": "Espacioso Y Bello Apartamento En Venta San Antonio De Los Altos, Urbanización Las Salias 27-93",
-      "precio_texto": "USD 158.000",
-      "habitaciones": "3",
-      "banos": "4",
-      "metros_cuadrados": "150",
-      "tipo": "Apartamento",
-      "ubicacion": "San Antonio de Los Altos, Miranda",
-      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/117204-espacioso-y-bello-apartamento-en-venta-san-antonio-de-los-altos-urbanizacion-las-salias-27-93",
-      "portal_principal": "bienesonline",
-      "total_publicaciones_encontradas": 2,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/52688-amplio-y-comodo-apartamento-en-venta-san-antonio-de-los-altos",
-          "portal": "bienesonline",
-          "titulo": "Amplio y Cómodo Apartamento en Venta San Antonio de Los Altos."
-        },
-        {
-          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/117204-espacioso-y-bello-apartamento-en-venta-san-antonio-de-los-altos-urbanizacion-las-salias-27-93",
-          "portal": "bienesonline",
-          "titulo": "Espacioso Y Bello Apartamento En Venta San Antonio De Los Altos, Urbanización Las Salias 27-93"
         }
       ]
     },
@@ -153,30 +76,6 @@
       ]
     },
     {
-      "titulo": "Hermosa Casa En Venta La Rosaleda San Antonio De Los Altos 27-3968",
-      "precio_texto": "USD 350.000",
-      "habitaciones": "3",
-      "banos": "2",
-      "metros_cuadrados": "94",
-      "tipo": "Casa",
-      "ubicacion": "San Antonio de Los Altos, Miranda",
-      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/126672-hermosa-casa-en-venta-la-rosaleda-san-antonio-de-los-altos-27-3968",
-      "portal_principal": "bienesonline",
-      "total_publicaciones_encontradas": 2,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/112931-espectacular-casa-en-venta-san-antonio-de-los-altos-bellos-jardines-agradable-clima-de-montana-26-22110",
-          "portal": "bienesonline",
-          "titulo": "Espectacular Casa En Venta San Antonio De Los Altos. Bellos Jardines. Agradable Clima De Montaña 26-..."
-        },
-        {
-          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/126672-hermosa-casa-en-venta-la-rosaleda-san-antonio-de-los-altos-27-3968",
-          "portal": "bienesonline",
-          "titulo": "Hermosa Casa En Venta La Rosaleda San Antonio De Los Altos 27-3968"
-        }
-      ]
-    },
-    {
       "titulo": "Lindo y Cómodo Apartamento en Venta San Antonio de Los Altos, con Áreas Sociales y Deportivas",
       "precio_texto": "USD 85.000",
       "habitaciones": "3",
@@ -201,98 +100,40 @@
       ]
     },
     {
-      "titulo": "Bello Apartamento Remodelado en Venta Las Minas San Antonio de los Altos 25-12928",
-      "precio_texto": "USD 75.000",
-      "habitaciones": "3",
-      "banos": "2",
-      "metros_cuadrados": "103",
-      "tipo": "Apartamento",
-      "ubicacion": "San Antonio de Los Altos, Miranda",
-      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/25119-bello-apartamento-remodelado-en-venta-las-minas-san-antonio-de-los-altos-25-12928",
-      "portal_principal": "bienesonline",
-      "total_publicaciones_encontradas": 2,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/25120-bello-y-amplio-apartamento-en-venta-las-minas-san-antonio-de-los-altos-25-9720",
-          "portal": "bienesonline",
-          "titulo": "Bello y Amplio Apartamento en venta Las Minas, San Antonio de los Altos 25-9720"
-        },
-        {
-          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/25119-bello-apartamento-remodelado-en-venta-las-minas-san-antonio-de-los-altos-25-12928",
-          "portal": "bienesonline",
-          "titulo": "Bello Apartamento Remodelado en Venta Las Minas San Antonio de los Altos 25-12928"
-        }
-      ]
-    },
-    {
-      "titulo": "Amplio y cómodo apartamento en venta Las Salias, San Antonio de los Altos 26-15534",
-      "precio_texto": "USD 160.000",
-      "habitaciones": "3",
-      "banos": "4",
-      "metros_cuadrados": "191",
-      "tipo": "Apartamento",
-      "ubicacion": "San Antonio de Los Altos, Miranda",
-      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77182-amplio-y-comodo-apartamento-en-venta-las-salias-san-antonio-de-los-altos-26-15534",
-      "portal_principal": "bienesonline",
-      "total_publicaciones_encontradas": 2,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77182-amplio-y-comodo-apartamento-en-venta-las-salias-san-antonio-de-los-altos-26-15534",
-          "portal": "bienesonline",
-          "titulo": "Amplio y cómodo apartamento en venta Las Salias, San Antonio de los Altos 26-15534"
-        },
-        {
-          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/52690-amplio-y-acogedor-apartamento-en-venta-las-salias-san-antonio-de-los-altos",
-          "portal": "bienesonline",
-          "titulo": "Amplio y Acogedor Apartamento en Venta Las Salias. San Antonio de Los Altos"
-        }
-      ]
-    },
-    {
-      "titulo": "Bella casa en venta La Suiza San Antonio de los Altos 23-3013",
-      "precio_texto": "USD 135.000",
-      "habitaciones": "4",
-      "banos": "4",
-      "metros_cuadrados": "1,578",
+      "titulo": "Bello y Amplia Casa en Venta Colinas de San Antonio, San Antonio de los Altos 25-7270",
+      "precio_texto": "USD 240.000",
+      "habitaciones": "8",
+      "banos": "8",
+      "metros_cuadrados": "778",
       "tipo": "Casa",
       "ubicacion": "San Antonio de Los Altos, Miranda",
-      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77329-bella-casa-en-venta-la-suiza-san-antonio-de-los-altos-23-3013",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/25128-bello-y-amplia-casa-en-venta-colinas-de-san-antonio-san-antonio-de-los-altos-25-7270",
       "portal_principal": "bienesonline",
-      "total_publicaciones_encontradas": 2,
+      "total_publicaciones_encontradas": 1,
       "todos_los_anuncios": [
         {
-          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77329-bella-casa-en-venta-la-suiza-san-antonio-de-los-altos-23-3013",
+          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/25128-bello-y-amplia-casa-en-venta-colinas-de-san-antonio-san-antonio-de-los-altos-25-7270",
           "portal": "bienesonline",
-          "titulo": "Bella casa en venta La Suiza San Antonio de los Altos 23-3013"
-        },
-        {
-          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77467-linda-casa-en-venta-la-suiza-san-antonio-de-los-altos-23-3013",
-          "portal": "bienesonline",
-          "titulo": "Linda casa en venta La Suiza San Antonio de los Altos 23-3013"
+          "titulo": "Bello y Amplia Casa en Venta Colinas de San Antonio, San Antonio de los Altos 25-7270"
         }
       ]
     },
     {
-      "titulo": "Gran Local Comercial En Venta San Antonio de Los Altos (recta las Minas) 23-24836",
-      "precio_texto": "USD 410.000",
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": null,
-      "tipo": "",
+      "titulo": "Bella y Amplia Casa en Venta Colina de San Antonio, San Antonio de Los Altos",
+      "precio_texto": "USD 240.000",
+      "habitaciones": "8",
+      "banos": "8",
+      "metros_cuadrados": "778",
+      "tipo": "Apartamento",
       "ubicacion": "San Antonio de Los Altos, Miranda",
-      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/25094-gran-local-comercial-en-venta-san-antonio-de-los-altos-recta-las-minas-23-24836",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/52685-bella-y-amplia-casa-en-venta-colina-de-san-antonio-san-antonio-de-los-altos",
       "portal_principal": "bienesonline",
-      "total_publicaciones_encontradas": 2,
+      "total_publicaciones_encontradas": 1,
       "todos_los_anuncios": [
         {
-          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77548-local-comercial-en-venta-san-antonio-de-los-altos-23-24836",
+          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/52685-bella-y-amplia-casa-en-venta-colina-de-san-antonio-san-antonio-de-los-altos",
           "portal": "bienesonline",
-          "titulo": "Local comercial en venta San Antonio de los Altos 23-24836"
-        },
-        {
-          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/25094-gran-local-comercial-en-venta-san-antonio-de-los-altos-recta-las-minas-23-24836",
-          "portal": "bienesonline",
-          "titulo": "Gran Local Comercial En Venta San Antonio de Los Altos (recta las Minas) 23-24836"
+          "titulo": "Bella y Amplia Casa en Venta Colina de San Antonio, San Antonio de Los Altos"
         }
       ]
     },
@@ -312,6 +153,25 @@
           "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/25125-bella-y-amplia-casa-en-venta-san-antonio-de-los-altos-23-21228",
           "portal": "bienesonline",
           "titulo": "Bella y Amplia casa en Venta San Antonio de los Altos 23-21228"
+        }
+      ]
+    },
+    {
+      "titulo": "Bella y Amplia Casa de una Sola Planta En Venta Colinas de San Antonio, San Antonio de Los Altos",
+      "precio_texto": "USD 160.000",
+      "habitaciones": "4",
+      "banos": "4",
+      "metros_cuadrados": "350",
+      "tipo": "Casa",
+      "ubicacion": "San Antonio de Los Altos, Miranda",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/52687-bella-y-amplia-casa-de-una-sola-planta-en-venta-colinas-de-san-antonio-san-antonio-de-los-altos",
+      "portal_principal": "bienesonline",
+      "total_publicaciones_encontradas": 1,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/52687-bella-y-amplia-casa-de-una-sola-planta-en-venta-colinas-de-san-antonio-san-antonio-de-los-altos",
+          "portal": "bienesonline",
+          "titulo": "Bella y Amplia Casa de una Sola Planta En Venta Colinas de San Antonio, San Antonio de Los Altos"
         }
       ]
     },
@@ -392,6 +252,25 @@
       ]
     },
     {
+      "titulo": "Bonita casa en venta El Amarillo San Antonio de los Altos 25-17210",
+      "precio_texto": "USD 130.000",
+      "habitaciones": "4",
+      "banos": "4",
+      "metros_cuadrados": "210",
+      "tipo": "Casa",
+      "ubicacion": "San Antonio de Los Altos, Miranda",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77330-bonita-casa-en-venta-el-amarillo-san-antonio-de-los-altos-25-17210",
+      "portal_principal": "bienesonline",
+      "total_publicaciones_encontradas": 1,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77330-bonita-casa-en-venta-el-amarillo-san-antonio-de-los-altos-25-17210",
+          "portal": "bienesonline",
+          "titulo": "Bonita casa en venta El Amarillo San Antonio de los Altos 25-17210"
+        }
+      ]
+    },
+    {
       "titulo": "Amplia Casa en Venta Urb. Picott, San Antonio de Los Altos, 25-12461",
       "precio_texto": "USD 165.000",
       "habitaciones": "5",
@@ -407,6 +286,25 @@
           "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/25126-amplia-casa-en-venta-urb-picott-san-antonio-de-los-altos-25-12461",
           "portal": "bienesonline",
           "titulo": "Amplia Casa en Venta Urb. Picott, San Antonio de Los Altos, 25-12461"
+        }
+      ]
+    },
+    {
+      "titulo": "Amplio y Cómodo Apartamento en Venta San Antonio de Los Altos.",
+      "precio_texto": "USD 158.000",
+      "habitaciones": "3",
+      "banos": "4",
+      "metros_cuadrados": "150",
+      "tipo": "Apartamento",
+      "ubicacion": "San Antonio de Los Altos, Miranda",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/52688-amplio-y-comodo-apartamento-en-venta-san-antonio-de-los-altos",
+      "portal_principal": "bienesonline",
+      "total_publicaciones_encontradas": 1,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/52688-amplio-y-comodo-apartamento-en-venta-san-antonio-de-los-altos",
+          "portal": "bienesonline",
+          "titulo": "Amplio y Cómodo Apartamento en Venta San Antonio de Los Altos."
         }
       ]
     },
@@ -449,6 +347,25 @@
       ]
     },
     {
+      "titulo": "Bella y Amplia Casa Dúplex En Venta El Amarillo, San Antonio de Los Altos",
+      "precio_texto": "USD 130.000",
+      "habitaciones": "4",
+      "banos": "4",
+      "metros_cuadrados": "210",
+      "tipo": "Casa",
+      "ubicacion": "San Antonio de Los Altos, Miranda",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/52686-bella-y-amplia-casa-duplex-en-venta-el-amarillo-san-antonio-de-los-altos",
+      "portal_principal": "bienesonline",
+      "total_publicaciones_encontradas": 1,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/52686-bella-y-amplia-casa-duplex-en-venta-el-amarillo-san-antonio-de-los-altos",
+          "portal": "bienesonline",
+          "titulo": "Bella y Amplia Casa Dúplex En Venta El Amarillo, San Antonio de Los Altos"
+        }
+      ]
+    },
+    {
       "titulo": "Bellísima Casa en Venta, San Antonio de Los Altos. Amplio Jardín Calle Cerrada",
       "precio_texto": "USD 75.000",
       "habitaciones": "4",
@@ -483,6 +400,25 @@
           "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/52672-bello-y-comodo-apartamento-en-venta-san-antonio-de-los-altos-conjunto-residencial-con-estricta-vigilancia-privada",
           "portal": "bienesonline",
           "titulo": "Bello y Cómodo Apartamento En Venta San Antonio de Los Altos, Conjunto Residencial con Estricta Vigi..."
+        }
+      ]
+    },
+    {
+      "titulo": "Espectacular Casa En Venta San Antonio De Los Altos. Bellos Jardines. Agradable Clima De Montaña 26-...",
+      "precio_texto": "USD 350.000",
+      "habitaciones": null,
+      "banos": null,
+      "metros_cuadrados": null,
+      "tipo": "Casa",
+      "ubicacion": "San Antonio de Los Altos, Miranda",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/112931-espectacular-casa-en-venta-san-antonio-de-los-altos-bellos-jardines-agradable-clima-de-montana-26-22110",
+      "portal_principal": "bienesonline",
+      "total_publicaciones_encontradas": 1,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/112931-espectacular-casa-en-venta-san-antonio-de-los-altos-bellos-jardines-agradable-clima-de-montana-26-22110",
+          "portal": "bienesonline",
+          "titulo": "Espectacular Casa En Venta San Antonio De Los Altos. Bellos Jardines. Agradable Clima De Montaña 26-..."
         }
       ]
     },
@@ -639,6 +575,44 @@
       ]
     },
     {
+      "titulo": "Bello y Amplio Apartamento en venta Las Minas, San Antonio de los Altos 25-9720",
+      "precio_texto": "USD 75.000",
+      "habitaciones": "3",
+      "banos": "3",
+      "metros_cuadrados": "125",
+      "tipo": "Apartamento",
+      "ubicacion": "San Antonio de Los Altos, Miranda",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/25120-bello-y-amplio-apartamento-en-venta-las-minas-san-antonio-de-los-altos-25-9720",
+      "portal_principal": "bienesonline",
+      "total_publicaciones_encontradas": 1,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/25120-bello-y-amplio-apartamento-en-venta-las-minas-san-antonio-de-los-altos-25-9720",
+          "portal": "bienesonline",
+          "titulo": "Bello y Amplio Apartamento en venta Las Minas, San Antonio de los Altos 25-9720"
+        }
+      ]
+    },
+    {
+      "titulo": "Hermosa Casa En Venta La Rosaleda San Antonio De Los Altos 27-3968",
+      "precio_texto": "USD 350.000",
+      "habitaciones": "3",
+      "banos": "2",
+      "metros_cuadrados": "94",
+      "tipo": "Casa",
+      "ubicacion": "San Antonio de Los Altos, Miranda",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/126672-hermosa-casa-en-venta-la-rosaleda-san-antonio-de-los-altos-27-3968",
+      "portal_principal": "bienesonline",
+      "total_publicaciones_encontradas": 1,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/126672-hermosa-casa-en-venta-la-rosaleda-san-antonio-de-los-altos-27-3968",
+          "portal": "bienesonline",
+          "titulo": "Hermosa Casa En Venta La Rosaleda San Antonio De Los Altos 27-3968"
+        }
+      ]
+    },
+    {
       "titulo": "Bella y Amplia Casa En Venta Club de Campo, San Antonio de los Altos",
       "precio_texto": "USD 550.000",
       "habitaciones": "4",
@@ -654,6 +628,25 @@
           "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77106-bella-y-amplia-casa-en-venta-club-de-campo-san-antonio-de-los-altos",
           "portal": "bienesonline",
           "titulo": "Bella y Amplia Casa En Venta Club de Campo, San Antonio de los Altos"
+        }
+      ]
+    },
+    {
+      "titulo": "Amplio y cómodo apartamento en venta Las Salias, San Antonio de los Altos 26-15534",
+      "precio_texto": "USD 160.000",
+      "habitaciones": "3",
+      "banos": "4",
+      "metros_cuadrados": "191",
+      "tipo": "Apartamento",
+      "ubicacion": "San Antonio de Los Altos, Miranda",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77182-amplio-y-comodo-apartamento-en-venta-las-salias-san-antonio-de-los-altos-26-15534",
+      "portal_principal": "bienesonline",
+      "total_publicaciones_encontradas": 1,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77182-amplio-y-comodo-apartamento-en-venta-las-salias-san-antonio-de-los-altos-26-15534",
+          "portal": "bienesonline",
+          "titulo": "Amplio y cómodo apartamento en venta Las Salias, San Antonio de los Altos 26-15534"
         }
       ]
     },
@@ -734,6 +727,25 @@
       ]
     },
     {
+      "titulo": "Espacioso Y Bello Apartamento En Venta San Antonio De Los Altos, Urbanización Las Salias 27-93",
+      "precio_texto": "USD 158.000",
+      "habitaciones": "3",
+      "banos": "4",
+      "metros_cuadrados": "150",
+      "tipo": "Apartamento",
+      "ubicacion": "San Antonio de Los Altos, Miranda",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/117204-espacioso-y-bello-apartamento-en-venta-san-antonio-de-los-altos-urbanizacion-las-salias-27-93",
+      "portal_principal": "bienesonline",
+      "total_publicaciones_encontradas": 1,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/117204-espacioso-y-bello-apartamento-en-venta-san-antonio-de-los-altos-urbanizacion-las-salias-27-93",
+          "portal": "bienesonline",
+          "titulo": "Espacioso Y Bello Apartamento En Venta San Antonio De Los Altos, Urbanización Las Salias 27-93"
+        }
+      ]
+    },
+    {
       "titulo": "Excelente y Amplio Apartamento en Venta Rosalito, San Antonio de los Altos",
       "precio_texto": "USD 50.000",
       "habitaciones": "3",
@@ -772,6 +784,44 @@
       ]
     },
     {
+      "titulo": "Bella casa en venta La Suiza San Antonio de los Altos 23-3013",
+      "precio_texto": "USD 135.000",
+      "habitaciones": "4",
+      "banos": "4",
+      "metros_cuadrados": "1,578",
+      "tipo": "Casa",
+      "ubicacion": "San Antonio de Los Altos, Miranda",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77329-bella-casa-en-venta-la-suiza-san-antonio-de-los-altos-23-3013",
+      "portal_principal": "bienesonline",
+      "total_publicaciones_encontradas": 1,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77329-bella-casa-en-venta-la-suiza-san-antonio-de-los-altos-23-3013",
+          "portal": "bienesonline",
+          "titulo": "Bella casa en venta La Suiza San Antonio de los Altos 23-3013"
+        }
+      ]
+    },
+    {
+      "titulo": "Amplio y Acogedor Apartamento en Venta Las Salias. San Antonio de Los Altos",
+      "precio_texto": "USD 160.000",
+      "habitaciones": "3",
+      "banos": "4",
+      "metros_cuadrados": "191",
+      "tipo": "Apartamento",
+      "ubicacion": "San Antonio de Los Altos, Miranda",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/52690-amplio-y-acogedor-apartamento-en-venta-las-salias-san-antonio-de-los-altos",
+      "portal_principal": "bienesonline",
+      "total_publicaciones_encontradas": 1,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/52690-amplio-y-acogedor-apartamento-en-venta-las-salias-san-antonio-de-los-altos",
+          "portal": "bienesonline",
+          "titulo": "Amplio y Acogedor Apartamento en Venta Las Salias. San Antonio de Los Altos"
+        }
+      ]
+    },
+    {
       "titulo": "Bella y Cómoda Casa en Venta La Peña, San Antonio de Los Altos",
       "precio_texto": "USD 225.000",
       "habitaciones": "5",
@@ -791,6 +841,25 @@
       ]
     },
     {
+      "titulo": "Bello Apartamento Remodelado en Venta Las Minas San Antonio de los Altos 25-12928",
+      "precio_texto": "USD 75.000",
+      "habitaciones": "3",
+      "banos": "2",
+      "metros_cuadrados": "103",
+      "tipo": "Apartamento",
+      "ubicacion": "San Antonio de Los Altos, Miranda",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/25119-bello-apartamento-remodelado-en-venta-las-minas-san-antonio-de-los-altos-25-12928",
+      "portal_principal": "bienesonline",
+      "total_publicaciones_encontradas": 1,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/25119-bello-apartamento-remodelado-en-venta-las-minas-san-antonio-de-los-altos-25-12928",
+          "portal": "bienesonline",
+          "titulo": "Bello Apartamento Remodelado en Venta Las Minas San Antonio de los Altos 25-12928"
+        }
+      ]
+    },
+    {
       "titulo": "Bello y Cómodo Apartamento PH en venta San Antonio de Los Altos 24-4454",
       "precio_texto": "USD 60.000",
       "habitaciones": "3",
@@ -806,6 +875,25 @@
           "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/25133-bello-y-comodo-apartamento-ph-en-venta-san-antonio-de-los-altos-24-4454",
           "portal": "bienesonline",
           "titulo": "Bello y Cómodo Apartamento PH en venta San Antonio de Los Altos 24-4454"
+        }
+      ]
+    },
+    {
+      "titulo": "Linda casa en venta La Suiza San Antonio de los Altos 23-3013",
+      "precio_texto": "USD 135.000",
+      "habitaciones": "4",
+      "banos": "4",
+      "metros_cuadrados": "1,578",
+      "tipo": "Casa",
+      "ubicacion": "San Antonio de Los Altos, Miranda",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77467-linda-casa-en-venta-la-suiza-san-antonio-de-los-altos-23-3013",
+      "portal_principal": "bienesonline",
+      "total_publicaciones_encontradas": 1,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77467-linda-casa-en-venta-la-suiza-san-antonio-de-los-altos-23-3013",
+          "portal": "bienesonline",
+          "titulo": "Linda casa en venta La Suiza San Antonio de los Altos 23-3013"
         }
       ]
     },
@@ -844,6 +932,25 @@
           "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77104-linda-y-comoda-casa-en-venta-club-de-campo-san-antonio-de-los-altos",
           "portal": "bienesonline",
           "titulo": "Linda y Cómoda Casa en Venta Club de Campo, San Antonio de los Altos"
+        }
+      ]
+    },
+    {
+      "titulo": "Local comercial en venta San Antonio de los Altos 23-24836",
+      "precio_texto": "USD 410.000",
+      "habitaciones": null,
+      "banos": null,
+      "metros_cuadrados": null,
+      "tipo": "Local",
+      "ubicacion": "San Antonio de Los Altos, Miranda",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77548-local-comercial-en-venta-san-antonio-de-los-altos-23-24836",
+      "portal_principal": "bienesonline",
+      "total_publicaciones_encontradas": 1,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77548-local-comercial-en-venta-san-antonio-de-los-altos-23-24836",
+          "portal": "bienesonline",
+          "titulo": "Local comercial en venta San Antonio de los Altos 23-24836"
         }
       ]
     },
@@ -920,6 +1027,25 @@
           "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/126714-vendo-apartamento-remodelado-san-antonio-de-los-altos-3-hab-piso-alto",
           "portal": "bienesonline",
           "titulo": "Vendo apartamento remodelado San Antonio de los altos 3 hab piso alto"
+        }
+      ]
+    },
+    {
+      "titulo": "Gran Local Comercial En Venta San Antonio de Los Altos (recta las Minas) 23-24836",
+      "precio_texto": "USD 410.000",
+      "habitaciones": null,
+      "banos": null,
+      "metros_cuadrados": null,
+      "tipo": "",
+      "ubicacion": "San Antonio de Los Altos, Miranda",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/25094-gran-local-comercial-en-venta-san-antonio-de-los-altos-recta-las-minas-23-24836",
+      "portal_principal": "bienesonline",
+      "total_publicaciones_encontradas": 1,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/25094-gran-local-comercial-en-venta-san-antonio-de-los-altos-recta-las-minas-23-24836",
+          "portal": "bienesonline",
+          "titulo": "Gran Local Comercial En Venta San Antonio de Los Altos (recta las Minas) 23-24836"
         }
       ]
     },
