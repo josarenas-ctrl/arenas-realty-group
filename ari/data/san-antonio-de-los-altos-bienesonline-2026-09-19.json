@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "venta",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+san+antonio+de+los+altos+",
-  "scrapeado_en": "2026-09-19T21:38:40.429Z",
+  "scrapeado_en": "2026-09-19T21:47:05.527Z",
   "total": 60,
   "anuncios": [
     {
@@ -15,7 +15,7 @@
       "metros_cuadrados": "778",
       "tipo": "Casa",
       "operacion_detectada": "Venta",
-      "ubicacion": "Bello y Amplia Casa en Venta Colinas de San Antonio, San"
+      "ubicacion": "San Antonio de Los Altos, Miranda"
     },
     {
       "titulo": "Bella y Amplia Casa en Venta Colina de San Antonio, San Antonio de Los Altos",
@@ -26,7 +26,7 @@
       "metros_cuadrados": "778",
       "tipo": "Apartamento",
       "operacion_detectada": "Venta",
-      "ubicacion": "Bella y Amplia Casa en Venta Colina de San Antonio, San"
+      "ubicacion": "San Antonio de Los Altos, Miranda"
     },
     {
       "titulo": "Bella y Amplia casa en Venta San Antonio de los Altos 23-21228",
@@ -48,7 +48,7 @@
       "metros_cuadrados": "350",
       "tipo": "Casa",
       "operacion_detectada": "Venta",
-      "ubicacion": "Bella y Amplia Casa de una Sola Planta En Venta Colinas de San Antonio, San"
+      "ubicacion": "San Antonio de Los Altos, Miranda"
     },
     {
       "titulo": "Apartamento en Venta San Antonio G. 04143054662 / 04143247646",
@@ -70,7 +70,7 @@
       "metros_cuadrados": "214",
       "tipo": "Casa",
       "operacion_detectada": "Venta",
-      "ubicacion": "Hermosa casa Colonia de una Sola Planta en Venta Altos de la Peña, San"
+      "ubicacion": "San Antonio de Los Altos, Miranda"
     },
     {
       "titulo": "Esplendido terreno  en venta San Antonio de los Altos 23-16128",
@@ -114,7 +114,7 @@
       "metros_cuadrados": "820",
       "tipo": "Casa",
       "operacion_detectada": "Venta",
-      "ubicacion": "Amplia Casa en Venta Urb. Picott, San"
+      "ubicacion": "San Antonio de Los Altos, Miranda"
     },
     {
       "titulo": "Amplio y Cómodo Apartamento en Venta San Antonio de Los Altos.",
@@ -136,7 +136,7 @@
       "metros_cuadrados": "279",
       "tipo": "Casa",
       "operacion_detectada": "Venta",
-      "ubicacion": "Bella y Amplia Casa en Venta Urb. Club de Campo, San"
+      "ubicacion": "San Antonio de Los Altos, Miranda"
     },
     {
       "titulo": "Amplio Apartamento en Venta Las Minas, San Antonio de Los Altos. Urb. Privada 24-14837",
@@ -147,7 +147,7 @@
       "metros_cuadrados": "105",
       "tipo": "Apartamento",
       "operacion_detectada": "Venta",
-      "ubicacion": "Amplio Apartamento en Venta Las Minas, San"
+      "ubicacion": "San Antonio de Los Altos, Miranda"
     },
     {
       "titulo": "Hermosa Casa en Venta Colinas de San  Antonio, San Antonio de Los Altos 24-28238",
@@ -158,7 +158,7 @@
       "metros_cuadrados": "365",
       "tipo": "Casa",
       "operacion_detectada": "Venta",
-      "ubicacion": "Hermosa Casa en Venta Colinas de San  Antonio, San"
+      "ubicacion": "San Antonio de Los Altos, Miranda"
     },
     {
       "titulo": "Bella y Amplia Casa Dúplex En Venta El Amarillo, San Antonio de Los Altos",
@@ -169,7 +169,7 @@
       "metros_cuadrados": "210",
       "tipo": "Casa",
       "operacion_detectada": "Venta",
-      "ubicacion": "Bella y Amplia Casa Dúplex En Venta El Amarillo, San"
+      "ubicacion": "San Antonio de Los Altos, Miranda"
     },
     {
       "titulo": "Extraordinario Terreno en Venta en Urb. Privada Club De Campo, San Antonio de los Altos",
@@ -180,7 +180,7 @@
       "metros_cuadrados": null,
       "tipo": "Terreno",
       "operacion_detectada": "Venta",
-      "ubicacion": "Extraordinario Terreno en Venta en Urb. Privada Club De Campo, San"
+      "ubicacion": "San Antonio de Los Altos, Miranda"
     },
     {
       "titulo": "Bellísima Casa en Venta, San Antonio de Los Altos. Amplio Jardín Calle Cerrada",
@@ -191,7 +191,7 @@
       "metros_cuadrados": "206",
       "tipo": "Casa",
       "operacion_detectada": "Venta",
-      "ubicacion": "Bellísima Casa en Venta, San"
+      "ubicacion": "San Antonio de Los Altos, Miranda"
     },
     {
       "titulo": "APARTAMENTO EN VENTA , SAN ANTONIO DE LOS ALTOS PARQUE EL RETIRO , JUAN PAZ 26-19850",
@@ -202,7 +202,7 @@
       "metros_cuadrados": "94",
       "tipo": "Apartamento",
       "operacion_detectada": "Venta",
-      "ubicacion": "APARTAMENTO EN VENTA , SAN"
+      "ubicacion": "San Antonio de Los Altos, Miranda"
     },
     {
       "titulo": "Bello y Cómodo Apartamento En Venta San Antonio de Los Altos, Conjunto Residencial con Estricta Vigi...",
@@ -213,7 +213,7 @@
       "metros_cuadrados": "149",
       "tipo": "Apartamento",
       "operacion_detectada": "Venta",
-      "ubicacion": "Bello y Cómodo Apartamento En Venta San Antonio de Los Altos, Conjunto"
+      "ubicacion": "San Antonio de Los Altos, Miranda"
     },
     {
       "titulo": "Excelente Terreno Residencial en Venta Urb. Club de Campo San Antonio de los Altos",
@@ -246,7 +246,7 @@
       "metros_cuadrados": "94",
       "tipo": "Apartamento",
       "operacion_detectada": "Venta",
-      "ubicacion": "Bello y Acogedor Apartamento en Venta Parque El Retiro, San"
+      "ubicacion": "San Antonio de Los Altos, Miranda"
     },
     {
       "titulo": "Hermosa casa en venta El Amarillo San Antonio de los Altos 26-5995",
@@ -290,7 +290,7 @@
       "metros_cuadrados": "111",
       "tipo": "Casa",
       "operacion_detectada": "Venta",
-      "ubicacion": "Cómoda Casa Dúplex con Terraza en Venta Club De Campo, San"
+      "ubicacion": "San Antonio de Los Altos, Miranda"
     },
     {
       "titulo": "Hermosa casa en venta Club De Campo San Antonio De Los Altos",
@@ -356,7 +356,7 @@
       "metros_cuadrados": "125",
       "tipo": "Apartamento",
       "operacion_detectada": "Venta",
-      "ubicacion": "Bello y Amplio Apartamento en venta Las Minas, San"
+      "ubicacion": "San Antonio de Los Altos, Miranda"
     },
     {
       "titulo": "Hermosa Casa En Venta La Rosaleda San Antonio De Los Altos 27-3968",
@@ -378,7 +378,7 @@
       "metros_cuadrados": "280",
       "tipo": "Casa",
       "operacion_detectada": "Venta",
-      "ubicacion": "Bella y Amplia Casa En Venta Club de Campo, San"
+      "ubicacion": "San Antonio de Los Altos, Miranda"
     },
     {
       "titulo": "Amplio y cómodo apartamento en venta Las Salias, San Antonio de los Altos 26-15534",
@@ -389,7 +389,7 @@
       "metros_cuadrados": "191",
       "tipo": "Apartamento",
       "operacion_detectada": "Venta",
-      "ubicacion": "Amplio y cómodo apartamento en venta Las Salias, San"
+      "ubicacion": "San Antonio de Los Altos, Miranda"
     },
     {
       "titulo": "Amplio Apartamento en Venta San Antonio de los Altos, Con Amplias Áreas Sociales y Deportista",
@@ -400,7 +400,7 @@
       "metros_cuadrados": "99",
       "tipo": "Apartamento",
       "operacion_detectada": "Venta",
-      "ubicacion": "Amplio Apartamento en Venta San Antonio de los Altos, Con"
+      "ubicacion": "San Antonio de Los Altos, Miranda"
     },
     {
       "titulo": "Hermosa casa en venta El Amarillo San Antonio de los Altos 26-5995",
@@ -455,7 +455,7 @@
       "metros_cuadrados": "150",
       "tipo": "Apartamento",
       "operacion_detectada": "Venta",
-      "ubicacion": "Espacioso Y Bello Apartamento En Venta San Antonio De Los Altos, Urbanización"
+      "ubicacion": "San Antonio de Los Altos, Miranda"
     },
     {
       "titulo": "Excelente y Amplio Apartamento en Venta Rosalito, San Antonio de los Altos",
@@ -466,7 +466,7 @@
       "metros_cuadrados": "283",
       "tipo": "Apartamento",
       "operacion_detectada": "Venta",
-      "ubicacion": "Excelente y Amplio Apartamento en Venta Rosalito, San"
+      "ubicacion": "San Antonio de Los Altos, Miranda"
     },
     {
       "titulo": "Impecable galpón en venta San Antonio de los Altos 23-27215",
@@ -488,7 +488,7 @@
       "metros_cuadrados": "250",
       "tipo": "Casa",
       "operacion_detectada": "Venta",
-      "ubicacion": "Linda y Acogedora Casa en Venta Club de Campo, San"
+      "ubicacion": "San Antonio de Los Altos, Miranda"
     },
     {
       "titulo": "Bella casa en venta La Suiza San Antonio de los Altos 23-3013",
@@ -521,7 +521,7 @@
       "metros_cuadrados": "377",
       "tipo": "Casa",
       "operacion_detectada": "Venta",
-      "ubicacion": "Bella y Cómoda Casa en Venta La Peña, San"
+      "ubicacion": "San Antonio de Los Altos, Miranda"
     },
     {
       "titulo": "Bello Apartamento Remodelado en Venta Las Minas San Antonio de los Altos 25-12928",
@@ -565,7 +565,7 @@
       "metros_cuadrados": "321",
       "tipo": "Apartamento",
       "operacion_detectada": "Venta",
-      "ubicacion": "Amplio Apartamento con Terraza, EN"
+      "ubicacion": "San Antonio de Los Altos, Miranda"
     },
     {
       "titulo": "Linda y Cómoda Casa en Venta Club de Campo, San Antonio de los Altos",
@@ -576,7 +576,7 @@
       "metros_cuadrados": "312",
       "tipo": "Casa",
       "operacion_detectada": "Venta",
-      "ubicacion": "Linda y Cómoda Casa en Venta Club de Campo, San"
+      "ubicacion": "San Antonio de Los Altos, Miranda"
     },
     {
       "titulo": "Local comercial en venta San Antonio de los Altos 23-24836",
@@ -609,7 +609,7 @@
       "metros_cuadrados": "129",
       "tipo": "Apartamento",
       "operacion_detectada": "Venta",
-      "ubicacion": "Bello y Cómodo apartamento en El Picacho, San"
+      "ubicacion": "San Antonio de Los Altos, Miranda"
     },
     {
       "titulo": "Amplia Casa Dúplex bien Mantenida en Venta, La Morita San Antonio de Los Altos 25-273",
@@ -620,7 +620,7 @@
       "metros_cuadrados": "198",
       "tipo": "Casa",
       "operacion_detectada": "Venta",
-      "ubicacion": "Amplia Casa Dúplex bien Mantenida en Venta, La"
+      "ubicacion": "San Antonio de Los Altos, Miranda"
     },
     {
       "titulo": "Vendo apartamento remodelado San Antonio de los altos 3 hab piso alto",
@@ -653,7 +653,7 @@
       "metros_cuadrados": "240",
       "tipo": "Casa",
       "operacion_detectada": "Venta",
-      "ubicacion": "En Venta, Potrerito"
+      "ubicacion": "San Antonio de Los Altos, Miranda"
     },
     {
       "titulo": "Casa En Venta Los Castores San Antonio De Los Altos 27-1407",
