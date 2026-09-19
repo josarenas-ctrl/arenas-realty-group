@@ -1,15 +1,26 @@
-// ARI — Scraper de Bienes Online (bienesonline.ai)
+// ARI — Scraper de Mercado Libre
 //
-// A diferencia del scraper de Mercado Libre, este sí se escribió mirando el
-// HTML real que devuelve el sitio (no cargó ningún muro de bloqueo al
-// probarlo), así que el parsing debería ser más confiable desde el arranque.
+// Lee las búsquedas definidas en ari/config/busquedas.json, descarga cada
+// página de resultados y guarda los anuncios en bruto (sin depurar todavía)
+// en ari/data/<zona>-<portal>-<fecha>.json
 //
-// Estrategia de extracción: en vez de depender de nombres de clases CSS
-// exactos (que pueden cambiar y romper el script sin avisar), buscamos
-// todos los links que apuntan a una ficha de propiedad (contienen
-// "/propiedad/" en el href) y extraemos el texto del contenedor más cercano
-// que tenga un precio en USD. Es más resistente a pequeños cambios de
-// diseño del sitio.
+// IMPORTANTE: los selectores CSS de abajo son la mejor aproximación a la
+// estructura actual de Mercado Libre, pero no se pudieron probar contra el
+// sitio en vivo al escribir este script. La primera corrida es una prueba:
+// si el resultado sale vacío o incompleto, hay que revisar juntos el HTML
+// real y ajustar los selectores.
+//
+// DIAGNÓSTICO: si "total" sale en 0, revisar el campo "diagnostico" del
+// resultado — trae el <title> de la página recibida y si el HTML contiene
+// palabras típicas de un muro de bloqueo/verificación. Eso dice si el
+// problema es que Mercado Libre bloqueó la petición, o que los selectores
+// no coinciden con la estructura real de la página.
+//
+// ESTADO CONOCIDO (confirmado): Mercado Libre bloquea las peticiones que
+// vienen desde servidores de GitHub Actions (devuelve una página de
+// "tráfico sospechoso" con HTTP 200, sin error visible). Este scraper se
+// deja corriendo para detectar si eso cambia en el futuro, pero mientras
+// tanto es normal que "total" salga en 0.
 
 const fs = require("fs");
 const path = require("path");
@@ -19,113 +30,66 @@ const cheerio = require("cheerio");
 const CONFIG_PATH = path.join(__dirname, "..", "config", "busquedas.json");
 const DATA_DIR = path.join(__dirname, "..", "data");
 
-const HEADERS = {
-  "User-Agent":
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
-  "Accept-Language": "es-VE,es;q=0.9",
-};
-
-function extraerAnunciosDePagina(html, baseUrl) {
-  const $ = cheerio.load(html);
-  const candidatos = new Map(); // href -> { textos: [] }
-
-  $('a[href*="/propiedad/"]').each((_, el) => {
-    const hrefRel = $(el).attr("href");
-    if (!hrefRel) return;
-    const href = new URL(hrefRel, baseUrl).href;
-    const texto = $(el).text().trim();
-
-    if (!candidatos.has(href)) {
-      candidatos.set(href, { textos: [] });
-    }
-    if (texto) {
-      candidatos.get(href).textos.push(texto);
-    }
-  });
-
-  const anuncios = [];
-
-  for (const [href, info] of candidatos.entries()) {
-    // El título real es el texto más largo entre los links duplicados
-    // (el link que envuelve la imagen normalmente no tiene texto).
-    const titulo = info.textos.sort((a, b) => b.length - a.length)[0] || "";
-    if (!titulo) continue;
-
-    // Buscamos el contenedor común subiendo desde el primer <a> que
-    // encontramos con este href, hasta dar con un bloque de texto que
-    // tenga un precio — ahí es donde vive el resto de la info de la ficha.
-    let contenedor = $(`a[href*="${href.split("/propiedad/")[1]}"]`).first();
-    let textoContenedor = "";
-    for (let nivel = 0; nivel < 6; nivel++) {
-      contenedor = contenedor.parent();
-      if (!contenedor.length) break;
-      textoContenedor = contenedor.text();
-      if (/USD\s*[\d.,]+/.test(textoContenedor)) break;
-    }
-
-    const precioMatch = textoContenedor.match(/USD\s*[\d.,]+/);
-    const specsMatch = textoContenedor.match(
-      /(\d+)\s*hab\.?\D*?(\d+)\s*baños?\D*?([\d.,]+)\s*m²/i
-    );
-    const tipoMatch = textoContenedor.match(
-      /(Casa|Apartamento|Terreno|Local|Oficina)\s*-?\s*(Venta|Alquiler)/i
-    );
-    const ubicacionMatch = textoContenedor.match(
-      /([A-ZÁÉÍÓÚÑ][A-Za-záéíóúñ .]+,\s*[A-ZÁÉÍÓÚÑ][A-Za-záéíóúñ]+)/
-    );
-
-    anuncios.push({
-      titulo,
-      enlace: href,
-      precio_texto: precioMatch ? precioMatch[0] : "",
-      habitaciones: specsMatch ? specsMatch[1] : null,
-      banos: specsMatch ? specsMatch[2] : null,
-      metros_cuadrados: specsMatch ? specsMatch[3] : null,
-      tipo: tipoMatch ? tipoMatch[1] : "",
-      operacion_detectada: tipoMatch ? tipoMatch[2] : "",
-      ubicacion: ubicacionMatch ? ubicacionMatch[1] : "",
-    });
-  }
-
-  return anuncios;
-}
+const PALABRAS_DE_BLOQUEO = [
+  "captcha",
+  "robot",
+  "verifica que no eres",
+  "acceso denegado",
+  "unusual traffic",
+  "blocked",
+  "suspicious-traffic",
+];
 
 async function scrapeBusqueda(busqueda) {
-  const { zona, portal, operacion, url, paginas } = busqueda;
+  const { zona, portal, operacion, url } = busqueda;
 
   if (!url || url.startsWith("PENDIENTE")) {
     console.log(`⚠️  Saltando "${zona}" (${portal}): falta URL real en el config`);
     return null;
   }
 
-  const maxPaginas = paginas || 3; // por defecto traemos 3 páginas (60 propiedades aprox)
-  console.log(`Scrapeando ${zona} / ${portal} / ${operacion} (${maxPaginas} páginas)...`);
+  console.log(`Scrapeando ${zona} / ${portal} / ${operacion}...`);
 
-  const todosLosAnuncios = [];
-  let ultimoStatus = null;
+  const respuesta = await axios.get(url, {
+    headers: {
+      "User-Agent":
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+      "Accept-Language": "es-VE,es;q=0.9",
+    },
+    timeout: 20000,
+    validateStatus: () => true,
+  });
 
-  for (let pagina = 1; pagina <= maxPaginas; pagina++) {
-    const separador = url.includes("?") ? "&" : "?";
-    const urlPagina = pagina === 1 ? url : `${url}${separador}page=${pagina}`;
+  const html = respuesta.data;
+  const $ = cheerio.load(html);
+  const anuncios = [];
 
-    const respuesta = await axios.get(urlPagina, {
-      headers: HEADERS,
-      timeout: 20000,
-      validateStatus: () => true,
-    });
-    ultimoStatus = respuesta.status;
+  $("li.ui-search-layout__item, div.ui-search-result__wrapper").each((_, el) => {
+    const card = $(el);
+    const titulo = card.find("a.ui-search-link, h2.ui-search-item__title").first().text().trim();
+    const enlace = card.find("a.ui-search-link").first().attr("href") || "";
+    const precioTexto = card.find(".andes-money-amount__fraction").first().text().trim();
+    const ubicacion = card.find(".ui-search-item__location, .ui-search-item__group__element--location")
+      .first()
+      .text()
+      .trim();
+    const imagen = card.find("img").first().attr("src") || card.find("img").first().attr("data-src") || "";
 
-    const anunciosPagina = extraerAnunciosDePagina(respuesta.data, urlPagina);
-    console.log(`  Página ${pagina}: ${anunciosPagina.length} anuncios (HTTP ${respuesta.status})`);
-
-    if (anunciosPagina.length === 0) {
-      // No hay más resultados o algo salió mal — paramos de pedir páginas.
-      break;
+    if (titulo && enlace) {
+      anuncios.push({ titulo, enlace, precio_texto: precioTexto, ubicacion, imagen });
     }
-    todosLosAnuncios.push(...anunciosPagina);
-  }
+  });
 
-  console.log(`  → ${todosLosAnuncios.length} anuncios totales encontrados`);
+  console.log(`  → ${anuncios.length} anuncios encontrados (HTTP ${respuesta.status})`);
+
+  const tituloPagina = $("title").text().trim();
+  const htmlMinuscula = html.toLowerCase();
+  const posibleBloqueo = PALABRAS_DE_BLOQUEO.some((palabra) => htmlMinuscula.includes(palabra));
+
+  if (anuncios.length === 0) {
+    console.log(`  ⚠️  0 anuncios. Título de la página recibida: "${tituloPagina}"`);
+    console.log(`  ⚠️  ¿Parece un bloqueo/verificación?: ${posibleBloqueo ? "SÍ" : "no detectado"}`);
+  }
 
   return {
     zona,
@@ -133,11 +97,14 @@ async function scrapeBusqueda(busqueda) {
     operacion,
     url_busqueda: url,
     scrapeado_en: new Date().toISOString(),
-    total: todosLosAnuncios.length,
-    anuncios: todosLosAnuncios,
+    total: anuncios.length,
+    anuncios,
     diagnostico: {
-      ultimo_http_status: ultimoStatus,
-      paginas_pedidas: maxPaginas,
+      http_status: respuesta.status,
+      titulo_pagina_recibida: tituloPagina,
+      posible_bloqueo: posibleBloqueo,
+      html_length: html.length,
+      html_muestra: html.slice(0, 1500),
     },
   };
 }
@@ -148,9 +115,9 @@ async function main() {
   }
 
   const config = JSON.parse(fs.readFileSync(CONFIG_PATH, "utf-8"));
-  const busquedasBienesOnline = config.busquedas.filter((b) => b.portal === "bienesonline");
+  const busquedasMercadoLibre = config.busquedas.filter((b) => b.portal === "mercadolibre");
 
-  for (const busqueda of busquedasBienesOnline) {
+  for (const busqueda of busquedasMercadoLibre) {
     try {
       const resultado = await scrapeBusqueda(busqueda);
       if (!resultado) continue;
