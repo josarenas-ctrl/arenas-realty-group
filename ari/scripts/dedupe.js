@@ -77,16 +77,18 @@ function sonLaMismaPropiedad(a, b) {
   const precioB = normalizarPrecio(b.precio_texto);
   if (!precioA || precioA !== precioB) return false;
 
-  const similitud = similitudTitulos(a.titulo, b.titulo);
   const specsCompletas =
     a.habitaciones && a.banos && a.metros_cuadrados &&
     a.habitaciones === b.habitaciones &&
     a.banos === b.banos &&
     a.metros_cuadrados === b.metros_cuadrados;
 
-  if (specsCompletas) {
-    return similitud >= 0.4;
-  }
+  // Precio exacto + las 4 specs exactas es ya una coincidencia muy
+  // improbable por azar entre dos propiedades distintas — no hace falta
+  // exigir además que el título se parezca.
+  if (specsCompletas) return true;
+
+  const similitud = similitudTitulos(a.titulo, b.titulo);
   return similitud >= 0.6;
 }
 
