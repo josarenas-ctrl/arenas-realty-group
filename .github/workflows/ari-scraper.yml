@@ -38,6 +38,10 @@ jobs:
         working-directory: ari
         run: npm run dedupe
 
+      - name: Analizar valor y asignar semáforo
+        working-directory: ari
+        run: npm run analizar
+
       - name: Commitear datos nuevos (si hay cambios)
         run: |
           git config user.name "ari-bot"
