@@ -29,7 +29,19 @@ const UMBRAL_SOBREVALORADA = 0.15; // 15% por encima del promedio = rojo
 
 function normalizarNumero(texto) {
   if (!texto) return null;
-  const limpio = String(texto).replace(/[^\d.,]/g, "").replace(/\./g, "").replace(",", ".");
+  let limpio = String(texto).replace(/[^\d.,]/g, "");
+
+  // Los datos de origen no son consistentes: a veces la coma es separador
+  // de miles ("1,578" = mil quinientos setenta y ocho) y a veces el punto
+  // lo es ("240.000" = doscientos cuarenta mil). Si hay una coma seguida
+  // de exactamente 3 dígitos al final y no hay ningún punto, es separador
+  // de miles — quitarla en vez de tratarla como decimal.
+  if (/,\d{3}$/.test(limpio) && !limpio.includes(".")) {
+    limpio = limpio.replace(/,/g, "");
+  } else {
+    limpio = limpio.replace(/\./g, "").replace(",", ".");
+  }
+
   const numero = parseFloat(limpio);
   return isNaN(numero) ? null : numero;
 }
@@ -144,4 +156,4 @@ function main() {
   console.log(`✓ Guardado en ${rutaSalida}`);
 }
 
-main(); 
+main();
