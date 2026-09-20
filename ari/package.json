@@ -7,6 +7,7 @@
     "scrape:mercadolibre": "node scripts/scrape-mercadolibre.js",
     "scrape:bienesonline": "node scripts/scrape-bienesonline.js",
     "dedupe": "node scripts/dedupe.js",
+    "ia-dedupe": "node scripts/ia-dedupe.js",
     "analizar": "node scripts/analizar.js"
   },
   "dependencies": {
