@@ -11,7 +11,31 @@
       "portal": "bienesonline",
       "operacion": "venta",
       "url": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+san+antonio+de+los+altos+",
-      "paginas": 3
-    }
+      "paginas": 5
+    },
+    { "zona": "amazonas", "portal": "bienesonline", "operacion": "venta", "url": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+amazonas", "paginas": 5 },
+    { "zona": "anzoategui", "portal": "bienesonline", "operacion": "venta", "url": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+anzoategui", "paginas": 5 },
+    { "zona": "apure", "portal": "bienesonline", "operacion": "venta", "url": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+apure", "paginas": 5 },
+    { "zona": "aragua", "portal": "bienesonline", "operacion": "venta", "url": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+aragua", "paginas": 5 },
+    { "zona": "barinas", "portal": "bienesonline", "operacion": "venta", "url": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+barinas", "paginas": 5 },
+    { "zona": "bolivar", "portal": "bienesonline", "operacion": "venta", "url": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+bolivar", "paginas": 5 },
+    { "zona": "carabobo", "portal": "bienesonline", "operacion": "venta", "url": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+carabobo", "paginas": 5 },
+    { "zona": "cojedes", "portal": "bienesonline", "operacion": "venta", "url": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+cojedes", "paginas": 5 },
+    { "zona": "delta-amacuro", "portal": "bienesonline", "operacion": "venta", "url": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+delta+amacuro", "paginas": 5 },
+    { "zona": "distrito-capital", "portal": "bienesonline", "operacion": "venta", "url": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+distrito+capital", "paginas": 5 },
+    { "zona": "falcon", "portal": "bienesonline", "operacion": "venta", "url": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+falcon", "paginas": 5 },
+    { "zona": "guarico", "portal": "bienesonline", "operacion": "venta", "url": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+guarico", "paginas": 5 },
+    { "zona": "la-guaira", "portal": "bienesonline", "operacion": "venta", "url": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+la+guaira", "paginas": 5 },
+    { "zona": "lara", "portal": "bienesonline", "operacion": "venta", "url": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+lara", "paginas": 5 },
+    { "zona": "merida", "portal": "bienesonline", "operacion": "venta", "url": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+merida", "paginas": 5 },
+    { "zona": "miranda", "portal": "bienesonline", "operacion": "venta", "url": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+miranda", "paginas": 5 },
+    { "zona": "monagas", "portal": "bienesonline", "operacion": "venta", "url": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+monagas", "paginas": 5 },
+    { "zona": "nueva-esparta", "portal": "bienesonline", "operacion": "venta", "url": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+nueva+esparta", "paginas": 5 },
+    { "zona": "portuguesa", "portal": "bienesonline", "operacion": "venta", "url": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+portuguesa", "paginas": 5 },
+    { "zona": "sucre", "portal": "bienesonline", "operacion": "venta", "url": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+sucre", "paginas": 5 },
+    { "zona": "tachira", "portal": "bienesonline", "operacion": "venta", "url": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+tachira", "paginas": 5 },
+    { "zona": "trujillo", "portal": "bienesonline", "operacion": "venta", "url": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+trujillo", "paginas": 5 },
+    { "zona": "yaracuy", "portal": "bienesonline", "operacion": "venta", "url": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+yaracuy", "paginas": 5 },
+    { "zona": "zulia", "portal": "bienesonline", "operacion": "venta", "url": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+zulia", "paginas": 5 }
   ]
-} 
+}
