@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casa Club de Campo San Antonio De Los Altos. — Venta</title>
+<meta name="description" content="Se Ofrece en Venta Amplia, Comoda y Bella Casa ubicada en unas de las mejores zonas de San Antonio de Los Altos, Urbanizacion Club de Campo, con Bellos y A">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Casa Club de Campo San Antonio De Los Altos. — USD 245.000">
+<meta property="og:description" content="Se Ofrece en Venta Amplia, Comoda y Bella Casa ubicada en unas de las mejores zonas de San Antonio de Los Altos, Urbanizacion Club de Campo, con Bellos y A">
+<meta property="og:image" content="https://www.arenasrealtygroup.com/images/uploads/mar-1.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --sand:#F6EFD9; --clay:#0B2A4A; --clay-soft:#3D6690;
+    --terracotta:#D9A438; --teal:#17A679; --cream:#FBF9F4; --line:rgba(11,42,74,0.15);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Work Sans',sans-serif;color:var(--clay);background:var(--cream);line-height:1.6;}
+  h1,h2{font-family:'Fraunces',serif;font-weight:500;}
+  .wrap{max-width:960px;margin:0 auto;padding:0 24px;}
+  main{padding:40px 0 90px;}
+  .gallery{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;margin-bottom:28px;}
+  .gallery-item{position:relative;width:85%;flex:none;aspect-ratio:4/3;overflow:hidden;scroll-snap-align:start;background:var(--sand);}
+  .gallery-item img{width:100%;height:100%;object-fit:cover;display:block;opacity:0;transition:opacity .5s ease;position:relative;z-index:1;}
+  .gallery-item img.loaded{opacity:1;}
+  .gallery-item .g-skel{position:absolute;inset:0;background:var(--sand);overflow:hidden;}
+  .gallery-item .g-skel::after{content:"";position:absolute;inset:0;transform:translateX(-100%);background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);animation:g-shimmer 1.3s infinite;}
+  @keyframes g-shimmer{to{transform:translateX(100%);}}
+  .gallery-item.g-error::after{content:"Foto no disponible";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--clay-soft);font-size:0.85rem;z-index:2;}
+  .gallery-empty{width:100%;aspect-ratio:16/9;background:var(--sand);margin-bottom:28px;}
+  .badge{display:inline-block;font-size:0.78rem;font-weight:600;padding:5px 12px;border-radius:20px;background:var(--terracotta);color:var(--clay);margin-bottom:14px;}
+  h1{font-size:clamp(1.6rem,3.6vw,2.2rem);margin-bottom:10px;margin-top:20px;}
+  .price{font-size:1.25rem;color:var(--terracotta);font-weight:600;margin-bottom:4px;}
+  .loc{color:var(--clay-soft);margin-bottom:24px;}
+  .specs{display:flex;gap:22px;flex-wrap:wrap;padding:16px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:24px;font-size:0.9rem;color:var(--clay-soft);}
+  .specs strong{display:block;color:var(--clay);font-size:1.05rem;font-family:'Fraunces',serif;}
+  .desc{color:var(--clay-soft);margin-bottom:24px;white-space:pre-line;}
+  .section-title{font-size:1.1rem;margin:28px 0 14px;}
+  .features{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px 20px;margin-bottom:28px;}
+  .features li{color:var(--clay-soft);font-size:0.92rem;padding-left:18px;position:relative;}
+  .features li::before{content:"✓";position:absolute;left:0;color:var(--teal);font-weight:600;}
+  .video-wrap{margin-bottom:24px;}
+  .video-wrap iframe{width:100%;aspect-ratio:16/9;border:none;display:block;}
+  .btn-pdf{display:block;width:100%;text-align:center;background:var(--clay);color:var(--cream);padding:14px;border:none;font-weight:500;font-size:0.95rem;cursor:pointer;font-family:'Work Sans',sans-serif;margin-top:10px;}
+  .btn-pdf:hover{opacity:0.9;}
+  @media print{
+    .btn-pdf{display:none;}
+    .gallery{display:block;overflow:visible;}
+    .gallery-item{width:100%;aspect-ratio:auto;max-height:280px;margin-bottom:10px;page-break-inside:avoid;}
+    .video-wrap{display:none;}
+    body{background:#fff;}
+  }
+
+  /* Visor de fotos ampliadas */
+  .gallery-item img{cursor:zoom-in;}
+  .lb{position:fixed;inset:0;z-index:9999;background:rgba(6,20,36,.94);display:none;}
+  .lb.open{display:block;}
+  .lb-stage{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:60px 70px;}
+  .lb-img{max-width:100%;max-height:100%;object-fit:contain;display:block;user-select:none;-webkit-user-drag:none;}
+  .lb-close,.lb-prev,.lb-next{position:absolute;z-index:2;width:44px;height:44px;border:none;border-radius:50%;background:rgba(255,255,255,.14);color:#fff;font-size:28px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;font-family:'Work Sans',sans-serif;}
+  .lb-close:hover,.lb-prev:hover,.lb-next:hover{background:rgba(255,255,255,.28);}
+  .lb-close{top:14px;right:14px;}
+  .lb-prev{left:14px;top:50%;transform:translateY(-50%);}
+  .lb-next{right:14px;top:50%;transform:translateY(-50%);}
+  .lb-count{position:absolute;bottom:16px;left:0;right:0;text-align:center;color:rgba(255,255,255,.85);font-size:.85rem;}
+  @media(max-width:640px){
+    .lb-stage{padding:60px 8px;}
+    .lb-prev,.lb-next{width:38px;height:38px;font-size:24px;}
+  }
+  @media print{.lb{display:none !important;}}
+</style>
+</head>
+<body>
+<main><div class="wrap">
+  <button class="btn-pdf no-print" onclick="window.print()">📄 Descargar como PDF</button>
+  <div class="gallery">
+    <div class="gallery-item">
+      <div class="g-skel"></div>
+      <img src="/images/uploads/mar-1.webp" alt="" loading="lazy" decoding="async"
+           onload="this.classList.add('loaded'); var s=this.previousElementSibling; if(s) s.remove();"
+           onerror="this.closest('.gallery-item').classList.add('g-error'); this.remove();">
+    </div>
+    <div class="gallery-item">
+      <div class="g-skel"></div>
+      <img src="/images/uploads/mar-2.webp" alt="" loading="lazy" decoding="async"
+           onload="this.classList.add('loaded'); var s=this.previousElementSibling; if(s) s.remove();"
+           onerror="this.closest('.gallery-item').classList.add('g-error'); this.remove();">
+    </div>
+    <div class="gallery-item">
+      <div class="g-skel"></div>
+      <img src="/images/uploads/mar-3.webp" alt="" loading="lazy" decoding="async"
+           onload="this.classList.add('loaded'); var s=this.previousElementSibling; if(s) s.remove();"
+           onerror="this.closest('.gallery-item').classList.add('g-error'); this.remove();">
+    </div>
+    <div class="gallery-item">
+      <div class="g-skel"></div>
+      <img src="/images/uploads/mar-4.webp" alt="" loading="lazy" decoding="async"
+           onload="this.classList.add('loaded'); var s=this.previousElementSibling; if(s) s.remove();"
+           onerror="this.closest('.gallery-item').classList.add('g-error'); this.remove();">
+    </div>
+    <div class="gallery-item">
+      <div class="g-skel"></div>
+      <img src="/images/uploads/mar-5.webp" alt="" loading="lazy" decoding="async"
+           onload="this.classList.add('loaded'); var s=this.previousElementSibling; if(s) s.remove();"
+           onerror="this.closest('.gallery-item').classList.add('g-error'); this.remove();">
+    </div>
+    <div class="gallery-item">
+      <div class="g-skel"></div>
+      <img src="/images/uploads/mar-6.webp" alt="" loading="lazy" decoding="async"
+           onload="this.classList.add('loaded'); var s=this.previousElementSibling; if(s) s.remove();"
+           onerror="this.closest('.gallery-item').classList.add('g-error'); this.remove();">
+    </div>
+    <div class="gallery-item">
+      <div class="g-skel"></div>
+      <img src="/images/uploads/mar-7.webp" alt="" loading="lazy" decoding="async"
+           onload="this.classList.add('loaded'); var s=this.previousElementSibling; if(s) s.remove();"
+           onerror="this.closest('.gallery-item').classList.add('g-error'); this.remove();">
+    </div>
+    <div class="gallery-item">
+      <div class="g-skel"></div>
+      <img src="/images/uploads/mar-8.webp" alt="" loading="lazy" decoding="async"
+           onload="this.classList.add('loaded'); var s=this.previousElementSibling; if(s) s.remove();"
+           onerror="this.closest('.gallery-item').classList.add('g-error'); this.remove();">
+    </div>
+    <div class="gallery-item">
+      <div class="g-skel"></div>
+      <img src="/images/uploads/mar-9.webp" alt="" loading="lazy" decoding="async"
+           onload="this.classList.add('loaded'); var s=this.previousElementSibling; if(s) s.remove();"
+           onerror="this.closest('.gallery-item').classList.add('g-error'); this.remove();">
+    </div>
+    <div class="gallery-item">
+      <div class="g-skel"></div>
+      <img src="/images/uploads/mar-10.webp" alt="" loading="lazy" decoding="async"
+           onload="this.classList.add('loaded'); var s=this.previousElementSibling; if(s) s.remove();"
+           onerror="this.closest('.gallery-item').classList.add('g-error'); this.remove();">
+    </div>
+    <div class="gallery-item">
+      <div class="g-skel"></div>
+      <img src="/images/uploads/mar-11.webp" alt="" loading="lazy" decoding="async"
+           onload="this.classList.add('loaded'); var s=this.previousElementSibling; if(s) s.remove();"
+           onerror="this.closest('.gallery-item').classList.add('g-error'); this.remove();">
+    </div>
+    <div class="gallery-item">
+      <div class="g-skel"></div>
+      <img src="/images/uploads/mar-12.webp" alt="" loading="lazy" decoding="async"
+           onload="this.classList.add('loaded'); var s=this.previousElementSibling; if(s) s.remove();"
+           onerror="this.closest('.gallery-item').classList.add('g-error'); this.remove();">
+    </div>
+    <div class="gallery-item">
+      <div class="g-skel"></div>
+      <img src="/images/uploads/mar-13.webp" alt="" loading="lazy" decoding="async"
+           onload="this.classList.add('loaded'); var s=this.previousElementSibling; if(s) s.remove();"
+           onerror="this.closest('.gallery-item').classList.add('g-error'); this.remove();">
+    </div>
+    <div class="gallery-item">
+      <div class="g-skel"></div>
+      <img src="/images/uploads/mar-14.webp" alt="" loading="lazy" decoding="async"
+           onload="this.classList.add('loaded'); var s=this.previousElementSibling; if(s) s.remove();"
+           onerror="this.closest('.gallery-item').classList.add('g-error'); this.remove();">
+    </div>
+    <div class="gallery-item">
+      <div class="g-skel"></div>
+      <img src="/images/uploads/mar-15.webp" alt="" loading="lazy" decoding="async"
+           onload="this.classList.add('loaded'); var s=this.previousElementSibling; if(s) s.remove();"
+           onerror="this.closest('.gallery-item').classList.add('g-error'); this.remove();">
+    </div>
+    <div class="gallery-item">
+      <div class="g-skel"></div>
+      <img src="/images/uploads/mar-16.webp" alt="" loading="lazy" decoding="async"
+           onload="this.classList.add('loaded'); var s=this.previousElementSibling; if(s) s.remove();"
+           onerror="this.closest('.gallery-item').classList.add('g-error'); this.remove();">
+    </div>
+    <div class="gallery-item">
+      <div class="g-skel"></div>
+      <img src="/images/uploads/mar-17.webp" alt="" loading="lazy" decoding="async"
+           onload="this.classList.add('loaded'); var s=this.previousElementSibling; if(s) s.remove();"
+           onerror="this.closest('.gallery-item').classList.add('g-error'); this.remove();">
+    </div>
+    <div class="gallery-item">
+      <div class="g-skel"></div>
+      <img src="/images/uploads/mar-18.webp" alt="" loading="lazy" decoding="async"
+           onload="this.classList.add('loaded'); var s=this.previousElementSibling; if(s) s.remove();"
+           onerror="this.closest('.gallery-item').classList.add('g-error'); this.remove();">
+    </div>
+    <div class="gallery-item">
+      <div class="g-skel"></div>
+      <img src="/images/uploads/mar-19.webp" alt="" loading="lazy" decoding="async"
+           onload="this.classList.add('loaded'); var s=this.previousElementSibling; if(s) s.remove();"
+           onerror="this.closest('.gallery-item').classList.add('g-error'); this.remove();">
+    </div>
+    <div class="gallery-item">
+      <div class="g-skel"></div>
+      <img src="/images/uploads/mar-20.webp" alt="" loading="lazy" decoding="async"
+           onload="this.classList.add('loaded'); var s=this.previousElementSibling; if(s) s.remove();"
+           onerror="this.closest('.gallery-item').classList.add('g-error'); this.remove();">
+    </div></div>
+  <span class="badge">Venta · Casa</span>
+  <h1>Casa Club de Campo San Antonio De Los Altos.</h1>
+  <div class="price">USD 245.000</div>
+  <div class="loc">Urbanización Club De Campo, San Antonio De Los Altos. · <a href="https://maps.app.goo.gl/NGURRsEHaW7VdUKt9" target="_blank" rel="noopener">📍 Ver ubicación en el mapa</a></div>
+  <div class="specs"><div><strong>1000</strong> m² terreno</div><div><strong>350</strong> m² construcción</div><div><strong>5</strong> habitaciones</div><div><strong>3</strong> baños</div><div><strong>3</strong> puestos</div></div>
+  <p class="desc">Se Ofrece en Venta Amplia, Comoda y Bella Casa ubicada en unas de las mejores zonas de San Antonio de Los Altos, Urbanizacion Club de Campo, con Bellos y Amplios Espacios Interiores, con Tres (3) Niveles, 5 habitaciones y tres Baños, Sala Salón de Estar Comedor y Cocina Empotrada, tres Puestos de Estacionamiento, Cuarto de deposito 83 mts, Tanque de 36.000 litros con bomba hidroneumática, Jardines, Terraza, Patio, Zona Tranquila y con seguridad, con todos los Servicios, Agua las 24 Horas al día. Documentación Lista para firmar en el Registro. !!!!SE ESCUCHAN OFERTAS!!!!!!</p>
+  <h2 class="section-title">Características</h2>
+  <ul class="features"><li>Antigüedad 25 años</li><li>5 Ambientes</li><li>6 Alacenas</li><li>Cantidad de pisos 3</li><li>Casa Orientación Este</li><li>Comodidades y equipamiento</li><li>Chimenea</li><li>Estacionamiento para visitantes</li><li>Cancha de básquetbol</li><li>Con cancha de fútbol</li><li>Condiciones especiales</li><li>Amoblado parcialmente</li><li>Acceso a internet</li><li>Calefacción</li><li>Línea telefónica</li><li>Gas natural</li><li>Con conexión para lavarropas</li><li>Agua</li><li>Calentador a gas/ eléctrico</li><li>Seguridad 24/7</li><li>Portón eléctrico</li><li>En barrio cerrado</li><li>Armarios</li><li>Baño de visitas</li><li>Terraza</li><li>Comedor</li><li>Vestier</li><li>Estudio</li><li>Estar</li><li>Patio</li><li>Suite</li><li>Balcón</li><li>Jardín</li><li>Cocina</li><li>Cuarto de servicio</li><li>Con cuarto de lavado</li><li>Area para desayunar</li></ul>
+  
+</div></main>
+<script>
+(function(){
+  var gal = document.querySelector('.gallery');
+  if(!gal) return;
+  var box = null, imgEl = null, cnt = null, prevB = null, nextB = null, closeB = null;
+  var fotos = [], idx = 0, lastFocus = null, x0 = null;
+
+  function imagenes(){
+    return Array.prototype.slice.call(gal.querySelectorAll('.gallery-item img'));
+  }
+
+  function crear(){
+    box = document.createElement('div');
+    box.className = 'lb';
+    box.setAttribute('role', 'dialog');
+    box.setAttribute('aria-modal', 'true');
+    box.setAttribute('aria-label', 'Galería de fotos');
+    box.innerHTML =
+      '<button type="button" class="lb-close" aria-label="Cerrar">&times;</button>' +
+      '<button type="button" class="lb-prev" aria-label="Foto anterior">&#8249;</button>' +
+      '<div class="lb-stage"><img class="lb-img" alt=""></div>' +
+      '<button type="button" class="lb-next" aria-label="Foto siguiente">&#8250;</button>' +
+      '<div class="lb-count"></div>';
+    document.body.appendChild(box);
+    imgEl = box.querySelector('.lb-img');
+    cnt = box.querySelector('.lb-count');
+    prevB = box.querySelector('.lb-prev');
+    nextB = box.querySelector('.lb-next');
+    closeB = box.querySelector('.lb-close');
+
+    closeB.addEventListener('click', cerrar);
+    prevB.addEventListener('click', function(){ mover(-1); });
+    nextB.addEventListener('click', function(){ mover(1); });
+    box.addEventListener('click', function(e){
+      if(e.target === box || e.target.className === 'lb-stage') cerrar();
+    });
+    box.addEventListener('touchstart', function(e){
+      x0 = e.touches[0].clientX;
+    }, {passive:true});
+    box.addEventListener('touchend', function(e){
+      if(x0 === null) return;
+      var dx = e.changedTouches[0].clientX - x0;
+      x0 = null;
+      if(Math.abs(dx) > 50) mover(dx < 0 ? 1 : -1);
+    }, {passive:true});
+  }
+
+  function mostrar(i){
+    var n = fotos.length;
+    idx = (i + n) % n;
+    imgEl.src = fotos[idx];
+    cnt.textContent = (idx + 1) + ' / ' + n;
+    if(n > 1){
+      new Image().src = fotos[(idx + 1) % n];
+      new Image().src = fotos[(idx - 1 + n) % n];
+    }
+  }
+
+  function mover(delta){
+    if(fotos.length > 1) mostrar(idx + delta);
+  }
+
+  function teclas(e){
+    if(e.key === 'Escape') cerrar();
+    else if(e.key === 'ArrowRight') mover(1);
+    else if(e.key === 'ArrowLeft') mover(-1);
+  }
+
+  function abrir(i){
+    fotos = imagenes().map(function(im){ return im.getAttribute('src'); });
+    if(!fotos.length) return;
+    if(!box) crear();
+    lastFocus = document.activeElement;
+    var varias = fotos.length > 1;
+    prevB.style.display = varias ? '' : 'none';
+    nextB.style.display = varias ? '' : 'none';
+    cnt.style.display = varias ? '' : 'none';
+    box.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    mostrar(i);
+    document.addEventListener('keydown', teclas);
+    closeB.focus();
+  }
+
+  function cerrar(){
+    if(!box) return;
+    box.classList.remove('open');
+    document.body.style.overflow = '';
+    imgEl.removeAttribute('src');
+    document.removeEventListener('keydown', teclas);
+    if(lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+
+  gal.addEventListener('click', function(e){
+    var im = e.target.closest ? e.target.closest('.gallery-item img') : null;
+    if(!im) return;
+    abrir(imagenes().indexOf(im));
+  });
+
+  // Accesible con teclado: Tab hasta la foto y Enter para ampliar.
+  gal.addEventListener('keydown', function(e){
+    if(e.key !== 'Enter') return;
+    var im = e.target;
+    if(im && im.tagName === 'IMG'){
+      e.preventDefault();
+      abrir(imagenes().indexOf(im));
+    }
+  });
+  imagenes().forEach(function(im){
+    im.setAttribute('tabindex', '0');
+    im.setAttribute('aria-label', 'Ampliar foto');
+  });
+})();
+</script>
+</body>
+</html>
