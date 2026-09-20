@@ -38,6 +38,13 @@ jobs:
         working-directory: ari
         run: npm run dedupe
 
+      - name: Revisar duplicados dudosos con IA
+        working-directory: ari
+        run: npm run ia-dedupe
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        continue-on-error: true
+
       - name: Analizar valor y asignar semáforo
         working-directory: ari
         run: npm run analizar
