@@ -1,14 +1,14 @@
 {
-  "generado_en": "2026-09-20T04:55:57.999Z",
+  "generado_en": "2026-09-20T04:59:12.500Z",
   "basado_en": "fichas-maestras-2026-09-20.json",
   "promedios_m2_por_tipo": {
-    "Casa": 3840,
+    "Casa": 675,
     "Apartamento": 635
   },
   "resumen": {
-    "verde": 31,
-    "amarillo": 6,
-    "rojo": 7,
+    "verde": 22,
+    "amarillo": 11,
+    "rojo": 11,
     "sin_datos_suficientes": 7
   },
   "fichas": [
@@ -36,64 +36,36 @@
         }
       ],
       "precio_m2": 308,
-      "promedio_m2_tipo_zona": 3840,
-      "diferencia_vs_promedio_pct": -92,
+      "promedio_m2_tipo_zona": 675,
+      "diferencia_vs_promedio_pct": -54,
       "semaforo": "verde"
     },
     {
-      "titulo": "Bella y Amplia Casa Dúplex En Venta El Amarillo, San Antonio de Los Altos",
-      "precio_texto": "USD 130.000",
+      "titulo": "Bella casa en venta La Suiza San Antonio de los Altos 23-3013",
+      "precio_texto": "USD 135.000",
       "habitaciones": "4",
       "banos": "4",
-      "metros_cuadrados": "210",
+      "metros_cuadrados": "1,578",
       "tipo": "Casa",
       "ubicacion": "San Antonio de Los Altos, Miranda",
-      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/52686-bella-y-amplia-casa-duplex-en-venta-el-amarillo-san-antonio-de-los-altos",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77329-bella-casa-en-venta-la-suiza-san-antonio-de-los-altos-23-3013",
       "portal_principal": "bienesonline",
       "total_publicaciones_encontradas": 2,
       "todos_los_anuncios": [
         {
-          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77330-bonita-casa-en-venta-el-amarillo-san-antonio-de-los-altos-25-17210",
+          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77329-bella-casa-en-venta-la-suiza-san-antonio-de-los-altos-23-3013",
           "portal": "bienesonline",
-          "titulo": "Bonita casa en venta El Amarillo San Antonio de los Altos 25-17210"
+          "titulo": "Bella casa en venta La Suiza San Antonio de los Altos 23-3013"
         },
         {
-          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/52686-bella-y-amplia-casa-duplex-en-venta-el-amarillo-san-antonio-de-los-altos",
+          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77467-linda-casa-en-venta-la-suiza-san-antonio-de-los-altos-23-3013",
           "portal": "bienesonline",
-          "titulo": "Bella y Amplia Casa Dúplex En Venta El Amarillo, San Antonio de Los Altos"
+          "titulo": "Linda casa en venta La Suiza San Antonio de los Altos 23-3013"
         }
       ],
-      "precio_m2": 619,
-      "promedio_m2_tipo_zona": 3840,
-      "diferencia_vs_promedio_pct": -84,
-      "semaforo": "verde"
-    },
-    {
-      "titulo": "Bella y Amplia Casa en Venta Urb. Club de Campo, San Antonio de los Altos 24-24691",
-      "precio_texto": "USD 160.000",
-      "habitaciones": "6",
-      "banos": "7",
-      "metros_cuadrados": "279",
-      "tipo": "Casa",
-      "ubicacion": "San Antonio de Los Altos, Miranda",
-      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/25130-bella-y-amplia-casa-en-venta-urb-club-de-campo-san-antonio-de-los-altos-24-24691",
-      "portal_principal": "bienesonline",
-      "total_publicaciones_encontradas": 2,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/25130-bella-y-amplia-casa-en-venta-urb-club-de-campo-san-antonio-de-los-altos-24-24691",
-          "portal": "bienesonline",
-          "titulo": "Bella y Amplia Casa en Venta Urb. Club de Campo, San Antonio de los Altos 24-24691"
-        },
-        {
-          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77102-linda-y-acogedora-casa-en-venta-club-de-campo-san-antonio-de-los-altos",
-          "portal": "bienesonline",
-          "titulo": "Linda y Acogedora Casa en Venta Club de Campo, San Antonio de Los Altos"
-        }
-      ],
-      "precio_m2": 573,
-      "promedio_m2_tipo_zona": 3840,
-      "diferencia_vs_promedio_pct": -85,
+      "precio_m2": 86,
+      "promedio_m2_tipo_zona": 675,
+      "diferencia_vs_promedio_pct": -87,
       "semaforo": "verde"
     },
     {
@@ -115,8 +87,8 @@
         }
       ],
       "precio_m2": 140,
-      "promedio_m2_tipo_zona": 3840,
-      "diferencia_vs_promedio_pct": -96,
+      "promedio_m2_tipo_zona": 675,
+      "diferencia_vs_promedio_pct": -79,
       "semaforo": "verde"
     },
     {
@@ -138,54 +110,8 @@
         }
       ],
       "precio_m2": 457,
-      "promedio_m2_tipo_zona": 3840,
-      "diferencia_vs_promedio_pct": -88,
-      "semaforo": "verde"
-    },
-    {
-      "titulo": "Hermosa casa Colonia de una Sola Planta en Venta Altos de la Peña, San Antonio de los Altos 24-9645",
-      "precio_texto": "USD 125.000",
-      "habitaciones": "4",
-      "banos": "3",
-      "metros_cuadrados": "214",
-      "tipo": "Casa",
-      "ubicacion": "San Antonio de Los Altos, Miranda",
-      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/25132-hermosa-casa-colonia-de-una-sola-planta-en-venta-altos-de-la-pena-san-antonio-de-los-altos-24-9645",
-      "portal_principal": "bienesonline",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/25132-hermosa-casa-colonia-de-una-sola-planta-en-venta-altos-de-la-pena-san-antonio-de-los-altos-24-9645",
-          "portal": "bienesonline",
-          "titulo": "Hermosa casa Colonia de una Sola Planta en Venta Altos de la Peña, San Antonio de los Altos 24-9645"
-        }
-      ],
-      "precio_m2": 584,
-      "promedio_m2_tipo_zona": 3840,
-      "diferencia_vs_promedio_pct": -85,
-      "semaforo": "verde"
-    },
-    {
-      "titulo": "Casa en Venta San Antonio de los Altos Club de Campo G. 04143054662",
-      "precio_texto": "USD 520.000",
-      "habitaciones": "6",
-      "banos": "4",
-      "metros_cuadrados": "404",
-      "tipo": "Casa",
-      "ubicacion": "San Antonio de Los Altos, Miranda",
-      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/124902-casa-en-venta-san-antonio-de-los-altos-club-de-campo-g-04143054662",
-      "portal_principal": "bienesonline",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/124902-casa-en-venta-san-antonio-de-los-altos-club-de-campo-g-04143054662",
-          "portal": "bienesonline",
-          "titulo": "Casa en Venta San Antonio de los Altos Club de Campo G. 04143054662"
-        }
-      ],
-      "precio_m2": 1287,
-      "promedio_m2_tipo_zona": 3840,
-      "diferencia_vs_promedio_pct": -66,
+      "promedio_m2_tipo_zona": 675,
+      "diferencia_vs_promedio_pct": -32,
       "semaforo": "verde"
     },
     {
@@ -207,8 +133,8 @@
         }
       ],
       "precio_m2": 201,
-      "promedio_m2_tipo_zona": 3840,
-      "diferencia_vs_promedio_pct": -95,
+      "promedio_m2_tipo_zona": 675,
+      "diferencia_vs_promedio_pct": -70,
       "semaforo": "verde"
     },
     {
@@ -253,8 +179,8 @@
         }
       ],
       "precio_m2": 466,
-      "promedio_m2_tipo_zona": 3840,
-      "diferencia_vs_promedio_pct": -88,
+      "promedio_m2_tipo_zona": 675,
+      "diferencia_vs_promedio_pct": -31,
       "semaforo": "verde"
     },
     {
@@ -276,8 +202,8 @@
         }
       ],
       "precio_m2": 364,
-      "promedio_m2_tipo_zona": 3840,
-      "diferencia_vs_promedio_pct": -91,
+      "promedio_m2_tipo_zona": 675,
+      "diferencia_vs_promedio_pct": -46,
       "semaforo": "verde"
     },
     {
@@ -299,8 +225,8 @@
         }
       ],
       "precio_m2": 326,
-      "promedio_m2_tipo_zona": 3840,
-      "diferencia_vs_promedio_pct": -92,
+      "promedio_m2_tipo_zona": 675,
+      "diferencia_vs_promedio_pct": -52,
       "semaforo": "verde"
     },
     {
@@ -322,8 +248,8 @@
         }
       ],
       "precio_m2": 476,
-      "promedio_m2_tipo_zona": 3840,
-      "diferencia_vs_promedio_pct": -88,
+      "promedio_m2_tipo_zona": 675,
+      "diferencia_vs_promedio_pct": -29,
       "semaforo": "verde"
     },
     {
@@ -345,8 +271,8 @@
         }
       ],
       "precio_m2": 540,
-      "promedio_m2_tipo_zona": 3840,
-      "diferencia_vs_promedio_pct": -86,
+      "promedio_m2_tipo_zona": 675,
+      "diferencia_vs_promedio_pct": -20,
       "semaforo": "verde"
     },
     {
@@ -368,31 +294,8 @@
         }
       ],
       "precio_m2": 434,
-      "promedio_m2_tipo_zona": 3840,
-      "diferencia_vs_promedio_pct": -89,
-      "semaforo": "verde"
-    },
-    {
-      "titulo": "Bonita casa en venta San Antonio de los Altos El Limón 26-10998",
-      "precio_texto": "USD 120.000",
-      "habitaciones": "4",
-      "banos": "3",
-      "metros_cuadrados": "179",
-      "tipo": "Casa",
-      "ubicacion": "San Antonio de Los Altos, Miranda",
-      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77219-bonita-casa-en-venta-san-antonio-de-los-altos-el-limon-26-10998",
-      "portal_principal": "bienesonline",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77219-bonita-casa-en-venta-san-antonio-de-los-altos-el-limon-26-10998",
-          "portal": "bienesonline",
-          "titulo": "Bonita casa en venta San Antonio de los Altos El Limón 26-10998"
-        }
-      ],
-      "precio_m2": 670,
-      "promedio_m2_tipo_zona": 3840,
-      "diferencia_vs_promedio_pct": -83,
+      "promedio_m2_tipo_zona": 675,
+      "diferencia_vs_promedio_pct": -36,
       "semaforo": "verde"
     },
     {
@@ -414,8 +317,8 @@
         }
       ],
       "precio_m2": 453,
-      "promedio_m2_tipo_zona": 3840,
-      "diferencia_vs_promedio_pct": -88,
+      "promedio_m2_tipo_zona": 675,
+      "diferencia_vs_promedio_pct": -33,
       "semaforo": "verde"
     },
     {
@@ -442,29 +345,6 @@
       "semaforo": "verde"
     },
     {
-      "titulo": "Bella y Amplia Casa En Venta Club de Campo, San Antonio de los Altos",
-      "precio_texto": "USD 550.000",
-      "habitaciones": "4",
-      "banos": "3",
-      "metros_cuadrados": "280",
-      "tipo": "Casa",
-      "ubicacion": "San Antonio de Los Altos, Miranda",
-      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77106-bella-y-amplia-casa-en-venta-club-de-campo-san-antonio-de-los-altos",
-      "portal_principal": "bienesonline",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77106-bella-y-amplia-casa-en-venta-club-de-campo-san-antonio-de-los-altos",
-          "portal": "bienesonline",
-          "titulo": "Bella y Amplia Casa En Venta Club de Campo, San Antonio de los Altos"
-        }
-      ],
-      "precio_m2": 1964,
-      "promedio_m2_tipo_zona": 3840,
-      "diferencia_vs_promedio_pct": -49,
-      "semaforo": "verde"
-    },
-    {
       "titulo": "Hermosa casa en venta El Amarillo San Antonio de los Altos 26-5995",
       "precio_texto": "USD 190.000",
       "habitaciones": "5",
@@ -483,8 +363,8 @@
         }
       ],
       "precio_m2": 318,
-      "promedio_m2_tipo_zona": 3840,
-      "diferencia_vs_promedio_pct": -92,
+      "promedio_m2_tipo_zona": 675,
+      "diferencia_vs_promedio_pct": -53,
       "semaforo": "verde"
     },
     {
@@ -534,29 +414,6 @@
       "semaforo": "verde"
     },
     {
-      "titulo": "Preciosa e impecable casa en venta San Antonio de los Altos 26-21325",
-      "precio_texto": "USD 235.000",
-      "habitaciones": "4",
-      "banos": "3",
-      "metros_cuadrados": "396",
-      "tipo": "Casa",
-      "ubicacion": "San Antonio de Los Altos, Miranda",
-      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/127915-preciosa-e-impecable-casa-en-venta-san-antonio-de-los-altos-26-21325",
-      "portal_principal": "bienesonline",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/127915-preciosa-e-impecable-casa-en-venta-san-antonio-de-los-altos-26-21325",
-          "portal": "bienesonline",
-          "titulo": "Preciosa e impecable casa en venta San Antonio de los Altos 26-21325"
-        }
-      ],
-      "precio_m2": 593,
-      "promedio_m2_tipo_zona": 3840,
-      "diferencia_vs_promedio_pct": -85,
-      "semaforo": "verde"
-    },
-    {
       "titulo": "Excelente y Amplio Apartamento en Venta Rosalito, San Antonio de los Altos",
       "precio_texto": "USD 50.000",
       "habitaciones": "3",
@@ -577,29 +434,6 @@
       "precio_m2": 177,
       "promedio_m2_tipo_zona": 635,
       "diferencia_vs_promedio_pct": -72,
-      "semaforo": "verde"
-    },
-    {
-      "titulo": "Bella y Cómoda Casa en Venta La Peña, San Antonio de Los Altos",
-      "precio_texto": "USD 225.000",
-      "habitaciones": "5",
-      "banos": "4",
-      "metros_cuadrados": "377",
-      "tipo": "Casa",
-      "ubicacion": "San Antonio de Los Altos, Miranda",
-      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/25135-bella-y-comoda-casa-en-venta-la-pena-san-antonio-de-los-altos",
-      "portal_principal": "bienesonline",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/25135-bella-y-comoda-casa-en-venta-la-pena-san-antonio-de-los-altos",
-          "portal": "bienesonline",
-          "titulo": "Bella y Cómoda Casa en Venta La Peña, San Antonio de Los Altos"
-        }
-      ],
-      "precio_m2": 597,
-      "promedio_m2_tipo_zona": 3840,
-      "diferencia_vs_promedio_pct": -84,
       "semaforo": "verde"
     },
     {
@@ -626,29 +460,6 @@
       "semaforo": "verde"
     },
     {
-      "titulo": "Linda y Cómoda Casa en Venta Club de Campo, San Antonio de los Altos",
-      "precio_texto": "USD 320.000",
-      "habitaciones": "5",
-      "banos": "6",
-      "metros_cuadrados": "312",
-      "tipo": "Casa",
-      "ubicacion": "San Antonio de Los Altos, Miranda",
-      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77104-linda-y-comoda-casa-en-venta-club-de-campo-san-antonio-de-los-altos",
-      "portal_principal": "bienesonline",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77104-linda-y-comoda-casa-en-venta-club-de-campo-san-antonio-de-los-altos",
-          "portal": "bienesonline",
-          "titulo": "Linda y Cómoda Casa en Venta Club de Campo, San Antonio de los Altos"
-        }
-      ],
-      "precio_m2": 1026,
-      "promedio_m2_tipo_zona": 3840,
-      "diferencia_vs_promedio_pct": -73,
-      "semaforo": "verde"
-    },
-    {
       "titulo": "Bellisima Casa Dúplex Estilo Chalet Holandés en Venta San Antonio de Los Altos",
       "precio_texto": "USD 85.000",
       "habitaciones": "4",
@@ -667,8 +478,8 @@
         }
       ],
       "precio_m2": 413,
-      "promedio_m2_tipo_zona": 3840,
-      "diferencia_vs_promedio_pct": -89,
+      "promedio_m2_tipo_zona": 675,
+      "diferencia_vs_promedio_pct": -39,
       "semaforo": "verde"
     },
     {
@@ -690,8 +501,8 @@
         }
       ],
       "precio_m2": 379,
-      "promedio_m2_tipo_zona": 3840,
-      "diferencia_vs_promedio_pct": -90,
+      "promedio_m2_tipo_zona": 675,
+      "diferencia_vs_promedio_pct": -44,
       "semaforo": "verde"
     },
     {
@@ -713,32 +524,65 @@
         }
       ],
       "precio_m2": 225,
-      "promedio_m2_tipo_zona": 3840,
-      "diferencia_vs_promedio_pct": -94,
+      "promedio_m2_tipo_zona": 675,
+      "diferencia_vs_promedio_pct": -67,
       "semaforo": "verde"
     },
     {
-      "titulo": "Casa En Venta Los Castores San Antonio De Los Altos 27-1407",
-      "precio_texto": "USD 380.000",
+      "titulo": "Bella y Amplia Casa Dúplex En Venta El Amarillo, San Antonio de Los Altos",
+      "precio_texto": "USD 130.000",
       "habitaciones": "4",
-      "banos": "5",
-      "metros_cuadrados": "384",
+      "banos": "4",
+      "metros_cuadrados": "210",
       "tipo": "Casa",
       "ubicacion": "San Antonio de Los Altos, Miranda",
-      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/120711-casa-en-venta-los-castores-san-antonio-de-los-altos-27-1407",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/52686-bella-y-amplia-casa-duplex-en-venta-el-amarillo-san-antonio-de-los-altos",
       "portal_principal": "bienesonline",
-      "total_publicaciones_encontradas": 1,
+      "total_publicaciones_encontradas": 2,
       "todos_los_anuncios": [
         {
-          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/120711-casa-en-venta-los-castores-san-antonio-de-los-altos-27-1407",
+          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77330-bonita-casa-en-venta-el-amarillo-san-antonio-de-los-altos-25-17210",
           "portal": "bienesonline",
-          "titulo": "Casa En Venta Los Castores San Antonio De Los Altos 27-1407"
+          "titulo": "Bonita casa en venta El Amarillo San Antonio de los Altos 25-17210"
+        },
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/52686-bella-y-amplia-casa-duplex-en-venta-el-amarillo-san-antonio-de-los-altos",
+          "portal": "bienesonline",
+          "titulo": "Bella y Amplia Casa Dúplex En Venta El Amarillo, San Antonio de Los Altos"
         }
       ],
-      "precio_m2": 990,
-      "promedio_m2_tipo_zona": 3840,
-      "diferencia_vs_promedio_pct": -74,
-      "semaforo": "verde"
+      "precio_m2": 619,
+      "promedio_m2_tipo_zona": 675,
+      "diferencia_vs_promedio_pct": -8,
+      "semaforo": "amarillo"
+    },
+    {
+      "titulo": "Bella y Amplia Casa en Venta Urb. Club de Campo, San Antonio de los Altos 24-24691",
+      "precio_texto": "USD 160.000",
+      "habitaciones": "6",
+      "banos": "7",
+      "metros_cuadrados": "279",
+      "tipo": "Casa",
+      "ubicacion": "San Antonio de Los Altos, Miranda",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/25130-bella-y-amplia-casa-en-venta-urb-club-de-campo-san-antonio-de-los-altos-24-24691",
+      "portal_principal": "bienesonline",
+      "total_publicaciones_encontradas": 2,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/25130-bella-y-amplia-casa-en-venta-urb-club-de-campo-san-antonio-de-los-altos-24-24691",
+          "portal": "bienesonline",
+          "titulo": "Bella y Amplia Casa en Venta Urb. Club de Campo, San Antonio de los Altos 24-24691"
+        },
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77102-linda-y-acogedora-casa-en-venta-club-de-campo-san-antonio-de-los-altos",
+          "portal": "bienesonline",
+          "titulo": "Linda y Acogedora Casa en Venta Club de Campo, San Antonio de Los Altos"
+        }
+      ],
+      "precio_m2": 573,
+      "promedio_m2_tipo_zona": 675,
+      "diferencia_vs_promedio_pct": -15,
+      "semaforo": "amarillo"
     },
     {
       "titulo": "Apartamento en Venta San Antonio G. 04143054662 / 04143247646",
@@ -761,6 +605,52 @@
       "precio_m2": 635,
       "promedio_m2_tipo_zona": 635,
       "diferencia_vs_promedio_pct": 0,
+      "semaforo": "amarillo"
+    },
+    {
+      "titulo": "Hermosa casa Colonia de una Sola Planta en Venta Altos de la Peña, San Antonio de los Altos 24-9645",
+      "precio_texto": "USD 125.000",
+      "habitaciones": "4",
+      "banos": "3",
+      "metros_cuadrados": "214",
+      "tipo": "Casa",
+      "ubicacion": "San Antonio de Los Altos, Miranda",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/25132-hermosa-casa-colonia-de-una-sola-planta-en-venta-altos-de-la-pena-san-antonio-de-los-altos-24-9645",
+      "portal_principal": "bienesonline",
+      "total_publicaciones_encontradas": 1,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/25132-hermosa-casa-colonia-de-una-sola-planta-en-venta-altos-de-la-pena-san-antonio-de-los-altos-24-9645",
+          "portal": "bienesonline",
+          "titulo": "Hermosa casa Colonia de una Sola Planta en Venta Altos de la Peña, San Antonio de los Altos 24-9645"
+        }
+      ],
+      "precio_m2": 584,
+      "promedio_m2_tipo_zona": 675,
+      "diferencia_vs_promedio_pct": -13,
+      "semaforo": "amarillo"
+    },
+    {
+      "titulo": "Bonita casa en venta San Antonio de los Altos El Limón 26-10998",
+      "precio_texto": "USD 120.000",
+      "habitaciones": "4",
+      "banos": "3",
+      "metros_cuadrados": "179",
+      "tipo": "Casa",
+      "ubicacion": "San Antonio de Los Altos, Miranda",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77219-bonita-casa-en-venta-san-antonio-de-los-altos-el-limon-26-10998",
+      "portal_principal": "bienesonline",
+      "total_publicaciones_encontradas": 1,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77219-bonita-casa-en-venta-san-antonio-de-los-altos-el-limon-26-10998",
+          "portal": "bienesonline",
+          "titulo": "Bonita casa en venta San Antonio de los Altos El Limón 26-10998"
+        }
+      ],
+      "precio_m2": 670,
+      "promedio_m2_tipo_zona": 675,
+      "diferencia_vs_promedio_pct": -1,
       "semaforo": "amarillo"
     },
     {
@@ -787,26 +677,49 @@
       "semaforo": "amarillo"
     },
     {
-      "titulo": "Hermosa Casa En Venta La Rosaleda San Antonio De Los Altos 27-3968",
-      "precio_texto": "USD 350.000",
-      "habitaciones": "3",
-      "banos": "2",
-      "metros_cuadrados": "94",
+      "titulo": "Preciosa e impecable casa en venta San Antonio de los Altos 26-21325",
+      "precio_texto": "USD 235.000",
+      "habitaciones": "4",
+      "banos": "3",
+      "metros_cuadrados": "396",
       "tipo": "Casa",
       "ubicacion": "San Antonio de Los Altos, Miranda",
-      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/126672-hermosa-casa-en-venta-la-rosaleda-san-antonio-de-los-altos-27-3968",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/127915-preciosa-e-impecable-casa-en-venta-san-antonio-de-los-altos-26-21325",
       "portal_principal": "bienesonline",
       "total_publicaciones_encontradas": 1,
       "todos_los_anuncios": [
         {
-          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/126672-hermosa-casa-en-venta-la-rosaleda-san-antonio-de-los-altos-27-3968",
+          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/127915-preciosa-e-impecable-casa-en-venta-san-antonio-de-los-altos-26-21325",
           "portal": "bienesonline",
-          "titulo": "Hermosa Casa En Venta La Rosaleda San Antonio De Los Altos 27-3968"
+          "titulo": "Preciosa e impecable casa en venta San Antonio de los Altos 26-21325"
         }
       ],
-      "precio_m2": 3723,
-      "promedio_m2_tipo_zona": 3840,
-      "diferencia_vs_promedio_pct": -3,
+      "precio_m2": 593,
+      "promedio_m2_tipo_zona": 675,
+      "diferencia_vs_promedio_pct": -12,
+      "semaforo": "amarillo"
+    },
+    {
+      "titulo": "Bella y Cómoda Casa en Venta La Peña, San Antonio de Los Altos",
+      "precio_texto": "USD 225.000",
+      "habitaciones": "5",
+      "banos": "4",
+      "metros_cuadrados": "377",
+      "tipo": "Casa",
+      "ubicacion": "San Antonio de Los Altos, Miranda",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/25135-bella-y-comoda-casa-en-venta-la-pena-san-antonio-de-los-altos",
+      "portal_principal": "bienesonline",
+      "total_publicaciones_encontradas": 1,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/25135-bella-y-comoda-casa-en-venta-la-pena-san-antonio-de-los-altos",
+          "portal": "bienesonline",
+          "titulo": "Bella y Cómoda Casa en Venta La Peña, San Antonio de Los Altos"
+        }
+      ],
+      "precio_m2": 597,
+      "promedio_m2_tipo_zona": 675,
+      "diferencia_vs_promedio_pct": -12,
       "semaforo": "amarillo"
     },
     {
@@ -991,31 +904,26 @@
       "semaforo": "rojo"
     },
     {
-      "titulo": "Bella casa en venta La Suiza San Antonio de los Altos 23-3013",
-      "precio_texto": "USD 135.000",
-      "habitaciones": "4",
+      "titulo": "Casa en Venta San Antonio de los Altos Club de Campo G. 04143054662",
+      "precio_texto": "USD 520.000",
+      "habitaciones": "6",
       "banos": "4",
-      "metros_cuadrados": "1,578",
+      "metros_cuadrados": "404",
       "tipo": "Casa",
       "ubicacion": "San Antonio de Los Altos, Miranda",
-      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77329-bella-casa-en-venta-la-suiza-san-antonio-de-los-altos-23-3013",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/124902-casa-en-venta-san-antonio-de-los-altos-club-de-campo-g-04143054662",
       "portal_principal": "bienesonline",
-      "total_publicaciones_encontradas": 2,
+      "total_publicaciones_encontradas": 1,
       "todos_los_anuncios": [
         {
-          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77329-bella-casa-en-venta-la-suiza-san-antonio-de-los-altos-23-3013",
+          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/124902-casa-en-venta-san-antonio-de-los-altos-club-de-campo-g-04143054662",
           "portal": "bienesonline",
-          "titulo": "Bella casa en venta La Suiza San Antonio de los Altos 23-3013"
-        },
-        {
-          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77467-linda-casa-en-venta-la-suiza-san-antonio-de-los-altos-23-3013",
-          "portal": "bienesonline",
-          "titulo": "Linda casa en venta La Suiza San Antonio de los Altos 23-3013"
+          "titulo": "Casa en Venta San Antonio de los Altos Club de Campo G. 04143054662"
         }
       ],
-      "precio_m2": 85551,
-      "promedio_m2_tipo_zona": 3840,
-      "diferencia_vs_promedio_pct": 2128,
+      "precio_m2": 1287,
+      "promedio_m2_tipo_zona": 675,
+      "diferencia_vs_promedio_pct": 91,
       "semaforo": "rojo"
     },
     {
@@ -1062,6 +970,98 @@
       "precio_m2": 798,
       "promedio_m2_tipo_zona": 635,
       "diferencia_vs_promedio_pct": 26,
+      "semaforo": "rojo"
+    },
+    {
+      "titulo": "Hermosa Casa En Venta La Rosaleda San Antonio De Los Altos 27-3968",
+      "precio_texto": "USD 350.000",
+      "habitaciones": "3",
+      "banos": "2",
+      "metros_cuadrados": "94",
+      "tipo": "Casa",
+      "ubicacion": "San Antonio de Los Altos, Miranda",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/126672-hermosa-casa-en-venta-la-rosaleda-san-antonio-de-los-altos-27-3968",
+      "portal_principal": "bienesonline",
+      "total_publicaciones_encontradas": 1,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/126672-hermosa-casa-en-venta-la-rosaleda-san-antonio-de-los-altos-27-3968",
+          "portal": "bienesonline",
+          "titulo": "Hermosa Casa En Venta La Rosaleda San Antonio De Los Altos 27-3968"
+        }
+      ],
+      "precio_m2": 3723,
+      "promedio_m2_tipo_zona": 675,
+      "diferencia_vs_promedio_pct": 452,
+      "semaforo": "rojo"
+    },
+    {
+      "titulo": "Bella y Amplia Casa En Venta Club de Campo, San Antonio de los Altos",
+      "precio_texto": "USD 550.000",
+      "habitaciones": "4",
+      "banos": "3",
+      "metros_cuadrados": "280",
+      "tipo": "Casa",
+      "ubicacion": "San Antonio de Los Altos, Miranda",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77106-bella-y-amplia-casa-en-venta-club-de-campo-san-antonio-de-los-altos",
+      "portal_principal": "bienesonline",
+      "total_publicaciones_encontradas": 1,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77106-bella-y-amplia-casa-en-venta-club-de-campo-san-antonio-de-los-altos",
+          "portal": "bienesonline",
+          "titulo": "Bella y Amplia Casa En Venta Club de Campo, San Antonio de los Altos"
+        }
+      ],
+      "precio_m2": 1964,
+      "promedio_m2_tipo_zona": 675,
+      "diferencia_vs_promedio_pct": 191,
+      "semaforo": "rojo"
+    },
+    {
+      "titulo": "Linda y Cómoda Casa en Venta Club de Campo, San Antonio de los Altos",
+      "precio_texto": "USD 320.000",
+      "habitaciones": "5",
+      "banos": "6",
+      "metros_cuadrados": "312",
+      "tipo": "Casa",
+      "ubicacion": "San Antonio de Los Altos, Miranda",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77104-linda-y-comoda-casa-en-venta-club-de-campo-san-antonio-de-los-altos",
+      "portal_principal": "bienesonline",
+      "total_publicaciones_encontradas": 1,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77104-linda-y-comoda-casa-en-venta-club-de-campo-san-antonio-de-los-altos",
+          "portal": "bienesonline",
+          "titulo": "Linda y Cómoda Casa en Venta Club de Campo, San Antonio de los Altos"
+        }
+      ],
+      "precio_m2": 1026,
+      "promedio_m2_tipo_zona": 675,
+      "diferencia_vs_promedio_pct": 52,
+      "semaforo": "rojo"
+    },
+    {
+      "titulo": "Casa En Venta Los Castores San Antonio De Los Altos 27-1407",
+      "precio_texto": "USD 380.000",
+      "habitaciones": "4",
+      "banos": "5",
+      "metros_cuadrados": "384",
+      "tipo": "Casa",
+      "ubicacion": "San Antonio de Los Altos, Miranda",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/120711-casa-en-venta-los-castores-san-antonio-de-los-altos-27-1407",
+      "portal_principal": "bienesonline",
+      "total_publicaciones_encontradas": 1,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/120711-casa-en-venta-los-castores-san-antonio-de-los-altos-27-1407",
+          "portal": "bienesonline",
+          "titulo": "Casa En Venta Los Castores San Antonio De Los Altos 27-1407"
+        }
+      ],
+      "precio_m2": 990,
+      "promedio_m2_tipo_zona": 675,
+      "diferencia_vs_promedio_pct": 47,
       "semaforo": "rojo"
     },
     {
