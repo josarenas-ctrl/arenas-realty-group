@@ -55,6 +55,8 @@
     padding: 12px 16px;
     background: #fff;
     border-bottom: 1px solid var(--borde);
+  }
+  #filtros-semaforo {
     position: sticky;
     top: 68px;
     z-index: 9;
@@ -185,6 +187,8 @@
 
 <div class="filtros" id="filtros-tipo"></div>
 
+<div class="filtros" id="filtros-zona"></div>
+
 <main>
   <div class="resumen" id="resumen"></div>
   <div id="lista" class="cargando">Cargando propiedades...</div>
@@ -195,6 +199,7 @@
   let fichasOriginal = [];
   let filtroSemaforo = "todos";
   let filtroTipo = "todos";
+  let filtroZona = "todos";
 
   const NOMBRES_SEMAFORO = {
     verde: "🟢 Ganga",
@@ -215,22 +220,52 @@
     const chipTodos = document.createElement("button");
     chipTodos.className = "chip activo";
     chipTodos.textContent = "Todos los tipos";
-    chipTodos.onclick = () => { filtroTipo = "todos"; actualizarChips(contenedor); render(); };
+    chipTodos.onclick = () => { filtroTipo = "todos"; actualizarChips(contenedor, filtroTipo, "Todos los tipos"); render(); };
     contenedor.appendChild(chipTodos);
 
     tipos.forEach((tipo) => {
       const chip = document.createElement("button");
       chip.className = "chip";
       chip.textContent = tipo;
-      chip.onclick = () => { filtroTipo = tipo; actualizarChips(contenedor); render(); };
+      chip.onclick = () => { filtroTipo = tipo; actualizarChips(contenedor, filtroTipo, "Todos los tipos"); render(); };
       contenedor.appendChild(chip);
     });
   }
 
-  function actualizarChips(contenedor) {
+  function renderChipsZona(fichas) {
+    // El "área" se toma directo de la ubicación ya extraída de cada anuncio
+    // (ej. "San Antonio de Los Altos, Miranda") — cuando se agreguen más
+    // zonas al scraper, estos chips aparecen solos, sin tocar este código.
+    const zonas = [...new Set(fichas.map((f) => f.ubicacion).filter(Boolean))].sort();
+    const contenedor = document.getElementById("filtros-zona");
+    contenedor.innerHTML = "";
+
+    if (zonas.length <= 1) {
+      // Con una sola zona todavía no tiene sentido mostrar el filtro.
+      contenedor.style.display = "none";
+      return;
+    }
+    contenedor.style.display = "flex";
+
+    const chipTodos = document.createElement("button");
+    chipTodos.className = "chip activo";
+    chipTodos.textContent = "Todas las áreas";
+    chipTodos.onclick = () => { filtroZona = "todos"; actualizarChips(contenedor, filtroZona, "Todas las áreas"); render(); };
+    contenedor.appendChild(chipTodos);
+
+    zonas.forEach((zona) => {
+      const chip = document.createElement("button");
+      chip.className = "chip";
+      chip.textContent = zona;
+      chip.onclick = () => { filtroZona = zona; actualizarChips(contenedor, filtroZona, "Todas las áreas"); render(); };
+      contenedor.appendChild(chip);
+    });
+  }
+
+  function actualizarChips(contenedor, valorActivo, textoTodos) {
     [...contenedor.children].forEach((c) => c.classList.remove("activo"));
     const activo = [...contenedor.children].find(
-      (c) => c.textContent === (filtroTipo === "todos" ? "Todos los tipos" : filtroTipo)
+      (c) => c.textContent === (valorActivo === "todos" ? textoTodos : valorActivo)
     );
     if (activo) activo.classList.add("activo");
   }
@@ -244,6 +279,9 @@
     }
     if (filtroTipo !== "todos") {
       fichas = fichas.filter((f) => f.tipo === filtroTipo);
+    }
+    if (filtroZona !== "todos") {
+      fichas = fichas.filter((f) => f.ubicacion === filtroZona);
     }
 
     if (fichas.length === 0) {
@@ -322,6 +360,7 @@
         "Actualizado: " + new Date(data.generado_en).toLocaleString("es-VE");
       renderResumen(data.resumen || {});
       renderChipsTipo(fichasOriginal);
+      renderChipsZona(fichasOriginal);
       render();
     })
     .catch((err) => {
@@ -334,4 +373,4 @@
 </script>
 
 </body>
-</html> 
+</html>
