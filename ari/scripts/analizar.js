@@ -135,25 +135,28 @@ function main() {
 
   const nombreSalida = archivoReciente.replace("fichas-maestras-", "analisis-");
   const rutaSalida = path.join(DATA_DIR, nombreSalida);
-
-  fs.writeFileSync(
-    rutaSalida,
-    JSON.stringify(
-      {
-        generado_en: new Date().toISOString(),
-        basado_en: archivoReciente,
-        promedios_m2_por_tipo: Object.fromEntries(
-          [...promedioPorTipo.entries()].map(([tipo, valor]) => [tipo, Math.round(valor)])
-        ),
-        resumen: conteo,
-        fichas: fichasAnalizadas,
-      },
-      null,
-      2
-    ),
-    "utf-8"
+  const cuerpo = JSON.stringify(
+    {
+      generado_en: new Date().toISOString(),
+      basado_en: archivoReciente,
+      promedios_m2_por_tipo: Object.fromEntries(
+        [...promedioPorTipo.entries()].map(([tipo, valor]) => [tipo, Math.round(valor)])
+      ),
+      resumen: conteo,
+      fichas: fichasAnalizadas,
+    },
+    null,
+    2
   );
+
+  fs.writeFileSync(rutaSalida, cuerpo, "utf-8");
   console.log(`✓ Guardado en ${rutaSalida}`);
+
+  // Copia con nombre fijo (sin fecha) para que la interfaz de los asesores
+  // siempre sepa qué archivo pedir, sin tener que adivinar la fecha de hoy.
+  const rutaUltimo = path.join(DATA_DIR, "ultimo-analisis.json");
+  fs.writeFileSync(rutaUltimo, cuerpo, "utf-8");
+  console.log(`✓ Copia actualizada en ${rutaUltimo}`);
 }
 
 main();
