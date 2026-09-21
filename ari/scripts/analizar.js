@@ -17,10 +17,10 @@
 // corridas para comparar contra tendencia en el tiempo, no solo contra el
 // promedio del momento actual.
 //
-// Fichas sin m² (terrenos comerciales, locales sin dato, etc.) o sin
-// estado reconocible quedan marcadas como "sin_datos_suficientes" — no se
-// les asigna semáforo para no dar una señal falsa con información
-// incompleta.
+// Fichas sin m² (terrenos comerciales, locales sin dato, etc.), sin estado
+// reconocible, o con precio/m² fuera de rango razonable (dato roto del
+// anuncio original) quedan marcadas como "sin_datos_suficientes" — no se
+// les asigna semáforo para no dar una señal falsa con información mala.
 
 const fs = require("fs");
 const path = require("path");
@@ -28,6 +28,13 @@ const path = require("path");
 const DATA_DIR = path.join(__dirname, "..", "data");
 const UMBRAL_GANGA = 0.15; // 15% por debajo del promedio = verde
 const UMBRAL_SOBREVALORADA = 0.15; // 15% por encima del promedio = rojo
+
+// Filtro de sanidad: precios o metros absurdamente bajos casi siempre son
+// error de carga del anuncio original (el dueño no puso el precio real,
+// o el sitio no capturó bien el dato), no una ganga real. Sin esto, un
+// solo anuncio roto puede arruinar el promedio de todo un estado.
+const PRECIO_MINIMO_VALIDO = 500; // por debajo de esto, se descarta
+const M2_MINIMO_VALIDO = 5; // menos de esto tampoco es una propiedad real
 
 function normalizarNumero(texto) {
   if (!texto) return null;
@@ -78,6 +85,7 @@ function calcularPrecioM2(ficha) {
   const precio = normalizarNumero(ficha.precio_texto);
   const m2 = normalizarNumero(ficha.metros_cuadrados);
   if (!precio || !m2 || m2 <= 0) return null;
+  if (precio < PRECIO_MINIMO_VALIDO || m2 < M2_MINIMO_VALIDO) return null; // dato roto, no una ganga real
   return precio / m2;
 }
 
