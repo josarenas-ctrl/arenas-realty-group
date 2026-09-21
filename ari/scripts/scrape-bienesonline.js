@@ -35,6 +35,12 @@ const HEADERS = {
   "Accept-Language": "es-VE,es;q=0.9",
 };
 
+function normalizarTipo(tipo) {
+  if (!tipo) return tipo;
+  const limpio = tipo.trim().toLowerCase();
+  return limpio.charAt(0).toUpperCase() + limpio.slice(1);
+}
+
 function extraerAnunciosDePagina(html, baseUrl) {
   const $ = cheerio.load(html);
   const candidatos = new Map(); // href -> { textos: [] }
@@ -89,7 +95,7 @@ function extraerAnunciosDePagina(html, baseUrl) {
       habitaciones: specsMatch ? specsMatch[1] : null,
       banos: specsMatch ? specsMatch[2] : null,
       metros_cuadrados: specsMatch ? specsMatch[3] : null,
-      tipo: tipoMatch ? tipoMatch[1] : "",
+      tipo: tipoMatch ? normalizarTipo(tipoMatch[1]) : "",
       operacion_detectada: tipoMatch ? tipoMatch[2] : "",
       ubicacion: ubicacionMatch ? ubicacionMatch[1] : "",
     });
