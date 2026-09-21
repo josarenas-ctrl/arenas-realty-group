@@ -76,6 +76,10 @@ function encontrarCandidatos(fichas) {
   return candidatos.slice(0, MAX_COMPARACIONES_IA);
 }
 
+async function dormir(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
 async function preguntarleALaIA(fichaA, fichaB, apiKey) {
   const prompt = `Eres un asistente que compara dos publicaciones inmobiliarias para decidir si son la MISMA propiedad publicada dos veces (por ejemplo, por distintos asesores o en distintos momentos), o si son DOS propiedades distintas que solo coinciden en precio y tipo por casualidad.
 
@@ -98,32 +102,49 @@ Ubicación: ${fichaB.ubicacion || "no especificada"}
 Responde ÚNICAMENTE con un JSON de esta forma exacta, sin texto adicional:
 {"misma_propiedad": true o false, "razon": "una frase breve explicando por qué"}`;
 
-  const respuesta = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/${MODELO}:generateContent?key=${apiKey}`,
-    {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        contents: [{ parts: [{ text: prompt }] }],
-        generationConfig: { responseMimeType: "application/json" },
-      }),
-    }
-  );
+  const MAX_INTENTOS = 3; // límite fijo — nunca reintenta más de esto, así no hay riesgo de bucle sin fin
+  let ultimoError;
 
-  if (!respuesta.ok) {
+  for (let intento = 1; intento <= MAX_INTENTOS; intento++) {
+    const respuesta = await fetch(
+      `https://generativelanguage.googleapis.com/v1beta/models/${MODELO}:generateContent?key=${apiKey}`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          contents: [{ parts: [{ text: prompt }] }],
+          generationConfig: { responseMimeType: "application/json" },
+        }),
+      }
+    );
+
+    if (respuesta.ok) {
+      const data = await respuesta.json();
+      const textoRespuesta = data?.candidates?.[0]?.content?.parts?.[0]?.text;
+      if (!textoRespuesta) throw new Error("Respuesta de Gemini sin contenido utilizable");
+      const parseado = JSON.parse(textoRespuesta);
+      return {
+        mismaPropiedad: parseado.misma_propiedad === true,
+        razon: parseado.razon || "",
+      };
+    }
+
     const textoError = await respuesta.text();
-    throw new Error(`Gemini respondió ${respuesta.status}: ${textoError.slice(0, 200)}`);
+    ultimoError = new Error(`Gemini respondió ${respuesta.status}: ${textoError.slice(0, 200)}`);
+
+    // Solo vale la pena reintentar cuando el modelo está saturado (503) o
+    // hay demasiadas peticiones (429) — son fallas temporales. Cualquier
+    // otro código (401, 400, etc.) es un problema real que reintentar no
+    // va a arreglar, así que ahí paramos de inmediato.
+    const esErrorTemporal = respuesta.status === 503 || respuesta.status === 429;
+    if (!esErrorTemporal || intento === MAX_INTENTOS) break;
+
+    const esperaMs = 5000 * intento; // 5s, luego 10s
+    console.log(`  ⏳ Intento ${intento} falló (${respuesta.status}), reintentando en ${esperaMs / 1000}s...`);
+    await dormir(esperaMs);
   }
 
-  const data = await respuesta.json();
-  const textoRespuesta = data?.candidates?.[0]?.content?.parts?.[0]?.text;
-  if (!textoRespuesta) throw new Error("Respuesta de Gemini sin contenido utilizable");
-
-  const parseado = JSON.parse(textoRespuesta);
-  return {
-    mismaPropiedad: parseado.misma_propiedad === true,
-    razon: parseado.razon || "",
-  };
+  throw ultimoError;
 }
 
 function fusionarFichas(principal, secundaria) {
@@ -133,10 +154,6 @@ function fusionarFichas(principal, secundaria) {
       principal.total_publicaciones_encontradas + secundaria.total_publicaciones_encontradas,
     todos_los_anuncios: [...principal.todos_los_anuncios, ...secundaria.todos_los_anuncios],
   };
-}
-
-async function dormir(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 async function main() {
