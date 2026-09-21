@@ -2,23 +2,25 @@
 //
 // Lee ari/data/fichas-maestras-<fecha>.json (la más reciente), calcula el
 // precio por m² de cada ficha, y le asigna un semáforo comparándola contra
-// el promedio de propiedades del mismo tipo (Casa/Apartamento/Terreno) en
-// la misma zona:
+// el promedio de propiedades del mismo tipo (Casa/Apartamento/Terreno) EN
+// EL MISMO ESTADO — comparar precios de Zulia contra precios de Miranda no
+// tendría sentido, los mercados son completamente distintos entre estados.
 //
-//   VERDE  — precio por m² al menos 15% por debajo del promedio (posible
-//            ganga, vale la pena que el asesor la revise primero)
+//   VERDE  — precio por m² al menos 15% por debajo del promedio de su
+//            estado (posible ganga, vale la pena que el asesor la revise)
 //   AMARILLO — dentro de +/- 15% del promedio (precio de mercado normal)
 //   ROJO   — al menos 15% por encima del promedio (sobrevalorada frente
-//            a comparables de la misma zona y tipo)
+//            a comparables del mismo tipo y estado)
 //
 // No usa IA: el cálculo es aritmético puro sobre los datos ya depurados.
 // Esto es la base; más adelante se puede sumar histórico de varias
 // corridas para comparar contra tendencia en el tiempo, no solo contra el
 // promedio del momento actual.
 //
-// Fichas sin m² (terrenos comerciales, locales sin dato, etc.) quedan
-// marcadas como "sin_datos_suficientes" — no se les asigna semáforo para
-// no dar una señal falsa con información incompleta.
+// Fichas sin m² (terrenos comerciales, locales sin dato, etc.) o sin
+// estado reconocible quedan marcadas como "sin_datos_suficientes" — no se
+// les asigna semáforo para no dar una señal falsa con información
+// incompleta.
 
 const fs = require("fs");
 const path = require("path");
@@ -46,6 +48,23 @@ function normalizarNumero(texto) {
   return isNaN(numero) ? null : numero;
 }
 
+function extraerEstado(ubicacion) {
+  // "ubicacion" viene como "Ciudad, Estado" (así la dejó el scraper). El
+  // estado es lo que queda después de la última coma.
+  if (!ubicacion || !ubicacion.includes(",")) return null;
+  const partes = ubicacion.split(",");
+  return partes[partes.length - 1].trim();
+}
+
+function normalizarTipo(tipo) {
+  // Los anuncios de distintos estados escriben el tipo con mayúsculas
+  // distintas ("CASA", "Casa", "casa") — sin esto, el promedio y los
+  // filtros los tratan como categorías separadas por error.
+  if (!tipo) return tipo;
+  const limpio = tipo.trim().toLowerCase();
+  return limpio.charAt(0).toUpperCase() + limpio.slice(1);
+}
+
 function encontrarFichasMaestrasMasReciente() {
   const archivos = fs
     .readdirSync(DATA_DIR)
@@ -62,6 +81,10 @@ function calcularPrecioM2(ficha) {
   return precio / m2;
 }
 
+function claveGrupo(tipo, estado) {
+  return `${tipo}||${estado}`;
+}
+
 function main() {
   const archivoReciente = encontrarFichasMaestrasMasReciente();
   if (!archivoReciente) {
@@ -73,35 +96,40 @@ function main() {
   const contenido = JSON.parse(fs.readFileSync(path.join(DATA_DIR, archivoReciente), "utf-8"));
   const fichas = contenido.fichas || [];
 
-  // Precio por m² de cada ficha, agrupado por tipo de propiedad.
-  const precioM2PorTipo = new Map(); // tipo -> [precios_m2...]
+  // Precio por m² de cada ficha, agrupado por tipo de propiedad + estado.
+  const precioM2PorGrupo = new Map(); // "tipo||estado" -> [precios_m2...]
 
   for (const ficha of fichas) {
+    ficha.tipo = normalizarTipo(ficha.tipo); // corrige mayúsculas antes de agrupar y de guardar
     const precioM2 = calcularPrecioM2(ficha);
+    const estado = extraerEstado(ficha.ubicacion);
     ficha._precio_m2 = precioM2;
-    if (precioM2 && ficha.tipo) {
-      if (!precioM2PorTipo.has(ficha.tipo)) precioM2PorTipo.set(ficha.tipo, []);
-      precioM2PorTipo.get(ficha.tipo).push(precioM2);
+    ficha._estado = estado;
+    if (precioM2 && ficha.tipo && estado) {
+      const clave = claveGrupo(ficha.tipo, estado);
+      if (!precioM2PorGrupo.has(clave)) precioM2PorGrupo.set(clave, []);
+      precioM2PorGrupo.get(clave).push(precioM2);
     }
   }
 
-  // Promedio por tipo.
-  const promedioPorTipo = new Map();
-  for (const [tipo, precios] of precioM2PorTipo.entries()) {
+  // Promedio por tipo + estado.
+  const promedioPorGrupo = new Map();
+  for (const [clave, precios] of precioM2PorGrupo.entries()) {
     const promedio = precios.reduce((suma, p) => suma + p, 0) / precios.length;
-    promedioPorTipo.set(tipo, promedio);
-    console.log(`  ${tipo}: promedio USD ${promedio.toFixed(0)}/m² (${precios.length} fichas con dato)`);
+    promedioPorGrupo.set(clave, promedio);
+    console.log(`  ${clave.replace("||", " / ")}: promedio USD ${promedio.toFixed(0)}/m² (${precios.length} fichas)`);
   }
 
   const fichasAnalizadas = fichas.map((ficha) => {
-    const { _precio_m2, ...resto } = ficha;
-    const promedioTipo = ficha.tipo ? promedioPorTipo.get(ficha.tipo) : null;
+    const { _precio_m2, _estado, ...resto } = ficha;
+    const clave = ficha.tipo && _estado ? claveGrupo(ficha.tipo, _estado) : null;
+    const promedioGrupo = clave ? promedioPorGrupo.get(clave) : null;
 
-    if (!_precio_m2 || !promedioTipo) {
+    if (!_precio_m2 || !promedioGrupo) {
       return { ...resto, precio_m2: null, promedio_m2_tipo_zona: null, semaforo: "sin_datos_suficientes" };
     }
 
-    const diferencia = (_precio_m2 - promedioTipo) / promedioTipo; // negativo = más barato que el promedio
+    const diferencia = (_precio_m2 - promedioGrupo) / promedioGrupo; // negativo = más barato que el promedio
 
     let semaforo;
     if (diferencia <= -UMBRAL_GANGA) {
@@ -115,7 +143,7 @@ function main() {
     return {
       ...resto,
       precio_m2: Math.round(_precio_m2),
-      promedio_m2_tipo_zona: Math.round(promedioTipo),
+      promedio_m2_tipo_zona: Math.round(promedioGrupo),
       diferencia_vs_promedio_pct: Math.round(diferencia * 100),
       semaforo,
     };
@@ -139,8 +167,8 @@ function main() {
     {
       generado_en: new Date().toISOString(),
       basado_en: archivoReciente,
-      promedios_m2_por_tipo: Object.fromEntries(
-        [...promedioPorTipo.entries()].map(([tipo, valor]) => [tipo, Math.round(valor)])
+      promedios_m2_por_tipo_y_estado: Object.fromEntries(
+        [...promedioPorGrupo.entries()].map(([clave, valor]) => [clave.replace("||", " / "), Math.round(valor)])
       ),
       resumen: conteo,
       fichas: fichasAnalizadas,
