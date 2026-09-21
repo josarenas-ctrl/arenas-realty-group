@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "venta",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+tachira",
-  "scrapeado_en": "2026-09-21T02:22:00.211Z",
+  "scrapeado_en": "2026-09-21T02:37:07.775Z",
   "total": 100,
   "anuncios": [
     {
@@ -57,7 +57,7 @@
       "habitaciones": "7",
       "banos": "6",
       "metros_cuadrados": "870",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Caracas, Distrito Capital"
     },
@@ -145,7 +145,7 @@
       "habitaciones": "4",
       "banos": "4",
       "metros_cuadrados": "390",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Caracas, Distrito Capital"
     },
@@ -277,7 +277,7 @@
       "habitaciones": "3",
       "banos": "4",
       "metros_cuadrados": "426",
-      "tipo": "apartamento",
+      "tipo": "Apartamento",
       "operacion_detectada": "venta",
       "ubicacion": "Baruta, Miranda"
     },
@@ -288,7 +288,7 @@
       "habitaciones": "2",
       "banos": "2",
       "metros_cuadrados": "90",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Colonia Tovar, Aragua"
     },
@@ -310,7 +310,7 @@
       "habitaciones": "6",
       "banos": "2",
       "metros_cuadrados": "210",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Táriba, Táchira"
     },
@@ -475,7 +475,7 @@
       "habitaciones": "3",
       "banos": "1",
       "metros_cuadrados": "90",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Caracas, Distrito Capital"
     },
@@ -541,7 +541,7 @@
       "habitaciones": "3",
       "banos": "3",
       "metros_cuadrados": "150",
-      "tipo": "apartamento",
+      "tipo": "Apartamento",
       "operacion_detectada": "venta",
       "ubicacion": "Chacao, Miranda"
     },
@@ -574,7 +574,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "TERRENO",
+      "tipo": "Terreno",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -684,7 +684,7 @@
       "habitaciones": "3",
       "banos": "3",
       "metros_cuadrados": "114",
-      "tipo": "apartamento",
+      "tipo": "Apartamento",
       "operacion_detectada": "venta",
       "ubicacion": "Caracas, Distrito Capital"
     },
@@ -739,7 +739,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "146",
-      "tipo": "apartamento",
+      "tipo": "Apartamento",
       "operacion_detectada": "venta",
       "ubicacion": "Caracas, Distrito Capital"
     },
@@ -750,7 +750,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "TERRENO",
+      "tipo": "Terreno",
       "operacion_detectada": "VENTA",
       "ubicacion": "Cabimas, Zulia"
     },
@@ -783,7 +783,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "TERRENO",
+      "tipo": "Terreno",
       "operacion_detectada": "VENTA",
       "ubicacion": "Cabudare, Lara"
     },
@@ -838,7 +838,7 @@
       "habitaciones": "4",
       "banos": "1",
       "metros_cuadrados": "380",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Valencia, Carabobo"
     },
@@ -904,7 +904,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "92",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -1003,7 +1003,7 @@
       "habitaciones": "4",
       "banos": "1",
       "metros_cuadrados": "380",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Valencia, Carabobo"
     },
@@ -1036,7 +1036,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "155",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Acarigua, Portuguesa"
     },

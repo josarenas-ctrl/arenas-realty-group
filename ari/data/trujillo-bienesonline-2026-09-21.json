@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "venta",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+trujillo",
-  "scrapeado_en": "2026-09-21T02:22:01.491Z",
+  "scrapeado_en": "2026-09-21T02:37:08.808Z",
   "total": 100,
   "anuncios": [
     {
@@ -156,7 +156,7 @@
       "habitaciones": "4",
       "banos": "4",
       "metros_cuadrados": "2,732",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Trujillo, Trujillo"
     },
@@ -189,7 +189,7 @@
       "habitaciones": "4",
       "banos": "4",
       "metros_cuadrados": "300",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Valera, Trujillo"
     },
@@ -200,7 +200,7 @@
       "habitaciones": "4",
       "banos": "4",
       "metros_cuadrados": "112",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Escuque, Trujillo"
     },
@@ -233,7 +233,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "525",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Escuque, Trujillo"
     },
@@ -244,7 +244,7 @@
       "habitaciones": "4",
       "banos": "4",
       "metros_cuadrados": "187",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Trujillo, Trujillo"
     },
@@ -354,7 +354,7 @@
       "habitaciones": "4",
       "banos": "4",
       "metros_cuadrados": "1,646",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Trujillo, Trujillo"
     },
@@ -541,7 +541,7 @@
       "habitaciones": "7",
       "banos": "5",
       "metros_cuadrados": "260",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Valera, Trujillo"
     },
@@ -673,7 +673,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Trujillo, Trujillo"
     },
@@ -706,7 +706,7 @@
       "habitaciones": "4",
       "banos": "2",
       "metros_cuadrados": "750",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Valera, Trujillo"
     },
@@ -860,7 +860,7 @@
       "habitaciones": "4",
       "banos": "2",
       "metros_cuadrados": "750",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Trujillo, Trujillo"
     },
@@ -882,7 +882,7 @@
       "habitaciones": "4",
       "banos": "3",
       "metros_cuadrados": "136",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -948,7 +948,7 @@
       "habitaciones": "3",
       "banos": "1",
       "metros_cuadrados": "69",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -992,7 +992,7 @@
       "habitaciones": "4",
       "banos": "2",
       "metros_cuadrados": "123",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -1080,7 +1080,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "210",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Escuque, Trujillo"
     },

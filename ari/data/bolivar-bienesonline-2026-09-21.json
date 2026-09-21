@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "venta",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+bolivar",
-  "scrapeado_en": "2026-09-21T02:21:40.947Z",
+  "scrapeado_en": "2026-09-21T02:36:52.032Z",
   "total": 100,
   "anuncios": [
     {
@@ -90,7 +90,7 @@
       "habitaciones": "1",
       "banos": "2",
       "metros_cuadrados": "78",
-      "tipo": "apartamento",
+      "tipo": "Apartamento",
       "operacion_detectada": "venta",
       "ubicacion": "Caracas, Distrito Capital"
     },
@@ -134,7 +134,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -145,7 +145,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -211,7 +211,7 @@
       "habitaciones": "5",
       "banos": "2",
       "metros_cuadrados": "152",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Acarigua, Portuguesa"
     },
@@ -321,7 +321,7 @@
       "habitaciones": "4",
       "banos": "1",
       "metros_cuadrados": "83",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -332,7 +332,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -706,7 +706,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "San Francisco, Zulia"
     },
@@ -717,7 +717,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "San Francisco, Zulia"
     },
@@ -739,7 +739,7 @@
       "habitaciones": "4",
       "banos": "3",
       "metros_cuadrados": "240",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -816,7 +816,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "90",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -959,7 +959,7 @@
       "habitaciones": "3",
       "banos": "3",
       "metros_cuadrados": "168",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "San Francisco, Zulia"
     },

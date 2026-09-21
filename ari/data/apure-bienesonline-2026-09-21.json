@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "venta",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+apure",
-  "scrapeado_en": "2026-09-21T02:21:37.073Z",
+  "scrapeado_en": "2026-09-21T02:36:49.032Z",
   "total": 100,
   "anuncios": [
     {
@@ -13,7 +13,7 @@
       "habitaciones": "3",
       "banos": "127",
       "metros_cuadrados": "127",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Acarigua, Portuguesa"
     },
@@ -35,7 +35,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "127",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Araure, Portuguesa"
     },
@@ -46,7 +46,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "100",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Araure, Portuguesa"
     },
@@ -79,7 +79,7 @@
       "habitaciones": "3",
       "banos": "3",
       "metros_cuadrados": "155",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Acarigua, Portuguesa"
     },
@@ -101,7 +101,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "75",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Acarigua, Portuguesa"
     },
@@ -123,7 +123,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "155",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Acarigua, Portuguesa"
     },
@@ -145,7 +145,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "75",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Acarigua, Portuguesa"
     },
@@ -156,7 +156,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Acarigua, Portuguesa"
     },
@@ -255,7 +255,7 @@
       "habitaciones": "2",
       "banos": "2",
       "metros_cuadrados": "70",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Araure, Portuguesa"
     },
@@ -277,7 +277,7 @@
       "habitaciones": "4",
       "banos": "3",
       "metros_cuadrados": "180",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Acarigua, Portuguesa"
     },
@@ -365,7 +365,7 @@
       "habitaciones": "2",
       "banos": "2",
       "metros_cuadrados": "74",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "La Guaira, Vargas"
     },
@@ -376,7 +376,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "126",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Guarenas, Miranda"
     },
@@ -398,7 +398,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "78",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Guarenas, Miranda"
     },
@@ -420,7 +420,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "87",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -453,7 +453,7 @@
       "habitaciones": "2",
       "banos": "2",
       "metros_cuadrados": "62",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Araure, Portuguesa"
     },
@@ -497,7 +497,7 @@
       "habitaciones": "5",
       "banos": "2",
       "metros_cuadrados": "152",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Acarigua, Portuguesa"
     },
@@ -519,7 +519,7 @@
       "habitaciones": "4",
       "banos": "3",
       "metros_cuadrados": "147",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Puerto la Cruz, Anzoátegui"
     },
@@ -574,7 +574,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "74",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Guarenas, Miranda"
     },
@@ -607,7 +607,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -662,7 +662,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "83",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -816,7 +816,7 @@
       "habitaciones": "2",
       "banos": "2",
       "metros_cuadrados": "74",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "La Guaira, Vargas"
     },
@@ -981,7 +981,7 @@
       "habitaciones": "2",
       "banos": "2",
       "metros_cuadrados": "74",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "La Guaira, Vargas"
     },
@@ -1047,7 +1047,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "75",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -1091,7 +1091,7 @@
       "habitaciones": "2",
       "banos": "1",
       "metros_cuadrados": "56",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Guarenas, Miranda"
     },
@@ -1102,7 +1102,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Guatire, Miranda"
     }

@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "venta",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+carabobo",
-  "scrapeado_en": "2026-09-21T02:21:42.295Z",
+  "scrapeado_en": "2026-09-21T02:36:53.224Z",
   "total": 100,
   "anuncios": [
     {
@@ -57,7 +57,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "80",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Caracas, Distrito Capital"
     },
@@ -134,7 +134,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "100",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Acarigua, Portuguesa"
     },
@@ -167,7 +167,7 @@
       "habitaciones": "4",
       "banos": "3",
       "metros_cuadrados": "1",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "San Francisco, Zulia"
     },
@@ -321,7 +321,7 @@
       "habitaciones": "2",
       "banos": "1",
       "metros_cuadrados": "79",
-      "tipo": "apartamento",
+      "tipo": "Apartamento",
       "operacion_detectada": "venta",
       "ubicacion": "Caracas, Distrito Capital"
     },
@@ -662,7 +662,7 @@
       "habitaciones": "3",
       "banos": "1",
       "metros_cuadrados": "90",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Caracas, Distrito Capital"
     },
@@ -684,7 +684,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "146",
-      "tipo": "apartamento",
+      "tipo": "Apartamento",
       "operacion_detectada": "venta",
       "ubicacion": "Caracas, Distrito Capital"
     },
@@ -761,7 +761,7 @@
       "habitaciones": "5",
       "banos": "5",
       "metros_cuadrados": "450",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "San Francisco, Zulia"
     },
@@ -849,7 +849,7 @@
       "habitaciones": "2",
       "banos": "1",
       "metros_cuadrados": "78",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Caracas, Distrito Capital"
     },
@@ -860,7 +860,7 @@
       "habitaciones": "3",
       "banos": "3",
       "metros_cuadrados": "150",
-      "tipo": "apartamento",
+      "tipo": "Apartamento",
       "operacion_detectada": "venta",
       "ubicacion": "Chacao, Miranda"
     },
@@ -871,7 +871,7 @@
       "habitaciones": "3",
       "banos": "3",
       "metros_cuadrados": "98",
-      "tipo": "apartamento",
+      "tipo": "Apartamento",
       "operacion_detectada": "venta",
       "ubicacion": "Sucre, Miranda"
     },

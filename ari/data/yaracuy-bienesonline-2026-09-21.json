@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "venta",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+yaracuy",
-  "scrapeado_en": "2026-09-21T02:22:02.747Z",
+  "scrapeado_en": "2026-09-21T02:37:09.823Z",
   "total": 100,
   "anuncios": [
     {
@@ -79,7 +79,7 @@
       "habitaciones": "5",
       "banos": "2",
       "metros_cuadrados": "152",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Acarigua, Portuguesa"
     },
@@ -101,7 +101,7 @@
       "habitaciones": "3",
       "banos": "3",
       "metros_cuadrados": "155",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Acarigua, Portuguesa"
     },
@@ -112,7 +112,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "155",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Acarigua, Portuguesa"
     },
@@ -211,7 +211,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Acarigua, Portuguesa"
     },
@@ -244,7 +244,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "100",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Acarigua, Portuguesa"
     },
@@ -299,7 +299,7 @@
       "habitaciones": "4",
       "banos": "3",
       "metros_cuadrados": "180",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Acarigua, Portuguesa"
     },
@@ -464,7 +464,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "TERRENO",
+      "tipo": "Terreno",
       "operacion_detectada": "VENTA",
       "ubicacion": "Acarigua, Portuguesa"
     },
@@ -541,7 +541,7 @@
       "habitaciones": "8",
       "banos": "9",
       "metros_cuadrados": "192",
-      "tipo": "TERRENO",
+      "tipo": "Terreno",
       "operacion_detectada": "VENTA",
       "ubicacion": "Cacute, Mérida"
     },
@@ -585,7 +585,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "75",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Acarigua, Portuguesa"
     },
@@ -596,7 +596,7 @@
       "habitaciones": "4",
       "banos": "3",
       "metros_cuadrados": "145",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -607,7 +607,7 @@
       "habitaciones": "3",
       "banos": "4",
       "metros_cuadrados": "250",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -618,7 +618,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "83",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -640,7 +640,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "132",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -827,7 +827,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "TERRENO",
+      "tipo": "Terreno",
       "operacion_detectada": "VENTA",
       "ubicacion": "Acarigua, Portuguesa"
     },
@@ -959,7 +959,7 @@
       "habitaciones": "4",
       "banos": "4",
       "metros_cuadrados": "540",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Araure, Portuguesa"
     },
@@ -1025,7 +1025,7 @@
       "habitaciones": "2",
       "banos": "2",
       "metros_cuadrados": "100",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Araure, Portuguesa"
     },
@@ -1080,7 +1080,7 @@
       "habitaciones": "3",
       "banos": "1",
       "metros_cuadrados": "240",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },

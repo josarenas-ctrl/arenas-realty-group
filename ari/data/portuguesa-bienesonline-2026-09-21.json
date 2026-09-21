@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "venta",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+portuguesa",
-  "scrapeado_en": "2026-09-21T02:21:57.692Z",
+  "scrapeado_en": "2026-09-21T02:37:05.672Z",
   "total": 100,
   "anuncios": [
     {
@@ -145,7 +145,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "89",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Araure, Portuguesa"
     },
@@ -156,7 +156,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "105",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Araure, Portuguesa"
     },
@@ -167,7 +167,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "105",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Araure, Portuguesa"
     },
@@ -178,7 +178,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "89",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Araure, Portuguesa"
     },
@@ -211,7 +211,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "105",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Araure, Portuguesa"
     },
@@ -222,7 +222,7 @@
       "habitaciones": "5",
       "banos": "2",
       "metros_cuadrados": "230",
-      "tipo": "LOCAL",
+      "tipo": "Local",
       "operacion_detectada": "VENTA",
       "ubicacion": "Acarigua, Portuguesa"
     },
@@ -233,7 +233,7 @@
       "habitaciones": "3",
       "banos": "1",
       "metros_cuadrados": "138",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "ALQUILER",
       "ubicacion": "Araure, Portuguesa"
     },
@@ -266,7 +266,7 @@
       "habitaciones": "5",
       "banos": "2",
       "metros_cuadrados": "230",
-      "tipo": "LOCAL",
+      "tipo": "Local",
       "operacion_detectada": "VENTA",
       "ubicacion": "Acarigua, Portuguesa"
     },
@@ -288,7 +288,7 @@
       "habitaciones": "5",
       "banos": "2",
       "metros_cuadrados": "230",
-      "tipo": "LOCAL",
+      "tipo": "Local",
       "operacion_detectada": "VENTA",
       "ubicacion": "Acarigua, Portuguesa"
     },
@@ -310,7 +310,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "175",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Araure, Portuguesa"
     },
@@ -332,7 +332,7 @@
       "habitaciones": "4",
       "banos": "4",
       "metros_cuadrados": "363",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Araure, Portuguesa"
     },
@@ -343,7 +343,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "105",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Acarigua, Portuguesa"
     },
@@ -365,7 +365,7 @@
       "habitaciones": "4",
       "banos": "4",
       "metros_cuadrados": "363",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Araure, Portuguesa"
     },
@@ -376,7 +376,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "TERRENO",
+      "tipo": "Terreno",
       "operacion_detectada": "VENTA",
       "ubicacion": "Acarigua, Portuguesa"
     },
@@ -398,7 +398,7 @@
       "habitaciones": "5",
       "banos": "2",
       "metros_cuadrados": "230",
-      "tipo": "LOCAL",
+      "tipo": "Local",
       "operacion_detectada": "VENTA",
       "ubicacion": "Acarigua, Portuguesa"
     },
@@ -420,7 +420,7 @@
       "habitaciones": "2",
       "banos": "2",
       "metros_cuadrados": "62",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Araure, Portuguesa"
     },
@@ -453,7 +453,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "TERRENO",
+      "tipo": "Terreno",
       "operacion_detectada": "VENTA",
       "ubicacion": "Acarigua, Portuguesa"
     },
@@ -464,7 +464,7 @@
       "habitaciones": "2",
       "banos": "2",
       "metros_cuadrados": "145",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Acarigua, Portuguesa"
     },
@@ -563,7 +563,7 @@
       "habitaciones": "2",
       "banos": "2",
       "metros_cuadrados": "80",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "ALQUILER",
       "ubicacion": "Acarigua, Portuguesa"
     },
@@ -585,7 +585,7 @@
       "habitaciones": "2",
       "banos": "2",
       "metros_cuadrados": "102",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Araure, Portuguesa"
     },
@@ -684,7 +684,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "TERRENO",
+      "tipo": "Terreno",
       "operacion_detectada": "VENTA",
       "ubicacion": "Acarigua, Portuguesa"
     },

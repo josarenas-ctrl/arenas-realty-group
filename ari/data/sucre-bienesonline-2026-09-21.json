@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "venta",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+sucre",
-  "scrapeado_en": "2026-09-21T02:21:58.919Z",
+  "scrapeado_en": "2026-09-21T02:37:06.728Z",
   "total": 100,
   "anuncios": [
     {
@@ -409,7 +409,7 @@
       "habitaciones": "3",
       "banos": "3",
       "metros_cuadrados": "76",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "San Francisco, Zulia"
     },
@@ -442,7 +442,7 @@
       "habitaciones": "3",
       "banos": "3",
       "metros_cuadrados": "220",
-      "tipo": "casa",
+      "tipo": "Casa",
       "operacion_detectada": "venta",
       "ubicacion": "Sucre, Miranda"
     },
@@ -453,7 +453,7 @@
       "habitaciones": "2",
       "banos": "2",
       "metros_cuadrados": "288",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "San Francisco, Zulia"
     },
@@ -563,7 +563,7 @@
       "habitaciones": "2",
       "banos": "2",
       "metros_cuadrados": "288",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "San Francisco, Zulia"
     },
@@ -596,7 +596,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "San Francisco, Zulia"
     },
@@ -684,7 +684,7 @@
       "habitaciones": "5",
       "banos": "9",
       "metros_cuadrados": "1,200",
-      "tipo": "casa",
+      "tipo": "Casa",
       "operacion_detectada": "venta",
       "ubicacion": "Sucre, Miranda"
     },
@@ -706,7 +706,7 @@
       "habitaciones": "3",
       "banos": "3",
       "metros_cuadrados": "76",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "San Francisco, Zulia"
     },
@@ -794,7 +794,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "180",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "San Francisco, Zulia"
     },
@@ -827,7 +827,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "150",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "San Francisco, Zulia"
     },
@@ -904,7 +904,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "150",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "San Francisco, Zulia"
     },
@@ -937,7 +937,7 @@
       "habitaciones": "4",
       "banos": "4",
       "metros_cuadrados": "750",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "San Francisco, Zulia"
     },
@@ -992,7 +992,7 @@
       "habitaciones": "2",
       "banos": "2",
       "metros_cuadrados": "288",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "San Francisco, Zulia"
     },
@@ -1047,7 +1047,7 @@
       "habitaciones": "3",
       "banos": "3",
       "metros_cuadrados": "280",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "San Francisco, Zulia"
     },
@@ -1091,7 +1091,7 @@
       "habitaciones": "2",
       "banos": "3",
       "metros_cuadrados": "153",
-      "tipo": "apartamento",
+      "tipo": "Apartamento",
       "operacion_detectada": "alquiler",
       "ubicacion": "Sucre, Miranda"
     },

@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "venta",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+miranda",
-  "scrapeado_en": "2026-09-21T02:21:54.097Z",
+  "scrapeado_en": "2026-09-21T02:37:02.739Z",
   "total": 100,
   "anuncios": [
     {
@@ -189,7 +189,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Guatire, Miranda"
     },
@@ -310,7 +310,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Guatire, Miranda"
     },
@@ -398,7 +398,7 @@
       "habitaciones": "3",
       "banos": "5",
       "metros_cuadrados": "300",
-      "tipo": "apartamento",
+      "tipo": "Apartamento",
       "operacion_detectada": "venta",
       "ubicacion": "Baruta, Miranda"
     },
@@ -464,7 +464,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -486,7 +486,7 @@
       "habitaciones": "3",
       "banos": "3",
       "metros_cuadrados": "220",
-      "tipo": "casa",
+      "tipo": "Casa",
       "operacion_detectada": "venta",
       "ubicacion": "Sucre, Miranda"
     },
@@ -585,7 +585,7 @@
       "habitaciones": "1",
       "banos": "2",
       "metros_cuadrados": "57",
-      "tipo": "apartamento",
+      "tipo": "Apartamento",
       "operacion_detectada": "venta",
       "ubicacion": "Baruta, Miranda"
     },
@@ -629,7 +629,7 @@
       "habitaciones": "3",
       "banos": "4",
       "metros_cuadrados": "169",
-      "tipo": "apartamento",
+      "tipo": "Apartamento",
       "operacion_detectada": "venta",
       "ubicacion": "Baruta, Miranda"
     },
@@ -684,7 +684,7 @@
       "habitaciones": "3",
       "banos": "3",
       "metros_cuadrados": "170",
-      "tipo": "apartamento",
+      "tipo": "Apartamento",
       "operacion_detectada": "venta",
       "ubicacion": "El Hatillo, Miranda"
     },
@@ -838,7 +838,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "TERRENO",
+      "tipo": "Terreno",
       "operacion_detectada": "VENTA",
       "ubicacion": "Caucagua, Miranda"
     },
@@ -871,7 +871,7 @@
       "habitaciones": "2",
       "banos": "3",
       "metros_cuadrados": "142",
-      "tipo": "apartamento",
+      "tipo": "Apartamento",
       "operacion_detectada": "venta",
       "ubicacion": "Baruta, Miranda"
     },
@@ -959,7 +959,7 @@
       "habitaciones": "2",
       "banos": "3",
       "metros_cuadrados": "104",
-      "tipo": "apartamento",
+      "tipo": "Apartamento",
       "operacion_detectada": "venta",
       "ubicacion": "Baruta, Miranda"
     },
@@ -1014,7 +1014,7 @@
       "habitaciones": "4",
       "banos": "4",
       "metros_cuadrados": "213",
-      "tipo": "apartamento",
+      "tipo": "Apartamento",
       "operacion_detectada": "venta",
       "ubicacion": "Chacao, Miranda"
     },
@@ -1025,7 +1025,7 @@
       "habitaciones": "2",
       "banos": "2",
       "metros_cuadrados": "114",
-      "tipo": "apartamento",
+      "tipo": "Apartamento",
       "operacion_detectada": "venta",
       "ubicacion": "Baruta, Miranda"
     },

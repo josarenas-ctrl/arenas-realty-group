@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "venta",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+cojedes",
-  "scrapeado_en": "2026-09-21T02:21:43.619Z",
+  "scrapeado_en": "2026-09-21T02:36:54.181Z",
   "total": 100,
   "anuncios": [
     {
@@ -189,7 +189,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -541,7 +541,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "TERRENO",
+      "tipo": "Terreno",
       "operacion_detectada": "VENTA",
       "ubicacion": "Cabimas, Zulia"
     },
@@ -596,7 +596,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "San Francisco, Zulia"
     },
@@ -640,7 +640,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "San Francisco, Zulia"
     },
@@ -684,7 +684,7 @@
       "habitaciones": "5",
       "banos": "5",
       "metros_cuadrados": "450",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "San Francisco, Zulia"
     },
@@ -871,7 +871,7 @@
       "habitaciones": "5",
       "banos": "4",
       "metros_cuadrados": "300",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -1003,7 +1003,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "San Francisco, Zulia"
     },
@@ -1014,7 +1014,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "San Francisco, Zulia"
     },
@@ -1025,7 +1025,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Ciudad Ojeda, Zulia"
     },

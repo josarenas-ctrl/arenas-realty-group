@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "venta",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+aragua",
-  "scrapeado_en": "2026-09-21T02:21:38.396Z",
+  "scrapeado_en": "2026-09-21T02:36:50.049Z",
   "total": 100,
   "anuncios": [
     {
@@ -79,7 +79,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "83",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -145,7 +145,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "83",
-      "tipo": "apartamento",
+      "tipo": "Apartamento",
       "operacion_detectada": "venta",
       "ubicacion": "Cómodo apartamento venta en Cagua, Aragua"
     },
@@ -156,7 +156,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "155",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Acarigua, Portuguesa"
     },
@@ -266,7 +266,7 @@
       "habitaciones": "3",
       "banos": "3",
       "metros_cuadrados": "155",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Acarigua, Portuguesa"
     },
@@ -277,7 +277,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "100",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Araure, Portuguesa"
     },
@@ -288,7 +288,7 @@
       "habitaciones": "5",
       "banos": "2",
       "metros_cuadrados": "152",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Acarigua, Portuguesa"
     },
@@ -310,7 +310,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "126",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Guarenas, Miranda"
     },
@@ -387,7 +387,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Acarigua, Portuguesa"
     },
@@ -409,7 +409,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "83",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -420,7 +420,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "126",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Guarenas, Miranda"
     },
@@ -442,7 +442,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "127",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Araure, Portuguesa"
     },
@@ -508,7 +508,7 @@
       "habitaciones": "3",
       "banos": "3",
       "metros_cuadrados": "150",
-      "tipo": "apartamento",
+      "tipo": "Apartamento",
       "operacion_detectada": "venta",
       "ubicacion": "Chacao, Miranda"
     },
@@ -530,7 +530,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -541,7 +541,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -552,7 +552,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "83",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -574,7 +574,7 @@
       "habitaciones": "4",
       "banos": "4",
       "metros_cuadrados": "540",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Araure, Portuguesa"
     },
@@ -662,7 +662,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "TERRENO",
+      "tipo": "Terreno",
       "operacion_detectada": "VENTA",
       "ubicacion": "Araure, Portuguesa"
     },
@@ -706,7 +706,7 @@
       "habitaciones": "4",
       "banos": "4",
       "metros_cuadrados": "540",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Araure, Portuguesa"
     },
@@ -728,7 +728,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "75",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -761,7 +761,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "87",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -772,7 +772,7 @@
       "habitaciones": "3",
       "banos": "3",
       "metros_cuadrados": "134",
-      "tipo": "apartamento",
+      "tipo": "Apartamento",
       "operacion_detectada": "venta",
       "ubicacion": "Caracas, Distrito Capital"
     },
@@ -827,7 +827,7 @@
       "habitaciones": "2",
       "banos": "2",
       "metros_cuadrados": "104",
-      "tipo": "apartamento",
+      "tipo": "Apartamento",
       "operacion_detectada": "venta",
       "ubicacion": "Baruta, Miranda"
     },
@@ -838,7 +838,7 @@
       "habitaciones": "3",
       "banos": "3",
       "metros_cuadrados": "120",
-      "tipo": "apartamento",
+      "tipo": "Apartamento",
       "operacion_detectada": "venta",
       "ubicacion": "Caracas, Distrito Capital"
     },
@@ -948,7 +948,7 @@
       "habitaciones": "2",
       "banos": "2",
       "metros_cuadrados": "90",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Colonia Tovar, Aragua"
     },
@@ -992,7 +992,7 @@
       "habitaciones": "2",
       "banos": "1",
       "metros_cuadrados": "79",
-      "tipo": "apartamento",
+      "tipo": "Apartamento",
       "operacion_detectada": "venta",
       "ubicacion": "Caracas, Distrito Capital"
     },
@@ -1025,7 +1025,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "97",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Barquisimeto, Lara"
     },
@@ -1036,7 +1036,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "146",
-      "tipo": "apartamento",
+      "tipo": "Apartamento",
       "operacion_detectada": "venta",
       "ubicacion": "Caracas, Distrito Capital"
     },
@@ -1080,7 +1080,7 @@
       "habitaciones": "2",
       "banos": "2",
       "metros_cuadrados": "62",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Araure, Portuguesa"
     },
@@ -1102,7 +1102,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "175",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Araure, Portuguesa"
     }

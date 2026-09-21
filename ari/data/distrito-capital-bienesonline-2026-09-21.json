@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "venta",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+distrito+capital",
-  "scrapeado_en": "2026-09-21T02:21:46.287Z",
+  "scrapeado_en": "2026-09-21T02:36:56.292Z",
   "total": 100,
   "anuncios": [
     {
@@ -530,7 +530,7 @@
       "habitaciones": "3",
       "banos": "4",
       "metros_cuadrados": "306",
-      "tipo": "apartamento",
+      "tipo": "Apartamento",
       "operacion_detectada": "venta",
       "ubicacion": "Caracas, Distrito Capital"
     },
@@ -585,7 +585,7 @@
       "habitaciones": "2",
       "banos": "2",
       "metros_cuadrados": "89",
-      "tipo": "apartamento",
+      "tipo": "Apartamento",
       "operacion_detectada": "venta",
       "ubicacion": "Caracas, Distrito Capital"
     },
@@ -959,7 +959,7 @@
       "habitaciones": "3",
       "banos": "3",
       "metros_cuadrados": "180",
-      "tipo": "apartamento",
+      "tipo": "Apartamento",
       "operacion_detectada": "venta",
       "ubicacion": "Caracas, Distrito Capital"
     },

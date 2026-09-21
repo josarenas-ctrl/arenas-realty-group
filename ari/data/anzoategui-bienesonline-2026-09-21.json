@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "venta",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+anzoategui",
-  "scrapeado_en": "2026-09-21T02:21:35.856Z",
+  "scrapeado_en": "2026-09-21T02:36:48.093Z",
   "total": 100,
   "anuncios": [
     {
@@ -211,7 +211,7 @@
       "habitaciones": "2",
       "banos": "2",
       "metros_cuadrados": "98",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Lecheria, Anzoátegui"
     },
@@ -321,7 +321,7 @@
       "habitaciones": "2",
       "banos": "2",
       "metros_cuadrados": "90",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Colonia Tovar, Aragua"
     },
@@ -332,7 +332,7 @@
       "habitaciones": "2",
       "banos": "2",
       "metros_cuadrados": "90",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "San Francisco, Zulia"
     },
@@ -420,7 +420,7 @@
       "habitaciones": "5",
       "banos": "8",
       "metros_cuadrados": "600",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -442,7 +442,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -486,7 +486,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "87",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -519,7 +519,7 @@
       "habitaciones": "2",
       "banos": "2",
       "metros_cuadrados": "150",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "San Francisco, Zulia"
     },
@@ -530,7 +530,7 @@
       "habitaciones": "3",
       "banos": "3",
       "metros_cuadrados": "155",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Acarigua, Portuguesa"
     },
@@ -541,7 +541,7 @@
       "habitaciones": "5",
       "banos": "4",
       "metros_cuadrados": "480",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -563,7 +563,7 @@
       "habitaciones": "5",
       "banos": "2",
       "metros_cuadrados": "152",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Acarigua, Portuguesa"
     },
@@ -574,7 +574,7 @@
       "habitaciones": "4",
       "banos": "1",
       "metros_cuadrados": "380",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Valencia, Carabobo"
     },
@@ -596,7 +596,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "155",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Acarigua, Portuguesa"
     },
@@ -629,7 +629,7 @@
       "habitaciones": "4",
       "banos": "1",
       "metros_cuadrados": "380",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Valencia, Carabobo"
     },
@@ -673,7 +673,7 @@
       "habitaciones": "7",
       "banos": "2",
       "metros_cuadrados": "180",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Barcelona, Anzoátegui"
     },
@@ -684,7 +684,7 @@
       "habitaciones": "7",
       "banos": "2",
       "metros_cuadrados": "180",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Barcelona, Anzoátegui"
     },
@@ -695,7 +695,7 @@
       "habitaciones": "5",
       "banos": "4",
       "metros_cuadrados": "300",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -783,7 +783,7 @@
       "habitaciones": "4",
       "banos": "3",
       "metros_cuadrados": "1",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "San Francisco, Zulia"
     },
@@ -827,7 +827,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "126",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Guarenas, Miranda"
     },
@@ -838,7 +838,7 @@
       "habitaciones": "3",
       "banos": "3",
       "metros_cuadrados": "168",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "San Francisco, Zulia"
     },
@@ -849,7 +849,7 @@
       "habitaciones": "2",
       "banos": "2",
       "metros_cuadrados": "100",
-      "tipo": "apartamento",
+      "tipo": "Apartamento",
       "operacion_detectada": "venta",
       "ubicacion": "Chacao, Miranda"
     },
@@ -893,7 +893,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Acarigua, Portuguesa"
     },
@@ -915,7 +915,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "San Francisco, Zulia"
     },
@@ -1025,7 +1025,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "San Francisco, Zulia"
     },
@@ -1036,7 +1036,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "132",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "San Francisco, Zulia"
     },
@@ -1069,7 +1069,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -1080,7 +1080,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -1091,7 +1091,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },

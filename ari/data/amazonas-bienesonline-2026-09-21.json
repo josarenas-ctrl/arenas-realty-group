@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "venta",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+amazonas",
-  "scrapeado_en": "2026-09-21T02:21:34.580Z",
+  "scrapeado_en": "2026-09-21T02:36:47.114Z",
   "total": 100,
   "anuncios": [
     {
@@ -35,7 +35,7 @@
       "habitaciones": "3",
       "banos": "1",
       "metros_cuadrados": "200",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "San Francisco, Zulia"
     },
@@ -90,7 +90,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "87",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -189,7 +189,7 @@
       "habitaciones": "2",
       "banos": "2",
       "metros_cuadrados": "121",
-      "tipo": "apartamento",
+      "tipo": "Apartamento",
       "operacion_detectada": "venta",
       "ubicacion": "Baruta, Miranda"
     },
@@ -266,7 +266,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -288,7 +288,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "San Francisco, Zulia"
     },
@@ -310,7 +310,7 @@
       "habitaciones": "6",
       "banos": "5",
       "metros_cuadrados": "600",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Valera, Trujillo"
     },
@@ -321,7 +321,7 @@
       "habitaciones": "5",
       "banos": "4",
       "metros_cuadrados": "480",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -420,7 +420,7 @@
       "habitaciones": "4",
       "banos": "2",
       "metros_cuadrados": "325",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -431,7 +431,7 @@
       "habitaciones": "4",
       "banos": "5",
       "metros_cuadrados": "484",
-      "tipo": "apartamento",
+      "tipo": "Apartamento",
       "operacion_detectada": "venta",
       "ubicacion": "Baruta, Miranda"
     },
@@ -464,7 +464,7 @@
       "habitaciones": "5",
       "banos": "8",
       "metros_cuadrados": "600",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -486,7 +486,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "608",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -519,7 +519,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "300",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -530,7 +530,7 @@
       "habitaciones": "3",
       "banos": "3",
       "metros_cuadrados": "242",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -563,7 +563,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -618,7 +618,7 @@
       "habitaciones": "2",
       "banos": "3",
       "metros_cuadrados": "104",
-      "tipo": "apartamento",
+      "tipo": "Apartamento",
       "operacion_detectada": "venta",
       "ubicacion": "Baruta, Miranda"
     },
@@ -673,7 +673,7 @@
       "habitaciones": "2",
       "banos": "3",
       "metros_cuadrados": "120",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -706,7 +706,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "TERRENO",
+      "tipo": "Terreno",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -717,7 +717,7 @@
       "habitaciones": "2",
       "banos": "3",
       "metros_cuadrados": "120",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -750,7 +750,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "San Francisco, Zulia"
     },
@@ -816,7 +816,7 @@
       "habitaciones": "3",
       "banos": "3",
       "metros_cuadrados": "150",
-      "tipo": "apartamento",
+      "tipo": "Apartamento",
       "operacion_detectada": "venta",
       "ubicacion": "Chacao, Miranda"
     },
@@ -838,7 +838,7 @@
       "habitaciones": "2",
       "banos": "2",
       "metros_cuadrados": "200",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -860,7 +860,7 @@
       "habitaciones": "4",
       "banos": "5",
       "metros_cuadrados": "541",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -926,7 +926,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -937,7 +937,7 @@
       "habitaciones": "4",
       "banos": "6",
       "metros_cuadrados": "350",
-      "tipo": "apartamento",
+      "tipo": "Apartamento",
       "operacion_detectada": "venta",
       "ubicacion": "Baruta, Miranda"
     },
@@ -948,7 +948,7 @@
       "habitaciones": "4",
       "banos": "3",
       "metros_cuadrados": "147",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Puerto la Cruz, Anzoátegui"
     },
@@ -959,7 +959,7 @@
       "habitaciones": "2",
       "banos": "2",
       "metros_cuadrados": "120",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -1036,7 +1036,7 @@
       "habitaciones": "3",
       "banos": "4",
       "metros_cuadrados": "252",
-      "tipo": "apartamento",
+      "tipo": "Apartamento",
       "operacion_detectada": "venta",
       "ubicacion": "Baruta, Miranda"
     },
@@ -1058,7 +1058,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },

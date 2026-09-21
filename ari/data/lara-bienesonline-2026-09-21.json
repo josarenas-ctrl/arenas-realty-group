@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "venta",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+lara",
-  "scrapeado_en": "2026-09-21T02:21:51.448Z",
+  "scrapeado_en": "2026-09-21T02:37:00.411Z",
   "total": 100,
   "anuncios": [
     {
@@ -24,7 +24,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "200",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Sarare, Lara"
     },
@@ -134,7 +134,7 @@
       "habitaciones": "2",
       "banos": "2",
       "metros_cuadrados": "100",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Araure, Portuguesa"
     },
@@ -156,7 +156,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "200",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Barquisimeto, Lara"
     },
@@ -343,7 +343,7 @@
       "habitaciones": "4",
       "banos": "2",
       "metros_cuadrados": "325",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -442,7 +442,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "240",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -761,7 +761,7 @@
       "habitaciones": "2",
       "banos": "2",
       "metros_cuadrados": "70",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Araure, Portuguesa"
     },
@@ -849,7 +849,7 @@
       "habitaciones": "2",
       "banos": "2",
       "metros_cuadrados": "62",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Araure, Portuguesa"
     },
@@ -926,7 +926,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "175",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Araure, Portuguesa"
     },
@@ -937,7 +937,7 @@
       "habitaciones": "2",
       "banos": "2",
       "metros_cuadrados": "150",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Araure, Portuguesa"
     },
@@ -959,7 +959,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "TERRENO",
+      "tipo": "Terreno",
       "operacion_detectada": "VENTA",
       "ubicacion": "Cabudare, Lara"
     },
@@ -1003,7 +1003,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "97",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Barquisimeto, Lara"
     },

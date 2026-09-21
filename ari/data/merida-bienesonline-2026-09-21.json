@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "venta",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+merida",
-  "scrapeado_en": "2026-09-21T02:21:52.666Z",
+  "scrapeado_en": "2026-09-21T02:37:01.398Z",
   "total": 100,
   "anuncios": [
     {
@@ -13,7 +13,7 @@
       "habitaciones": "8",
       "banos": "4",
       "metros_cuadrados": "345",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Mérida, Mérida"
     },
@@ -24,7 +24,7 @@
       "habitaciones": "4",
       "banos": "4",
       "metros_cuadrados": "242",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Mérida, Mérida"
     },
@@ -35,7 +35,7 @@
       "habitaciones": "5",
       "banos": "4",
       "metros_cuadrados": "432",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Mérida, Mérida"
     },
@@ -123,7 +123,7 @@
       "habitaciones": "4",
       "banos": "5",
       "metros_cuadrados": "500",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Mérida, Mérida"
     },
@@ -200,7 +200,7 @@
       "habitaciones": "4",
       "banos": "8",
       "metros_cuadrados": "207",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Mérida, Mérida"
     },
@@ -211,7 +211,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Mérida, Mérida"
     },
@@ -222,7 +222,7 @@
       "habitaciones": "3",
       "banos": "3",
       "metros_cuadrados": "200",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Mérida, Mérida"
     },
@@ -365,7 +365,7 @@
       "habitaciones": "4",
       "banos": "2",
       "metros_cuadrados": "350",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Santo Domingo, Mérida"
     },
@@ -497,7 +497,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -607,7 +607,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "130",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -629,7 +629,7 @@
       "habitaciones": "4",
       "banos": "3",
       "metros_cuadrados": "145",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -640,7 +640,7 @@
       "habitaciones": "4",
       "banos": "2",
       "metros_cuadrados": "392",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -673,7 +673,7 @@
       "habitaciones": "3",
       "banos": "3",
       "metros_cuadrados": "280",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -695,7 +695,7 @@
       "habitaciones": "3",
       "banos": "3",
       "metros_cuadrados": "280",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -706,7 +706,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "130",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -728,7 +728,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "132",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -739,7 +739,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "100",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Ejido, Mérida"
     },
@@ -750,7 +750,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "132",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -772,7 +772,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "132",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -794,7 +794,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -816,7 +816,7 @@
       "habitaciones": "9",
       "banos": "4",
       "metros_cuadrados": "511",
-      "tipo": "OFICINA",
+      "tipo": "Oficina",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -849,7 +849,7 @@
       "habitaciones": "4",
       "banos": "2",
       "metros_cuadrados": "392",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -882,7 +882,7 @@
       "habitaciones": "4",
       "banos": "2",
       "metros_cuadrados": "392",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -893,7 +893,7 @@
       "habitaciones": "5",
       "banos": "5",
       "metros_cuadrados": "530",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -904,7 +904,7 @@
       "habitaciones": "4",
       "banos": "3",
       "metros_cuadrados": "240",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -948,7 +948,7 @@
       "habitaciones": "4",
       "banos": "2",
       "metros_cuadrados": "392",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -992,7 +992,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "300",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -1069,7 +1069,7 @@
       "habitaciones": "3",
       "banos": "3",
       "metros_cuadrados": "242",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -1080,7 +1080,7 @@
       "habitaciones": "5",
       "banos": "5",
       "metros_cuadrados": "530",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },

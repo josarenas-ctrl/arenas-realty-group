@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "venta",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+barinas",
-  "scrapeado_en": "2026-09-21T02:21:39.634Z",
+  "scrapeado_en": "2026-09-21T02:36:51.010Z",
   "total": 100,
   "anuncios": [
     {
@@ -497,7 +497,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "117",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Barquisimeto, Lara"
     },
@@ -519,7 +519,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "97",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Barquisimeto, Lara"
     },
@@ -541,7 +541,7 @@
       "habitaciones": "4",
       "banos": "3",
       "metros_cuadrados": "240",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -706,7 +706,7 @@
       "habitaciones": "2",
       "banos": "1",
       "metros_cuadrados": "650",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Caracas, Distrito Capital"
     },
@@ -728,7 +728,7 @@
       "habitaciones": "4",
       "banos": "3",
       "metros_cuadrados": "206",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Barquisimeto, Lara"
     },
@@ -926,7 +926,7 @@
       "habitaciones": "2",
       "banos": "1",
       "metros_cuadrados": "120",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Barquisimeto, Lara"
     },
@@ -948,7 +948,7 @@
       "habitaciones": "3",
       "banos": "3",
       "metros_cuadrados": "123",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Barquisimeto, Lara"
     },
@@ -1091,7 +1091,7 @@
       "habitaciones": "7",
       "banos": "2",
       "metros_cuadrados": "180",
-      "tipo": "CASA",
+      "tipo": "Casa",
       "operacion_detectada": "VENTA",
       "ubicacion": "Barcelona, Anzoátegui"
     },

@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "venta",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+la+guaira",
-  "scrapeado_en": "2026-09-21T02:21:50.177Z",
+  "scrapeado_en": "2026-09-21T02:36:59.335Z",
   "total": 100,
   "anuncios": [
     {
@@ -68,7 +68,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "126",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Guarenas, Miranda"
     },
@@ -134,7 +134,7 @@
       "habitaciones": "2",
       "banos": "2",
       "metros_cuadrados": "74",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "La Guaira, Vargas"
     },
@@ -222,7 +222,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "126",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Guarenas, Miranda"
     },
@@ -266,7 +266,7 @@
       "habitaciones": "2",
       "banos": "2",
       "metros_cuadrados": "74",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "La Guaira, Vargas"
     },
@@ -332,7 +332,7 @@
       "habitaciones": "2",
       "banos": "2",
       "metros_cuadrados": "74",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "La Guaira, Vargas"
     },
@@ -343,7 +343,7 @@
       "habitaciones": "3",
       "banos": "2",
       "metros_cuadrados": "103",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "La Guaira, Vargas"
     },
@@ -706,7 +706,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "ALQUILER",
       "ubicacion": "Guarenas, Miranda"
     },
@@ -970,7 +970,7 @@
       "habitaciones": "2",
       "banos": "1",
       "metros_cuadrados": "56",
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Guarenas, Miranda"
     },
@@ -981,7 +981,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "VENTA",
       "ubicacion": "Maracaibo, Zulia"
     },
@@ -1102,7 +1102,7 @@
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
-      "tipo": "APARTAMENTO",
+      "tipo": "Apartamento",
       "operacion_detectada": "ALQUILER",
       "ubicacion": "Guarenas, Miranda"
     }
