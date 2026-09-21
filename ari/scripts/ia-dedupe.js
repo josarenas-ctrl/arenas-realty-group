@@ -24,7 +24,7 @@ const DATA_DIR = path.join(__dirname, "..", "data");
 const TOLERANCIA_PRECIO_CANDIDATO = 0.25; // 25% — más laxo que dedupe.js a propósito
 const MAX_COMPARACIONES_IA = 40; // límite duro por corrida, para no gastar la cuota gratuita
 const PAUSA_ENTRE_LLAMADAS_MS = 4000; // ritmo conservador para no chocar con el límite por minuto
-const MODELO = "gemini-2.0-flash";
+const MODELO = "gemini-3.6-flash";
 
 function precioComoNumero(precioTexto) {
   if (!precioTexto) return null;
