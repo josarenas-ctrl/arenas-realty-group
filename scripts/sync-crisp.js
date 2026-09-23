@@ -7,11 +7,13 @@ const PROP_DIR = path.join(ROOT, 'propiedades');
 const SITE_URL = 'https://www.arenasrealtygroup.com';
 
 // Variables de entorno (se configuran como secrets en GitHub, nunca escritas aquí)
-const WEBSITE_ID = process.env.CRISP_WEBSITE_ID;   // 56a43fb2-a4a7-44da-b565-c4f817a0294e
+const WEBSITE_ID = process.env.CRISP_WEBSITE_ID;
 const TOKEN_ID   = process.env.CRISP_TOKEN_ID;
 const TOKEN_KEY  = process.env.CRISP_TOKEN_KEY;
 const ARTICLE_ID = process.env.CRISP_ARTICLE_ID;
 const LOCALE     = process.env.CRISP_LOCALE || 'es';
+
+const TITULO_ARTICULO = 'Catálogo de propiedades — Arenas Realty Group';
 
 function formatPrecio(precio){
   if(precio == null || precio === '') return '';
@@ -90,62 +92,109 @@ function construirContenidoCompleto(){
     : `${encabezado}\nActualmente no hay propiedades publicadas.`;
 }
 
-function actualizarArticuloCrisp(contenido){
+// Petición genérica a la API de Crisp. Devuelve el texto de la respuesta si es 2xx.
+function crispRequest(method, apiPath, bodyObj, etiqueta){
   return new Promise((resolve, reject) => {
-const body = JSON.stringify({
-  title: 'Catálogo de propiedades — Arenas Realty Group',
-  description: 'Catálogo actualizado de propiedades disponibles de Arenas Realty Group.',
-  content: contenido,
-  featured: false,
-  order: 0
-});
+    const body = bodyObj ? JSON.stringify(bodyObj) : null;
     const auth = Buffer.from(`${TOKEN_ID}:${TOKEN_KEY}`).toString('base64');
 
-    const options = {
-      hostname: 'api.crisp.chat',
-      path: `/v1/website/${WEBSITE_ID}/helpdesk/locale/${LOCALE}/article/${ARTICLE_ID}`,      
-      method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Basic ${auth}`,
-        'X-Crisp-Tier': 'plugin',
-        'Content-Length': Buffer.byteLength(body)
-      }
+    const headers = {
+      'Authorization': `Basic ${auth}`,
+      'X-Crisp-Tier': 'plugin',
+      'Accept': 'application/json'
     };
+    if(body){
+      headers['Content-Type'] = 'application/json';
+      headers['Content-Length'] = Buffer.byteLength(body);
+    }
 
-    const req = https.request(options, res => {
-      let data = '';
-      res.on('data', chunk => { data += chunk; });
-      res.on('end', () => {
-        if(res.statusCode >= 200 && res.statusCode < 300){
-          console.log('Artículo de Crisp actualizado correctamente.');
-          resolve(data);
-        } else {
-          reject(new Error(`Crisp respondió con código ${res.statusCode}: ${data}`));
-        }
-      });
-    });
+    const req = https.request(
+      { hostname: 'api.crisp.chat', path: apiPath, method, headers },
+      res => {
+        let data = '';
+        res.on('data', chunk => { data += chunk; });
+        res.on('end', () => {
+          if(res.statusCode >= 200 && res.statusCode < 300){
+            resolve(data);
+          } else {
+            reject(new Error(`Crisp respondió con código ${res.statusCode} en "${etiqueta}": ${data}`));
+          }
+        });
+      }
+    );
 
     req.on('error', reject);
-    req.write(body);
+    if(body) req.write(body);
     req.end();
   });
 }
 
+// Paso 1: convierte el ID viejo del artículo en su "tree path" (ej. catalogo/catalogo-de-propiedades.md)
+async function obtenerTreePath(){
+  const raw = await crispRequest(
+    'GET',
+    `/v1/website/${WEBSITE_ID}/helpdesk/page/entity/${LOCALE}/articles/${ARTICLE_ID}`,
+    null,
+    'buscar ruta del artículo'
+  );
+  const json = JSON.parse(raw);
+  const treePath = (json.data && json.data.tree_path) || json.tree_path;
+  if(!treePath){
+    throw new Error(`Crisp no devolvió tree_path para el artículo. Respuesta: ${raw}`);
+  }
+  return treePath;
+}
+
+// Codifica cada segmento de la ruta pero conserva las barras
+function codificarRuta(treePath){
+  return treePath.split('/').map(encodeURIComponent).join('/');
+}
+
+// Paso 2: actualiza el contenido (cuerpo) del artículo
+async function guardarContenido(treePath, contenido){
+  await crispRequest(
+    'PUT',
+    `/v1/website/${WEBSITE_ID}/helpdesk/tree/content/${LOCALE}/articles/${codificarRuta(treePath)}`,
+    { content: contenido },
+    'guardar contenido'
+  );
+}
+
+// Paso 3: mantiene título y estado publicado (petición aparte, según la API nueva)
+async function guardarMetadata(treePath){
+  await crispRequest(
+    'PATCH',
+    `/v1/website/${WEBSITE_ID}/helpdesk/tree/metadata/${LOCALE}/articles/${codificarRuta(treePath)}`,
+    {
+      format: 'articles',
+      title: TITULO_ARTICULO,
+      state: { published: true }
+    },
+    'guardar metadatos'
+  );
+}
+
 async function main(){
-    console.log('WEBSITE_ID:', WEBSITE_ID);
-  console.log('ARTICLE_ID:', ARTICLE_ID);
-  console.log('TOKEN_ID (primeros 8):', TOKEN_ID ? TOKEN_ID.substring(0, 8) : 'undefined');
-  console.log('TOKEN_ID (últimos 8):', TOKEN_ID ? TOKEN_ID.slice(-8) : 'undefined');
-  console.log('TOKEN_KEY (primeros 8):', TOKEN_KEY ? TOKEN_KEY.substring(0, 8) : 'undefined');
-  console.log('TOKEN_KEY (últimos 8):', TOKEN_KEY ? TOKEN_KEY.slice(-8) : 'undefined');
-  console.log('TOKEN_KEY longitud:', TOKEN_KEY ? TOKEN_KEY.length : 0);
   if(!WEBSITE_ID || !TOKEN_ID || !TOKEN_KEY || !ARTICLE_ID){
     console.log('Faltan variables de entorno de Crisp (CRISP_WEBSITE_ID, CRISP_TOKEN_ID, CRISP_TOKEN_KEY, CRISP_ARTICLE_ID). No se sincronizó nada.');
     return;
   }
+
   const contenido = construirContenidoCompleto();
-  await actualizarArticuloCrisp(contenido);
+
+  const treePath = await obtenerTreePath();
+  console.log('Ruta del artículo en Crisp:', treePath);
+
+  await guardarContenido(treePath, contenido);
+  console.log('Contenido del artículo de Crisp actualizado correctamente.');
+
+  // Los metadatos son secundarios: si fallan, el contenido ya quedó guardado.
+  try{
+    await guardarMetadata(treePath);
+    console.log('Metadatos del artículo actualizados.');
+  }catch(e){
+    console.warn('Aviso: el contenido se guardó, pero los metadatos no se pudieron actualizar:', e.message);
+  }
 }
 
 main().catch(err => {
