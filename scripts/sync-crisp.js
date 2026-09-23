@@ -92,8 +92,9 @@ function construirContenidoCompleto(){
 
 function actualizarArticuloCrisp(contenido){
   return new Promise((resolve, reject) => {
-    const body = JSON.stringify({
+const body = JSON.stringify({
   title: 'Catálogo de propiedades — Arenas Realty Group',
+  description: 'Catálogo actualizado de propiedades disponibles de Arenas Realty Group.',
   content: contenido
 });
     const auth = Buffer.from(`${TOKEN_ID}:${TOKEN_KEY}`).toString('base64');
