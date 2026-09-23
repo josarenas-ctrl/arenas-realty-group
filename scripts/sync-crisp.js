@@ -96,7 +96,8 @@ const body = JSON.stringify({
   title: 'Catálogo de propiedades — Arenas Realty Group',
   description: 'Catálogo actualizado de propiedades disponibles de Arenas Realty Group.',
   content: contenido,
-  featured: false
+  featured: false,
+  order: 0
 });
     const auth = Buffer.from(`${TOKEN_ID}:${TOKEN_KEY}`).toString('base64');
 
