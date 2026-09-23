@@ -98,7 +98,7 @@ function actualizarArticuloCrisp(contenido){
     const options = {
       hostname: 'api.crisp.chat',
       put: `/v1/website/${WEBSITE_ID}/helpdesk/locale/${LOCALE}/article/${ARTICLE_ID}`,
-      method: 'PATCH',
+      method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
         'Authorization': `Basic ${auth}`,
