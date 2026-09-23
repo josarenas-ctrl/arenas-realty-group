@@ -26,6 +26,7 @@ jobs:
         run: node scripts/build-properties.js
 
       - name: Sincronizar catálogo con Crisp (Hugo)
+        continue-on-error: true
         env:
           CRISP_WEBSITE_ID: ${{ secrets.CRISP_WEBSITE_ID }}
           CRISP_TOKEN_ID: ${{ secrets.CRISP_TOKEN_ID }}
