@@ -102,7 +102,7 @@ function actualizarArticuloCrisp(contenido){
       headers: {
         'Content-Type': 'application/json',
         'Authorization': `Basic ${auth}`,
-        'X-Crisp-Tier': 'website',
+        'X-Crisp-Tier': 'plugin',
         'Content-Length': Buffer.byteLength(body)
       }
     };
