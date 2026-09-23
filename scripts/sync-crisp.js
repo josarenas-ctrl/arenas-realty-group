@@ -95,7 +95,8 @@ function actualizarArticuloCrisp(contenido){
 const body = JSON.stringify({
   title: 'Catálogo de propiedades — Arenas Realty Group',
   description: 'Catálogo actualizado de propiedades disponibles de Arenas Realty Group.',
-  content: contenido
+  content: contenido,
+  featured: false
 });
     const auth = Buffer.from(`${TOKEN_ID}:${TOKEN_KEY}`).toString('base64');
 
