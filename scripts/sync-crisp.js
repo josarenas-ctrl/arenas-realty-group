@@ -127,6 +127,13 @@ function actualizarArticuloCrisp(contenido){
 }
 
 async function main(){
+    console.log('WEBSITE_ID:', WEBSITE_ID);
+  console.log('ARTICLE_ID:', ARTICLE_ID);
+  console.log('TOKEN_ID (primeros 8):', TOKEN_ID ? TOKEN_ID.substring(0, 8) : 'undefined');
+  console.log('TOKEN_ID (últimos 8):', TOKEN_ID ? TOKEN_ID.slice(-8) : 'undefined');
+  console.log('TOKEN_KEY (primeros 8):', TOKEN_KEY ? TOKEN_KEY.substring(0, 8) : 'undefined');
+  console.log('TOKEN_KEY (últimos 8):', TOKEN_KEY ? TOKEN_KEY.slice(-8) : 'undefined');
+  console.log('TOKEN_KEY longitud:', TOKEN_KEY ? TOKEN_KEY.length : 0);
   if(!WEBSITE_ID || !TOKEN_ID || !TOKEN_KEY || !ARTICLE_ID){
     console.log('Faltan variables de entorno de Crisp (CRISP_WEBSITE_ID, CRISP_TOKEN_ID, CRISP_TOKEN_KEY, CRISP_ARTICLE_ID). No se sincronizó nada.');
     return;
