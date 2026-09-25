@@ -2,7 +2,7 @@ name: ARI - Scraper de propiedades
 
 on:
   schedule:
-    # Corre cada 6 horas. Ajustar según se necesite más adelante.
+    # Corre cada 6 horas.
     - cron: "0 */6 * * *"
   workflow_dispatch: {}
   push:
@@ -25,9 +25,13 @@ jobs:
         working-directory: ari
         run: npm install
 
-      - name: Correr scraper de Bienes Online
+      - name: Correr scraper de Bienes Online (Miranda, DC, La Guaira)
         working-directory: ari
         run: npm run scrape:bienesonline
+
+      - name: Correr scraper de InmueblesConLupa (agrega RE/MAX, Century21, Rent-A-House)
+        working-directory: ari
+        run: npm run scrape:inmueblesconlupa
 
       - name: Correr scraper de Mercado Libre (puede quedar vacío por bloqueo)
         working-directory: ari
