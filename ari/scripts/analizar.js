@@ -29,6 +29,13 @@ const DATA_DIR = path.join(__dirname, "..", "data");
 const UMBRAL_GANGA = 0.15; // 15% por debajo del promedio = verde
 const UMBRAL_SOBREVALORADA = 0.15; // 15% por encima del promedio = rojo
 
+// Estados en los que trabaja Arenas Realty Group. Cualquier ficha que no
+// caiga en uno de estos se descarta ANTES del análisis: los scrapers pueden
+// traer resultados de otros estados (el buscador de Bienes Online no filtra
+// por estado de verdad), y no queremos que contaminen ni el promedio ni la
+// interfaz.
+const ESTADOS_PERMITIDOS = ["Distrito Capital", "Miranda", "La Guaira"];
+
 // Filtro de sanidad: precios o metros absurdamente bajos casi siempre son
 // error de carga del anuncio original (el dueño no puso el precio real,
 // o el sitio no capturó bien el dato), no una ganga real. Sin esto, un
@@ -58,7 +65,17 @@ function normalizarNumero(texto) {
 function extraerEstado(ubicacion) {
   // "ubicacion" viene como "Ciudad, Estado" (así la dejó el scraper). El
   // estado es lo que queda después de la última coma.
-  if (!ubicacion || !ubicacion.includes(",")) return null;
+  if (!ubicacion) return null;
+
+  // Caso especial: algunos anuncios de InmueblesConLupa solo traen el estado
+  // sin ciudad ("en Distrito Capital") — sin coma. Si la ubicación completa
+  // coincide con un estado permitido, es ese estado.
+  const directo = ubicacion.trim().toLowerCase();
+  for (const estado of ESTADOS_PERMITIDOS) {
+    if (directo === estado.toLowerCase()) return estado;
+  }
+
+  if (!ubicacion.includes(",")) return null;
   const partes = ubicacion.split(",");
   return partes[partes.length - 1].trim();
 }
@@ -102,7 +119,18 @@ function main() {
   console.log(`Analizando ${archivoReciente}...`);
 
   const contenido = JSON.parse(fs.readFileSync(path.join(DATA_DIR, archivoReciente), "utf-8"));
-  const fichas = contenido.fichas || [];
+  const fichasTodas = contenido.fichas || [];
+
+  // Filtro de estados: solo Miranda, Distrito Capital y La Guaira. Los
+  // scrapers pueden traer propiedades de otros estados (Bienes Online no
+  // filtra bien su buscador), así que aquí se descartan antes de calcular
+  // promedios o de mostrarlas.
+  const fichas = fichasTodas.filter((ficha) => {
+    const estado = extraerEstado(ficha.ubicacion);
+    return ESTADOS_PERMITIDOS.includes(estado);
+  });
+  const descartadas = fichasTodas.length - fichas.length;
+  console.log(`  ${fichasTodas.length} fichas totales → ${fichas.length} en estados permitidos (${descartadas} descartadas)`);
 
   // Precio por m² de cada ficha, agrupado por tipo de propiedad + estado.
   const precioM2PorGrupo = new Map(); // "tipo||estado" -> [precios_m2...]
