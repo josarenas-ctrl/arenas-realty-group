@@ -1,7 +1,7 @@
 {
-  "generado_en": "2026-09-25T15:22:25.483Z",
+  "generado_en": "2026-09-25T17:35:58.549Z",
   "total_anuncios_originales": 700,
-  "total_fichas_maestras": 527,
+  "total_fichas_maestras": 528,
   "fichas": [
     {
       "titulo": "en alquiler fijo o vacacional en C.R. Guaica Suites",
@@ -466,45 +466,6 @@
       ]
     },
     {
-      "titulo": "En alquiler vacacional o diario Guaica suites",
-      "precio_texto": "USD 90",
-      "habitaciones": "1",
-      "banos": "1",
-      "metros_cuadrados": "50",
-      "tipo": "Apartamento",
-      "ubicacion": "Lecheria, Anzoátegui",
-      "enlace_principal": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/118025-en-alquiler-vacacional-o-diario-guaica-suites",
-      "portal_principal": "bienesonline",
-      "total_publicaciones_encontradas": 5,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/79618-se-ofrece-en-alquiler-vacacional",
-          "portal": "bienesonline",
-          "titulo": "se ofrece en alquiler vacacional"
-        },
-        {
-          "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/118025-en-alquiler-vacacional-o-diario-guaica-suites",
-          "portal": "bienesonline",
-          "titulo": "En alquiler vacacional o diario Guaica suites"
-        },
-        {
-          "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/117629-alquiler-vacacional-guaica-suites",
-          "portal": "bienesonline",
-          "titulo": "alquiler vacacional Guaica suites"
-        },
-        {
-          "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/122980-alquiler-diario-o-vacacional-guaica-suites",
-          "portal": "bienesonline",
-          "titulo": "Alquiler diario o Vacacional Guaica Suites"
-        },
-        {
-          "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/63460-apartamento-en-alquiler-vacacional",
-          "portal": "bienesonline",
-          "titulo": "APARTAMENTO EN ALQUILER VACACIONAL"
-        }
-      ]
-    },
-    {
       "titulo": "apartamento en alquiler campo alegre tlf  04242129768 rolando rodriguez codg 27-44",
       "precio_texto": "USD 1.200",
       "habitaciones": "1",
@@ -739,6 +700,40 @@
           "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/67996-en-alquiler-apartamento-cr-guaica-suites",
           "portal": "bienesonline",
           "titulo": "En Alquiler Apartamento CR Guaica Suites"
+        }
+      ]
+    },
+    {
+      "titulo": "En alquiler vacacional o diario Guaica suites",
+      "precio_texto": "USD 90",
+      "habitaciones": "1",
+      "banos": "1",
+      "metros_cuadrados": "50",
+      "tipo": "Apartamento",
+      "ubicacion": "Lecheria, Anzoátegui",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/118025-en-alquiler-vacacional-o-diario-guaica-suites",
+      "portal_principal": "bienesonline",
+      "total_publicaciones_encontradas": 4,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/79618-se-ofrece-en-alquiler-vacacional",
+          "portal": "bienesonline",
+          "titulo": "se ofrece en alquiler vacacional"
+        },
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/118025-en-alquiler-vacacional-o-diario-guaica-suites",
+          "portal": "bienesonline",
+          "titulo": "En alquiler vacacional o diario Guaica suites"
+        },
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/117629-alquiler-vacacional-guaica-suites",
+          "portal": "bienesonline",
+          "titulo": "alquiler vacacional Guaica suites"
+        },
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/122980-alquiler-diario-o-vacacional-guaica-suites",
+          "portal": "bienesonline",
+          "titulo": "Alquiler diario o Vacacional Guaica Suites"
         }
       ]
     },
@@ -8488,6 +8483,25 @@
       ]
     },
     {
+      "titulo": "APARTAMENTO EN ALQUILER VACACIONAL",
+      "precio_texto": "USD 90",
+      "habitaciones": null,
+      "banos": null,
+      "metros_cuadrados": null,
+      "tipo": "Apartamento",
+      "ubicacion": "Lecheria, Anzoátegui",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/63460-apartamento-en-alquiler-vacacional",
+      "portal_principal": "bienesonline",
+      "total_publicaciones_encontradas": 1,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/63460-apartamento-en-alquiler-vacacional",
+          "portal": "bienesonline",
+          "titulo": "APARTAMENTO EN ALQUILER VACACIONAL"
+        }
+      ]
+    },
+    {
       "titulo": "Alquilo Casa Urb Roraima 04124390854",
       "precio_texto": "USD 400",
       "habitaciones": "3",
@@ -10882,5 +10896,5 @@
       ]
     }
   ],
-  "revisado_por_ia_en": "2026-09-25T15:32:18.422Z"
+  "revisado_por_ia_en": "2026-09-25T17:46:13.547Z"
 }
