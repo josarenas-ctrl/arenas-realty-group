@@ -8,6 +8,13 @@
       "paginas": 5
     },
     {
+      "zona": "miranda",
+      "portal": "bienesonline",
+      "operacion": "alquiler",
+      "url": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+alquiler+miranda",
+      "paginas": 5
+    },
+    {
       "zona": "distrito-capital",
       "portal": "bienesonline",
       "operacion": "venta",
@@ -15,16 +22,30 @@
       "paginas": 5
     },
     {
+      "zona": "distrito-capital",
+      "portal": "bienesonline",
+      "operacion": "alquiler",
+      "url": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+alquiler+distrito+capital",
+      "paginas": 5
+    },
+    {
       "zona": "la-guaira",
       "portal": "bienesonline",
       "operacion": "venta",
-      "url": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+la+guaira",
+      "url": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+venta+la-guaira",
+      "paginas": 5
+    },
+    {
+      "zona": "la-guaira",
+      "portal": "bienesonline",
+      "operacion": "alquiler",
+      "url": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+alquiler+la-guaira",
       "paginas": 5
     },
     {
       "zona": "miranda-dc-guaira",
       "portal": "inmueblesconlupa",
-      "operacion": "venta",
+      "operacion": "todas",
       "url": "sitemaps://www.inmueblesconlupa.com/sitemap-listings/0-2.xml",
       "paginas": 1
     }
