@@ -184,6 +184,7 @@
   <button class="chip" data-filtro="verde">🟢 Gangas</button>
   <button class="chip" data-filtro="amarillo">🟡 Precio normal</button>
   <button class="chip" data-filtro="rojo">🔴 Sobrevaloradas</button>
+  <button class="chip" data-filtro="sin_datos_suficientes">⚪ Sin datos</button>
 </div>
 
 <div class="filtros" id="filtros-estado"></div>
@@ -200,7 +201,7 @@
 </main>
 
 <script>
-  const RUTA_DATOS = "../data/ultimo-analisis.json";
+  const RUTA_DATOS = "../data/ultimo-analisis.json?v=" + Date.now();
   let fichasOriginal = [];
     let filtroSemaforo = "todos";
     let filtroEstado = "todos";

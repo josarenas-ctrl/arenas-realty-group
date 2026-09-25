@@ -1,5 +1,5 @@
 {
-  "generado_en": "2026-09-25T17:20:51.410Z",
+  "generado_en": "2026-09-25T19:02:05.490Z",
   "basado_en": "fichas-maestras-2026-09-25.json",
   "promedios_m2_por_tipo_y_estado": {
     "Apartamento / Distrito Capital": 285,
@@ -58,7 +58,7 @@
           "titulo": "apartamento en alquiler mirador de los campitos tlf  04242129768 rolando rodriguez codg 26-21784"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 21,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -93,
@@ -102,7 +102,7 @@
           "titulo": "apartamento en alquiler en la castellana tlf 04242129768 rolando rodriguez codg 27-4562"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 17,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -94,
@@ -146,7 +146,7 @@
           "titulo": "local alquiler los dos caminos tlf 04242129768 rolando rodriguez"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 24,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -91,
@@ -190,7 +190,7 @@
           "titulo": "apartamento alquiler country club  tlf 04242129768 rolando Rodríguez"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 15,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -95,
@@ -229,7 +229,7 @@
           "titulo": "local alquiler Campo claro tlf 04242129768 rolando rodriguez"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 25,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -91,
@@ -268,7 +268,7 @@
           "titulo": "Apartamento En Alquiler Las Minas, San Antonio De Los Altos 26-20755"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 6,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -98,
@@ -302,7 +302,7 @@
           "titulo": "casa en alquiler colinas de bello monte tlf  04242129768 rolando rodriguez codg 27-3642"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 14,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -95,
@@ -336,7 +336,7 @@
           "titulo": "apartamento en alquiler los naranjos de las mercedes tlf  04242129768 rolando rodriguez codg 26-2102..."
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 14,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -95,
@@ -370,7 +370,7 @@
           "titulo": "apartamento en alquiler campo alegre tlf 04242129768 rolando rodriguez  codg 27-4156"
         }
       ],
-      "zona": "Chacao",
+      "zona": null,
       "precio_m2": 27,
       "promedio_m2_tipo_zona": 617,
       "diferencia_vs_promedio_pct": -96,
@@ -404,7 +404,7 @@
           "titulo": "apartamento alquiler la alameda tlf 04242129768 rolando Rodríguez"
         }
       ],
-      "zona": "Baruta",
+      "zona": null,
       "precio_m2": 10,
       "promedio_m2_tipo_zona": 617,
       "diferencia_vs_promedio_pct": -98,
@@ -438,7 +438,7 @@
           "titulo": "apartamento alquiler la alameda tlf 04242129768 rolando Rodríguez"
         }
       ],
-      "zona": "Chacao",
+      "zona": null,
       "precio_m2": 14,
       "promedio_m2_tipo_zona": 617,
       "diferencia_vs_promedio_pct": -98,
@@ -501,7 +501,7 @@
           "titulo": "En alquiler Conjunto residencial isla dorada"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 19,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -93,
@@ -530,7 +530,7 @@
           "titulo": "apartamento en alquiler en campo alegre tlf 04242129768 rolando rodriguez codg 27-4110"
         }
       ],
-      "zona": "Chacao",
+      "zona": null,
       "precio_m2": 23,
       "promedio_m2_tipo_zona": 617,
       "diferencia_vs_promedio_pct": -96,
@@ -559,7 +559,7 @@
           "titulo": "apartamento en alquiler los chorros tlf 04242129768 rolando rodriguez  codg 26-21496"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 11,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -96,
@@ -588,7 +588,7 @@
           "titulo": "Apartamento en Alquiler en Campo Alegre. Solo clientes directos."
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 17,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -94,
@@ -617,7 +617,7 @@
           "titulo": "Apartamento en Alquiler en Manzanares. Sandra White 0414-3140082 Cod. 26-15472"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 6,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -98,
@@ -646,7 +646,7 @@
           "titulo": "Apartamento en Alquiler en Guarenas Buenaventura Suites. Sandra White 0414-3140082 Cod. 26-15521"
         }
       ],
-      "zona": "Guarenas",
+      "zona": null,
       "precio_m2": 9,
       "promedio_m2_tipo_zona": 617,
       "diferencia_vs_promedio_pct": -99,
@@ -675,7 +675,7 @@
           "titulo": "APARTAMENTO EN VENTA EN PASO REAL GUARENAS MIRANDA API 6522 - HYPATÍA GALLARDO"
         }
       ],
-      "zona": "Guarenas",
+      "zona": null,
       "precio_m2": 257,
       "promedio_m2_tipo_zona": 617,
       "diferencia_vs_promedio_pct": -58,
@@ -844,7 +844,7 @@
           "titulo": "Apartamento en Alquiler El Marques G. 04143054662"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 8,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -97,
@@ -868,7 +868,7 @@
           "titulo": "Apartamento alquiler El Marques. Codigo: 26-14194 Carla Mora 26-14194"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 8,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -97,
@@ -892,7 +892,7 @@
           "titulo": "apartamento alquiler las mercedes  rolando rodriguez tlf 04242129768"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 23,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -92,
@@ -916,7 +916,7 @@
           "titulo": "Apartamento en alquiler en Santa Fe Sur.  MLS #27-1194 Fabiola Rodriguez"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 13,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -96,
@@ -940,7 +940,7 @@
           "titulo": "Apartamento en alquiler en 2 Campo Alegre. piso medio"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 22,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -92,
@@ -964,7 +964,7 @@
           "titulo": "apartamento en alquiler santa Sofia tlf 04242129768"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 11,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -96,
@@ -988,7 +988,7 @@
           "titulo": "apartamento en alquiler campo alegre tlf 04242129768 rolando rodriguez"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 21,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -93,
@@ -1012,7 +1012,7 @@
           "titulo": "En Alquiler Apartamento en Las Mercedes Caracas"
         }
       ],
-      "zona": "Chacao",
+      "zona": null,
       "precio_m2": 18,
       "promedio_m2_tipo_zona": 617,
       "diferencia_vs_promedio_pct": -97,
@@ -1036,7 +1036,7 @@
           "titulo": "Apartamento en Caracas El Marques (amoblado) EN ALQUILER"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 7,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -97,
@@ -1060,7 +1060,7 @@
           "titulo": "Apartamento en Alquiler Las Acacias G. 04143054662"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 9,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -97,
@@ -1084,7 +1084,7 @@
           "titulo": "Apartamento en Alquiler El Cafetal G. 04143054662"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 8,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -97,
@@ -1108,7 +1108,7 @@
           "titulo": "Apartamento en Alquiler en Campo Alegre. Solo Clientes Directos."
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 24,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -92,
@@ -1132,7 +1132,7 @@
           "titulo": "Apartamento en Alquiler en Campo Alegre."
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 18,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -94,
@@ -1156,7 +1156,7 @@
           "titulo": "Apartamento en Alquiler 26-2774   Zoraida Sánchez 04143653415"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 6,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -98,
@@ -1180,7 +1180,7 @@
           "titulo": "Apartamento en Alquiler El Marques G. 04143054662 / 04143247646"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 7,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -98,
@@ -1204,7 +1204,7 @@
           "titulo": "apartamento en alquiler colinas de bello monte tlf  04242129768 rolando rodriguez codg 27-1048"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 18,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -94,
@@ -1228,7 +1228,7 @@
           "titulo": "Apartamento Con Terraza En Alquiler En Los Campitos Zoraida Sánchez 04143653415  26-5773"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 6,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -98,
@@ -1252,7 +1252,7 @@
           "titulo": "Impecable apartamento en Alquiler 26-19088 Zoraida Sánchez 04143653415"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 13,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -95,
@@ -1276,7 +1276,7 @@
           "titulo": "Apartamento en Alquiler Lomas de las Mercedes  G. 04143054662 / 04143247646"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 16,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -94,
@@ -1300,7 +1300,7 @@
           "titulo": "Apartamento en Caracas El Marqués 2 hab+serv 2 bañ EN ALQUILER"
         }
       ],
-      "zona": "Sucre",
+      "zona": null,
       "precio_m2": 4,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -98,
@@ -1324,7 +1324,7 @@
           "titulo": "Impecable Apartamento En Alquiler En Los Palos Grandes Amoblado 27-4589"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 16,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -94,
@@ -1348,7 +1348,7 @@
           "titulo": "Apartamento en Alquiler Campo Alegre G. 04143054662 / 04143247646"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 5,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -98,
@@ -1372,7 +1372,7 @@
           "titulo": "Apartamento en alquiler en Boleita Norte. Piso bajo"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 12,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -96,
@@ -1396,7 +1396,7 @@
           "titulo": "Apartamento en Alquiler 3 Habitaciones con 134 mts2. Las Palmas. Caracas.  RAH Juan Villarroel."
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 5,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -98,
@@ -1420,7 +1420,7 @@
           "titulo": "Apartamento en Alquiler El Rosal G. 04143054662"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 16,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -94,
@@ -1444,7 +1444,7 @@
           "titulo": "Apartamento en Alquiler Clns. de los Chaguaramos G. 04143054662"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 8,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -97,
@@ -1468,7 +1468,7 @@
           "titulo": "Apartamento en Alquiler en el Manzanares.  Sandra White +584143140082 Cod. 26-13511"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 9,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -97,
@@ -1492,7 +1492,7 @@
           "titulo": "Bonito y acogedor apartamento en alquiler Escampadero 26-17052"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 14,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -95,
@@ -1516,7 +1516,7 @@
           "titulo": "apartamento alquiler las mercedes tlf 04242129768 rolando rodriguez"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 27,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -91,
@@ -1540,7 +1540,7 @@
           "titulo": "Apartamento en Alquiler Campo Alegre G. 04143054662"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 17,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -94,
@@ -1564,7 +1564,7 @@
           "titulo": "Apartamento en Alquiler La Bonita G. 04143054662 / 04143247646"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 27,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -91,
@@ -1588,7 +1588,7 @@
           "titulo": "Apartamento en Alquiler Los Dos Caminos G. 04143054662"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 8,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -97,
@@ -1612,7 +1612,7 @@
           "titulo": "apartamento alquiler campo alegre tlf 04242129768 rolando Rodríguez"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 18,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -94,
@@ -1636,7 +1636,7 @@
           "titulo": "Apartamento En Alquiler Los Campitos"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 24,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -91,
@@ -1660,7 +1660,7 @@
           "titulo": "apartamento alquiler los naranjos de las mercedes  rolando rodriguez tlf 04242129768"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 24,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -92,
@@ -1684,7 +1684,7 @@
           "titulo": "Apartamento en Alquiler Chacao G. 04143054662"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 12,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -96,
@@ -1708,7 +1708,7 @@
           "titulo": "Bello Apartamento En Alquiler En Manzanares 26-4447 Zoraida Sánchez 04143653415"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 7,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -98,
@@ -1732,7 +1732,7 @@
           "titulo": "apartamento alquiler lomas de las mercedes tlf 04242129768 rolando Rodríguez"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 23,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -92,
@@ -1756,7 +1756,7 @@
           "titulo": "Apartamento en Alquiler Boleita Norte G. 04143054662"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 7,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -98,
@@ -1780,7 +1780,7 @@
           "titulo": "Apartamento alquiler Guaicay. Cod: 26-13842 Carla Mora 0412-5885892"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 9,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -97,
@@ -1804,7 +1804,7 @@
           "titulo": "APARTAMENTO VENTA LA VAQUERA GUARENAS VENEZUELA API 89314"
         }
       ],
-      "zona": "Guarenas",
+      "zona": null,
       "precio_m2": 365,
       "promedio_m2_tipo_zona": 617,
       "diferencia_vs_promedio_pct": -41,
@@ -1828,7 +1828,7 @@
           "titulo": "27-1240 Apartamento en venta Las Islas Guarenas"
         }
       ],
-      "zona": "Guarenas",
+      "zona": null,
       "precio_m2": 429,
       "promedio_m2_tipo_zona": 617,
       "diferencia_vs_promedio_pct": -31,
@@ -1852,7 +1852,7 @@
           "titulo": "Espacioso Apartamento En Alquiler Urbanización Miranda, Balcón Con Linda Vista Panorámica 27-4819"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 5,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -98,
@@ -1876,7 +1876,7 @@
           "titulo": "Apartamento en Alquiler Urb. Miranda G. 04143054662 / 04143247646"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 11,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -96,
@@ -1900,7 +1900,7 @@
           "titulo": "Venta de Casa en Miranda MLS #25-7483 Mirian Navarro"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 419,
       "promedio_m2_tipo_zona": 603,
       "diferencia_vs_promedio_pct": -31,
@@ -1924,7 +1924,7 @@
           "titulo": "apartamento alquiler los ruices tlf 04242129768 rolando Rodríguez"
         }
       ],
-      "zona": "Sucre",
+      "zona": null,
       "precio_m2": 10,
       "promedio_m2_tipo_zona": 617,
       "diferencia_vs_promedio_pct": -98,
@@ -1948,7 +1948,7 @@
           "titulo": "CASA EN VENTA EN URB. CIUDAD MIRANDA CHARALLAVE API 6384"
         }
       ],
-      "zona": "Charallave",
+      "zona": null,
       "precio_m2": 188,
       "promedio_m2_tipo_zona": 644,
       "diferencia_vs_promedio_pct": -71,
@@ -1972,7 +1972,7 @@
           "titulo": "apartamento en  alquiler en las mesetas de santa rosa de lima tlf 04242129768 rolando rodríguez"
         }
       ],
-      "zona": "Baruta",
+      "zona": null,
       "precio_m2": 13,
       "promedio_m2_tipo_zona": 617,
       "diferencia_vs_promedio_pct": -98,
@@ -1996,7 +1996,7 @@
           "titulo": "apartamento en alquiler los naranjos de las mercedes  tlf  04242129768 rolando rodriguez  codg 27-45..."
         }
       ],
-      "zona": "Baruta",
+      "zona": null,
       "precio_m2": 20,
       "promedio_m2_tipo_zona": 617,
       "diferencia_vs_promedio_pct": -97,
@@ -2020,7 +2020,7 @@
           "titulo": "apartamento alquiler los naranjos de las mercedes tlf 04242129768 rolando Rodríguez"
         }
       ],
-      "zona": "Baruta",
+      "zona": null,
       "precio_m2": 15,
       "promedio_m2_tipo_zona": 617,
       "diferencia_vs_promedio_pct": -98,
@@ -2044,7 +2044,7 @@
           "titulo": "Casa en Venta en Urb Miranda  23-7688 25-12699 Zoraida Sánchez 04143653415"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 449,
       "promedio_m2_tipo_zona": 603,
       "diferencia_vs_promedio_pct": -26,
@@ -2068,7 +2068,7 @@
           "titulo": "apartamento alquiler las mercedes tlf 04242129768 rolando Rodríguez"
         }
       ],
-      "zona": "Baruta",
+      "zona": null,
       "precio_m2": 23,
       "promedio_m2_tipo_zona": 617,
       "diferencia_vs_promedio_pct": -96,
@@ -2092,7 +2092,7 @@
           "titulo": "Bellísimo y Cómodo Apartamento Dúplex en Venta Loma Mágica, Carrizal, Altos Mirandinos"
         }
       ],
-      "zona": "Carrizal",
+      "zona": null,
       "precio_m2": 328,
       "promedio_m2_tipo_zona": 617,
       "diferencia_vs_promedio_pct": -47,
@@ -2116,7 +2116,7 @@
           "titulo": "apartamento alquiler campo alegre tlf 04242129768 rolando rodriguez"
         }
       ],
-      "zona": "Chacao",
+      "zona": null,
       "precio_m2": 16,
       "promedio_m2_tipo_zona": 617,
       "diferencia_vs_promedio_pct": -97,
@@ -2140,7 +2140,7 @@
           "titulo": "Alquiler Mirador de los Campitos. MLS #27-1325 Fabiola Rodriguez"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 17,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -94,
@@ -2164,7 +2164,7 @@
           "titulo": "Alquiler de Apartamento en Colinas de la Tahona 27-1331 Asdrubal Medina"
         }
       ],
-      "zona": "Baruta",
+      "zona": null,
       "precio_m2": 17,
       "promedio_m2_tipo_zona": 617,
       "diferencia_vs_promedio_pct": -97,
@@ -2188,7 +2188,7 @@
           "titulo": "Apartamento en Alquiler Mirador de los Campitos I G. 04143054662"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 20,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -93,
@@ -2212,7 +2212,7 @@
           "titulo": "Alquiler Apartamento Los Naranjos de Las Mercedes MLS #26-2823 Mirian Navarro +58 414 924 0379"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 17,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -94,
@@ -2236,7 +2236,7 @@
           "titulo": "apartamento en venta nueva casarapa conj alambique tl f 04242129768 rolando rodriguez codg 26-17213"
         }
       ],
-      "zona": "Guarenas",
+      "zona": null,
       "precio_m2": 507,
       "promedio_m2_tipo_zona": 617,
       "diferencia_vs_promedio_pct": -18,
@@ -2260,7 +2260,7 @@
           "titulo": "casa en venta en nueva casarapa tlf 04242129768 rolando rodriguez"
         }
       ],
-      "zona": "Guarenas",
+      "zona": null,
       "precio_m2": 505,
       "promedio_m2_tipo_zona": 644,
       "diferencia_vs_promedio_pct": -22,
@@ -2284,7 +2284,7 @@
           "titulo": "Alquiler de Apartamento La Alameda MLS #26-21143 Mirian Navarro +58 414 924 0379"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 12,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": -96,
@@ -2308,7 +2308,7 @@
           "titulo": "casa en alquiler alto hatillo tlf 04242129768 rolando rodriguez codg 25-19573"
         }
       ],
-      "zona": "El Hatillo",
+      "zona": null,
       "precio_m2": 54,
       "promedio_m2_tipo_zona": 644,
       "diferencia_vs_promedio_pct": -92,
@@ -2332,7 +2332,7 @@
           "titulo": "Apto En Venta  -   MLS #26-14270  -  Nueva Casarapa"
         }
       ],
-      "zona": "Guarenas",
+      "zona": null,
       "precio_m2": 354,
       "promedio_m2_tipo_zona": 617,
       "diferencia_vs_promedio_pct": -43,
@@ -2908,7 +2908,7 @@
           "titulo": "CASA VENTA URB. ALTOS DE PARQUE CAIZA TERMINAL DE ORIENTE API 6390"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 336,
       "promedio_m2_tipo_zona": 603,
       "diferencia_vs_promedio_pct": -44,
@@ -2942,7 +2942,7 @@
           "titulo": "oficina alquiler las mercedes rolando rodriguez tlf 04242129768"
         }
       ],
-      "zona": "Baruta",
+      "zona": null,
       "precio_m2": 14,
       "promedio_m2_tipo_zona": 14,
       "diferencia_vs_promedio_pct": 0,
@@ -3024,7 +3024,7 @@
           "titulo": "Apto en venta urb Alto Grande cod 26-21144  María Cárdenas Cel 0412-5812012"
         }
       ],
-      "zona": "Guatire",
+      "zona": null,
       "precio_m2": 698,
       "promedio_m2_tipo_zona": 617,
       "diferencia_vs_promedio_pct": 13,
@@ -3322,7 +3322,7 @@
           "titulo": "Espacioso Apartamento En Venta Urbanización Miranda Caracas, Hermosa Vista Panorámica 27-3950"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 1067,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": 274,
@@ -3351,7 +3351,7 @@
           "titulo": "Estupendo Apartamento En Venta Urbanización Miranda, Totalmente Amoblado 27-2902"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 1306,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": 358,
@@ -3380,7 +3380,7 @@
           "titulo": "Espacioso apartamento en venta Urbanización Miranda 25-13625"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 1116,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": 291,
@@ -3409,7 +3409,7 @@
           "titulo": "Apartamento en Aquiler  Mirador de los Campitos I G. 04143054662"
         }
       ],
-      "zona": "Baruta",
+      "zona": null,
       "precio_m2": 958,
       "promedio_m2_tipo_zona": 617,
       "diferencia_vs_promedio_pct": 55,
@@ -3549,7 +3549,7 @@
           "titulo": "Apartamento en Venta Las Acacias G. 04143054662 / 04143247646"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 1625,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": 469,
@@ -3573,7 +3573,7 @@
           "titulo": "Apartamento En Venta Urb. Miranda"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 1048,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": 267,
@@ -3597,7 +3597,7 @@
           "titulo": "Apartamento en Venta Urb. Miranda G. 04143054662"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 1306,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": 358,
@@ -3621,7 +3621,7 @@
           "titulo": "Apartamento en Venta Urb. Miranda G. 04143054662"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 1019,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": 257,
@@ -3645,7 +3645,7 @@
           "titulo": "Apartamento en Venta Miranda G. 04143054662"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 489,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": 71,
@@ -3669,7 +3669,7 @@
           "titulo": "Apartamento en Venta Urb. Miranda G. 04143054662 / 041432476456"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 1042,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": 265,
@@ -3693,7 +3693,7 @@
           "titulo": "casa en venta urb miranda tlf 04242129768  rolando rodriguez  codg 27-237"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 800,
       "promedio_m2_tipo_zona": 603,
       "diferencia_vs_promedio_pct": 33,
@@ -3717,7 +3717,7 @@
           "titulo": "Apartamento en Venta Urbanizacion Miranda. Sandra White 0414-3140082  Cod. 26-10886"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 774,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": 171,
@@ -3741,7 +3741,7 @@
           "titulo": "Apartamento en Venta Urb. Miranda G. 04143054662"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 1140,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": 299,
@@ -3765,7 +3765,7 @@
           "titulo": "Apartamento en Venta Urb. Miranda G. 04143054662"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 943,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": 230,
@@ -3789,7 +3789,7 @@
           "titulo": "Bello y Agradable Apartamento en Venta Llano Alto, Altos Mirandino en Urb. Privada."
         }
       ],
-      "zona": "Carrizal",
+      "zona": null,
       "precio_m2": 904,
       "promedio_m2_tipo_zona": 617,
       "diferencia_vs_promedio_pct": 46,
@@ -3813,7 +3813,7 @@
           "titulo": "Excelente Apartamento En Venta En Urbanización Miranda 26-9010 Zoraida Sánchez 04143653415"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 600,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": 110,
@@ -3837,7 +3837,7 @@
           "titulo": "Venta de casa en la Urbanizacion Miranda 27-1180 Asdrubal Medina"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 1013,
       "promedio_m2_tipo_zona": 603,
       "diferencia_vs_promedio_pct": 68,
@@ -3861,7 +3861,7 @@
           "titulo": "Apartamento en Venta Urb. Miranda G. 04143054662"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 870,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": 205,
@@ -3885,7 +3885,7 @@
           "titulo": "Estupendo Apartamento Ph En Urbanización Miranda, Amplia Terraza Con Hermosa Vista Panorámica 27-302..."
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 839,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": 194,
@@ -3909,7 +3909,7 @@
           "titulo": "Venta de Apartamento en Miravila MLS #26-1560 Mirian Navarro +58 414 924 0379"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 896,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": 214,
@@ -3933,7 +3933,7 @@
           "titulo": "apartamento venta las mercedes  rolando rodriguez tlf 04242129768"
         }
       ],
-      "zona": "Baruta",
+      "zona": null,
       "precio_m2": 4712,
       "promedio_m2_tipo_zona": 617,
       "diferencia_vs_promedio_pct": 663,
@@ -3957,7 +3957,7 @@
           "titulo": "apartamento venta los naranjos de las mercedes  rolando rodriguez tlf 04242129768"
         }
       ],
-      "zona": "Baruta",
+      "zona": null,
       "precio_m2": 2632,
       "promedio_m2_tipo_zona": 617,
       "diferencia_vs_promedio_pct": 326,
@@ -3981,7 +3981,7 @@
           "titulo": "Apartamento en Venta Urb. Miranda G. 04143054662 / 04143247646"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 1071,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": 275,
@@ -4005,7 +4005,7 @@
           "titulo": "casa en venta en los naranjos del cafetal   tlf 04242129768 rolando rodriguez"
         }
       ],
-      "zona": "El Hatillo",
+      "zona": null,
       "precio_m2": 1378,
       "promedio_m2_tipo_zona": 644,
       "diferencia_vs_promedio_pct": 114,
@@ -4029,7 +4029,7 @@
           "titulo": "apartamento venta los naranjos de las mercedes   rolando rodriguez tlf 04242129768"
         }
       ],
-      "zona": "Baruta",
+      "zona": null,
       "precio_m2": 2959,
       "promedio_m2_tipo_zona": 617,
       "diferencia_vs_promedio_pct": 379,
@@ -4053,7 +4053,7 @@
           "titulo": "Apartamento en Venta en Mirador de Los Campitos"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 2905,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": 918,
@@ -4077,7 +4077,7 @@
           "titulo": "Apartamento en Venta Miravila G. 04143054662"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": 833,
       "promedio_m2_tipo_zona": 285,
       "diferencia_vs_promedio_pct": 192,
@@ -4433,7 +4433,7 @@
           "titulo": "Casa en alquiler en Libertador, Distrito Capital — $200/mes"
         }
       ],
-      "zona": "Libertador",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -4476,7 +4476,7 @@
           "titulo": "APARTAMENTO ALQUILER CIUDAD CASARAPA GUARENAS API 67811"
         }
       ],
-      "zona": "Guarenas",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -4514,7 +4514,7 @@
           "titulo": "Apartamento en alquiler en Chacao, Miranda — $3.000/mes"
         }
       ],
-      "zona": "Chacao",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -4547,7 +4547,7 @@
           "titulo": "Anexo en alquiler en Libertador, Distrito Capital — $700/mes"
         }
       ],
-      "zona": "Libertador",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -4580,7 +4580,7 @@
           "titulo": "Casa en venta en Libertador, Distrito Capital — $300.000"
         }
       ],
-      "zona": "Libertador",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -4730,7 +4730,7 @@
           "titulo": "Local Comercial en alquiler en Chacao, Miranda — $1.900/mes"
         }
       ],
-      "zona": "Chacao",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -4758,7 +4758,7 @@
           "titulo": "Apartamento en venta en Distrito Capital — $60.000"
         }
       ],
-      "zona": "Libertador",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -4786,7 +4786,7 @@
           "titulo": "Inmueble en venta en Libertador, Distrito Capital — $65.000"
         }
       ],
-      "zona": "Libertador",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -4814,7 +4814,7 @@
           "titulo": "Oficina en alquiler en Sucre, Miranda — $1.300/mes"
         }
       ],
-      "zona": "Sucre",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -4898,7 +4898,7 @@
           "titulo": "Local Comercial en alquiler en Baruta, Miranda — $600/mes"
         }
       ],
-      "zona": "Chacao",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -4926,7 +4926,7 @@
           "titulo": "Local Comercial en alquiler en Baruta, Miranda — $450/mes"
         }
       ],
-      "zona": "Baruta",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -4982,7 +4982,7 @@
           "titulo": "Apartamento en alquiler en Chacao, Miranda — $500/mes"
         }
       ],
-      "zona": "Chacao",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -5010,7 +5010,7 @@
           "titulo": "APARTAMENTO ALQUILER GUARENAS API 6873"
         }
       ],
-      "zona": "Guarenas",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -5038,7 +5038,7 @@
           "titulo": "Apartamento en Guatire 3 habitaciones 2 baños EN ALQUILER"
         }
       ],
-      "zona": "Guatire",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -5066,7 +5066,7 @@
           "titulo": "Locales (3) en Guatire EN ALQUILER"
         }
       ],
-      "zona": "Guatire",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -5094,7 +5094,7 @@
           "titulo": "Apartamento en Guatire (La Sabana) EN ALQUILER"
         }
       ],
-      "zona": "Guatire",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -5122,7 +5122,7 @@
           "titulo": "APARTAMENTO VENTA GUATIRE MIRANDA API 6458"
         }
       ],
-      "zona": "Guatire",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -5150,7 +5150,7 @@
           "titulo": "Apartamento en Alquiler Nueva Casarapa G. 04143054662 / 04143247646"
         }
       ],
-      "zona": "Guarenas",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -5229,7 +5229,7 @@
           "titulo": "En alquiler estupendo edificio en Campo Claro 26-14437"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -5252,7 +5252,7 @@
           "titulo": "Local en alquiler en el CCCT."
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -5275,7 +5275,7 @@
           "titulo": "Local en alquiler en Bello Campo. Casa de uso comercial."
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -5298,7 +5298,7 @@
           "titulo": "Local en alquiler en Chuao. CCCT"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -5321,7 +5321,7 @@
           "titulo": "Habitaciones en Terrazas del Ávila EN ALQUILER"
         }
       ],
-      "zona": "Sucre",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -5344,7 +5344,7 @@
           "titulo": "Local en alquiler en Chuao. Casa de uso comercial"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -5367,7 +5367,7 @@
           "titulo": "26-9078 Apartamento en Alquiler La Castellana"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -5390,7 +5390,7 @@
           "titulo": "Apartamento en venta en Sucre, Miranda — $130.000"
         }
       ],
-      "zona": "Sucre",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -5413,7 +5413,7 @@
           "titulo": "Oficina en alquiler en Chacao, Miranda — $1.300/mes"
         }
       ],
-      "zona": "Chacao",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -5436,7 +5436,7 @@
           "titulo": "Apartamento en alquiler en Sucre, Miranda — $550/mes"
         }
       ],
-      "zona": "Sucre",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -5459,7 +5459,7 @@
           "titulo": "Local Comercial en alquiler en Sucre, Miranda — $3.500/mes"
         }
       ],
-      "zona": "Sucre",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -5482,7 +5482,7 @@
           "titulo": "Apartamento en venta en El Hatillo, Miranda — $275.000"
         }
       ],
-      "zona": "El Hatillo",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -5528,7 +5528,7 @@
           "titulo": "Terreno en venta en Libertador, Distrito Capital — $110.000"
         }
       ],
-      "zona": "Libertador",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -5551,7 +5551,7 @@
           "titulo": "Terreno en venta en El Hatillo, Miranda — $87.500"
         }
       ],
-      "zona": "El Hatillo",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -5574,7 +5574,7 @@
           "titulo": "Terreno en venta en Zamora, Miranda — $162.000"
         }
       ],
-      "zona": "Zamora",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -5597,7 +5597,7 @@
           "titulo": "Oficina en venta en Sucre, Miranda — $185.000"
         }
       ],
-      "zona": "Sucre",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -5620,7 +5620,7 @@
           "titulo": "Local Comercial en venta en Chacao, Miranda — $1.350.000"
         }
       ],
-      "zona": "Chacao",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -5643,7 +5643,7 @@
           "titulo": "Oficina en venta en Libertador, Distrito Capital — $500.000"
         }
       ],
-      "zona": "Libertador",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -5666,7 +5666,7 @@
           "titulo": "Inmueble en venta en Baruta, Miranda — $2.250.000"
         }
       ],
-      "zona": "Baruta",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -5689,7 +5689,7 @@
           "titulo": "Casa en venta en El Hatillo, Miranda — $700.000"
         }
       ],
-      "zona": "El Hatillo",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -5712,7 +5712,7 @@
           "titulo": "Casa en venta en El Hatillo, Miranda — $680.000"
         }
       ],
-      "zona": "El Hatillo",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -5735,7 +5735,7 @@
           "titulo": "Casa en venta en Zamora, Miranda — $70.000"
         }
       ],
-      "zona": "Zamora",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -5758,7 +5758,7 @@
           "titulo": "Apartamento en venta en Sucre, Miranda — $225.000"
         }
       ],
-      "zona": "Sucre",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -5781,7 +5781,7 @@
           "titulo": "Apartamento en venta en Chacao, Miranda — $120.000"
         }
       ],
-      "zona": "Chacao",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -5804,7 +5804,7 @@
           "titulo": "Apartamento en venta en Sucre, Miranda — $180.000"
         }
       ],
-      "zona": "Sucre",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -5827,7 +5827,7 @@
           "titulo": "Apartamento en venta en Plaza, Miranda — $32.000"
         }
       ],
-      "zona": "Plaza",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -5850,7 +5850,7 @@
           "titulo": "Apartamento en venta en Baruta, Miranda — $120.000"
         }
       ],
-      "zona": "Baruta",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -5873,7 +5873,7 @@
           "titulo": "Apartamento en venta en Urdaneta, Miranda — $28.500"
         }
       ],
-      "zona": "Urdaneta",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -5942,7 +5942,7 @@
           "titulo": "Local Comercial en venta en Maiquetía, La Guaira — $56.500"
         }
       ],
-      "zona": "Maiquetía",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -5988,7 +5988,7 @@
           "titulo": "Local Comercial en venta en Chacao, Miranda — $20.000.000"
         }
       ],
-      "zona": "Chacao",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -6126,7 +6126,7 @@
           "titulo": "Casa en venta en Baruta, Miranda — $1.190.000"
         }
       ],
-      "zona": "Baruta",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -6195,7 +6195,7 @@
           "titulo": "Inmueble en venta en Libertador, Distrito Capital — $225.000"
         }
       ],
-      "zona": "Libertador",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -6356,7 +6356,7 @@
           "titulo": "Apartamento en venta en El Hatillo, Miranda — $270.000"
         }
       ],
-      "zona": "El Hatillo",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -6402,7 +6402,7 @@
           "titulo": "Apartamento en venta en Sucre, Miranda — $87.500"
         }
       ],
-      "zona": "Sucre",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -6425,7 +6425,7 @@
           "titulo": "Apartamento en alquiler en Chacao, Miranda — $2.300/mes"
         }
       ],
-      "zona": "Chacao",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -6494,7 +6494,7 @@
           "titulo": "Apartamento en venta en Baruta, Miranda — $800.000"
         }
       ],
-      "zona": "Baruta",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -6517,7 +6517,7 @@
           "titulo": "Apartamento en alquiler en El Hatillo, Miranda — $1.150/mes"
         }
       ],
-      "zona": "El Hatillo",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -6563,7 +6563,7 @@
           "titulo": "Apartamento en alquiler en Chacao, Miranda — $4.900/mes"
         }
       ],
-      "zona": "Chacao",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -6655,7 +6655,7 @@
           "titulo": "Apartamento en venta en Independencia, Miranda — $150.000"
         }
       ],
-      "zona": "Independencia",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -6701,7 +6701,7 @@
           "titulo": "Casa en venta en La Peña, La Guaira — $750.000"
         }
       ],
-      "zona": "La Peña",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -6747,7 +6747,7 @@
           "titulo": "Apartamento en venta en El Hatillo, Miranda — $205.000"
         }
       ],
-      "zona": "El Hatillo",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -6908,7 +6908,7 @@
           "titulo": "Local Comercial en venta en Horizonte, Miranda — $62.000"
         }
       ],
-      "zona": "Horizonte",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -6931,7 +6931,7 @@
           "titulo": "Casa en venta en Baruta, Miranda — $320.000"
         }
       ],
-      "zona": "Baruta",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -6977,7 +6977,7 @@
           "titulo": "Terreno en venta en Gavilán, Miranda — $40.000"
         }
       ],
-      "zona": "Gavilán",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -7000,7 +7000,7 @@
           "titulo": "Townhouse en venta en Palm Beach, Miranda — $25.000"
         }
       ],
-      "zona": "Palm Beach",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -7046,7 +7046,7 @@
           "titulo": "Apartamento en venta en El Hatillo, Miranda — $457.500"
         }
       ],
-      "zona": "El Hatillo",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -7069,7 +7069,7 @@
           "titulo": "Apartamento en venta en Páez, Miranda — $17.000"
         }
       ],
-      "zona": "Páez",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -7092,7 +7092,7 @@
           "titulo": "Casa en venta en Libertador, Distrito Capital — $895.000"
         }
       ],
-      "zona": "Libertador",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -7230,7 +7230,7 @@
           "titulo": "Apartamento en venta en Sucre, Miranda — $153.000"
         }
       ],
-      "zona": "Sucre",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -7299,7 +7299,7 @@
           "titulo": "Casa en venta en Libertador, Distrito Capital — $600.000"
         }
       ],
-      "zona": "Libertador",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -7322,7 +7322,7 @@
           "titulo": "Apartamento en alquiler en Chacao, Miranda — $3.500/mes"
         }
       ],
-      "zona": "Chacao",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -7345,7 +7345,7 @@
           "titulo": "Local Comercial en venta en Sucre, Miranda — $600.000"
         }
       ],
-      "zona": "Sucre",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -7368,7 +7368,7 @@
           "titulo": "Apartamento en venta en Baruta, Miranda — $445.000"
         }
       ],
-      "zona": "Baruta",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -7391,7 +7391,7 @@
           "titulo": "Oficina en alquiler en Baruta, Miranda — $4.600/mes"
         }
       ],
-      "zona": "Baruta",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -7414,7 +7414,7 @@
           "titulo": "Local Comercial en alquiler en Sucre, Miranda — $400/mes"
         }
       ],
-      "zona": "Sucre",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -7437,7 +7437,7 @@
           "titulo": "Local Comercial en alquiler en Sucre, Miranda — $305/mes"
         }
       ],
-      "zona": "Sucre",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -7460,7 +7460,7 @@
           "titulo": "Apartamento en alquiler en Baruta, Miranda — $1.150/mes"
         }
       ],
-      "zona": "Baruta",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -7483,7 +7483,7 @@
           "titulo": "Apartamento en alquiler en Chacao, Miranda — $1.900/mes"
         }
       ],
-      "zona": "Chacao",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -7506,7 +7506,7 @@
           "titulo": "Apartamento en alquiler en El Hatillo, Miranda — $700/mes"
         }
       ],
-      "zona": "El Hatillo",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -7529,7 +7529,7 @@
           "titulo": "Terreno en venta en Sucre, Miranda — $2.622.000"
         }
       ],
-      "zona": "Sucre",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -7552,7 +7552,7 @@
           "titulo": "Inmueble en venta en Plaza, Miranda — $90.000"
         }
       ],
-      "zona": "Plaza",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -7575,7 +7575,7 @@
           "titulo": "Local Comercial en venta en Zamora, Miranda — $24.000"
         }
       ],
-      "zona": "Zamora",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -7598,7 +7598,7 @@
           "titulo": "Local Comercial en venta en Plaza, Miranda — $60.000"
         }
       ],
-      "zona": "Plaza",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -7621,7 +7621,7 @@
           "titulo": "Inmueble en venta en Chacao, Miranda — $15.000.000"
         }
       ],
-      "zona": "Chacao",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -7644,7 +7644,7 @@
           "titulo": "Casa en venta en El Hatillo, Miranda — $650.000"
         }
       ],
-      "zona": "El Hatillo",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -7667,7 +7667,7 @@
           "titulo": "Casa en venta en El Hatillo, Miranda — $650.000"
         }
       ],
-      "zona": "El Hatillo",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -7690,7 +7690,7 @@
           "titulo": "Casa en venta en Baruta, Miranda — $250.000"
         }
       ],
-      "zona": "Baruta",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -7713,7 +7713,7 @@
           "titulo": "Casa en venta en Plaza, Miranda — $48.000"
         }
       ],
-      "zona": "Plaza",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -7759,7 +7759,7 @@
           "titulo": "Casa en venta en Sucre, Miranda — $320.000"
         }
       ],
-      "zona": "Sucre",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -7782,7 +7782,7 @@
           "titulo": "Apartamento en venta en Baruta, Miranda — $170.000"
         }
       ],
-      "zona": "Baruta",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -7805,7 +7805,7 @@
           "titulo": "Apartamento en venta en Plaza, Miranda — $35.500"
         }
       ],
-      "zona": "Plaza",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -7828,7 +7828,7 @@
           "titulo": "Apartamento en venta en Plaza, Miranda — $41.000"
         }
       ],
-      "zona": "Plaza",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -7851,7 +7851,7 @@
           "titulo": "Apartamento en venta en Baruta, Miranda — $70.000"
         }
       ],
-      "zona": "Baruta",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -7874,7 +7874,7 @@
           "titulo": "Apartamento en alquiler en Sucre, Miranda — $1.000/mes"
         }
       ],
-      "zona": "Sucre",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -7897,7 +7897,7 @@
           "titulo": "Apartamento en venta en Sucre, Miranda — $110.000"
         }
       ],
-      "zona": "Sucre",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -7920,7 +7920,7 @@
           "titulo": "Apartamento en venta en Sucre, Miranda — $45.000"
         }
       ],
-      "zona": "Sucre",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -7943,7 +7943,7 @@
           "titulo": "Apartamento en venta en Sucre, Miranda — $278.000"
         }
       ],
-      "zona": "Sucre",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -7966,7 +7966,7 @@
           "titulo": "Apartamento en venta en Baruta, Miranda — $156.000"
         }
       ],
-      "zona": "Baruta",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -7989,7 +7989,7 @@
           "titulo": "Apartamento en venta en Baruta, Miranda — $180.000"
         }
       ],
-      "zona": "Baruta",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -8012,7 +8012,7 @@
           "titulo": "Apartamento en venta en Chacao, Miranda — $360.000"
         }
       ],
-      "zona": "Chacao",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -8035,7 +8035,7 @@
           "titulo": "Penthouse en venta en Baruta, Miranda — $299.000"
         }
       ],
-      "zona": "Baruta",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -8058,7 +8058,7 @@
           "titulo": "Oficina en venta en Chacao, Miranda — $315.000"
         }
       ],
-      "zona": "Chacao",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -8081,7 +8081,7 @@
           "titulo": "Apartamento en alquiler en El Hatillo, Miranda — $950/mes"
         }
       ],
-      "zona": "El Hatillo",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -8127,7 +8127,7 @@
           "titulo": "Local Comercial en venta en Baruta, Miranda — $1.800.000"
         }
       ],
-      "zona": "Baruta",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -8150,7 +8150,7 @@
           "titulo": "Oficina en venta en Libertador, Distrito Capital — $45.000"
         }
       ],
-      "zona": "Libertador",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -8173,7 +8173,7 @@
           "titulo": "Casa en venta en El Hatillo, Miranda — $415.000"
         }
       ],
-      "zona": "El Hatillo",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -8196,7 +8196,7 @@
           "titulo": "Apartamento en venta en Baruta, Miranda — $210.000"
         }
       ],
-      "zona": "Baruta",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -8219,7 +8219,7 @@
           "titulo": "Casa en venta en Sucre, Miranda — $195.000"
         }
       ],
-      "zona": "Sucre",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -8242,7 +8242,7 @@
           "titulo": "Casa en venta en Libertador, Distrito Capital — $550.000"
         }
       ],
-      "zona": "Libertador",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -8265,7 +8265,7 @@
           "titulo": "Apartamento en venta en Sucre, Miranda — $145.000"
         }
       ],
-      "zona": "Sucre",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -8288,7 +8288,7 @@
           "titulo": "Apartamento en venta en Libertador, Miranda — $155.000"
         }
       ],
-      "zona": "Libertador",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -8311,7 +8311,7 @@
           "titulo": "Casa en venta en Guaicaipuro, Miranda — $85.000"
         }
       ],
-      "zona": "Guaicaipuro",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -8357,7 +8357,7 @@
           "titulo": "Apartamento en venta en Agua Sal, Miranda — $83.000"
         }
       ],
-      "zona": "Agua Sal",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -8403,7 +8403,7 @@
           "titulo": "Apartamento en venta en Baruta, Miranda — $830.000"
         }
       ],
-      "zona": "Baruta",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -8449,7 +8449,7 @@
           "titulo": "Inmueble en venta en Baruta, Miranda — $450.000"
         }
       ],
-      "zona": "Baruta",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -8495,7 +8495,7 @@
           "titulo": "Apartamento en venta en Baruta, Miranda — $340.000"
         }
       ],
-      "zona": "Baruta",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -8518,7 +8518,7 @@
           "titulo": "Local Comercial en venta en Chacao, Miranda — $1.965.000"
         }
       ],
-      "zona": "Chacao",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -8541,7 +8541,7 @@
           "titulo": "Local Comercial en venta en Mampote, Miranda — $180.000"
         }
       ],
-      "zona": "Mampote",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -8587,7 +8587,7 @@
           "titulo": "Local Comercial en venta en Mariche, Miranda — $1.800.000"
         }
       ],
-      "zona": "Mariche",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -8610,7 +8610,7 @@
           "titulo": "Apartamento en alquiler en Vargas, La Guaira — $1.100/mes"
         }
       ],
-      "zona": "Vargas",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -8633,7 +8633,7 @@
           "titulo": "Apartamento en venta en La Sabana, Miranda — $37.000"
         }
       ],
-      "zona": "La Sabana",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -8656,7 +8656,7 @@
           "titulo": "Apartamento en venta en Sucre, Miranda — $75.000"
         }
       ],
-      "zona": "Sucre",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -8748,7 +8748,7 @@
           "titulo": "Apartamento en venta en El Hatillo, Miranda — $175.000"
         }
       ],
-      "zona": "El Hatillo",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -8840,7 +8840,7 @@
           "titulo": "Terreno en venta en Higuerote, Miranda — $70.000"
         }
       ],
-      "zona": "Higuerote",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -8932,7 +8932,7 @@
           "titulo": "Apartamento en venta en Baruta, Miranda — $470.000"
         }
       ],
-      "zona": "Baruta",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -8955,7 +8955,7 @@
           "titulo": "Apartamento en venta en Baruta, Miranda — $176.000"
         }
       ],
-      "zona": "Baruta",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -8978,7 +8978,7 @@
           "titulo": "Apartamento en alquiler en Baruta, Miranda — $1.700/mes"
         }
       ],
-      "zona": "Baruta",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -9001,7 +9001,7 @@
           "titulo": "Apartamento en venta en Sucre, Miranda — $200.000"
         }
       ],
-      "zona": "Sucre",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -9024,7 +9024,7 @@
           "titulo": "Local Comercial en venta en Guatire, Miranda — $650.000"
         }
       ],
-      "zona": "Guatire",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -9070,7 +9070,7 @@
           "titulo": "Apartamento en alquiler en Sucre, Miranda — $1.500/mes"
         }
       ],
-      "zona": "Sucre",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -9116,7 +9116,7 @@
           "titulo": "Local Comercial en alquiler en Baruta, Miranda — $2.500/mes"
         }
       ],
-      "zona": "Baruta",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -9139,7 +9139,7 @@
           "titulo": "Apartamento en alquiler en Sucre, Miranda — $700/mes"
         }
       ],
-      "zona": "Sucre",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -9162,7 +9162,7 @@
           "titulo": "Casa en venta en Catia, Distrito Capital — $350.000"
         }
       ],
-      "zona": "Catia",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -9185,7 +9185,7 @@
           "titulo": "Apartamento en venta en Sucre, Miranda — $350.000"
         }
       ],
-      "zona": "Sucre",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -9323,7 +9323,7 @@
           "titulo": "Local Comercial en alquiler en Baruta, Miranda — $85/mes"
         }
       ],
-      "zona": "Baruta",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -9369,7 +9369,7 @@
           "titulo": "Apartamento en venta en Chacao, Miranda — $150.000"
         }
       ],
-      "zona": "Chacao",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -9461,7 +9461,7 @@
           "titulo": "Casa en venta en El Hatillo, Miranda — $428.000"
         }
       ],
-      "zona": "El Hatillo",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -9484,7 +9484,7 @@
           "titulo": "Tanaguarena, La Guaira, Apartamento en Alquiler."
         }
       ],
-      "zona": "Tanaguarena",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -9507,7 +9507,7 @@
           "titulo": "local alquiler en Guarenas tlf 04242129768 rolando rodriguez codg 26-10006"
         }
       ],
-      "zona": "Guarenas",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -9530,7 +9530,7 @@
           "titulo": "Apartamento en Alquiler en Guaicay. Sandra White 0414-3140082  Cod. 26-14544"
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -9553,7 +9553,7 @@
           "titulo": "apartamento en alquiler nueva casarapa conj el tablon tlf 04242129768 rolando rodriguez"
         }
       ],
-      "zona": "Guarenas",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -9576,7 +9576,7 @@
           "titulo": "Local en Guatire EN ALQUILER"
         }
       ],
-      "zona": "Guatire",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -9599,7 +9599,7 @@
           "titulo": "APARTAMENTO EN VENTA EN HIGUEROTE EDO MIRANDA API 5113"
         }
       ],
-      "zona": "Higuerote",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -9622,7 +9622,7 @@
           "titulo": "oficina en alquiler los dos caminos tlf 04242129768 rolando rodríguez"
         }
       ],
-      "zona": "Sucre",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -9645,7 +9645,7 @@
           "titulo": "oficina alquiler prados del este tl 04242129768 rolando rodriguez"
         }
       ],
-      "zona": "Baruta",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -9668,7 +9668,7 @@
           "titulo": "Espectacular apartamento en Miranda, Caracas Venezuela. FLEX 26-21457, Mirian Navarro Telefono 04147..."
         }
       ],
-      "zona": "Caracas",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -9691,7 +9691,7 @@
           "titulo": "Local en Guatire EN ALQUILER"
         }
       ],
-      "zona": "Guatire",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"
@@ -9714,7 +9714,7 @@
           "titulo": "oficina en alquiler en el ccct tlf 04242129768 rolando rodriguez"
         }
       ],
-      "zona": "Baruta",
+      "zona": null,
       "precio_m2": null,
       "promedio_m2_tipo_zona": null,
       "semaforo": "sin_datos_suficientes"

@@ -129,9 +129,26 @@ function extraerZona(ubicacion) {
   if (esEstado) return null;
 
   // Basura como "La N" (artículo + una letra) no es una zona.
-  if (/^la\s+[a-zñ]$/i.test(limpia)) return null;
+    if (/^la\s+[a-zñ]$/i.test(limpia)) return null;
 
-  return limpia;
+    // Municipios, ciudades satélite, playas y parroquias NO son áreas
+    // geográficas de urbanización. El usuario solo quiere Altamira,
+    // Los Palos Grandes, Las Mercedes y equivalentes.
+    const NO_ES_AREA = new Set([
+      // municipios del área metropolitana
+      "baruta","chacao","el hatillo","sucre","libertador",
+      // municipios del interior
+      "zamora","páez","guaicaipuro","urdaneta","vargas","independencia","plaza",
+      // ciudades satélite (no son urbanizaciones de Caracas)
+      "caracas","guarenas","guatire","charallave","carrizal","maiquetía",
+      // parroquias y sectores genéricos
+      "catia","mariche","gavilán","horizonte","la sabana","la peña",
+      // playas / costa
+      "agua sal","palm beach","higuerote","tanaguarena","mampote",
+    ]);
+    if (NO_ES_AREA.has(limpia.toLowerCase())) return null;
+
+    return limpia;
 }
 
 function normalizarTipo(tipo) {
