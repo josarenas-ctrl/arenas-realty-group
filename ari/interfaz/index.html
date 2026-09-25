@@ -185,6 +185,10 @@
   <button class="chip" data-filtro="rojo">🔴 Sobrevaloradas</button>
 </div>
 
+<div class="filtros" id="filtros-estado"></div>
+
+<div class="filtros" id="filtros-operacion"></div>
+
 <div class="filtros" id="filtros-tipo"></div>
 
 <div class="filtros" id="filtros-zona"></div>
@@ -197,9 +201,11 @@
 <script>
   const RUTA_DATOS = "../data/ultimo-analisis.json";
   let fichasOriginal = [];
-  let filtroSemaforo = "todos";
-  let filtroTipo = "todos";
-  let filtroZona = "todos";
+    let filtroSemaforo = "todos";
+    let filtroEstado = "todos";
+    let filtroOperacion = "todos";
+    let filtroTipo = "todos";
+    let filtroZona = "todos";
 
   const NOMBRES_SEMAFORO = {
     verde: "🟢 Ganga",
@@ -209,9 +215,61 @@
   };
 
   function formatoUSD(numero) {
-    if (numero === null || numero === undefined) return "—";
-    return "USD " + numero.toLocaleString("es-VE");
-  }
+      if (numero === null || numero === undefined) return "—";
+      return "USD " + numero.toLocaleString("es-VE");
+    }
+
+    function extraerEstado(ubicacion) {
+      if (!ubicacion || !ubicacion.includes(",")) return null;
+      return ubicacion.split(",").pop().trim();
+    }
+
+    function extraerOperacion(titulo) {
+      if (!titulo) return null;
+      if (/alquiler/i.test(titulo)) return "Alquiler";
+      if (/venta/i.test(titulo)) return "Venta";
+      return null;
+    }
+
+    function renderChipsEstado(fichas) {
+      const estados = [...new Set(fichas.map(f => extraerEstado(f.ubicacion)).filter(Boolean))].sort();
+      const contenedor = document.getElementById("filtros-estado");
+      contenedor.innerHTML = "";
+      if (estados.length <= 1) { contenedor.style.display = "none"; return; }
+      contenedor.style.display = "flex";
+      const chipTodos = document.createElement("button");
+      chipTodos.className = "chip activo";
+      chipTodos.textContent = "Todos los estados";
+      chipTodos.onclick = () => { filtroEstado = "todos"; actualizarChips(contenedor, filtroEstado, "Todos los estados"); render(); };
+      contenedor.appendChild(chipTodos);
+      estados.forEach(e => {
+        const chip = document.createElement("button");
+        chip.className = "chip";
+        chip.textContent = e;
+        chip.onclick = () => { filtroEstado = e; actualizarChips(contenedor, filtroEstado, "Todos los estados"); render(); };
+        contenedor.appendChild(chip);
+      });
+    }
+
+    function renderChipsOperacion(fichas) {
+      const ops = [...new Set(fichas.map(f => extraerOperacion(f.titulo)).filter(Boolean))].sort();
+      const contenedor = document.getElementById("filtros-operacion");
+      contenedor.innerHTML = "";
+      if (ops.length <= 1) { contenedor.style.display = "none"; return; }
+      contenedor.style.display = "flex";
+      const chipTodos = document.createElement("button");
+      chipTodos.className = "chip activo";
+      chipTodos.textContent = "Venta y alquiler";
+      chipTodos.onclick = () => { filtroOperacion = "todos"; actualizarChips(contenedor, filtroOperacion, "Venta y alquiler"); render(); };
+      contenedor.appendChild(chipTodos);
+      ops.forEach(op => {
+        const chip = document.createElement("button");
+        chip.className = "chip";
+        chip.textContent = op;
+        chip.onclick = () => { filtroOperacion = op; actualizarChips(contenedor, filtroOperacion, "Venta y alquiler"); render(); };
+        contenedor.appendChild(chip);
+      });
+    }
 
   function renderChipsTipo(fichas) {
     const tipos = [...new Set(fichas.map((f) => f.tipo).filter(Boolean))].sort();
@@ -274,15 +332,11 @@
     const lista = document.getElementById("lista");
     let fichas = fichasOriginal;
 
-    if (filtroSemaforo !== "todos") {
-      fichas = fichas.filter((f) => f.semaforo === filtroSemaforo);
-    }
-    if (filtroTipo !== "todos") {
-      fichas = fichas.filter((f) => f.tipo === filtroTipo);
-    }
-    if (filtroZona !== "todos") {
-      fichas = fichas.filter((f) => f.ubicacion === filtroZona);
-    }
+    if (filtroSemaforo !== "todos") fichas = fichas.filter(f => f.semaforo === filtroSemaforo);
+        if (filtroEstado !== "todos") fichas = fichas.filter(f => extraerEstado(f.ubicacion) === filtroEstado);
+        if (filtroOperacion !== "todos") fichas = fichas.filter(f => extraerOperacion(f.titulo) === filtroOperacion);
+        if (filtroTipo !== "todos") fichas = fichas.filter(f => f.tipo === filtroTipo);
+        if (filtroZona !== "todos") fichas = fichas.filter(f => f.ubicacion === filtroZona);
 
     if (fichas.length === 0) {
       lista.className = "vacio";
@@ -359,6 +413,8 @@
       document.getElementById("subtitulo").textContent =
         "Actualizado: " + new Date(data.generado_en).toLocaleString("es-VE");
       renderResumen(data.resumen || {});
+      renderChipsEstado(fichasOriginal);
+      renderChipsOperacion(fichasOriginal);
       renderChipsTipo(fichasOriginal);
       renderChipsZona(fichasOriginal);
       render();
