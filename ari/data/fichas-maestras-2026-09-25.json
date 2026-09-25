@@ -1,7 +1,7 @@
 {
-  "generado_en": "2026-09-25T03:13:50.150Z",
+  "generado_en": "2026-09-25T04:25:05.851Z",
   "total_anuncios_originales": 700,
-  "total_fichas_maestras": 529,
+  "total_fichas_maestras": 528,
   "fichas": [
     {
       "titulo": "en alquiler fijo o vacacional en C.R. Guaica Suites",
@@ -13,7 +13,7 @@
       "ubicacion": "Lecheria, Anzoátegui",
       "enlace_principal": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/121029-en-alquiler-fijo-o-vacacional-en-cr-guaica-suites",
       "portal_principal": "bienesonline",
-      "total_publicaciones_encontradas": 31,
+      "total_publicaciones_encontradas": 32,
       "todos_los_anuncios": [
         {
           "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/68681-en-alquiler-apartamento-en-cr-guaica-suites",
@@ -169,6 +169,11 @@
           "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/125880-apartamento-en-alquierl-en-crguaica-suites",
           "portal": "bienesonline",
           "titulo": "APARTAMENTO EN ALQUIERL EN C.R.GUAICA SUITES"
+        },
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/63260-en-alquiler-cr-guiaca-suites",
+          "portal": "bienesonline",
+          "titulo": "En alquiler C.R Guiaca Suites"
         }
       ]
     },
@@ -4051,8 +4056,8 @@
       ]
     },
     {
-      "titulo": "Apartamento en venta en Distrito Capital — $142.000",
-      "precio_texto": "$142.000",
+      "titulo": "Apartamento en venta en Distrito Capital — $139.000",
+      "precio_texto": "$139.000",
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
@@ -4065,7 +4070,7 @@
         {
           "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-en-urbanizacion-bello-monte-remax-342094",
           "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Distrito Capital — $142.000"
+          "titulo": "Apartamento en venta en Distrito Capital — $139.000"
         }
       ]
     },
@@ -8326,25 +8331,6 @@
       ]
     },
     {
-      "titulo": "En alquiler C.R Guiaca Suites",
-      "precio_texto": "USD 350",
-      "habitaciones": "1",
-      "banos": "1",
-      "metros_cuadrados": "55",
-      "tipo": "Apartamento",
-      "ubicacion": "Lecheria, Anzoátegui",
-      "enlace_principal": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/63260-en-alquiler-cr-guiaca-suites",
-      "portal_principal": "bienesonline",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/63260-en-alquiler-cr-guiaca-suites",
-          "portal": "bienesonline",
-          "titulo": "En alquiler C.R Guiaca Suites"
-        }
-      ]
-    },
-    {
       "titulo": "Se ofrece en alquiler fijo o vacacional apartamento en Guaica Suite",
       "precio_texto": "USD 450",
       "habitaciones": "1",
@@ -10909,5 +10895,6 @@
         }
       ]
     }
-  ]
+  ],
+  "revisado_por_ia_en": "2026-09-25T04:36:20.266Z"
 }

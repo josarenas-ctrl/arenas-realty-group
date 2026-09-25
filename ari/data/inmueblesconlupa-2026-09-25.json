@@ -3,7 +3,7 @@
   "portal": "inmueblesconlupa",
   "operacion": "venta",
   "url_busqueda": "sitemaps 0-2",
-  "scrapeado_en": "2026-09-25T03:13:49.543Z",
+  "scrapeado_en": "2026-09-25T04:25:05.298Z",
   "total": 300,
   "anuncios": [
     {
@@ -436,10 +436,10 @@
       "portal": "inmueblesconlupa"
     },
     {
-      "titulo": "Apartamento en venta en Distrito Capital — $142.000",
+      "titulo": "Apartamento en venta en Distrito Capital — $139.000",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-en-urbanizacion-bello-monte-remax-342094",
-      "precio_texto": "$142.000",
-      "precio_usd": 142000,
+      "precio_texto": "$139.000",
+      "precio_usd": 139000,
       "habitaciones": null,
       "banos": null,
       "metros_cuadrados": null,
