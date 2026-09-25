@@ -292,10 +292,10 @@
   }
 
   function renderChipsZona(fichas) {
-    // El "área" se toma directo de la ubicación ya extraída de cada anuncio
-    // (ej. "San Antonio de Los Altos, Miranda") — cuando se agreguen más
-    // zonas al scraper, estos chips aparecen solos, sin tocar este código.
-    const zonas = [...new Set(fichas.map((f) => f.ubicacion).filter(Boolean))].sort();
+    // El "área" sale del campo `zona` que ya viene limpio del análisis (solo
+    // el nombre geográfico, sin título de anuncio ni estado). Ver
+    // scripts/analizar.js → extraerZona()/limpiarZona().
+    const zonas = [...new Set(fichas.map((f) => f.zona).filter(Boolean))].sort();
     const contenedor = document.getElementById("filtros-zona");
     contenedor.innerHTML = "";
 
@@ -337,7 +337,7 @@
         if (filtroEstado !== "todos") fichas = fichas.filter(f => extraerEstado(f.ubicacion) === filtroEstado);
         if (filtroOperacion !== "todos") fichas = fichas.filter(f => extraerOperacion(f.titulo) === filtroOperacion);
         if (filtroTipo !== "todos") fichas = fichas.filter(f => f.tipo === filtroTipo);
-        if (filtroZona !== "todos") fichas = fichas.filter(f => f.ubicacion === filtroZona);
+        if (filtroZona !== "todos") fichas = fichas.filter(f => f.zona === filtroZona);
 
     if (fichas.length === 0) {
       lista.className = "vacio";
@@ -373,7 +373,7 @@
             </div>
             <h3>${f.titulo}</h3>
             <div class="precio">${formatoUSD(parseInt(String(f.precio_texto || "").replace(/[^\d]/g, ""), 10) || null)}</div>
-            <div class="detalle">${specs || "Sin specs detalladas"} · ${f.ubicacion || ""}</div>
+            <div class="detalle">${specs || "Sin specs detalladas"} · ${[f.zona, extraerEstado(f.ubicacion)].filter(Boolean).join(", ") || f.ubicacion || ""}</div>
             ${m2linea}
             ${dupLinea}
             <div class="acciones">

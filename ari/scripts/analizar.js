@@ -80,6 +80,60 @@ function extraerEstado(ubicacion) {
   return partes[partes.length - 1].trim();
 }
 
+function limpiarZona(zona) {
+  // El scraper de Bienes Online a veces mete el título completo en el campo
+  // de ubicación (ej. "Acogedor Apartamento en Venta San Antonio de Los
+  // ALtos, Miranda" en vez de "San Antonio de Los Altos, Miranda"). Aquí se
+  // recupera el área geográfica real para que el filtro de "áreas" muestre
+  // solo zonas (Altamira, Los Palos Grandes, ...) y no texto de anuncio.
+  if (!zona) return zona;
+  let r = zona.trim();
+
+  // 1) Título filtrado: si aparece "en venta/alquiler/arriendo", el área
+  //    real es lo que viene DESPUÉS de esa frase.
+  const op = r.match(/\b(?:en\s+)?(venta|alquiler|arriendo|arrendamiento)\b/i);
+  if (op) {
+    const despues = r.slice(op.index + op[0].length).replace(/^[:\s—-]+/, "").trim();
+    if (despues) r = despues;
+  }
+
+  // 2) "Poblacion de San José de los Altos" → "San José de los Altos".
+  r = r.replace(/^poblaci[oó]n\s+de\s+/i, "");
+
+  // 3) Inglés (a veces el sitio escribe "Capital District").
+  if (/^capital district$/i.test(r)) r = "Distrito Capital";
+
+  // 4) Mayúsculas rotas ("ALtos") para que la misma zona no salga dos veces.
+  r = r.replace(/\bALtos\b/g, "Altos");
+
+  // 5) "Rosalito San Antonio de Los Altos" / "Altos de la Peña San Antonio de
+  //    los Altos" → quedarse con el área principal, no la urbanización interna.
+  if (/(San Antonio de Los Altos)$/i.test(r)) r = "San Antonio de Los Altos";
+
+  return r.trim();
+}
+
+function extraerZona(ubicacion) {
+  // El área es todo lo que va antes de la última coma (el estado).
+  if (!ubicacion) return null;
+  const partes = ubicacion.split(",");
+  const zona = partes.length > 1
+    ? partes.slice(0, -1).join(",").trim()
+    : partes[0].trim(); // sin coma: solo estado o zona suelta
+  const limpia = limpiarZona(zona);
+  if (!limpia) return null;
+
+  // Un estado no es un área: "Miranda, Distrito Capital" tiene el estado
+  // invertido, y "Capital District" es un estado escrito en inglés.
+  const esEstado = ESTADOS_PERMITIDOS.some((e) => e.toLowerCase() === limpia.toLowerCase());
+  if (esEstado) return null;
+
+  // Basura como "La N" (artículo + una letra) no es una zona.
+  if (/^la\s+[a-zñ]$/i.test(limpia)) return null;
+
+  return limpia;
+}
+
 function normalizarTipo(tipo) {
   // Los anuncios de distintos estados escriben el tipo con mayúsculas
   // distintas ("CASA", "Casa", "casa") — sin esto, el promedio y los
@@ -157,12 +211,13 @@ function main() {
   }
 
   const fichasAnalizadas = fichas.map((ficha) => {
+    const zona = extraerZona(ficha.ubicacion);
     const { _precio_m2, _estado, ...resto } = ficha;
     const clave = ficha.tipo && _estado ? claveGrupo(ficha.tipo, _estado) : null;
     const promedioGrupo = clave ? promedioPorGrupo.get(clave) : null;
 
     if (!_precio_m2 || !promedioGrupo) {
-      return { ...resto, precio_m2: null, promedio_m2_tipo_zona: null, semaforo: "sin_datos_suficientes" };
+      return { ...resto, zona, precio_m2: null, promedio_m2_tipo_zona: null, semaforo: "sin_datos_suficientes" };
     }
 
     const diferencia = (_precio_m2 - promedioGrupo) / promedioGrupo; // negativo = más barato que el promedio
@@ -178,6 +233,7 @@ function main() {
 
     return {
       ...resto,
+      zona,
       precio_m2: Math.round(_precio_m2),
       promedio_m2_tipo_zona: Math.round(promedioGrupo),
       diferencia_vs_promedio_pct: Math.round(diferencia * 100),
