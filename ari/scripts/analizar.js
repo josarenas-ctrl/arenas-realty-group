@@ -160,6 +160,33 @@ function normalizarTipo(tipo) {
   return limpio.charAt(0).toUpperCase() + limpio.slice(1);
 }
 
+// Factor de ajuste por condición: una propiedad "por remodelar" barata no
+// es ganga (es lo esperado), y una "impecable" cara no está sobrevalorada
+// (es premium). Esto ajusta el precio/m² antes de comparar contra el
+// promedio para que el semáforo refleje el valor real.
+const FACTOR_CONDICION = { impecable: 1.15, estandar: 1.0, por_remodelar: 0.80 };
+
+function extraerCondicion(ficha) {
+  // 1) Si el scraper ya trajo condicion, usarla
+  if (ficha.condicion && FACTOR_CONDICION[ficha.condicion]) return ficha.condicion;
+
+  // 2) Extraer del título
+  const titulo = (ficha.titulo || "").toLowerCase();
+  if (/remodelad[oa]|totalmente\s+remodelad|reci[eé]n\s+(remodelad|pintad)|impecable|como\snuev[oa]|listo\s+para\s+habitar|estreno/i.test(titulo))
+    return "impecable";
+  if (/por\s+remodelar|reparaci[oó]n|necesita\s+(trabajo|arreglo)|oportunidad\s+de\s+(remodelar|inversi[oó]n)/i.test(titulo))
+    return "por_remodelar";
+
+  // 3) Extraer de la descripción (si existe)
+  const desc = (ficha.descripcion || "").toLowerCase();
+  if (/remodelad[oa]|totalmente\s+remodelad|reci[eé]n\s+(remodelad|pintad)|impecable|como\snuev[oa]|listo\s+para\s+habitar|estreno/i.test(desc))
+    return "impecable";
+  if (/por\s+remodelar|reparaci[oó]n|necesita\s+(trabajo|arreglo)|oportunidad\s+de\s+(remodelar|inversi[oó]n)/i.test(desc))
+    return "por_remodelar";
+
+  return "estandar";
+}
+
 function encontrarFichasMaestrasMasReciente() {
   const archivos = fs
     .readdirSync(DATA_DIR)
@@ -228,16 +255,22 @@ function main() {
   }
 
   const fichasAnalizadas = fichas.map((ficha) => {
-    const zona = extraerZona(ficha.ubicacion);
-    const { _precio_m2, _estado, ...resto } = ficha;
-    const clave = ficha.tipo && _estado ? claveGrupo(ficha.tipo, _estado) : null;
-    const promedioGrupo = clave ? promedioPorGrupo.get(clave) : null;
+      const zona = extraerZona(ficha.ubicacion);
+      const condicion = extraerCondicion(ficha);
+      const { _precio_m2, _estado, ...resto } = ficha;
+      const clave = ficha.tipo && _estado ? claveGrupo(ficha.tipo, _estado) : null;
+      const promedioGrupo = clave ? promedioPorGrupo.get(clave) : null;
 
-    if (!_precio_m2 || !promedioGrupo) {
-      return { ...resto, zona, precio_m2: null, promedio_m2_tipo_zona: null, semaforo: "sin_datos_suficientes" };
-    }
+      if (!_precio_m2 || !promedioGrupo) {
+        return { ...resto, zona, condicion, precio_m2: null, promedio_m2_tipo_zona: null, semaforo: "sin_datos_suficientes" };
+      }
 
-    const diferencia = (_precio_m2 - promedioGrupo) / promedioGrupo; // negativo = más barato que el promedio
+      // Ajustar precio/m² según condición antes de comparar contra el promedio.
+      // Una propiedad "por remodelar" barata no es ganga (es lo esperado), y
+      // una "impecable" cara no está sobrevalorada (es premium).
+      const factor = FACTOR_CONDICION[condicion] || 1.0;
+      const precioAjustado = _precio_m2 / factor;
+      const diferencia = (precioAjustado - promedioGrupo) / promedioGrupo; // negativo = más barato que el promedio ajustado
 
     let semaforo;
     if (diferencia <= -UMBRAL_GANGA) {
@@ -249,13 +282,14 @@ function main() {
     }
 
     return {
-      ...resto,
-      zona,
-      precio_m2: Math.round(_precio_m2),
-      promedio_m2_tipo_zona: Math.round(promedioGrupo),
-      diferencia_vs_promedio_pct: Math.round(diferencia * 100),
-      semaforo,
-    };
+          ...resto,
+          zona,
+          condicion,
+          precio_m2: Math.round(_precio_m2),
+          promedio_m2_tipo_zona: Math.round(promedioGrupo),
+          diferencia_vs_promedio_pct: Math.round(diferencia * 100),
+          semaforo,
+        };
   });
 
   // Ordenar: primero las verdes (gangas), luego amarillas, luego rojas,

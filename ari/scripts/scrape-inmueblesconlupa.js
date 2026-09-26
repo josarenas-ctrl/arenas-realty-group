@@ -147,6 +147,68 @@ async function obtenerUrlsDeSitemaps() {
   return urls.slice(0, MAX_PAGINAS);
 }
 
+// ─── Extracción de meta description ──────────────────────────────────
+
+function extraerDeMetaDescription(html) {
+  const metaMatch = html.match(/<meta\s+name="description"\s+content="([^"]+)"/);
+  if (!metaMatch) return {};
+  const desc = metaMatch[1];
+  const datos = { descripcion: desc };
+
+  const m2Match = desc.match(/(\d[\d.,]*)\s*m[2²]/i);
+  if (m2Match) datos.metros_cuadrados = parsearNumero(m2Match[1]);
+
+  const habMatch = desc.match(/(\d+)\s*hab/i);
+  if (habMatch) datos.habitaciones = parseInt(habMatch[1], 10);
+
+  const banosMatch = desc.match(/(\d+)\s*bañ/i);
+  if (banosMatch) datos.banos = parseInt(banosMatch[1], 10);
+
+  return datos;
+}
+
+// ─── Extracción de JSON-LD ───────────────────────────────────────────
+
+function extraerDeJsonLD(html) {
+  const match = html.match(/<script\s+type="application\/ld\+json"\s+id="property-jsonld">\s*([\s\S]*?)\s*<\/script>/);
+  if (!match) return {};
+  try {
+    const property = JSON.parse(match[1]);
+    const desc = property.description || null;
+    return {
+      descripcion_completa: desc,
+      amenities: desc ? extraerAmenities(desc) : [],
+    };
+  } catch (e) {
+    return {};
+  }
+}
+
+function extraerAmenities(texto) {
+  const amenities = [];
+  if (!texto) return amenities;
+  const t = texto.toLowerCase();
+  if (/piscina/i.test(t)) amenities.push("piscina");
+  if (/jard[ií]n/i.test(t)) amenities.push("jardín");
+  if (/vigilancia|seguridad\s+24|portero/i.test(t)) amenities.push("vigilancia");
+  if (/estacionamiento|puesto\s+de\s+est|maletero|garaje/i.test(t)) amenities.push("estacionamiento");
+  if (/ascensor/i.test(t)) amenities.push("ascensor");
+  if (/vista\s+panor[aá]mic|vista\s+al\s+[aá]vila/i.test(t)) amenities.push("vista");
+  if (/terraza|balc[oó]n/i.test(t)) amenities.push("terraza");
+  if (/remodelad[oa]|totalmente\s+remodelad|reci[eé]n\s+(remodelad|pintad)/i.test(t))
+    amenities.push("remodelado");
+  if (/gimnasio|gym/i.test(t)) amenities.push("gimnasio");
+  if (/sauna|turco/i.test(t)) amenities.push("sauna");
+  if (/aire\s+acondicionado/i.test(t)) amenities.push("aire_acondicionado");
+  return amenities;
+}
+
+function parsearNumero(raw) {
+  const limpio = raw.replace(/\./g, "").replace(/,/g, "").trim();
+  const num = parseInt(limpio, 10);
+  return isNaN(num) ? null : num;
+}
+
 async function scrapearPagina(url, estado) {
   try {
     const resp = await axios.get(url, {
@@ -156,14 +218,29 @@ async function scrapearPagina(url, estado) {
     });
     if (resp.status !== 200) return null;
 
-    const tituloMatch = resp.data.match(/<title>(.*?)<\/title>/);
+    const html = resp.data;
+
+    // 1. Título (como antes)
+    const tituloMatch = html.match(/<title>(.*?)<\/title>/);
     if (!tituloMatch) return null;
-
     const datos = parsearTitulo(tituloMatch[1]);
-    datos.enlace = url;
-    datos.estado_url = estado;
 
-    return datos;
+    // 2. Meta description (NUEVO: m², hab, baños)
+    const meta = extraerDeMetaDescription(html);
+
+    // 3. JSON-LD (NUEVO: descripción completa, amenities)
+    const jsonld = extraerDeJsonLD(html);
+
+    return {
+      ...datos,
+      metros_cuadrados: meta.metros_cuadrados || null,
+      habitaciones: meta.habitaciones || null,
+      banos: meta.banos || null,
+      descripcion: jsonld.descripcion_completa || meta.descripcion || null,
+      amenities: jsonld.amenities || [],
+      enlace: url,
+      estado_url: estado,
+    };
   } catch (err) {
     return null;
   }
@@ -189,8 +266,8 @@ async function main() {
   // 2. Scrapear cada página
   console.log(`Fase 2: scrapeando ${urls.length} páginas individuales...`);
   const anuncios = [];
-  let exitos = 0;
-  let fallos = 0;
+  let exitos = 0, fallos = 0;
+  let conM2 = 0, conHab = 0, conBanos = 0;
 
   for (let i = 0; i < urls.length; i++) {
     const { url, estado } = urls[i];
@@ -200,20 +277,26 @@ async function main() {
     await new Promise(r => setTimeout(r, 100));
 
     if (datos && datos.titulo) {
+      if (datos.metros_cuadrados) conM2++;
+      if (datos.habitaciones) conHab++;
+      if (datos.banos) conBanos++;
+
       anuncios.push({
         titulo: datos.titulo,
         enlace: url,
         precio_texto: datos.precio_texto || "",
         precio_usd: datos.precio_usd,
-        habitaciones: null,
-        banos: null,
-        metros_cuadrados: null,
+        habitaciones: datos.habitaciones,
+        banos: datos.banos,
+        metros_cuadrados: datos.metros_cuadrados,
         tipo: datos.tipo || extraerTipoDeUrl(url),
         operacion_detectada: datos.operacion || extraerOperacionDeUrl(url),
         ubicacion: datos.municipio
           ? `${datos.municipio}, ${datos.estado}`
           : datos.estado || "",
         portal: "inmueblesconlupa",
+        descripcion: datos.descripcion,
+        amenities: datos.amenities,
       });
       exitos++;
     } else {
@@ -221,11 +304,12 @@ async function main() {
     }
 
     if ((i + 1) % 50 === 0) {
-      console.log(`  Progreso: ${i + 1}/${urls.length} (${exitos} ok, ${fallos} fallos)`);
+      console.log(`  Progreso: ${i + 1}/${urls.length} (${exitos} ok, ${fallos} fallos, m²=${conM2} hab=${conHab} baños=${conBanos})`);
     }
   }
 
-  console.log(`  Final: ${exitos} éxitos, ${fallos} fallos\n`);
+  console.log(`  Final: ${exitos} éxitos, ${fallos} fallos`);
+  console.log(`  Con m²: ${conM2} | Con hab: ${conHab} | Con baños: ${conBanos}\n`);
 
   // 3. Guardar resultado
   const zonasUnicas = [...new Set(urls.map((u) => u.estado))];
@@ -243,6 +327,9 @@ async function main() {
       urls_encontradas: urls.length,
       paginas_scrapeadas: exitos,
       fallos,
+      con_m2: conM2,
+      con_hab: conHab,
+      con_banos: conBanos,
     },
   };
 
