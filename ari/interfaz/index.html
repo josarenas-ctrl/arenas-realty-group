@@ -244,15 +244,18 @@
       return ubicacion.split(",").pop().trim();
     }
 
-    function extraerOperacion(titulo) {
-      if (!titulo) return null;
-      if (/alquiler/i.test(titulo)) return "Alquiler";
-      if (/venta/i.test(titulo)) return "Venta";
-      return null;
-    }
+    function extraerOperacion(ficha) {
+          // Preferir el campo del análisis (viene del scraper vía analizar.js).
+          if (ficha.operacion) return ficha.operacion;
+          // Fallback: título.
+          const titulo = (ficha.titulo || "").toLowerCase();
+          if (/alquiler/i.test(titulo)) return "Alquiler";
+          if (/venta/i.test(titulo)) return "Venta";
+          return null;
+        }
 
-    function renderChipsEstado(fichas) {
-      const estados = [...new Set(fichas.map(f => extraerEstado(f.ubicacion)).filter(Boolean))].sort();
+        function renderChipsEstado(fichas) {
+          const estados = [...new Set(fichas.map(f => extraerEstado(f.ubicacion)).filter(Boolean))].sort();
       const contenedor = document.getElementById("filtros-estado");
       contenedor.innerHTML = "";
       if (estados.length <= 1) { contenedor.style.display = "none"; return; }
@@ -272,7 +275,7 @@
     }
 
     function renderChipsOperacion(fichas) {
-      const ops = [...new Set(fichas.map(f => extraerOperacion(f.titulo)).filter(Boolean))].sort();
+      const ops = [...new Set(fichas.map(f => extraerOperacion(f)).filter(Boolean))].sort();
       const contenedor = document.getElementById("filtros-operacion");
       contenedor.innerHTML = "";
       if (ops.length <= 1) { contenedor.style.display = "none"; return; }
@@ -349,14 +352,28 @@
   }
 
   function render() {
-    const lista = document.getElementById("lista");
-    let fichas = fichasOriginal;
+      const lista = document.getElementById("lista");
+      let fichas = fichasOriginal;
 
-    if (filtroSemaforo !== "todos") fichas = fichas.filter(f => f.semaforo === filtroSemaforo);
-        if (filtroEstado !== "todos") fichas = fichas.filter(f => extraerEstado(f.ubicacion) === filtroEstado);
-        if (filtroOperacion !== "todos") fichas = fichas.filter(f => extraerOperacion(f.titulo) === filtroOperacion);
-        if (filtroTipo !== "todos") fichas = fichas.filter(f => f.tipo === filtroTipo);
-        if (filtroZona !== "todos") fichas = fichas.filter(f => f.zona === filtroZona);
+      if (filtroSemaforo !== "todos") fichas = fichas.filter(f => f.semaforo === filtroSemaforo);
+      if (filtroEstado !== "todos") fichas = fichas.filter(f => extraerEstado(f.ubicacion) === filtroEstado);
+      if (filtroOperacion !== "todos") fichas = fichas.filter(f => extraerOperacion(f) === filtroOperacion);
+      if (filtroTipo !== "todos") fichas = fichas.filter(f => f.tipo === filtroTipo);
+      if (filtroZona !== "todos") fichas = fichas.filter(f => f.zona === filtroZona);
+
+      // Reconstruir chips de los otros filtros con los datos ya filtrados
+            // para que solo muestren valores que realmente existen.
+            renderChipsEstado(fichas);
+            renderChipsOperacion(fichas);
+            renderChipsTipo(fichas);
+            renderChipsZona(fichas);
+
+            // Restaurar el chip activo correcto en cada grupo (las funciones
+            // renderChips* marcan "Todos" por defecto al reconstruir).
+            actualizarChips(document.getElementById("filtros-estado"), filtroEstado, "Todos los estados");
+            actualizarChips(document.getElementById("filtros-operacion"), filtroOperacion, "Venta y alquiler");
+            actualizarChips(document.getElementById("filtros-tipo"), filtroTipo, "Todos los tipos");
+            actualizarChips(document.getElementById("filtros-zona"), filtroZona, "Todas las áreas");
 
     if (fichas.length === 0) {
       lista.className = "vacio";
