@@ -223,8 +223,25 @@ function calcularPrecioM2(ficha) {
   return precio / m2;
 }
 
-function claveGrupo(tipo, estado) {
-  return `${tipo}||${estado}`;
+function extraerOperacion(ficha) {
+  // El scraper de ConLupa ya guarda 'operacion' ("venta"/"alquiler").
+  if (ficha.operacion) return ficha.operacion.charAt(0).toUpperCase() + ficha.operacion.slice(1).toLowerCase();
+
+  // Fallback: deducir del título.
+  const titulo = (ficha.titulo || "").toLowerCase();
+  if (/\balquiler\b|\balquila\b|\barriendo\b|\barrendamiento\b/i.test(titulo)) return "Alquiler";
+  if (/\bventa\b|\bvendo\b/i.test(titulo)) return "Venta";
+
+  // Fallback: deducir del precio. Ventas ≥ $10K, alquileres menos.
+  const precio = normalizarNumero(ficha.precio_texto);
+  if (precio && precio >= 10000) return "Venta";
+  if (precio && precio > 0) return "Alquiler";
+
+  return null;
+}
+
+function claveGrupo(tipo, estado, operacion) {
+  return `${tipo}||${estado}||${operacion || "Venta"}`;
 }
 
 function main() {
@@ -250,38 +267,81 @@ function main() {
   console.log(`  ${fichasTodas.length} fichas totales → ${fichas.length} en estados permitidos (${descartadas} descartadas)`);
 
   // Precio por m² de cada ficha, agrupado por tipo de propiedad + estado.
-  const precioM2PorGrupo = new Map(); // "tipo||estado" -> [precios_m2...]
+    const precioM2PorGrupo = new Map(); // "tipo||estado" -> [precios_m2...]
+    const m2PorGrupo = new Map();        // "tipo||estado" -> [m2...] para estimar los que no tienen
 
-  for (const ficha of fichas) {
-    ficha.tipo = normalizarTipo(ficha.tipo); // corrige mayúsculas antes de agrupar y de guardar
-    const precioM2 = calcularPrecioM2(ficha);
-    const estado = extraerEstado(ficha.ubicacion);
-    ficha._precio_m2 = precioM2;
-    ficha._estado = estado;
-    if (precioM2 && ficha.tipo && estado) {
-      const clave = claveGrupo(ficha.tipo, estado);
-      if (!precioM2PorGrupo.has(clave)) precioM2PorGrupo.set(clave, []);
-      precioM2PorGrupo.get(clave).push(precioM2);
+    for (const ficha of fichas) {
+      ficha.tipo = normalizarTipo(ficha.tipo); // corrige mayúsculas antes de agrupar y de guardar
+      const precioM2 = calcularPrecioM2(ficha);
+      const estado = extraerEstado(ficha.ubicacion);
+      ficha._precio_m2 = precioM2;
+          ficha._estado = estado;
+          const operacion = extraerOperacion(ficha);
+          if (precioM2 && ficha.tipo && estado) {
+            const clave = claveGrupo(ficha.tipo, estado, operacion);
+        if (!precioM2PorGrupo.has(clave)) precioM2PorGrupo.set(clave, []);
+        precioM2PorGrupo.get(clave).push(precioM2);
+      }
+      // Acumular m² reales para poder estimar los que no lo tienen
+      const m2Raw = normalizarNumero(ficha.metros_cuadrados);
+            if (m2Raw && m2Raw >= M2_MINIMO_VALIDO && ficha.tipo && estado) {
+              const clave = claveGrupo(ficha.tipo, estado, operacion);
+        if (!m2PorGrupo.has(clave)) m2PorGrupo.set(clave, []);
+        m2PorGrupo.get(clave).push(m2Raw);
+      }
     }
-  }
 
-  // Promedio por tipo + estado.
-  const promedioPorGrupo = new Map();
-  for (const [clave, precios] of precioM2PorGrupo.entries()) {
-    const promedio = precios.reduce((suma, p) => suma + p, 0) / precios.length;
-    promedioPorGrupo.set(clave, promedio);
-    console.log(`  ${clave.replace("||", " / ")}: promedio USD ${promedio.toFixed(0)}/m² (${precios.length} fichas)`);
-  }
+    // Promedio por tipo + estado.
+    const promedioPorGrupo = new Map();
+    for (const [clave, precios] of precioM2PorGrupo.entries()) {
+      const promedio = precios.reduce((suma, p) => suma + p, 0) / precios.length;
+      promedioPorGrupo.set(clave, promedio);
+      console.log(`  ${clave.replace("||", " / ")}: promedio USD ${promedio.toFixed(0)}/m² (${precios.length} fichas)`);
+    }
+
+    // Promedio de m² por tipo + estado (para estimar propiedades sin el dato).
+    const m2PromedioPorGrupo = new Map();
+    for (const [clave, m2s] of m2PorGrupo.entries()) {
+      m2PromedioPorGrupo.set(clave, m2s.reduce((s, v) => s + v, 0) / m2s.length);
+    }
 
   const fichasAnalizadas = fichas.map((ficha) => {
       const zona = extraerZona(ficha.ubicacion);
             const condicion = extraerCondicion(ficha);
             const contacto = extraerContacto(ficha);
             const { _precio_m2, _estado, ...resto } = ficha;
-      const clave = ficha.tipo && _estado ? claveGrupo(ficha.tipo, _estado) : null;
+      const clave = ficha.tipo && _estado
+              ? claveGrupo(ficha.tipo, _estado, extraerOperacion(ficha))
+              : null;
       const promedioGrupo = clave ? promedioPorGrupo.get(clave) : null;
 
       if (!_precio_m2 || !promedioGrupo) {
+              // Intentar estimar con el promedio de m² del grupo. El umbral
+              // mínimo de precio depende de si es venta o alquiler: las ventas
+              // empiezan en ~$10K, los alquileres en ~$200/mes.
+              const precio = normalizarNumero(ficha.precio_texto);
+              const op = extraerOperacion(ficha);
+              const precioMinimo = op === "Alquiler" ? PRECIO_MINIMO_VALIDO : 10000;
+              const m2Promedio = clave ? m2PromedioPorGrupo.get(clave) : null;
+              if (precio && precio >= precioMinimo && m2Promedio && promedioGrupo) {
+                const precioM2Estimado = precio / m2Promedio;
+                const factor = FACTOR_CONDICION[condicion] || 1.0;
+                const precioAjustado = precioM2Estimado / factor;
+                const diferencia = (precioAjustado - promedioGrupo) / promedioGrupo;
+                let semaforo;
+                if (diferencia <= -UMBRAL_GANGA) semaforo = "verde";
+                else if (diferencia >= UMBRAL_SOBREVALORADA) semaforo = "rojo";
+                else semaforo = "amarillo";
+                return {
+                  ...resto, zona, condicion, contacto,
+                  precio_m2: Math.round(precioM2Estimado),
+                  promedio_m2_tipo_zona: Math.round(promedioGrupo),
+                  diferencia_vs_promedio_pct: Math.round(diferencia * 100),
+                  semaforo,
+                  m2_estimado: true,
+                  m2_estimado_base: Math.round(m2Promedio),
+                };
+              }
               return { ...resto, zona, condicion, contacto, precio_m2: null, promedio_m2_tipo_zona: null, semaforo: "sin_datos_suficientes" };
             }
 

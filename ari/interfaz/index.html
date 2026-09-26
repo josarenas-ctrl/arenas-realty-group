@@ -376,9 +376,9 @@
           .join(" · ");
 
         const m2linea =
-          f.precio_m2 && f.promedio_m2_tipo_zona
-            ? `<div class="m2">USD <strong>${f.precio_m2}</strong>/m² — promedio de ${f.tipo?.toLowerCase() || "la zona"}: USD ${f.promedio_m2_tipo_zona}/m² (${f.diferencia_vs_promedio_pct > 0 ? "+" : ""}${f.diferencia_vs_promedio_pct}%)</div>`
-            : "";
+                  f.precio_m2 && f.promedio_m2_tipo_zona
+                    ? `<div class="m2">USD <strong>${f.precio_m2}</strong>/m²${f.m2_estimado ? ' <em style="font-size:0.8em;opacity:0.7">(estimado)</em>' : ''} — promedio de ${f.tipo?.toLowerCase() || "la zona"}: USD ${f.promedio_m2_tipo_zona}/m² (${f.diferencia_vs_promedio_pct > 0 ? "+" : ""}${f.diferencia_vs_promedio_pct}%)</div>`
+                    : "";
 
         const dupLinea =
           f.total_publicaciones_encontradas > 1
