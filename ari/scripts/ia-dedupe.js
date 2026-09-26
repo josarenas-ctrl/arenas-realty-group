@@ -24,7 +24,7 @@ const DATA_DIR = path.join(__dirname, "..", "data");
 const TOLERANCIA_PRECIO_CANDIDATO = 0.10;
 const MAX_COMPARACIONES_IA = 0; // 0 = sin límite: el filtro inteligente ya reduce
 const PAUSA_ENTRE_LLAMADAS_MS = 4000;
-const GROQ_MODELO = "llama-3.3-70b-versatile";
+const GROQ_MODELO = "llama-3.1-8b-instant";
 const GEMINI_MODELO = "gemini-2.0-flash";
 
 function precioComoNumero(precioTexto) {
