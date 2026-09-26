@@ -12,19 +12,20 @@
 // Por qué así y no "IA sobre todo": con cientos o miles de fichas, una
 // IA comparando cada par posible agotaría cualquier cuota gratuita en
 // una sola corrida. Reduciendo primero con reglas baratas a un puñado de
-// candidatos, el uso de IA se queda dentro del nivel gratuito de Gemini.
+// candidatos, el uso de IA se queda dentro del nivel gratuito.
 //
-// Requiere la variable de entorno GEMINI_API_KEY (se pasa desde el
-// workflow como secret de GitHub, nunca queda escrita en el código).
+// Backends: Groq (principal, gratuito, 30 RPM) > Gemini (respaldo).
+// Variables de entorno: GROQ_API_KEY, GEMINI_API_KEY.
 
 const fs = require("fs");
 const path = require("path");
 
 const DATA_DIR = path.join(__dirname, "..", "data");
-const TOLERANCIA_PRECIO_CANDIDATO = 0.10; // 10% — más laxo que dedupe.js pero solo para specs incompletas
-const MAX_COMPARACIONES_IA = 0; // 0 = sin límite: el filtro inteligente ya reduce lo suficiente
-const PAUSA_ENTRE_LLAMADAS_MS = 4000; // ritmo conservador para no chocar con el límite por minuto
-const MODELO = "gemini-3.6-flash";
+const TOLERANCIA_PRECIO_CANDIDATO = 0.10;
+const MAX_COMPARACIONES_IA = 0; // 0 = sin límite: el filtro inteligente ya reduce
+const PAUSA_ENTRE_LLAMADAS_MS = 4000;
+const GROQ_MODELO = "llama-3.3-70b-versatile";
+const GEMINI_MODELO = "gemini-2.0-flash";
 
 function precioComoNumero(precioTexto) {
   if (!precioTexto) return null;
@@ -55,38 +56,27 @@ function encontrarCandidatos(fichas) {
       const a = fichas[i];
       const b = fichas[j];
 
-      // Mismo tipo de propiedad
       if (!a.tipo || a.tipo !== b.tipo) continue;
 
-      // Mismo estado
       const estadoA = extraerEstado(a.ubicacion);
       const estadoB = extraerEstado(b.ubicacion);
       if (!estadoA || estadoA !== estadoB) continue;
 
-      // Precio dentro del 10% (antes 25% — demasiados falsos positivos)
       const precioA = precioComoNumero(a.precio_texto);
       const precioB = precioComoNumero(b.precio_texto);
       if (!precioA || !precioB) continue;
       const diferencia = Math.abs(precioA - precioB) / Math.max(precioA, precioB);
       if (diferencia > TOLERANCIA_PRECIO_CANDIDATO) continue;
 
-      // Ambos deben tener specs COMPLETAS (solo mandamos a la IA datos que
-      // realmente puede comparar — sin specs completas es adivinar).
       if (!a.habitaciones || !a.banos || !a.metros_cuadrados) continue;
       if (!b.habitaciones || !b.banos || !b.metros_cuadrados) continue;
 
-      // Al menos UNA spec coincide (señal real de que podría ser la misma
-      // propiedad — sin esto, dos propiedades distintas del mismo tipo y
-      // precio similar generarían ruido).
       const algunaCoincide =
         a.habitaciones === b.habitaciones ||
         a.banos === b.banos ||
         a.metros_cuadrados === b.metros_cuadrados;
       if (!algunaCoincide) continue;
 
-      // Si TODAS coinciden, las reglas de dedupe.js ya las unieron. Solo
-      // mandamos a la IA los casos dudosos (precio cercano + specs
-      // parcialmente coincidentes).
       const todasCoinciden =
         a.habitaciones === b.habitaciones &&
         a.banos === b.banos &&
@@ -106,8 +96,8 @@ async function dormir(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-async function preguntarleALaIA(fichaA, fichaB, apiKey) {
-  const prompt = `Eres un asistente que compara dos publicaciones inmobiliarias para decidir si son la MISMA propiedad publicada dos veces (por ejemplo, por distintos asesores o en distintos momentos), o si son DOS propiedades distintas que solo coinciden en precio y tipo por casualidad.
+function armarPrompt(fichaA, fichaB) {
+  return `Eres un asistente que compara dos publicaciones inmobiliarias para decidir si son la MISMA propiedad publicada dos veces (por ejemplo, por distintos asesores o en distintos momentos), o si son DOS propiedades distintas que solo coinciden en precio y tipo por casualidad.
 
 Publicación A:
 Título: "${fichaA.titulo}"
@@ -127,47 +117,91 @@ Ubicación: ${fichaB.ubicacion || "no especificada"}
 
 Responde ÚNICAMENTE con un JSON de esta forma exacta, sin texto adicional:
 {"misma_propiedad": true o false, "razon": "una frase breve explicando por qué"}`;
+}
 
-  const MAX_INTENTOS = 3; // límite fijo — nunca reintenta más de esto, así no hay riesgo de bucle sin fin
+async function consultarGroq(fichaA, fichaB, apiKey) {
+  const prompt = armarPrompt(fichaA, fichaB);
+  const respuesta = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${apiKey}`,
+    },
+    body: JSON.stringify({
+      model: GROQ_MODELO,
+      messages: [{ role: "user", content: prompt }],
+      response_format: { type: "json_object" },
+      temperature: 0,
+      max_tokens: 200,
+    }),
+  });
+
+  if (!respuesta.ok) {
+    const texto = await respuesta.text().catch(() => "");
+    throw new Error(`Groq respondió ${respuesta.status}: ${texto.slice(0, 200)}`);
+  }
+
+  const data = await respuesta.json();
+  const textoRespuesta = data?.choices?.[0]?.message?.content;
+  if (!textoRespuesta) throw new Error("Groq: respuesta sin contenido");
+
+  const parseado = JSON.parse(textoRespuesta);
+  return {
+    mismaPropiedad: parseado.misma_propiedad === true,
+    razon: parseado.razon || "",
+  };
+}
+
+async function consultarGemini(fichaA, fichaB, apiKey) {
+  const prompt = armarPrompt(fichaA, fichaB);
+  const respuesta = await fetch(
+    `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODELO}:generateContent?key=${apiKey}`,
+    {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        contents: [{ parts: [{ text: prompt }] }],
+        generationConfig: { responseMimeType: "application/json" },
+      }),
+    }
+  );
+
+  if (!respuesta.ok) {
+    const texto = await respuesta.text().catch(() => "");
+    throw new Error(`Gemini respondió ${respuesta.status}: ${texto.slice(0, 200)}`);
+  }
+
+  const data = await respuesta.json();
+  const textoRespuesta = data?.candidates?.[0]?.content?.parts?.[0]?.text;
+  if (!textoRespuesta) throw new Error("Gemini: respuesta sin contenido");
+
+  const parseado = JSON.parse(textoRespuesta);
+  return {
+    mismaPropiedad: parseado.misma_propiedad === true,
+    razon: parseado.razon || "",
+  };
+}
+
+async function preguntarleALaIA(fichaA, fichaB, backend, apiKey) {
+  const MAX_INTENTOS = 3;
   let ultimoError;
 
   for (let intento = 1; intento <= MAX_INTENTOS; intento++) {
-    const respuesta = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/${MODELO}:generateContent?key=${apiKey}`,
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          contents: [{ parts: [{ text: prompt }] }],
-          generationConfig: { responseMimeType: "application/json" },
-        }),
-      }
-    );
+    try {
+      if (backend === "groq") return await consultarGroq(fichaA, fichaB, apiKey);
+      if (backend === "gemini") return await consultarGemini(fichaA, fichaB, apiKey);
+      throw new Error(`Backend desconocido: ${backend}`);
+    } catch (err) {
+      ultimoError = err;
+      const texto = err.message || "";
+      const esTemporal = texto.includes("429") || texto.includes("503") || texto.includes("rate_limit");
 
-    if (respuesta.ok) {
-      const data = await respuesta.json();
-      const textoRespuesta = data?.candidates?.[0]?.content?.parts?.[0]?.text;
-      if (!textoRespuesta) throw new Error("Respuesta de Gemini sin contenido utilizable");
-      const parseado = JSON.parse(textoRespuesta);
-      return {
-        mismaPropiedad: parseado.misma_propiedad === true,
-        razon: parseado.razon || "",
-      };
+      if (!esTemporal || intento === MAX_INTENTOS) break;
+
+      const esperaMs = 5000 * intento;
+      console.log(`  ⏳ Intento ${intento} falló (${backend}), reintentando en ${esperaMs / 1000}s...`);
+      await dormir(esperaMs);
     }
-
-    const textoError = await respuesta.text();
-    ultimoError = new Error(`Gemini respondió ${respuesta.status}: ${textoError.slice(0, 200)}`);
-
-    // Solo vale la pena reintentar cuando el modelo está saturado (503) o
-    // hay demasiadas peticiones (429) — son fallas temporales. Cualquier
-    // otro código (401, 400, etc.) es un problema real que reintentar no
-    // va a arreglar, así que ahí paramos de inmediato.
-    const esErrorTemporal = respuesta.status === 503 || respuesta.status === 429;
-    if (!esErrorTemporal || intento === MAX_INTENTOS) break;
-
-    const esperaMs = 5000 * intento; // 5s, luego 10s
-    console.log(`  ⏳ Intento ${intento} falló (${respuesta.status}), reintentando en ${esperaMs / 1000}s...`);
-    await dormir(esperaMs);
   }
 
   throw ultimoError;
@@ -183,9 +217,21 @@ function fusionarFichas(principal, secundaria) {
 }
 
 async function main() {
-  const apiKey = process.env.GEMINI_API_KEY;
-  if (!apiKey) {
-    console.log("⚠️  No hay GEMINI_API_KEY configurada — saltando la pasada de deduplicación con IA.");
+  // Elegir backend: Groq > Gemini
+  const groqKey = process.env.GROQ_API_KEY;
+  const geminiKey = process.env.GEMINI_API_KEY;
+  let backend, apiKey;
+
+  if (groqKey) {
+    backend = "groq";
+    apiKey = groqKey;
+    console.log("🔹 Backend IA: Groq (Llama 3.3 70B)");
+  } else if (geminiKey) {
+    backend = "gemini";
+    apiKey = geminiKey;
+    console.log("🔹 Backend IA: Gemini");
+  } else {
+    console.log("⚠️  No hay GROQ_API_KEY ni GEMINI_API_KEY — saltando deduplicación IA.");
     return;
   }
 
@@ -200,46 +246,45 @@ async function main() {
   const fichas = contenido.fichas || [];
 
   const candidatos = encontrarCandidatos(fichas);
-  console.log(`Candidatos dudosos encontrados: ${candidatos.length} (máximo ${MAX_COMPARACIONES_IA} por corrida)`);
+  console.log(`Candidatos dudosos encontrados: ${candidatos.length}${MAX_COMPARACIONES_IA > 0 ? ` (máximo ${MAX_COMPARACIONES_IA} por corrida)` : ""}`);
 
   if (candidatos.length === 0) {
     console.log("Nada que revisar con IA esta vez.");
     return;
   }
 
-  const yaFusionado = new Set(); // índices que ya se fusionaron en otro par, para no procesarlos dos veces
+  const yaFusionado = new Set();
   const paresFusionar = [];
-
   let erroresConsecutivos = 0;
-    const MAX_ERRORES_CONSECUTIVOS = 5;
+  const MAX_ERRORES_CONSECUTIVOS = 5;
 
-    for (const candidato of candidatos) {
-      if (yaFusionado.has(candidato.i) || yaFusionado.has(candidato.j)) continue;
+  for (const candidato of candidatos) {
+    if (yaFusionado.has(candidato.i) || yaFusionado.has(candidato.j)) continue;
 
-      const fichaA = fichas[candidato.i];
-      const fichaB = fichas[candidato.j];
+    const fichaA = fichas[candidato.i];
+    const fichaB = fichas[candidato.j];
 
-      try {
-        const resultado = await preguntarleALaIA(fichaA, fichaB, apiKey);
-        erroresConsecutivos = 0; // se restablece tras un éxito
-        console.log(
-          `  "${fichaA.titulo.slice(0, 40)}..." vs "${fichaB.titulo.slice(0, 40)}..." → ${
-            resultado.mismaPropiedad ? "MISMA" : "distintas"
-          } (${resultado.razon})`
-        );
-        if (resultado.mismaPropiedad) {
-          paresFusionar.push({ i: candidato.i, j: candidato.j });
-          yaFusionado.add(candidato.i);
-          yaFusionado.add(candidato.j);
-        }
-      } catch (err) {
-        erroresConsecutivos++;
-        console.error(`  ✗ Error consultando IA para este par:`, err.message);
-        if (erroresConsecutivos >= MAX_ERRORES_CONSECUTIVOS) {
-          console.log(`⚠️  ${MAX_ERRORES_CONSECUTIVOS} errores consecutivos — cuota agotada. Abortando fase IA.`);
-          break;
-        }
+    try {
+      const resultado = await preguntarleALaIA(fichaA, fichaB, backend, apiKey);
+      erroresConsecutivos = 0;
+      console.log(
+        `  "${fichaA.titulo.slice(0, 40)}..." vs "${fichaB.titulo.slice(0, 40)}..." → ${
+          resultado.mismaPropiedad ? "MISMA" : "distintas"
+        } (${resultado.razon})`
+      );
+      if (resultado.mismaPropiedad) {
+        paresFusionar.push({ i: candidato.i, j: candidato.j });
+        yaFusionado.add(candidato.i);
+        yaFusionado.add(candidato.j);
       }
+    } catch (err) {
+      erroresConsecutivos++;
+      console.error(`  ✗ Error consultando ${backend}:`, err.message);
+      if (erroresConsecutivos >= MAX_ERRORES_CONSECUTIVOS) {
+        console.log(`⚠️  ${MAX_ERRORES_CONSECUTIVOS} errores consecutivos — cuota agotada. Abortando fase IA.`);
+        break;
+      }
+    }
 
     await dormir(PAUSA_ENTRE_LLAMADAS_MS);
   }
