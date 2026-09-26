@@ -255,93 +255,91 @@
         }
 
         function renderChipsEstado(fichas) {
-          const estados = [...new Set(fichas.map(f => extraerEstado(f.ubicacion)).filter(Boolean))].sort();
-      const contenedor = document.getElementById("filtros-estado");
-      contenedor.innerHTML = "";
-      if (estados.length <= 1) { contenedor.style.display = "none"; return; }
-      contenedor.style.display = "flex";
-      const chipTodos = document.createElement("button");
-      chipTodos.className = "chip activo";
-      chipTodos.textContent = "Todos los estados";
-      chipTodos.onclick = () => { filtroEstado = "todos"; actualizarChips(contenedor, filtroEstado, "Todos los estados"); render(); };
-      contenedor.appendChild(chipTodos);
-      estados.forEach(e => {
-        const chip = document.createElement("button");
-        chip.className = "chip";
-        chip.textContent = e;
-        chip.onclick = () => { filtroEstado = e; actualizarChips(contenedor, filtroEstado, "Todos los estados"); render(); };
-        contenedor.appendChild(chip);
-      });
-    }
+              const estados = [...new Set(fichas.map(f => extraerEstado(f.ubicacion)).filter(Boolean))].sort();
+              const contenedor = document.getElementById("filtros-estado");
+              contenedor.innerHTML = "";
+              if (estados.length === 0) { contenedor.style.display = "none"; return; }
+              contenedor.style.display = "flex";
+              const chipTodos = document.createElement("button");
+              chipTodos.className = "chip activo";
+              chipTodos.textContent = "Todos los estados";
+              chipTodos.onclick = () => { filtroEstado = "todos"; render(); };
+              contenedor.appendChild(chipTodos);
+              estados.forEach(e => {
+                const chip = document.createElement("button");
+                chip.className = "chip";
+                chip.textContent = e;
+                chip.onclick = () => { filtroEstado = e; render(); };
+                contenedor.appendChild(chip);
+              });
+            }
 
     function renderChipsOperacion(fichas) {
-      const ops = [...new Set(fichas.map(f => extraerOperacion(f)).filter(Boolean))].sort();
-      const contenedor = document.getElementById("filtros-operacion");
+          const ops = [...new Set(fichas.map(f => extraerOperacion(f)).filter(Boolean))].sort();
+          const contenedor = document.getElementById("filtros-operacion");
+          contenedor.innerHTML = "";
+          if (ops.length === 0) { contenedor.style.display = "none"; return; }
+          contenedor.style.display = "flex";
+          const chipTodos = document.createElement("button");
+          chipTodos.className = "chip activo";
+          chipTodos.textContent = "Venta y alquiler";
+          chipTodos.onclick = () => { filtroOperacion = "todos"; render(); };
+          contenedor.appendChild(chipTodos);
+          ops.forEach(op => {
+            const chip = document.createElement("button");
+            chip.className = "chip";
+            chip.textContent = op;
+            chip.onclick = () => { filtroOperacion = op; render(); };
+            contenedor.appendChild(chip);
+          });
+        }
+
+  function renderChipsTipo(fichas) {
+      const tipos = [...new Set(fichas.map((f) => f.tipo).filter(Boolean))].sort();
+      const contenedor = document.getElementById("filtros-tipo");
       contenedor.innerHTML = "";
-      if (ops.length <= 1) { contenedor.style.display = "none"; return; }
+      if (tipos.length === 0) { contenedor.style.display = "none"; return; }
       contenedor.style.display = "flex";
       const chipTodos = document.createElement("button");
       chipTodos.className = "chip activo";
-      chipTodos.textContent = "Venta y alquiler";
-      chipTodos.onclick = () => { filtroOperacion = "todos"; actualizarChips(contenedor, filtroOperacion, "Venta y alquiler"); render(); };
+      chipTodos.textContent = "Todos los tipos";
+      chipTodos.onclick = () => { filtroTipo = "todos"; render(); };
       contenedor.appendChild(chipTodos);
-      ops.forEach(op => {
+
+      tipos.forEach((tipo) => {
         const chip = document.createElement("button");
         chip.className = "chip";
-        chip.textContent = op;
-        chip.onclick = () => { filtroOperacion = op; actualizarChips(contenedor, filtroOperacion, "Venta y alquiler"); render(); };
+        chip.textContent = tipo;
+        chip.onclick = () => { filtroTipo = tipo; render(); };
         contenedor.appendChild(chip);
       });
     }
 
-  function renderChipsTipo(fichas) {
-    const tipos = [...new Set(fichas.map((f) => f.tipo).filter(Boolean))].sort();
-    const contenedor = document.getElementById("filtros-tipo");
-    contenedor.innerHTML = "";
-    const chipTodos = document.createElement("button");
-    chipTodos.className = "chip activo";
-    chipTodos.textContent = "Todos los tipos";
-    chipTodos.onclick = () => { filtroTipo = "todos"; actualizarChips(contenedor, filtroTipo, "Todos los tipos"); render(); };
-    contenedor.appendChild(chipTodos);
-
-    tipos.forEach((tipo) => {
-      const chip = document.createElement("button");
-      chip.className = "chip";
-      chip.textContent = tipo;
-      chip.onclick = () => { filtroTipo = tipo; actualizarChips(contenedor, filtroTipo, "Todos los tipos"); render(); };
-      contenedor.appendChild(chip);
-    });
-  }
-
   function renderChipsZona(fichas) {
-    // El "área" sale del campo `zona` que ya viene limpio del análisis (solo
-    // el nombre geográfico, sin título de anuncio ni estado). Ver
-    // scripts/analizar.js → extraerZona()/limpiarZona().
-    const zonas = [...new Set(fichas.map((f) => f.zona).filter(Boolean))].sort();
-    const contenedor = document.getElementById("filtros-zona");
-    contenedor.innerHTML = "";
+      const zonas = [...new Set(fichas.map((f) => f.zona).filter(Boolean))].sort();
+      const contenedor = document.getElementById("filtros-zona");
+      contenedor.innerHTML = "";
 
-    if (zonas.length <= 1) {
-      // Con una sola zona todavía no tiene sentido mostrar el filtro.
-      contenedor.style.display = "none";
-      return;
+      if (zonas.length === 0) {
+        contenedor.style.display = "none";
+        return;
+      }
+      contenedor.style.display = "flex";
+
+      const chipTodos = document.createElement("button");
+      chipTodos.className = "chip activo";
+      chipTodos.textContent = "Todas las áreas";
+      chipTodos.onclick = () => { filtroZona = "todos"; render(); };
+      contenedor.appendChild(chipTodos);
+
+      zonas.forEach((zona) => {
+        const chip = document.createElement("button");
+        chip.className = "chip";
+        chip.textContent = zona;
+        chip.onclick = () => { filtroZona = zona; render(); };
+        contenedor.appendChild(chip);
+      });
     }
-    contenedor.style.display = "flex";
-
-    const chipTodos = document.createElement("button");
-    chipTodos.className = "chip activo";
-    chipTodos.textContent = "Todas las áreas";
-    chipTodos.onclick = () => { filtroZona = "todos"; actualizarChips(contenedor, filtroZona, "Todas las áreas"); render(); };
-    contenedor.appendChild(chipTodos);
-
-    zonas.forEach((zona) => {
-      const chip = document.createElement("button");
-      chip.className = "chip";
-      chip.textContent = zona;
-      chip.onclick = () => { filtroZona = zona; actualizarChips(contenedor, filtroZona, "Todas las áreas"); render(); };
-      contenedor.appendChild(chip);
-    });
-  }
 
   function actualizarChips(contenedor, valorActivo, textoTodos) {
     [...contenedor.children].forEach((c) => c.classList.remove("activo"));
