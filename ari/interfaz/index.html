@@ -395,23 +395,29 @@
                     ? `<div class="amenities">${f.amenities.map(a => `<span class="amenity">${a}</span>`).join("")}</div>`
                     : "";
 
-                return `
-                  <div class="card">
-                    <div class="card-top">
-                      <span class="badge ${f.semaforo}">${NOMBRES_SEMAFORO[f.semaforo] || f.semaforo}</span>
-                      ${condicionTag}
-                    </div>
-                    <h3>${f.titulo}</h3>
-                    <div class="precio">${formatoUSD(parseInt(String(f.precio_texto || "").replace(/[^\\d]/g, ""), 10) || null)}</div>
-                    <div class="detalle">${specs || "Sin specs detalladas"} · ${[f.zona, extraerEstado(f.ubicacion)].filter(Boolean).join(", ") || f.ubicacion || ""}</div>
-                    ${m2linea}
-                    ${dupLinea}
-                    ${amenitiesHtml}
-                    <div class="acciones">
-                      <a href="${f.enlace_principal}" target="_blank" rel="noopener">Ver publicación</a>
-                    </div>
-                  </div>
-                `;
+                const contactoHtml =
+                          f.contacto?.telefono
+                            ? `<a href="https://wa.me/58${f.contacto.telefono}" target="_blank" rel="noopener" style="background:#25D366">📞 WhatsApp</a>`
+                            : "";
+
+                        return `
+                          <div class="card">
+                            <div class="card-top">
+                              <span class="badge ${f.semaforo}">${NOMBRES_SEMAFORO[f.semaforo] || f.semaforo}</span>
+                              ${condicionTag}
+                            </div>
+                            <h3>${f.titulo}</h3>
+                            <div class="precio">${formatoUSD(parseInt(String(f.precio_texto || "").replace(/[^\\d]/g, ""), 10) || null)}</div>
+                            <div class="detalle">${specs || "Sin specs detalladas"} · ${[f.zona, extraerEstado(f.ubicacion)].filter(Boolean).join(", ") || f.ubicacion || ""}</div>
+                            ${m2linea}
+                            ${dupLinea}
+                            ${amenitiesHtml}
+                            <div class="acciones">
+                              <a href="${f.enlace_principal}" target="_blank" rel="noopener">Ver publicación</a>
+                              ${contactoHtml}
+                            </div>
+                          </div>
+                        `;
       })
       .join("");
   }

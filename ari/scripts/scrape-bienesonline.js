@@ -81,27 +81,47 @@ function extraerAnunciosDePagina(html, baseUrl) {
 
     const precioMatch = textoContenedor.match(/USD\s*[\d.,]+/);
     const specsMatch = textoContenedor.match(
-      /(\d+)\s*hab\.?\D*?(\d+)\s*baños?\D*?([\d.,]+)\s*m²/i
-    );
+          /(\d+)\s*(?:hab\.?|habitaciones?|dormitorios?)\s*\D*?(\d+)\s*baños?\s*\D*?([\d.,]+)\s*m[2²]/i
+        ) || textoContenedor.match(
+          /([\d.,]+)\s*m[2²]\s*\D*?(\d+)\s*(?:hab\.?|habitaciones?|dormitorios?)\s*\D*?(\d+)\s*baños?/i
+        );
     const tipoMatch = textoContenedor.match(
       /(Casa|Apartamento|Terreno|Local|Oficina)\s*-?\s*(Venta|Alquiler)/i
     );
     const ubicacionMatch = textoContenedor.match(REGEX_UBICACION);
 
-    anuncios.push({
-      titulo,
-      enlace: href,
-      precio_texto: precioMatch ? precioMatch[0] : "",
-      habitaciones: specsMatch ? specsMatch[1] : null,
-      banos: specsMatch ? specsMatch[2] : null,
-      metros_cuadrados: specsMatch ? specsMatch[3] : null,
-      tipo: tipoMatch ? normalizarTipo(tipoMatch[1]) : "",
-      operacion_detectada: tipoMatch ? tipoMatch[2] : "",
-      ubicacion: ubicacionMatch ? ubicacionMatch[1] : "",
-    });
-  }
+    let hab = null, banos = null, m2 = null;
+        if (specsMatch) {
+          // El primer regex captura hab/baños/m² en ese orden.
+          // El fallback captura m²/hab/baños (m² primero porque la página
+          // a veces pone los metros antes que las habitaciones).
+          const primerGrupo = specsMatch[1];
+          if (/m[2²]/.test(primerGrupo) || /^\d{2,4}$/.test(primerGrupo) && parseInt(primerGrupo) > 20) {
+            // Fallback: [1]=m², [2]=hab, [3]=baños
+            m2 = specsMatch[1];
+            hab = specsMatch[2];
+            banos = specsMatch[3];
+          } else {
+                      // Principal: [1]=hab, [2]=baños, [3]=m²
+                      hab = specsMatch[1];
+                      banos = specsMatch[2];
+                      m2 = specsMatch[3];
+                      }
+                    }
+                    anuncios.push({
+                      titulo,
+                      enlace: href,
+                      precio_texto: precioMatch ? precioMatch[0] : "",
+                      habitaciones: hab ? parseInt(hab, 10) : null,
+                      banos: banos ? parseInt(banos, 10) : null,
+                      metros_cuadrados: m2 ? parseInt(String(m2).replace(/[.,]/g, ""), 10) : null,
+                      tipo: tipoMatch ? normalizarTipo(tipoMatch[1]) : "",
+                      operacion_detectada: tipoMatch ? tipoMatch[2] : "",
+                      ubicacion: ubicacionMatch ? ubicacionMatch[1] : "",
+                    });
+              }
 
-  return anuncios;
+              return anuncios;
 }
 
 async function scrapeBusqueda(busqueda) {

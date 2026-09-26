@@ -196,6 +196,20 @@ function encontrarFichasMaestrasMasReciente() {
   return archivos[archivos.length - 1];
 }
 
+function extraerContacto(ficha) {
+  const texto = `${ficha.titulo || ""} ${ficha.descripcion || ""}`.toLowerCase();
+
+  // Teléfonos venezolanos: 0412/0414/0416/0424/0426 + 7 dígitos, o 0212/0241/etc + 7 dígitos
+  const telMatch = texto.match(/0(4(12|14|16|24|26)\d{7}|212\d{7}|2(41|43|44|45|46|51|52|61|62|63|64|65|81|82|83|84|85|91|92|93|94|95)\d{7})/);
+  const telefono = telMatch ? telMatch[0] : null;
+
+  // Email
+  const emailMatch = texto.match(/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}/i);
+  const email = emailMatch ? emailMatch[0].toLowerCase() : null;
+
+  return { telefono, email };
+}
+
 function calcularPrecioM2(ficha) {
   const precio = normalizarNumero(ficha.precio_texto);
   const m2 = normalizarNumero(ficha.metros_cuadrados);
@@ -256,14 +270,15 @@ function main() {
 
   const fichasAnalizadas = fichas.map((ficha) => {
       const zona = extraerZona(ficha.ubicacion);
-      const condicion = extraerCondicion(ficha);
-      const { _precio_m2, _estado, ...resto } = ficha;
+            const condicion = extraerCondicion(ficha);
+            const contacto = extraerContacto(ficha);
+            const { _precio_m2, _estado, ...resto } = ficha;
       const clave = ficha.tipo && _estado ? claveGrupo(ficha.tipo, _estado) : null;
       const promedioGrupo = clave ? promedioPorGrupo.get(clave) : null;
 
       if (!_precio_m2 || !promedioGrupo) {
-        return { ...resto, zona, condicion, precio_m2: null, promedio_m2_tipo_zona: null, semaforo: "sin_datos_suficientes" };
-      }
+              return { ...resto, zona, condicion, contacto, precio_m2: null, promedio_m2_tipo_zona: null, semaforo: "sin_datos_suficientes" };
+            }
 
       // Ajustar precio/m² según condición antes de comparar contra el promedio.
       // Una propiedad "por remodelar" barata no es ganga (es lo esperado), y
@@ -282,10 +297,11 @@ function main() {
     }
 
     return {
-          ...resto,
-          zona,
-          condicion,
-          precio_m2: Math.round(_precio_m2),
+              ...resto,
+              zona,
+              condicion,
+              contacto,
+              precio_m2: Math.round(_precio_m2),
           promedio_m2_tipo_zona: Math.round(promedioGrupo),
           diferencia_vs_promedio_pct: Math.round(diferencia * 100),
           semaforo,
