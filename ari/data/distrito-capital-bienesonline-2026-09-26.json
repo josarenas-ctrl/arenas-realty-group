@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "alquiler",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+alquiler+distrito+capital",
-  "scrapeado_en": "2026-09-26T16:11:26.248Z",
+  "scrapeado_en": "2026-09-26T16:22:24.490Z",
   "total": 100,
   "anuncios": [
     {
