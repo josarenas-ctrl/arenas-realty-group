@@ -155,15 +155,28 @@
     gap: 8px;
   }
   .acciones a {
-    flex: 1;
-    text-align: center;
-    text-decoration: none;
-    font-size: 13px;
-    padding: 8px;
-    border-radius: 8px;
-    background: var(--acento);
-    color: #fff;
-  }
+      flex: 1;
+      text-align: center;
+      text-decoration: none;
+      font-size: 13px;
+      padding: 8px;
+      border-radius: 8px;
+      background: var(--acento);
+      color: #fff;
+    }
+    .condicion-tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-left: 6px;
+    }
+    .condicion-tag.impecable { background: #dbeafe; color: #1d4ed8; }
+    .condicion-tag.estandar { background: #f3f4f6; color: #6b7280; }
+    .condicion-tag.por_remodelar { background: #fef3c7; color: #b45309; }
+    .amenities { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
+    .amenity { font-size: 11px; padding: 2px 6px; border-radius: 4px; background: #f0fdf4; color: #166534; }
   .vacio, .cargando {
     text-align: center;
     color: var(--texto-suave);
@@ -209,8 +222,13 @@
     let filtroTipo = "todos";
     let filtroZona = "todos";
 
-  const NOMBRES_SEMAFORO = {
-    verde: "🟢 Ganga",
+      const NOMBRES_CONDICION = {
+              impecable: "✨ Impecable",
+              estandar: "🏠 Estándar",
+              por_remodelar: "🔧 Por remodelar",
+            };
+        const NOMBRES_SEMAFORO = {
+          verde: "🟢 Ganga",
     amarillo: "🟡 Precio de mercado",
     rojo: "🔴 Sobrevalorada",
     sin_datos_suficientes: "⚪ Sin datos suficientes",
@@ -367,21 +385,33 @@
             ? `<span class="dup">Publicada ${f.total_publicaciones_encontradas} veces</span>`
             : "";
 
-        return `
-          <div class="card">
-            <div class="card-top">
-              <span class="badge ${f.semaforo}">${NOMBRES_SEMAFORO[f.semaforo] || f.semaforo}</span>
-            </div>
-            <h3>${f.titulo}</h3>
-            <div class="precio">${formatoUSD(parseInt(String(f.precio_texto || "").replace(/[^\d]/g, ""), 10) || null)}</div>
-            <div class="detalle">${specs || "Sin specs detalladas"} · ${[f.zona, extraerEstado(f.ubicacion)].filter(Boolean).join(", ") || f.ubicacion || ""}</div>
-            ${m2linea}
-            ${dupLinea}
-            <div class="acciones">
-              <a href="${f.enlace_principal}" target="_blank" rel="noopener">Ver publicación</a>
-            </div>
-          </div>
-        `;
+        const condicionTag =
+                  f.condicion && f.condicion !== "estandar"
+                    ? `<span class="condicion-tag ${f.condicion}">${NOMBRES_CONDICION[f.condicion] || f.condicion}</span>`
+                    : "";
+
+                const amenitiesHtml =
+                  f.amenities && f.amenities.length
+                    ? `<div class="amenities">${f.amenities.map(a => `<span class="amenity">${a}</span>`).join("")}</div>`
+                    : "";
+
+                return `
+                  <div class="card">
+                    <div class="card-top">
+                      <span class="badge ${f.semaforo}">${NOMBRES_SEMAFORO[f.semaforo] || f.semaforo}</span>
+                      ${condicionTag}
+                    </div>
+                    <h3>${f.titulo}</h3>
+                    <div class="precio">${formatoUSD(parseInt(String(f.precio_texto || "").replace(/[^\\d]/g, ""), 10) || null)}</div>
+                    <div class="detalle">${specs || "Sin specs detalladas"} · ${[f.zona, extraerEstado(f.ubicacion)].filter(Boolean).join(", ") || f.ubicacion || ""}</div>
+                    ${m2linea}
+                    ${dupLinea}
+                    ${amenitiesHtml}
+                    <div class="acciones">
+                      <a href="${f.enlace_principal}" target="_blank" rel="noopener">Ver publicación</a>
+                    </div>
+                  </div>
+                `;
       })
       .join("");
   }
