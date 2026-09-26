@@ -210,27 +210,36 @@ async function main() {
   const yaFusionado = new Set(); // índices que ya se fusionaron en otro par, para no procesarlos dos veces
   const paresFusionar = [];
 
-  for (const candidato of candidatos) {
-    if (yaFusionado.has(candidato.i) || yaFusionado.has(candidato.j)) continue;
+  let erroresConsecutivos = 0;
+    const MAX_ERRORES_CONSECUTIVOS = 5;
 
-    const fichaA = fichas[candidato.i];
-    const fichaB = fichas[candidato.j];
+    for (const candidato of candidatos) {
+      if (yaFusionado.has(candidato.i) || yaFusionado.has(candidato.j)) continue;
 
-    try {
-      const resultado = await preguntarleALaIA(fichaA, fichaB, apiKey);
-      console.log(
-        `  "${fichaA.titulo.slice(0, 40)}..." vs "${fichaB.titulo.slice(0, 40)}..." → ${
-          resultado.mismaPropiedad ? "MISMA" : "distintas"
-        } (${resultado.razon})`
-      );
-      if (resultado.mismaPropiedad) {
-        paresFusionar.push({ i: candidato.i, j: candidato.j });
-        yaFusionado.add(candidato.i);
-        yaFusionado.add(candidato.j);
+      const fichaA = fichas[candidato.i];
+      const fichaB = fichas[candidato.j];
+
+      try {
+        const resultado = await preguntarleALaIA(fichaA, fichaB, apiKey);
+        erroresConsecutivos = 0; // se restablece tras un éxito
+        console.log(
+          `  "${fichaA.titulo.slice(0, 40)}..." vs "${fichaB.titulo.slice(0, 40)}..." → ${
+            resultado.mismaPropiedad ? "MISMA" : "distintas"
+          } (${resultado.razon})`
+        );
+        if (resultado.mismaPropiedad) {
+          paresFusionar.push({ i: candidato.i, j: candidato.j });
+          yaFusionado.add(candidato.i);
+          yaFusionado.add(candidato.j);
+        }
+      } catch (err) {
+        erroresConsecutivos++;
+        console.error(`  ✗ Error consultando IA para este par:`, err.message);
+        if (erroresConsecutivos >= MAX_ERRORES_CONSECUTIVOS) {
+          console.log(`⚠️  ${MAX_ERRORES_CONSECUTIVOS} errores consecutivos — cuota agotada. Abortando fase IA.`);
+          break;
+        }
       }
-    } catch (err) {
-      console.error(`  ✗ Error consultando IA para este par:`, err.message);
-    }
 
     await dormir(PAUSA_ENTRE_LLAMADAS_MS);
   }
