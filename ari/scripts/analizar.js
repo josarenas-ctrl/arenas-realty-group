@@ -293,10 +293,16 @@ function main() {
   });
 
   // Ordenar: primero las verdes (gangas), luego amarillas, luego rojas,
-  // luego sin datos — así el asesor ve las oportunidades más interesantes
-  // arriba de una vez.
-  const orden = { verde: 0, amarillo: 1, rojo: 2, sin_datos_suficientes: 3 };
-  fichasAnalizadas.sort((a, b) => orden[a.semaforo] - orden[b.semaforo]);
+    // luego sin datos. Dentro de cada grupo, menor precio primero — el
+    // asesor ve la mejor oportunidad arriba de todo.
+    const orden = { verde: 0, amarillo: 1, rojo: 2, sin_datos_suficientes: 3 };
+    fichasAnalizadas.sort((a, b) => {
+      const ordenSemaforo = orden[a.semaforo] - orden[b.semaforo];
+      if (ordenSemaforo !== 0) return ordenSemaforo;
+      const precioA = normalizarNumero(a.precio_texto) || Infinity;
+      const precioB = normalizarNumero(b.precio_texto) || Infinity;
+      return precioA - precioB;
+    });
 
   const conteo = fichasAnalizadas.reduce((acc, f) => {
     acc[f.semaforo] = (acc[f.semaforo] || 0) + 1;

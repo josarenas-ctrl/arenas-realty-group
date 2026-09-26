@@ -21,8 +21,8 @@ const fs = require("fs");
 const path = require("path");
 
 const DATA_DIR = path.join(__dirname, "..", "data");
-const TOLERANCIA_PRECIO_CANDIDATO = 0.25; // 25% — más laxo que dedupe.js a propósito
-const MAX_COMPARACIONES_IA = 40; // límite duro por corrida, para no gastar la cuota gratuita
+const TOLERANCIA_PRECIO_CANDIDATO = 0.10; // 10% — más laxo que dedupe.js pero solo para specs incompletas
+const MAX_COMPARACIONES_IA = 0; // 0 = sin límite: el filtro inteligente ya reduce lo suficiente
 const PAUSA_ENTRE_LLAMADAS_MS = 4000; // ritmo conservador para no chocar con el límite por minuto
 const MODELO = "gemini-3.6-flash";
 
@@ -54,26 +54,52 @@ function encontrarCandidatos(fichas) {
     for (let j = i + 1; j < fichas.length; j++) {
       const a = fichas[i];
       const b = fichas[j];
+
+      // Mismo tipo de propiedad
       if (!a.tipo || a.tipo !== b.tipo) continue;
 
+      // Mismo estado
       const estadoA = extraerEstado(a.ubicacion);
       const estadoB = extraerEstado(b.ubicacion);
       if (!estadoA || estadoA !== estadoB) continue;
 
+      // Precio dentro del 10% (antes 25% — demasiados falsos positivos)
       const precioA = precioComoNumero(a.precio_texto);
       const precioB = precioComoNumero(b.precio_texto);
       if (!precioA || !precioB) continue;
-
       const diferencia = Math.abs(precioA - precioB) / Math.max(precioA, precioB);
       if (diferencia > TOLERANCIA_PRECIO_CANDIDATO) continue;
+
+      // Ambos deben tener specs COMPLETAS (solo mandamos a la IA datos que
+      // realmente puede comparar — sin specs completas es adivinar).
+      if (!a.habitaciones || !a.banos || !a.metros_cuadrados) continue;
+      if (!b.habitaciones || !b.banos || !b.metros_cuadrados) continue;
+
+      // Al menos UNA spec coincide (señal real de que podría ser la misma
+      // propiedad — sin esto, dos propiedades distintas del mismo tipo y
+      // precio similar generarían ruido).
+      const algunaCoincide =
+        a.habitaciones === b.habitaciones ||
+        a.banos === b.banos ||
+        a.metros_cuadrados === b.metros_cuadrados;
+      if (!algunaCoincide) continue;
+
+      // Si TODAS coinciden, las reglas de dedupe.js ya las unieron. Solo
+      // mandamos a la IA los casos dudosos (precio cercano + specs
+      // parcialmente coincidentes).
+      const todasCoinciden =
+        a.habitaciones === b.habitaciones &&
+        a.banos === b.banos &&
+        a.metros_cuadrados === b.metros_cuadrados;
+      if (todasCoinciden) continue;
 
       candidatos.push({ i, j, diferenciaPrecio: diferencia });
     }
   }
-  // Priorizar los pares con precio más parecido primero, ya que son los
-  // más probables de ser la misma propiedad.
   candidatos.sort((a, b) => a.diferenciaPrecio - b.diferenciaPrecio);
-  return candidatos.slice(0, MAX_COMPARACIONES_IA);
+  return MAX_COMPARACIONES_IA > 0
+    ? candidatos.slice(0, MAX_COMPARACIONES_IA)
+    : candidatos;
 }
 
 async function dormir(ms) {
