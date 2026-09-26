@@ -1,7 +1,7 @@
 {
-  "generado_en": "2026-09-26T15:50:32.168Z",
+  "generado_en": "2026-09-26T16:14:45.662Z",
   "total_anuncios_originales": 700,
-  "total_fichas_maestras": 531,
+  "total_fichas_maestras": 532,
   "fichas": [
     {
       "titulo": "en alquiler fijo o vacacional en C.R. Guaica Suites",
@@ -13,7 +13,7 @@
       "ubicacion": "Lecheria, Anzoátegui",
       "enlace_principal": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/121029-en-alquiler-fijo-o-vacacional-en-cr-guaica-suites",
       "portal_principal": "bienesonline",
-      "total_publicaciones_encontradas": 34,
+      "total_publicaciones_encontradas": 31,
       "todos_los_anuncios": [
         {
           "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/68681-en-alquiler-apartamento-en-cr-guaica-suites",
@@ -169,21 +169,6 @@
           "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/125880-apartamento-en-alquierl-en-crguaica-suites",
           "portal": "bienesonline",
           "titulo": "APARTAMENTO EN ALQUIERL EN C.R.GUAICA SUITES"
-        },
-        {
-          "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/124090-en-alquiler-apartamento-en-conjunto-residencial-guiaca-suite-lecheria",
-          "portal": "bienesonline",
-          "titulo": "EN ALQUILER APARTAMENTO EN CONJUNTO RESIDENCIAL GUIACA SUITE LECHERIA"
-        },
-        {
-          "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/56734-en-alquiler-apartamento-en-guaica-suite-lecheria",
-          "portal": "bienesonline",
-          "titulo": "En alquiler Apartamento en Guaica Suite, Lecheria"
-        },
-        {
-          "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/62309-en-alquiler-apartamento-en-el-conjunto-residencial-guaica-suite-lecheria",
-          "portal": "bienesonline",
-          "titulo": "en alquiler apartamento en el conjunto residencial guaica suite lecheria"
         }
       ]
     },
@@ -1053,6 +1038,35 @@
           "enlace": "https://www.inmueblesconlupa.com/inmuebles/terreno/venta/distrito-capital/terreno-comercial-en-venta-en-mariche-distrito-metropolitano-rentahouse-27-5162",
           "portal": "inmueblesconlupa",
           "titulo": "Terreno en venta en Mariche, Distrito Capital — $120.000"
+        }
+      ]
+    },
+    {
+      "titulo": "En alquiler Apartamento en Guaica Suite, Lecheria",
+      "precio_texto": "USD 350",
+      "habitaciones": 1,
+      "banos": 1,
+      "metros_cuadrados": 65,
+      "tipo": "Apartamento",
+      "ubicacion": "Lechería, Anzoátegui",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/56734-en-alquiler-apartamento-en-guaica-suite-lecheria",
+      "portal_principal": "bienesonline",
+      "total_publicaciones_encontradas": 3,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/124090-en-alquiler-apartamento-en-conjunto-residencial-guiaca-suite-lecheria",
+          "portal": "bienesonline",
+          "titulo": "EN ALQUILER APARTAMENTO EN CONJUNTO RESIDENCIAL GUIACA SUITE LECHERIA"
+        },
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/56734-en-alquiler-apartamento-en-guaica-suite-lecheria",
+          "portal": "bienesonline",
+          "titulo": "En alquiler Apartamento en Guaica Suite, Lecheria"
+        },
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/62309-en-alquiler-apartamento-en-el-conjunto-residencial-guaica-suite-lecheria",
+          "portal": "bienesonline",
+          "titulo": "en alquiler apartamento en el conjunto residencial guaica suite lecheria"
         }
       ]
     },
@@ -10937,6 +10951,5 @@
         }
       ]
     }
-  ],
-  "revisado_por_ia_en": "2026-09-26T15:52:24.582Z"
+  ]
 }
