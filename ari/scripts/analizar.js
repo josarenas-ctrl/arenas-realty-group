@@ -81,13 +81,18 @@ function extraerEstado(ubicacion) {
 }
 
 function limpiarZona(zona) {
+  if (!zona) return null;
+
   // El scraper de Bienes Online a veces mete el título completo en el campo
   // de ubicación (ej. "Acogedor Apartamento en Venta San Antonio de Los
   // ALtos, Miranda" en vez de "San Antonio de Los Altos, Miranda"). Aquí se
   // recupera el área geográfica real para que el filtro de "áreas" muestre
   // solo zonas (Altamira, Los Palos Grandes, ...) y no texto de anuncio.
-  if (!zona) return zona;
   let r = zona.trim();
+
+  // 1) Si empieza con palabra de título genérica, es un título mal guardado,
+  //    no una zona real ("Acogedor Apartamento en Venta San Antonio...").
+  if (/^(acogedor|bello|bella|hermos[oa]|ampli[oa]|cómod[oa]|excelente|espectacular|extraordinari[oa]|lind[oa]|bonit[oa]|espl[eé]ndid[oa]|venta|alquiler)/i.test(r)) return null;
 
   // 1) Título filtrado: si aparece "en venta/alquiler/arriendo", el área
   //    real es lo que viene DESPUÉS de esa frase.
