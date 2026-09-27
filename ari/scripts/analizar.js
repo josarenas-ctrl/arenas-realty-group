@@ -432,8 +432,8 @@ async function main() {
                 else if (diferencia >= UMBRAL_SOBREVALORADA) semaforo = "rojo";
                 else semaforo = "amarillo";
                 return {
-                  ...resto, zona, condicion, contacto,
-                  precio_m2: Math.round(precioM2Estimado),
+                                  ...resto, zona, condicion, contacto, _estado,
+                                  precio_m2: Math.round(precioM2Estimado),
                   promedio_m2_tipo_zona: Math.round(promedioGrupo),
                   diferencia_vs_promedio_pct: Math.round(diferencia * 100),
                   semaforo,
@@ -441,7 +441,7 @@ async function main() {
                   m2_estimado_base: Math.round(m2Promedio),
                 };
               }
-              return { ...resto, zona, condicion, contacto, precio_m2: null, promedio_m2_tipo_zona: null, semaforo: "sin_datos_suficientes" };
+              return { ...resto, _estado, zona, condicion, contacto, precio_m2: null, promedio_m2_tipo_zona: null, semaforo: "sin_datos_suficientes" };
             }
 
       // Ajustar precio/m² según condición antes de comparar contra el promedio.
@@ -461,12 +461,20 @@ async function main() {
     }
 
     return {
+<<<<<<< Updated upstream
                   ...resto,
                   zona,
                   condicion,
                   contacto,
                   _estado,
                   precio_m2: Math.round(_precio_m2),
+=======
+                  ...resto, _estado,
+                  zona,
+              condicion,
+              contacto,
+              precio_m2: Math.round(_precio_m2),
+>>>>>>> Stashed changes
           promedio_m2_tipo_zona: Math.round(promedioGrupo),
           diferencia_vs_promedio_pct: Math.round(diferencia * 100),
           semaforo,
