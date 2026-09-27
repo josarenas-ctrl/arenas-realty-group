@@ -137,11 +137,6 @@ function extraerEstado(ubicacion) {
       ? partesUbicacion.slice(0, -1).join(",").trim().toLowerCase()
       : partesUbicacion[0].trim().toLowerCase());
 
-    // Consultar Nominatim (cacheado) para la ciudad principal de la zona.
-        const ciudadPrincipal = zonaRaw.split(/[,—–-]/)[0].trim();
-        const estadoCorregido = estadoDesdeCache(ciudadPrincipal);
-        if (estadoCorregido) return estadoCorregido;
-
     // Caso especial: algunos anuncios de InmueblesConLupa solo traen el estado
     // sin ciudad ("en Distrito Capital") — sin coma. Si la ubicación completa
     // coincide con un estado permitido, es ese estado.
@@ -152,9 +147,15 @@ function extraerEstado(ubicacion) {
     if (!ubicacion.includes(",")) return null;
     const estadoRaw = partesUbicacion[partesUbicacion.length - 1].trim();
 
-    // Verificación final: si el estado extraído no es uno de los permitidos,
-    // intentar detectar por ciudad conocida en la zona.
+    // Verificación final: si el estado extraído es uno de los permitidos,
+    // usarlo directamente. La ubicacion del anuncio es más fiable que
+    // Nominatim (que busca por nombre de zona sin coordenadas).
     if (ESTADOS_PERMITIDOS.includes(estadoRaw)) return estadoRaw;
+
+    // Solo si la ubicacion no da un estado válido, consultar Nominatim.
+    const ciudadPrincipal = zonaRaw.split(/[,—–-]/)[0].trim();
+    const estadoCorregido = estadoDesdeCache(ciudadPrincipal);
+    if (estadoCorregido) return estadoCorregido;
 
         const cp = zonaRaw.split(/[,—–-]/)[0].trim();
         const ec = estadoDesdeCache(cp);
