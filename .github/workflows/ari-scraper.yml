@@ -1,0 +1,76 @@
+name: ARI - Scraper de propiedades
+
+on:
+  schedule:
+    # Corre cada 6 horas.
+    - cron: "0 */6 * * *"
+  workflow_dispatch: {}
+  push:
+    paths:
+      - "ari/**"
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Instalar dependencias de ARI
+        working-directory: ari
+        run: npm install
+
+      - name: Correr scraper de Bienes Online (Miranda, DC, La Guaira)
+        working-directory: ari
+        run: npm run scrape:bienesonline
+
+      - name: Correr scraper de InmueblesConLupa (agrega RE/MAX, Century21, Rent-A-House)
+        working-directory: ari
+        run: npm run scrape:inmueblesconlupa
+
+      - name: Correr scraper de Mercado Libre (puede quedar vacío por bloqueo)
+        working-directory: ari
+        run: npm run scrape:mercadolibre
+        continue-on-error: true
+
+      - name: Agrupar anuncios duplicados en fichas maestras
+        working-directory: ari
+        run: npm run dedupe
+
+      - name: Revisar duplicados dudosos con IA
+        working-directory: ari
+        run: npm run ia-dedupe
+        env:
+                  GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+                  GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        continue-on-error: true
+
+      - name: Analizar valor y asignar semáforo
+        working-directory: ari
+        run: npm run analizar
+
+      - name: Commitear datos nuevos (si hay cambios)
+        run: |
+          git config user.name "ari-bot"
+          git config user.email "ari-bot@users.noreply.github.com"
+          git add ari/data
+          if git diff --staged --quiet; then
+            echo "Sin cambios nuevos — nada que commitear"
+          else
+            git commit -m "ARI: actualización de datos scrapeados"
+            git pull --rebase --autostash origin cloudflare-test || {
+              echo "Rebase falló (conflicto en datos) — force push con nuestros datos"
+              git rebase --abort 2>/dev/null
+              git checkout --theirs ari/data/*.json 2>/dev/null
+              git add ari/data
+              git commit --amend --no-edit 2>/dev/null
+              GIT_ASKPASS="" GIT_TERMINAL_PROMPT=0 git push --force origin HEAD:cloudflare-test
+              exit 0
+            }
+            git push
+          fi
