@@ -1,5 +1,5 @@
 {
-  "generado_en": "2026-09-27T04:52:17.520Z",
+  "generado_en": "2026-09-27T05:45:18.567Z",
   "basado_en": "fichas-maestras-2026-09-27.json",
   "promedios_m2_por_tipo_y_estado": {
     "Apartamento / Distrito Capital||Alquiler": 14,
@@ -48,7 +48,6 @@
           "titulo": "Apartamento en Caracas El Marqués 2 hab+serv 2 bañ EN ALQUILER"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -78,7 +77,6 @@
           "titulo": "oficina alquiler prados del este tl 04242129768 rolando rodriguez"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -110,7 +108,6 @@
           "titulo": "Apartamento en alquiler en Sucre, Miranda — $550/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -155,7 +152,6 @@
           "titulo": "Apartamento en Aquiler  Mirador de los Campitos I G. 04143054662"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -185,7 +181,6 @@
           "titulo": "Apartamento en alquiler en Chacao, Miranda — $600/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -217,7 +212,6 @@
           "titulo": "apartamento alquiler los ruices tlf 04242129768 rolando Rodríguez"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -247,7 +241,6 @@
           "titulo": "Apartamento En Alquiler Las Minas, San Antonio De Los Altos 26-20755"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -282,7 +275,6 @@
           "titulo": "Apartamento en Alquiler en Guarenas Buenaventura Suites. Sandra White 0414-3140082 Cod. 26-15521"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -312,7 +304,6 @@
           "titulo": "Apartamento en alquiler en Chacao, Miranda — $650/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -344,7 +335,6 @@
           "titulo": "Apartamento en Alquiler 26-2774   Zoraida Sánchez 04143653415"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -389,7 +379,6 @@
           "titulo": "Local Comercial en alquiler en Distrito Capital — $700/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -419,7 +408,6 @@
           "titulo": "Apartamento alquiler El Marques. Codigo: 26-14194 Carla Mora 26-14194"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -449,7 +437,6 @@
           "titulo": "Apartamento en Caracas El Marques (amoblado) EN ALQUILER"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -479,7 +466,6 @@
           "titulo": "Apartamento en alquiler en Boleita Norte. Piso bajo"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -509,7 +495,6 @@
           "titulo": "Apartamento en Alquiler 3 Habitaciones con 134 mts2. Las Palmas. Caracas.  RAH Juan Villarroel."
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -539,7 +524,6 @@
           "titulo": "Apartamento en Alquiler Clns. de los Chaguaramos G. 04143054662"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -569,7 +553,6 @@
           "titulo": "Bello Apartamento En Alquiler En Manzanares 26-4447 Zoraida Sánchez 04143653415"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -599,7 +582,6 @@
           "titulo": "Apartamento en alquiler en Las Minas, Miranda — $700/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": "Las Minas",
       "condicion": "estandar",
       "contacto": {
@@ -631,7 +613,6 @@
           "titulo": "Apartamento en Alquiler en Guaicay. Sandra White 0414-3140082  Cod. 26-14544"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -663,7 +644,6 @@
           "titulo": "Cómodo Apartamento En Alquiler Las Minas San Antonio De Los Altos Amoblado 27-5230"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -693,7 +673,6 @@
           "titulo": "Apartamento en Alquiler El Marques G. 04143054662"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -723,7 +702,6 @@
           "titulo": "Apartamento en Alquiler Las Acacias G. 04143054662"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -753,7 +731,6 @@
           "titulo": "Apartamento en Alquiler El Marques G. 04143054662 / 04143247646"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -783,7 +760,6 @@
           "titulo": "Apartamento en alquiler en Macaracuay, Miranda — $750/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": "Macaracuay",
       "condicion": "estandar",
       "contacto": {
@@ -813,7 +789,6 @@
           "titulo": "Oficina en alquiler en Chacao, Miranda — $750/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -848,7 +823,6 @@
           "titulo": "Apartamento en Alquiler en Manzanares. Sandra White 0414-3140082 Cod. 26-15472"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -878,7 +852,6 @@
           "titulo": "Apartamento en alquiler en Chacao, Miranda — $800/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -908,7 +881,6 @@
           "titulo": "Apartamento en alquiler en Baruta, Miranda — $800/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -940,7 +912,6 @@
           "titulo": "Oficina en alquiler en Sucre, Miranda — $800/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -970,7 +941,6 @@
           "titulo": "oficina en alquiler los dos caminos tlf 04242129768 rolando rodríguez"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -1002,7 +972,6 @@
           "titulo": "Oficina en alquiler en Baruta, Miranda — $820/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -1032,7 +1001,6 @@
           "titulo": "Impecable apartamento en Alquiler 26-19088 Zoraida Sánchez 04143653415"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "impecable",
       "contacto": {
@@ -1062,7 +1030,6 @@
           "titulo": "Apartamento en Alquiler en el Manzanares.  Sandra White +584143140082 Cod. 26-13511"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -1092,7 +1059,6 @@
           "titulo": "Apartamento en Alquiler Boleita Norte G. 04143054662"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -1122,7 +1088,6 @@
           "titulo": "Apartamento en Alquiler El Cafetal G. 04143054662"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -1152,7 +1117,6 @@
           "titulo": "Apartamento en Alquiler Urb. Miranda G. 04143054662 / 04143247646"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -1182,7 +1146,6 @@
           "titulo": "Apartamento en Alquiler Campo Alegre G. 04143054662 / 04143247646"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -1222,7 +1185,6 @@
           "titulo": "apartamento alquiler la alameda tlf 04242129768 rolando Rodríguez"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -1252,7 +1214,6 @@
           "titulo": "Apartamento en alquiler en Sucre, Miranda — $1.000/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -1284,7 +1245,6 @@
           "titulo": "Local Comercial en alquiler en Baruta, Miranda — $1.000/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -1314,7 +1274,6 @@
           "titulo": "Espacioso Apartamento En Alquiler Urbanización Miranda, Balcón Con Linda Vista Panorámica 27-4819"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -1344,7 +1303,6 @@
           "titulo": "Apartamento en alquiler en Baruta, Miranda — $1.050/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -1374,7 +1332,6 @@
           "titulo": "Apartamento en alquiler en Chacao, Miranda — $1.100/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -1406,7 +1363,6 @@
           "titulo": "apartamento en alquiler santa Sofia tlf 04242129768"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -1436,7 +1392,6 @@
           "titulo": "Apartamento alquiler Guaicay. Cod: 26-13842 Carla Mora 0412-5885892"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -1466,7 +1421,6 @@
           "titulo": "Local Comercial en alquiler en Chacao, Miranda — $1.400/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -1501,7 +1455,6 @@
           "titulo": "apartamento en alquiler los chorros tlf 04242129768 rolando rodriguez  codg 26-21496"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -1531,7 +1484,6 @@
           "titulo": "Oficina en alquiler en Sucre, Miranda — $1.500/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -1561,7 +1513,6 @@
           "titulo": "Apartamento en alquiler en Baruta, Miranda — $1.500/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -1591,7 +1542,6 @@
           "titulo": "Apartamento Con Terraza En Alquiler En Los Campitos Zoraida Sánchez 04143653415  26-5773"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -1621,7 +1571,6 @@
           "titulo": "Apartamento en Alquiler Los Dos Caminos G. 04143054662"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -1651,7 +1600,6 @@
           "titulo": "Local Comercial en alquiler en Sucre, Miranda — $2.900/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -1696,7 +1644,6 @@
           "titulo": "Local Comercial en alquiler en Sucre, Miranda — $3.500/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -1726,7 +1673,6 @@
           "titulo": "Apartamento en alquiler en Sucre, Miranda — $3.950/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -1756,7 +1702,6 @@
           "titulo": "Local Comercial en venta en El Trigo, Miranda — $15.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "El Trigo",
       "condicion": "estandar",
       "contacto": {
@@ -1788,7 +1733,6 @@
           "titulo": "CASA EN VENTA EN URB. CIUDAD MIRANDA CHARALLAVE API 6384"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -1823,7 +1767,6 @@
           "titulo": "APARTAMENTO VENTA GUATIRE MIRANDA API 6458"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -1855,7 +1798,6 @@
           "titulo": "APARTAMENTO EN VENTA EN HIGUEROTE EDO MIRANDA API 5113"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -1892,7 +1834,6 @@
           "titulo": "APARTAMENTO EN VENTA EN PASO REAL GUARENAS MIRANDA API 6522 - HYPATÍA GALLARDO"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -1927,7 +1868,6 @@
           "titulo": "TOWNHHOUSE VENTA TANAGUARENA LA GUAIRA API 5471"
         }
       ],
-      "_estado": "La Guaira",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -1957,7 +1897,6 @@
           "titulo": "27-1240 Apartamento en venta Las Islas Guarenas"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -1987,7 +1926,6 @@
           "titulo": "Apartamento en venta en Urdaneta, Miranda — $28.500"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -2029,7 +1967,6 @@
           "titulo": "Excelente Terreno Residencial Club de Campo, Ideal para su Proyecto Hogar"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -2061,7 +1998,6 @@
           "titulo": "Apartamento en venta en Mata Linda, Miranda — $30.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "Mata Linda",
       "condicion": "estandar",
       "contacto": {
@@ -2093,7 +2029,6 @@
           "titulo": "Apartamento en venta en Plaza, Miranda — $32.000"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -2123,7 +2058,6 @@
           "titulo": "APARTAMENTO EN VENTA EN NAIGUATA LA GUAIRA API 74014"
         }
       ],
-      "_estado": "La Guaira",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -2155,7 +2089,6 @@
           "titulo": "Local Comercial en venta en La Castellana, Miranda — $35.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "La Castellana",
       "condicion": "estandar",
       "contacto": {
@@ -2187,7 +2120,6 @@
           "titulo": "CASA VENTA URB. ALTOS DE PARQUE CAIZA TERMINAL DE ORIENTE API 6390"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -2217,7 +2149,6 @@
           "titulo": "apartamento en venta nueva casarapa conj alambique tl f 04242129768 rolando rodriguez codg 26-17213"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -2252,7 +2183,6 @@
           "titulo": "Apartamento en venta en Caricuao, Distrito Capital — $40.000"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": "Caricuao",
       "condicion": "estandar",
       "contacto": {
@@ -2284,7 +2214,6 @@
           "titulo": "Apartamento en venta en Plaza, Miranda — $40.000"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -2314,7 +2243,6 @@
           "titulo": "Casa en venta en Zamora, Miranda — $40.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -2344,7 +2272,6 @@
           "titulo": "Apartamento en venta en Caricuao, Distrito Capital — $42.000"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": "Caricuao",
       "condicion": "estandar",
       "contacto": {
@@ -2376,7 +2303,6 @@
           "titulo": "Bellísimo y Cómodo Apartamento Dúplex en Venta Loma Mágica, Carrizal, Altos Mirandinos"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -2406,7 +2332,6 @@
           "titulo": "Oportunidad Terreno en Venta Altos de la Peña San Antonio de los Altos, Miranda"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -2438,7 +2363,6 @@
           "titulo": "APARTAMENTO VENTA LA VAQUERA GUARENAS VENEZUELA API 89314"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -2473,7 +2397,6 @@
           "titulo": "Bello y Amplio apartamento Dúplex En Venta Rosalito San Antonio de Los Altos, Miranda"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -2503,7 +2426,6 @@
           "titulo": "Apartamento en venta en El Tambor, Miranda — $50.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "El Tambor",
       "condicion": "estandar",
       "contacto": {
@@ -2535,7 +2457,6 @@
           "titulo": "Excelente y Amplio Apartamento en Venta Rosalito, San Antonio de los Altos"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -2565,7 +2486,6 @@
           "titulo": "Vendo remate apartamento remodelado san Antonio de los altos helechos"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "impecable",
       "contacto": {
@@ -2597,7 +2517,6 @@
           "titulo": "Amplio Apartamento en Venta Las Minas, San Antonio de Los Altos. Urb. Privada 24-14837"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -2627,7 +2546,6 @@
           "titulo": "Hermosa Casa de 3 niveles En Venta, Potrerito Arriba, San Antonio de Los Altos"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -2667,7 +2585,6 @@
           "titulo": "Local Comercial en venta en Distrito Capital — $55.000"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": "Pan de Azucar",
       "condicion": "estandar",
       "contacto": {
@@ -2697,7 +2614,6 @@
           "titulo": "Apartamento en venta en Sucre, Miranda — $55.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -2727,7 +2643,6 @@
           "titulo": "casa en venta en nueva casarapa tlf 04242129768 rolando rodriguez"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -2757,7 +2672,6 @@
           "titulo": "Bellisimo Apartamento en venta El Picacho San Antonio de Los Altos 24-25652"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -2787,7 +2701,6 @@
           "titulo": "Bello y Cómodo Apartamento en Venta El Picacho, San Antonio de Los Altos Caracas 23-29986"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -2817,7 +2730,6 @@
           "titulo": "Apartamento en venta en El Hatillo, Miranda — $57.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -2849,7 +2761,6 @@
           "titulo": "Hermosa Casa en Venta en San Jose de los Altos Mirandinos"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San José de los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -2879,7 +2790,6 @@
           "titulo": "Casa en venta en Centro, Distrito Capital — $58.000"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": "Centro",
       "condicion": "estandar",
       "contacto": {
@@ -2911,7 +2821,6 @@
           "titulo": "Bella y Acogedora Casa en venta La Pe?a San Antonio de Los Altos, 24-5551"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -2941,7 +2850,6 @@
           "titulo": "Lindo y Amplio Apartamento en Venta San Antonio de Los Altos 23-16616"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -2971,7 +2879,6 @@
           "titulo": "Apartamento en venta en Sucre, Miranda — $59.900"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -3003,7 +2910,6 @@
           "titulo": "Cómoda Casa Dúplex con Terraza en Venta Club De Campo, San Antonio de los Altos 25-9337"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -3033,7 +2939,6 @@
           "titulo": "APARTAMENTO VENTA TANAGUARENA VISTA AL MAR LA GUAIRA API 6246"
         }
       ],
-      "_estado": "La Guaira",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -3063,7 +2968,6 @@
           "titulo": "Apto en venta urb Alto Grande cod 26-21144  María Cárdenas Cel 0412-5812012"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -3093,7 +2997,6 @@
           "titulo": "Bello y Cómodo Apartamento PH en venta San Antonio de Los Altos 24-4454"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -3123,7 +3026,6 @@
           "titulo": "Hermoso Apartamento En La Rosaleda San Antonio De Los Altos. Clima De Montaña 27-3498"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -3153,7 +3055,6 @@
           "titulo": "Casa en venta en Los Teques, Distrito Capital — $63.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "Los Teques",
       "condicion": "estandar",
       "contacto": {
@@ -3185,7 +3086,6 @@
           "titulo": "Bello y Cómodo Apartamento en Venta Parque El Retiro, San Antonio de Los Altos"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -3215,7 +3115,6 @@
           "titulo": "Amplio y C?modo Apartamento en Venta Las Minas, San Antonio de Los Altos 24-23699"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -3245,7 +3144,6 @@
           "titulo": "Inmueble en venta en El Hatillo, Miranda — $65.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -3277,7 +3175,6 @@
           "titulo": "Acogedor Apartamento en Venta San Antonio de Los ALtos, Miranda"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -3307,7 +3204,6 @@
           "titulo": "Bello y Amplio Apartamento en Venta El Picacho San Antonio de Los Altos, 24-23702"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -3337,7 +3233,6 @@
           "titulo": "Acogedor Apartamento en Venta San Antonio de Los ALtos, Miranda"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -3367,7 +3262,6 @@
           "titulo": "Apartamento en venta en La Rosaleda, Miranda — $66.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "La Rosaleda",
       "condicion": "estandar",
       "contacto": {
@@ -3399,7 +3293,6 @@
           "titulo": "Apartamento en venta en El Encantado, Miranda — $69.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "El Encantado",
       "condicion": "estandar",
       "contacto": {
@@ -3431,7 +3324,6 @@
           "titulo": "Casa en venta en Zamora, Miranda — $70.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -3461,7 +3353,6 @@
           "titulo": "Casa en venta en Zamora, Miranda — $70.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -3491,7 +3382,6 @@
           "titulo": "Bella y Amplia casa en Venta San Antonio de los Altos 23-21228"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -3521,7 +3411,6 @@
           "titulo": "Apartamento en venta en Bello Monte, Miranda — $75.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -3553,7 +3442,6 @@
           "titulo": "Bello y Agradable Apartamento en Venta Llano Alto, Altos Mirandino en Urb. Privada."
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -3583,7 +3471,6 @@
           "titulo": "Excelente Apartamento En Venta En Urbanización Miranda 26-9010 Zoraida Sánchez 04143653415"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -3613,7 +3500,6 @@
           "titulo": "Bellísima Casa en Venta, San Antonio de Los Altos. Amplio Jardín Calle Cerrada"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -3643,7 +3529,6 @@
           "titulo": "Apartamento en Venta San Antonio de los Alto  # 24-24155 G. 04143054662 / 04143247646"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -3673,7 +3558,6 @@
           "titulo": "Bello y Amplio Apartamento en venta Las Minas, San Antonio de los Altos 25-9720"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -3703,7 +3587,6 @@
           "titulo": "Bello Apartamento Remodelado en Venta Las Minas San Antonio de los Altos 25-12928"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "impecable",
       "contacto": {
@@ -3733,7 +3616,6 @@
           "titulo": "Amplia Casa Dúplex bien Mantenida en Venta, La Morita San Antonio de Los Altos 25-273"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -3763,7 +3645,6 @@
           "titulo": "En venta terreno en El Amarillo San Antonio de los Altos 27-910"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -3795,7 +3676,6 @@
           "titulo": "Espacioso Apartamento En Venta La Rosaleda San Antonio De Los Altos 27-2746"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -3830,7 +3710,6 @@
           "titulo": "Bello y Acogedor Apartamento en Venta Parque El Retiro, San Antonio de Los Altos"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -3860,7 +3739,6 @@
           "titulo": "Apartamento en venta en Baruta, Miranda — $79.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -3892,7 +3770,6 @@
           "titulo": "Apartamento en Venta San Antonio G. 04143054662 / 04143247646"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -3927,7 +3804,6 @@
           "titulo": "Amplio Apartamento en Venta San Antonio de los Altos, Con Amplias Áreas Sociales y Deportista"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -3957,7 +3833,6 @@
           "titulo": "Apartamento en Venta Miravila G. 04143054662"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -3987,7 +3862,6 @@
           "titulo": "Bellisima Casa Dúplex Estilo Chalet Holandés en Venta San Antonio de Los Altos"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -4017,7 +3891,6 @@
           "titulo": "Terreno en venta en El Hatillo, Miranda — $87.500"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -4049,7 +3922,6 @@
           "titulo": "Casa en venta en El Hatillo, Miranda — $88.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -4079,7 +3951,6 @@
           "titulo": "Bello y Cómodo apartamento en El Picacho, San Antonio de Los Altos"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -4109,7 +3980,6 @@
           "titulo": "Inmueble en venta en Libertador, Distrito Capital — $89.000"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -4141,7 +4011,6 @@
           "titulo": "Vendo apartamento remodelado San Antonio de los altos 3 hab piso alto"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "impecable",
       "contacto": {
@@ -4178,7 +4047,6 @@
           "titulo": "Local Comercial en venta en Distrito Capital — $90.000"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -4208,7 +4076,6 @@
           "titulo": "Oficina en venta en Baruta, Miranda — $90.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -4238,7 +4105,6 @@
           "titulo": "apartamento venta manzanares  rolando rodriguez tlf 04242129768"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -4268,7 +4134,6 @@
           "titulo": "Apartamento en venta en Sucre, Miranda — $95.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -4298,7 +4163,6 @@
           "titulo": "Hermosa Casa Dúplex en Venta Altos de la Peña, San Antonio de Los Altos urbanismo privado"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -4333,7 +4197,6 @@
           "titulo": "Casa en venta en Libertador, Distrito Capital — $100.000"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -4365,7 +4228,6 @@
           "titulo": "Local Comercial en venta en Sucre, Miranda — $100.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -4397,7 +4259,6 @@
           "titulo": "Apartamento en venta en Chacao, Miranda — $112.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -4429,7 +4290,6 @@
           "titulo": "Casa en venta en Bello Monte, Miranda — $120.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -4461,7 +4321,6 @@
           "titulo": "Apartamento en venta en Chacao, Miranda — $120.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -4491,7 +4350,6 @@
           "titulo": "CASA VACACIONAL VENTA LA SABANA EDO. LA GUAIRA API 6124"
         }
       ],
-      "_estado": "La Guaira",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -4521,7 +4379,6 @@
           "titulo": "Hermosa casa Colonia de una Sola Planta en Venta Altos de la Peña, San Antonio de los Altos 24-9645"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -4551,7 +4408,6 @@
           "titulo": "Bello y Cómodo Apartamento En Venta San Antonio de Los Altos, Conjunto Residencial con Estricta Vigi..."
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -4581,7 +4437,6 @@
           "titulo": "Casa en venta en El Junquito, La Guaira — $126.000"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": "El Junquito",
       "condicion": "estandar",
       "contacto": {
@@ -4613,7 +4468,6 @@
           "titulo": "Local Comercial en venta en Zamora, Miranda — $130.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -4643,7 +4497,6 @@
           "titulo": "Inmueble en venta en Altamira, Miranda — $130.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "Altamira",
       "condicion": "estandar",
       "contacto": {
@@ -4675,7 +4528,6 @@
           "titulo": "Local Comercial en venta en Baruta, Miranda — $130.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -4705,7 +4557,6 @@
           "titulo": "Inmueble en venta en El Rosal, Miranda — $130.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "El Rosal",
       "condicion": "estandar",
       "contacto": {
@@ -4742,7 +4593,6 @@
           "titulo": "Linda casa en venta La Suiza San Antonio de los Altos 23-3013"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -4772,7 +4622,6 @@
           "titulo": "Apartamento en venta en El Hatillo, Miranda — $135.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -4804,7 +4653,6 @@
           "titulo": "Maravillosa Casa En Venta La Suiza, San Antonio De Los Altos. Excelente Clima De Montaña, Hermosa Vi..."
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -4836,7 +4684,6 @@
           "titulo": "Apartamento en venta en Bello Monte, Miranda — $139.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -4868,7 +4715,6 @@
           "titulo": "Apartamento en venta en La Unión, Miranda — $140.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "La Unión",
       "condicion": "estandar",
       "contacto": {
@@ -4900,7 +4746,6 @@
           "titulo": "Apartamento en venta en La Unión, Miranda — $140.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "La Unión",
       "condicion": "estandar",
       "contacto": {
@@ -4932,7 +4777,6 @@
           "titulo": "Excelente y Amplia Oficina en Venta, Oficentro El Picacho, San Antonio De Los Altos"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -4964,7 +4808,6 @@
           "titulo": "Oficina en venta en Sucre, Miranda — $147.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -4994,7 +4837,6 @@
           "titulo": "Apartamento en venta en Chuao, Miranda — $150.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "Chuao",
       "condicion": "estandar",
       "contacto": {
@@ -5026,7 +4868,6 @@
           "titulo": "Oficina en venta en Sucre, Miranda — $154.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -5061,7 +4902,6 @@
           "titulo": "Linda y Acogedora Casa en Venta Club de Campo, San Antonio de Los Altos"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -5096,7 +4936,6 @@
           "titulo": "Amplio y Acogedor Apartamento en Venta Las Salias. San Antonio de Los Altos"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -5126,7 +4965,6 @@
           "titulo": "Bella y Amplia Casa de una Sola Planta En Venta Colinas de San Antonio, San Antonio de Los Altos"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -5156,7 +4994,6 @@
           "titulo": "Terreno en venta en Zamora, Miranda — $162.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -5186,7 +5023,6 @@
           "titulo": "Apartamento en venta en Manzanares, Miranda — $165.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "Manzanares",
       "condicion": "estandar",
       "contacto": {
@@ -5218,7 +5054,6 @@
           "titulo": "Apartamento en venta en Sucre, Miranda — $165.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -5250,7 +5085,6 @@
           "titulo": "Espectacular apartamento en Miranda, Caracas Venezuela. FLEX 26-21457, Mirian Navarro Telefono 04147..."
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -5282,7 +5116,6 @@
           "titulo": "Amplia Casa en Venta Urb. Picott, San Antonio de Los Altos, 25-12461"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -5312,7 +5145,6 @@
           "titulo": "Local Comercial en venta en Las Mercedes, Miranda — $170.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "Las Mercedes",
       "condicion": "estandar",
       "contacto": {
@@ -5344,7 +5176,6 @@
           "titulo": "Hermosa Casa en Venta Colinas de San  Antonio, San Antonio de Los Altos 24-28238"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -5374,7 +5205,6 @@
           "titulo": "Apartamento en venta en Prado Humboldt, Miranda — $175.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "Prado Humboldt",
       "condicion": "estandar",
       "contacto": {
@@ -5406,7 +5236,6 @@
           "titulo": "Hermosa y Amplia Casa En Venta El Amarillo San Antonio de Los Altos. Distribuido en 5 Apartamentos"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -5436,7 +5265,6 @@
           "titulo": "Oficina en venta en Sucre, Miranda — $185.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -5466,7 +5294,6 @@
           "titulo": "Apartamento en Venta Urbanizacion Miranda. Sandra White 0414-3140082  Cod. 26-10886"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -5496,7 +5323,6 @@
           "titulo": "Local Comercial en venta en Las Mercedes, Miranda — $186.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "Las Mercedes",
       "condicion": "estandar",
       "contacto": {
@@ -5528,7 +5354,6 @@
           "titulo": "Local Comercial en venta en Las Mercedes, Miranda — $189.500"
         }
       ],
-      "_estado": "Miranda",
       "zona": "Las Mercedes",
       "condicion": "estandar",
       "contacto": {
@@ -5560,7 +5385,6 @@
           "titulo": "Apartamento en venta en Capital District, Miranda — $190.000"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -5590,7 +5414,6 @@
           "titulo": "Hermosa casa en venta El Amarillo San Antonio de los Altos 26-5995"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -5620,7 +5443,6 @@
           "titulo": "Casa en Venta en Urb Miranda  23-7688 25-12699 Zoraida Sánchez 04143653415"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -5650,7 +5472,6 @@
           "titulo": "Hermosa casa en venta El Amarillo San Antonio de los Altos 26-5995"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -5680,7 +5501,6 @@
           "titulo": "Casa en venta en Los Nuevos Teques, Miranda — $197.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "Los Nuevos Teques",
       "condicion": "estandar",
       "contacto": {
@@ -5712,7 +5532,6 @@
           "titulo": "Casa en venta en Charallavito, Miranda — $198.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "Charallavito",
       "condicion": "estandar",
       "contacto": {
@@ -5744,7 +5563,6 @@
           "titulo": "Casa en venta en El Placer, Miranda — $200.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "El Placer",
       "condicion": "estandar",
       "contacto": {
@@ -5779,7 +5597,6 @@
           "titulo": "Espectacular Casa En Venta Club De Campo, San Antonio De Los Altos. Agradable Clima De Montaña 26-61..."
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -5809,7 +5626,6 @@
           "titulo": "Inmueble en venta en Alto Prado, Distrito Capital — $220.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "Alto Prado",
       "condicion": "estandar",
       "contacto": {
@@ -5841,7 +5657,6 @@
           "titulo": "Apartamento en Venta Miranda G. 04143054662"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -5871,7 +5686,6 @@
           "titulo": "Bella y Confortable Casa en Venta La Pe?a, San Antonio de Los Altos, Calle Privada 24-2160"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -5901,7 +5715,6 @@
           "titulo": "Bella y Cómoda Casa en Venta La Peña, San Antonio de Los Altos"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -5931,7 +5744,6 @@
           "titulo": "Amplio Apartamento con Terraza, EN Venta Las Salias, San Antonio de Los Altos 24-17631"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -5961,7 +5773,6 @@
           "titulo": "Preciosa e impecable casa en venta San Antonio de los Altos 26-21325"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "impecable",
       "contacto": {
@@ -5996,7 +5807,6 @@
           "titulo": "Bella y Amplia Casa en Venta Colina de San Antonio, San Antonio de Los Altos"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -6036,7 +5846,6 @@
           "titulo": "Magnifica casa en venta Club de Campo, San Antonio de los Altos"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -6066,7 +5875,6 @@
           "titulo": "Apartamento en venta en El Hatillo, Miranda — $250.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -6096,7 +5904,6 @@
           "titulo": "Casa en venta en Alto Prado, Miranda — $250.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "Alto Prado",
       "condicion": "estandar",
       "contacto": {
@@ -6128,7 +5935,6 @@
           "titulo": "Local Comercial en venta en Los Salias, Miranda — $260.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "Los Salias",
       "condicion": "estandar",
       "contacto": {
@@ -6160,7 +5966,6 @@
           "titulo": "Estupendo Apartamento Ph En Urbanización Miranda, Amplia Terraza Con Hermosa Vista Panorámica 27-302..."
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -6190,7 +5995,6 @@
           "titulo": "Apartamento en venta en El Hatillo, Miranda — $275.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -6220,7 +6024,6 @@
           "titulo": "Venta de Casa en Miranda MLS #25-7483 Mirian Navarro"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -6250,7 +6053,6 @@
           "titulo": "Local Comercial en venta en Sucre, Miranda — $280.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -6285,7 +6087,6 @@
           "titulo": "Local Comercial en venta en Distrito Capital — $320.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -6317,7 +6118,6 @@
           "titulo": "Local Comercial en venta en Las Mercedes, Miranda — $370.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "Las Mercedes",
       "condicion": "estandar",
       "contacto": {
@@ -6349,7 +6149,6 @@
           "titulo": "Hermosa casa en Club de Campo San Antonio de los Altos  26-20578"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -6379,7 +6178,6 @@
           "titulo": "Inmueble en venta en Libertador, Distrito Capital — $400.000"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -6409,7 +6207,6 @@
           "titulo": "Local Comercial en venta en Las Mercedes, Miranda — $401.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "Las Mercedes",
       "condicion": "estandar",
       "contacto": {
@@ -6441,7 +6238,6 @@
           "titulo": "Oficina en venta en Libertador, Distrito Capital — $500.000"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -6471,7 +6267,6 @@
           "titulo": "Apartamento en venta en Chacao, Miranda — $1.500.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -6501,7 +6296,6 @@
           "titulo": "Apartamento en Alquiler El Rosal G. 04143054662"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -6531,7 +6325,6 @@
           "titulo": "Apartamento en Alquiler Chacao G. 04143054662"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -6566,7 +6359,6 @@
           "titulo": "Oficina en alquiler en Chacao, Miranda — $1.000/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -6596,7 +6388,6 @@
           "titulo": "Impecable Apartamento En Alquiler En Los Palos Grandes Amoblado 27-4589"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "impecable",
       "contacto": {
@@ -6626,7 +6417,6 @@
           "titulo": "Bonito y acogedor apartamento en alquiler Escampadero 26-17052"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -6656,7 +6446,6 @@
           "titulo": "Oficina en alquiler en Chacao, Miranda — $1.300/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -6696,7 +6485,6 @@
           "titulo": "apartamento en alquiler los naranjos de las mercedes tlf  04242129768 rolando rodriguez codg 26-2102..."
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -6736,7 +6524,6 @@
           "titulo": "oficina alquiler las mercedes rolando rodriguez tlf 04242129768"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -6766,7 +6553,6 @@
           "titulo": "Apartamento en alquiler en El Hatillo, Miranda — $1.600/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -6798,7 +6584,6 @@
           "titulo": "apartamento alquiler los naranjos de las mercedes tlf 04242129768 rolando Rodríguez"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -6828,7 +6613,6 @@
           "titulo": "apartamento en  alquiler en las mesetas de santa rosa de lima tlf 04242129768 rolando rodríguez"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -6858,7 +6642,6 @@
           "titulo": "Apartamento en alquiler en Santa Fe Sur.  MLS #27-1194 Fabiola Rodriguez"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -6888,7 +6671,6 @@
           "titulo": "Alquiler de Apartamento La Alameda MLS #26-21143 Mirian Navarro +58 414 924 0379"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -6918,7 +6700,6 @@
           "titulo": "oficina en alquiler en el ccct tlf 04242129768 rolando rodriguez"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -6960,7 +6741,6 @@
           "titulo": "apartamento alquiler la alameda tlf 04242129768 rolando Rodríguez"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -7000,7 +6780,6 @@
           "titulo": "casa en alquiler colinas de bello monte tlf  04242129768 rolando rodriguez codg 27-3642"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -7050,7 +6829,6 @@
           "titulo": "apartamento alquiler country club  tlf 04242129768 rolando Rodríguez"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -7080,7 +6858,6 @@
           "titulo": "casa en alquiler prados del este tlf  04242129768 rolando rodriguez codg 27-4772"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -7110,7 +6887,6 @@
           "titulo": "APARTAMENTO EN PUNTA BRISAS , URB 15 LETRAS MACUTO/ LA GUAIRA API 5795"
         }
       ],
-      "_estado": "La Guaira",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -7140,7 +6916,6 @@
           "titulo": "Local Comercial en venta en Maiquetía, La Guaira — $56.500"
         }
       ],
-      "_estado": "La Guaira",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -7170,7 +6945,6 @@
           "titulo": "Venta de Apartamento en Miravila MLS #26-1560 Mirian Navarro +58 414 924 0379"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -7205,7 +6979,6 @@
           "titulo": "APARTAMENTO EN VENTA EN NAIGUATA LA GUAIRA API 5068"
         }
       ],
-      "_estado": "La Guaira",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -7235,7 +7008,6 @@
           "titulo": "Apartamento en venta en Baruta, Miranda — $85.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -7265,7 +7037,6 @@
           "titulo": "Apartamento en venta en Sucre, Miranda — $88.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -7295,7 +7066,6 @@
           "titulo": "Apartamento en venta en Sucre, Miranda — $90.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -7325,7 +7095,6 @@
           "titulo": "Casa en venta en Centro, La Guaira — $90.000"
         }
       ],
-      "_estado": "La Guaira",
       "zona": "Centro",
       "condicion": "estandar",
       "contacto": {
@@ -7357,7 +7126,6 @@
           "titulo": "Apartamento en venta en Macaracuay, Miranda — $95.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "Macaracuay",
       "condicion": "estandar",
       "contacto": {
@@ -7402,7 +7170,6 @@
           "titulo": "Terreno en venta en Libertador, Distrito Capital — $110.000"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -7432,7 +7199,6 @@
           "titulo": "Apartamento en venta en Baruta, Miranda — $115.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -7462,7 +7228,6 @@
           "titulo": "Apartamento en venta en Baruta, Miranda — $120.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -7492,7 +7257,6 @@
           "titulo": "Apartamento en venta en Baruta, Miranda — $120.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -7522,7 +7286,6 @@
           "titulo": "Bonita casa en venta San Antonio de los Altos El Limón 26-10998"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -7557,7 +7320,6 @@
           "titulo": "Bella y Amplia Casa Dúplex En Venta El Amarillo, San Antonio de Los Altos"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -7587,7 +7349,6 @@
           "titulo": "Apartamento en venta en Sucre, Miranda — $130.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -7617,7 +7378,6 @@
           "titulo": "Apartamento en venta en Sucre, Miranda — $130.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -7647,7 +7407,6 @@
           "titulo": "Apartamento En Venta Urb. Miranda"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -7682,7 +7441,6 @@
           "titulo": "Espacioso Y Bello Apartamento En Venta San Antonio De Los Altos, Urbanización Las Salias 27-93"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -7722,7 +7480,6 @@
           "titulo": "Espacioso Apartamento En Venta Urbanización Miranda Caracas, Hermosa Vista Panorámica 27-3950"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -7752,7 +7509,6 @@
           "titulo": "Excelente y Amplia Oficina en Venta para su Proyecto comercial en San Antonio de los Altos"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -7784,7 +7540,6 @@
           "titulo": "Amplia Oficina en Venta Centro Empresaria Oficentro El Picacho, San Antonio de Los Altos 25-18989"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -7816,7 +7571,6 @@
           "titulo": "Apartamento en Venta Urb. Miranda G. 04143054662"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -7846,7 +7600,6 @@
           "titulo": "Apartamento en Venta Urb. Miranda G. 04143054662 / 04143247646"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -7876,7 +7629,6 @@
           "titulo": "Apartamento en Venta Urb. Miranda G. 04143054662 / 041432476456"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -7906,7 +7658,6 @@
           "titulo": "Apartamento en venta en Santa Fe Sur, Miranda — $180.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "Santa Fe Sur",
       "condicion": "estandar",
       "contacto": {
@@ -7938,7 +7689,6 @@
           "titulo": "Apartamento en venta en El Hatillo, Miranda — $218.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -7970,7 +7720,6 @@
           "titulo": "Penthouse en venta en Baruta, Miranda — $240.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -8000,7 +7749,6 @@
           "titulo": "Apartamento en venta en Baruta, Miranda — $245.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -8030,7 +7778,6 @@
           "titulo": "Apartamento en Venta Urb. Miranda G. 04143054662"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -8065,7 +7812,6 @@
           "titulo": "Local Comercial en venta en Distrito Capital — $250.000"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": "El Pedregal",
       "condicion": "estandar",
       "contacto": {
@@ -8097,7 +7843,6 @@
           "titulo": "Estupenda casa en venta  Club de Campo San Antonio de los Altos  25-16271"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -8127,7 +7872,6 @@
           "titulo": "Estupenda casa en venta Urbanización Rosaleda Norte, San Antonio de los Altos 26-15623"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -8162,7 +7906,6 @@
           "titulo": "Espacioso apartamento en venta Urbanización Miranda 25-13625"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -8192,7 +7935,6 @@
           "titulo": "Apartamento en venta en Baruta, Miranda — $280.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -8222,7 +7964,6 @@
           "titulo": "Apartamento en Venta Urb. Miranda G. 04143054662"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -8252,7 +7993,6 @@
           "titulo": "Casa en venta en Baruta, Miranda — $330.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -8284,7 +8024,6 @@
           "titulo": "Casa en venta en El Hatillo, Miranda — $340.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -8316,7 +8055,6 @@
           "titulo": "Casa en venta en Alto Prado, Distrito Capital — $349.500"
         }
       ],
-      "_estado": "Miranda",
       "zona": "Alto Prado",
       "condicion": "estandar",
       "contacto": {
@@ -8348,7 +8086,6 @@
           "titulo": "Casa en venta en Macaracuay, Miranda — $350.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "Macaracuay",
       "condicion": "estandar",
       "contacto": {
@@ -8380,7 +8117,6 @@
           "titulo": "Espectacular Casa En Venta San Antonio De Los Altos. Bellos Jardines. Agradable Clima De Montaña 26-..."
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -8412,7 +8148,6 @@
           "titulo": "Casa en venta en El Marques, Miranda — $385.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "El Marques",
       "condicion": "estandar",
       "contacto": {
@@ -8444,7 +8179,6 @@
           "titulo": "Casa en venta en Alto Prado, Miranda — $390.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "Alto Prado",
       "condicion": "estandar",
       "contacto": {
@@ -8476,7 +8210,6 @@
           "titulo": "Apartamento en Venta Urb. Miranda G. 04143054662"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -8506,7 +8239,6 @@
           "titulo": "Casa en venta en Alto Hatillo, Miranda — $420.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "Alto Hatillo",
       "condicion": "estandar",
       "contacto": {
@@ -8536,7 +8268,6 @@
           "titulo": "Local Comercial en venta en Chacao, Miranda — $550.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -8568,7 +8299,6 @@
           "titulo": "Local Comercial en venta en La Carlota, Miranda — $550.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "La Carlota",
       "condicion": "estandar",
       "contacto": {
@@ -8600,7 +8330,6 @@
           "titulo": "Casa en venta en El Hatillo, Miranda — $680.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -8630,7 +8359,6 @@
           "titulo": "Inmueble en venta en Baruta, Miranda — $2.250.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -8660,7 +8388,6 @@
           "titulo": "Apartamento en Alquiler Lomas de las Mercedes  G. 04143054662 / 04143247646"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -8690,7 +8417,6 @@
           "titulo": "Apartamento en alquiler en 2 Campo Alegre. piso medio"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -8720,7 +8446,6 @@
           "titulo": "apartamento alquiler campo alegre tlf 04242129768 rolando rodriguez"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -8755,7 +8480,6 @@
           "titulo": "Apartamento en Alquiler en Campo Alegre. Solo clientes directos."
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -8800,7 +8524,6 @@
           "titulo": "local alquiler Campo claro tlf 04242129768 rolando rodriguez"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -8830,7 +8553,6 @@
           "titulo": "Apartamento en alquiler en Chacao, Miranda — $1.200/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -8860,7 +8582,6 @@
           "titulo": "Alquiler de Apartamento en Colinas de la Tahona 27-1331 Asdrubal Medina"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -8890,7 +8611,6 @@
           "titulo": "apartamento en alquiler colinas de bello monte tlf  04242129768 rolando rodriguez codg 27-1048"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -8920,7 +8640,6 @@
           "titulo": "apartamento en alquiler campo alegre tlf 04242129768 rolando rodriguez"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -8950,7 +8669,6 @@
           "titulo": "apartamento alquiler campo alegre tlf 04242129768 rolando Rodríguez"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -8980,7 +8698,6 @@
           "titulo": "Apartamento en Alquiler en Campo Alegre. Solo Clientes Directos."
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -9010,7 +8727,6 @@
           "titulo": "apartamento alquiler las mercedes tlf 04242129768 rolando rodriguez"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -9040,7 +8756,6 @@
           "titulo": "apartamento en alquiler los naranjos de las mercedes  tlf  04242129768 rolando rodriguez  codg 27-45..."
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -9070,7 +8785,6 @@
           "titulo": "En Alquiler Apartamento en Las Mercedes Caracas"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -9125,7 +8839,6 @@
           "titulo": "apartamento en alquiler mirador de los campitos tlf  04242129768 rolando rodriguez codg 26-21784"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -9155,7 +8868,6 @@
           "titulo": "Apartamento en Alquiler en Campo Alegre."
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -9185,7 +8897,6 @@
           "titulo": "Apartamento en Alquiler La Bonita G. 04143054662 / 04143247646"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -9235,7 +8946,6 @@
           "titulo": "local alquiler los dos caminos tlf 04242129768 rolando rodriguez"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -9265,7 +8975,6 @@
           "titulo": "Apartamento en alquiler en Sebucan, Miranda — $2.200/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": "Sebucan",
       "condicion": "estandar",
       "contacto": {
@@ -9297,7 +9006,6 @@
           "titulo": "Alquiler Apartamento Los Naranjos de Las Mercedes MLS #26-2823 Mirian Navarro +58 414 924 0379"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -9327,7 +9035,6 @@
           "titulo": "apartamento alquiler los naranjos de las mercedes  rolando rodriguez tlf 04242129768"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -9362,7 +9069,6 @@
           "titulo": "apartamento en alquiler en campo alegre tlf 04242129768 rolando rodriguez codg 27-4110"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -9392,7 +9098,6 @@
           "titulo": "26-9078 Apartamento en Alquiler La Castellana"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -9424,7 +9129,6 @@
           "titulo": "apartamento alquiler las mercedes  rolando rodriguez tlf 04242129768"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -9474,7 +9178,6 @@
           "titulo": "apartamento en alquiler en la castellana tlf 04242129768 rolando rodriguez codg 27-4562"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -9504,7 +9207,6 @@
           "titulo": "Apartamento en Alquiler Campo Alegre G. 04143054662"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -9534,7 +9236,6 @@
           "titulo": "Apartamento En Alquiler Los Campitos"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -9564,7 +9265,6 @@
           "titulo": "Local Comercial en alquiler en Chacao, Miranda — $3.000/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -9594,7 +9294,6 @@
           "titulo": "Apartamento en alquiler en Chacao, Miranda — $3.700/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -9626,7 +9325,6 @@
           "titulo": "Oficina en alquiler en Chacao, Miranda — $3.800/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -9656,7 +9354,6 @@
           "titulo": "Apartamento en alquiler en Chacao, Miranda — $4.500/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -9688,7 +9385,6 @@
           "titulo": "Alquiler Mirador de los Campitos. MLS #27-1325 Fabiola Rodriguez"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -9723,7 +9419,6 @@
           "titulo": "En alquiler Conjunto residencial isla dorada"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -9753,7 +9448,6 @@
           "titulo": "apartamento alquiler lomas de las mercedes tlf 04242129768 rolando Rodríguez"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -9783,7 +9477,6 @@
           "titulo": "Apartamento en Alquiler Mirador de los Campitos I G. 04143054662"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -9813,7 +9506,6 @@
           "titulo": "Oficina en alquiler en Baruta, Miranda — $6.500/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -9843,7 +9535,6 @@
           "titulo": "apartamento alquiler las mercedes tlf 04242129768 rolando Rodríguez"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -9883,7 +9574,6 @@
           "titulo": "apartamento en alquiler campo alegre tlf 04242129768 rolando rodriguez  codg 27-4156"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -9933,7 +9623,6 @@
           "titulo": "Casa en venta en Libertador, Distrito Capital — $60.000"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -9963,7 +9652,6 @@
           "titulo": "Apartamento en Venta Las Acacias G. 04143054662 / 04143247646"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -9993,7 +9681,6 @@
           "titulo": "APARTAMENTO VENTA LOS COCOS LA GUAIRA API 7245"
         }
       ],
-      "_estado": "La Guaira",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -10023,7 +9710,6 @@
           "titulo": "Apartamento en venta en Chacao, Miranda — $73.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -10053,7 +9739,6 @@
           "titulo": "Casa en venta en Vargas, La Guaira — $78.000"
         }
       ],
-      "_estado": "La Guaira",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -10083,7 +9768,6 @@
           "titulo": "Apartamento en venta en Baruta, Miranda — $130.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -10118,7 +9802,6 @@
           "titulo": "Local Comercial en venta en Distrito Capital — $145.000"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -10148,7 +9831,6 @@
           "titulo": "Apartamento en venta en Baruta, Miranda — $146.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -10178,7 +9860,6 @@
           "titulo": "Apartamento en venta en El Hatillo, Miranda — $150.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -10208,7 +9889,6 @@
           "titulo": "Terreno en venta en Alto Hatillo, Miranda — $150.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "Alto Hatillo",
       "condicion": "estandar",
       "contacto": {
@@ -10238,7 +9918,6 @@
           "titulo": "apartamento venta los naranjos de las mercedes  rolando rodriguez tlf 04242129768"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -10268,7 +9947,6 @@
           "titulo": "Apartamento en venta en Baruta, Miranda — $160.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -10298,7 +9976,6 @@
           "titulo": "Venta de casa en la Urbanizacion Miranda 27-1180 Asdrubal Medina"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -10333,7 +10010,6 @@
           "titulo": "Apartamento en venta en Distrito Capital — $170.000"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -10363,7 +10039,6 @@
           "titulo": "Apartamento en venta en El Hatillo, Miranda — $180.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -10393,7 +10068,6 @@
           "titulo": "Apartamento en venta en Sucre, Miranda — $180.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -10423,7 +10097,6 @@
           "titulo": "Casa en venta en Libertador, Distrito Capital — $195.000"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -10453,7 +10126,6 @@
           "titulo": "Local Comercial en venta en Vargas, La Guaira — $195.000"
         }
       ],
-      "_estado": "La Guaira",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -10485,7 +10157,6 @@
           "titulo": "Apartamento en venta en Baruta, Miranda — $198.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -10515,7 +10186,6 @@
           "titulo": "Apartamento en venta en Sucre, Miranda — $225.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -10545,7 +10215,6 @@
           "titulo": "Oficina en venta en Chacao, Miranda — $245.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -10575,7 +10244,6 @@
           "titulo": "Apartamento en venta en Campo Alegre, Miranda — $250.000"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": "Campo Alegre",
       "condicion": "estandar",
       "contacto": {
@@ -10607,7 +10275,6 @@
           "titulo": "Apartamento en venta en El Hatillo, Miranda — $272.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -10637,7 +10304,6 @@
           "titulo": "Local Comercial en venta en Baruta, Miranda — $280.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -10667,7 +10333,6 @@
           "titulo": "Apartamento en venta en Chacao, Miranda — $280.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -10699,7 +10364,6 @@
           "titulo": "Hermosa Casa Remodelada En Venta, Club de Campo, San Antonio de los Altos"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "impecable",
       "contacto": {
@@ -10729,7 +10393,6 @@
           "titulo": "Apartamento en venta en Baruta, Miranda — $290.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -10764,7 +10427,6 @@
           "titulo": "Casa en venta en Libertador, Distrito Capital — $300.000"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -10794,7 +10456,6 @@
           "titulo": "Apartamento en venta en La Unión, Miranda — $300.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "La Unión",
       "condicion": "estandar",
       "contacto": {
@@ -10826,7 +10487,6 @@
           "titulo": "Casa en venta en El Hatillo, Miranda — $300.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -10856,7 +10516,6 @@
           "titulo": "Linda y Cómoda Casa en Venta Club de Campo, San Antonio de los Altos"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -10886,7 +10545,6 @@
           "titulo": "Apartamento en venta en Altamira, Miranda — $350.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "Altamira",
       "condicion": "estandar",
       "contacto": {
@@ -10918,7 +10576,6 @@
           "titulo": "Hermosa Casa En Venta La Rosaleda San Antonio De Los Altos 27-3968"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -10948,7 +10605,6 @@
           "titulo": "casa en venta urb miranda tlf 04242129768  rolando rodriguez  codg 27-237"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -10983,7 +10639,6 @@
           "titulo": "Estupendo Apartamento En Venta Urbanización Miranda, Totalmente Amoblado 27-2902"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -11013,7 +10668,6 @@
           "titulo": "Apartamento en Venta Urb. Miranda G. 04143054662"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -11043,7 +10697,6 @@
           "titulo": "Casa En Venta Los Castores San Antonio De Los Altos 27-1407"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -11073,7 +10726,6 @@
           "titulo": "Apartamento en venta en Chacao, Miranda — $397.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -11103,7 +10755,6 @@
           "titulo": "Casa en venta en Colinas de Santa Monica, Miranda — $410.000"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": "Colinas de Santa Monica",
       "condicion": "estandar",
       "contacto": {
@@ -11135,7 +10786,6 @@
           "titulo": "Casa en venta en Baruta, Miranda — $430.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -11165,7 +10815,6 @@
           "titulo": "Apartamento en venta en Sucre, Miranda — $450.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -11195,7 +10844,6 @@
           "titulo": "apartamento venta las mercedes  rolando rodriguez tlf 04242129768"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -11225,7 +10873,6 @@
           "titulo": "Apartamento en venta en Baruta, Miranda — $500.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -11255,7 +10902,6 @@
           "titulo": "apartamento venta los naranjos de las mercedes   rolando rodriguez tlf 04242129768"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -11285,7 +10931,6 @@
           "titulo": "Casa en Venta San Antonio de los Altos Club de Campo G. 04143054662"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -11315,7 +10960,6 @@
           "titulo": "Casa en venta en Baruta, Miranda — $550.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -11345,7 +10989,6 @@
           "titulo": "Apartamento en venta en Chacao, Miranda — $550.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -11377,7 +11020,6 @@
           "titulo": "casa en venta en los naranjos del cafetal   tlf 04242129768 rolando rodriguez"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -11407,7 +11049,6 @@
           "titulo": "Bella y Amplia Casa En Venta Club de Campo, San Antonio de los Altos"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -11437,7 +11078,6 @@
           "titulo": "Casa en venta en Libertador, Distrito Capital — $590.000"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -11469,7 +11109,6 @@
           "titulo": "Casa en venta en Baruta, Miranda — $598.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -11499,7 +11138,6 @@
           "titulo": "Apartamento en venta en El Hatillo, Miranda — $600.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -11529,7 +11167,6 @@
           "titulo": "Casa en venta en Santa Paula, Distrito Capital — $650.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "Santa Paula",
       "condicion": "estandar",
       "contacto": {
@@ -11561,7 +11198,6 @@
           "titulo": "Casa en venta en El Hatillo, Miranda — $700.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -11591,7 +11227,6 @@
           "titulo": "Apartamento en Venta en Mirador de Los Campitos"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -11621,7 +11256,6 @@
           "titulo": "Terreno en venta en Libertador, Distrito Capital — $840.000"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -11653,7 +11287,6 @@
           "titulo": "Esplendido terreno  en venta San Antonio de los Altos 23-16128"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -11685,7 +11318,6 @@
           "titulo": "Casa en venta en Libertador, Distrito Capital — $970.000"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -11717,7 +11349,6 @@
           "titulo": "Casa en venta en Vizcaya, Miranda — $990.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "Vizcaya",
       "condicion": "estandar",
       "contacto": {
@@ -11749,7 +11380,6 @@
           "titulo": "Local Comercial en venta en Petare, Miranda — $1.050.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "Petare",
       "condicion": "estandar",
       "contacto": {
@@ -11779,7 +11409,6 @@
           "titulo": "Casa en venta en Altamira, Miranda — $1.100.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "Altamira",
       "condicion": "estandar",
       "contacto": {
@@ -11811,7 +11440,6 @@
           "titulo": "Apartamento en venta en Baruta, Miranda — $1.250.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -11841,7 +11469,6 @@
           "titulo": "Casa en venta en El Hatillo, Miranda — $1.250.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -11871,7 +11498,6 @@
           "titulo": "Local Comercial en venta en Chacao, Miranda — $1.350.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -11901,7 +11527,6 @@
           "titulo": "Casa en venta en Lomas del Mirador, Miranda — $1.400.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "Lomas del Mirador",
       "condicion": "estandar",
       "contacto": {
@@ -11933,7 +11558,6 @@
           "titulo": "Casa en venta en Altamira, Miranda — $1.600.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "Altamira",
       "condicion": "estandar",
       "contacto": {
@@ -11963,7 +11587,6 @@
           "titulo": "Apartamento en venta en Las Mercedes, Miranda — $1.600.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "Las Mercedes",
       "condicion": "estandar",
       "contacto": {
@@ -11995,7 +11618,6 @@
           "titulo": "Casa en venta en Alto Hatillo, Miranda — $1.690.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "Alto Hatillo",
       "condicion": "estandar",
       "contacto": {
@@ -12027,7 +11649,6 @@
           "titulo": "Terreno en venta en Independencia, Miranda — $3.000.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -12059,7 +11680,6 @@
           "titulo": "Casa en venta en Los Chorros, Miranda — $3.050.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "Los Chorros",
       "condicion": "estandar",
       "contacto": {
@@ -12089,7 +11709,6 @@
           "titulo": "Local Comercial en venta en Chacao, Miranda — $4.950.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -12121,7 +11740,6 @@
           "titulo": "Anexo vacacional en La Guaira EN ALQUILER"
         }
       ],
-      "_estado": "La Guaira",
       "zona": "Caraballeda",
       "condicion": "estandar",
       "contacto": {
@@ -12150,7 +11768,6 @@
           "titulo": "Local Comercial en alquiler en Baruta, Miranda — $130/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -12179,7 +11796,6 @@
           "titulo": "Habitaciones en Terrazas del Ávila EN ALQUILER"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -12213,7 +11829,6 @@
           "titulo": "Apartamento en Guatire 3 habitaciones 2 baños EN ALQUILER"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -12242,7 +11857,6 @@
           "titulo": "Local Comercial en alquiler en Baruta, Miranda — $240/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -12276,7 +11890,6 @@
           "titulo": "Oficina en alquiler en Sucre, Miranda — $250/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -12310,7 +11923,6 @@
           "titulo": "APARTAMENTO ALQUILER GUARENAS API 6873"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -12344,7 +11956,6 @@
           "titulo": "Locales (3) en Guatire EN ALQUILER"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -12378,7 +11989,6 @@
           "titulo": "Apartamento en Guatire (La Sabana) EN ALQUILER"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -12412,7 +12022,6 @@
           "titulo": "Apartamento en Alquiler Nueva Casarapa G. 04143054662 / 04143247646"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -12441,7 +12050,6 @@
           "titulo": "Local Comercial en alquiler en Baruta, Miranda — $250/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -12470,7 +12078,6 @@
           "titulo": "Apartamento en alquiler en La Rosa, Miranda — $250/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": "La Rosa",
       "condicion": "estandar",
       "contacto": {
@@ -12519,7 +12126,6 @@
           "titulo": "APARTAMENTO ALQUILER CIUDAD CASARAPA GUARENAS API 67811"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -12548,7 +12154,6 @@
           "titulo": "Oficina en alquiler en Baruta, Miranda — $350/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -12577,7 +12182,6 @@
           "titulo": "Tanaguarena, La Guaira, Apartamento en Alquiler."
         }
       ],
-      "_estado": "La Guaira",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -12606,7 +12210,6 @@
           "titulo": "Local en Guatire EN ALQUILER"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -12635,7 +12238,6 @@
           "titulo": "Local en Guatire EN ALQUILER"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -12669,7 +12271,6 @@
           "titulo": "Oficina en alquiler en Sucre, Miranda — $400/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -12698,7 +12299,6 @@
           "titulo": "apartamento en alquiler nueva casarapa conj el tablon tlf 04242129768 rolando rodriguez"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -12727,7 +12327,6 @@
           "titulo": "Oficina en alquiler en Sucre, Miranda — $450/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -12756,7 +12355,6 @@
           "titulo": "Local Comercial en alquiler en Chacao, Miranda — $450/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -12785,7 +12383,6 @@
           "titulo": "local alquiler en Guarenas tlf 04242129768 rolando rodriguez codg 26-10006"
         }
       ],
-      "_estado": "Miranda",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -12814,7 +12411,6 @@
           "titulo": "Anexo en alquiler en Altamira, Distrito Capital — $750/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": "Altamira",
       "condicion": "estandar",
       "contacto": {
@@ -12843,7 +12439,6 @@
           "titulo": "Anexo en alquiler en Altamira, Miranda — $1.100/mes"
         }
       ],
-      "_estado": "Miranda",
       "zona": "Altamira",
       "condicion": "estandar",
       "contacto": {
@@ -12877,7 +12472,6 @@
           "titulo": "Se alquila excelente galpón en San Diego de los Altos 23-27218"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -12906,7 +12500,6 @@
           "titulo": "Local en alquiler en el CCCT."
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -12935,7 +12528,6 @@
           "titulo": "Local en alquiler en Bello Campo. Casa de uso comercial."
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -12969,7 +12561,6 @@
           "titulo": "En alquiler local comercial en Las Minas San Antonio de los Altos 26-1759"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -12998,7 +12589,6 @@
           "titulo": "En alquiler estupendo edificio en Campo Claro 26-14437"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -13027,7 +12617,6 @@
           "titulo": "Local en alquiler en Chuao. CCCT"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -13056,7 +12645,6 @@
           "titulo": "Local en alquiler en Chuao. Casa de uso comercial"
         }
       ],
-      "_estado": "Distrito Capital",
       "zona": null,
       "condicion": "estandar",
       "contacto": {
@@ -13085,7 +12673,6 @@
           "titulo": "Amplio Local Comercial a Pie de Calle en Venta San Antonio de Los Altos 24-2543"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -13114,7 +12701,6 @@
           "titulo": "Excelente Casa y Galpón en venta Potrerito, Sector Pacheco, San Antonio de los Altos  24-22403"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -13143,7 +12729,6 @@
           "titulo": "Townhouse en venta en Loma Linda, Miranda — $235.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "Loma Linda",
       "condicion": "estandar",
       "contacto": {
@@ -13172,7 +12757,6 @@
           "titulo": "Excelente Galpon en Venta Zona Industrial de San Antonio de los Altos 25-10850"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -13201,7 +12785,6 @@
           "titulo": "Local comercial en venta San Antonio de los Altos 23-24836"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -13230,7 +12813,6 @@
           "titulo": "Gran Local Comercial En Venta San Antonio de Los Altos (recta las Minas) 23-24836"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -13259,7 +12841,6 @@
           "titulo": "Impecable galpón en venta San Antonio de los Altos 23-27215"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "impecable",
       "contacto": {
@@ -13288,7 +12869,6 @@
           "titulo": "Amplio 23-27215 en Venta San Diego de los Altos, 23-27215"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -13317,7 +12897,6 @@
           "titulo": "Galpón en Venta San Antonio de los altos G. 04143054662"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -13346,7 +12925,6 @@
           "titulo": "Excelente Galpón o Local Comercial en Venta Zona Industrial de Las Minas San Antonio de Los Altos"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -13375,7 +12953,6 @@
           "titulo": "Edificio industrial en venta San Antonio de los Altos 23-2609"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -13404,7 +12981,6 @@
           "titulo": "Galpón en venta San Antonio de los Altos 23-2609"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -13433,7 +13009,6 @@
           "titulo": "Edificio industrial en venta San Antonio de los Altos  25-11337"
         }
       ],
-      "_estado": "Miranda",
       "zona": "San Antonio de Los Altos",
       "condicion": "estandar",
       "contacto": {
@@ -13462,7 +13037,6 @@
           "titulo": "Casa en venta en El Cigarral, Caracas, Miranda — $1.000.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "El Cigarral",
       "condicion": "estandar",
       "contacto": {
@@ -13491,7 +13065,6 @@
           "titulo": "Casa en venta en La Lagunita, Caracas, Miranda — $680.000"
         }
       ],
-      "_estado": "Miranda",
       "zona": "La Lagunita",
       "condicion": "estandar",
       "contacto": {
