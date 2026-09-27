@@ -461,20 +461,12 @@ async function main() {
     }
 
     return {
-<<<<<<< Updated upstream
-                  ...resto,
-                  zona,
-                  condicion,
-                  contacto,
-                  _estado,
-                  precio_m2: Math.round(_precio_m2),
-=======
-                  ...resto, _estado,
-                  zona,
+              ...resto,
+              zona,
               condicion,
               contacto,
+              _estado,
               precio_m2: Math.round(_precio_m2),
->>>>>>> Stashed changes
           promedio_m2_tipo_zona: Math.round(promedioGrupo),
           diferencia_vs_promedio_pct: Math.round(diferencia * 100),
           semaforo,
