@@ -1,5 +1,5 @@
 {
-  "generado_en": "2026-09-27T03:22:06.842Z",
+  "generado_en": "2026-09-27T03:49:04.128Z",
   "basado_en": "fichas-maestras-2026-09-27.json",
   "promedios_m2_por_tipo_y_estado": {
     "Apartamento / Distrito Capital||Alquiler": 14,
@@ -12,21 +12,22 @@
     "Casa / Miranda||Venta": 721,
     "Oficina / Distrito Capital||Venta": 726,
     "Inmueble / Distrito Capital||Venta": 752,
+    "Casa / La Guaira||Venta": 430,
+    "Apartamento / La Guaira||Venta": 741,
     "Apartamento / Miranda||Venta": 1111,
     "Oficina / Miranda||Venta": 1231,
     "Local comercial / Miranda||Venta": 1373,
     "Penthouse / Miranda||Venta": 1558,
-    "Casa / La Guaira||Venta": 591,
     "Terreno / Miranda||Venta": 1669,
     "Inmueble / Miranda||Venta": 1286,
     "Local comercial / La Guaira||Venta": 831,
     "Casa / Miranda||Alquiler": 16
   },
   "resumen": {
-    "verde": 198,
-    "amarillo": 63,
-    "rojo": 113,
-    "sin_datos_suficientes": 45
+    "verde": 202,
+    "amarillo": 65,
+    "rojo": 114,
+    "sin_datos_suficientes": 46
   },
   "fichas": [
     {
@@ -1845,6 +1846,40 @@
       "semaforo": "verde"
     },
     {
+      "titulo": "TOWNHHOUSE VENTA TANAGUARENA LA GUAIRA API 5471",
+      "precio_texto": "USD 23.000",
+      "habitaciones": 3,
+      "banos": 2,
+      "metros_cuadrados": 64,
+      "tipo": "Casa",
+      "ubicacion": "La Guaira, Vargas",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/la-guaira/propiedad/29731-townhhouse-venta-tanaguarena-la-guaira-api-5471",
+      "portal_principal": "bienesonline",
+      "total_publicaciones_encontradas": 2,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/la-guaira/propiedad/29731-townhhouse-venta-tanaguarena-la-guaira-api-5471",
+          "portal": "bienesonline",
+          "titulo": "TOWNHHOUSE VENTA TANAGUARENA LA GUAIRA API 5471"
+        },
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/la-guaira/propiedad/54257-townhhouse-venta-tanaguarena-la-guaira-api-5471",
+          "portal": "bienesonline",
+          "titulo": "TOWNHHOUSE VENTA TANAGUARENA LA GUAIRA API 5471"
+        }
+      ],
+      "zona": null,
+      "condicion": "estandar",
+      "contacto": {
+        "telefono": null,
+        "email": null
+      },
+      "precio_m2": 359,
+      "promedio_m2_tipo_zona": 430,
+      "diferencia_vs_promedio_pct": -17,
+      "semaforo": "verde"
+    },
+    {
       "titulo": "27-1240 Apartamento en venta Las Islas Guarenas",
       "precio_texto": "USD 24.000",
       "habitaciones": 1,
@@ -2004,6 +2039,37 @@
       "promedio_m2_tipo_zona": 1111,
       "diferencia_vs_promedio_pct": -61,
       "semaforo": "verde"
+    },
+    {
+      "titulo": "APARTAMENTO EN VENTA EN NAIGUATA LA GUAIRA API 74014",
+      "precio_texto": "USD 33.000",
+      "habitaciones": null,
+      "banos": null,
+      "metros_cuadrados": null,
+      "tipo": "Apartamento",
+      "ubicacion": "La Guaira, Vargas",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/la-guaira/propiedad/26125-apartamento-en-venta-en-naiguata-la-guaira-api-74014",
+      "portal_principal": "bienesonline",
+      "total_publicaciones_encontradas": 1,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/la-guaira/propiedad/26125-apartamento-en-venta-en-naiguata-la-guaira-api-74014",
+          "portal": "bienesonline",
+          "titulo": "APARTAMENTO EN VENTA EN NAIGUATA LA GUAIRA API 74014"
+        }
+      ],
+      "zona": null,
+      "condicion": "estandar",
+      "contacto": {
+        "telefono": null,
+        "email": null
+      },
+      "precio_m2": 406,
+      "promedio_m2_tipo_zona": 741,
+      "diferencia_vs_promedio_pct": -45,
+      "semaforo": "verde",
+      "m2_estimado": true,
+      "m2_estimado_base": 81
     },
     {
       "titulo": "Local Comercial en venta en La Castellana, Miranda — $35.000",
@@ -2856,6 +2922,35 @@
       "semaforo": "verde"
     },
     {
+      "titulo": "APARTAMENTO VENTA TANAGUARENA VISTA AL MAR LA GUAIRA API 6246",
+      "precio_texto": "USD 60.000",
+      "habitaciones": 3,
+      "banos": 2,
+      "metros_cuadrados": 103,
+      "tipo": "Apartamento",
+      "ubicacion": "La Guaira, Vargas",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/la-guaira/propiedad/29735-apartamento-venta-tanaguarena-vista-al-mar-la-guaira-api-6246",
+      "portal_principal": "bienesonline",
+      "total_publicaciones_encontradas": 1,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/la-guaira/propiedad/29735-apartamento-venta-tanaguarena-vista-al-mar-la-guaira-api-6246",
+          "portal": "bienesonline",
+          "titulo": "APARTAMENTO VENTA TANAGUARENA VISTA AL MAR LA GUAIRA API 6246"
+        }
+      ],
+      "zona": null,
+      "condicion": "estandar",
+      "contacto": {
+        "telefono": null,
+        "email": null
+      },
+      "precio_m2": 583,
+      "promedio_m2_tipo_zona": 741,
+      "diferencia_vs_promedio_pct": -21,
+      "semaforo": "verde"
+    },
+    {
       "titulo": "Venta de Apartamento en Miravila MLS #26-1560 Mirian Navarro +58 414 924 0379",
       "precio_texto": "USD 60.000",
       "habitaciones": 2,
@@ -2995,12 +3090,12 @@
         "telefono": null,
         "email": null
       },
-      "precio_m2": 139,
-      "promedio_m2_tipo_zona": 596,
-      "diferencia_vs_promedio_pct": -77,
+      "precio_m2": 135,
+      "promedio_m2_tipo_zona": 721,
+      "diferencia_vs_promedio_pct": -81,
       "semaforo": "verde",
       "m2_estimado": true,
-      "m2_estimado_base": 454
+      "m2_estimado_base": 465
     },
     {
       "titulo": "Amplio y C?modo Apartamento en Venta Las Minas, San Antonio de Los Altos 24-23699",
@@ -4206,6 +4301,35 @@
       "precio_m2": 789,
       "promedio_m2_tipo_zona": 1111,
       "diferencia_vs_promedio_pct": -29,
+      "semaforo": "verde"
+    },
+    {
+      "titulo": "CASA VACACIONAL VENTA LA SABANA EDO. LA GUAIRA API 6124",
+      "precio_texto": "USD 120.000",
+      "habitaciones": 6,
+      "banos": 7,
+      "metros_cuadrados": 352,
+      "tipo": "Casa",
+      "ubicacion": "La Guaira, Vargas",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/la-guaira/propiedad/29733-casa-vacacional-venta-la-sabana-edo-la-guaira-api-6124",
+      "portal_principal": "bienesonline",
+      "total_publicaciones_encontradas": 1,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/la-guaira/propiedad/29733-casa-vacacional-venta-la-sabana-edo-la-guaira-api-6124",
+          "portal": "bienesonline",
+          "titulo": "CASA VACACIONAL VENTA LA SABANA EDO. LA GUAIRA API 6124"
+        }
+      ],
+      "zona": null,
+      "condicion": "estandar",
+      "contacto": {
+        "telefono": null,
+        "email": null
+      },
+      "precio_m2": 341,
+      "promedio_m2_tipo_zona": 430,
+      "diferencia_vs_promedio_pct": -21,
       "semaforo": "verde"
     },
     {
@@ -6648,6 +6772,35 @@
       "semaforo": "amarillo"
     },
     {
+      "titulo": "APARTAMENTO EN PUNTA BRISAS , URB 15 LETRAS MACUTO/ LA GUAIRA API 5795",
+      "precio_texto": "USD 29.000",
+      "habitaciones": 1,
+      "banos": 1,
+      "metros_cuadrados": 43,
+      "tipo": "Apartamento",
+      "ubicacion": "La Guaira, Vargas",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/la-guaira/propiedad/29732-apartamento-en-punta-brisas-urb-15-letras-macuto-la-guaira-api-5795",
+      "portal_principal": "bienesonline",
+      "total_publicaciones_encontradas": 1,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/la-guaira/propiedad/29732-apartamento-en-punta-brisas-urb-15-letras-macuto-la-guaira-api-5795",
+          "portal": "bienesonline",
+          "titulo": "APARTAMENTO EN PUNTA BRISAS , URB 15 LETRAS MACUTO/ LA GUAIRA API 5795"
+        }
+      ],
+      "zona": null,
+      "condicion": "estandar",
+      "contacto": {
+        "telefono": null,
+        "email": null
+      },
+      "precio_m2": 674,
+      "promedio_m2_tipo_zona": 741,
+      "diferencia_vs_promedio_pct": -9,
+      "semaforo": "amarillo"
+    },
+    {
       "titulo": "Local Comercial en venta en Maiquetía, La Guaira — $56.500",
       "precio_texto": "$56.500",
       "habitaciones": null,
@@ -6706,21 +6859,26 @@
       "semaforo": "amarillo"
     },
     {
-      "titulo": "Casa en venta en Vargas, La Guaira — $78.000",
-      "precio_texto": "$78.000",
+      "titulo": "APARTAMENTO EN VENTA EN NAIGUATA LA GUAIRA API 5068",
+      "precio_texto": "USD 80.000",
       "habitaciones": 3,
-      "banos": 2,
-      "metros_cuadrados": 132,
-      "tipo": "Casa",
-      "ubicacion": "Vargas, La Guaira",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/la-guaira/venta-de-casa-en-el-km-33-carretera-el-junquito-colonia-de-tovar-lfm-century21-1123837",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
+      "banos": 3,
+      "metros_cuadrados": 105,
+      "tipo": "Apartamento",
+      "ubicacion": "La Guaira, Vargas",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/la-guaira/propiedad/29730-apartamento-en-venta-en-naiguata-la-guaira-api-5068",
+      "portal_principal": "bienesonline",
+      "total_publicaciones_encontradas": 2,
       "todos_los_anuncios": [
         {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/la-guaira/venta-de-casa-en-el-km-33-carretera-el-junquito-colonia-de-tovar-lfm-century21-1123837",
-          "portal": "inmueblesconlupa",
-          "titulo": "Casa en venta en Vargas, La Guaira — $78.000"
+          "enlace": "https://bienesonline.ai/es/venezuela/la-guaira/propiedad/29730-apartamento-en-venta-en-naiguata-la-guaira-api-5068",
+          "portal": "bienesonline",
+          "titulo": "APARTAMENTO EN VENTA EN NAIGUATA LA GUAIRA API 5068"
+        },
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/naiguata/propiedad/54252-apartamento-en-venta-en-naiguata-la-guaira-api-5068",
+          "portal": "bienesonline",
+          "titulo": "APARTAMENTO EN VENTA EN NAIGUATA LA GUAIRA API 5068"
         }
       ],
       "zona": null,
@@ -6729,9 +6887,9 @@
         "telefono": null,
         "email": null
       },
-      "precio_m2": 591,
-      "promedio_m2_tipo_zona": 591,
-      "diferencia_vs_promedio_pct": 0,
+      "precio_m2": 762,
+      "promedio_m2_tipo_zona": 741,
+      "diferencia_vs_promedio_pct": 3,
       "semaforo": "amarillo"
     },
     {
@@ -6820,6 +6978,37 @@
       "promedio_m2_tipo_zona": 1111,
       "diferencia_vs_promedio_pct": 5,
       "semaforo": "amarillo"
+    },
+    {
+      "titulo": "Casa en venta en Centro, La Guaira — $90.000",
+      "precio_texto": "$90.000",
+      "habitaciones": 1,
+      "banos": 3,
+      "metros_cuadrados": null,
+      "tipo": "Casa",
+      "ubicacion": "Centro, La Guaira",
+      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/la-guaira/casa-duplex-en-venta-en-centro-lara-rentahouse-27-5139",
+      "portal_principal": "inmueblesconlupa",
+      "total_publicaciones_encontradas": 1,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/la-guaira/casa-duplex-en-venta-en-centro-lara-rentahouse-27-5139",
+          "portal": "inmueblesconlupa",
+          "titulo": "Casa en venta en Centro, La Guaira — $90.000"
+        }
+      ],
+      "zona": "Centro",
+      "condicion": "estandar",
+      "contacto": {
+        "telefono": null,
+        "email": null
+      },
+      "precio_m2": 493,
+      "promedio_m2_tipo_zona": 430,
+      "diferencia_vs_promedio_pct": 14,
+      "semaforo": "amarillo",
+      "m2_estimado": true,
+      "m2_estimado_base": 183
     },
     {
       "titulo": "apartamento venta manzanares  rolando rodriguez tlf 04242129768",
@@ -9317,6 +9506,35 @@
       "semaforo": "rojo"
     },
     {
+      "titulo": "APARTAMENTO VENTA LOS COCOS LA GUAIRA API 7245",
+      "precio_texto": "USD 70.000",
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 74,
+      "tipo": "Apartamento",
+      "ubicacion": "La Guaira, Vargas",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/la-guaira/propiedad/29734-apartamento-venta-los-cocos-la-guaira-api-7245",
+      "portal_principal": "bienesonline",
+      "total_publicaciones_encontradas": 1,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/la-guaira/propiedad/29734-apartamento-venta-los-cocos-la-guaira-api-7245",
+          "portal": "bienesonline",
+          "titulo": "APARTAMENTO VENTA LOS COCOS LA GUAIRA API 7245"
+        }
+      ],
+      "zona": null,
+      "condicion": "estandar",
+      "contacto": {
+        "telefono": null,
+        "email": null
+      },
+      "precio_m2": 946,
+      "promedio_m2_tipo_zona": 741,
+      "diferencia_vs_promedio_pct": 28,
+      "semaforo": "rojo"
+    },
+    {
       "titulo": "Apartamento en venta en Chacao, Miranda — $73.000",
       "precio_texto": "$73.000",
       "habitaciones": null,
@@ -9346,35 +9564,33 @@
       "semaforo": "rojo"
     },
     {
-      "titulo": "Casa en venta en Centro, La Guaira — $90.000",
-      "precio_texto": "$90.000",
-      "habitaciones": 1,
-      "banos": 3,
-      "metros_cuadrados": null,
+      "titulo": "Casa en venta en Vargas, La Guaira — $78.000",
+      "precio_texto": "$78.000",
+      "habitaciones": 3,
+      "banos": 2,
+      "metros_cuadrados": 132,
       "tipo": "Casa",
-      "ubicacion": "Centro, La Guaira",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/la-guaira/casa-duplex-en-venta-en-centro-lara-rentahouse-27-5139",
+      "ubicacion": "Vargas, La Guaira",
+      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/la-guaira/venta-de-casa-en-el-km-33-carretera-el-junquito-colonia-de-tovar-lfm-century21-1123837",
       "portal_principal": "inmueblesconlupa",
       "total_publicaciones_encontradas": 1,
       "todos_los_anuncios": [
         {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/la-guaira/casa-duplex-en-venta-en-centro-lara-rentahouse-27-5139",
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/la-guaira/venta-de-casa-en-el-km-33-carretera-el-junquito-colonia-de-tovar-lfm-century21-1123837",
           "portal": "inmueblesconlupa",
-          "titulo": "Casa en venta en Centro, La Guaira — $90.000"
+          "titulo": "Casa en venta en Vargas, La Guaira — $78.000"
         }
       ],
-      "zona": "Centro",
+      "zona": null,
       "condicion": "estandar",
       "contacto": {
         "telefono": null,
         "email": null
       },
-      "precio_m2": 682,
-      "promedio_m2_tipo_zona": 591,
-      "diferencia_vs_promedio_pct": 15,
-      "semaforo": "rojo",
-      "m2_estimado": true,
-      "m2_estimado_base": 132
+      "precio_m2": 591,
+      "promedio_m2_tipo_zona": 430,
+      "diferencia_vs_promedio_pct": 37,
+      "semaforo": "rojo"
     },
     {
       "titulo": "Apartamento en venta en Baruta, Miranda — $115.000",
@@ -9429,12 +9645,12 @@
         "telefono": null,
         "email": null
       },
-      "precio_m2": 955,
-      "promedio_m2_tipo_zona": 591,
-      "diferencia_vs_promedio_pct": 62,
+      "precio_m2": 690,
+      "promedio_m2_tipo_zona": 430,
+      "diferencia_vs_promedio_pct": 60,
       "semaforo": "rojo",
       "m2_estimado": true,
-      "m2_estimado_base": 132
+      "m2_estimado_base": 183
     },
     {
       "titulo": "Apartamento en venta en Baruta, Miranda — $130.000",
@@ -11505,6 +11721,34 @@
       "semaforo": "rojo",
       "m2_estimado": true,
       "m2_estimado_base": 436
+    },
+    {
+      "titulo": "Anexo vacacional en La Guaira EN ALQUILER",
+      "precio_texto": "USD 50",
+      "habitaciones": 3,
+      "banos": 2,
+      "metros_cuadrados": 130,
+      "tipo": "",
+      "ubicacion": "Caraballeda, Vargas",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/caraballeda/propiedad/30413-anexo-vacacional-en-la-guaira-en-alquiler",
+      "portal_principal": "bienesonline",
+      "total_publicaciones_encontradas": 1,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/caraballeda/propiedad/30413-anexo-vacacional-en-la-guaira-en-alquiler",
+          "portal": "bienesonline",
+          "titulo": "Anexo vacacional en La Guaira EN ALQUILER"
+        }
+      ],
+      "zona": "Caraballeda",
+      "condicion": "estandar",
+      "contacto": {
+        "telefono": null,
+        "email": null
+      },
+      "precio_m2": null,
+      "promedio_m2_tipo_zona": null,
+      "semaforo": "sin_datos_suficientes"
     },
     {
       "titulo": "Local Comercial en alquiler en Baruta, Miranda — $130/mes",
