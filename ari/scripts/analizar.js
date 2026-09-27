@@ -23,6 +23,7 @@
 // les asigna semáforo para no dar una señal falsa con información mala.
 
 const fs = require("fs");
+const https = require("https");
 const path = require("path");
 
 const DATA_DIR = path.join(__dirname, "..", "data");
@@ -62,36 +63,63 @@ function normalizarNumero(texto) {
   return isNaN(numero) ? null : numero;
 }
 
-// Ciudades cuya pertenencia estatal es conocida. Si un anuncio menciona una de
-// estas ciudades pero dice otro estado, se corrige automáticamente (ej. "Los
-// Teques, Distrito Capital" → Miranda, porque Los Teques está en Miranda).
-const CIUDAD_A_ESTADO = new Map([
-  // Miranda — Altos Mirandinos y área metropolitana
-  ["los teques", "Miranda"],
-  ["san antonio de los altos", "Miranda"],
-  ["carrizal", "Miranda"],
-  ["san diego de los altos", "Miranda"],
-  ["san josé de los altos", "Miranda"],
-  // Miranda — Valles del Tuy
-  ["charallave", "Miranda"],
-  ["cúa", "Miranda"],
-  ["ocumare del tuy", "Miranda"],
-  ["santa teresa del tuy", "Miranda"],
-  ["santa lucía", "Miranda"],
-  // Miranda — Guarenas-Guatire
-  ["guarenas", "Miranda"],
-  ["guatire", "Miranda"],
-  // Miranda — Barlovento
-  ["higuerote", "Miranda"],
-  ["río chico", "Miranda"],
-  // La Guaira
-  ["la guaira", "La Guaira"],
-  ["catia la mar", "La Guaira"],
-  ["maiquetía", "La Guaira"],
-  ["macuto", "La Guaira"],
-  ["caraballeda", "La Guaira"],
-  ["naiguatá", "La Guaira"],
-]);
+// Resolución geográfica vía OpenStreetMap Nominatim (gratuito, sin API key,
+// datos auditables). Cada ciudad/zona se consulta una sola vez y se cachea en
+// memoria durante la corrida. Si Nominatim no responde, la zona queda sin
+// estado corregido — el sistema sigue funcionando con el estado que declaró el
+// anuncio.
+
+const cacheNominatim = new Map(); // zona_lower → "Miranda" | null
+
+function resolverEstadoNominatim(zona) {
+  if (!zona || zona.length < 3) return Promise.resolve(null);
+  const key = zona.toLowerCase().trim();
+  if (cacheNominatim.has(key)) return Promise.resolve(cacheNominatim.get(key));
+
+  return new Promise((resolve) => {
+    const query = encodeURIComponent(`${zona}, Venezuela`);
+    const opts = {
+      headers: { "User-Agent": "ARI/1.0 (arenasrealtygroup.com)" },
+      timeout: 5000,
+    };
+
+    https.get(`https://nominatim.openstreetmap.org/search?q=${query}&format=json&limit=1&addressdetails=1`, opts, (res) => {
+      let data = "";
+      res.on("data", (chunk) => data += chunk);
+      res.on("end", () => {
+        try {
+          const results = JSON.parse(data);
+          if (!Array.isArray(results) || results.length === 0) {
+            cacheNominatim.set(key, null);
+            return resolve(null);
+          }
+          const stateRaw = results[0].address?.state || "";
+          const normalizado = stateRaw.replace(/^Estado\s+/i, "").trim();
+          const match = ESTADOS_PERMITIDOS.find((e) => e.toLowerCase() === normalizado.toLowerCase());
+          cacheNominatim.set(key, match || null);
+          resolve(match || null);
+        } catch {
+          cacheNominatim.set(key, null);
+          resolve(null);
+        }
+      });
+    }).on("error", () => {
+      cacheNominatim.set(key, null);
+      resolve(null);
+    }).on("timeout", function () {
+      this.destroy();
+      cacheNominatim.set(key, null);
+      resolve(null);
+    });
+  });
+}
+
+// Versión síncrona para usar dentro del pipeline de análisis (después de que
+// el caché ya está poblado en la fase inicial).
+function estadoDesdeCache(zona) {
+  if (!zona) return null;
+  return cacheNominatim.get(zona.toLowerCase().trim()) ?? null;
+}
 
 function extraerEstado(ubicacion) {
   // "ubicacion" viene como "Ciudad, Estado" (así la dejó el scraper). El
@@ -109,10 +137,10 @@ function extraerEstado(ubicacion) {
       ? partesUbicacion.slice(0, -1).join(",").trim().toLowerCase()
       : partesUbicacion[0].trim().toLowerCase());
 
-    for (const [ciudad, estadoCorrecto] of CIUDAD_A_ESTADO) {
-      if (zonaRaw === ciudad) return estadoCorrecto;
-      if (zonaRaw.startsWith(ciudad + ",") || zonaRaw.startsWith(ciudad + " -")) return estadoCorrecto;
-    }
+    // Consultar Nominatim (cacheado) para la ciudad principal de la zona.
+        const ciudadPrincipal = zonaRaw.split(/[,—–-]/)[0].trim();
+        const estadoCorregido = estadoDesdeCache(ciudadPrincipal);
+        if (estadoCorregido) return estadoCorregido;
 
     // Caso especial: algunos anuncios de InmueblesConLupa solo traen el estado
     // sin ciudad ("en Distrito Capital") — sin coma. Si la ubicación completa
@@ -128,12 +156,11 @@ function extraerEstado(ubicacion) {
     // intentar detectar por ciudad conocida en la zona.
     if (ESTADOS_PERMITIDOS.includes(estadoRaw)) return estadoRaw;
 
-    for (const [ciudad, estadoCorrecto] of CIUDAD_A_ESTADO) {
-      if (zonaRaw === ciudad || zonaRaw.startsWith(ciudad + ",") || zonaRaw.startsWith(ciudad + " -"))
-        return estadoCorrecto;
-    }
+        const cp = zonaRaw.split(/[,—–-]/)[0].trim();
+        const ec = estadoDesdeCache(cp);
+        if (ec) return ec;
 
-    return null;
+        return null;
   }
 
 function limpiarZona(zona) {
@@ -300,7 +327,7 @@ function claveGrupo(tipo, estado, operacion) {
   return `${tipo}||${estado}||${operacion || "Venta"}`;
 }
 
-function main() {
+async function main() {
   const archivoReciente = encontrarFichasMaestrasMasReciente();
   if (!archivoReciente) {
     console.log("No se encontró ningún archivo fichas-maestras-*.json en ari/data/");
@@ -310,6 +337,22 @@ function main() {
 
   const contenido = JSON.parse(fs.readFileSync(path.join(DATA_DIR, archivoReciente), "utf-8"));
   const fichasTodas = contenido.fichas || [];
+
+  // Pre-poblar caché geográfico: extraer la ciudad principal de cada
+  // ubicación y consultar Nominatim UNA sola vez por ciudad. Así las
+  // llamadas síncronas a extraerEstado() siempre encuentran la respuesta
+  // en memoria, sin bloquear el pipeline.
+  const zonasUnicas = new Set();
+  for (const ficha of fichasTodas) {
+    if (!ficha.ubicacion) continue;
+    const p = ficha.ubicacion.includes(",") ? ficha.ubicacion.split(",") : [ficha.ubicacion];
+    const zonaRaw = (p.length > 1 ? p.slice(0, -1).join(",").trim() : p[0].trim()).toLowerCase();
+    const ciudad = zonaRaw.split(/[,—–-]/)[0].trim();
+    if (ciudad && ciudad.length >= 3) zonasUnicas.add(ciudad);
+  }
+  console.log(`  Resolviendo ${zonasUnicas.size} ciudades vía Nominatim...`);
+  await Promise.all([...zonasUnicas].map(resolverEstadoNominatim));
+  console.log(`  Caché geográfico listo (${cacheNominatim.size} entradas)`);
 
   // Filtro de estados: solo Miranda, Distrito Capital y La Guaira. Los
   // scrapers pueden traer propiedades de otros estados (Bienes Online no
@@ -473,4 +516,4 @@ function main() {
   console.log(`✓ Copia actualizada en ${rutaUltimo}`);
 }
 
-main();
+main().catch((err) => { console.error("Error en análisis:", err); process.exit(1); });
