@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academia Arenas Realty — Formación de Asesores</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;500;600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --sand: #F6EFD9;
+    --sand-deep: #EAD9A0;
+    --clay: #0B2A4A;
+    --clay-soft: #3D6690;
+    --terracotta: #D9A438;
+    --teal: #17A679;
+    --cream: #FBF9F4;
+    --line: rgba(11,42,74,0.15);
+  }
+  *{ box-sizing: border-box; margin:0; padding:0; }
+  html{ scroll-behavior: smooth; }
+  body{
+    background: var(--cream);
+    color: var(--clay);
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1,h2,h3{ font-family: 'Fraunces', serif; font-weight: 500; color: var(--clay); letter-spacing: -0.01em; }
+  a{ color: inherit; text-decoration: none; }
+  img{ max-width:100%; display:block; }
+  .wrap{ max-width: 1080px; margin: 0 auto; padding: 0 28px; }
+
+  /* NAV */
+  nav{
+    position: sticky; top:0; z-index: 10;
+    background: rgba(243,239,228,0.92);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--line);
+  }
+  nav .wrap{
+    display:flex; align-items:center; justify-content:space-between;
+    padding-top: 6px; padding-bottom: 6px;
+  }
+  .brand{ display:flex; align-items:center; gap:10px; }
+  .brand span{ font-family:'Fraunces',serif; font-size:1.1rem; }
+  nav ul{ display:flex; gap: 32px; list-style:none; }
+  nav ul li a{ font-size: 0.92rem; color: var(--clay-soft); }
+  nav ul li a:hover{ color: var(--terracotta); }
+
+  /* HERO */
+  header.hero{
+    padding: 90px 0 70px;
+    border-bottom: 1px solid var(--line);
+    position: relative;
+    overflow: hidden;
+  }
+  header.hero::before{
+    content:"";
+    position: absolute;
+    right: -140px; top: -140px;
+    width: 420px; height: 420px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 35%, var(--sand-deep), transparent 70%);
+    opacity: 0.9;
+  }
+  .hero-inner{ max-width: 620px; position: relative; }
+  .eyebrow-line{ display:flex; align-items:center; gap: 14px; margin-bottom: 26px; }
+  .eyebrow-line .dash{ width: 40px; height: 1px; background: var(--terracotta); }
+  .eyebrow-line span{ font-size: 0.85rem; color: var(--clay-soft); }
+  h1.headline{ font-size: clamp(2.2rem, 4.8vw, 3.2rem); line-height: 1.08; margin-bottom: 22px; }
+  .hero p.lede{ font-size: 1.05rem; color: var(--clay-soft); max-width: 460px; margin-bottom: 12px; }
+  .hero-stats{ display:flex; gap: 40px; margin-top: 28px; }
+  .hero-stat .num{ font-family:'Fraunces',serif; font-size: 2rem; color: var(--terracotta); }
+  .hero-stat .label{ font-size: 0.82rem; color: var(--clay-soft); }
+
+  /* PROGRESS BAR */
+  .progress-wrap{ padding: 0 0 50px; border-bottom: 1px solid var(--line); }
+  .progress-bar-outer{ height: 6px; background: var(--line); border-radius: 3px; margin-top: 14px; }
+  .progress-bar-inner{ height: 100%; background: var(--terracotta); border-radius: 3px; transition: width 0.4s; }
+  .progress-text{ font-size: 0.85rem; color: var(--clay-soft); }
+
+  /* MODULE GRID */
+  .section{ padding: 70px 0; }
+  .section-head{ margin-bottom: 48px; }
+  .section-head h2{ font-size: clamp(1.6rem, 3vw, 2.1rem); }
+  .module-grid{ display:grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; }
+  .module-card{
+    border: 1px solid var(--line);
+    background: var(--cream);
+    padding: 28px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+  }
+  .module-card:hover{ transform: translateY(-3px); box-shadow: 0 10px 24px rgba(11,42,74,0.12); }
+  .module-card .num{ font-family:'Fraunces',serif; font-size: 2.4rem; color: var(--sand-deep); display:block; margin-bottom: 4px; }
+  .module-card h3{ font-size: 1.15rem; margin-bottom: 8px; }
+  .module-card .meta{ font-size: 0.82rem; color: var(--clay-soft); }
+  .module-card .status{
+    position: absolute; top: 20px; right: 20px;
+    width: 12px; height: 12px; border-radius: 50%;
+    border: 2px solid var(--line);
+  }
+  .module-card .status.done{ background: var(--teal); border-color: var(--teal); }
+  .module-card .status.started{ background: var(--terracotta); border-color: var(--terracotta); }
+
+  /* MODULE DETAIL */
+  #module-detail{ display:none; }
+  #module-detail.active{ display:block; }
+  .detail-back{
+    display:inline-flex; align-items:center; gap:6px;
+    color: var(--clay-soft); font-size:0.9rem;
+    margin-bottom: 32px; cursor:pointer;
+  }
+  .detail-back:hover{ color: var(--terracotta); }
+  .lesson-list{ list-style:none; counter-reset: lesson; }
+  .lesson-item{
+    counter-increment: lesson;
+    padding: 22px 0;
+    border-top: 1px solid var(--line);
+    display:grid;
+    grid-template-columns: 40px 1fr auto;
+    gap: 16px;
+    align-items: center;
+  }
+  .lesson-item:last-child{ border-bottom: 1px solid var(--line); }
+  .lesson-item::before{
+    content: counter(lesson, decimal-leading-zero);
+    font-family:'Fraunces',serif;
+    color: var(--terracotta);
+    font-size: 0.9rem;
+  }
+  .lesson-item .title{ font-weight: 500; }
+  .lesson-item .check{
+    width: 24px; height: 24px; border-radius: 50%;
+    border: 2px solid var(--line);
+  }
+  .lesson-item .check.done{ background: var(--teal); border-color: var(--teal); }
+  .btn{
+    display:inline-block;
+    padding: 13px 26px;
+    font-size: 0.94rem;
+    border-radius: 2px;
+    transition: all 0.2s;
+    border: none;
+    cursor: pointer;
+    font-family: 'Work Sans', sans-serif;
+  }
+  .btn-primary{ background: var(--clay); color: var(--cream); }
+  .btn-primary:hover{ background: var(--terracotta); }
+  .btn-ghost{ border: 1px solid var(--clay); color: var(--clay); background: transparent; }
+  .btn-ghost:hover{ border-color: var(--terracotta); color: var(--terracotta); }
+
+  /* LESSON CONTENT */
+  #lesson-view{ display:none; }
+  #lesson-view.active{ display:block; }
+  .lesson-content{
+    max-width: 720px;
+    line-height: 1.75;
+  }
+  .lesson-content h1{ font-size: 1.8rem; margin-bottom: 12px; }
+  .lesson-content h2{ font-size: 1.3rem; margin: 32px 0 12px; padding-top: 24px; border-top: 1px solid var(--line); }
+  .lesson-content h3{ font-size: 1.1rem; margin: 24px 0 8px; color: var(--clay-soft); }
+  .lesson-content p{ margin-bottom: 14px; color: var(--clay-soft); }
+  .lesson-content table{ width:100%; border-collapse: collapse; margin: 18px 0; font-size: 0.9rem; }
+  .lesson-content table th{ background: var(--sand); text-align:left; padding: 10px 14px; font-weight:600; border-bottom: 2px solid var(--line); }
+  .lesson-content table td{ padding: 10px 14px; border-bottom: 1px solid var(--line); color: var(--clay-soft); }
+  .lesson-content blockquote{ border-left: 3px solid var(--terracotta); padding: 10px 18px; margin: 18px 0; background: var(--sand); font-style: italic; }
+  .lesson-content strong{ color: var(--clay); }
+  .lesson-content hr{ border: none; border-top: 1px solid var(--line); margin: 30px 0; }
+
+  /* QUIZ */
+  .quiz-question{ margin-bottom: 32px; padding-bottom: 24px; border-bottom: 1px solid var(--line); }
+  .quiz-question .q{ font-weight: 600; margin-bottom: 12px; }
+  .quiz-option{
+    display:block; padding: 10px 16px; margin-bottom: 6px;
+    border: 1px solid var(--line);
+    cursor: pointer;
+    font-size: 0.92rem;
+    transition: background 0.15s;
+  }
+  .quiz-option:hover{ background: var(--sand); }
+  .quiz-option.selected{ border-color: var(--clay); background: var(--sand); }
+  .quiz-option.correct{ border-color: var(--teal); background: rgba(23,166,121,0.1); }
+  .quiz-option.wrong{ border-color: #c44; background: rgba(204,68,68,0.08); }
+  .quiz-feedback{ margin-top: 8px; font-size: 0.85rem; color: var(--clay-soft); font-style: italic; display:none; }
+  .quiz-feedback.show{ display:block; }
+  .quiz-score{ font-family:'Fraunces',serif; font-size: 1.4rem; margin: 24px 0; }
+
+  /* FOOTER */
+  footer{ padding: 50px 0; border-top: 1px solid var(--line); text-align: center; }
+  footer p{ color: var(--clay-soft); font-size: 0.85rem; }
+
+  @media (max-width: 760px){
+    .hero-stats{ gap: 24px; }
+    .module-grid{ grid-template-columns: 1fr; }
+    .lesson-item{ grid-template-columns: 30px 1fr 24px; }
+  }
+
+  .hidden{ display:none !important; }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="brand"><span>Academia ARG</span></div>
+    <ul>
+      <li><a href="/">← Arenas Realty Group</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- LANDING -->
+<div id="landing">
+  <header class="hero">
+    <div class="wrap">
+      <div class="hero-inner">
+        <div class="eyebrow-line"><span class="dash"></span><span>Programa de formación</span></div>
+        <h1 class="headline">De cero a asesor estrella</h1>
+        <p class="lede">Formación completa para asesores inmobiliarios sin experiencia previa. 100% en línea, a su ritmo, con el estándar Arenas Realty Group.</p>
+        <div class="hero-stats">
+          <div class="hero-stat"><span class="num">10</span><span class="label">Módulos</span></div>
+          <div class="hero-stat"><span class="num">44h</span><span class="label">Carga total</span></div>
+          <div class="hero-stat"><span class="num">8</span><span class="label">Semanas</span></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="progress-wrap"><div class="wrap">
+    <span class="progress-text" id="progress-label">Progreso: 0 de 10 módulos completados</span>
+    <div class="progress-bar-outer"><div class="progress-bar-inner" id="progress-bar" style="width:0%"></div></div>
+  </div></div>
+
+  <div class="section"><div class="wrap">
+    <div class="section-head"><h2>Módulos del programa</h2></div>
+    <div class="module-grid" id="module-grid"></div>
+  </div></div>
+</div>
+
+<!-- MODULE DETAIL -->
+<div id="module-detail"><div class="wrap section">
+  <a class="detail-back" onclick="showLanding()">← Volver a módulos</a>
+  <h2 id="detail-title"></h2>
+  <p id="detail-desc" style="color:var(--clay-soft);margin-bottom:32px;"></p>
+  <h3 style="margin-bottom:16px;">Lecciones</h3>
+  <ul class="lesson-list" id="lesson-list"></ul>
+  <div style="margin-top:32px;">
+    <button class="btn btn-primary" id="btn-quiz" onclick="startQuiz()">Iniciar evaluación</button>
+  </div>
+</div></div>
+
+<!-- LESSON VIEW -->
+<div id="lesson-view"><div class="wrap section">
+  <a class="detail-back" onclick="backToModule()">← Volver al módulo</a>
+  <div class="lesson-content" id="lesson-content"></div>
+</div></div>
+
+<footer><div class="wrap">
+  <p>Arenas Realty Group — Academia de Formación</p>
+</div></footer>
+
+<script>
+const MODULES = [
+  {id:1, file:'Modulo1_Bienvenida_Arenas_Realty.md', title:'Bienvenida y cultura Arenas Realty', hours:'2h', lessons:6},
+  {id:2, file:'Modulo2_Fundamentos_Mercado.md', title:'Fundamentos y mercado inmobiliario venezolano', hours:'5h', lessons:6},
+  {id:3, file:'Modulo3_Marco_Legal.md', title:'Marco legal y documentación', hours:'6h', lessons:6},
+  {id:4, file:'Modulo4_Captacion_Arenas_Realty.md', title:'Captación de propiedades', hours:'6h', lessons:7},
+  {id:5, file:'Modulo5_Valuacion_Precio.md', title:'Valuación y fijación de precio', hours:'4h', lessons:5},
+  {id:6, file:'Modulo6_Marketing_Marca_Personal.md', title:'Marketing digital y marca personal', hours:'5h', lessons:6},
+  {id:7, file:'Modulo7_Compradores.md', title:'Prospección de compradores', hours:'4h', lessons:5},
+  {id:8, file:'Modulo8_Negociacion_Cierre.md', title:'Negociación y cierre', hours:'5h', lessons:5},
+  {id:9, file:'Modulo9_Comisiones_CRM.md', title:'Comisiones, administración y CRM', hours:'4h', lessons:5},
+  {id:10, file:'Modulo10_Etica_Antifraude.md', title:'Ética, antifraude y servicio al cliente', hours:'3h', lessons:5}
+];
+
+const PROGRESS_KEY = 'arg_academia_progress';
+let currentModule = null;
+let currentQuiz = null;
+let quizAnswers = {};
+
+function getProgress(){
+  try { return JSON.parse(localStorage.getItem(PROGRESS_KEY)) || {}; }
+  catch(e) { return {}; }
+}
+function saveProgress(p){
+  localStorage.setItem(PROGRESS_KEY, JSON.stringify(p));
+}
+function moduleProgress(id){
+  const p = getProgress();
+  return p['m'+id] || null; // null, 'started', or score number
+}
+
+function updateUI(){
+  const p = getProgress();
+  let done = 0;
+  MODULES.forEach(m => { if (typeof p['m'+m.id] === 'number') done++; });
+  document.getElementById('progress-label').textContent = `Progreso: ${done} de ${MODULES.length} módulos completados`;
+  document.getElementById('progress-bar').style.width = (done/MODULES.length*100)+'%';
+}
+
+function renderModuleCards(){
+  const grid = document.getElementById('module-grid');
+  grid.innerHTML = MODULES.map(m => {
+    const mp = moduleProgress(m.id);
+    let statusClass = '';
+    if (typeof mp === 'number') statusClass = 'done';
+    else if (mp === 'started') statusClass = 'started';
+    return `<div class="module-card" onclick="openModule(${m.id})">
+      <span class="num">${String(m.id).padStart(2,'0')}</span>
+      <span class="status ${statusClass}"></span>
+      <h3>${m.title}</h3>
+      <span class="meta">${m.hours} · ${m.lessons} lecciones</span>
+    </div>`;
+  }).join('');
+}
+
+function showLanding(){
+  document.getElementById('landing').classList.remove('hidden');
+  document.getElementById('module-detail').classList.remove('active');
+  document.getElementById('lesson-view').classList.remove('active');
+  currentModule = null;
+  currentQuiz = null;
+  updateUI();
+  renderModuleCards();
+}
+
+function openModule(id){
+  currentModule = MODULES.find(m => m.id === id);
+  if (!currentModule) return;
+  
+  document.getElementById('landing').classList.add('hidden');
+  document.getElementById('module-detail').classList.add('active');
+  document.getElementById('lesson-view').classList.remove('active');
+  
+  document.getElementById('detail-title').textContent = `Módulo ${currentModule.id} — ${currentModule.title}`;
+  document.getElementById('detail-desc').textContent = `${currentModule.hours} · ${currentModule.lessons} lecciones`;
+  
+  const mp = moduleProgress(id);
+  if (typeof mp === 'number') {
+    document.getElementById('btn-quiz').textContent = `Ver resultados (${mp}%)`;
+  } else {
+    document.getElementById('btn-quiz').textContent = 'Iniciar evaluación';
+  }
+
+  // Mark as started
+  if (!mp) {
+    const p = getProgress();
+    p['m'+id] = 'started';
+    saveProgress(p);
+    updateUI();
+  }
+  
+  // Load module to extract lessons
+  loadModuleLessons(currentModule.file).then(lessons => {
+    const list = document.getElementById('lesson-list');
+    list.innerHTML = lessons.map((l, i) => `
+      <li class="lesson-item" onclick="viewLesson(${i})" style="cursor:pointer;">
+        <span class="title">${l.title}</span>
+        <span class="check"></span>
+      </li>
+    `).join('');
+    window._currentLessons = lessons;
+  });
+}
+
+async function loadModuleLessons(filename){
+  const resp = await fetch(filename);
+  const md = await resp.text();
+  window._currentMd = md;
+  
+  const lessons = [];
+  const lines = md.split('\n');
+  for (const line of lines) {
+    const m = line.match(/^Lección\s+[\d.]+\s*[—–-]\s*(.+)/);
+    if (m) lessons.push({ title: m[1].trim(), line: line });
+  }
+  return lessons;
+}
+
+function viewLesson(idx){
+  if (!window._currentLessons || !window._currentMd) return;
+  const lessons = window._currentLessons;
+  const md = window._currentMd;
+  const lines = md.split('\n');
+  
+  // Find lesson boundaries
+  const lessonLine = lessons[idx].line;
+  let startLine = lines.findIndex(l => l.trim() === lessonLine.trim());
+  if (startLine === -1) startLine = lines.findIndex(l => l.includes(lessonLine.trim().substring(0, 30)));
+  
+  let endLine = lines.length;
+  if (idx + 1 < lessons.length) {
+    const nextLine = lessons[idx+1].line;
+    endLine = lines.findIndex((l, i) => i > startLine && l.trim() === nextLine.trim());
+    if (endLine === -1) endLine = lines.findIndex((l, i) => i > startLine && l.includes(nextLine.trim().substring(0, 30)));
+  }
+  if (endLine === -1) endLine = lines.length;
+  
+  // Also stop at "Evaluación" or "---" if before next lesson
+  for (let i = startLine + 1; i < endLine; i++) {
+    if (lines[i].trim().startsWith('## Evaluación') || lines[i].trim().startsWith('**Evaluación')) {
+      endLine = i;
+      break;
+    }
+  }
+  
+  const lessonMd = lines.slice(startLine, endLine).join('\n');
+  
+  document.getElementById('module-detail').classList.remove('active');
+  document.getElementById('lesson-view').classList.add('active');
+  
+  // Render with marked
+  const html = marked.parse(lessonMd);
+  document.getElementById('lesson-content').innerHTML = html;
+  document.getElementById('lesson-content').querySelectorAll('table').forEach(t => {
+    if (!t.parentElement.classList.contains('table-wrap')) {
+      const wrap = document.createElement('div');
+      wrap.style.cssText = 'overflow-x:auto;margin:18px 0;';
+      t.parentNode.insertBefore(wrap, t);
+      wrap.appendChild(t);
+    }
+  });
+}
+
+async function loadModuleContent(filename){
+  const resp = await fetch(filename);
+  const md = await resp.text();
+  
+  // Extract lesson titles
+  const lessons = [];
+  const lines = md.split('\n');
+  for (const line of lines) {
+    const m = line.match(/^Lección\s+[\d.]+\s*[—–-]\s*(.+)/);
+    if (m) lessons.push({ title: m[1].trim() });
+  }
+  return lessons;
+}
+
+function backToModule(){
+  if (!currentModule) return showLanding();
+  document.getElementById('lesson-view').classList.remove('active');
+  document.getElementById('module-detail').classList.add('active');
+}
+
+async function loadModuleContent(filename){
+  const resp = await fetch(filename);
+  const md = await resp.text();
+  
+  // Extract lesson titles
+  const lessons = [];
+  const lines = md.split('\n');
+  for (const line of lines) {
+    const m = line.match(/^Lección\s+[\d.]+\s*[—–-]\s*(.+)/);
+    if (m) lessons.push({ title: m[1].trim() });
+  }
+  return lessons;
+}
+
+async function startQuiz(){
+  if (!currentModule) return;
+  const mp = moduleProgress(currentModule.id);
+  if (typeof mp === 'number') {
+    // Already done, show results
+    parseAndShowQuiz();
+    return;
+  }
+  
+  parseAndShowQuiz();
+}
+
+async function parseAndShowQuiz(){
+  const resp = await fetch(currentModule.file);
+  const md = await resp.text();
+  
+  // Extract quiz questions
+  const questions = [];
+  const lines = md.split('\n');
+  let inQuiz = false;
+  let inAnswers = false;
+  let currentQ = null;
+  let answerMap = {};
+  
+  // First pass: extract answer key from table
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i].trim();
+    if (line.startsWith('### 📋') || line.startsWith('### Tabla de respuestas') || line.includes('Tabla de respuestas')) {
+      inAnswers = true;
+      continue;
+    }
+    if (inAnswers && line.startsWith('|') && !line.includes('---')) {
+      const cells = line.split('|').map(c => c.trim()).filter(Boolean);
+      if (cells.length >= 2 && /^\d+$/.test(cells[0])) {
+        answerMap[cells[0]] = cells[1].toLowerCase().trim();
+      }
+    }
+    if (inAnswers && line === '' && answerMap['1']) {
+      inAnswers = false;
+    }
+  }
+  
+  // Second pass: extract questions
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i].trim();
+    if (line.startsWith('## Evaluación') || line.startsWith('**Evaluación')) {
+      inQuiz = true;
+      continue;
+    }
+    if (inQuiz && line.startsWith('### 📋')) break;
+    if (inQuiz && line.startsWith('Tabla de respuestas')) break;
+    if (inQuiz && line.startsWith('---')) continue;
+    
+    if (inQuiz && /^\d+\.\s/.test(line)) {
+      if (currentQ) questions.push(currentQ);
+      currentQ = { q: line.replace(/^\d+\.\s*/, ''), options: [], correct: null};
+    }
+    if (currentQ && /^[a-d]\)\s/.test(line)) {
+      currentQ.options.push(line.trim());
+    }
+    if (currentQ && line.startsWith('> 💡 Refuerzo:')) {
+      currentQ.refuerzo = line.replace('> 💡 Refuerzo:', '').trim();
+    }
+  }
+  if (currentQ) questions.push(currentQ);
+  
+  // Map correct answers
+  questions.forEach((q, i) => {
+    q.qnum = i + 1;
+    const ans = answerMap[String(i+1)];
+    if (ans) {
+      q.correct = ans;
+    }
+  });
+  
+  currentQuiz = questions;
+  quizAnswers = {};
+  
+  // Render quiz
+  document.getElementById('module-detail').classList.remove('active');
+  document.getElementById('lesson-view').classList.add('active');
+  
+  const mp = moduleProgress(currentModule.id);
+  let html = `<h2>Evaluación — ${currentModule.title}</h2>`;
+  html += `<p style="color:var(--clay-soft);margin-bottom:24px;">${questions.length} preguntas. Nota mínima: 80% para aprobar.</p>`;
+  
+  questions.forEach((q, qi) => {
+    html += `<div class="quiz-question" id="qq-${qi}">
+      <p class="q">${q.qnum}. ${q.q}</p>`;
+    q.options.forEach((opt, oi) => {
+      const letter = String.fromCharCode(97+oi);
+      html += `<div class="quiz-option" id="opt-${qi}-${oi}" onclick="selectOption(${qi}, ${oi}, '${letter}')">${opt}</div>`;
+    });
+    html += `<div class="quiz-feedback" id="fb-${qi}"></div>`;
+    html += `</div>`;
+  });
+  
+  html += `<button class="btn btn-primary" onclick="gradeQuiz()">Calificar</button>
+    <div class="quiz-score" id="quiz-score"></div>`;
+  
+  document.getElementById('lesson-content').innerHTML = html;
+}
+
+function selectOption(qi, oi, letter){
+  if (quizAnswers[qi] !== undefined) return; // already answered
+  quizAnswers[qi] = letter;
+  
+  const qq = document.getElementById('qq-'+qi);
+  qq.querySelectorAll('.quiz-option').forEach(el => el.classList.remove('selected'));
+  document.getElementById('opt-'+qi+'-'+oi).classList.add('selected');
+}
+
+function gradeQuiz(){
+  if (!currentQuiz) return;
+  let correct = 0;
+  
+  currentQuiz.forEach((q, qi) => {
+    const fb = document.getElementById('fb-'+qi);
+    const opts = document.getElementById('qq-'+qi).querySelectorAll('.quiz-option');
+    
+    if (quizAnswers[qi] === q.correct) {
+      correct++;
+      if (quizAnswers[qi] !== undefined) {
+        const idx = q.correct.charCodeAt(0) - 97;
+        document.getElementById('opt-'+qi+'-'+idx).classList.add('correct');
+      }
+    } else if (quizAnswers[qi] !== undefined) {
+      const idx = quizAnswers[qi].charCodeAt(0) - 97;
+      document.getElementById('opt-'+qi+'-'+idx).classList.add('wrong');
+      const cidx = q.correct.charCodeAt(0) - 97;
+      document.getElementById('opt-'+qi+'-'+cidx).classList.add('correct');
+    }
+    
+    fb.textContent = q.refuerzo || '';
+    fb.classList.add('show');
+    
+    // Disable all options
+    opts.forEach(o => o.style.pointerEvents = 'none');
+  });
+  
+  const pct = Math.round(correct / currentQuiz.length * 100);
+  const passed = pct >= 80;
+  
+  document.getElementById('quiz-score').innerHTML = `
+    <p>Resultado: <strong>${correct}/${currentQuiz.length} (${pct}%)</strong></p>
+    <p style="color:${passed ? 'var(--teal)' : '#c44'}">${passed ? '✓ Aprobado' : '✗ No alcanza el 80%. Repase y vuelva a intentar.'}</p>
+  `;
+  
+  // Save progress
+  if (passed) {
+    const p = getProgress();
+    p['m'+currentModule.id] = pct;
+    saveProgress(p);
+    updateUI();
+    document.getElementById('btn-quiz').textContent = `Ver resultados (${pct}%)`;
+  }
+}
+
+// Init
+updateUI();
+renderModuleCards();
+</script>
+
+</body>
+</html>
