@@ -748,17 +748,18 @@
     }
 
     // ACADEMIA SPA ROUTER
-    (function(){
-      var isAcademia = window.location.pathname.startsWith('/academia');
-      var mainEls = document.querySelectorAll('nav, header.hero, .section, footer.contact, .whatsapp-float, .chatbot-tag');
-      var acadRoot = document.getElementById('academia-root');
+        (function(){
+          var isAcademia = window.location.pathname.startsWith('/academia');
+          var acadRoot = document.getElementById('academia-root');
     
-      if (isAcademia) {
-        mainEls.forEach(function(el){ el.style.display = 'none'; });
-        if (acadRoot) acadRoot.style.display = 'block';
-        document.title = 'Academia ARG — Formación de Asesores';
-      }
-    })();
+          if (isAcademia && acadRoot) {
+            // Hide main site elements (NOT inside academia-root)
+            var mainEls = document.querySelectorAll('body > nav, header.hero, body > .section, footer.contact, .whatsapp-float, .chatbot-tag');
+            mainEls.forEach(function(el){ el.style.display = 'none'; });
+            acadRoot.style.display = 'block';
+            document.title = 'Academia ARG — Formación de Asesores';
+          }
+        })();
   </script>
 
   <!-- ACADEMIA -->
