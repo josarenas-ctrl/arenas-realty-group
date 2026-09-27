@@ -62,22 +62,71 @@ function normalizarNumero(texto) {
   return isNaN(numero) ? null : numero;
 }
 
+// Ciudades cuya pertenencia estatal es conocida. Si un anuncio menciona una de
+// estas ciudades pero dice otro estado, se corrige automáticamente (ej. "Los
+// Teques, Distrito Capital" → Miranda, porque Los Teques está en Miranda).
+const CIUDAD_A_ESTADO = new Map([
+  // Miranda — Altos Mirandinos y área metropolitana
+  ["los teques", "Miranda"],
+  ["san antonio de los altos", "Miranda"],
+  ["carrizal", "Miranda"],
+  ["san diego de los altos", "Miranda"],
+  ["san josé de los altos", "Miranda"],
+  // Miranda — Valles del Tuy
+  ["charallave", "Miranda"],
+  ["cúa", "Miranda"],
+  ["ocumare del tuy", "Miranda"],
+  ["santa teresa del tuy", "Miranda"],
+  ["santa lucía", "Miranda"],
+  // Miranda — Guarenas-Guatire
+  ["guarenas", "Miranda"],
+  ["guatire", "Miranda"],
+  // Miranda — Barlovento
+  ["higuerote", "Miranda"],
+  ["río chico", "Miranda"],
+  // La Guaira
+  ["la guaira", "La Guaira"],
+  ["catia la mar", "La Guaira"],
+  ["maiquetía", "La Guaira"],
+  ["macuto", "La Guaira"],
+  ["caraballeda", "La Guaira"],
+  ["naiguatá", "La Guaira"],
+]);
+
 function extraerEstado(ubicacion) {
   // "ubicacion" viene como "Ciudad, Estado" (así la dejó el scraper). El
   // estado es lo que queda después de la última coma.
   if (!ubicacion) return null;
 
+  const ubicacionLower = ubicacion.trim().toLowerCase();
+
+  // Corrección por ciudad: si el anuncio menciona una ciudad de ubicación
+  // conocida, forzar el estado correcto aunque el texto diga otra cosa
+  // (ej. "Los Teques, Distrito Capital" → Miranda).
+  for (const [ciudad, estadoCorrecto] of CIUDAD_A_ESTADO) {
+    if (ubicacionLower.includes(ciudad)) return estadoCorrecto;
+  }
+
   // Caso especial: algunos anuncios de InmueblesConLupa solo traen el estado
   // sin ciudad ("en Distrito Capital") — sin coma. Si la ubicación completa
   // coincide con un estado permitido, es ese estado.
-  const directo = ubicacion.trim().toLowerCase();
   for (const estado of ESTADOS_PERMITIDOS) {
-    if (directo === estado.toLowerCase()) return estado;
+    if (ubicacionLower === estado.toLowerCase()) return estado;
   }
 
   if (!ubicacion.includes(",")) return null;
   const partes = ubicacion.split(",");
-  return partes[partes.length - 1].trim();
+  const estadoRaw = partes[partes.length - 1].trim();
+
+  // Verificación final: si el estado extraído no es uno de los permitidos,
+  // intentar detectar por ciudad conocida como último recurso.
+  if (ESTADOS_PERMITIDOS.includes(estadoRaw)) return estadoRaw;
+
+  for (const [ciudad, estadoCorrecto] of CIUDAD_A_ESTADO) {
+    if (ubicacionLower.includes(ciudad)) return estadoCorrecto;
+  }
+
+  return null;
 }
 
 function limpiarZona(zona) {
