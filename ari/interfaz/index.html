@@ -255,7 +255,7 @@
         }
 
         function renderChipsEstado(fichas) {
-              const estados = [...new Set(fichas.map(f => extraerEstado(f.ubicacion)).filter(Boolean))].sort();
+              const estados = [...new Set(fichas.map(f => f._estado || extraerEstado(f.ubicacion)).filter(Boolean))].sort();
               const contenedor = document.getElementById("filtros-estado");
               contenedor.innerHTML = "";
               if (estados.length === 0) { contenedor.style.display = "none"; return; }
@@ -354,7 +354,7 @@
       let fichas = fichasOriginal;
 
       if (filtroSemaforo !== "todos") fichas = fichas.filter(f => f.semaforo === filtroSemaforo);
-      if (filtroEstado !== "todos") fichas = fichas.filter(f => extraerEstado(f.ubicacion) === filtroEstado);
+      if (filtroEstado !== "todos") fichas = fichas.filter(f => (f._estado || extraerEstado(f.ubicacion)) === filtroEstado);
       if (filtroOperacion !== "todos") fichas = fichas.filter(f => extraerOperacion(f) === filtroOperacion);
       if (filtroTipo !== "todos") fichas = fichas.filter(f => f.tipo === filtroTipo);
       if (filtroZona !== "todos") fichas = fichas.filter(f => f.zona === filtroZona);
@@ -423,7 +423,7 @@
                             </div>
                             <h3>${f.titulo}</h3>
                             <div class="precio">${formatoUSD(parseInt(String(f.precio_texto || "").replace(/[^\\d]/g, ""), 10) || null)}</div>
-                            <div class="detalle">${specs || "Sin specs detalladas"} · ${[f.zona, extraerEstado(f.ubicacion)].filter(Boolean).join(", ") || f.ubicacion || ""}</div>
+                            <div class="detalle">${specs || "Sin specs detalladas"} · ${[f.zona, f._estado || extraerEstado(f.ubicacion)].filter(Boolean).join(", ") || f.ubicacion || ""}</div>
                             ${m2linea}
                             ${dupLinea}
                             ${amenitiesHtml}
