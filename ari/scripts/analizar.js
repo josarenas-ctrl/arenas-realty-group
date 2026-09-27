@@ -35,7 +35,7 @@ const UMBRAL_SOBREVALORADA = 0.15; // 15% por encima del promedio = rojo
 // traer resultados de otros estados (el buscador de Bienes Online no filtra
 // por estado de verdad), y no queremos que contaminen ni el promedio ni la
 // interfaz.
-const ESTADOS_PERMITIDOS = ["Distrito Capital", "Miranda", "La Guaira"];
+const ESTADOS_PERMITIDOS = ["Distrito Capital", "Miranda", "Vargas"];
 
 // Filtro de sanidad: precios o metros absurdamente bajos casi siempre son
 // error de carga del anuncio original (el dueño no puso el precio real,
