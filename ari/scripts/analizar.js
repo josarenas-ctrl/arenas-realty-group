@@ -100,34 +100,41 @@ function extraerEstado(ubicacion) {
 
   const ubicacionLower = ubicacion.trim().toLowerCase();
 
-  // Corrección por ciudad: si el anuncio menciona una ciudad de ubicación
-  // conocida, forzar el estado correcto aunque el texto diga otra cosa
-  // (ej. "Los Teques, Distrito Capital" → Miranda).
-  for (const [ciudad, estadoCorrecto] of CIUDAD_A_ESTADO) {
-    if (ubicacionLower.includes(ciudad)) return estadoCorrecto;
+    // Corrección por ciudad: si la ZONA (todo antes de la última coma)
+    // es o empieza con una ciudad de ubicación conocida, forzar el estado
+    // correcto. Así evitamos falsos positivos cuando la descripción dice
+    // "cerca de Los Teques" pero la propiedad está en otro lado.
+    const partesUbicacion = ubicacion.includes(",") ? ubicacion.split(",") : [ubicacion];
+    const zonaRaw = (partesUbicacion.length > 1
+      ? partesUbicacion.slice(0, -1).join(",").trim().toLowerCase()
+      : partesUbicacion[0].trim().toLowerCase());
+
+    for (const [ciudad, estadoCorrecto] of CIUDAD_A_ESTADO) {
+      if (zonaRaw === ciudad) return estadoCorrecto;
+      if (zonaRaw.startsWith(ciudad + ",") || zonaRaw.startsWith(ciudad + " -")) return estadoCorrecto;
+    }
+
+    // Caso especial: algunos anuncios de InmueblesConLupa solo traen el estado
+    // sin ciudad ("en Distrito Capital") — sin coma. Si la ubicación completa
+    // coincide con un estado permitido, es ese estado.
+    for (const estado of ESTADOS_PERMITIDOS) {
+      if (ubicacionLower === estado.toLowerCase()) return estado;
+    }
+
+    if (!ubicacion.includes(",")) return null;
+    const estadoRaw = partesUbicacion[partesUbicacion.length - 1].trim();
+
+    // Verificación final: si el estado extraído no es uno de los permitidos,
+    // intentar detectar por ciudad conocida en la zona.
+    if (ESTADOS_PERMITIDOS.includes(estadoRaw)) return estadoRaw;
+
+    for (const [ciudad, estadoCorrecto] of CIUDAD_A_ESTADO) {
+      if (zonaRaw === ciudad || zonaRaw.startsWith(ciudad + ",") || zonaRaw.startsWith(ciudad + " -"))
+        return estadoCorrecto;
+    }
+
+    return null;
   }
-
-  // Caso especial: algunos anuncios de InmueblesConLupa solo traen el estado
-  // sin ciudad ("en Distrito Capital") — sin coma. Si la ubicación completa
-  // coincide con un estado permitido, es ese estado.
-  for (const estado of ESTADOS_PERMITIDOS) {
-    if (ubicacionLower === estado.toLowerCase()) return estado;
-  }
-
-  if (!ubicacion.includes(",")) return null;
-  const partes = ubicacion.split(",");
-  const estadoRaw = partes[partes.length - 1].trim();
-
-  // Verificación final: si el estado extraído no es uno de los permitidos,
-  // intentar detectar por ciudad conocida como último recurso.
-  if (ESTADOS_PERMITIDOS.includes(estadoRaw)) return estadoRaw;
-
-  for (const [ciudad, estadoCorrecto] of CIUDAD_A_ESTADO) {
-    if (ubicacionLower.includes(ciudad)) return estadoCorrecto;
-  }
-
-  return null;
-}
 
 function limpiarZona(zona) {
   if (!zona) return null;
