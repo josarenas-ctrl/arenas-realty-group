@@ -176,7 +176,17 @@ function extraerEstado(ubicacion) {
     // Verificación final: si el estado extraído es uno de los permitidos,
     // usarlo directamente. La ubicacion del anuncio es más fiable que
     // Nominatim (que busca por nombre de zona sin coordenadas).
-    if (ESTADOS_PERMITIDOS.includes(estadoRaw)) return estadoRaw;
+    if (ESTADOS_PERMITIDOS.includes(estadoRaw)) {
+      // CORRECCIÓN: Bienes Online pone "Distrito Capital" por defecto cuando
+      // no conoce el estado real. Si el anuncio declara DC pero la ciudad es
+      // conocida por Nominatim como de Miranda/Vargas, corregir al estado real.
+      if (estadoRaw === "Distrito Capital") {
+        const ciudadParaVerificar = zonaRaw.split(/[,—–-]/)[0].trim();
+        const estadoReal = estadoDesdeCache(ciudadParaVerificar);
+        if (estadoReal && estadoReal !== "Distrito Capital") return estadoReal;
+      }
+      return estadoRaw;
+    }
 
     // Solo si la ubicacion no da un estado válido, consultar Nominatim.
     const ciudadPrincipal = zonaRaw.split(/[,—–-]/)[0].trim();
@@ -195,7 +205,35 @@ function extraerEstado(ubicacion) {
           // "Altamira, Distrito Capital" → "Altamira"
           // "San Antonio de Los Altos, Miranda" → "San Antonio de Los Altos"
           if (!ubicacion || !ubicacion.includes(",")) return null;
-          return ubicacion.split(",")[0].trim();
+          const raw = ubicacion.split(",")[0].trim();
+          return limpiarMunicipio(raw);
+        }
+
+        function limpiarMunicipio(municipio) {
+          if (!municipio) return null;
+          let r = municipio.trim();
+
+          // El scraper de Bienes Online a veces mete el título completo en
+          // ubicación ("Acogedor Apartamento en Venta San Antonio de Los
+          // ALtos, Miranda"). Si empieza con palabra de título, el municipio
+          // real es lo que viene DESPUÉS de "en venta/alquiler/arriendo".
+          if (/^(acogedor|bello|bella|hermos[oa]|ampli[oa]|c[oó]mod[oa]|excelente|espectacular|extraordinari[oa]|lind[oa]|bonit[oa]|espl[eé]ndid[oa]|d[uú]plex|venta|alquiler|arriendo)/i.test(r)) {
+            const op = r.match(/\b(?:en\s+)?(venta|alquiler|arriendo|arrendamiento)\b/i);
+            if (op) {
+              const despues = r.slice(op.index + op[0].length).replace(/^[:\s—-]+/, "").trim();
+              if (despues) r = despues;
+            } else {
+              return null; // título sin ubicación reconocible
+            }
+          }
+
+          // Inglés → español
+          if (/^capital district$/i.test(r)) r = "Distrito Capital";
+
+          // Mayúsculas rotas ("ALtos")
+          r = r.replace(/\bALtos\b/g, "Altos");
+
+          return r.trim();
         }
 
         function limpiarZona(zona) {
