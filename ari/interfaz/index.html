@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- ari v2.1 -->
+<!-- ari v2.2 — sidebar + dropdowns + live counters -->
 <html lang="es">
 <head>
 <meta charset="UTF-8" />
@@ -32,156 +32,101 @@
     color: var(--texto);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   }
+
+  /* ── Header ── */
   header {
     background: var(--acento);
     color: #fff;
     padding: env(safe-area-inset-top, 0px) 16px 14px;
     position: sticky;
     top: 0;
+    z-index: 20;
+  }
+  header h1 { font-size: 18px; margin: 12px 0 2px; }
+  header p { margin: 0; font-size: 13px; opacity: 0.8; }
+
+  /* ── Layout ── */
+  .layout { display: flex; min-height: calc(100vh - 80px); }
+  .sidebar {
+    width: 280px; flex: none; background: #fff; border-right: 1px solid var(--borde);
+    padding: 16px; overflow-y: auto; position: sticky; top: 80px; height: calc(100vh - 80px);
     z-index: 10;
   }
-  header h1 {
-    font-size: 18px;
-    margin: 12px 0 2px;
-  }
-  header p {
-    margin: 0;
-    font-size: 13px;
-    opacity: 0.8;
-  }
-  .filtros {
-    display: flex;
-    gap: 8px;
-    overflow-x: auto;
-    padding: 12px 16px;
-    background: #fff;
-    border-bottom: 1px solid var(--borde);
-  }
-  #filtros-semaforo {
-    position: sticky;
-    top: 68px;
-    z-index: 9;
+  .main-area { flex: 1; min-width: 0; padding: 16px 20px 32px; max-width: 860px; margin: 0 auto; }
+
+  /* ── Semáforo chips (top) ── */
+  .semaforo-row {
+    display: flex; gap: 8px; flex-wrap: wrap; padding: 12px 16px; background: #fff;
+    border-bottom: 1px solid var(--borde); position: sticky; top: 68px; z-index: 9;
   }
   .chip {
-    flex: none;
-    padding: 6px 14px;
-    border-radius: 999px;
-    border: 1px solid var(--borde);
-    background: #fff;
-    font-size: 13px;
-    cursor: pointer;
-    white-space: nowrap;
+    flex: none; padding: 6px 14px; border-radius: 999px; border: 1px solid var(--borde);
+    background: #fff; font-size: 13px; cursor: pointer; white-space: nowrap; transition: all 0.15s;
   }
-  .chip.activo {
-    background: var(--acento);
-    color: #fff;
-    border-color: var(--acento);
+  .chip:hover { border-color: var(--acento); }
+  .chip.activo { background: var(--acento); color: #fff; border-color: var(--acento); }
+
+  /* ── Sidebar filters ── */
+  .sidebar h3 { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--texto-suave); margin: 16px 0 6px; }
+  .sidebar h3:first-child { margin-top: 0; }
+  .sidebar select, .sidebar input {
+    width: 100%; padding: 8px 10px; border: 1px solid var(--borde); border-radius: 6px;
+    font-size: 13px; font-family: inherit; color: var(--texto); background: #fff;
+    transition: border-color 0.15s; outline: none;
   }
-  main {
-    padding: 12px 16px 32px;
-    max-width: 720px;
-    margin: 0 auto;
+  .sidebar select:focus, .sidebar input:focus { border-color: var(--acento); box-shadow: 0 0 0 2px rgba(30,58,95,0.1); }
+  .precio-pair { display: flex; gap: 6px; align-items: center; }
+  .precio-pair input { width: 50%; }
+  .precio-pair span { font-size: 13px; color: var(--texto-suave); flex: none; }
+  .btn-reset {
+    width: 100%; margin-top: 16px; padding: 8px; border: 1px solid var(--borde);
+    border-radius: 6px; background: #fff; font-size: 13px; cursor: pointer; color: var(--texto-suave);
+    transition: all 0.15s;
   }
-  .resumen {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 12px;
-    flex-wrap: wrap;
-  }
-  .resumen span {
-    font-size: 12px;
-    padding: 4px 10px;
-    border-radius: 8px;
-    background: var(--gris-bg);
-    color: var(--texto-suave);
-  }
+  .btn-reset:hover { color: var(--rojo); border-color: var(--rojo); }
+
+  /* ── Cards ── */
+  .resumen { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
+  .resumen span { font-size: 12px; padding: 4px 10px; border-radius: 8px; background: var(--gris-bg); color: var(--texto-suave); }
   .card {
-    background: var(--card-bg);
-    border-radius: 12px;
-    padding: 14px;
-    margin-bottom: 10px;
+    background: var(--card-bg); border-radius: 12px; padding: 14px; margin-bottom: 10px;
     border: 1px solid var(--borde);
   }
-  .card-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 8px;
-  }
+  .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
   .badge {
-    font-size: 11px;
-    font-weight: 600;
-    padding: 3px 9px;
-    border-radius: 999px;
-    white-space: nowrap;
+    font-size: 11px; font-weight: 600; padding: 3px 9px; border-radius: 999px; white-space: nowrap;
   }
   .badge.verde { background: var(--verde-bg); color: var(--verde); }
   .badge.amarillo { background: var(--amarillo-bg); color: var(--amarillo); }
   .badge.rojo { background: var(--rojo-bg); color: var(--rojo); }
   .badge.sin_datos_suficientes { background: var(--gris-bg); color: var(--gris); }
-  .card h3 {
-    font-size: 15px;
-    margin: 8px 0 4px;
-    line-height: 1.3;
-  }
-  .precio {
-    font-size: 17px;
-    font-weight: 700;
-    color: var(--acento);
-  }
-  .detalle {
-    font-size: 13px;
-    color: var(--texto-suave);
-    margin-top: 4px;
-  }
-  .m2 {
-    font-size: 12px;
-    color: var(--texto-suave);
-    margin-top: 6px;
-  }
+  .card h3 { font-size: 15px; margin: 8px 0 4px; line-height: 1.3; }
+  .precio { font-size: 17px; font-weight: 700; color: var(--acento); }
+  .detalle { font-size: 13px; color: var(--texto-suave); margin-top: 4px; }
+  .m2 { font-size: 12px; color: var(--texto-suave); margin-top: 6px; }
   .m2 strong { color: var(--texto); }
-  .dup {
-    display: inline-block;
-    margin-top: 8px;
-    font-size: 11px;
-    background: #eef2ff;
-    color: #4338ca;
-    padding: 3px 8px;
-    border-radius: 6px;
-  }
-  .acciones {
-    margin-top: 10px;
-    display: flex;
-    gap: 8px;
-  }
-  .acciones a {
-      flex: 1;
-      text-align: center;
-      text-decoration: none;
-      font-size: 13px;
-      padding: 8px;
-      border-radius: 8px;
-      background: var(--acento);
-      color: #fff;
+  .dup { display: inline-block; margin-top: 8px; font-size: 11px; background: #eef2ff; color: #4338ca; padding: 3px 8px; border-radius: 6px; }
+  .acciones { margin-top: 10px; display: flex; gap: 8px; }
+  .acciones a { flex: 1; text-align: center; text-decoration: none; font-size: 13px; padding: 8px; border-radius: 8px; background: var(--acento); color: #fff; }
+  .condicion-tag { display: inline-block; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-left: 6px; }
+  .condicion-tag.impecable { background: #dbeafe; color: #1d4ed8; }
+  .condicion-tag.estandar { background: #f3f4f6; color: #6b7280; }
+  .condicion-tag.por_remodelar { background: #fef3c7; color: #b45309; }
+  .amenities { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
+  .amenity { font-size: 11px; padding: 2px 6px; border-radius: 4px; background: #f0fdf4; color: #166534; }
+  .vacio, .cargando { text-align: center; color: var(--texto-suave); padding: 40px 16px; font-size: 14px; }
+  .result-count { font-size: 12px; color: var(--texto-suave); margin-bottom: 8px; }
+
+  /* ── Mobile ── */
+  @media (max-width: 768px) {
+    .layout { flex-direction: column; }
+    .sidebar {
+      width: 100%; position: relative; top: 0; height: auto; border-right: none;
+      border-bottom: 1px solid var(--borde); padding: 12px 16px;
     }
-    .condicion-tag {
-      display: inline-block;
-      font-size: 11px;
-      font-weight: 600;
-      padding: 2px 8px;
-      border-radius: 4px;
-      margin-left: 6px;
-    }
-    .condicion-tag.impecable { background: #dbeafe; color: #1d4ed8; }
-    .condicion-tag.estandar { background: #f3f4f6; color: #6b7280; }
-    .condicion-tag.por_remodelar { background: #fef3c7; color: #b45309; }
-    .amenities { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
-    .amenity { font-size: 11px; padding: 2px 6px; border-radius: 4px; background: #f0fdf4; color: #166534; }
-  .vacio, .cargando {
-    text-align: center;
-    color: var(--texto-suave);
-    padding: 40px 16px;
-    font-size: 14px;
+    .sidebar h3 { margin-top: 8px; }
+    .main-area { padding: 12px 12px 32px; }
   }
 </style>
 </head>
@@ -193,7 +138,7 @@
   <p id="subtitulo">Cargando...</p>
 </header>
 
-<div class="filtros" id="filtros-semaforo">
+<div class="semaforo-row" id="filtros-semaforo">
   <button class="chip activo" data-filtro="todos">Todas</button>
   <button class="chip" data-filtro="verde">🟢 Gangas</button>
   <button class="chip" data-filtro="amarillo">🟡 Precio normal</button>
@@ -201,334 +146,199 @@
   <button class="chip" data-filtro="sin_datos_suficientes">⚪ Sin datos</button>
 </div>
 
-<div class="filtros" id="filtros-estado"></div>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <h3>Estado</h3>
+    <select id="sel-estado"><option value="todos">Todos los estados</option></select>
 
-<div class="filtros" id="filtros-operacion"></div>
+    <h3>Operación</h3>
+    <select id="sel-operacion"><option value="todos">Venta y alquiler</option></select>
 
-<div class="filtros" id="filtros-tipo"></div>
+    <h3>Tipo de propiedad</h3>
+    <select id="sel-tipo"><option value="todos">Todos los tipos</option></select>
 
-<div class="filtros" id="filtros-zona"></div>
+    <h3>Municipio</h3>
+    <select id="sel-municipio"><option value="todos">Todos los municipios</option></select>
 
-<div class="filtros" id="filtros-municipio"></div>
+    <h3>Zona / Urbanización</h3>
+    <select id="sel-zona"><option value="todos">Todas las áreas</option></select>
 
-<div class="filtros" id="filtros-precio"></div>
+    <h3>Precio (USD)</h3>
+    <div class="precio-pair">
+      <input type="number" id="precio-min" placeholder="Mín">
+      <span>–</span>
+      <input type="number" id="precio-max" placeholder="Máx">
+    </div>
 
-<main>
-  <div class="resumen" id="resumen"></div>
-  <div id="lista" class="cargando">Cargando propiedades...</div>
-</main>
+    <button class="btn-reset" id="btn-reset">✕ Limpiar filtros</button>
+  </aside>
+
+  <main class="main-area">
+    <div class="resumen" id="resumen"></div>
+    <div class="result-count" id="result-count"></div>
+    <div id="lista" class="cargando">Cargando propiedades...</div>
+  </main>
+</div>
 
 <script>
   const RUTA_DATOS = "../data/ultimo-analisis.json?v=" + Date.now();
   let fichasOriginal = [];
-    let filtroSemaforo = "todos";
-    let filtroEstado = "todos";
-    let filtroOperacion = "todos";
-    let filtroTipo = "todos";
-        let filtroZona = "todos";
-        let filtroMunicipio = "todos";
-        let filtroPrecio = "todos";
+  let filtroSemaforo = "todos";
 
-        const RANGOS_PRECIO = [
-          { min: 0, max: 50000, etiqueta: "Hasta $50.000" },
-          { min: 50000, max: 100000, etiqueta: "$50.000 – $100.000" },
-          { min: 100000, max: 200000, etiqueta: "$100.000 – $200.000" },
-          { min: 200000, max: 350000, etiqueta: "$200.000 – $350.000" },
-          { min: 350000, max: Infinity, etiqueta: "Más de $350.000" },
-        ];
-
-        function extraerPrecioNumerico(ficha) {
-          const n = parseInt(String(ficha.precio_texto || "").replace(/[^\d]/g, ""), 10);
-          return isNaN(n) ? null : n;
-        }
-
-      const NOMBRES_CONDICION = {
-              impecable: "✨ Impecable",
-              estandar: "🏠 Estándar",
-              por_remodelar: "🔧 Por remodelar",
-            };
-        const NOMBRES_SEMAFORO = {
-          verde: "🟢 Ganga",
+  const NOMBRES_CONDICION = {
+    impecable: "✨ Impecable",
+    estandar: "🏠 Estándar",
+    por_remodelar: "🔧 Por remodelar",
+  };
+  const NOMBRES_SEMAFORO = {
+    verde: "🟢 Ganga",
     amarillo: "🟡 Precio de mercado",
     rojo: "🔴 Sobrevalorada",
     sin_datos_suficientes: "⚪ Sin datos suficientes",
   };
 
   function formatoUSD(numero) {
-      if (numero === null || numero === undefined) return "—";
-      return "USD " + numero.toLocaleString("es-VE");
-    }
+    if (numero === null || numero === undefined) return "—";
+    return "USD " + numero.toLocaleString("es-VE");
+  }
 
-    function extraerZona(ficha) {
-      if (ficha.zona) return ficha.zona;
-      if (ficha.ubicacion && ficha.ubicacion.includes(",")) return ficha.ubicacion.split(",")[0].trim();
-      return ficha.ubicacion || null;
-    }
+  function extraerPrecioNumerico(ficha) {
+    const n = parseInt(String(ficha.precio_texto || "").replace(/[^\d]/g, ""), 10);
+    return isNaN(n) ? null : n;
+  }
 
-    function extraerZona(ficha) {
-      if (ficha.zona) return ficha.zona;
-      if (ficha.ubicacion && ficha.ubicacion.includes(",")) return ficha.ubicacion.split(",")[0].trim();
-      return ficha.ubicacion || null;
-    }
+  function extraerZona(ficha) {
+    if (ficha.zona) return ficha.zona;
+    if (ficha.ubicacion && ficha.ubicacion.includes(",")) return ficha.ubicacion.split(",")[0].trim();
+    return ficha.ubicacion || null;
+  }
 
-    function extraerEstado(ubicacion) {
-      if (!ubicacion || !ubicacion.includes(",")) return null;
-      return ubicacion.split(",").pop().trim();
-    }
+  function extraerEstado(ficha) {
+    if (ficha._estado) return ficha._estado;
+    if (!ficha.ubicacion || !ficha.ubicacion.includes(",")) return null;
+    return ficha.ubicacion.split(",").pop().trim();
+  }
 
-    function extraerOperacion(ficha) {
-          // Preferir el campo del análisis (viene del scraper vía analizar.js).
-          if (ficha.operacion) return ficha.operacion;
-          // Fallback: título.
-          const titulo = (ficha.titulo || "").toLowerCase();
-          if (/alquiler/i.test(titulo)) return "Alquiler";
-          if (/venta/i.test(titulo)) return "Venta";
-          return null;
-        }
+  function extraerOperacion(ficha) {
+    if (ficha.operacion) return ficha.operacion;
+    const t = (ficha.titulo || "").toLowerCase();
+    if (/alquiler/i.test(t)) return "Alquiler";
+    if (/venta/i.test(t)) return "Venta";
+    return null;
+  }
 
-        function renderChipsEstado(fichas) {
-              const estados = [...new Set(fichas.map(f => f._estado || extraerEstado(f.ubicacion)).filter(Boolean))].sort();
-              const contenedor = document.getElementById("filtros-estado");
-              contenedor.innerHTML = "";
-              if (estados.length === 0) { contenedor.style.display = "none"; return; }
-              contenedor.style.display = "flex";
-              const chipTodos = document.createElement("button");
-              chipTodos.className = "chip activo";
-              chipTodos.textContent = "Todos los estados";
-              chipTodos.onclick = () => { filtroEstado = "todos"; render(); };
-              contenedor.appendChild(chipTodos);
-              estados.forEach(e => {
-                const chip = document.createElement("button");
-                chip.className = "chip";
-                chip.textContent = e;
-                chip.onclick = () => { filtroEstado = e; render(); };
-                contenedor.appendChild(chip);
-              });
-            }
+  // ── Populate dropdowns with counts ──
+  function populateSelect(id, fichas, getValue, labelTodos) {
+    const sel = document.getElementById(id);
+    const vals = {};
+    fichas.forEach(f => { const v = getValue(f); if (v) vals[v] = (vals[v] || 0) + 1; });
+    const sorted = Object.entries(vals).sort((a,b) => a[0].localeCompare(b[0]));
+    const currentVal = sel.value;
+    sel.innerHTML = `<option value="todos">${labelTodos} (${fichas.length})</option>`;
+    sorted.forEach(([v, c]) => {
+      sel.innerHTML += `<option value="${v}">${v} (${c})</option>`;
+    });
+    if ([...sel.options].some(o => o.value === currentVal)) sel.value = currentVal;
+    else sel.value = "todos";
+  }
 
-    function renderChipsOperacion(fichas) {
-          const ops = [...new Set(fichas.map(f => extraerOperacion(f)).filter(Boolean))].sort();
-          const contenedor = document.getElementById("filtros-operacion");
-          contenedor.innerHTML = "";
-          if (ops.length === 0) { contenedor.style.display = "none"; return; }
-          contenedor.style.display = "flex";
-          const chipTodos = document.createElement("button");
-          chipTodos.className = "chip activo";
-          chipTodos.textContent = "Venta y alquiler";
-          chipTodos.onclick = () => { filtroOperacion = "todos"; render(); };
-          contenedor.appendChild(chipTodos);
-          ops.forEach(op => {
-            const chip = document.createElement("button");
-            chip.className = "chip";
-            chip.textContent = op;
-            chip.onclick = () => { filtroOperacion = op; render(); };
-            contenedor.appendChild(chip);
-          });
-        }
+  function populateAllSelects(fichas) {
+    populateSelect("sel-estado",     fichas, f => extraerEstado(f),    "Todos los estados");
+    populateSelect("sel-operacion",  fichas, f => extraerOperacion(f), "Venta y alquiler");
+    populateSelect("sel-tipo",       fichas, f => f.tipo,              "Todos los tipos");
+    populateSelect("sel-municipio",  fichas, f => f._municipio,        "Todos los municipios");
+    populateSelect("sel-zona",       fichas, f => extraerZona(f),      "Todas las áreas");
+  }
 
-  function renderChipsTipo(fichas) {
-      const tipos = [...new Set(fichas.map((f) => f.tipo).filter(Boolean))].sort();
-      const contenedor = document.getElementById("filtros-tipo");
-      contenedor.innerHTML = "";
-      if (tipos.length === 0) { contenedor.style.display = "none"; return; }
-      contenedor.style.display = "flex";
-      const chipTodos = document.createElement("button");
-      chipTodos.className = "chip activo";
-      chipTodos.textContent = "Todos los tipos";
-      chipTodos.onclick = () => { filtroTipo = "todos"; render(); };
-      contenedor.appendChild(chipTodos);
+  function filtrar() {
+    let fichas = fichasOriginal;
 
-      tipos.forEach((tipo) => {
-        const chip = document.createElement("button");
-        chip.className = "chip";
-        chip.textContent = tipo;
-        chip.onclick = () => { filtroTipo = tipo; render(); };
-        contenedor.appendChild(chip);
+    // Semáforo
+    if (filtroSemaforo !== "todos") fichas = fichas.filter(f => f.semaforo === filtroSemaforo);
+
+    // Dropdowns
+    const estado = document.getElementById("sel-estado").value;
+    if (estado !== "todos") fichas = fichas.filter(f => extraerEstado(f) === estado);
+    const operacion = document.getElementById("sel-operacion").value;
+    if (operacion !== "todos") fichas = fichas.filter(f => extraerOperacion(f) === operacion);
+    const tipo = document.getElementById("sel-tipo").value;
+    if (tipo !== "todos") fichas = fichas.filter(f => f.tipo === tipo);
+    const municipio = document.getElementById("sel-municipio").value;
+    if (municipio !== "todos") fichas = fichas.filter(f => f._municipio === municipio);
+    const zona = document.getElementById("sel-zona").value;
+    if (zona !== "todos") fichas = fichas.filter(f => extraerZona(f) === zona);
+
+    // Precio min/max
+    const pMin = parseInt(document.getElementById("precio-min").value) || null;
+    const pMax = parseInt(document.getElementById("precio-max").value) || null;
+    if (pMin !== null || pMax !== null) {
+      fichas = fichas.filter(f => {
+        const p = extraerPrecioNumerico(f);
+        if (p === null) return false;
+        if (pMin !== null && p < pMin) return false;
+        if (pMax !== null && p > pMax) return false;
+        return true;
       });
     }
 
-  function renderChipsZona(fichas) {
-      const zonas = [...new Set(fichas.map(extraerZona).filter(Boolean))].sort();
-      const contenedor = document.getElementById("filtros-zona");
-      contenedor.innerHTML = "";
+    // Repopulate dropdowns (show only possible values)
+    populateAllSelects(fichas);
 
-      if (zonas.length === 0) {
-        contenedor.style.display = "none";
-        return;
-      }
-      contenedor.style.display = "flex";
+    // Update result count
+    document.getElementById("result-count").textContent = fichas.length + " propiedades";
 
-      const chipTodos = document.createElement("button");
-      chipTodos.className = "chip activo";
-      chipTodos.textContent = "Todas las áreas";
-      chipTodos.onclick = () => { filtroZona = "todos"; render(); };
-      contenedor.appendChild(chipTodos);
-
-      zonas.forEach((zona) => {
-              const chip = document.createElement("button");
-              chip.className = "chip";
-              chip.textContent = zona;
-              chip.onclick = () => { filtroZona = zona; render(); };
-              contenedor.appendChild(chip);
-            });
-          }
-
-        function renderChipsMunicipio(fichas) {
-            const muns = [...new Set(fichas.map(f => f._municipio).filter(Boolean))].sort();
-            const contenedor = document.getElementById("filtros-municipio");
-            contenedor.innerHTML = "";
-            if (muns.length === 0) { contenedor.style.display = "none"; return; }
-            contenedor.style.display = "flex";
-            const chipTodos = document.createElement("button");
-            chipTodos.className = "chip activo";
-            chipTodos.textContent = "Todos los municipios";
-            chipTodos.onclick = () => { filtroMunicipio = "todos"; render(); };
-            contenedor.appendChild(chipTodos);
-            muns.forEach(m => {
-              const chip = document.createElement("button");
-              chip.className = "chip";
-              chip.textContent = m;
-              chip.onclick = () => { filtroMunicipio = m; render(); };
-              contenedor.appendChild(chip);
-            });
-          }
-
-          function renderChipsPrecio(fichas) {
-            const contenedor = document.getElementById("filtros-precio");
-            contenedor.innerHTML = "";
-            const rangosConDatos = RANGOS_PRECIO.filter(r =>
-              fichas.some(f => {
-                const p = extraerPrecioNumerico(f);
-                return p !== null && p >= r.min && p < r.max;
-              })
-            );
-            if (rangosConDatos.length === 0) { contenedor.style.display = "none"; return; }
-            contenedor.style.display = "flex";
-            const chipTodos = document.createElement("button");
-            chipTodos.className = "chip activo";
-            chipTodos.textContent = "Todos los precios";
-            chipTodos.onclick = () => { filtroPrecio = "todos"; render(); };
-            contenedor.appendChild(chipTodos);
-            rangosConDatos.forEach(r => {
-              const chip = document.createElement("button");
-              chip.className = "chip";
-              chip.textContent = r.etiqueta;
-              chip.onclick = () => { filtroPrecio = r.etiqueta; render(); };
-              contenedor.appendChild(chip);
-            });
-          }
-
-  function actualizarChips(contenedor, valorActivo, textoTodos) {
-    [...contenedor.children].forEach((c) => c.classList.remove("activo"));
-    const activo = [...contenedor.children].find(
-      (c) => c.textContent === (valorActivo === "todos" ? textoTodos : valorActivo)
-    );
-    if (activo) activo.classList.add("activo");
-  }
-
-  function render() {
-      const lista = document.getElementById("lista");
-      let fichas = fichasOriginal;
-
-      if (filtroSemaforo !== "todos") fichas = fichas.filter(f => f.semaforo === filtroSemaforo);
-      if (filtroEstado !== "todos") fichas = fichas.filter(f => (f._estado || extraerEstado(f.ubicacion)) === filtroEstado);
-      if (filtroOperacion !== "todos") fichas = fichas.filter(f => extraerOperacion(f) === filtroOperacion);
-      if (filtroTipo !== "todos") fichas = fichas.filter(f => f.tipo === filtroTipo);
-            if (filtroZona !== "todos") fichas = fichas.filter(f => extraerZona(f) === filtroZona);
-            if (filtroMunicipio !== "todos") fichas = fichas.filter(f => f._municipio === filtroMunicipio);
-            if (filtroPrecio !== "todos") {
-              const rango = RANGOS_PRECIO.find(r => r.etiqueta === filtroPrecio);
-              if (rango) fichas = fichas.filter(f => {
-                const p = extraerPrecioNumerico(f);
-                return p !== null && p >= rango.min && p < rango.max;
-              });
-            }
-
-      // Reconstruir chips de los otros filtros con los datos ya filtrados
-            // para que solo muestren valores que realmente existen.
-            renderChipsEstado(fichas);
-            renderChipsOperacion(fichas);
-            renderChipsTipo(fichas);
-            renderChipsZona(fichas);
-            renderChipsMunicipio(fichas);
-            renderChipsPrecio(fichas);
-
-            // Restaurar el chip activo correcto en cada grupo (las funciones
-            // renderChips* marcan "Todos" por defecto al reconstruir).
-            actualizarChips(document.getElementById("filtros-estado"), filtroEstado, "Todos los estados");
-            actualizarChips(document.getElementById("filtros-operacion"), filtroOperacion, "Venta y alquiler");
-            actualizarChips(document.getElementById("filtros-tipo"), filtroTipo, "Todos los tipos");
-            actualizarChips(document.getElementById("filtros-zona"), filtroZona, "Todas las áreas");
-            actualizarChips(document.getElementById("filtros-municipio"), filtroMunicipio, "Todos los municipios");
-            actualizarChips(document.getElementById("filtros-precio"), filtroPrecio, "Todos los precios");
-
+    // Render cards
+    const lista = document.getElementById("lista");
     if (fichas.length === 0) {
       lista.className = "vacio";
       lista.textContent = "No hay propiedades con estos filtros.";
       return;
     }
-
     lista.className = "";
-    lista.innerHTML = fichas
-      .map((f) => {
-        const specs = [
-          f.habitaciones ? `${f.habitaciones} hab` : null,
-          f.banos ? `${f.banos} baños` : null,
-          f.metros_cuadrados ? `${f.metros_cuadrados} m²` : null,
-        ]
-          .filter(Boolean)
-          .join(" · ");
+    lista.innerHTML = fichas.map(f => {
+      const specs = [
+        f.habitaciones ? `${f.habitaciones} hab` : null,
+        f.banos ? `${f.banos} baños` : null,
+        f.metros_cuadrados ? `${f.metros_cuadrados} m²` : null,
+      ].filter(Boolean).join(" · ");
 
-        const m2linea =
-                  f.precio_m2 && f.promedio_m2_tipo_zona
-                    ? `<div class="m2">USD <strong>${f.precio_m2}</strong>/m²${f.m2_estimado ? ' <em style="font-size:0.8em;opacity:0.7">(estimado)</em>' : ''} — promedio de ${f.tipo?.toLowerCase() || "la zona"}: USD ${f.promedio_m2_tipo_zona}/m² (${f.diferencia_vs_promedio_pct > 0 ? "+" : ""}${f.diferencia_vs_promedio_pct}%)</div>`
-                    : "";
+      const m2linea = f.precio_m2 && f.promedio_m2_tipo_zona
+        ? `<div class="m2">USD <strong>${f.precio_m2}</strong>/m²${f.m2_estimado ? ' <em style="font-size:0.8em;opacity:0.7">(estimado)</em>' : ''} — promedio de ${f.tipo?.toLowerCase() || "la zona"}: USD ${f.promedio_m2_tipo_zona}/m² (${f.diferencia_vs_promedio_pct > 0 ? "+" : ""}${f.diferencia_vs_promedio_pct}%)</div>`
+        : "";
 
-        const dupLinea =
-          f.total_publicaciones_encontradas > 1
-            ? `<span class="dup">Publicada ${f.total_publicaciones_encontradas} veces</span>`
-            : "";
+      const dupLinea = f.total_publicaciones_encontradas > 1
+        ? `<span class="dup">Publicada ${f.total_publicaciones_encontradas} veces</span>` : "";
 
-        const condicionTag =
-                  f.condicion && f.condicion !== "estandar"
-                    ? `<span class="condicion-tag ${f.condicion}">${NOMBRES_CONDICION[f.condicion] || f.condicion}</span>`
-                    : "";
+      const condicionTag = f.condicion && f.condicion !== "estandar"
+        ? `<span class="condicion-tag ${f.condicion}">${NOMBRES_CONDICION[f.condicion] || f.condicion}</span>` : "";
 
-                const amenitiesHtml =
-                  f.amenities && f.amenities.length
-                    ? `<div class="amenities">${f.amenities.map(a => `<span class="amenity">${a}</span>`).join("")}</div>`
-                    : "";
+      const amenitiesHtml = f.amenities && f.amenities.length
+        ? `<div class="amenities">${f.amenities.map(a => `<span class="amenity">${a}</span>`).join("")}</div>` : "";
 
-                const contactoHtml =
-                          f.contacto?.telefono
-                            ? `<a href="https://wa.me/58${f.contacto.telefono}" target="_blank" rel="noopener" style="background:#25D366">📞 WhatsApp</a>`
-                            : "";
+      const contactoHtml = f.contacto?.telefono
+        ? `<a href="https://wa.me/58${f.contacto.telefono}" target="_blank" rel="noopener" style="background:#25D366">📞 WhatsApp</a>` : "";
 
-                        return `
-                          <div class="card">
-                            <div class="card-top">
-                              <span class="badge ${f.semaforo}">${NOMBRES_SEMAFORO[f.semaforo] || f.semaforo}</span>
-                              ${condicionTag}
-                            </div>
-                            <h3>${f.titulo}</h3>
-                            <div class="precio">${formatoUSD(parseInt(String(f.precio_texto || "").replace(/[^\\d]/g, ""), 10) || null)}</div>
-                            <div class="detalle">${specs || "Sin specs detalladas"} · ${[extraerZona(f), f._estado || extraerEstado(f.ubicacion)].filter(Boolean).join(", ") || f.ubicacion || ""}</div>
-                            ${m2linea}
-                            ${dupLinea}
-                            ${amenitiesHtml}
-                            <div class="acciones">
-                              <a href="${f.enlace_principal}" target="_blank" rel="noopener">Ver publicación</a>
-                              ${contactoHtml}
-                            </div>
-                          </div>
-                        `;
-      })
-      .join("");
+      return `<div class="card">
+        <div class="card-top">
+          <span class="badge ${f.semaforo}">${NOMBRES_SEMAFORO[f.semaforo] || f.semaforo}</span>
+          ${condicionTag}
+        </div>
+        <h3>${f.titulo}</h3>
+        <div class="precio">${formatoUSD(extraerPrecioNumerico(f))}</div>
+        <div class="detalle">${specs || "Sin specs detalladas"} · ${[extraerZona(f), extraerEstado(f)].filter(Boolean).join(", ") || f.ubicacion || ""}</div>
+        ${m2linea}
+        ${dupLinea}
+        ${amenitiesHtml}
+        <div class="acciones">
+          <a href="${f.enlace_principal}" target="_blank" rel="noopener">Ver publicación</a>
+          ${contactoHtml}
+        </div>
+      </div>`;
+    }).join("");
   }
 
   function renderResumen(resumen) {
-    const contenedor = document.getElementById("resumen");
-    contenedor.innerHTML = `
+    document.getElementById("resumen").innerHTML = `
       <span>🟢 ${resumen.verde || 0} gangas</span>
       <span>🟡 ${resumen.amarillo || 0} normales</span>
       <span>🔴 ${resumen.rojo || 0} sobrevaloradas</span>
@@ -536,38 +346,60 @@
     `;
   }
 
-  document.querySelectorAll("#filtros-semaforo .chip").forEach((chip) => {
+  // ── Event listeners ──
+  document.querySelectorAll("#filtros-semaforo .chip").forEach(chip => {
     chip.addEventListener("click", () => {
       filtroSemaforo = chip.dataset.filtro;
-      document.querySelectorAll("#filtros-semaforo .chip").forEach((c) => c.classList.remove("activo"));
+      document.querySelectorAll("#filtros-semaforo .chip").forEach(c => c.classList.remove("activo"));
       chip.classList.add("activo");
-      render();
+      filtrar();
     });
   });
 
+  document.getElementById("sel-estado").addEventListener("change", filtrar);
+  document.getElementById("sel-operacion").addEventListener("change", filtrar);
+  document.getElementById("sel-tipo").addEventListener("change", filtrar);
+  document.getElementById("sel-municipio").addEventListener("change", filtrar);
+  document.getElementById("sel-zona").addEventListener("change", filtrar);
+
+  let precioTimeout;
+  document.getElementById("precio-min").addEventListener("input", () => {
+    clearTimeout(precioTimeout);
+    precioTimeout = setTimeout(filtrar, 400);
+  });
+  document.getElementById("precio-max").addEventListener("input", () => {
+    clearTimeout(precioTimeout);
+    precioTimeout = setTimeout(filtrar, 400);
+  });
+
+  document.getElementById("btn-reset").addEventListener("click", () => {
+    document.getElementById("sel-estado").value = "todos";
+    document.getElementById("sel-operacion").value = "todos";
+    document.getElementById("sel-tipo").value = "todos";
+    document.getElementById("sel-municipio").value = "todos";
+    document.getElementById("sel-zona").value = "todos";
+    document.getElementById("precio-min").value = "";
+    document.getElementById("precio-max").value = "";
+    filtroSemaforo = "todos";
+    document.querySelectorAll("#filtros-semaforo .chip").forEach(c => c.classList.remove("activo"));
+    document.querySelector("[data-filtro='todos']").classList.add("activo");
+    filtrar();
+  });
+
+  // ── Init ──
   fetch(RUTA_DATOS)
-    .then((r) => {
-      if (!r.ok) throw new Error("No se pudo cargar el archivo de datos");
-      return r.json();
-    })
-    .then((data) => {
+    .then(r => { if (!r.ok) throw new Error("No se pudo cargar"); return r.json(); })
+    .then(data => {
       fichasOriginal = data.fichas || [];
-      document.getElementById("subtitulo").textContent =
-        "Actualizado: " + new Date(data.generado_en).toLocaleString("es-VE");
+      document.getElementById("subtitulo").textContent = "Actualizado: " + new Date(data.generado_en).toLocaleString("es-VE");
       renderResumen(data.resumen || {});
-      renderChipsEstado(fichasOriginal);
-      renderChipsOperacion(fichasOriginal);
-      renderChipsTipo(fichasOriginal);
-              renderChipsZona(fichasOriginal);
-              renderChipsMunicipio(fichasOriginal);
-              renderChipsPrecio(fichasOriginal);
-              render();
+      populateAllSelects(fichasOriginal);
+      filtrar();
     })
-    .catch((err) => {
+    .catch(err => {
       document.getElementById("subtitulo").textContent = "Error al cargar datos";
       document.getElementById("lista").className = "vacio";
-      document.getElementById("lista").textContent =
-        "No se pudo cargar el análisis. Verifica que exista ari/data/ultimo-analisis.json";
+      document.getElementById("lista").textContent = "No se pudo cargar el análisis. Verifica que exista ari/data/ultimo-analisis.json";
       console.error(err);
     });
 </script>
