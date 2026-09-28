@@ -266,13 +266,32 @@ function extraerZona(ubicacion) {
     return limpia;
 }
 
-function normalizarTipo(tipo) {
+function normalizarTipo(tipo, titulo) {
   // Los anuncios de distintos estados escriben el tipo con mayúsculas
   // distintas ("CASA", "Casa", "casa") — sin esto, el promedio y los
   // filtros los tratan como categorías separadas por error.
-  if (!tipo) return tipo;
-  const limpio = tipo.trim().toLowerCase();
-  return limpio.charAt(0).toUpperCase() + limpio.slice(1);
+  if (tipo) {
+    const limpio = tipo.trim().toLowerCase();
+    // Fusionar "local" → "local comercial" (son lo mismo)
+    if (limpio === 'local') return 'Local comercial';
+    return limpio.charAt(0).toUpperCase() + limpio.slice(1);
+  }
+
+  // Si no hay tipo, deducir del título
+  if (!titulo) return tipo;
+  const t = titulo.toLowerCase();
+  if (/galp[oó]n|galpon/i.test(t)) return 'Galpón';
+  if (/edificio/i.test(t)) return 'Edificio';
+  if (/anexo|vacacional/i.test(t)) return 'Anexo';
+  if (/habitacion/i.test(t)) return 'Habitación';
+  if (/local comercial|local/i.test(t)) return 'Local comercial';
+  if (/oficina/i.test(t)) return 'Oficina';
+  if (/terreno|lote/i.test(t)) return 'Terreno';
+  if (/casa/i.test(t)) return 'Casa';
+  if (/apartamento|apto|apto/i.test(t)) return 'Apartamento';
+  if (/townhouse/i.test(t)) return 'Townhouse';
+  if (/penthouse|pent-house/i.test(t)) return 'Penthouse';
+  return null;
 }
 
 // Factor de ajuste por condición: una propiedad "por remodelar" barata no
@@ -416,12 +435,13 @@ async function main() {
         ficha.zona = zonaCache.get(ficha.titulo);
       }
 
-      ficha.tipo = normalizarTipo(ficha.tipo); // corrige mayúsculas antes de agrupar y de guardar
+      ficha.tipo = normalizarTipo(ficha.tipo, ficha.titulo); // corrige mayúsculas antes de agrupar y de guardar
       const precioM2 = calcularPrecioM2(ficha);
       const estado = extraerEstado(ficha.ubicacion);
       ficha._precio_m2 = precioM2;
           ficha._estado = estado;
           const operacion = extraerOperacion(ficha);
+          ficha.operacion = operacion; // GUARDAR operación en la ficha (antes solo se usaba para agrupar)
           if (precioM2 && ficha.tipo && estado) {
             const clave = claveGrupo(ficha.tipo, estado, operacion);
         if (!precioM2PorGrupo.has(clave)) precioM2PorGrupo.set(clave, []);
