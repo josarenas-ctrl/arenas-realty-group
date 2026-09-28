@@ -16,8 +16,8 @@ const CONFIG_PATH = path.join(__dirname, "..", "config", "busquedas.json");
 const DATA_DIR = path.join(__dirname, "..", "data");
 
 const ESTADOS_PERMITIDOS = ["miranda", "distrito-capital", "la-guaira", "vargas"];
-const MAX_PAGINAS = 300; // máximo de listings a scrapear por ejecución
-const SITEMAPS_A_REVISAR = 3; // sitemaps 0, 1, 2 (los más recientes)
+const MAX_PAGINAS = 2000; // máximo de listings a scrapear por ejecución
+const SITEMAPS_A_REVISAR = 42; // todos los sitemaps (0-41); el break en acumulación toma los más recientes
 
 const HEADERS = {
   "User-Agent":
