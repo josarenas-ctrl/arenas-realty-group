@@ -36,6 +36,23 @@ const UMBRAL_SOBREVALORADA = 0.15; // 15% por encima del promedio = rojo
 // por estado de verdad), y no queremos que contaminen ni el promedio ni la
 // interfaz.
 const ESTADOS_PERMITIDOS = ["Distrito Capital", "Miranda", "Vargas"];
+
+// Corrección manual: zonas que Bienes Online etiqueta como "Distrito Capital"
+// pero están en Miranda. Nominatim no siempre acierta con nombres ambiguos o
+// genéricos ("Pan de Azucar", "El Pedregal").
+const ZONAS_ESTADO_CORRECTO = new Map([
+  ["pan de azucar", "Miranda"],
+  ["el pedregal", "Miranda"],
+  ["altamira", "Miranda"],
+  ["alto prado", "Miranda"],
+  ["el cigarral", "Miranda"],
+  ["santa paula", "Miranda"],
+  ["la lagunita", "Miranda"],
+  ["los teques", "Miranda"],
+  ["san antonio de los altos", "Miranda"],
+  ["carrizal", "Miranda"],
+  ["charallave", "Miranda"],
+]);
 // Extraccion de zona por IA (Gemini) — fallback cuando limpiarZona no puede.
 const ZONA_IA_CACHE = new Map();
 async function extraerZonaConIA(titulo) {
@@ -182,6 +199,11 @@ function extraerEstado(ubicacion) {
       // conocida por Nominatim como de Miranda/Vargas, corregir al estado real.
       if (estadoRaw === "Distrito Capital") {
         const ciudadParaVerificar = zonaRaw.split(/[,—–-]/)[0].trim();
+        // 1) Mapa manual de zonas conocidas (más fiable que Nominatim para
+        //    nombres ambiguos/genéricos como "Pan de Azucar" o "El Pedregal").
+        const estadoManual = ZONAS_ESTADO_CORRECTO.get(ciudadParaVerificar);
+        if (estadoManual) return estadoManual;
+        // 2) Nominatim como respaldo.
         const estadoReal = estadoDesdeCache(ciudadParaVerificar);
         if (estadoReal && estadoReal !== "Distrito Capital") return estadoReal;
       }
@@ -217,7 +239,7 @@ function extraerEstado(ubicacion) {
           // ubicación ("Acogedor Apartamento en Venta San Antonio de Los
           // ALtos, Miranda"). Si empieza con palabra de título, el municipio
           // real es lo que viene DESPUÉS de "en venta/alquiler/arriendo".
-          if (/^(acogedor|bello|bella|hermos[oa]|ampli[oa]|c[oó]mod[oa]|excelente|espectacular|extraordinari[oa]|lind[oa]|bonit[oa]|espl[eé]ndid[oa]|d[uú]plex|venta|alquiler|arriendo)/i.test(r)) {
+          if (/^(acogedor|bello|bella|hermos[oa]|ampli[oa]|c[oó]mod[oa]|excelente|espectacular|extraordinari[oa]|lind[oa]|bonit[oa]|espl[eé]ndid[oa]|d[uú]plex|venta|alquiler|arriendo|terreno|casa|apartamento|quinta|local|galp[oó]n|edificio|habitaci[oó]n|oficina|inmueble)/i.test(r)) {
             const op = r.match(/\b(?:en\s+)?(venta|alquiler|arriendo|arrendamiento)\b/i);
             if (op) {
               const despues = r.slice(op.index + op[0].length).replace(/^[:\s—-]+/, "").trim();
