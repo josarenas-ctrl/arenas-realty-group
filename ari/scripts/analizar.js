@@ -36,30 +36,25 @@ const UMBRAL_SOBREVALORADA = 0.15; // 15% por encima del promedio = rojo
 // por estado de verdad), y no queremos que contaminen ni el promedio ni la
 // interfaz.
 const ESTADOS_PERMITIDOS = ["Distrito Capital", "Miranda", "Vargas"];
-// Extraccion de zona por IA (Groq) - fallback cuando limpiarZona no puede.
+// Extraccion de zona por IA (Gemini) — fallback cuando limpiarZona no puede.
 const ZONA_IA_CACHE = new Map();
 async function extraerZonaConIA(titulo) {
   const key = titulo.toLowerCase().trim();
   if (ZONA_IA_CACHE.has(key)) return ZONA_IA_CACHE.get(key);
-  if (!process.env.GROQ_API_KEY) { ZONA_IA_CACHE.set(key, null); return null; }
+  if (!process.env.GEMINI_API_KEY) { ZONA_IA_CACHE.set(key, null); return null; }
   try {
-    const resp = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+    const resp = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${process.env.GEMINI_API_KEY}`, {
       method: "POST",
-      headers: { "Authorization": "Bearer " + process.env.GROQ_API_KEY, "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        model: "llama-3.1-8b-instant",
-        messages: [
-          { role: "system", content: "Eres un extractor de zonas/urbanizaciones venezolanas. Dado un titulo de anuncio inmobiliario, devuelve SOLO el nombre de la urbanizacion o zona donde esta el inmueble. Si el titulo solo menciona el municipio (Sucre, Baruta, Chacao, Libertador, El Hatillo, Los Salias, Carrizal, Zamora, Independencia, Urdaneta, Plaza) o la ciudad (Caracas), responde NINGUNA. Si no hay suficiente informacion, responde NINGUNA. Responde UNA SOLA PALABRA o frase corta, sin puntuacion." },
-          { role: "user", content: titulo }
-        ],
-        max_tokens: 20, temperature: 0
+        contents: [{ parts: [{ text: "Dado un titulo de anuncio inmobiliario venezolano, devuelve solo el nombre de la urbanizacion o zona. Si solo menciona municipio (Sucre, Baruta, Chacao, Libertador, El Hatillo) o ciudad (Caracas), responde NINGUNA.\n\nTitulo: " + titulo }] }]
       })
     });
     const j = await resp.json();
-    const raw = (j.choices && j.choices[0] && j.choices[0].message && j.choices[0].message.content || "").trim();
+    const raw = (j.candidates && j.candidates[0] && j.candidates[0].content && j.candidates[0].content.parts && j.candidates[0].content.parts[0] && j.candidates[0].content.parts[0].text || "").trim();
     const result = (raw && raw !== "NINGUNA") ? raw : null;
     ZONA_IA_CACHE.set(key, result);
-    if (result) console.log("  IA zona: " + titulo.slice(0,60) + " -> " + result);
+    if (result) console.log("  IA zona: " + titulo.slice(0,60) + " → " + result);
     return result;
   } catch(e) {
     ZONA_IA_CACHE.set(key, null);
