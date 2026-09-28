@@ -39,6 +39,18 @@ jobs:
           git config user.name "arenas-bot"
           git config user.email "arenas-bot@users.noreply.github.com"
           git add -A index.html propiedades/ sitemap.xml
-          git diff --cached --quiet || git commit -m "Actualizar páginas de propiedades automáticamente"
-          git pull --rebase origin ${{ github.ref_name }}
-          git push
+          if git diff --cached --quiet; then
+            echo "Sin cambios generados — nada que commitear"
+          else
+            git commit -m "Actualizar páginas de propiedades automáticamente"
+            git pull --rebase origin ${{ github.ref_name }} || {
+              echo "Rebase falló (conflicto) — force push"
+              git rebase --abort 2>/dev/null
+              git checkout --theirs index.html propiedades/ sitemap.xml 2>/dev/null
+              git add -A index.html propiedades/ sitemap.xml
+              git commit --amend --no-edit 2>/dev/null
+              GIT_ASKPASS="" GIT_TERMINAL_PROMPT=0 git push --force origin HEAD:${{ github.ref_name }}
+              exit 0
+            }
+            git push
+          fi
