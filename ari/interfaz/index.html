@@ -209,6 +209,10 @@
 
 <div class="filtros" id="filtros-zona"></div>
 
+<div class="filtros" id="filtros-municipio"></div>
+
+<div class="filtros" id="filtros-precio"></div>
+
 <main>
   <div class="resumen" id="resumen"></div>
   <div id="lista" class="cargando">Cargando propiedades...</div>
@@ -221,7 +225,22 @@
     let filtroEstado = "todos";
     let filtroOperacion = "todos";
     let filtroTipo = "todos";
-    let filtroZona = "todos";
+        let filtroZona = "todos";
+        let filtroMunicipio = "todos";
+        let filtroPrecio = "todos";
+
+        const RANGOS_PRECIO = [
+          { min: 0, max: 50000, etiqueta: "Hasta $50.000" },
+          { min: 50000, max: 100000, etiqueta: "$50.000 – $100.000" },
+          { min: 100000, max: 200000, etiqueta: "$100.000 – $200.000" },
+          { min: 200000, max: 350000, etiqueta: "$200.000 – $350.000" },
+          { min: 350000, max: Infinity, etiqueta: "Más de $350.000" },
+        ];
+
+        function extraerPrecioNumerico(ficha) {
+          const n = parseInt(String(ficha.precio_texto || "").replace(/[^\d]/g, ""), 10);
+          return isNaN(n) ? null : n;
+        }
 
       const NOMBRES_CONDICION = {
               impecable: "✨ Impecable",
@@ -346,13 +365,58 @@
       contenedor.appendChild(chipTodos);
 
       zonas.forEach((zona) => {
-        const chip = document.createElement("button");
-        chip.className = "chip";
-        chip.textContent = zona;
-        chip.onclick = () => { filtroZona = zona; render(); };
-        contenedor.appendChild(chip);
-      });
-    }
+              const chip = document.createElement("button");
+              chip.className = "chip";
+              chip.textContent = zona;
+              chip.onclick = () => { filtroZona = zona; render(); };
+              contenedor.appendChild(chip);
+            });
+          }
+
+        function renderChipsMunicipio(fichas) {
+            const muns = [...new Set(fichas.map(f => f._municipio).filter(Boolean))].sort();
+            const contenedor = document.getElementById("filtros-municipio");
+            contenedor.innerHTML = "";
+            if (muns.length === 0) { contenedor.style.display = "none"; return; }
+            contenedor.style.display = "flex";
+            const chipTodos = document.createElement("button");
+            chipTodos.className = "chip activo";
+            chipTodos.textContent = "Todos los municipios";
+            chipTodos.onclick = () => { filtroMunicipio = "todos"; render(); };
+            contenedor.appendChild(chipTodos);
+            muns.forEach(m => {
+              const chip = document.createElement("button");
+              chip.className = "chip";
+              chip.textContent = m;
+              chip.onclick = () => { filtroMunicipio = m; render(); };
+              contenedor.appendChild(chip);
+            });
+          }
+
+          function renderChipsPrecio(fichas) {
+            const contenedor = document.getElementById("filtros-precio");
+            contenedor.innerHTML = "";
+            const rangosConDatos = RANGOS_PRECIO.filter(r =>
+              fichas.some(f => {
+                const p = extraerPrecioNumerico(f);
+                return p !== null && p >= r.min && p < r.max;
+              })
+            );
+            if (rangosConDatos.length === 0) { contenedor.style.display = "none"; return; }
+            contenedor.style.display = "flex";
+            const chipTodos = document.createElement("button");
+            chipTodos.className = "chip activo";
+            chipTodos.textContent = "Todos los precios";
+            chipTodos.onclick = () => { filtroPrecio = "todos"; render(); };
+            contenedor.appendChild(chipTodos);
+            rangosConDatos.forEach(r => {
+              const chip = document.createElement("button");
+              chip.className = "chip";
+              chip.textContent = r.etiqueta;
+              chip.onclick = () => { filtroPrecio = r.etiqueta; render(); };
+              contenedor.appendChild(chip);
+            });
+          }
 
   function actualizarChips(contenedor, valorActivo, textoTodos) {
     [...contenedor.children].forEach((c) => c.classList.remove("activo"));
@@ -370,7 +434,15 @@
       if (filtroEstado !== "todos") fichas = fichas.filter(f => (f._estado || extraerEstado(f.ubicacion)) === filtroEstado);
       if (filtroOperacion !== "todos") fichas = fichas.filter(f => extraerOperacion(f) === filtroOperacion);
       if (filtroTipo !== "todos") fichas = fichas.filter(f => f.tipo === filtroTipo);
-      if (filtroZona !== "todos") fichas = fichas.filter(f => extraerZona(f) === filtroZona);
+            if (filtroZona !== "todos") fichas = fichas.filter(f => extraerZona(f) === filtroZona);
+            if (filtroMunicipio !== "todos") fichas = fichas.filter(f => f._municipio === filtroMunicipio);
+            if (filtroPrecio !== "todos") {
+              const rango = RANGOS_PRECIO.find(r => r.etiqueta === filtroPrecio);
+              if (rango) fichas = fichas.filter(f => {
+                const p = extraerPrecioNumerico(f);
+                return p !== null && p >= rango.min && p < rango.max;
+              });
+            }
 
       // Reconstruir chips de los otros filtros con los datos ya filtrados
             // para que solo muestren valores que realmente existen.
@@ -378,6 +450,8 @@
             renderChipsOperacion(fichas);
             renderChipsTipo(fichas);
             renderChipsZona(fichas);
+            renderChipsMunicipio(fichas);
+            renderChipsPrecio(fichas);
 
             // Restaurar el chip activo correcto en cada grupo (las funciones
             // renderChips* marcan "Todos" por defecto al reconstruir).
@@ -385,6 +459,8 @@
             actualizarChips(document.getElementById("filtros-operacion"), filtroOperacion, "Venta y alquiler");
             actualizarChips(document.getElementById("filtros-tipo"), filtroTipo, "Todos los tipos");
             actualizarChips(document.getElementById("filtros-zona"), filtroZona, "Todas las áreas");
+            actualizarChips(document.getElementById("filtros-municipio"), filtroMunicipio, "Todos los municipios");
+            actualizarChips(document.getElementById("filtros-precio"), filtroPrecio, "Todos los precios");
 
     if (fichas.length === 0) {
       lista.className = "vacio";
@@ -482,8 +558,10 @@
       renderChipsEstado(fichasOriginal);
       renderChipsOperacion(fichasOriginal);
       renderChipsTipo(fichasOriginal);
-      renderChipsZona(fichasOriginal);
-      render();
+              renderChipsZona(fichasOriginal);
+              renderChipsMunicipio(fichasOriginal);
+              renderChipsPrecio(fichasOriginal);
+              render();
     })
     .catch((err) => {
       document.getElementById("subtitulo").textContent = "Error al cargar datos";
