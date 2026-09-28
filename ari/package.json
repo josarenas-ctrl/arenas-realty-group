@@ -7,7 +7,9 @@
     "scrape:mercadolibre": "node scripts/scrape-mercadolibre.js",
     "scrape:bienesonline": "node scripts/scrape-bienesonline.js",
     "scrape:inmueblesconlupa": "node scripts/scrape-inmueblesconlupa.js",
-    "dedupe": "node scripts/dedupe.js",
+        "scrape:zonaven": "node scripts/scrape-zonaven.js",
+        "scrape:mercadopiso": "node scripts/scrape-mercadopiso.js",
+        "dedupe": "node scripts/dedupe.js",
     "ia-dedupe": "node scripts/ia-dedupe.js",
     "analizar": "node scripts/analizar.js"
   },

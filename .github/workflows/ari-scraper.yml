@@ -33,6 +33,14 @@ jobs:
         working-directory: ari
         run: npm run scrape:inmueblesconlupa
 
+      - name: Correr scraper de ZonaVen (portal directo)
+        working-directory: ari
+        run: npm run scrape:zonaven
+
+      - name: Correr scraper de MercadoPiso (10k properties, JSON-LD)
+        working-directory: ari
+        run: npm run scrape:mercadopiso
+
       - name: Correr scraper de Mercado Libre (puede quedar vacío por bloqueo)
         working-directory: ari
         run: npm run scrape:mercadolibre
