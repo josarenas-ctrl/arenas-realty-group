@@ -36,6 +36,37 @@ const UMBRAL_SOBREVALORADA = 0.15; // 15% por encima del promedio = rojo
 // por estado de verdad), y no queremos que contaminen ni el promedio ni la
 // interfaz.
 const ESTADOS_PERMITIDOS = ["Distrito Capital", "Miranda", "Vargas"];
+// Extraccion de zona por IA (Groq) - fallback cuando limpiarZona no puede.
+const ZONA_IA_CACHE = new Map();
+async function extraerZonaConIA(titulo) {
+  const key = titulo.toLowerCase().trim();
+  if (ZONA_IA_CACHE.has(key)) return ZONA_IA_CACHE.get(key);
+  if (!process.env.GROQ_API_KEY) { ZONA_IA_CACHE.set(key, null); return null; }
+  try {
+    const resp = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+      method: "POST",
+      headers: { "Authorization": "Bearer " + process.env.GROQ_API_KEY, "Content-Type": "application/json" },
+      body: JSON.stringify({
+        model: "llama-3.1-8b-instant",
+        messages: [
+          { role: "system", content: "Eres un extractor de zonas/urbanizaciones venezolanas. Dado un titulo de anuncio inmobiliario, devuelve SOLO el nombre de la urbanizacion o zona donde esta el inmueble. Si el titulo solo menciona el municipio (Sucre, Baruta, Chacao, Libertador, El Hatillo, Los Salias, Carrizal, Zamora, Independencia, Urdaneta, Plaza) o la ciudad (Caracas), responde NINGUNA. Si no hay suficiente informacion, responde NINGUNA. Responde UNA SOLA PALABRA o frase corta, sin puntuacion." },
+          { role: "user", content: titulo }
+        ],
+        max_tokens: 20, temperature: 0
+      })
+    });
+    const j = await resp.json();
+    const raw = (j.choices && j.choices[0] && j.choices[0].message && j.choices[0].message.content || "").trim();
+    const result = (raw && raw !== "NINGUNA") ? raw : null;
+    ZONA_IA_CACHE.set(key, result);
+    if (result) console.log("  IA zona: " + titulo.slice(0,60) + " -> " + result);
+    return result;
+  } catch(e) {
+    ZONA_IA_CACHE.set(key, null);
+    return null;
+  }
+}
+
 
 // Filtro de sanidad: precios o metros absurdamente bajos casi siempre son
 // error de carga del anuncio original (el dueño no puso el precio real,
@@ -370,7 +401,19 @@ async function main() {
     const precioM2PorGrupo = new Map(); // "tipo||estado" -> [precios_m2...]
     const m2PorGrupo = new Map();        // "tipo||estado" -> [m2...] para estimar los que no tienen
 
+    // IA zona: recolectar titulos sin zona y clasificar en lote
+    const titulosSinZona = [...new Set(fichas.filter(f => !f.zona && f.titulo).map(f => f.titulo))];
+    const zonaCache = new Map();
+    for (const titulo of titulosSinZona) {
+      const z = await extraerZonaConIA(titulo);
+      if (z) zonaCache.set(titulo, z);
+    }
+
     for (const ficha of fichas) {
+      if (!ficha.zona && ficha.titulo && zonaCache.has(ficha.titulo)) {
+        ficha.zona = zonaCache.get(ficha.titulo);
+      }
+
       ficha.tipo = normalizarTipo(ficha.tipo); // corrige mayúsculas antes de agrupar y de guardar
       const precioM2 = calcularPrecioM2(ficha);
       const estado = extraerEstado(ficha.ubicacion);
