@@ -60,7 +60,7 @@ async function extraerZonaConIA(titulo) {
   if (ZONA_IA_CACHE.has(key)) return ZONA_IA_CACHE.get(key);
   if (!process.env.GEMINI_API_KEY) { ZONA_IA_CACHE.set(key, null); return null; }
   try {
-    const resp = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${process.env.GEMINI_API_KEY}`, {
+    const resp = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key=${process.env.GEMINI_API_KEY}`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
