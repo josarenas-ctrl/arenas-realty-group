@@ -188,9 +188,17 @@ function extraerEstado(ubicacion) {
         if (ec) return ec;
 
         return null;
-  }
+          }
 
-function limpiarZona(zona) {
+        function extraerMunicipio(ubicacion) {
+          // Extrae el municipio/ciudad: la parte antes de la última coma.
+          // "Altamira, Distrito Capital" → "Altamira"
+          // "San Antonio de Los Altos, Miranda" → "San Antonio de Los Altos"
+          if (!ubicacion || !ubicacion.includes(",")) return null;
+          return ubicacion.split(",")[0].trim();
+        }
+
+        function limpiarZona(zona) {
   if (!zona) return null;
 
   // El scraper de Bienes Online a veces mete el título completo en el campo
@@ -438,8 +446,10 @@ async function main() {
       ficha.tipo = normalizarTipo(ficha.tipo, ficha.titulo); // corrige mayúsculas antes de agrupar y de guardar
       const precioM2 = calcularPrecioM2(ficha);
       const estado = extraerEstado(ficha.ubicacion);
-      ficha._precio_m2 = precioM2;
-          ficha._estado = estado;
+            const municipio = extraerMunicipio(ficha.ubicacion);
+            ficha._precio_m2 = precioM2;
+                ficha._estado = estado;
+                ficha._municipio = municipio;
           const operacion = extraerOperacion(ficha);
           ficha.operacion = operacion; // GUARDAR operación en la ficha (antes solo se usaba para agrupar)
           if (precioM2 && ficha.tipo && estado) {
