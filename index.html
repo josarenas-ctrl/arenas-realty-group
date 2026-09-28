@@ -747,20 +747,7 @@
       });
     }
 
-    // ACADEMIA SPA ROUTER
-        (function(){
-          var isAcademia = window.location.pathname.startsWith('/academia');
-          var acadRoot = document.getElementById('academia-root');
-    
-          if (isAcademia && acadRoot) {
-            // Hide main site elements (NOT inside academia-root)
-            var mainEls = document.querySelectorAll('body > nav, header.hero, body > .section, footer.contact, .whatsapp-float, .chatbot-tag');
-            mainEls.forEach(function(el){ el.style.display = 'none'; });
-            acadRoot.style.display = 'block';
-            document.title = 'Academia ARG — Formación de Asesores';
-          }
-        })();
-  </script>
+    </script>
 
   <!-- ACADEMIA -->
   <div id="academia-root" style="display:none;">
@@ -1067,5 +1054,21 @@
   </div>
   <!-- END ACADEMIA -->
 <!-- deploy-test: academia-v2 -->
+
+<script>
+// ACADEMIA SPA ROUTER — debe ejecutarse DESPUÉS de que #academia-root exista en el DOM
+(function(){
+  if (window.location.pathname.startsWith('/academia')) {
+    var acadRoot = document.getElementById('academia-root');
+    if (acadRoot) {
+      // Hide main site elements
+      var mainEls = document.querySelectorAll('body > nav, header.hero, body > .section, footer.contact, .whatsapp-float, .chatbot-tag');
+      mainEls.forEach(function(el){ el.style.display = 'none'; });
+      acadRoot.style.display = 'block';
+      document.title = 'Academia ARG — Formación de Asesores';
+    }
+  }
+})();
+</script>
 </body>
 </html>
