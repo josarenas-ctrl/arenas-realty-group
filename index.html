@@ -834,6 +834,17 @@
     #academia-root .acad-auth-err{color:#c0392b;font-size:0.82rem;margin-top:12px;display:none}
     #academia-root .acad-user-btn{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;font-size:0.85rem;border:1px solid var(--line);border-radius:4px;background:var(--cream);color:var(--clay);cursor:pointer;white-space:nowrap}
     #academia-root .acad-user-btn:hover{border-color:var(--terracotta)}
+  #academia-root .acad-admin-table{width:100%;border-collapse:collapse;font-size:0.9rem;margin-top:24px}
+  #academia-root .acad-admin-table th{background:var(--clay);color:var(--cream);text-align:left;padding:10px 14px;font-weight:500}
+  #academia-root .acad-admin-table td{padding:10px 14px;border-bottom:1px solid var(--line)}
+  #academia-root .acad-admin-table tr:hover td{background:var(--sand)}
+  #academia-root .acad-admin-table .badge{display:inline-block;padding:2px 10px;border-radius:10px;font-size:0.78rem}
+  #academia-root .acad-admin-table .badge.admin{background:var(--clay);color:var(--cream)}
+  #academia-root .acad-admin-table .badge.student{background:var(--sand);color:var(--clay-soft)}
+  #academia-root .acad-admin-summary{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:16px;margin-bottom:24px}
+  #academia-root .acad-admin-card{border:1px solid var(--line);padding:20px;background:var(--cream)}
+  #academia-root .acad-admin-card .num{font-family:'Fraunces',serif;font-size:1.8rem;color:var(--terracotta)}
+  #academia-root .acad-admin-card .label{font-size:0.82rem;color:var(--clay-soft)}
   #academia-root .acad-lesson-content blockquote{border-left:3px solid var(--terracotta);padding:10px 18px;margin:18px 0;background:var(--sand);font-style:italic}
   #academia-root .acad-lesson-content strong{color:var(--clay)}
   #academia-root .acad-lesson-content hr{border:none;border-top:1px solid var(--line);margin:30px 0}
@@ -897,6 +908,20 @@
       <div class="acad-lesson-content" id="acad-lesson-content"></div>
   </div></div>
 
+  <!-- ADMIN DASHBOARD -->
+  <div class="acad-detail" id="acad-admin-view"><div class="wrap acad-section">
+    <h2>Panel de Administración</h2>
+    <p style="color:var(--clay-soft);margin-bottom:24px">Progreso de todos los alumnos</p>
+    <div class="acad-admin-summary" id="acad-admin-summary"></div>
+    <div style="overflow-x:auto">
+      <table class="acad-admin-table">
+        <thead><tr><th>Nombre</th><th>Email</th><th>Rol</th><th>Módulos</th><th>Promedio</th><th>Registro</th></tr></thead>
+        <tbody id="acad-admin-body"></tbody>
+      </table>
+    </div>
+    <p id="acad-admin-loading" style="color:var(--clay-soft);margin-top:16px">Cargando datos...</p>
+  </div></div>
+
   <footer class="acad-footer"><div class="wrap"><p>Arenas Realty Group — Academia de Formación</p></div></footer>
 
   <!-- AUTH MODAL -->
@@ -932,7 +957,10 @@
       area.style.display = 'flex'; area.style.alignItems = 'center'; area.style.gap = '8px';
     
       if(currentUser){
-        area.innerHTML = '<span style="font-size:0.85rem;color:var(--clay-soft)">'+currentUser.name+'</span><button class="acad-user-btn" onclick="acadLogout()">Salir</button>';
+              var btns = '<span style="font-size:0.85rem;color:var(--clay-soft)">'+currentUser.name+'</span>';
+              if(currentUser.role==='admin') btns += '<button class="acad-nav-btn site-btn" onclick="acadShowAdmin()" style="padding:7px 12px;font-size:0.8rem">Admin</button>';
+              btns += '<button class="acad-user-btn" onclick="acadLogout()">Salir</button>';
+              area.innerHTML = btns;
       } else {
         area.innerHTML = '<button class="acad-nav-btn site-btn" onclick="acadShowAuth()">Iniciar sesión</button>';
       }
@@ -1002,7 +1030,44 @@
           updateNavUser();
           // Reset progress display (don't wipe localStorage)
           if(typeof A !== 'undefined'){ var p={}; A.setP(p); A.upUI(); A.renderCards(); }
-        };
+                  };
+
+              // ADMIN DASHBOARD
+              window.acadShowAdmin = async function(){
+                document.getElementById('acad-landing').style.display = 'none';
+                document.getElementById('acad-module-detail').classList.remove('active');
+                document.getElementById('acad-lesson-view').classList.remove('active');
+                var av = document.getElementById('acad-admin-view');
+                av.classList.add('active');
+                document.getElementById('acad-admin-loading').style.display = 'block';
+                document.getElementById('acad-admin-body').innerHTML = '';
+                var nb = document.getElementById('acad-nav-back-module');
+                var nl = document.getElementById('acad-nav-back-landing');
+                if(nb) nb.classList.add('hidden');
+                if(nl) nl.classList.remove('hidden');
+                try {
+                  var r = await fetch(API+'/academia/admin/students', {headers:{'Authorization':'Bearer '+token}});
+                  if(!r.ok){ document.getElementById('acad-admin-loading').textContent='Error: acceso denegado'; return; }
+                  var d = await r.json();
+                  var st = d.students||[];
+                  document.getElementById('acad-admin-loading').style.display = 'none';
+                  var totS=st.filter(function(s){return s.role==='student'}).length;
+                  var totC=st.reduce(function(a,b){return a+(b.modules_completed||0)},0);
+                  var avg=st.length>0?Math.round(st.reduce(function(a,b){return a+(b.avg_score||0)},0)/st.length):0;
+                  document.getElementById('acad-admin-summary').innerHTML=
+                    '<div class="acad-admin-card"><div class="num">'+totS+'</div><div class="label">Alumnos</div></div>'+
+                    '<div class="acad-admin-card"><div class="num">'+totC+'</div><div class="label">Módulos completados</div></div>'+
+                    '<div class="acad-admin-card"><div class="num">'+avg+'%</div><div class="label">Promedio general</div></div>';
+                  var rows='';
+                  st.forEach(function(s){
+                    rows+='<tr><td style="font-weight:500">'+s.name+'</td><td style="color:var(--clay-soft)">'+s.email+'</td>'+
+                      '<td><span class="badge '+(s.role==='admin'?'admin':'student')+'">'+s.role+'</span></td>'+
+                      '<td>'+(s.modules_completed||0)+'</td><td>'+(s.avg_score?s.avg_score+'%':'-')+'</td>'+
+                      '<td style="color:var(--clay-soft)">'+(s.created_at||'').substring(0,10)+'</td></tr>';
+                  });
+                  document.getElementById('acad-admin-body').innerHTML=rows||'<tr><td colspan="6" style="color:var(--clay-soft)">No hay estudiantes registrados</td></tr>';
+                }catch(e){ document.getElementById('acad-admin-loading').textContent='Error de conexión'; }
+              };
 
     function showErr(msg){
       var el = document.getElementById('acad-auth-err');
@@ -1175,10 +1240,11 @@
     // standalone functions for nav onclick handlers
     window.acadBackToModule=function(){A.backToModule();};
     window.acadShowLanding=function(){
-      A.curMod=null;
-      document.getElementById('acad-module-detail').classList.remove('active');
-      document.getElementById('acad-lesson-view').classList.remove('active');
-      document.getElementById('acad-landing').style.display='block';
+          A.curMod=null;
+          document.getElementById('acad-module-detail').classList.remove('active');
+          document.getElementById('acad-lesson-view').classList.remove('active');
+          var av=document.getElementById('acad-admin-view');if(av)av.classList.remove('active');
+          document.getElementById('acad-landing').style.display='block';
       var navBackMod=document.getElementById('acad-nav-back-module');
       var navBackLand=document.getElementById('acad-nav-back-landing');
       if(navBackMod)navBackMod.style.display='none';
