@@ -404,9 +404,16 @@ async function main() {
     // IA zona: recolectar titulos sin zona y clasificar en lote
     const titulosSinZona = [...new Set(fichas.filter(f => !f.zona && f.titulo).map(f => f.titulo))];
     const zonaCache = new Map();
+    console.log(`  Consultando IA para ${titulosSinZona.length} titulos sin zona...`);
+    let iaLlamadas = 0;
     for (const titulo of titulosSinZona) {
       const z = await extraerZonaConIA(titulo);
       if (z) zonaCache.set(titulo, z);
+      iaLlamadas++;
+      if (iaLlamadas % 15 === 0) {
+        console.log(`  IA: ${iaLlamadas}/${titulosSinZona.length} procesados, pausa anti rate-limit...`);
+        await new Promise(r => setTimeout(r, 3000));
+      }
     }
 
     for (const ficha of fichas) {
@@ -449,7 +456,7 @@ async function main() {
     }
 
   const fichasAnalizadas = fichas.map((ficha) => {
-      const zona = extraerZona(ficha.ubicacion);
+      const zona = ficha.zona || extraerZona(ficha.ubicacion);
             const condicion = extraerCondicion(ficha);
             const contacto = extraerContacto(ficha);
             const { _precio_m2, _estado, ...resto } = ficha;
