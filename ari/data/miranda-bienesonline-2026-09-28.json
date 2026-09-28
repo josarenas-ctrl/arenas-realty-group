@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "alquiler",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+alquiler+miranda",
-  "scrapeado_en": "2026-09-28T03:02:34.842Z",
+  "scrapeado_en": "2026-09-28T23:04:26.944Z",
   "total": 100,
   "anuncios": [
     {
@@ -909,6 +909,17 @@
       "ubicacion": "Caracas, Distrito Capital"
     },
     {
+      "titulo": "apartamento en venta en manzanares tlf  04242129768 rolando rodriguez codg 27-2290",
+      "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/129858-apartamento-en-venta-en-manzanares-tlf-04242129768-rolando-rodriguez-codg-27-2290",
+      "precio_texto": "USD 175.000",
+      "habitaciones": 2,
+      "banos": 3,
+      "metros_cuadrados": 115,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
+      "ubicacion": "Baruta, Miranda"
+    },
+    {
       "titulo": "apartamento venta manzanares  rolando rodriguez tlf 04242129768",
       "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/33606-apartamento-venta-manzanares-rolando-rodriguez-tlf-04242129768",
       "precio_texto": "USD 92.000",
@@ -1094,17 +1105,6 @@
       "tipo": "Apartamento",
       "operacion_detectada": "alquiler",
       "ubicacion": "Chacao, Miranda"
-    },
-    {
-      "titulo": "Apartamento en Venta Miravila G. 04143054662",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/128019-apartamento-en-venta-miravila-g-04143054662",
-      "precio_texto": "USD 85.000",
-      "habitaciones": 3,
-      "banos": 2,
-      "metros_cuadrados": 102,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Caracas, Distrito Capital"
     }
   ],
   "diagnostico": {

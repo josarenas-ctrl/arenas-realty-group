@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "alquiler",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+alquiler+la-guaira",
-  "scrapeado_en": "2026-09-28T03:02:39.674Z",
+  "scrapeado_en": "2026-09-28T23:04:34.018Z",
   "total": 100,
   "anuncios": [
     {
@@ -491,6 +491,28 @@
       "ubicacion": "Lecheria, Anzoátegui"
     },
     {
+      "titulo": "APARTAMENTO EN ALQUILER EN CR GUAICA SUITES LECHERIA",
+      "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/129841-apartamento-en-alquiler-en-cr-guaica-suites-lecheria",
+      "precio_texto": "USD 70.000",
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 74,
+      "tipo": "Apartamento",
+      "operacion_detectada": "VENTA",
+      "ubicacion": "La Guaira, Vargas"
+    },
+    {
+      "titulo": "APARTAMENTO EN ALQUILER EN CR GUAICA SUITES LECHERIA",
+      "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/129840-apartamento-en-alquiler-en-cr-guaica-suites-lecheria",
+      "precio_texto": "USD 70.000",
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 74,
+      "tipo": "Apartamento",
+      "operacion_detectada": "VENTA",
+      "ubicacion": "La Guaira, Vargas"
+    },
+    {
       "titulo": "Locales (3) en Guatire EN ALQUILER",
       "enlace": "https://bienesonline.ai/es/venezuela/guatire/propiedad/30401-locales-3-en-guatire-en-alquiler",
       "precio_texto": "USD 250",
@@ -778,7 +800,7 @@
     },
     {
       "titulo": "APARATAMENTO EN ALQUILER EN C.R.GUAICA SUITES LECHERIA",
-      "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/126815-aparatamento-en-alquiler-en-crguaica-suites-lecheria",
+      "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/126812-aparatamento-en-alquiler-en-crguaica-suites-lecheria",
       "precio_texto": "USD 350",
       "habitaciones": null,
       "banos": null,
@@ -800,7 +822,7 @@
     },
     {
       "titulo": "APARATAMENTO EN ALQUILER EN C.R.GUAICA SUITES LECHERIA",
-      "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/126812-aparatamento-en-alquiler-en-crguaica-suites-lecheria",
+      "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/126815-aparatamento-en-alquiler-en-crguaica-suites-lecheria",
       "precio_texto": "USD 350",
       "habitaciones": null,
       "banos": null,
@@ -933,13 +955,13 @@
     {
       "titulo": "En Alquiler Apartamento CR Guaica Suites",
       "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/67996-en-alquiler-apartamento-cr-guaica-suites",
-      "precio_texto": "USD 450",
-      "habitaciones": 3,
-      "banos": 3,
-      "metros_cuadrados": 180,
+      "precio_texto": "USD 90",
+      "habitaciones": 1,
+      "banos": 1,
+      "metros_cuadrados": 50,
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
-      "ubicacion": "Lechería, Anzoátegui"
+      "ubicacion": "Lecheria, Anzoátegui"
     },
     {
       "titulo": "Alquilo Casa Urb Roraima 04124390854",
@@ -1053,7 +1075,7 @@
     },
     {
       "titulo": "APARTAMENTO EN ALQUIERL EN C.R.GUAICA SUITES",
-      "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/125879-apartamento-en-alquierl-en-crguaica-suites",
+      "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/125878-apartamento-en-alquierl-en-crguaica-suites",
       "precio_texto": "USD 350",
       "habitaciones": null,
       "banos": null,
@@ -1075,7 +1097,7 @@
     },
     {
       "titulo": "APARTAMENTO EN ALQUIERL EN C.R.GUAICA SUITES",
-      "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/125878-apartamento-en-alquierl-en-crguaica-suites",
+      "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/125879-apartamento-en-alquierl-en-crguaica-suites",
       "precio_texto": "USD 350",
       "habitaciones": null,
       "banos": null,
@@ -1083,28 +1105,6 @@
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Lecheria, Anzoátegui"
-    },
-    {
-      "titulo": "APARTAMENTO EN ALQUIERL EN C.R.GUAICA SUITES",
-      "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/125880-apartamento-en-alquierl-en-crguaica-suites",
-      "precio_texto": "USD 350",
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": null,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Lecheria, Anzoátegui"
-    },
-    {
-      "titulo": "APARTAMENTO EN ALQUILER",
-      "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/56833-apartamento-en-alquiler",
-      "precio_texto": "USD 449",
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": null,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Lechería, Anzoátegui"
     }
   ],
   "diagnostico": {
