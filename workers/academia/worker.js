@@ -275,9 +275,23 @@ async function handleRequest(request) {
               const storedHash = `${salt}:${hash}`;
               await d1Query('UPDATE users SET password_hash = ? WHERE id = ?', [storedHash, userId]);
               return json({ new_password: newPass });
-            }
+                          }
 
-            // ===== ORIGINAL arenas-auth routes (mantener compatibilidad) =====
+                  // POST /academia/admin/delete-user (solo admin)
+                  if (path === '/academia/admin/delete-user' && request.method === 'POST') {
+                    const adminId = await getUserId(request);
+                    if (!adminId) return json({ error: 'No autorizado' }, 401);
+                    const adminCheck = await d1Query('SELECT role FROM users WHERE id = ?', [adminId]);
+                    const adminUser = (adminCheck.results || [])[0];
+                    if (!adminUser || adminUser.role !== 'admin') return json({ error: 'Solo administradores' }, 403);
+                    const { userId } = await request.json().catch(() => ({}));
+                    if (!userId) return json({ error: 'userId requerido' }, 400);
+                    await d1Query('DELETE FROM progress WHERE user_id = ?', [userId]);
+                    await d1Query('DELETE FROM users WHERE id = ?', [userId]);
+                    return json({ ok: true });
+                  }
+
+                  // ===== ORIGINAL arenas-auth routes (mantener compatibilidad) =====
     
     if (path === "/auth") {
       const authorizeUrl = new URL("https://github.com/login/oauth/authorize");

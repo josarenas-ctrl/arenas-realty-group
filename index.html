@@ -1080,13 +1080,19 @@
     }
 
     window.acadLogout = function(){
-          token = null; currentUser = null;
-          localStorage.removeItem('arg_acad_token');
-          localStorage.removeItem('arg_acad_user');
-          updateNavUser();
-          // Reset progress display (don't wipe localStorage)
-          if(typeof A !== 'undefined'){ var p={}; A.setP(p); A.upUI(); A.renderCards(); }
-                  };
+              token = null; currentUser = null;
+              localStorage.removeItem('arg_acad_token');
+              localStorage.removeItem('arg_acad_user');
+              updateNavUser();
+              // Ocultar todas las vistas y mostrar landing
+              document.getElementById('acad-module-detail').classList.remove('active');
+              document.getElementById('acad-lesson-view').classList.remove('active');
+              var av = document.getElementById('acad-admin-view'); if(av) av.classList.remove('active');
+              document.getElementById('acad-landing').style.display='block';
+              var nb = document.getElementById('acad-nav-back-module'); if(nb) nb.classList.add('hidden');
+              var nl = document.getElementById('acad-nav-back-landing'); if(nl) nl.classList.add('hidden');
+              if(typeof A !== 'undefined'){ A.curMod=null; A.upUI(); A.renderCards(); }
+                      };
 
               // ADMIN DASHBOARD
               window.acadShowAdmin = async function(){
@@ -1115,30 +1121,45 @@
                     '<div class="acad-admin-card"><div class="num">'+totC+'</div><div class="label">Módulos completados</div></div>'+
                     '<div class="acad-admin-card"><div class="num">'+avg+'%</div><div class="label">Promedio general</div></div>';
                   var rows='';
-                  st.forEach(function(s){
-                    rows+='<tr><td style="font-weight:500">'+s.name+'</td><td style="color:var(--clay-soft)">'+s.email+'</td>'+
-                      '<td><span class="badge '+(s.role==='admin'?'admin':'student')+'">'+s.role+'</span></td>'+
-                      '<td>'+(s.modules_completed||0)+'</td><td>'+(s.avg_score?s.avg_score+'%':'-')+'</td>'+
-                      '<td style="color:var(--clay-soft)">'+(s.created_at||'').substring(0,10)+'</td></tr>';
-                  });
-                  document.getElementById('acad-admin-body').innerHTML=rows||'<tr><td colspan="6" style="color:var(--clay-soft)">No hay estudiantes registrados</td></tr>';
+                                    st.forEach(function(s){
+                                      rows+='<tr><td style="font-weight:500">'+s.name+'</td><td style="color:var(--clay-soft)">'+s.email+'</td>'+
+                                        '<td><span class="badge '+(s.role==='admin'?'admin':'student')+'">'+s.role+'</span></td>'+
+                                        '<td>'+(s.modules_completed||0)+'</td><td>'+(s.avg_score?s.avg_score+'%':'-')+'</td>'+
+                                        '<td style="color:var(--clay-soft)">'+(s.created_at||'').substring(0,10)+'</td>'+
+                                        '<td style="white-space:nowrap"><button class="acad-btn-ghost" onclick="acadResetPass('+s.id+',\''+s.email+'\')" style="font-size:0.75rem;padding:4px 8px;margin-right:4px">Reset</button><button class="acad-btn-ghost" onclick="acadDeleteUser('+s.id+',\''+s.email+'\')" style="font-size:0.75rem;padding:4px 8px;color:#c44;border-color:#c44">Borrar</button></td></tr>';
+                                    });
+                                    document.getElementById('acad-admin-body').innerHTML=rows||'<tr><td colspan="7" style="color:var(--clay-soft)">No hay estudiantes registrados</td></tr>';
                 }catch(e){ document.getElementById('acad-admin-loading').textContent='Error de conexión'; }
                               };
 
                     // Admin: reset password
                     window.acadResetPass = async function(userId, email){
-                      if(!confirm('¿Restablecer contraseña de '+email+'?')) return;
-                      try {
-                        var r = await fetch(API+'/academia/admin/reset-password', {
-                          method:'POST',
-                          headers:{'Content-Type':'application/json','Authorization':'Bearer '+token},
-                          body:JSON.stringify({user_id:userId})
-                        });
-                        var d = await r.json();
-                        if(r.ok) alert('Nueva contraseña: '+d.new_password+'\\n\\nEntrégasela al alumno.');
-                        else alert('Error: '+(d.error||'desconocido'));
-                      } catch(e){ alert('Error de conexión'); }
-                    };
+                                           if(!confirm('¿Restablecer contraseña de '+email+'?')) return;
+                                           try {
+                                             var r = await fetch(API+'/academia/admin/reset-password', {
+                                               method:'POST',
+                                               headers:{'Content-Type':'application/json','Authorization':'Bearer '+token},
+                                               body:JSON.stringify({userId:userId})
+                                             });
+                                             var d = await r.json();
+                                             if(r.ok) alert('Nueva contraseña: '+d.new_password+'\\n\\nEntrégasela al alumno.');
+                                             else alert('Error: '+(d.error||'desconocido'));
+                                           } catch(e){ alert('Error de conexión'); }
+                                         };
+                                         // Admin: delete user
+                                         window.acadDeleteUser = async function(userId, email){
+                                           if(!confirm('¿Eliminar permanentemente a '+email+'?')) return;
+                                           try {
+                                             var r = await fetch(API+'/academia/admin/delete-user', {
+                                               method:'POST',
+                                               headers:{'Content-Type':'application/json','Authorization':'Bearer '+token},
+                                               body:JSON.stringify({userId:userId})
+                                             });
+                                             var d = await r.json();
+                                             if(r.ok){ alert('Usuario eliminado'); acadShowAdmin(); }
+                                             else alert('Error: '+(d.error||'desconocido'));
+                                           } catch(e){ alert('Error de conexión'); }
+                                         };
 
     function showErr(msg){
       var el = document.getElementById('acad-auth-err');
