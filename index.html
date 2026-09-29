@@ -1456,8 +1456,7 @@
   };
 
   A.selOpt=function(qi,oi,lt){
-    if(A.quizAns[qi]!==undefined)return;
-    A.quizAns[qi]=lt;
+      A.quizAns[qi]=lt;
     var qq=document.getElementById('acad-qq-'+qi);
     qq.querySelectorAll('.acad-quiz-opt').forEach(function(el){el.classList.remove('sel')});
     document.getElementById('acad-opt-'+qi+'-'+oi).classList.add('sel');
