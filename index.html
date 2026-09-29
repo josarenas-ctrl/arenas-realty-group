@@ -1394,11 +1394,16 @@
     };
 
   A.startQuiz=async function(){
-    if(!A.curMod)return;
-    var mp=A.modP(A.curMod.id);
-    if(typeof mp==='number'){A.parseQuiz();return;}
-    A.parseQuiz();
-  };
+      if(!A.curMod)return;
+      var mp=A.modP(A.curMod.id);
+      if(typeof mp==='number'){A.parseQuiz();return;}
+      // Incrementar intentos
+      var key='arg_acad_tries_m'+A.curMod.id;
+      var tries=parseInt(localStorage.getItem(key)||'0');
+      if(tries>=3){alert('Ya has usado los 3 intentos. Repasa las lecciones y vuelve mañana.');return;}
+            localStorage.setItem(key,String(tries+1));
+            A.parseQuiz();
+    };
 
   A.parseQuiz=async function(){
     var md=await A.loadMd(A.curMod.file),lines=md.split('\n');
@@ -1474,14 +1479,24 @@
       opts.forEach(function(o){o.style.pointerEvents='none'});
     });
     var pct=Math.round(corr/A.curQuiz.length*100),pass=pct>=80;
-    var nextMod=A.MODULES[A.MODULES.findIndex(function(m){return m.id===A.curMod.id})+1];
-        var btns='<div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:8px">'+
-          '<button class="acad-btn" onclick="acadBackToModule()" style="padding:8px 20px">← Salir a módulos</button>';
+        var tries=parseInt(localStorage.getItem('arg_acad_tries_m'+A.curMod.id)||'0');
+        if(pass){localStorage.removeItem('arg_acad_tries_m'+A.curMod.id);}
+        var nextMod=A.MODULES[A.MODULES.findIndex(function(m){return m.id===A.curMod.id})+1];
+        var btns='<div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:8px"><button class="acad-btn" onclick="acadBackToModule()" style="padding:8px 20px">← Salir a módulos</button>';
         if(pass&&nextMod) btns+='<button class="acad-btn acad-btn-primary" onclick="A.openMod('+nextMod.id+')" style="padding:8px 20px">Continuar a '+nextMod.title+' →</button>';
+        if(!pass&&tries<3) btns+='<button class="acad-btn acad-btn-primary" onclick="A.retryQuiz()" style="padding:8px 20px">🔄 Reintentar</button>';
         btns+='</div>';
-        document.getElementById('acad-quiz-score').innerHTML='<p>Resultado: <strong>'+corr+'/'+A.curQuiz.length+' ('+pct+'%)</strong></p><p style="color:'+(pass?'var(--teal)':'#c44')+';margin-bottom:20px">'+(pass?'✓ Aprobado':'✗ No alcanza el 80%. Repase y vuelva a intentar.')+'</p>'+btns;
-    if(pass){var p=A.getP();p['m'+A.curMod.id]=pct;A.setP(p);A.upUI();document.getElementById('acad-btn-quiz').textContent='Ver resultados ('+pct+'%)';acadCelebrate(A.curMod.title);}
-  };
+        var msg=pass?'✓ Aprobado':'✗ No alcanza el 80%';
+        if(!pass) msg+='<br><small style="font-size:0.8rem;opacity:0.7">Intento '+tries+' de 3'+(tries>=3?' — Repasa las lecciones antes de reintentar':'')+'</small>';
+        document.getElementById('acad-quiz-score').innerHTML='<p>Resultado: <strong>'+corr+'/'+A.curQuiz.length+' ('+pct+'%)</strong></p><p style="color:'+(pass?'var(--teal)':'#c44')+';margin-bottom:12px">'+msg+'</p>'+btns;
+        if(pass){var p=A.getP();p['m'+A.curMod.id]=pct;A.setP(p);A.upUI();document.getElementById('acad-btn-quiz').textContent='Ver resultados ('+pct+'%)';acadCelebrate(A.curMod.title);}
+
+      A.retryQuiz=function(){
+        if(!A.curMod)return;
+        A.quizAns={};A.curQuiz=null;
+        document.getElementById('acad-quiz-score').innerHTML='';
+        A.parseQuiz();
+      };
 
   A.upUI();A.renderCards();
     A.loadFromServer();
