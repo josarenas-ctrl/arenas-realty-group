@@ -1002,7 +1002,9 @@
   (function(){
     var API = 'https://arenas-auth.arenasrealtygroup1.workers.dev';
     var token = localStorage.getItem('arg_acad_token');
-    var currentUser = token ? JSON.parse(localStorage.getItem('arg_acad_user')||'null') : null;
+        var currentUser = token ? JSON.parse(localStorage.getItem('arg_acad_user')||'null') : null;
+        // Sin sesión = sin progreso visible
+        if(!token) localStorage.removeItem('arg_academia_progress');
   
     // Update nav user button
     function updateNavUser(){
@@ -1092,7 +1094,8 @@
               token = null; currentUser = null;
               localStorage.removeItem('arg_acad_token');
               localStorage.removeItem('arg_acad_user');
-              updateNavUser();
+                            localStorage.removeItem('arg_academia_progress');
+                            updateNavUser();
               // Ocultar todas las vistas y mostrar landing
               document.getElementById('acad-module-detail').classList.remove('active');
               document.getElementById('acad-lesson-view').classList.remove('active');
