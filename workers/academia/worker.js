@@ -258,7 +258,26 @@ async function handleRequest(request) {
       }
     }
 
-    // ===== ORIGINAL arenas-auth routes (mantener compatibilidad) =====
+        // POST /academia/admin/reset-password (solo admin)
+            if (path === '/academia/admin/reset-password' && request.method === 'POST') {
+              const adminId = await getUserId(request);
+              if (!adminId) return json({ error: 'No autorizado' }, 401);
+              const adminCheck = await d1Query('SELECT role FROM users WHERE id = ?', [adminId]);
+              const adminUser = (adminCheck.results || [])[0];
+              if (!adminUser || adminUser.role !== 'admin') return json({ error: 'Solo administradores' }, 403);
+              const { userId } = await request.json().catch(() => ({}));
+              if (!userId) return json({ error: 'userId requerido' }, 400);
+              const chars = 'abcdefghjkmnpqrstuvwxyz23456789';
+              let newPass = '';
+              for (let i = 0; i < 8; i++) newPass += chars[Math.floor(Math.random() * chars.length)];
+              const salt = crypto.randomUUID();
+              const hash = await hashPassword(newPass, salt);
+              const storedHash = `${salt}:${hash}`;
+              await d1Query('UPDATE users SET password_hash = ? WHERE id = ?', [storedHash, userId]);
+              return json({ new_password: newPass });
+            }
+
+            // ===== ORIGINAL arenas-auth routes (mantener compatibilidad) =====
     
     if (path === "/auth") {
       const authorizeUrl = new URL("https://github.com/login/oauth/authorize");

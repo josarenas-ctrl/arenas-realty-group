@@ -795,7 +795,9 @@
   #academia-root .acad-module-card .status{position:absolute;top:20px;right:20px;width:12px;height:12px;border-radius:50%;border:2px solid var(--line)}
   #academia-root .acad-module-card .status.done{background:var(--teal);border-color:var(--teal)}
   #academia-root .acad-module-card .status.started{background:var(--terracotta);border-color:var(--terracotta)}
-  #academia-root .acad-detail,#academia-root .acad-lesson{display:none}
+    #academia-root .acad-module-card.locked{opacity:0.5;cursor:not-allowed;position:relative;pointer-events:none}
+    #academia-root .acad-module-card.locked::after{content:'🔒';position:absolute;top:20px;right:20px;font-size:1.2rem}
+    #academia-root .acad-detail,#academia-root .acad-lesson{display:none}
   #academia-root .acad-detail.active,#academia-root .acad-lesson.active{display:block}
   #academia-root .acad-back{display:inline-flex;align-items:center;gap:6px;color:var(--clay-soft);font-size:0.9rem;margin-bottom:32px;cursor:pointer}
   #academia-root .acad-back:hover{color:var(--terracotta)}
@@ -905,7 +907,9 @@
     #academia-root .acad-admin-table{font-size:0.78rem}
     #academia-root .acad-admin-table td,#academia-root .acad-admin-table th{padding:7px 8px}
     #academia-root .acad-footer{padding:30px 0}
-    #academia-root .acad-footer p{font-size:0.75rem}
+         #academia-root .acad-module-card.locked{opacity:0.5;cursor:not-allowed;position:relative}
+         #academia-root .acad-module-card.locked::after{content:'🔒';position:absolute;top:20px;right:20px;font-size:1.2rem}
+         #academia-root .acad-footer p{font-size:0.75rem}
   }
   </style>
 
@@ -960,7 +964,7 @@
     <div class="acad-admin-summary" id="acad-admin-summary"></div>
     <div style="overflow-x:auto">
       <table class="acad-admin-table">
-        <thead><tr><th>Nombre</th><th>Email</th><th>Rol</th><th>Módulos</th><th>Promedio</th><th>Registro</th></tr></thead>
+        <thead><tr><th>Nombre</th><th>Email</th><th>Rol</th><th>Módulos</th><th>Promedio</th><th>Registro</th><th>Acción</th></tr></thead>
         <tbody id="acad-admin-body"></tbody>
       </table>
     </div>
@@ -980,6 +984,7 @@
       <div class="field"><label>Contraseña</label><input type="password" id="acad-auth-pass" placeholder="Mínimo 6 caracteres"></div>
       <button class="acad-btn acad-btn-primary" id="acad-auth-submit">Iniciar sesión</button>
       <div class="toggle">¿No tienes cuenta? <a id="acad-auth-toggle">Regístrate</a></div>
+      <div class="toggle" style="margin-top:0"><a id="acad-auth-forgot" onclick="acadShowAuth('forgot')">¿Olvidaste tu contraseña?</a></div>
     </div>
   </div>
 
@@ -1014,22 +1019,28 @@
 
     // Show auth modal
     window.acadShowAuth = function(mode){
-      var isLogin = mode !== 'register';
-      document.getElementById('acad-auth-title').textContent = isLogin ? 'Iniciar sesión' : 'Crear cuenta';
-      document.getElementById('acad-auth-sub').textContent = isLogin ? 'Accede para guardar tu progreso' : 'Regístrate para empezar tu formación';
-      document.getElementById('acad-auth-name-field').style.display = isLogin ? 'none' : 'block';
-      document.getElementById('acad-auth-submit').textContent = isLogin ? 'Iniciar sesión' : 'Crear cuenta';
-      document.getElementById('acad-auth-toggle').textContent = isLogin ? 'Regístrate' : 'Iniciar sesión';
-      document.getElementById('acad-auth-toggle').onclick = function(){ acadShowAuth(isLogin?'register':'login'); };
-      document.getElementById('acad-auth-email').value = '';
-      document.getElementById('acad-auth-pass').value = '';
-      document.getElementById('acad-auth-name').value = '';
-      document.getElementById('acad-auth-err').style.display = 'none';
-      document.getElementById('acad-auth-overlay').classList.add('active');
+          var isLogin = mode !== 'register';
+          var isForgot = mode === 'forgot';
+          document.getElementById('acad-auth-title').textContent = isForgot ? 'Recuperar contraseña' : (isLogin ? 'Iniciar sesión' : 'Crear cuenta');
+          document.getElementById('acad-auth-sub').textContent = isForgot ? 'Solicita a tu administrador que la restablezca' : (isLogin ? 'Accede para guardar tu progreso' : 'Regístrate para empezar tu formación');
+          document.getElementById('acad-auth-name-field').style.display = isLogin||isForgot ? 'none' : 'block';
+          document.getElementById('acad-auth-submit').textContent = isForgot ? 'Entendido' : (isLogin ? 'Iniciar sesión' : 'Crear cuenta');
+          document.getElementById('acad-auth-pass').parentElement.style.display = isForgot ? 'none' : 'block';
+          document.getElementById('acad-auth-toggle').textContent = isLogin ? 'Regístrate' : 'Iniciar sesión';
+          document.getElementById('acad-auth-toggle').onclick = function(){ acadShowAuth(isLogin?'register':'login'); };
+          document.getElementById('acad-auth-email').value = '';
+          document.getElementById('acad-auth-pass').value = '';
+          document.getElementById('acad-auth-name').value = '';
+          document.getElementById('acad-auth-err').style.display = 'none';
+          document.getElementById('acad-auth-overlay').classList.add('active');
     
-      document.getElementById('acad-auth-submit').onclick = isLogin ? doLogin : doRegister;
-      document.getElementById('acad-auth-pass').onkeydown = function(e){ if(e.key==='Enter') (isLogin?doLogin:doRegister)(); };
-    };
+          if(isForgot){
+            document.getElementById('acad-auth-submit').onclick = function(){ document.getElementById('acad-auth-overlay').classList.remove('active'); };
+          } else {
+            document.getElementById('acad-auth-submit').onclick = isLogin ? doLogin : doRegister;
+            document.getElementById('acad-auth-pass').onkeydown = function(e){ if(e.key==='Enter') (isLogin?doLogin:doRegister)(); };
+          }
+        };
 
     async function doLogin(){
       var email = document.getElementById('acad-auth-email').value.trim();
@@ -1112,7 +1123,22 @@
                   });
                   document.getElementById('acad-admin-body').innerHTML=rows||'<tr><td colspan="6" style="color:var(--clay-soft)">No hay estudiantes registrados</td></tr>';
                 }catch(e){ document.getElementById('acad-admin-loading').textContent='Error de conexión'; }
-              };
+                              };
+
+                    // Admin: reset password
+                    window.acadResetPass = async function(userId, email){
+                      if(!confirm('¿Restablecer contraseña de '+email+'?')) return;
+                      try {
+                        var r = await fetch(API+'/academia/admin/reset-password', {
+                          method:'POST',
+                          headers:{'Content-Type':'application/json','Authorization':'Bearer '+token},
+                          body:JSON.stringify({user_id:userId})
+                        });
+                        var d = await r.json();
+                        if(r.ok) alert('Nueva contraseña: '+d.new_password+'\\n\\nEntrégasela al alumno.');
+                        else alert('Error: '+(d.error||'desconocido'));
+                      } catch(e){ alert('Error de conexión'); }
+                    };
 
     function showErr(msg){
       var el = document.getElementById('acad-auth-err');
@@ -1208,13 +1234,19 @@
   };
 
   A.renderCards=function(){
-    var h=A.MODULES.map(function(m){
-      var mp=A.modP(m.id),sc='';
-      if(typeof mp==='number')sc='done';else if(mp==='started')sc='started';
-      return '<div class="acad-module-card" onclick="A.openMod('+m.id+')"><span class="num">'+String(m.id).padStart(2,'0')+'</span><span class="status '+sc+'"></span><h3>'+m.title+'</h3><span class="meta">'+m.hours+' · '+m.lessons+' lecciones</span></div>';
-    });
-    document.getElementById('acad-module-grid').innerHTML=h.join('');
-  };
+      var p=A.getP(), isAdmin=window.acadAPI&&window.acadAPI.getUser()&&window.acadAPI.getUser().role==='admin';
+      var h=A.MODULES.map(function(m){
+        var mp=A.modP(m.id),sc='',locked='';
+        if(typeof mp==='number')sc='done';else if(mp==='started')sc='started';
+        // Lock: requiere que el módulo anterior tenga score >= 80
+        if(!isAdmin&&m.id>1){
+          var prev=A.modP(m.id-1);
+          if(typeof prev!=='number'||prev<80) locked='locked';
+        }
+        return '<div class="acad-module-card '+locked+'" onclick="A.openMod('+m.id+')"><span class="num">'+String(m.id).padStart(2,'0')+'</span><span class="status '+sc+'"></span><h3>'+m.title+'</h3><span class="meta">'+m.hours+' · '+m.lessons+' lecciones</span></div>';
+      });
+      document.getElementById('acad-module-grid').innerHTML=h.join('');
+    };
 
   A.showLanding=function(){
       document.getElementById('acad-landing').classList.remove('acad-hidden');
@@ -1230,8 +1262,14 @@
   };
 
   A.openMod=async function(id){
-        A.curMod=A.MODULES.find(function(m){return m.id===id});
-        if(!A.curMod)return;
+          A.curMod=A.MODULES.find(function(m){return m.id===id});
+          if(!A.curMod)return;
+          // Bloquear si módulo anterior no aprobado
+          var isAdmin=window.acadAPI&&window.acadAPI.getUser()&&window.acadAPI.getUser().role==='admin';
+          if(!isAdmin&&id>1){
+            var prev=A.modP(id-1);
+            if(typeof prev!=='number'||prev<80){alert('Debes aprobar el módulo '+(id-1)+' (≥80%) para acceder a este.');return;}
+          }
         document.getElementById('acad-landing').classList.add('acad-hidden');
         document.getElementById('acad-module-detail').classList.add('active');
         document.getElementById('acad-lesson-view').classList.remove('active');
