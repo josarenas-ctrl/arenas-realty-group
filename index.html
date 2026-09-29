@@ -1343,7 +1343,12 @@
       opts.forEach(function(o){o.style.pointerEvents='none'});
     });
     var pct=Math.round(corr/A.curQuiz.length*100),pass=pct>=80;
-    document.getElementById('acad-quiz-score').innerHTML='<p>Resultado: <strong>'+corr+'/'+A.curQuiz.length+' ('+pct+'%)</strong></p><p style="color:'+(pass?'var(--teal)':'#c44')+'">'+(pass?'✓ Aprobado':'✗ No alcanza el 80%. Repase y vuelva a intentar.')+'</p>';
+    var nextMod=A.MODULES[A.MODULES.findIndex(function(m){return m.id===A.curMod.id})+1];
+        var btns='<div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:8px">'+
+          '<button class="acad-btn" onclick="acadBackToModule()" style="padding:8px 20px">← Salir a módulos</button>';
+        if(pass&&nextMod) btns+='<button class="acad-btn acad-btn-primary" onclick="A.openMod('+nextMod.id+')" style="padding:8px 20px">Continuar a '+nextMod.title+' →</button>';
+        btns+='</div>';
+        document.getElementById('acad-quiz-score').innerHTML='<p>Resultado: <strong>'+corr+'/'+A.curQuiz.length+' ('+pct+'%)</strong></p><p style="color:'+(pass?'var(--teal)':'#c44')+';margin-bottom:20px">'+(pass?'✓ Aprobado':'✗ No alcanza el 80%. Repase y vuelva a intentar.')+'</p>'+btns;
     if(pass){var p=A.getP();p['m'+A.curMod.id]=pct;A.setP(p);A.upUI();document.getElementById('acad-btn-quiz').textContent='Ver resultados ('+pct+'%)';}
   };
 
