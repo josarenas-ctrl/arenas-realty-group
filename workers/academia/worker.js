@@ -154,7 +154,7 @@ async function handleRequest(request) {
         if (!email || !password) return json({ error: 'Email y contraseña requeridos' }, 400);
         
         const result = await d1Query(
-          'SELECT id, email, name, password_hash, role FROM users WHERE email = ?',
+          'SELECT id, email, name, password_hash, role FROM users WHERE LOWER(email) = LOWER(?)',
           [email]
         );
         
