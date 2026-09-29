@@ -1289,14 +1289,23 @@
     var lines=md.split('\n'),lessons=[];
     lines.forEach(function(l){var m=l.match(/^Lección\s+[\d.]+\s*[—–-]\s*(.+)/);if(m)lessons.push({title:m[1].trim()});});
     A._lessons=lessons;
-    var list='';
-    lessons.forEach(function(ls,i){list+='<li class="acad-lesson-item" onclick="A.viewLesson('+i+')"><span class="title">'+ls.title+'</span><span class="check"></span></li>';});
+        // Marcar lecciones ya vistas
+        var seen=JSON.parse(localStorage.getItem('arg_acad_seen_m'+id)||'[]');
+        var list='';
+        lessons.forEach(function(ls,i){
+          var done=seen.indexOf(i)>=0?' done':'';
+          list+='<li class="acad-lesson-item" onclick="A.viewLesson('+i+')"><span class="title">'+ls.title+'</span><span class="check'+done+'"></span></li>';
+        });
     document.getElementById('acad-lesson-list').innerHTML=list;
   };
 
   A.viewLesson=function(idx){
-      if(!A._lessons||!A._md)return;
-      var md=A._md,ls=A._lessons,lines=md.split('\n');
+        if(!A._lessons||!A._md)return;
+        // Marcar lección como vista
+        var key='arg_acad_seen_m'+A.curMod.id;
+        var seen=JSON.parse(localStorage.getItem(key)||'[]');
+        if(seen.indexOf(idx)<0){seen.push(idx);localStorage.setItem(key,JSON.stringify(seen));}
+        var md=A._md,ls=A._lessons,lines=md.split('\n');
       var s=-1;for(var i=0;i<lines.length;i++){if(lines[i].includes(ls[idx].title.substring(0,30))){s=i;break;}}
       var e=lines.length;
       if(idx+1<ls.length){for(var i=s+1;i<lines.length;i++){if(lines[i].includes(ls[idx+1].title.substring(0,30))){e=i;break;}}}
@@ -1320,7 +1329,16 @@
     };
 
   A.backToModule=function(){
-      if(!A.curMod)return A.showLanding();
+        if(!A.curMod)return A.showLanding();
+        // Refrescar checkmarks de lecciones vistas
+        var seen=JSON.parse(localStorage.getItem('arg_acad_seen_m'+A.curMod.id)||'[]');
+        var items=document.querySelectorAll('#acad-lesson-list .acad-lesson-item');
+        items.forEach(function(item,i){
+          var chk=item.querySelector('.check');
+          if(chk){
+            if(seen.indexOf(i)>=0)chk.classList.add('done');else chk.classList.remove('done');
+          }
+        });
       document.getElementById('acad-lesson-view').classList.remove('active');
       document.getElementById('acad-module-detail').classList.add('active');
       var navBackMod=document.getElementById('acad-nav-back-module');
