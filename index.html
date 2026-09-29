@@ -910,8 +910,17 @@
          #academia-root .acad-module-card.locked{opacity:0.5;cursor:not-allowed;position:relative}
          #academia-root .acad-module-card.locked::after{content:'🔒';position:absolute;top:20px;right:20px;font-size:1.2rem}
          #academia-root .acad-footer p{font-size:0.75rem}
-  }
-  </style>
+           }
+           /* Celebration overlay */
+           #academia-root .acad-celebration{display:none;position:fixed;inset:0;z-index:200;background:rgba(11,42,74,0.92);flex-direction:column;align-items:center;justify-content:center}
+           #academia-root .acad-celebration.active{display:flex}
+           #academia-root .acad-celebration .msg{font-family:'Fraunces',serif;font-size:clamp(1.8rem,5vw,3rem);color:#FBF9F4;text-align:center;animation:acad-pop 0.5s ease-out}
+           #academia-root .acad-celebration .sub{color:var(--teal);font-size:1.2rem;margin-top:12px;animation:acad-pop 0.5s 0.2s ease-out both}
+           @keyframes acad-pop{from{transform:scale(0.3);opacity:0}to{transform:scale(1);opacity:1}}
+           #academia-root .acad-confetti{position:fixed;inset:0;z-index:201;pointer-events:none}
+           .acad-confetti-piece{position:absolute;width:10px;height:10px;animation:acad-fall var(--dur) linear forwards}
+           @keyframes acad-fall{0%{transform:translateY(-10vh) rotate(0deg);opacity:1}100%{transform:translateY(110vh) rotate(720deg);opacity:0}}
+           </style>
 
   <nav class="acad-nav"><div class="wrap">
       <div class="acad-nav-left">
@@ -1471,16 +1480,43 @@
         if(pass&&nextMod) btns+='<button class="acad-btn acad-btn-primary" onclick="A.openMod('+nextMod.id+')" style="padding:8px 20px">Continuar a '+nextMod.title+' →</button>';
         btns+='</div>';
         document.getElementById('acad-quiz-score').innerHTML='<p>Resultado: <strong>'+corr+'/'+A.curQuiz.length+' ('+pct+'%)</strong></p><p style="color:'+(pass?'var(--teal)':'#c44')+';margin-bottom:20px">'+(pass?'✓ Aprobado':'✗ No alcanza el 80%. Repase y vuelva a intentar.')+'</p>'+btns;
-    if(pass){var p=A.getP();p['m'+A.curMod.id]=pct;A.setP(p);A.upUI();document.getElementById('acad-btn-quiz').textContent='Ver resultados ('+pct+'%)';}
+    if(pass){var p=A.getP();p['m'+A.curMod.id]=pct;A.setP(p);A.upUI();document.getElementById('acad-btn-quiz').textContent='Ver resultados ('+pct+'%)';acadCelebrate(A.curMod.title);}
   };
 
   A.upUI();A.renderCards();
     A.loadFromServer();
     window.A=A;
-  })();
+        // Celebration animation
+        window.acadCelebrate = function(title){
+          var colors=['#17A679','#D9A438','#C44536','#3D6690','#FBF9F4','#E8C547','#FF6B6B','#4ECDC4'];
+          var confetti=document.getElementById('acad-confetti');
+          confetti.innerHTML='';
+          for(var i=0;i<80;i++){
+            var p=document.createElement('div');
+            p.className='acad-confetti-piece';
+            p.style.cssText='left:'+Math.random()*100+'%;background:'+colors[Math.floor(Math.random()*colors.length)]+
+              ';--dur:'+(2+Math.random()*3)+'s;animation-delay:'+Math.random()*1.5+'s'+
+              ';width:'+(6+Math.random()*10)+'px;height:'+(6+Math.random()*10)+'px'+
+              ';border-radius:'+(Math.random()>0.5?'50%':'2px');
+            confetti.appendChild(p);
+          }
+          document.getElementById('acad-celeb-msg').textContent='¡Felicidades!';
+          document.getElementById('acad-celeb-sub').textContent='Aprobaste: '+title;
+          document.getElementById('acad-celebration').classList.add('active');
+          setTimeout(function(){
+            document.getElementById('acad-celebration').classList.remove('active');
+            confetti.innerHTML='';
+          },3500);
+        };
+      })();
   </script>
-  </div>
-  <!-- END ACADEMIA -->
+  <div class="acad-celebration" id="acad-celebration" onclick="this.classList.remove('active');document.getElementById('acad-confetti').innerHTML=''">
+      <div class="acad-confetti" id="acad-confetti"></div>
+      <div class="msg" id="acad-celeb-msg">¡Felicidades!</div>
+      <div class="sub" id="acad-celeb-sub"></div>
+    </div>
+    </div>
+    <!-- END ACADEMIA -->
 <!-- deploy-test: academia-v2 -->
 
 <script>
