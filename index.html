@@ -889,7 +889,7 @@
     #academia-root .acad-module-card .num{font-size:1.8rem}
     #academia-root .acad-module-card h3{font-size:1rem}
     #academia-root .acad-lesson-item{grid-template-columns:28px 1fr;padding:16px 0;gap:10px}
-    #academia-root .acad-lesson-item .check{display:none}
+    #academia-root .acad-lesson-item .check{display:block}
     #academia-root .acad-lesson-content{font-size:0.92rem;line-height:1.65}
     #academia-root .acad-lesson-content h1{font-size:1.4rem}
     #academia-root .acad-lesson-content h2{font-size:1.15rem;margin:24px 0 10px;padding-top:16px}
@@ -1004,7 +1004,9 @@
     var token = localStorage.getItem('arg_acad_token');
         var currentUser = token ? JSON.parse(localStorage.getItem('arg_acad_user')||'null') : null;
         // Sin sesión = sin progreso visible
-        if(!token) localStorage.removeItem('arg_academia_progress');
+        if(!token){ localStorage.removeItem('arg_academia_progress');
+                            for(var i=1;i<=10;i++) localStorage.removeItem('arg_acad_seen_m'+i);
+          for(var i=1;i<=10;i++) localStorage.removeItem('arg_acad_seen_m'+i); }
   
     // Update nav user button
     function updateNavUser(){
@@ -1095,6 +1097,7 @@
               localStorage.removeItem('arg_acad_token');
               localStorage.removeItem('arg_acad_user');
                             localStorage.removeItem('arg_academia_progress');
+                            for(var i=1;i<=10;i++) localStorage.removeItem('arg_acad_seen_m'+i);
                             updateNavUser();
               // Ocultar todas las vistas y mostrar landing
               document.getElementById('acad-module-detail').classList.remove('active');
