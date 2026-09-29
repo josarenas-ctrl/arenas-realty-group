@@ -1383,18 +1383,7 @@
 
     // standalone functions for nav onclick handlers
     window.acadBackToModule=function(){A.backToModule();};
-    window.acadShowLanding=function(){
-          A.curMod=null;
-          document.getElementById('acad-module-detail').classList.remove('active');
-          document.getElementById('acad-lesson-view').classList.remove('active');
-          var av=document.getElementById('acad-admin-view');if(av)av.classList.remove('active');
-          document.getElementById('acad-landing').style.display='block';
-      var navBackMod=document.getElementById('acad-nav-back-module');
-      var navBackLand=document.getElementById('acad-nav-back-landing');
-      if(navBackMod)navBackMod.classList.add('hidden');
-            if(navBackLand)navBackLand.classList.add('hidden');
-      window.scrollTo(0,0);
-    };
+    window.acadShowLanding=function(){A.showLanding();};
 
   A.startQuiz=async function(){
       if(!A.curMod)return;
