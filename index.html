@@ -1172,26 +1172,29 @@
   };
 
   A.showLanding=function(){
-    document.getElementById('acad-landing').classList.remove('acad-hidden');
-    document.getElementById('acad-module-detail').classList.remove('active');
-    document.getElementById('acad-lesson-view').classList.remove('active');
-    A.curMod=null;A.curQuiz=null;A.upUI();A.renderCards();
-  };
+      document.getElementById('acad-landing').classList.remove('acad-hidden');
+      document.getElementById('acad-landing').style.display='block';
+      document.getElementById('acad-module-detail').classList.remove('active');
+      document.getElementById('acad-lesson-view').classList.remove('active');
+      var av=document.getElementById('acad-admin-view');if(av)av.classList.remove('active');
+      A.curMod=null;A.curQuiz=null;A.upUI();A.renderCards();
+    };
 
   A.loadMd=async function(fn){
     var r=await fetch(CDN+fn);return await r.text();
   };
 
   A.openMod=async function(id){
-      A.curMod=A.MODULES.find(function(m){return m.id===id});
-      if(!A.curMod)return;
-      document.getElementById('acad-landing').classList.add('acad-hidden');
-      document.getElementById('acad-module-detail').classList.add('active');
-      document.getElementById('acad-lesson-view').classList.remove('active');
+        A.curMod=A.MODULES.find(function(m){return m.id===id});
+        if(!A.curMod)return;
+        document.getElementById('acad-landing').classList.add('acad-hidden');
+        document.getElementById('acad-module-detail').classList.add('active');
+        document.getElementById('acad-lesson-view').classList.remove('active');
+        var av=document.getElementById('acad-admin-view');if(av)av.classList.remove('active');
       var navBackMod=document.getElementById('acad-nav-back-module');
       var navBackLand=document.getElementById('acad-nav-back-landing');
-      if(navBackMod)navBackMod.style.display='none';
-      if(navBackLand)navBackLand.style.display='inline-flex';
+      if(navBackMod)navBackMod.classList.add('hidden');
+            if(navBackLand)navBackLand.classList.remove('hidden');
       window.scrollTo(0,0);
       document.getElementById('acad-detail-title').textContent='Módulo '+A.curMod.id+' — '+A.curMod.title;
     document.getElementById('acad-detail-desc').textContent=A.curMod.hours+' · '+A.curMod.lessons+' lecciones';
@@ -1217,12 +1220,19 @@
       for(var i=s+1;i<e;i++){if(lines[i].trim().startsWith('## Evaluación')||lines[i].trim().startsWith('**Evaluación')){e=i;break;}}
       var lm=lines.slice(s,e).join('\n');
       document.getElementById('acad-module-detail').classList.remove('active');
-      document.getElementById('acad-lesson-view').classList.add('active');
-      document.getElementById('acad-lesson-content').innerHTML=marked.parse(lm);
+            document.getElementById('acad-lesson-view').classList.add('active');
+            var av=document.getElementById('acad-admin-view');if(av)av.classList.remove('active');
+            document.getElementById('acad-lesson-content').innerHTML=marked.parse(lm)+
+        '<div class="acad-lesson-nav" style="display:flex;justify-content:space-between;align-items:center;margin-top:32px;padding-top:24px;border-top:1px solid var(--line);gap:12px">'+
+        (idx>0 ? '<button class="acad-btn" onclick="A.viewLesson('+(idx-1)+')" style="padding:8px 20px">← Lección anterior</button>' : '<span></span>')+
+        (idx+1<ls.length 
+          ? '<button class="acad-btn acad-btn-primary" onclick="A.viewLesson('+(idx+1)+')" style="padding:8px 20px">Siguiente lección →</button>'
+          : '<button class="acad-btn acad-btn-primary" onclick="A.startQuiz()" style="padding:8px 24px;font-weight:600">Ir al examen →</button>')+
+        '</div>';
       var navBackMod=document.getElementById('acad-nav-back-module');
       var navBackLand=document.getElementById('acad-nav-back-landing');
-      if(navBackMod)navBackMod.style.display='inline-flex';
-      if(navBackLand)navBackLand.style.display='none';
+      if(navBackMod)navBackMod.classList.remove('hidden');
+            if(navBackLand)navBackLand.classList.add('hidden');
       window.scrollTo(0,0);
     };
 
@@ -1232,8 +1242,8 @@
       document.getElementById('acad-module-detail').classList.add('active');
       var navBackMod=document.getElementById('acad-nav-back-module');
       var navBackLand=document.getElementById('acad-nav-back-landing');
-      if(navBackMod)navBackMod.style.display='none';
-      if(navBackLand)navBackLand.style.display='inline-flex';
+      if(navBackMod)navBackMod.classList.add('hidden');
+            if(navBackLand)navBackLand.classList.remove('hidden');
       window.scrollTo(0,0);
     };
 
@@ -1247,8 +1257,8 @@
           document.getElementById('acad-landing').style.display='block';
       var navBackMod=document.getElementById('acad-nav-back-module');
       var navBackLand=document.getElementById('acad-nav-back-landing');
-      if(navBackMod)navBackMod.style.display='none';
-      if(navBackLand)navBackLand.style.display='none';
+      if(navBackMod)navBackMod.classList.add('hidden');
+            if(navBackLand)navBackLand.classList.add('hidden');
       window.scrollTo(0,0);
     };
 
