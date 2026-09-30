@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "alquiler",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+alquiler+la-guaira",
-  "scrapeado_en": "2026-09-30T12:12:17.519Z",
+  "scrapeado_en": "2026-09-30T22:02:13.845Z",
   "total": 100,
   "anuncios": [
     {
@@ -723,7 +723,7 @@
     },
     {
       "titulo": "APARTAMENTO EN ALQUILER C.R GUAICA SUITES LECHERIA",
-      "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/126638-apartamento-en-alquiler-cr-guaica-suites-lecheria",
+      "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/126639-apartamento-en-alquiler-cr-guaica-suites-lecheria",
       "precio_texto": "USD 350",
       "habitaciones": null,
       "banos": null,
@@ -734,7 +734,7 @@
     },
     {
       "titulo": "APARTAMENTO EN ALQUILER C.R GUAICA SUITES LECHERIA",
-      "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/126639-apartamento-en-alquiler-cr-guaica-suites-lecheria",
+      "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/126638-apartamento-en-alquiler-cr-guaica-suites-lecheria",
       "precio_texto": "USD 350",
       "habitaciones": null,
       "banos": null,
@@ -811,7 +811,7 @@
     },
     {
       "titulo": "APARATAMENTO EN ALQUILER EN C.R.GUAICA SUITES LECHERIA",
-      "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/126812-aparatamento-en-alquiler-en-crguaica-suites-lecheria",
+      "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/126814-aparatamento-en-alquiler-en-crguaica-suites-lecheria",
       "precio_texto": "USD 350",
       "habitaciones": null,
       "banos": null,
@@ -822,7 +822,7 @@
     },
     {
       "titulo": "APARATAMENTO EN ALQUILER EN C.R.GUAICA SUITES LECHERIA",
-      "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/126814-aparatamento-en-alquiler-en-crguaica-suites-lecheria",
+      "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/126812-aparatamento-en-alquiler-en-crguaica-suites-lecheria",
       "precio_texto": "USD 350",
       "habitaciones": null,
       "banos": null,
@@ -1064,17 +1064,6 @@
     },
     {
       "titulo": "APARTAMENTO EN ALQUIERL EN C.R.GUAICA SUITES",
-      "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/125878-apartamento-en-alquierl-en-crguaica-suites",
-      "precio_texto": "USD 350",
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": null,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Lecheria, Anzoátegui"
-    },
-    {
-      "titulo": "APARTAMENTO EN ALQUIERL EN C.R.GUAICA SUITES",
       "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/125879-apartamento-en-alquierl-en-crguaica-suites",
       "precio_texto": "USD 350",
       "habitaciones": null,
@@ -1086,7 +1075,7 @@
     },
     {
       "titulo": "APARTAMENTO EN ALQUIERL EN C.R.GUAICA SUITES",
-      "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/125877-apartamento-en-alquierl-en-crguaica-suites",
+      "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/125875-apartamento-en-alquierl-en-crguaica-suites",
       "precio_texto": "USD 350",
       "habitaciones": null,
       "banos": null,
@@ -1097,7 +1086,18 @@
     },
     {
       "titulo": "APARTAMENTO EN ALQUIERL EN C.R.GUAICA SUITES",
-      "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/125875-apartamento-en-alquierl-en-crguaica-suites",
+      "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/125878-apartamento-en-alquierl-en-crguaica-suites",
+      "precio_texto": "USD 350",
+      "habitaciones": null,
+      "banos": null,
+      "metros_cuadrados": null,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Lecheria, Anzoátegui"
+    },
+    {
+      "titulo": "APARTAMENTO EN ALQUIERL EN C.R.GUAICA SUITES",
+      "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/125877-apartamento-en-alquierl-en-crguaica-suites",
       "precio_texto": "USD 350",
       "habitaciones": null,
       "banos": null,
