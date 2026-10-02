@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "alquiler",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+alquiler+distrito+capital",
-  "scrapeado_en": "2026-10-02T04:52:48.861Z",
+  "scrapeado_en": "2026-10-02T12:10:22.875Z",
   "total": 100,
   "anuncios": [
     {
@@ -656,28 +656,6 @@
       "ubicacion": "Caracas, Distrito Capital"
     },
     {
-      "titulo": "apartamento en alquiler la castellana tlf 04242129768 rolando rodriguez",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/64556-apartamento-en-alquiler-la-castellana-tlf-04242129768-rolando-rodriguez",
-      "precio_texto": "USD 3.000",
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": null,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
-      "titulo": "Apartamento en Alquiler El Rosal G. 04143054662",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/128830-apartamento-en-alquiler-el-rosal-g-04143054662",
-      "precio_texto": "USD 700",
-      "habitaciones": 1,
-      "banos": 1,
-      "metros_cuadrados": 44,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
       "titulo": "Townhouse amoblado en alquiler en zona norte",
       "enlace": "https://bienesonline.ai/es/venezuela/maracaibo/propiedad/50065-townhouse-amoblado-en-alquiler-en-zona-norte",
       "precio_texto": "USD 600",
@@ -689,6 +667,17 @@
       "ubicacion": "Maracaibo, Zulia"
     },
     {
+      "titulo": "apartamento en alquiler la castellana tlf 04242129768 rolando rodriguez",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/64556-apartamento-en-alquiler-la-castellana-tlf-04242129768-rolando-rodriguez",
+      "precio_texto": "USD 3.000",
+      "habitaciones": null,
+      "banos": null,
+      "metros_cuadrados": null,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
       "titulo": "apartamento alquiler lomas de la alameda tlf 04242129768 rolando Rodríguez",
       "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/33948-apartamento-alquiler-lomas-de-la-alameda-tlf-04242129768-rolando-rodriguez",
       "precio_texto": "USD 2.000",
@@ -698,6 +687,17 @@
       "tipo": "Apartamento",
       "operacion_detectada": "alquiler",
       "ubicacion": "Baruta, Miranda"
+    },
+    {
+      "titulo": "Apartamento en Alquiler El Rosal G. 04143054662",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/128830-apartamento-en-alquiler-el-rosal-g-04143054662",
+      "precio_texto": "USD 700",
+      "habitaciones": 1,
+      "banos": 1,
+      "metros_cuadrados": 44,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
     },
     {
       "titulo": "Local en alquiler en Chuao. CCCT",
@@ -733,23 +733,23 @@
       "ubicacion": "Caracas, Distrito Capital"
     },
     {
-      "titulo": "apartamento en alquiler colinas de bello monte tlf  04242129768 rolando rodriguez codg 26-20552",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/112078-apartamento-en-alquiler-colinas-de-bello-monte-tlf-04242129768-rolando-rodriguez-codg-26-20552",
-      "precio_texto": "USD 700",
-      "habitaciones": 1,
-      "banos": 1,
-      "metros_cuadrados": 44,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
       "titulo": "Apartamento en Alquiler en el Manzanares.  Sandra White +584143140082 Cod. 26-13511",
       "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/33328-apartamento-en-alquiler-en-el-manzanares-sandra-white-584143140082-cod-26-13511",
       "precio_texto": "USD 850",
       "habitaciones": 2,
       "banos": 2,
       "metros_cuadrados": 92,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "apartamento en alquiler colinas de bello monte tlf  04242129768 rolando rodriguez codg 26-20552",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/112078-apartamento-en-alquiler-colinas-de-bello-monte-tlf-04242129768-rolando-rodriguez-codg-26-20552",
+      "precio_texto": "USD 3.000",
+      "habitaciones": 3,
+      "banos": 5,
+      "metros_cuadrados": 173,
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Caracas, Distrito Capital"
@@ -801,10 +801,10 @@
     {
       "titulo": "Apartamento en Alquiler Campo Alegre G. 04143054662",
       "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/123500-apartamento-en-alquiler-campo-alegre-g-04143054662",
-      "precio_texto": "USD 700",
-      "habitaciones": 1,
-      "banos": 1,
-      "metros_cuadrados": 44,
+      "precio_texto": "USD 3.000",
+      "habitaciones": 3,
+      "banos": 5,
+      "metros_cuadrados": 173,
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Caracas, Distrito Capital"
@@ -821,23 +821,23 @@
       "ubicacion": "Lecheria, Anzoátegui"
     },
     {
-      "titulo": "Apartamento en Alquiler La Bonita G. 04143054662 / 04143247646",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/86859-apartamento-en-alquiler-la-bonita-g-04143054662-04143247646",
-      "precio_texto": "USD 2.000",
-      "habitaciones": 2,
-      "banos": 2,
-      "metros_cuadrados": 75,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
       "titulo": "apartamento en alquiler campo alegre tlf 04242129768 rolando rodriguez codg 26-21891",
       "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/112269-apartamento-en-alquiler-campo-alegre-tlf-04242129768-rolando-rodriguez-codg-26-21891",
       "precio_texto": "USD 2.200",
       "habitaciones": 2,
       "banos": 3,
       "metros_cuadrados": 90,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "Apartamento en Alquiler La Bonita G. 04143054662 / 04143247646",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/86859-apartamento-en-alquiler-la-bonita-g-04143054662-04143247646",
+      "precio_texto": "USD 2.000",
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 75,
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Caracas, Distrito Capital"
@@ -1019,15 +1019,15 @@
       "ubicacion": "San Diego, Carabobo"
     },
     {
-      "titulo": "apartamento en alquiler el rosal tlf  04242129768 rolando rodriguez codg 26-21980",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/119143-apartamento-en-alquiler-el-rosal-tlf-04242129768-rolando-rodriguez-codg-26-21980",
-      "precio_texto": "USD 2.000",
+      "titulo": "APARTAMENTO EN ALQUILER EN CIUDADELA FARIA",
+      "enlace": "https://bienesonline.ai/es/venezuela/maracaibo/propiedad/95058-apartamento-en-alquiler-en-ciudadela-faria",
+      "precio_texto": "USD 350",
       "habitaciones": 2,
       "banos": 2,
-      "metros_cuadrados": 77,
+      "metros_cuadrados": 72,
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
-      "ubicacion": "Caracas, Distrito Capital"
+      "ubicacion": "Maracaibo, Zulia"
     },
     {
       "titulo": "Lindo Y Acogedor Apartamento En Alquiler Manzanares. Amoblado 27-1699",
@@ -1041,6 +1041,17 @@
       "ubicacion": "Lechería, Anzoátegui"
     },
     {
+      "titulo": "apartamento en alquiler el rosal tlf  04242129768 rolando rodriguez codg 26-21980",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/119143-apartamento-en-alquiler-el-rosal-tlf-04242129768-rolando-rodriguez-codg-26-21980",
+      "precio_texto": "USD 2.000",
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 77,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
       "titulo": "26-9078 Apartamento en Alquiler La Castellana",
       "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/113535-26-9078-apartamento-en-alquiler-la-castellana",
       "precio_texto": "USD 2.500",
@@ -1050,17 +1061,6 @@
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
-      "titulo": "APARTAMENTO EN ALQUILER EN CIUDADELA FARIA",
-      "enlace": "https://bienesonline.ai/es/venezuela/maracaibo/propiedad/95058-apartamento-en-alquiler-en-ciudadela-faria",
-      "precio_texto": "USD 350",
-      "habitaciones": 2,
-      "banos": 2,
-      "metros_cuadrados": 72,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Maracaibo, Zulia"
     },
     {
       "titulo": "apartamento alquiler campo alegre tlf 04242129768 rolando Rodríguez",
