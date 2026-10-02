@@ -3,8 +3,8 @@
   "portal": "zonaven",
   "operacion": "todas",
   "url_busqueda": "sitemap-listings-1/2",
-  "scrapeado_en": "2026-10-02T12:29:38.639Z",
-  "total": 1429,
+  "scrapeado_en": "2026-10-02T22:15:38.633Z",
+  "total": 1445,
   "anuncios": [
     {
       "titulo": "Local 9000m² en Caracas — $22.000 | ZonaVen",
@@ -847,18 +847,18 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Oficina 8m² en Caracas — $200/mes | ZonaVen — No Disponible",
+      "titulo": "Oficina 10000m² en Caracas — $230/mes | ZonaVen",
       "enlace": "https://zonaven.com/alquiler/alquiler-de-cubiculo-distrito-capital-4fe5e3",
-      "precio_texto": "$200",
-      "precio_usd": 200,
+      "precio_texto": "$230",
+      "precio_usd": 230,
       "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": 8,
+      "banos": 2,
+      "metros_cuadrados": 10000,
       "tipo": "Oficina",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Distrito Capital",
       "portal": "zonaven",
-      "descripcion": "Excelente oportunidad para trabajar en un prestigio Edificio ubicado en la Avda Francisco de Miranda a una cuadra del metro Los cortijos. Con estacionamiento público. Y vigilancia las 24 horas. Al lado de multimax",
+      "descripcion": "Alquila oficina de 10.0 m² en El Recreo, Caracas - Libertador. Ideal para sector salud, administración, showroom o depósito. Cuenta con 2 baños, uno interno y otro para visitantes. Incluye puntos de agua, mobiliario empotrado y sala de espera. Estacionamiento para visitantes. Horario amplio de lunes a sábado. Gastos comunes incluidos. Ubicación estratégica cerca de Plaza Venezuela y Av. Casanova.",
       "moneda": "USD"
     },
     {
@@ -922,18 +922,18 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Oficina 400m² en Caracas — $1.800/mes | ZonaVen — No Disponible",
+      "titulo": "Oficina 175m² en Caracas — $1.600/mes | ZonaVen",
       "enlace": "https://zonaven.com/alquiler/alquiler-estupenda-oficina-amoblada-en-sabana-grande-distrito-capital-3877f5",
-      "precio_texto": "$1800",
-      "precio_usd": 1800,
+      "precio_texto": "$1600",
+      "precio_usd": 1600,
       "habitaciones": null,
-      "banos": 4,
-      "metros_cuadrados": 400,
+      "banos": null,
+      "metros_cuadrados": 175,
       "tipo": "Oficina",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Distrito Capital",
       "portal": "zonaven",
-      "descripcion": "Excelente oficina en Sabana Grande en torre corporativa, con un excelente espacio de 400 M2,\n\nDispone de estupenda distribución, equipada. Piso exclusivo para el arrendamiento, consta con aire acondicionado central, hall de entrada, Recepción, área para 22 puestos de trabajos en Open Space, 9 oficinas privadas una de ellas con baño interno, Sala de conferencia, área de cableados Eléctrico e Internet, 4 baños, área de comedor.\n\nEl edificio cuenta con vigilancia privada las 24 horas, Estacionamien",
+      "descripcion": "Alquila oficina de 175 m² en Caracas - Sucre, zona comercial con fácil acceso. Incluye 3 estacionamientos, aire acondicionado central, dos ascensores, control de acceso y vigilancia 24 horas. Ideal para mudarse hoy. Precio: 1,600 USD.",
       "moneda": "USD"
     },
     {
@@ -1222,6 +1222,36 @@
       "moneda": "USD"
     },
     {
+      "titulo": "Apartamento 2 hab en Guarenas — $58.000 | ZonaVen",
+      "enlace": "https://zonaven.com/venta/en-venta-apartamento-en-mampote-oa-miranda-fd0d36",
+      "precio_texto": "$58000",
+      "precio_usd": 58000,
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 111,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
+      "ubicacion": "Miranda",
+      "portal": "zonaven",
+      "descripcion": "Ideal para vivir tranquilo a pocos minutos de Caracas. Apartamento en venta en Terrazas de Mampote, Guarenas, Miranda. 111 m², 2 habitaciones, 2 baños, 2 estacionamientos y maletero. Listo para mudarse, con acceso a autopista, servicios completos, agua constante, internet y ascensor operativo. Precio: USD 58,000.",
+      "moneda": "USD"
+    },
+    {
+      "titulo": "Casa 4 hab en Caracas — $1.220.000 | ZonaVen — No Disponible",
+      "enlace": "https://zonaven.com/venta/espectacuar-casa-de-estreno-venta-mls-26-11395-santa-paula-distrito-capital-d8bcfa",
+      "precio_texto": "$1220000",
+      "precio_usd": 1220000,
+      "habitaciones": 4,
+      "banos": 8,
+      "metros_cuadrados": 753,
+      "tipo": "Casa",
+      "operacion_detectada": "Venta",
+      "ubicacion": "Distrito Capital",
+      "portal": "zonaven",
+      "descripcion": "MLS #26-11395\nEspectacular quinta a estrenar, totalmente remodelada, 753 m² de pura elegancia. Con 4 dormitorios, el principal con un maxi vestier, los auxiliares ofrecen baños privados y vestier. Incluye un estudio, family room, área de servicio y cuarto de alacena. La joya de la casa es su hermosa área social, equipada con piscina y parrillera. ¡Un espacio ideal para disfrutar y crear recuerdos inolvidables!",
+      "moneda": "USD"
+    },
+    {
       "titulo": "Depósito 1400m² en La Guaira — $900.000 | ZonaVen",
       "enlace": "https://zonaven.com/venta/excelente-galpon-en-venta-en-la-atlantida-catia-la-mar-edo-la-guaira-bv-la-1d8f72",
       "precio_texto": "$900000",
@@ -1474,6 +1504,21 @@
       "ubicacion": "Distrito Capital",
       "portal": "zonaven",
       "descripcion": "Excelente apartamento en alquiler en La Florida, Caracas - Libertador. 3 habitaciones, 5 baños, 221 m². Vista al Avila, estudio, salón amplio, comedor, bar, cocina con pantry, área de lavado y servicio. 2 puestos de estacionamiento techados. Vigilancia 24 horas. Ideal para estancia cómoda y segura. Alquiler: USD 1,500.",
+      "moneda": "USD"
+    },
+    {
+      "titulo": "Oficina 278m² en Caracas — $140.000 | ZonaVen",
+      "enlace": "https://zonaven.com/venta/en-venta-casa-bosque-valle-municipio-libertador-tazon-distrito-capital-134567",
+      "precio_texto": "$140000",
+      "precio_usd": 140000,
+      "habitaciones": null,
+      "banos": 8,
+      "metros_cuadrados": 278,
+      "tipo": "Oficina",
+      "operacion_detectada": "Venta",
+      "ubicacion": "Distrito Capital",
+      "portal": "zonaven",
+      "descripcion": "Oficina de 278 m² en Catedral, Caracas - Libertador, ideal para consultorio médico o actividad comercial. Cuenta con 8 baños y está acondicionada para uso profesional. Ubicada en zona céntrica, fácil acceso y excelente para cualquier tipo de negocio. Precio: 140.000 USD.",
       "moneda": "USD"
     },
     {
@@ -2107,6 +2152,21 @@
       "moneda": "USD"
     },
     {
+      "titulo": "Estudio en Caracas — $14.000 | ZonaVen",
+      "enlace": "https://zonaven.com/venta/en-venta-fondo-de-comercio-de-spa-c-c-millenium-mall-caracas-distrito-capital-e815de",
+      "precio_texto": "$14000",
+      "precio_usd": 14000,
+      "habitaciones": null,
+      "banos": null,
+      "metros_cuadrados": 20,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
+      "ubicacion": "Distrito Capital",
+      "portal": "zonaven",
+      "descripcion": "Inversión en Fondo de Comercio ubicado en Santa Teresa, Caracas - Libertador. Ideal para continuar un negocio estable con 34 años de trayectoria en confección de ropa de dama exclusiva. Reconocido por calidad, diseño y clientela fidelizada. Perfecto para potenciar con nuevas líneas o estrategias. Precio: USD 14,000. Ubicación estratégica en el centro de Caracas.",
+      "moneda": "USD"
+    },
+    {
       "titulo": "Local 115m² en Caracas — $100.000 | ZonaVen",
       "enlace": "https://zonaven.com/venta/local-comercial-altagracia-av-principal-distrito-capital-distrito-capital-20947d",
       "precio_texto": "$100000",
@@ -2152,6 +2212,21 @@
       "moneda": "USD"
     },
     {
+      "titulo": "Casa 5 hab en Los Salias — $270.000 | ZonaVen",
+      "enlace": "https://zonaven.com/venta/casa-parque-el-retiro-san-antonio-de-los-altos-miranda-386db5",
+      "precio_texto": "$270000",
+      "precio_usd": 270000,
+      "habitaciones": 5,
+      "banos": 3,
+      "metros_cuadrados": 230,
+      "tipo": "Casa",
+      "operacion_detectada": "Venta",
+      "ubicacion": "San Antonio De Los Altos, Miranda",
+      "portal": "zonaven",
+      "descripcion": "Excelente townhouse en la urbanización Parque El Retiro, San Antonio, Miranda. Ideal para familias, con 5 habitaciones, 3 baños y 230 m² distribuidos en 3 niveles. Cuenta con sala principal, cocina empotrada con granito, comedor, área de lavado, sala de estar, baño, estacionamiento interno y uno frente a la vivienda. Área social con cocina, parrillera, jardín y tanque de 4 mil litros. Vigilancia privada, portón eléctrico y baja densidad poblacional. Precio: 270.000 USD.",
+      "moneda": "USD"
+    },
+    {
       "titulo": "Apartamento 3 hab en Caracas — $180.000 | ZonaVen",
       "enlace": "https://zonaven.com/venta/venta-de-un-ph-exclusivo-en-una-zona-montanosa-distrito-capital-402ab5",
       "precio_texto": "$180000",
@@ -2194,6 +2269,21 @@
       "ubicacion": "Los Teques, Miranda",
       "portal": "zonaven",
       "descripcion": "2 locales juntos a 100m2 de la Alcaldía de los Teques, miden 900 m2. Ideal para un colegio, clínica etc. a orilla de calle",
+      "moneda": "USD"
+    },
+    {
+      "titulo": "Apartamento 6 hab en La Guaira — $120.000 | ZonaVen",
+      "enlace": "https://zonaven.com/venta/venta-el-penthouse-de-tus-suenos-en-tanaguarena-estado-la-guaira-la-guaira-9e4aca",
+      "precio_texto": "$120000",
+      "precio_usd": 120000,
+      "habitaciones": 6,
+      "banos": 6,
+      "metros_cuadrados": 84,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
+      "ubicacion": "La Guaira",
+      "portal": "zonaven",
+      "descripcion": "PH en venta en Naiguatá, Vargas, ideal para familia o uso vacacional. 6 habitaciones, 6 baños, 84 m² distribuidos en dos niveles. Amplia terraza descubierta de 85 m², vista panorámica desde el piso 15. Ubicado en residencias privadas frente al Club Puerto Azul, a 5 minutos del pueblo y las playas. Incluye estacionamiento, áreas verdes, cancha de tenis, piscina y salón de juegos. Perfecto para disfrutar de un entorno tranquilo y privilegiado. Precio: USD 120,000.",
       "moneda": "USD"
     },
     {
@@ -2287,6 +2377,21 @@
       "moneda": "USD"
     },
     {
+      "titulo": "Apartamento 2 hab en La Guaira — $68.000 | ZonaVen",
+      "enlace": "https://zonaven.com/venta/se-vende-apartamento-camuri-grande-estado-la-guaira-la-guaira-79ecc7",
+      "precio_texto": "$68000",
+      "precio_usd": 68000,
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 78,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
+      "ubicacion": "La Guaira",
+      "portal": "zonaven",
+      "descripcion": "Ideal para inversión o vivienda propia. Ubicado en Caraballeda, Vargas, este apartamento de 78 m² cuenta con 2 habitaciones, 2 baños y está listo para habitar. Incluye aire acondicionado central de 3 toneladas y tanque de agua interno de 800L. El edificio dispone de pozo de agua, piscina operativa y áreas sociales. Perfecto para quienes buscan confort, seguridad y comodidad en una zona privilegiada.",
+      "moneda": "USD"
+    },
+    {
       "titulo": "Casa 4 hab en Los Teques — $95.000 | ZonaVen",
       "enlace": "https://zonaven.com/venta/se-vende-en-higuerote-quinta-frente-al-canal-principal-miranda-47d281",
       "precio_texto": "$95000",
@@ -2299,6 +2404,21 @@
       "ubicacion": "Miranda",
       "portal": "zonaven",
       "descripcion": "Se vende hermosa casa en El Hatillo, Caracas, con vista y clima de montaña. Distribuida en 3 plantas, cuenta con 4 habitaciones, 4 baños y 394 m². Planta baja: sala, comedor, cocina integrada, terraza, jardín, baño de visitas y área de servicio. Segunda planta: 3 habitaciones, incluida la principal con vestier y terraza. Tercera planta: estudio con terraza. Estacionamiento para 4 vehículos. Muy bien mantenida, piso de caico y excelente iluminación. Ideal para vivir en un entorno tranquilo y priv",
+      "moneda": "USD"
+    },
+    {
+      "titulo": "Terreno 645m² en Caracas — $359.900 | ZonaVen",
+      "enlace": "https://zonaven.com/venta/venta-terreno-uso-residencial-zonificacion-r5-distrito-capital-20be93",
+      "precio_texto": "$359900",
+      "precio_usd": 359900,
+      "habitaciones": null,
+      "banos": null,
+      "metros_cuadrados": 645,
+      "tipo": "Terreno",
+      "operacion_detectada": "Venta",
+      "ubicacion": "Distrito Capital",
+      "portal": "zonaven",
+      "descripcion": "Terreno de 645 m² en zona residencial R5, ideal para construcción de vivienda unifamiliar o townhouses. Ubicado en la parte alta de La Castellana, Caracas - Chacao, con acceso independiente por callejón asfaltado. Zona muy tranquila y silenciosa, alejada del tráfico. Precio negociable. Ideal para inversión o proyecto personal.",
       "moneda": "USD"
     },
     {
@@ -3232,21 +3352,6 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Apartamento 2 hab en La Guaira — $1.000/mes | ZonaVen",
-      "enlace": "https://zonaven.com/alquiler/venta-apartamento-caraballeda-la-guaira-cg-la-guaira-5084fa",
-      "precio_texto": "$1000",
-      "precio_usd": 1000,
-      "habitaciones": 2,
-      "banos": 2,
-      "metros_cuadrados": 66,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "La Guaira",
-      "portal": "zonaven",
-      "descripcion": "Alquila este apartamento de 2 habitaciones y 2 baños, ubicado en Caraballeda, Vargas. Con 66.0 m² de área, disfruta de vistas al mar y un diseño moderno. Ideal para quienes buscan confort y tranquilidad en una zona privilegiada. Precio: 1,000 USD mensuales.",
-      "moneda": "USD"
-    },
-    {
       "titulo": "Casa 6 hab en San Antonio de los Altos — $120.000 | ZonaVen",
       "enlace": "https://zonaven.com/venta/kc-g-26-2675-casa-quinta-en-venta-san-antonio-de-los-altos-la-pomorosa-miranda-044091",
       "precio_texto": "$120000",
@@ -3349,21 +3454,6 @@
       "ubicacion": "San Antonio De Los Altos, Miranda",
       "portal": "zonaven",
       "descripcion": "Hermosa casa de una planta en urbanización privada de 40 viviendas, ubicada en San Antonio, Miranda. Ideal para disfrutar de la montaña a solo 20 minutos de Caracas. Cuenta con 5 habitaciones, 3 baños, 700 m² de construcción, jardines amplios, terraza con acceso desde la sala, área para meditación o gimnasio, chimenea en el estar y pozo de los deseos. Construcción en madera y piedra con diseño rústico chic. Agua constante, internet, cable y 6 puestos de estacionamiento. Perfecta para quienes bus",
-      "moneda": "USD"
-    },
-    {
-      "titulo": "Casa 4 hab en Caracas — $57.000 | ZonaVen — No Disponible",
-      "enlace": "https://zonaven.com/venta/casa-en-venta-hoyo-de-la-puerta-los-manantiales-169-5m-np-distrito-capital-4b3f88",
-      "precio_texto": "$57000",
-      "precio_usd": 57000,
-      "habitaciones": 4,
-      "banos": 3,
-      "metros_cuadrados": 130,
-      "tipo": "Casa",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Distrito Capital",
-      "portal": "zonaven",
-      "descripcion": "Venta de casa en El Valle, Caracas - Libertador, Distrito Capital. Construcción de 130 m² distribuidos en 3 niveles, con 4 habitaciones, 3 baños y excelente distribución. Ideal para familias, cuenta con sala-comedor, cocina en mampostería, family room, área de lavandería, terraza y servicios de agua e internet sin problemas. Terreno de 64 m². Precio: 57,000 USD, negociable. Ubicación privilegiada en sector seguro y bien conectado.",
       "moneda": "USD"
     },
     {
@@ -4417,18 +4507,18 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Casa 3 hab en Charallave — $300/mes | ZonaVen — No Disponible",
+      "titulo": "Apartamento 3 hab en Charallave — $270/mes | ZonaVen",
       "enlace": "https://zonaven.com/alquiler/casa-en-alquiler-nivel-superior-urbanizacion-charallave-country-miranda-493ede",
-      "precio_texto": "$300",
-      "precio_usd": 300,
+      "precio_texto": "$270",
+      "precio_usd": 270,
       "habitaciones": 3,
       "banos": 2,
-      "metros_cuadrados": 180,
-      "tipo": "Casa",
+      "metros_cuadrados": 75,
+      "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Miranda",
       "portal": "zonaven",
-      "descripcion": "Grupo Inmobiliario B&B Asesores 2020 CA posee dentro de su Portafolio de Propiedades en Alquiler\n\nCasa Urbanización Charallave Country\nVista Linda Charallave\n\nNivel Superior de la Propiedad con Entrada Independiente\n\nConsta de :\n\n3 Habitaciones con Clósets\n2 Baños\nÁrea de Cocina Empotrada\nÁrea de Lavadero\nEstacionamiento para 2 o 3 vehículos\n\nServicios:\n\nGas por Bombona\nServicio de Internet Inter\n\nPosee tanque propio con sistema de hidroneumático capacidad 10.000Lts\n\nNegociación:\n\nSolo Jurídico\n",
+      "descripcion": "APARTAMENTO EN ALQUILER\nUrb. Los Samanes - Charallave\n\n75 Mts²\n3 Habitaciones con su closet\n2 Baños con sus piezas sanitarias\nCocina en manposteria y gabinetes de madera\nSala comedor\n\nServicios:\nAgua\nLuz\n\nCuenta con:\n1 Puesto de Estacionamiento\n\nCanon: 270$",
       "moneda": "USD"
     },
     {
@@ -4444,21 +4534,6 @@
       "ubicacion": "Distrito Capital",
       "portal": "zonaven",
       "descripcion": "Alquila hermoso apartamento de 58 m² en La Campiña, Caracas - Libertador. Cuenta con 1 habitación, 1 baño y está totalmente remodelado. Ideal para vivir cómodamente, con diseño contemporáneo, equipamiento de primera y conexión de alta velocidad. Perfecto para quien busca equilibrio entre trabajo y vida personal. Precio: 900 USD mensuales.",
-      "moneda": "USD"
-    },
-    {
-      "titulo": "Apartamento 3 hab en Caracas — $1.000/mes | ZonaVen — No Disponible",
-      "enlace": "https://zonaven.com/alquiler/amplio-apartamento-en-alquiler-urb-la-tahona-distrito-capital-edc9f2",
-      "precio_texto": "$1000",
-      "precio_usd": 1000,
-      "habitaciones": 3,
-      "banos": 2,
-      "metros_cuadrados": 111,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Distrito Capital",
-      "portal": "zonaven",
-      "descripcion": "Alquila este amplio apartamento de 111 m² en Santa Fe Norte, Caracas. Cuenta con 3 habitaciones, 2 baños, sala-comedor, cocina y 2 puestos de estacionamiento. Amoblado y equipado, ideal para vivir cómodamente. Edificio con ascensores, vigilancia 24 horas, parque infantil y áreas verdes. Perfecto para familias o profesionales. Precio: 1,000 USD mensuales.",
       "moneda": "USD"
     },
     {
@@ -4504,21 +4579,6 @@
       "ubicacion": "Miranda",
       "portal": "zonaven",
       "descripcion": "Casa en venta en La Macarena, Los Teques, Miranda. Ideal para familia, con 3 habitaciones, 4 baños, 115 m² de área construida. Incluye 2 estacionamientos techados, área social, maletero y depósito amplio. Cuenta con tanque de agua y zona tranquila con vigilancia. Precio: 90.000 USD.",
-      "moneda": "USD"
-    },
-    {
-      "titulo": "Apartamento 3 hab en Caracas — $650/mes | ZonaVen — No Disponible",
-      "enlace": "https://zonaven.com/alquiler/alquiler-de-apartamento-de-80mt2-en-la-california-sur-a-v-distrito-capital-b51c99",
-      "precio_texto": "$650",
-      "precio_usd": 650,
-      "habitaciones": 3,
-      "banos": 2,
-      "metros_cuadrados": 67,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Distrito Capital",
-      "portal": "zonaven",
-      "descripcion": "Apartamento de 3 habitaciones y 2 baños, ubicado en La Campiña, Caracas - Libertador. Ideal para vivir cómodamente, con área de 67.0 m², aire acondicionado y excelente ubicación. Alquiler a USD 650 mensuales.",
       "moneda": "USD"
     },
     {
@@ -4942,6 +5002,51 @@
       "moneda": "USD"
     },
     {
+      "titulo": "Casa 2 hab en La Guaira — $32.000 | ZonaVen",
+      "enlace": "https://zonaven.com/venta/venta-acogedora-casa-ubicada-en-tanaguarena-edo-la-guaira-la-guaira-c53d4c",
+      "precio_texto": "$32000",
+      "precio_usd": 32000,
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 10000,
+      "tipo": "Casa",
+      "operacion_detectada": "Venta",
+      "ubicacion": "La Guaira",
+      "portal": "zonaven",
+      "descripcion": "Venta de casa en La Guaira, Vargas, con 1000 m² de terreno y 200 m² de construcción. Cuenta con 2 habitaciones, 2 baños, cocina empotrada, sala amplia, piscina en obra gris, área de BBQ, estacionamiento y árboles frutales. Ideal para siembra y uso familiar. Precio: 32,000 USD.",
+      "moneda": "USD"
+    },
+    {
+      "titulo": "Apartamento 2 hab en La Guaira — $110.000 | ZonaVen",
+      "enlace": "https://zonaven.com/venta/ref-010-922-apartamento-en-venta-ubicado-en-la-guaira-camuri-chico-con-piscina-7e7cd9",
+      "precio_texto": "$110000",
+      "precio_usd": 110000,
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 90,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
+      "ubicacion": "La Guaira",
+      "portal": "zonaven",
+      "descripcion": "Ideal para quienes buscan vivir cerca del mar. Este apartamento de 90 m² en Caraballeda, Vargas, ofrece 2 habitaciones, 2 baños y una vista espectacular al mar. Perfecto para disfrutar de la tranquilidad del océano cada mañana. Incluye cocina equipada, sala amplia y acceso a piscina, áreas de parrilla y pozo de agua. Precio: USD 110,000. Ubicado en Los Corales, zona segura y con fácil acceso a servicios.",
+      "moneda": "USD"
+    },
+    {
+      "titulo": "Local 33553m² en El Hatillo — $800/mes | ZonaVen — No Disponible",
+      "enlace": "https://zonaven.com/alquiler/local-comercial-los-naranjos-335-53m2-miranda-d3cdef",
+      "precio_texto": "$800",
+      "precio_usd": 800,
+      "habitaciones": null,
+      "banos": 2,
+      "metros_cuadrados": 33553,
+      "tipo": "Local comercial",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Miranda",
+      "portal": "zonaven",
+      "descripcion": "Se ofrecen en alquiler los locales comerciales números 10, 11, 12 y 13, contiguos entre sí, con una superficie total aproximada de 335,53 m². Estos espacios forman parte del Conjunto Comercio Industrial Los Naranjos, ubicado en la Parcela N° 3, Manzana 20, en la Urbanización Santa Cruz de Guarenas, destacando por su excelente ubicación y accesibilidad para diversas actividades comerciales e industriales.\n\nPara mayor información, contactenos",
+      "moneda": "USD"
+    },
+    {
       "titulo": "Apartamento 3 hab en La Guaira — $58.000 | ZonaVen",
       "enlace": "https://zonaven.com/venta/apartamento-en-venta-urb-caribe-la-guaira-la-guaira-d5fc8f",
       "precio_texto": "$58000",
@@ -4954,6 +5059,21 @@
       "ubicacion": "La Guaira",
       "portal": "zonaven",
       "descripcion": "Ideal para quienes buscan comodidad y estilo, este apartamento en Catia La Mar, Vargas, ofrece 3 habitaciones, 2 baños y 77 m² de espacio. Perfecto estado, remodelado con acabados contemporáneos. Destaca por su vista al aeropuerto, ofreciendo una experiencia única. Precio: USD 58.000.",
+      "moneda": "USD"
+    },
+    {
+      "titulo": "Apartamento 5 hab en Caracas — $2.500/mes | ZonaVen",
+      "enlace": "https://zonaven.com/alquiler/cv-apartamento-en-alquiler-en-los-palos-grandes-yf-25-18711-distrito-capital-86cbb9",
+      "precio_texto": "$2500",
+      "precio_usd": 2500,
+      "habitaciones": 5,
+      "banos": 6,
+      "metros_cuadrados": 424.3,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Distrito Capital",
+      "portal": "zonaven",
+      "descripcion": "Alquila este amplio penthouse de 424 m² en San Bernardino, Caracas. Cuenta con 5 habitaciones, 6 baños, 4 estacionamientos, terraza con vista a la montaña y acceso a parrillera y salón de fiestas. Edificio con vigilancia 24/7 y servicio continuo. Ideal para familias que buscan comodidad y espacio. Precio: 2,500 USD.",
       "moneda": "USD"
     },
     {
@@ -5047,6 +5167,21 @@
       "moneda": "USD"
     },
     {
+      "titulo": "Apartamento 2 hab en Cumaná — $16.500 | ZonaVen — No Disponible",
+      "enlace": "https://zonaven.com/venta/se-vende-apartamento-en-calle-miranda-ve10-150cm-yrey-sucre-6d2ee9",
+      "precio_texto": "$16500",
+      "precio_usd": 16500,
+      "habitaciones": 2,
+      "banos": 1,
+      "metros_cuadrados": 64,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
+      "ubicacion": "Sucre, Miranda",
+      "portal": "zonaven",
+      "descripcion": "INMOBILIARIA FARRO VENDE APARTAMENTO Ubicado en calle Miranda, Carupano, Sucre, Venezuela. Este hermoso inmueble cuenta con:\nArea de terreno: 64m\nHabitaciones: 2\nBano: 1\nLavandero: 1\nSala comedor\nTodo el piso de ceramica\nAgua llega 3 dias a la semana\nCerca de zona centro, de transporte publico, de centros educativos, de canchas deportivas, de plazas, clinicas, ambulatorio, iglesia.",
+      "moneda": "USD"
+    },
+    {
       "titulo": "Casa 4 hab en Los Salias — $180.000 | ZonaVen",
       "enlace": "https://zonaven.com/venta/se-vende-casa-urb-club-de-campo-miranda-52a540",
       "precio_texto": "$180000",
@@ -5059,6 +5194,21 @@
       "ubicacion": "Miranda",
       "portal": "zonaven",
       "descripcion": "Casa en venta en Parque El Retiro, San Antonio, Miranda. 550 m² de parcela, 380 m² de construcción. 4 habitaciones, 4 baños, sala, comedor y cocina abierta. Patio con parrillera y medio baño. Tanque de agua de 20.000 litros. Estacionamiento para más de 4 vehículos. Iluminación natural y artificial. Urbanización con vigilancia 24 horas, caminería, canchas deportivas, clínica y colegio. Precio: 180.000 USD.",
+      "moneda": "USD"
+    },
+    {
+      "titulo": "Terreno 384m² en La Guaira — $54.000 | ZonaVen",
+      "enlace": "https://zonaven.com/venta/ls-vende-terreno-c-edificacion-la-guaira-via-carayaca-el-junquito-la-guaira-013e9b",
+      "precio_texto": "$54000",
+      "precio_usd": 54000,
+      "habitaciones": null,
+      "banos": null,
+      "metros_cuadrados": 384,
+      "tipo": "Terreno",
+      "operacion_detectada": "Venta",
+      "ubicacion": "La Guaira",
+      "portal": "zonaven",
+      "descripcion": "Terreno de 384 m² en Carayaca, Vargas, ideal para construcción. Ubicado en zona residencial con acceso directo a la vía principal. Perfecto para desarrollar una vivienda de dos plantas. Incluye servicios básicos como luz, cable y tanque subterráneo de 9,500 litros. Precio: 54,000 dólares.",
       "moneda": "USD"
     },
     {
@@ -5119,6 +5269,21 @@
       "ubicacion": "La Guaira",
       "portal": "zonaven",
       "descripcion": "Alquila este acogedor apartamento de 53 m² en Palmar Oeste, Caraballeda, Vargas. Cuenta con 1 habitación, 1 baño y cocina integrada. Ideal para disfrutar de la brisa marina y la vista al mar desde su balcón. Perfecto para quienes buscan comodidad y tranquilidad. Precio: 270 USD mensuales.",
+      "moneda": "USD"
+    },
+    {
+      "titulo": "Apartamento 3 hab en Caracas — $105.000 | ZonaVen",
+      "enlace": "https://zonaven.com/venta/cv-apartamento-en-venta-en-lomas-de-prados-del-este-yf-26-14402-distrito-capital-fa3ca8",
+      "precio_texto": "$105000",
+      "precio_usd": 105000,
+      "habitaciones": 3,
+      "banos": 3,
+      "metros_cuadrados": 112.8,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
+      "ubicacion": "Prados Del Este, Distrito Capital",
+      "portal": "zonaven",
+      "descripcion": "Espacioso apartamento en La Campiña, Caracas - Libertador, con 3 habitaciones, 3 baños, 112.8 m², piso bajo, terraza y balcón. Ideal para remodelar. Incluye maletero, estacionamiento y zona de servicio integrada. Perfecto para quienes buscan comodidad y potencial de personalización en zona estratégica del noreste de Caracas.",
       "moneda": "USD"
     },
     {
@@ -5269,6 +5434,21 @@
       "ubicacion": "Distrito Capital",
       "portal": "zonaven",
       "descripcion": "Galpón de 400 m² en zona segura de Caracas - Libertador, ubicado en calle cerrada con control de acceso. 200 m² en planta baja y 200 m² en mezzanina, con ascensor de montacargas. Excelentes condiciones, acceso fácil y estacionamiento para visitantes. Terreno frente al inmueble de 400 m² ideal para estacionamiento. Alquiler: 2.200 USD mensuales.",
+      "moneda": "USD"
+    },
+    {
+      "titulo": "Casa 3 hab en Caracas — $500.000 | ZonaVen",
+      "enlace": "https://zonaven.com/venta/yf-casa-se-vende-en-cerro-verde-mls-26-12665-distrito-capital-c0b880",
+      "precio_texto": "$500000",
+      "precio_usd": 500000,
+      "habitaciones": 3,
+      "banos": 4,
+      "metros_cuadrados": 493,
+      "tipo": "Casa",
+      "operacion_detectada": "Venta",
+      "ubicacion": "Distrito Capital",
+      "portal": "zonaven",
+      "descripcion": "Excelente casa en venta en El Cafetal, Caracas - Baruta. Distribuida en 2 niveles, cuenta con 3 habitaciones, 4 baños y 493 m² de área construida. Ideal para familias, con amplios ventanales, terraza semidesestechada y vigilancia privada. Semi remodelada al 80%, lista para finalizar cocina, lavandería y acabados finales. Precio: 500.000 USD.",
       "moneda": "USD"
     },
     {
@@ -8932,6 +9112,21 @@
       "moneda": "USD"
     },
     {
+      "titulo": "Casa 5 hab en Los Salias — $255.000 | ZonaVen",
+      "enlace": "https://zonaven.com/venta/casa-en-vende-casa-en-urb-club-de-campo-miranda-675925",
+      "precio_texto": "$255000",
+      "precio_usd": 255000,
+      "habitaciones": 5,
+      "banos": 4,
+      "metros_cuadrados": 1254,
+      "tipo": "Casa",
+      "operacion_detectada": "Venta",
+      "ubicacion": "Miranda",
+      "portal": "zonaven",
+      "descripcion": "Excelente casa de un nivel con anexo de dos niveles en Club de Campo, San Antonio, Miranda. Terreno de 1.254 m² y construcción de 450 m². 5 habitaciones, 4 baños, 6 puestos de estacionamiento. Cocina empotrada con tope de granito, baño con vista a la montaña. Anexo con área de oficina y varios puestos de trabajo. Agua propia del acueducto de la urbanización. Documentos al día. Ideal para vivienda familiar o uso profesional.",
+      "moneda": "USD"
+    },
+    {
       "titulo": "Casa 4 hab en Los Salias — $105.000 | ZonaVen",
       "enlace": "https://zonaven.com/venta/en-venta-moderna-casa-urb-el-limon-san-antonio-de-los-altos-miranda-75cb62",
       "precio_texto": "$105000",
@@ -9127,6 +9322,36 @@
       "moneda": "USD"
     },
     {
+      "titulo": "Apartamento 3 hab en Los Salias — $55.000 | ZonaVen",
+      "enlace": "https://zonaven.com/venta/apartamento-en-venta-urb-parque-el-retiro-miranda-7110ba",
+      "precio_texto": "$55000",
+      "precio_usd": 55000,
+      "habitaciones": 3,
+      "banos": 2,
+      "metros_cuadrados": 80,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
+      "ubicacion": "Miranda",
+      "portal": "zonaven",
+      "descripcion": "Apartamento de 80 m² en venta en San Antonio, Miranda. 3 habitaciones, 2 baños, piso alto, luminoso y ventilado. Ideal para vivir en un entorno seguro con vigilancia 24/7. Ubicado a media cuadra de la Av. Perimetral, con fácil acceso a Caracas y Los Teques. Cuenta con cocina empotrada, gas directo, cantv y ABA. Documentos al día. Precio: 55,000 USD.",
+      "moneda": "USD"
+    },
+    {
+      "titulo": "Apartamento 3 hab en Guatire — $90.000 | ZonaVen",
+      "enlace": "https://zonaven.com/venta/apartamento-en-venta-guatire-frutas-condominio-mls-23-29499-e-n-miranda-1f1cda",
+      "precio_texto": "$90000",
+      "precio_usd": 90000,
+      "habitaciones": 3,
+      "banos": 3,
+      "metros_cuadrados": 100,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
+      "ubicacion": "Guatire, Miranda",
+      "portal": "zonaven",
+      "descripcion": "Ideal para vivir cómodamente en Guatire, Miranda. Este apartamento de 100 m² cuenta con 3 habitaciones, 3 baños, pisos de porcelanato, cocina de lujo y aire acondicionado en todas las habitaciones y sala. Incluye balcón con vista, dos puestos de estacionamiento separados y maletero. La residencia ofrece piscina, parque, salón de fiestas, lobby y vigilancia privada. Perfecto para quienes buscan elegancia, comodidad y seguridad. Precio: USD 90,000.",
+      "moneda": "USD"
+    },
+    {
       "titulo": "Estudio en Caracas — $400/mes | ZonaVen",
       "enlace": "https://zonaven.com/alquiler/alquiler-apartamento-valle-abajo-distrito-capital-6d3f6e",
       "precio_texto": "$400",
@@ -9214,6 +9439,21 @@
       "ubicacion": "Los Teques, Miranda",
       "portal": "zonaven",
       "descripcion": "Casa con anexo independiente en sector El Prado, urbanización cerrada en San Diego de los Altos, Miranda. Distribuida en 4 habitaciones, 5 baños y 269,5 m². Cocina moderna a estrenar, depósito/galpón, dos tanques grandes y árboles frutales alrededor. Ideal para vivienda familiar o inversión. Precio: USD 52.000.",
+      "moneda": "USD"
+    },
+    {
+      "titulo": "Apartamento 4 hab en Los Salias — $125.000 | ZonaVen",
+      "enlace": "https://zonaven.com/venta/apartamento-en-venta-resid-ana-maria-el-picacho-san-antonio-de-los-altos-miranda-5effe5",
+      "precio_texto": "$125000",
+      "precio_usd": 125000,
+      "habitaciones": 4,
+      "banos": 5,
+      "metros_cuadrados": 305,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
+      "ubicacion": "San Antonio De Los Altos, Miranda",
+      "portal": "zonaven",
+      "descripcion": "Excelente apartamento en venta en Residencia Ana María, Urb. El Picacho, San Antonio de los Altos. 305 m² distribuidos en 4 habitaciones, 5 baños, sala de cine, patio terraza trasera y 2 puestos de estacionamiento. Ideal para familia grande. Precio: USD 125,000.",
       "moneda": "USD"
     },
     {
@@ -9334,6 +9574,21 @@
       "ubicacion": "Distrito Capital",
       "portal": "zonaven",
       "descripcion": "Alquila oficina de 80.000 m² en Colinas de Bello Monte, Baruta, Caracas. Ideal para uso comercial, con 2 baños, 1 puesto de estacionamiento y tanque de agua. Zona con buen acceso y transporte público. Perfecta para emprendimientos. Precio: 800 USD mensuales.",
+      "moneda": "USD"
+    },
+    {
+      "titulo": "Apartamento 3 hab en Caracas — $1.300/mes | ZonaVen",
+      "enlace": "https://zonaven.com/alquiler/apartamento-en-alquiler-en-prados-del-este-smb-26-3939-yyx-distrito-capital-ad288a",
+      "precio_texto": "$1300",
+      "precio_usd": 1300,
+      "habitaciones": 3,
+      "banos": 3,
+      "metros_cuadrados": 126,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Prados Del Este, Distrito Capital",
+      "portal": "zonaven",
+      "descripcion": "Alquila este acogedor apartamento de 126 m² en La Campiña, Caracas - Libertador. Ideal para familias, cuenta con 3 habitaciones, 3 baños, amplios espacios con mucha luz natural y vista al Avila. Incluye 2 estacionamientos techados, gimnasio, sauna, parque infantil, áreas verdes y vigilancia 24 horas. Zona muy céntrica, cerca de transporte público, farmacias y panaderías. Alquiler: USD 1,300.",
       "moneda": "USD"
     },
     {
@@ -10522,18 +10777,18 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Oficina 78000m² en Caracas — $550/mes | ZonaVen",
+      "titulo": "Oficina 80m² en Caracas — $550/mes | ZonaVen — No Disponible",
       "enlace": "https://zonaven.com/alquiler/los-palos-grandes-avenida-fco-de-miranda-oficina-80-m2-en-alquiler-distrito-15dde1",
       "precio_texto": "$550",
       "precio_usd": 550,
       "habitaciones": null,
-      "banos": 1,
-      "metros_cuadrados": 78000,
+      "banos": null,
+      "metros_cuadrados": 80,
       "tipo": "Oficina",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Miranda",
       "portal": "zonaven",
-      "descripcion": "Oficina en alquiler en La Trinidad, Caracas - Baruta, Distrito Capital. Espacio de 78.000 m² distribuidos en 2 niveles, ideal para oficina administrativa o depósito. Incluye 1 baño privado, 1 puesto de estacionamiento y acceso seguro por Santamaría. Ubicado en zona industrial tranquila y segura, con fácil acceso. Precio: $550 mensuales.",
+      "descripcion": "Cómoda oficina de de 80 m2 ubicada en la Torre A del Centro Plaza de Los Palos Grandes, sobre la Avenida Francisco de Miranda. Consta de recepción, tres (3) oficinas pequeñas y dos (2) oficinas medianas. Afuera tiene acceso a baños privados de damas y caballeros detrás del hall de ascensores. Un (1) sistema propio de aire acondicionado central. Orientación norte. Canon de arrendamiento incluye el condominio. Amplios niveles de estacionamientos en Centro Comercial y de oficinas en donde encuentra",
       "moneda": "USD"
     },
     {
@@ -10822,18 +11077,18 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Local 89000m² en Caracas — $1.800/mes | ZonaVen",
+      "titulo": "Local 100m² en Caracas — $1.800/mes | ZonaVen — No Disponible",
       "enlace": "https://zonaven.com/alquiler/local-en-alquiler-en-chacao-yf-26-15917-distrito-capital-112aa8",
       "precio_texto": "$1800",
       "precio_usd": 1800,
       "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": 89000,
+      "banos": 1,
+      "metros_cuadrados": 100,
       "tipo": "Local comercial",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Chacao, Distrito Capital",
       "portal": "zonaven",
-      "descripcion": "Alquila local comercial de 89.000 m² en El Recreo, Caracas - Libertador. Ubicado a pie de calle, con 3 niveles, baño incorporado, aire acondicionado, neveras y equipado. Ideal para negocios como charcutería o víveres. Perfecto para operar de inmediato. Precio: 1.800 USD mensuales.",
+      "descripcion": "Se alquila estupendo local comercial en el corazón de Chacao, totalmente equipado para comenzar tu emprendimiento. NO tiene problemas de agua ,tiene punto de gas y ducteria. El local esta acondicionado para restaurante o Centro de Producción . Luz 220, Aire A., Congelador y Nevera industrial.",
       "moneda": "USD"
     },
     {
@@ -11767,18 +12022,18 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Local 125m² en Caracas — $3.800/mes | ZonaVen — No Disponible",
+      "titulo": "Local 300m² en Caracas — $4.000/mes | ZonaVen",
       "enlace": "https://zonaven.com/alquiler/local-en-alquiler-altamira-chacao-av-luis-roche-distrito-capital-c60649",
-      "precio_texto": "$3800",
-      "precio_usd": 3800,
+      "precio_texto": "$4000",
+      "precio_usd": 4000,
       "habitaciones": null,
       "banos": null,
-      "metros_cuadrados": 125,
+      "metros_cuadrados": 300,
       "tipo": "Local comercial",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Chacao, Distrito Capital",
       "portal": "zonaven",
-      "descripcion": "¿Buscas el lugar ideal para tu negocio? Alquiler de espectacular local comercial de 125 m en Altamira, Caracas. Ubicación estratégica a pie de calle, terraza, pozo de agua y alta visibilidad en Chacao. Impulsa tu marca hoy Oportunidad Única para tu Marca en el Corazón Comercial de Altamira Si buscas máxima visibilidad y una ubicación privilegiada en Caracas, este local comercial en alquiler en Altamira, Municipio Chacao, es la inversión estratégica que tu negocio necesita. Ubicado estratégicamen",
+      "descripcion": "Local comercial de 300 m² en Chacao, Caracas, ideal para negocio o almacenamiento. Distribuido en dos niveles, con acceso directo a la calle y tres puestos de estacionamiento frente. Zonificación de industria y comercio. Perfecto para proyectos de crecimiento empresarial. Precio: USD 4.000.",
       "moneda": "USD"
     },
     {
@@ -11812,18 +12067,18 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Oficina 20m² en Los Salias — $150/mes | ZonaVen — No Disponible",
+      "titulo": "Oficina 200m² en Los Salias — $800/mes | ZonaVen",
       "enlace": "https://zonaven.com/alquiler/oficina-alquiler-amoblada-c-e-el-coliseo-san-antonio-de-los-altos-miranda-1c8fc3",
-      "precio_texto": "$150",
-      "precio_usd": 150,
+      "precio_texto": "$800",
+      "precio_usd": 800,
       "habitaciones": null,
       "banos": null,
-      "metros_cuadrados": 20,
+      "metros_cuadrados": 200,
       "tipo": "Oficina",
       "operacion_detectada": "Alquiler",
       "ubicacion": "San Antonio De Los Altos, Miranda",
       "portal": "zonaven",
-      "descripcion": "Oficina en alquiler amoblada Centro Empresarial El Coliseo San Antonio de los Altos\nConsta\nSuperficie 20 m2\nLa oficina posee mezzanina\nincluye en la negociación Escritorio, Archivador, impresora y cartelera",
+      "descripcion": "Alquila una oficina de 200 m² en San Antonio, Miranda, con dos baños y espacio para múltiples puestos. Ideal para empresas que buscan comodidad y visibilidad en la Recta de las Minas. Incluye depósito para almacenamiento. Precio: USD 800. Ubicación estratégica y fácil acceso.",
       "moneda": "USD"
     },
     {
@@ -11977,33 +12232,18 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Oficina 15m² en Caracas — $300/mes | ZonaVen — No Disponible",
+      "titulo": "Oficina 28000m² en Caracas — $300/mes | ZonaVen",
       "enlace": "https://zonaven.com/alquiler/cubiculo-de-oficina-en-alquiler-en-la-urbina-cda-26-545-distrito-capital-fb3df7",
       "precio_texto": "$300",
       "precio_usd": 300,
       "habitaciones": null,
-      "banos": 1,
-      "metros_cuadrados": 15,
+      "banos": null,
+      "metros_cuadrados": 28000,
       "tipo": "Oficina",
       "operacion_detectada": "Alquiler",
       "ubicacion": "La Urbina, Distrito Capital",
       "portal": "zonaven",
-      "descripcion": "En oficina compartida se alquila espacio de oficina doble de unos 15m2 por un canon excepcional en la zona y donde podrás tener una sede fisica de tu negocio con practica y excelente ubicación. Ideal para ventas online, punto de distribución con delivery, firma de contadores, showroom y mucho mas. Se comparte el uso del baño y del kitchinaid. Es ideal para 3 o 4 puestos de trabajo maximo. Contactame",
-      "moneda": "USD"
-    },
-    {
-      "titulo": "Habitación en Caracas — $180/mes | ZonaVen — No Disponible",
-      "enlace": "https://zonaven.com/alquiler/alquiler-habitacion-la-tahona-distrito-capital-7c047b",
-      "precio_texto": "$180",
-      "precio_usd": 180,
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": 12,
-      "tipo": null,
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Distrito Capital",
-      "portal": "zonaven",
-      "descripcion": "Alquila habitación de 12 m² con baño exclusivo en El Hatillo, Caracas. Ideal para jóvenes estudiantes de universidades cercanas. Incluye internet fibra óptica. Ubicación estratégica cerca de Galerías Los Naranjos, Parque Cerro Verde y Rio Market. A solo USD 180 al mes.",
+      "descripcion": "Alquila oficina de 28.000 m² en La Carlota, Caracas - Sucre, ideal para depósito de mercancía o negocio. Cuenta con baño y excelente ubicación, a una cuadra de la avenida Francisco de Miranda y del metro Los Dos Caminos. Perfecto para venta en línea o carga y descarga. Precio: USD 300.",
       "moneda": "USD"
     },
     {
@@ -12967,6 +13207,66 @@
       "moneda": "USD"
     },
     {
+      "titulo": "Apartamento 3 hab en Los Salias — $650/mes | ZonaVen",
+      "enlace": "https://zonaven.com/alquiler/apartamento-en-alquiler-urb-las-minas-san-antonio-de-los-altos-miranda-dda1c8",
+      "precio_texto": "$650",
+      "precio_usd": 650,
+      "habitaciones": 3,
+      "banos": 2,
+      "metros_cuadrados": 110,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "San Antonio De Los Altos, Miranda",
+      "portal": "zonaven",
+      "descripcion": "Alquila hermoso apartamento remodelado en La Arboleda, San Antonio, Miranda. 3 habitaciones, 2 baños, 110 m². Pisos de porcelanato, ventanas panorámicas, cocina con equipos nuevos. Incluye estacionamiento bajo techo, maletero y servicios constantes. Ideal para quienes buscan comodidad y acceso fácil a la Perimetral y Panamericana. Alquiler: 650 USD.",
+      "moneda": "USD"
+    },
+    {
+      "titulo": "Casa 4 hab en Caracas — $250.000 | ZonaVen — No Disponible",
+      "enlace": "https://zonaven.com/venta/leandro-manzano-casa-en-venta-santa-sofia-mls-26-11560-distrito-capital-6efbd8",
+      "precio_texto": "$250000",
+      "precio_usd": 250000,
+      "habitaciones": 4,
+      "banos": 3,
+      "metros_cuadrados": 415,
+      "tipo": "Casa",
+      "operacion_detectada": "Venta",
+      "ubicacion": "Distrito Capital",
+      "portal": "zonaven",
+      "descripcion": "MLS #26-11560\nDescubre esta magnífica quinta ubicada en una exclusiva urbanización con vigilancia privada, diseñada para ofrecerte la máxima tranquilidad y seguridad. Construida sobre un terreno de 414 la propiedad cuenta con una sólida edificación de 389, con dos anexos independientes, perfectos para múltiples usos o para generar ingresos adicionales mediante alquiler.\n\nLEANDRO MANZANO\nPROFESIONAL\nINMOBILIARIO",
+      "moneda": "USD"
+    },
+    {
+      "titulo": "Apartamento 4 hab en Caracas — $475.000 | ZonaVen",
+      "enlace": "https://zonaven.com/venta/apartamento-en-venta-en-altamira-25-17847-distrito-capital-7c3278",
+      "precio_texto": "$475000",
+      "precio_usd": 475000,
+      "habitaciones": 4,
+      "banos": 6,
+      "metros_cuadrados": 692,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
+      "ubicacion": "Altamira, Distrito Capital",
+      "portal": "zonaven",
+      "descripcion": "Excelente apartamento en venta en el prestigioso conjunto de Alto Hatillo, Caracas. Cuenta con 4 habitaciones, 6 baños y 692 m² de área distribuidos en amplios espacios, sala y comedor conectados a una gran terraza techada con vista panorámica. Ideal para disfrutar con familia y amigos. Seguridad 24 horas. Precio: 475.000 USD.",
+      "moneda": "USD"
+    },
+    {
+      "titulo": "Apartamento 3 hab en Caracas — $105.000 | ZonaVen",
+      "enlace": "https://zonaven.com/venta/venta-de-apartamento-en-el-paraiso-cl-mls-26-15933-distrito-capital-759e7c",
+      "precio_texto": "$105000",
+      "precio_usd": 105000,
+      "habitaciones": 3,
+      "banos": 3,
+      "metros_cuadrados": 154,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
+      "ubicacion": "Distrito Capital",
+      "portal": "zonaven",
+      "descripcion": "Excelente apartamento en venta en San Bernardino, Caracas - Libertador. Ideal para familias, cuenta con 3 habitaciones, 3 baños, 154 m² distribuidos en un edificio de baja densidad con solo 6 pisos y 13 unidades. Amplios espacios, baños remodelados, cocina cómoda, balcón con vista agradable, área de servicio y lavadero. Incluye tanque de agua y fibra óptica. Ubicación estratégica, cerca de servicios y transporte. Precio: USD 105,000.",
+      "moneda": "USD"
+    },
+    {
       "titulo": "Casa 3 hab en La Guaira — $55.000 | ZonaVen",
       "enlace": "https://zonaven.com/venta/casa-en-venta-en-la-costa-ubicada-en-el-edo-la-guaira-la-guaira-57f2a6",
       "precio_texto": "$55000",
@@ -12994,6 +13294,21 @@
       "ubicacion": "Altamira, Distrito Capital",
       "portal": "zonaven",
       "descripcion": "Alquila este espectacular apartamento en La Florida, Caracas - Libertador, con 271 m² distribuidos en 4 habitaciones y 5 baños. Ideal para quienes buscan confort y vistas panorámicas al Ávila y la ciudad. Acabados de lujo con mármol en todos los espacios. Terraza techada integrada a la sala, perfecta para disfrutar de las vistas. Precio: USD 2,200.",
+      "moneda": "USD"
+    },
+    {
+      "titulo": "Apartamento 4 hab en Caracas — $105.000 | ZonaVen",
+      "enlace": "https://zonaven.com/venta/vendo-apartamento-en-el-marques-24-21166-distrito-capital-8115a2",
+      "precio_texto": "$105000",
+      "precio_usd": 105000,
+      "habitaciones": 4,
+      "banos": 2,
+      "metros_cuadrados": 112,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
+      "ubicacion": "Distrito Capital",
+      "portal": "zonaven",
+      "descripcion": "Ideal para personalizar, este apartamento de 112 m² en La Campiña, Caracas - Libertador, ofrece 4 habitaciones, 2 baños y terraza privada. Perfecto para remodelar según tus necesidades. Ubicado en zona estratégica del noreste de Caracas, a solo unos pasos de servicios y transporte. Precio: USD 105,000.",
       "moneda": "USD"
     },
     {
@@ -13882,6 +14197,21 @@
       "moneda": "USD"
     },
     {
+      "titulo": "Local 5872m² en Baruta — $1.500/mes | ZonaVen — No Disponible",
+      "enlace": "https://zonaven.com/alquiler/excelente-consultorio-odontologico-en-alquiler-en-vizcaya-ia-miranda-961505",
+      "precio_texto": "$1500",
+      "precio_usd": 1500,
+      "habitaciones": null,
+      "banos": 1,
+      "metros_cuadrados": 5872,
+      "tipo": "Local comercial",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Miranda",
+      "portal": "zonaven",
+      "descripcion": "Excelente Consultorio Odontológico en alquiler en una de las zonas de más alto poder adquisitivo *Vizcaya*\n\nEs un Consultorio Odontológico completamente equipado\n\nCuenta con 58,72 m2 de área, consta de 3 oficinas con una Vista espectacular\n\nContamos con estacionamiento y todas las facilidades para desarrollar su idea de negocio.\n\nCerca de Farmatodo, MacDonalds, diversidad gastronómica entre El Cafetal y Los Samanes.\n\nCerca de Urbanizaciones como Cerro Verde, Colinas de Tamanaco, Los Samanes, San",
+      "moneda": "USD"
+    },
+    {
       "titulo": "Apartamento 5 hab en Caracas — $4.500/mes | ZonaVen",
       "enlace": "https://zonaven.com/alquiler/cv-apartamento-en-alquiler-en-la-castellana-yf-26-7960-distrito-capital-9d402a",
       "precio_texto": "$4500",
@@ -14512,36 +14842,6 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Casa 5 hab en Caracas — $550.000 | ZonaVen",
-      "enlace": "https://zonaven.com/venta/casa-en-venta-en-los-palos-grandes-26-15385-distrito-capital-377997",
-      "precio_texto": "$550000",
-      "precio_usd": 550000,
-      "habitaciones": 5,
-      "banos": 8,
-      "metros_cuadrados": 700,
-      "tipo": "Casa",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Distrito Capital",
-      "portal": "zonaven",
-      "descripcion": "Casa de ensueño en Oripoto, Caracas - El Hatillo, con 700 m² de construcción y 2.000 m² de terreno. Ubicada en Calle El Vivero, ofrece vistas infinitas al valle de Caracas y montañas. 5 habitaciones, 8 baños, arquitectura de doble altura. Ideal para quienes buscan estilo, tranquilidad y conexión con la naturaleza. Precio: USD 550.000.",
-      "moneda": "USD"
-    },
-    {
-      "titulo": "Casa 5 hab en Caracas — $320.000 | ZonaVen",
-      "enlace": "https://zonaven.com/venta/se-vende-bella-casa-en-el-cafetal-mls-25-15156-distrito-capital-7017b8",
-      "precio_texto": "$320000",
-      "precio_usd": 320000,
-      "habitaciones": 5,
-      "banos": 6,
-      "metros_cuadrados": 451,
-      "tipo": "Casa",
-      "operacion_detectada": "Venta",
-      "ubicacion": "El Cafetal, Distrito Capital",
-      "portal": "zonaven",
-      "descripcion": "Hermosa quinta en urbanización cerrada y de fácil acceso en Oripoto, El Hatillo, Caracas. Cuenta con 5 habitaciones, 6 baños y 451 m² de área construida. Ideal para inversión o remodelación. Perfecta para disfrutar de un clima de montaña. Precio negociable. Contacto con anticipación.",
-      "moneda": "USD"
-    },
-    {
       "titulo": "Local 42000m² en La Guaira — $350/mes | ZonaVen",
       "enlace": "https://zonaven.com/alquiler/alquiler-local-comercial-en-maiquetia-la-guaira-la-guaira-44ba9d",
       "precio_texto": "$350",
@@ -14599,21 +14899,6 @@
       "ubicacion": "Los Teques, Miranda",
       "portal": "zonaven",
       "descripcion": "Venta de taller mecánico con fondo de comercio en zona estratégica de El Hatillo, Caracas. Espacio de 500 m² con área para vehículos, tres puentes hidráulicos, latonería, pintura, exposición de repuestos, oficinas administrativas, depósito y mezaninas. Negocio listo para operar, ideal para inversión en zona de alto tráfico.",
-      "moneda": "USD"
-    },
-    {
-      "titulo": "Apartamento 1 hab en La Guaira — $300/mes | ZonaVen",
-      "enlace": "https://zonaven.com/alquiler/apartamento-urb-tanaguarena-la-guaira-al49-o28lg-fue-la-guaira-a68301",
-      "precio_texto": "$300",
-      "precio_usd": 300,
-      "habitaciones": 1,
-      "banos": 1,
-      "metros_cuadrados": 54,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "La Guaira",
-      "portal": "zonaven",
-      "descripcion": "Alquila este acogedor apartamento de 54 m² en Macuto, Vargas, a pocos metros del mar y cerca del Paseo Macuto. Ideal para quienes buscan tranquilidad y comodidad. Cuenta con 1 habitación, 1 baño, aire acondicionado tipo Split, cocina empotrada con nevera y microondas. Perfecto para estancias cómodas y sin preocupaciones. Precio: USD 300.",
       "moneda": "USD"
     },
     {
@@ -14722,21 +15007,6 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Casa 6 hab en Caracas — $320.000 | ZonaVen",
-      "enlace": "https://zonaven.com/venta/espectacular-quinta-en-venta-el-penon-vgi-distrito-capital-bce0c0",
-      "precio_texto": "$320000",
-      "precio_usd": 320000,
-      "habitaciones": 6,
-      "banos": 6,
-      "metros_cuadrados": 530,
-      "tipo": "Casa",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Distrito Capital",
-      "portal": "zonaven",
-      "descripcion": "Vende hermosa casa de 3 niveles en urbanización Oripoto, Caracas - El Hatillo. Terreno de 600 m² y construcción de 530 m². 6 habitaciones, 6 baños, 5 estacionamientos. Ideal para familias. Pisos de mármol italiano, porcelanato español y vista espectacular. Clima de montaña, jardín, parrillera y family room con ventanales. Incluye cocina empotrada, horno, lavadora y secadora. Calentador eléctrico y TV por cable. Zona cerrada y segura.",
-      "moneda": "USD"
-    },
-    {
       "titulo": "Casa 4 hab en Caracas — $350.000 | ZonaVen",
       "enlace": "https://zonaven.com/venta/ld-casa-en-venta-urb-alto-hatillo-caracas-yf-25-19650-distrito-capital-2d0c42",
       "precio_texto": "$350000",
@@ -14839,36 +15109,6 @@
       "ubicacion": "Las Mercedes, Distrito Capital",
       "portal": "zonaven",
       "descripcion": "Excelente apartamento dúplex en venta en Las Mercedes, Caracas, con 338 m² distribuidos en 4 habitaciones, 3 baños, 2 cocinas de lujo y área de servicio. Disfruta de vistas panorámicas espectaculares, sauna privada y 3 puestos de estacionamiento. Ideal para quienes buscan confort, privacidad y espacios amplios en una ubicación privilegiada del norte de Caracas. Precio: USD 1.690.000.",
-      "moneda": "USD"
-    },
-    {
-      "titulo": "Casa 5 hab en Caracas — $550.000 | ZonaVen",
-      "enlace": "https://zonaven.com/venta/casa-en-venta-en-colinas-de-santa-monica-caracas-22-2060-yf-distrito-capital-63e24c",
-      "precio_texto": "$550000",
-      "precio_usd": 550000,
-      "habitaciones": 5,
-      "banos": 8,
-      "metros_cuadrados": 700,
-      "tipo": "Casa",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Santa Monica, Distrito Capital",
-      "portal": "zonaven",
-      "descripcion": "Casa de ensueño en Oripoto, Caracas - El Hatillo, con 700 m² de construcción y 2.000 m² de terreno. Ubicada en Calle El Vivero, ofrece vistas infinitas al valle de Caracas y montañas. 5 habitaciones, 8 baños, arquitectura de doble altura. Ideal para quienes buscan estilo, tranquilidad y conexión con la naturaleza. Precio: USD 550.000.",
-      "moneda": "USD"
-    },
-    {
-      "titulo": "Apartamento 1 hab en La Guaira — $35.000 | ZonaVen",
-      "enlace": "https://zonaven.com/venta/hotel-tasca-restaurant-en-venta-macuto-edo-la-guaira-1700m2-ref-102-la-guaira-346466",
-      "precio_texto": "$35000",
-      "precio_usd": 35000,
-      "habitaciones": 1,
-      "banos": 1,
-      "metros_cuadrados": 140,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "La Guaira",
-      "portal": "zonaven",
-      "descripcion": "Ideal para quienes buscan tranquilidad y comodidad en un entorno privilegiado. Este apartamento de 140 m² en Carlos Soublette, Vargas, cuenta con 1 habitación y 1 baño. Perfecto para vivir cómodamente en una zona bien conectada y cerca de servicios. Precio: USD 35,000. ¡Aprovecha esta oportunidad!",
       "moneda": "USD"
     },
     {
@@ -15532,18 +15772,18 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Oficina 17559m² en Caracas — $2.500/mes | ZonaVen — No Disponible",
+      "titulo": "Oficina 900m² en Caracas — $3.000/mes | ZonaVen",
       "enlace": "https://zonaven.com/alquiler/alquiler-de-oficina-en-la-castellana-jlrp-mls-26-8931-distrito-capital-5c4bb0",
-      "precio_texto": "$2500",
-      "precio_usd": 2500,
+      "precio_texto": "$3000",
+      "precio_usd": 3000,
       "habitaciones": null,
-      "banos": 1,
-      "metros_cuadrados": 17559,
+      "banos": null,
+      "metros_cuadrados": 900,
       "tipo": "Oficina",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Distrito Capital",
       "portal": "zonaven",
-      "descripcion": "Oficinas ubicadas en La Castellana con sala de conferencias. Una de ellas cuenta con entrada independiente y la otra se encuentra totalmente amueblada, con equipo de aire acondicionado central, kitchenette, baño privado y una excelente vista.",
+      "descripcion": "Alquila amplio espacio de 900 m² en La Yaguara, Caracas - Libertador, ideal para oficina, local comercial o depósito. Zonificación IC, acceso fácil para camiones, estacionamiento para clientes y áreas de oficinas, cocina, baños, lockers y lavandería. Perfecto para negocios que requieren amplio espacio. Precio: 3.000 USD mensuales.",
       "moneda": "USD"
     },
     {
@@ -15607,18 +15847,18 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Oficina 12919m² en Caracas — $1.800/mes | ZonaVen — No Disponible",
+      "titulo": "Oficina 175m² en Caracas — $1.600/mes | ZonaVen",
       "enlace": "https://zonaven.com/alquiler/alquiler-de-oficina-en-el-rosal-jlrp-mls-26-15151-distrito-capital-66569a",
-      "precio_texto": "$1800",
-      "precio_usd": 1800,
+      "precio_texto": "$1600",
+      "precio_usd": 1600,
       "habitaciones": null,
-      "banos": 2,
-      "metros_cuadrados": 12919,
+      "banos": null,
+      "metros_cuadrados": 175,
       "tipo": "Oficina",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Distrito Capital",
       "portal": "zonaven",
-      "descripcion": "Impecable y espaciosa oficina en Torre corporativa con vigilancia privada 24 horas, control de acceso, cámaras de seguridad y 6 ascensores. La oficina cuenta con: amplia recepción y sala de espera, amplia kitchenette, 3 oficinas privadas grandes una con Bóveda blindada, 2 baños, A/A central y 2 puestos de estacionamiento fijos; en la torre también hay estacionamiento publico.",
+      "descripcion": "Alquila oficina de 175 m² en Caracas - Sucre, zona comercial con fácil acceso. Incluye 3 estacionamientos, aire acondicionado central, dos ascensores, control de acceso y vigilancia 24 horas. Ideal para mudarse hoy. Precio: 1,600 USD.",
       "moneda": "USD"
     },
     {
@@ -15667,48 +15907,18 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Oficina 364m² en Caracas — $3.500/mes | ZonaVen — No Disponible",
+      "titulo": "Oficina 900m² en Caracas — $3.000/mes | ZonaVen",
       "enlace": "https://zonaven.com/alquiler/26-11540-excelente-oficina-en-chacao-distrito-capital-2027d5",
-      "precio_texto": "$3500",
-      "precio_usd": 3500,
+      "precio_texto": "$3000",
+      "precio_usd": 3000,
       "habitaciones": null,
-      "banos": 4,
-      "metros_cuadrados": 364,
+      "banos": null,
+      "metros_cuadrados": 900,
       "tipo": "Oficina",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Chacao, Distrito Capital",
       "portal": "zonaven",
-      "descripcion": "#26-11540 Oficina de 363.37 mts2 totalmente amoblada, en perfecto estado de funcionamiento y lista para ocupar. Fácil acceso al transporte público. Cuenta con una recepción, 8 oficinas cerradas, 20 puestos de trabajo open space, 2 salas para reuniones, comedor, 4 baños y oficina para servidores. La Torre cuenta con estacionamiento público.",
-      "moneda": "USD"
-    },
-    {
-      "titulo": "Casa 10 hab en Caracas — $120.000 | ZonaVen — No Disponible",
-      "enlace": "https://zonaven.com/venta/casa-en-venta-en-turumo-distrito-capital-d56a7b",
-      "precio_texto": "$120000",
-      "precio_usd": 120000,
-      "habitaciones": 10,
-      "banos": 10,
-      "metros_cuadrados": 830,
-      "tipo": "Casa",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Distrito Capital",
-      "portal": "zonaven",
-      "descripcion": "Casa con Amplio Potencial para todo tipo de negocio, como Clínica pequeña Fabrica o Alquileres de apartamento, Una Casa tipo Anexo, con edificio con 3 apartamento, completos con sus Baños y cocinas, perfecta para invertir como Comercial o Residencial Negociable",
-      "moneda": "USD"
-    },
-    {
-      "titulo": "Oficina 180m² en Caracas — $7.000/mes | ZonaVen — No Disponible",
-      "enlace": "https://zonaven.com/alquiler/oficina-en-alquiler-las-mercedes-mls-26-16027-sc-distrito-capital-46b049",
-      "precio_texto": "$7000",
-      "precio_usd": 7000,
-      "habitaciones": null,
-      "banos": 2,
-      "metros_cuadrados": 180,
-      "tipo": "Oficina",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Las Mercedes, Distrito Capital",
-      "portal": "zonaven",
-      "descripcion": "MLS #26-16027\nExclusiva oficina dúplex en La Mercedes, con vistas privilegiadas a los campos de golf. Totalmente equipada y con acabados de lujo, ofrece un diseño funcional en dos niveles: 3 oficinas, 3 cubículos y áreas comunes en el primer piso; y una oficina principal con sala de reuniones y área de archivo en el segundo. Incluye 2 puestos de estacionamiento privado y cuenta con estacionamiento publico.",
+      "descripcion": "Alquila amplio espacio de 900 m² en La Yaguara, Caracas - Libertador, ideal para oficina, local comercial o depósito. Zonificación IC, acceso fácil para camiones, estacionamiento para clientes y áreas de oficinas, cocina, baños, lockers y lavandería. Perfecto para negocios que requieren amplio espacio. Precio: 3.000 USD mensuales.",
       "moneda": "USD"
     },
     {
@@ -15787,33 +15997,18 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Oficina 10m² en Caracas — $220/mes | ZonaVen — No Disponible",
+      "titulo": "Oficina 10000m² en Caracas — $230/mes | ZonaVen",
       "enlace": "https://zonaven.com/alquiler/oficina-o-cubiculo-plaza-francia-altamira-av-san-juan-bosco-distrito-capital-b2d960",
-      "precio_texto": "$220",
-      "precio_usd": 220,
+      "precio_texto": "$230",
+      "precio_usd": 230,
       "habitaciones": null,
-      "banos": 1,
-      "metros_cuadrados": 10,
+      "banos": 2,
+      "metros_cuadrados": 10000,
       "tipo": "Oficina",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Altamira, Distrito Capital",
       "portal": "zonaven",
-      "descripcion": "Oficina para múltiples usos cerca de la plaza Francia en Altamira, en la misma cuadra de la plaza, cerca a la estación del metro Altamira, Av. San Juan Bosco y segunda Transversal\n\n10 metros\nBaño Compartido\nCocina Compartida\nWifi\nRecepción",
-      "moneda": "USD"
-    },
-    {
-      "titulo": "Apartamento 3 hab en Caracas — $245.000 | ZonaVen — No Disponible",
-      "enlace": "https://zonaven.com/venta/moderno-apartamento-ubicado-en-lpg-25-9649-cv-distrito-capital-9f6b8b",
-      "precio_texto": "$245000",
-      "precio_usd": 245000,
-      "habitaciones": 3,
-      "banos": 3,
-      "metros_cuadrados": 189,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Distrito Capital",
-      "portal": "zonaven",
-      "descripcion": "Descubra este moderno apartamento ubicado en la privilegiada zona de Los Palos Grandes y Altamira, donde se encuentran la comodidad y el estilo. Con una excelente ubicación, disfrutaras de fácil acceso a restaurantes, tiendas y parques. La amplia sala ofrece una impresionante vista al Avila, creando un ambiente sereno y acogedor.",
+      "descripcion": "Alquila oficina de 10.0 m² en El Recreo, Caracas - Libertador. Ideal para sector salud, administración, showroom o depósito. Cuenta con 2 baños, uno interno y otro para visitantes. Incluye puntos de agua, mobiliario empotrado y sala de espera. Estacionamiento para visitantes. Horario amplio de lunes a sábado. Gastos comunes incluidos. Ubicación estratégica cerca de Plaza Venezuela y Av. Casanova.",
       "moneda": "USD"
     },
     {
@@ -15862,18 +16057,18 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Oficina 107m² en Caracas — $1.300/mes | ZonaVen — No Disponible",
+      "titulo": "Oficina 200m² en Caracas — $1.300/mes | ZonaVen",
       "enlace": "https://zonaven.com/alquiler/alquiler-de-oficina-los-palos-grandes-ls-26-6856-yg-distrito-capital-705d29",
       "precio_texto": "$1300",
       "precio_usd": 1300,
       "habitaciones": null,
-      "banos": 1,
-      "metros_cuadrados": 107,
+      "banos": 3,
+      "metros_cuadrados": 200,
       "tipo": "Oficina",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Distrito Capital",
       "portal": "zonaven",
-      "descripcion": "Te presento esta oficina con excelente distribución, ideal para impulsar tu negocio. Cuenta con 5 oficinas privadas y un baño interno que te brinda mayor comodidad. De fácil acceso a principales vías de transporte y rodeada de servicios esenciales. Agenda tu cita. Nota: Condominio incluido en el canon.",
+      "descripcion": "Oficina en alquiler en Los Chaguaramos, Caracas - Libertador, Distrito Capital. Superficie de 200 m², 3 baños, aire acondicionado, cocina integral y 2 puestos de estacionamiento. Ideal para droguería, depósito o showroom. Edificio con fibra óptica, acceso fácil al transporte público y excelente ubicación comercial. Alquiler a USD 1,300 mensuales.",
       "moneda": "USD"
     },
     {
@@ -15904,21 +16099,6 @@
       "ubicacion": "Guatire, Miranda",
       "portal": "zonaven",
       "descripcion": "Impecable galpón en Guatire. Posee 3.500 m² de terreno y 2.400 m² techados con 7 metros de altura. Destaca por su ubicación estratégica con salida inmediata hacia Caracas o el Oriente del país. Ofrece capacidad para descargar simultánea varios contenedores, malla anti-aves, extractores, área administrativa con A/A y baños. Máxima seguridad y condiciones óptimas para alta capacidad de almacenaje.\n\nAgenda tu cita y ven a visitarlo\n#26-16687",
-      "moneda": "USD"
-    },
-    {
-      "titulo": "Apartamento 3 hab en Caracas — $650/mes | ZonaVen — No Disponible",
-      "enlace": "https://zonaven.com/alquiler/alquiler-apartamento-avenida-romulo-gallego-chr-distrito-capital-c18f59",
-      "precio_texto": "$650",
-      "precio_usd": 650,
-      "habitaciones": 3,
-      "banos": 2,
-      "metros_cuadrados": 92,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Distrito Capital",
-      "portal": "zonaven",
-      "descripcion": "Alquila apartamento de 92 m² en Sabana Grande, Caracas - Libertador. Cuenta con 3 habitaciones, 2 baños, aire acondicionado, internet y ventanas panorámicas. Edificio de baja densidad con áreas comunes. Ubicado en calle ciega cerca de La Rosita. Alquiler: 650 USD. Tres meses de adelanto, tres de depósito. Trato directo con interesados.",
       "moneda": "USD"
     },
     {
@@ -15982,48 +16162,18 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Oficina 55m² en Caracas — $500/mes | ZonaVen — No Disponible",
+      "titulo": "Oficina 60000m² en Caracas — $500/mes | ZonaVen",
       "enlace": "https://zonaven.com/alquiler/oficina-en-alquiler-los-chaguaramos-26-14386-jca-distrito-capital-0a405b",
       "precio_texto": "$500",
       "precio_usd": 500,
       "habitaciones": null,
-      "banos": 1,
-      "metros_cuadrados": 55,
+      "banos": null,
+      "metros_cuadrados": 60000,
       "tipo": "Oficina",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Distrito Capital",
       "portal": "zonaven",
-      "descripcion": "Se alquila oficina con excelente ubicación, fácil acceso en edificio bien mantenido, cuenta con 2 oficinas, área de recepción, kichinette, 1 baño, 1 puesto de estacionamiento fijo, aire acondicionado, vigilancia privada 24/7. Negociable",
-      "moneda": "USD"
-    },
-    {
-      "titulo": "Townhouse 4 hab en Caracas — $210.000 | ZonaVen — No Disponible",
-      "enlace": "https://zonaven.com/venta/leandro-manzano-townhouse-en-venta-loma-linda-mls-23-25048-distrito-capital-72f139",
-      "precio_texto": "$210000",
-      "precio_usd": 210000,
-      "habitaciones": 4,
-      "banos": 6,
-      "metros_cuadrados": 315,
-      "tipo": "Casa",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Distrito Capital",
-      "portal": "zonaven",
-      "descripcion": "MLS #23-25048\nBello Townhouse ubicado en exclusiva y segura urbanización, totalmente remodelado, CON POZO EN EJECUCION con pisos de mármol, cocina de concepto abierto y agradable vista. Esta propiedad cuenta con 3 niveles, el primero con una amplia habitación principal con vestier y baño, mas dos habitaciones con baño integrado. el segundo piso, hall de entrada, estudio,\n\nLEANDRO MANZANO\nPROFESIONAL INMOBILIARIO",
-      "moneda": "USD"
-    },
-    {
-      "titulo": "Depósito 24271m² en Caracas — $1.500/mes | ZonaVen — No Disponible",
-      "enlace": "https://zonaven.com/alquiler/alquiler-de-piso-industrial-en-la-california-norte-zp-distrito-capital-965dc7",
-      "precio_texto": "$1500",
-      "precio_usd": 1500,
-      "habitaciones": null,
-      "banos": 2,
-      "metros_cuadrados": 24271,
-      "tipo": null,
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Distrito Capital",
-      "portal": "zonaven",
-      "descripcion": "¡Ubicación Premium! Alquiler de Pisos Industriales en La California Sur\n\n¿Buscas conectividad y eficiencia?\n\nAprovecha estos espacios industriales con salida directa a las principales arterias viales, ubicados estratégicamente cerca de los grandes operadores logísticos.\n\nCaracterísticas Destacadas: Logística Fluida: Acceso para carga pesada (góndolas) y ascensores de carga de alta gama.\n\nSeguridad Garantizada: Vigilancia las 24 horas y acceso controlado.\n\nVersatilidad: Áreas disponibles desde 24",
+      "descripcion": "Oficina en alquiler en Sabana Grande, Caracas, Distrito Capital. Ideal para spa, peluquería, consultorio o depósito. Cuenta con 60.000 m², baño, cocina y aire acondicionado. Perfecto para uso profesional. Alquiler a $500 mensuales. Ubicado en zona estratégica del noreste de Caracas.",
       "moneda": "USD"
     },
     {
@@ -16072,18 +16222,18 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Casa 5 hab en Caracas — $315.000 | ZonaVen — No Disponible",
+      "titulo": "Casa 5 hab en Caracas — $320.000 | ZonaVen",
       "enlace": "https://zonaven.com/venta/casa-en-venta-en-los-chorros-caracas-angela-tochon-distrito-capital-c3e50d",
-      "precio_texto": "$315000",
-      "precio_usd": 315000,
+      "precio_texto": "$320000",
+      "precio_usd": 320000,
       "habitaciones": 5,
-      "banos": 5,
-      "metros_cuadrados": 503,
+      "banos": 6,
+      "metros_cuadrados": 451,
       "tipo": "Casa",
       "operacion_detectada": "Venta",
       "ubicacion": "Distrito Capital",
       "portal": "zonaven",
-      "descripcion": "***Solo cliente directo***\n\nDescubra el pináculo de la elegancia y el buen gusto en una de las ubicaciones más codiciadas y seguras de Caracas! Presentamos esta magnífica residencia multinivel ubicada en una calle de máxima seguridad en Los Chorros, diseñada para quienes valoran la privacidad, el confort y la distinción. Cada rincón de esta propiedad ha sido concebido con detalles de muy buen gusto y acabados.\n\n\nehueoa",
+      "descripcion": "Hermosa quinta en urbanización cerrada y de fácil acceso en Oripoto, El Hatillo, Caracas. Cuenta con 5 habitaciones, 6 baños y 451 m² de área construida. Ideal para inversión o remodelación. Perfecta para disfrutar de un clima de montaña. Precio negociable. Contacto con anticipación.",
       "moneda": "USD"
     },
     {
@@ -16102,18 +16252,18 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Apartamento 2 hab en Charallave — $16.500 | ZonaVen — No Disponible",
+      "titulo": "Townhouse 3 hab en Charallave — $27.000 | ZonaVen",
       "enlace": "https://zonaven.com/venta/apartamento-en-venta-res-matalinda-charallave-miranda-b31431",
-      "precio_texto": "$16500",
-      "precio_usd": 16500,
-      "habitaciones": 2,
-      "banos": 2,
-      "metros_cuadrados": 68,
-      "tipo": "Apartamento",
+      "precio_texto": "$27000",
+      "precio_usd": 27000,
+      "habitaciones": 3,
+      "banos": 3,
+      "metros_cuadrados": 107,
+      "tipo": "Casa",
       "operacion_detectada": "Venta",
       "ubicacion": "Miranda",
       "portal": "zonaven",
-      "descripcion": "APARTAMENTO EN VENTA\nRes. Matalinda – Charallave\n\n68 Mtrs²\n2 Habitaciones (espacio para 1 habitación)\n2 Baños Remodelados con piezas sanitarias y grifería nuevas\nCocina\nSala y comedor remodelada\nEnrejado\n\nServicios\nAgua\nLuz\nGas directo\nInternet\nLínea CANTV\nVigilancia 24/7\n\nInventario\nCampana\nTope de cocina\nHorno\n1 Tanque 560 litros con sistema hidroneumático\n\nCuenta con:\n1 Puesto de estacionamiento\n\nCercanías: Transporte público\n\n\nPrecio: 16.500$",
+      "descripcion": "TOWNHOUSES EN VENTA\nUrb. Samanes de Betania - Charallave\n\n107 Mts²\n3 Habitaciones y un estudio\n3 Baños remodelados\nCocina con tope de granito\nComedor\nSala\nCuarto de deposito\nÁrea de Lavandero con su batea\nVentanas panorámica\nTecho con molduras de yeso\nTerraza con área de parrillera\nRejas de seguridad\nPiso de terracota en el estacionamiento\n\nServicios:\nAgua\nLuz\nTanque de agua\n\nInventario:\nCampana\nHorno\n\nPrecio: 27.000",
       "moneda": "USD"
     },
     {
@@ -17137,6 +17287,81 @@
       "moneda": "USD"
     },
     {
+      "titulo": "Apartamento 3 hab en Macuto — $400/mes | ZonaVen — No Disponible",
+      "enlace": "https://zonaven.com/alquiler/alquiler-apartamento-en-la-urb-camuri-chico-macuto-estado-la-guaira",
+      "precio_texto": "$400",
+      "precio_usd": 400,
+      "habitaciones": 3,
+      "banos": 2,
+      "metros_cuadrados": 75,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "La Guaira",
+      "portal": "zonaven",
+      "descripcion": "¡Descubre tu nuevo hogar en La Urbanización Camurí Chico!\n\nApartamento Cómodo y Confortable en Alquiler Ubicado en la parte baja de La Llanada, este apartamento de 75 m² ofrece un espacio ideal para vivir.\n\nAquí están sus características clave:\n\n3 Habitaciones: Espaciosas y bien iluminadas, perfectas para descansar o trabajar desde casa.\n\n2 Baños: Con acabados modernos y comodidades esenciales.\n\nCocina Empotrada y Equipada: Preparar tus comidas será un placer en esta cocina funcional.\n\nSala - Co",
+      "moneda": "USD"
+    },
+    {
+      "titulo": "Apartamento 3 hab en Caracas — $3.700/mes | ZonaVen",
+      "enlace": "https://zonaven.com/alquiler/apartamento-en-alquiler-urb-colinas-de-valle-arriba-distrito-capital-ecefca",
+      "precio_texto": "$3700",
+      "precio_usd": 3700,
+      "habitaciones": 3,
+      "banos": 4,
+      "metros_cuadrados": 281,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Distrito Capital",
+      "portal": "zonaven",
+      "descripcion": "Alquila este exclusivo apartamento en Colinas de Valle Arriba, Caracas - Baruta. 3 habitaciones con baño y vestier, 4 baños, 281 m². Pisos de mármol, ascensor privado y vista panorámica al Avila. Cocina amplia, área de servicio completa, 3 estacionamientos y maletero. Servicios al día. Ideal para quienes buscan confort y exclusividad en zona central. Precio: 3,700 USD.",
+      "moneda": "USD"
+    },
+    {
+      "titulo": "Apartamento 3 hab en Caracas — $1.250.000 | ZonaVen",
+      "enlace": "https://zonaven.com/venta/venta-de-apartamento-pent-house-en-las-mercedes-cl-mls-26-6171-distrito-capital-97fc32",
+      "precio_texto": "$1250000",
+      "precio_usd": 1250000,
+      "habitaciones": 3,
+      "banos": 5,
+      "metros_cuadrados": 282,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
+      "ubicacion": "Las Mercedes, Distrito Capital",
+      "portal": "zonaven",
+      "descripcion": "Precioso apartamento penthouse en Las Mercedes, Caracas, con 3 habitaciones, 5 baños y 282 m². Totalmente remodelado con materiales de primera calidad, aire acondicionado central, cocina equipada y terraza con parrillera. Ideal para quienes buscan lujo y comodidad en una de las zonas más cotizadas de la ciudad. Precio: 1,250,000 USD.",
+      "moneda": "USD"
+    },
+    {
+      "titulo": "Apartamento 2 hab en Caracas — $110.000 | ZonaVen",
+      "enlace": "https://zonaven.com/venta/26-11294-apartamento-en-venta-en-los-samanes-distrito-capital-8940bb",
+      "precio_texto": "$110000",
+      "precio_usd": 110000,
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 100,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
+      "ubicacion": "Distrito Capital",
+      "portal": "zonaven",
+      "descripcion": "Excelente apartamento en venta en La Florida, Caracas - Libertador, con 2 habitaciones, 2 baños y 100 m². Ideal para inversión o vivienda propia. Ubicado en zona de fácil acceso, con servicios activos, vigilancia privada 24/7, parque infantil y estacionamiento para residentes y visitantes. Perfecto para quienes buscan comodidad y seguridad en un entorno urbano. Precio: USD 110.000.",
+      "moneda": "USD"
+    },
+    {
+      "titulo": "Casa 4 hab en Caracas — $660.000 | ZonaVen — No Disponible",
+      "enlace": "https://zonaven.com/venta/venta-de-casa-en-la-lagunita-country-club-jlrp-mls-26-13797-distrito-capital-69dd49",
+      "precio_texto": "$660000",
+      "precio_usd": 660000,
+      "habitaciones": 4,
+      "banos": 6,
+      "metros_cuadrados": 54124,
+      "tipo": "Casa",
+      "operacion_detectada": "Venta",
+      "ubicacion": "Distrito Capital",
+      "portal": "zonaven",
+      "descripcion": "Casa de 650 m², totalmente remodelada con acabados de primera, cada una de sus 4 habitaciones cuenta con su propio baño interno, estudio privado y un acogedor family room. Tanque de 30.000 litros te para total autonomía. Circuito cerrado y cerco eléctrico y 2 portones eléctricos. Sus espacios amplios, iluminación natural y la ubicación privilegiada hacen de esta casa el hogar ideal.",
+      "moneda": "USD"
+    },
+    {
       "titulo": "Oficina 850m² en Caracas — $3.000/mes | ZonaVen — No Disponible",
       "enlace": "https://zonaven.com/alquiler/oficina-en-alquiler-los-ruices-26-12872-distrito-capital-fa0047",
       "precio_texto": "$3000",
@@ -17149,6 +17374,51 @@
       "ubicacion": "Distrito Capital",
       "portal": "zonaven",
       "descripcion": "Se ofrece en alquiler oficina de 850 m2, ubicada en edificio con vigilancia y en las inmediaciones de las principales vias de transporte publico. Esta distribuida en area de recepcion, 11 oficinas independientes , oficina para presidencia, vicepresidencia, sala de reuniones, area para comedor , 4 banos . Aire central. Puestos para alquilar en el edificio.",
+      "moneda": "USD"
+    },
+    {
+      "titulo": "Apartamento 3 hab en Caracas — $1.500/mes | ZonaVen — No Disponible",
+      "enlace": "https://zonaven.com/alquiler/alquilo-apartamento-en-las-mercedes-24-18737-distrito-capital-34cca0",
+      "precio_texto": "$1500",
+      "precio_usd": 1500,
+      "habitaciones": 3,
+      "banos": 3,
+      "metros_cuadrados": 163,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Las Mercedes, Distrito Capital",
+      "portal": "zonaven",
+      "descripcion": "ABSTENERSE INTERMEDIARIOS\n\nMLS #24-18737\nEste amplio y cómodo apartamento ubicado en la Mejor zona de Lomas de las Mercedes, te brindará todo lo que buscas para tu Familia. Cuenta con 3 habitaciones más servicio, amplia cocina completamente equipada. Constante flujo de agua. y todo en un Edificio perfectamente mantenido, Cuenta con un puesto de estacionamiento. y queda totalmente amoblado.",
+      "moneda": "USD"
+    },
+    {
+      "titulo": "Apartamento 1 hab en Caracas — $30.000 | ZonaVen",
+      "enlace": "https://zonaven.com/venta/fondo-de-comercio-en-cosmetologia-en-venta-distrito-capital-823859",
+      "precio_texto": "$30000",
+      "precio_usd": 30000,
+      "habitaciones": null,
+      "banos": null,
+      "metros_cuadrados": 17,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
+      "ubicacion": "Distrito Capital",
+      "portal": "zonaven",
+      "descripcion": "Ideal para una pareja o inversión, este apartamento de 17,0 m² en San Bernardino, Caracas - Libertador, ofrece una ubicación tranquila con acceso a transporte público y vías de acceso a la Cota Mil. Cuenta con un solo ambiente, baño, agua fluida y estacionamiento destechado asignado. Perfecto para remodelar o alquilar.",
+      "moneda": "USD"
+    },
+    {
+      "titulo": "Apartamento 126 hab en La Guaira — $22.000.000 | ZonaVen — No Disponible",
+      "enlace": "https://zonaven.com/venta/venta-de-hotel-5-estrellas-en-la-guaira-estado-vargas-venezuela-la-guaira-c9c01a",
+      "precio_texto": "$22000000",
+      "precio_usd": 22000000,
+      "habitaciones": 126,
+      "banos": 10,
+      "metros_cuadrados": 1500,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
+      "ubicacion": "La Guaira",
+      "portal": "zonaven",
+      "descripcion": "Te ofrecemos en Venta Hermoso Hotel 5 Estrellas en La Guaira estado Vargas Venezuela.\n\nTiene 126 habitaciones divididas en:\n84 habitaciones tipo Standard\n20 habitaciones Standard Twins\n16 habitaciones superiores\n12 Suite de Lujo.\n\nPosee las siguientes características:\nBar Restaurant Gourmet Internacional. Cafeterí.\nRestaurant y karaoke.\nAmplio y lujoso Salón de fiestas.\nTienda.\nSalón de eventos.\nCajero Automático.\nPiscina.\nSalón de Belleza.\nCyber Center.\nCancha de Tenis.\nGimnasio.\nSauna.\nSalón d",
       "moneda": "USD"
     },
     {
@@ -18082,33 +18352,48 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Casa 4 hab en Caracas — $410.000 | ZonaVen",
-      "enlace": "https://zonaven.com/venta/ip-vendo-casa-en-santa-marta-26-15022-yf-distrito-capital-482ee7",
-      "precio_texto": "$410000",
-      "precio_usd": 410000,
-      "habitaciones": 4,
-      "banos": 4,
-      "metros_cuadrados": 390,
-      "tipo": "Casa",
-      "operacion_detectada": "Venta",
+      "titulo": "Oficina 1476m² en Caracas — $3.500/mes | ZonaVen — No Disponible",
+      "enlace": "https://zonaven.com/alquiler/excelente-oficina-en-alquiler-la-castellana-26-14519-ll-distrito-capital-0814c8",
+      "precio_texto": "$3500",
+      "precio_usd": 3500,
+      "habitaciones": null,
+      "banos": 2,
+      "metros_cuadrados": 1476,
+      "tipo": "Oficina",
+      "operacion_detectada": "Alquiler",
       "ubicacion": "Distrito Capital",
       "portal": "zonaven",
-      "descripcion": "Excelente casa en venta en urbanización cerrada con vigilancia privada en El Hatillo, Caracas. Ubicada en una calle segura y tranquila, ideal para familias. Cuenta con 4 habitaciones, 4 baños y 390 m² de área construida. Diseño moderno y minimalista con acabados de primera calidad. Perfecta para quienes buscan confort y seguridad en una zona privilegiada del Distrito Capital.",
+      "descripcion": "Estupenda oficina ubicada en la torre Copernico del Centro Comercial San Ignacio. Cuenta con 3 oficinas pequeñas, 2 oficinas grandes con jardinera y vista espectaclar al Avila, una sala de conferencias, archivo y 2 baños. Excelente oportunidad para tener tu empresa en el centro comercial mas top de Caracas.",
       "moneda": "USD"
     },
     {
-      "titulo": "Casa 5 hab en Caracas — $250.000 | ZonaVen",
-      "enlace": "https://zonaven.com/venta/casa-en-venta-en-santa-sofia-26-5945-distrito-capital-59c0f8",
-      "precio_texto": "$250000",
-      "precio_usd": 250000,
-      "habitaciones": 5,
+      "titulo": "Casa 4 hab en Caracas — $380.000 | ZonaVen — No Disponible",
+      "enlace": "https://zonaven.com/venta/ip-vendo-casa-en-santa-marta-26-15022-yf-distrito-capital-482ee7",
+      "precio_texto": "$380000",
+      "precio_usd": 380000,
+      "habitaciones": 4,
       "banos": 4,
-      "metros_cuadrados": 314,
+      "metros_cuadrados": 580,
       "tipo": "Casa",
       "operacion_detectada": "Venta",
       "ubicacion": "Distrito Capital",
       "portal": "zonaven",
-      "descripcion": "Vende hermosa townhouse de tres niveles en La Trinidad, sector Monte Rey, Caracas - Baruta. Distribuida en 5 habitaciones, 4 baños, 314 m². Planta alta con hall de entrada, 2 family room, 4 habitaciones y 3 baños. Planta baja con estudio, sala, comedor, cocina, zona de lavandería, jardín, terraza, parrillera y baño de visita. Planta baja con 3 estacionamientos, depósito, cuarto y baño de servicio, y cuarto de hidroneumático con 2 tanques. Ideal para vivir en un entorno privado con vistas y clima",
+      "descripcion": "Casa con ubicación privilegiada, ideal para quienes buscan invertir y personalizar cada detalle.\n\nAmplios espacios, terreno y estructura con gran potencial para renovar, ampliar o desarrollar la casa de tus sueños en una zona con alta demanda y retorno de tu inversión.\n\nCrea un hogar a tu medida en una de las mejores urbanizaciones de Caracas.",
+      "moneda": "USD"
+    },
+    {
+      "titulo": "Casa 8 hab en Caracas — $250.000 | ZonaVen — No Disponible",
+      "enlace": "https://zonaven.com/venta/casa-en-venta-en-santa-sofia-26-5945-distrito-capital-59c0f8",
+      "precio_texto": "$250000",
+      "precio_usd": 250000,
+      "habitaciones": 8,
+      "banos": 7,
+      "metros_cuadrados": 550,
+      "tipo": "Casa",
+      "operacion_detectada": "Venta",
+      "ubicacion": "Distrito Capital",
+      "portal": "zonaven",
+      "descripcion": "Renta House tiene disponible una casa en Santa Sofía que cuenta con 5 anexos, cada uno de ellos con sus propias comodidades. Estos anexos pueden ser utilizados como habitaciones adicionales, áreas de estudio o incluso como espacios de trabajo independientes.\nAdemás, la casa cuenta con un amplio parqueo que puede albergar hasta 3 carros, brindando comodidad y seguridad para sus vehículos. Contáctame!!",
       "moneda": "USD"
     },
     {
@@ -18157,18 +18442,18 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Oficina 136m² en Caracas — $6.500/mes | ZonaVen",
+      "titulo": "Oficina 703m² en Caracas — $9.000/mes | ZonaVen — No Disponible",
       "enlace": "https://zonaven.com/alquiler/oficina-en-alquiler-en-el-rosal-olga-prada-inmuebles-distrito-capital-27fbbf",
-      "precio_texto": "$6500",
-      "precio_usd": 6500,
+      "precio_texto": "$9000",
+      "precio_usd": 9000,
       "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": 136.45,
+      "banos": 1,
+      "metros_cuadrados": 703,
       "tipo": "Oficina",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Distrito Capital",
       "portal": "zonaven",
-      "descripcion": "Oficina comercial de 136 m² ubicada en una emblemática torre financiera de Las Mercedes, una de las zonas comerciales y corporativas más prestigiosas del este de Caracas. La propiedad ofrece espacio listo para iniciar operación inmediata sin necesidad de adecuaciones mayores — propuesta especialmente atractiva para profesionales y emprendedores con visión de instalación rápida.\n\nLa unidad es ideal para uso como spa, consultorio médico, oficina de servicios profesionales (legales, contables, cons",
+      "descripcion": "El Rosal Oficina con Terraza en Alquiler\n\nEsta propiedad es perfecta para negocios que buscan exclusividad y un ambiente único para sus clientes. La generosa área de terraza ofrece un espacio acogedor y diferenciado.\nÁrea interna: 268,68 m2\nTerraza: 434,13 m2\nÁrea total: 702,81 m2",
       "moneda": "USD"
     },
     {
@@ -18217,6 +18502,21 @@
       "moneda": "USD"
     },
     {
+      "titulo": "Local 990m² en Caracas — $15.000/mes | ZonaVen — No Disponible",
+      "enlace": "https://zonaven.com/alquiler/boleita-norte-mls-26-16382-wm-distrito-capital-b61bb9",
+      "precio_texto": "$15000",
+      "precio_usd": 15000,
+      "habitaciones": null,
+      "banos": 2,
+      "metros_cuadrados": 990,
+      "tipo": "Local comercial",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Distrito Capital",
+      "portal": "zonaven",
+      "descripcion": "Se alquila amplio local comercial en la Av. Principal de Boleíta, ubicado a pie de calle, un conjunto de locales, más un apto anexo para oficinas o para vivienda, y un sótano de 682 mts, total de mts 990, en zona muy transitada y comercial, dos ramblas de acceso, santa maría y varios puestos a pie de calle. Lleva tu negocio al siguiente nivel, funcional para diversos negocios.",
+      "moneda": "USD"
+    },
+    {
       "titulo": "Apartamento 3 hab en Caracas — $160.000 | ZonaVen",
       "enlace": "https://zonaven.com/venta/planta-baja-en-venta-colinas-de-la-tahona-246m2-totales-jg-distrito-capital-6838e8",
       "precio_texto": "$160000",
@@ -18262,18 +18562,18 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Casa 4 hab en Caracas — $410.000 | ZonaVen",
+      "titulo": "Casa 5 hab en Caracas — $390.000 | ZonaVen — No Disponible",
       "enlace": "https://zonaven.com/venta/en-venta-casa-quinta-en-colinas-de-bello-monte-gf-distrito-capital-fdc05c",
-      "precio_texto": "$410000",
-      "precio_usd": 410000,
-      "habitaciones": 4,
-      "banos": 4,
-      "metros_cuadrados": 390,
+      "precio_texto": "$390000",
+      "precio_usd": 390000,
+      "habitaciones": null,
+      "banos": null,
+      "metros_cuadrados": 633,
       "tipo": "Casa",
       "operacion_detectada": "Venta",
       "ubicacion": "Colinas De Be, Distrito Capital",
       "portal": "zonaven",
-      "descripcion": "Excelente casa en venta en urbanización cerrada con vigilancia privada en El Hatillo, Caracas. Ubicada en una calle segura y tranquila, ideal para familias. Cuenta con 4 habitaciones, 4 baños y 390 m² de área construida. Diseño moderno y minimalista con acabados de primera calidad. Perfecta para quienes buscan confort y seguridad en una zona privilegiada del Distrito Capital.",
+      "descripcion": "Comodísima casa multinivel con espacios para toda la familia. Cuenta con cocina amplia y dependencias de servicio, habitaciones grandes con baños privados, estudio, gran espacio de estacionamiento, tanque de agua de 15.000 l con sistema hidroneumático y terrazas muy agradables con hermosas vistas. También dispone de un anexo con cuatro habitaciones y cocina. Todo en impecables condiciones Cod. 26-595",
       "moneda": "USD"
     },
     {
@@ -18352,18 +18652,18 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Oficina 900m² en Caracas — $3.000/mes | ZonaVen",
+      "titulo": "Oficina 162m² en Caracas — $3.800/mes | ZonaVen — No Disponible",
       "enlace": "https://zonaven.com/alquiler/exitosa-oficina-elegante-alquiler-mls-26-16539-las-mercedes-distrito-capital-82e7be",
-      "precio_texto": "$3000",
-      "precio_usd": 3000,
+      "precio_texto": "$3800",
+      "precio_usd": 3800,
       "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": 900,
+      "banos": 1,
+      "metros_cuadrados": 162,
       "tipo": "Oficina",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Las Mercedes, Distrito Capital",
       "portal": "zonaven",
-      "descripcion": "Alquila amplio espacio de 900 m² en La Yaguara, Caracas - Libertador, ideal para oficina, local comercial o depósito. Zonificación IC, acceso fácil para camiones, estacionamiento para clientes y áreas de oficinas, cocina, baños, lockers y lavandería. Perfecto para negocios que requieren amplio espacio. Precio: 3.000 USD mensuales.",
+      "descripcion": "MLS #26-16539\nBuscas el lugar ideal para proyectar el éxito de tu negocio? Esta oficina en alquiler cuenta con 162.42 M2 y se encuentra ubicada en el corazón empresarial de Caracas, lista para ser diseñada y distribuida exactamente a las medidas de tus necesidades. Torre empresarial con vigilancia privada las 24H, cuenta además con estupendas instalaciones y un reconocido Gimnasio de Caracas.",
       "moneda": "USD"
     },
     {
@@ -18382,18 +18682,18 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Casa 5 hab en Caracas — $450.000 | ZonaVen",
+      "titulo": "Casa 5 hab en Caracas — $420.000 | ZonaVen — No Disponible",
       "enlace": "https://zonaven.com/venta/ls-vende-casa-el-penon-distrito-capital-0daa41",
-      "precio_texto": "$450000",
-      "precio_usd": 450000,
+      "precio_texto": "$420000",
+      "precio_usd": 420000,
       "habitaciones": 5,
-      "banos": 4,
-      "metros_cuadrados": 950,
+      "banos": 6,
+      "metros_cuadrados": 1340,
       "tipo": "Casa",
       "operacion_detectada": "Venta",
       "ubicacion": "Distrito Capital",
       "portal": "zonaven",
-      "descripcion": "Casa en venta en la urbanización Santa Sofía, El Cafetal, Caracas. Ubicación privilegiada en Baruta, Distrito Capital. Terreno de 950 m² con 500 m² de área verde. 5 habitaciones, 4 baños, sala de espera, salón de reuniones y amplio salón de estudio. Ideal para remodelación o construcción de anexo. Precio: 450.000 USD.",
+      "descripcion": "¡Descubre tu nuevo hogar en esta hermosa casa de 3 niveles, rodeada de una exuberante vegetación y con una vista inigualable al majestuoso Avila! Disfruta de la tranquilidad de una calle cerrada mientras te deleitas con la belleza natural que te rodea. Esta impresionante propiedad cuenta con 2 balcones con vista, perfectos para relajarte y disfrutar del paisaje. La amplia sala comedor. 26-12649\n¡Descubre tu nuevo hogar en esta hermosa casa de 3 niveles, rodeada de una exuberante vegetación y con",
       "moneda": "USD"
     },
     {
@@ -18427,6 +18727,21 @@
       "moneda": "USD"
     },
     {
+      "titulo": "Casa 5 hab en Caracas — $160.000 | ZonaVen — No Disponible",
+      "enlace": "https://zonaven.com/venta/prados-del-este-cerca-la-trinidad-casa-en-venta-de-550m2-distrito-capital-ef009e",
+      "precio_texto": "$160000",
+      "precio_usd": 160000,
+      "habitaciones": 5,
+      "banos": 4,
+      "metros_cuadrados": 550,
+      "tipo": "Casa",
+      "operacion_detectada": "Venta",
+      "ubicacion": "Prados Del Este, Distrito Capital",
+      "portal": "zonaven",
+      "descripcion": "Bienes Raíces Vzla, ofrece:\n\nLa Trinidad (Urb. Privada), casa en venta.\n550m2 construcción\n\n5 Hab + Serv.\n4 Baños\n2 P. Estac.\nJardín de fondo\nTerraza cubierta\n\nPrecio ref. 160.000 negociable\n\nRequiere mantenimiento.\n\nPB:\nSala\nComedor\nCocina con la lavandería\n1 habitación\nAmplio salón de usos múltiples.\nNivel inferior:\nTerraza semidescubierta\nEspacio Jacuzzi\nJardín\n\nPiso 1:\n3 Habitaciones auxiliares\n1 Baño auxiliar\n1 Hab principal con baño\n\nPiso 2:\nHabitación amplia con estudio.\n\nTanque de agua.\n",
+      "moneda": "USD"
+    },
+    {
       "titulo": "Casa 10 hab en Los Salias — $240.000 | ZonaVen",
       "enlace": "https://zonaven.com/venta/venta-de-casa-multifamiliar-el-limon-san-antonio-de-los-altos-miranda-e20df5",
       "precio_texto": "$240000",
@@ -18457,18 +18772,18 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Apartamento 2 hab en Caracas — $150.000 | ZonaVen",
+      "titulo": "Apartamento 2 hab en Caracas — $150.000 | ZonaVen — No Disponible",
       "enlace": "https://zonaven.com/venta/colinas-de-la-tahona-venta-apartamento-remodelado-hermosa-vista-distrito-capital-5b4651",
       "precio_texto": "$150000",
       "precio_usd": 150000,
       "habitaciones": 2,
-      "banos": 1,
-      "metros_cuadrados": 60,
+      "banos": 2,
+      "metros_cuadrados": 90,
       "tipo": "Apartamento",
       "operacion_detectada": "Venta",
       "ubicacion": "Distrito Capital",
       "portal": "zonaven",
-      "descripcion": "Se vende apartamento de 60 m² en El Rosal, Caracas - Chacao, Distrito Capital. Ideal para inversión o vivienda propia. Cuenta con 2 habitaciones, 1 baño, sala-comedor integrada, cocina moderna con tope de granito y jardinería. Incluye 1 estacionamiento y maletero. Edificio con piscina, salón de fiestas, gimnasio y plaza central. Ubicación privilegiada, luz natural y excelente acceso. Precio: USD 150,000.",
+      "descripcion": "Se vende inmueble de 90 mts2 con increíble vista, cuenta con 02 habitaciones, 02 banos y área de family room que puede ser modificado para otra habitación, tanque de agua, maletero, 02 puestos de estacionamiento uno al lado de otro. Vigilancia privada, se encuentra en los primeros edificios de Colinas de la tahona.",
       "moneda": "USD"
     },
     {
@@ -18484,6 +18799,21 @@
       "ubicacion": "Altamira, Distrito Capital",
       "portal": "zonaven",
       "descripcion": "Excelente apartamento en venta en La Florida, Caracas - Libertador, con 4 habitaciones, 6 baños y 636 m² distribuidos en tres niveles más terraza destechada. Cuenta con ascensor privado, acabados de primera y vistas espectaculares. El edificio ofrece áreas sociales como piscina y canchas. Ideal para quienes buscan confort y exclusividad en una ubicación privilegiada del noreste de Caracas.",
+      "moneda": "USD"
+    },
+    {
+      "titulo": "Apartamento 222169m² en Caracas — $12.000.000 | ZonaVen — No Disponible",
+      "enlace": "https://zonaven.com/venta/edificio-comercial-en-venta-en-los-ruices-mls-25-22555-distrito-capital-97466e",
+      "precio_texto": "$12000000",
+      "precio_usd": 12000000,
+      "habitaciones": null,
+      "banos": 15,
+      "metros_cuadrados": 222169,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
+      "ubicacion": "Distrito Capital",
+      "portal": "zonaven",
+      "descripcion": "MLS #25-22555\nRENTA HOUSE le ofrece en venta edificio a estrenar en Los Ruices. Este maravilloso edificio, lo tiene todo para iniciar operaciones, sea deposito o actividad industrial. Construido sin escatimar, ni obviar absolutamente nada lo que requiere un edificio de este tipo. Cuenta con 512 m2 entre oficinas y showroom, ascensor de pasajeros. 1951.90 m2 de área industrial o depósito, ascensor de carga. 37 puestos de estacionamiento. Practico acceso a contenedores. Zona de carga y descarga in",
       "moneda": "USD"
     },
     {
@@ -18607,6 +18937,21 @@
       "moneda": "USD"
     },
     {
+      "titulo": "Local 6185m² en Caracas — $25.000/mes | ZonaVen — No Disponible",
+      "enlace": "https://zonaven.com/alquiler/local-alquiler-pie-de-calle-centro-santa-rosalia-mls-24-20825-distrito-capital-deb789",
+      "precio_texto": "$25000",
+      "precio_usd": 25000,
+      "habitaciones": null,
+      "banos": 4,
+      "metros_cuadrados": 6185,
+      "tipo": "Local comercial",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Distrito Capital",
+      "portal": "zonaven",
+      "descripcion": "Local Comercial de 3 Plantas. Sótano 3.864,57 mts (4 baños) PB 604,03 mts. Y Mezz. de 1.715,88 mts. TIENE MONTACARGA DEL SOTANO AL DEPOSITO. 1.- 12 Puestos de trabajo abiertos 2.- Salón de Espera y área de Información y caja, un mostrador 3.- 2 oficinas cerradas Mezzanina 1.- Sala de Conferencia 2.- 2 Oficinas Administrativa 3.- Área de Comedor\n\n4.- Oficinas Cerradas 6\n5.- Puestos de trabajo abiertos 7\n6.- Sala Curso cerrada (capacidad para 60 personas)\n7.- 2 baños (damas y caballeros\n8.- Amplio",
+      "moneda": "USD"
+    },
+    {
       "titulo": "Apartamento 3 hab en Caracas — $1.500/mes | ZonaVen",
       "enlace": "https://zonaven.com/alquiler/apartamento-en-alquiler-en-campo-alegre-mls-26-13168-indi-v-distrito-capital-120146",
       "precio_texto": "$1500",
@@ -18682,21 +19027,6 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Local 350m² en Caracas — $1.000/mes | ZonaVen",
-      "enlace": "https://zonaven.com/alquiler/alquiler-local-en-los-palos-grandes-distrito-capital-f58c55",
-      "precio_texto": "$1000",
-      "precio_usd": 1000,
-      "habitaciones": null,
-      "banos": 3,
-      "metros_cuadrados": 350,
-      "tipo": "Local comercial",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Distrito Capital",
-      "portal": "zonaven",
-      "descripcion": "Local comercial en alquiler en Catia, Caracas - Libertador, Distrito Capital. 350 m², 3 baños, 4 oficinas, montacargas, luz 220 y tanque de agua subterráneo. Ideal para oficina o depósito. Ubicado a media cuadra de Los Flores de Catia. Alquiler: USD 1,000.",
-      "moneda": "USD"
-    },
-    {
       "titulo": "Casa 4 hab en Los Salias — $550/mes | ZonaVen",
       "enlace": "https://zonaven.com/alquiler/casa-en-alquiler-urbanizacion-los-castores-san-antonio-de-los-altos-rz-miranda-915a98",
       "precio_texto": "$550",
@@ -18709,21 +19039,6 @@
       "ubicacion": "San Antonio De Los Altos, Miranda",
       "portal": "zonaven",
       "descripcion": "Alquiler de cómodo dúplex en la urbanización La Arboleda, San Antonio, Miranda. Distribuido en 4 habitaciones, 3 baños y 140 m². Planta alta con sala-comedor, cocina, lavadero, 1 habitación y baño. Planta baja con 3 habitaciones, 2 baños y estudio con salida al jardín y área de parrillera. 1 puesto de estacionamiento, entrada por dos calles. Agua permanente y vigilancia 24 horas. Se alquila sin muebles. Precio: 550 dólares mensuales. Negociación: 3 meses de depósito, 2 por adelantado y 1 mes de ",
-      "moneda": "USD"
-    },
-    {
-      "titulo": "Casa 3 hab en Los Teques — $60.000 | ZonaVen",
-      "enlace": "https://zonaven.com/venta/casa-en-venta-guatire-valle-arriba-3-habitaciones-3-banos-miranda-0e7880",
-      "precio_texto": "$60000",
-      "precio_usd": 60000,
-      "habitaciones": 3,
-      "banos": 4,
-      "metros_cuadrados": 360,
-      "tipo": "Casa",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Guatire, Miranda",
-      "portal": "zonaven",
-      "descripcion": "Casa en construcción en Los Guayabitos, Caracas - El Hatillo, Distrito Capital. Terreno de 420 m², 3 habitaciones, 4 baños, 360 m² construidos. 4 niveles con jardín en inclinación, bases sólidas, conexiones de agua, electricidad y gas. Calle cerrada con doble garita. Oportunidad de inversión. Precio: 60.000 USD.",
       "moneda": "USD"
     },
     {
@@ -18862,18 +19177,18 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Local 1176m² en Caracas — $4.500/mes | ZonaVen",
+      "titulo": "Local 600m² en Caracas — $4.500/mes | ZonaVen — No Disponible",
       "enlace": "https://zonaven.com/alquiler/se-alquila-excelente-local-comercial-bello-monte-mls-26-1688-distrito-capital-8fc938",
       "precio_texto": "$4500",
       "precio_usd": 4500,
       "habitaciones": null,
-      "banos": 3,
-      "metros_cuadrados": 1176,
+      "banos": 6,
+      "metros_cuadrados": 600,
       "tipo": "Local comercial",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Distrito Capital",
       "portal": "zonaven",
-      "descripcion": "Alquila local comercial de 1.176 m² en Avenida Sucre, Catia, Caracas - Libertador. Dos niveles con oficina privada, 3 baños, servicios al día y seguridad. Ideal para negocio con alto flujo de clientes. Precio: 4.500 USD. Entrega despejada.",
+      "descripcion": "Mls 26-1688\n\nLocal comercial en Alquiler, en el Corazón de Bello Monte, ideal para desarrollar un supermercado, clínica, restaurant o cualquier otro ramo comercial, Cuenta 600 mts2, además de zona carga y descarga, 10 puestos de estacionamiento. La proxima sede de su negocio esta aqui.",
       "moneda": "USD"
     },
     {
@@ -18952,18 +19267,18 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Oficina 60000m² en Caracas — $500/mes | ZonaVen",
+      "titulo": "Oficina 103m² en Caracas — $450/mes | ZonaVen — No Disponible",
       "enlace": "https://zonaven.com/alquiler/oficina-en-alquiler-en-la-candelaria-codigo-26-12774-distrito-capital-460eee",
-      "precio_texto": "$500",
-      "precio_usd": 500,
+      "precio_texto": "$450",
+      "precio_usd": 450,
       "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": 60000,
+      "banos": 2,
+      "metros_cuadrados": 103,
       "tipo": "Oficina",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Distrito Capital",
       "portal": "zonaven",
-      "descripcion": "Oficina en alquiler en Sabana Grande, Caracas, Distrito Capital. Ideal para spa, peluquería, consultorio o depósito. Cuenta con 60.000 m², baño, cocina y aire acondicionado. Perfecto para uso profesional. Alquiler a $500 mensuales. Ubicado en zona estratégica del noreste de Caracas.",
+      "descripcion": "Se alquila cómoda y amplia oficina en la Candelaria, de rápido y fácil acceso, frente a la Plaza La Candelaria, de 3 oficinas internas o cubículos privados, recepción, 2 baños para ambos sexos y amplia cocina, el edificio cuenta con ascensor recientemente remodelado.\n\nContáctame y agenda tu visita ahora!",
       "moneda": "USD"
     },
     {
@@ -19387,18 +19702,18 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Local 151m² en Caracas — $3.500/mes | ZonaVen — No Disponible",
+      "titulo": "Local 325m² en Caracas — $3.500/mes | ZonaVen",
       "enlace": "https://zonaven.com/alquiler/espectacular-local-a-pie-de-calle-en-plena-av-francisco-de-miranda-urb-chacao-c51994",
       "precio_texto": "$3500",
       "precio_usd": 3500,
       "habitaciones": null,
-      "banos": 1,
-      "metros_cuadrados": 151,
+      "banos": 2,
+      "metros_cuadrados": 325.2,
       "tipo": "Local comercial",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Chacao, Miranda",
       "portal": "zonaven",
-      "descripcion": "Alquiler de excelente y amplio Local comercial a pie de calle en Av. Francisco de Miranda Consta de un ambiente y del local propiamente dicho de 94. 80 mts, un espacio de mezzanina de 56.29 mts, escalera y un baño Listo para ser adaptado para cualquier rubro comercial.",
+      "descripcion": "Alquila oficina-depósito de 325,2 m² en Boleíta Norte, Caracas. Ideal para almacenamiento y oficinas. Cuenta con 3 oficinas cerradas, 2 baños, kitchenette y amplia área para almacenamiento. Incluye monta-carga, área de carga y descarga, estacionamiento y ascensor. Excelente ubicación en zona industrial, cerca del Boleíta Center. Precio: USD 3.500.",
       "moneda": "USD"
     },
     {
@@ -19462,33 +19777,18 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Casa 7 hab en Caracas — $220.000 | ZonaVen — No Disponible",
-      "enlace": "https://zonaven.com/venta/casa-en-venta-en-colinas-de-bello-monte-baruta-oportunidad-distrito-capital-f24bb9",
-      "precio_texto": "$220000",
-      "precio_usd": 220000,
-      "habitaciones": 7,
-      "banos": 4,
-      "metros_cuadrados": 521,
-      "tipo": "Casa",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Baruta, Distrito Capital",
-      "portal": "zonaven",
-      "descripcion": "Casa en venta en Colinas de Bello Monte, Baruta.\nImagina despertar cada día en un oasis de tranquilidad y elegancia en la prestigiosa urbanización de Colinas de Bello Monte, Baruta. Esta hermosa casa te ofrece el espacio privado y la comodidad que tú y tu familia siempre han soñado.\nLujo y Amplitud en Cada Rincón\nCon 521 m de terreno y 425 m de construcción distribuidos en 2 niveles, esta propiedad es un verdadero santuario. Disfruta de:\n7 Habitaciones espaciosas, perfectas para el descanso y la",
-      "moneda": "USD"
-    },
-    {
-      "titulo": "Oficina 150m² en Caracas — $550/mes | ZonaVen — No Disponible",
+      "titulo": "Oficina 78000m² en Caracas — $550/mes | ZonaVen",
       "enlace": "https://zonaven.com/alquiler/oficina-ideal-para-tu-emprendimiento-mls-26-12926-mr-distrito-capital-4bb926",
       "precio_texto": "$550",
       "precio_usd": 550,
       "habitaciones": null,
-      "banos": 2,
-      "metros_cuadrados": 150,
+      "banos": 1,
+      "metros_cuadrados": 78000,
       "tipo": "Oficina",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Distrito Capital",
       "portal": "zonaven",
-      "descripcion": "Oficina Ideal Para Tu Emprendimiento Mls #26-12926 Mr. Propiedad en alquiler en Distrito Capital, Distrito Capital.",
+      "descripcion": "Oficina en alquiler en La Trinidad, Caracas - Baruta, Distrito Capital. Espacio de 78.000 m² distribuidos en 2 niveles, ideal para oficina administrativa o depósito. Incluye 1 baño privado, 1 puesto de estacionamiento y acceso seguro por Santamaría. Ubicado en zona industrial tranquila y segura, con fácil acceso. Precio: $550 mensuales.",
       "moneda": "USD"
     },
     {
@@ -19507,33 +19807,18 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Casa 4 hab en Caracas — $900.000 | ZonaVen — No Disponible",
-      "enlace": "https://zonaven.com/venta/26-4328-hermosa-casa-en-prados-del-este-distrito-capital-aca361",
-      "precio_texto": "$900000",
-      "precio_usd": 900000,
-      "habitaciones": 3,
-      "banos": 7,
-      "metros_cuadrados": 664,
-      "tipo": "Casa",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Prados Del Este, Distrito Capital",
-      "portal": "zonaven",
-      "descripcion": "#26-4328 Hermosa casa en obra limpia, moderna con espacios abiertos, sala y cocina concepto abierto, entrada de luz natural en todos sus espacios, amplias areas sociales techada y destechada con parrillera y piscina. La habitación principal es amplia con bano y vestier, 03 habitaciones cada una con su bano, cuarto de oficina, family room, Area de servicio con su bano. Tanqque de 10.000 litros.",
-      "moneda": "USD"
-    },
-    {
-      "titulo": "Oficina 650m² en Caracas — $11.700/mes | ZonaVen — No Disponible",
+      "titulo": "Oficina 136m² en Caracas — $6.500/mes | ZonaVen",
       "enlace": "https://zonaven.com/alquiler/av-fco-miranda-torre-hewlett-packard-oficina-650m2-alquiler-distrito-capital-c6c379",
-      "precio_texto": "$11700",
-      "precio_usd": 11700,
+      "precio_texto": "$6500",
+      "precio_usd": 6500,
       "habitaciones": null,
-      "banos": 6,
-      "metros_cuadrados": 650,
+      "banos": null,
+      "metros_cuadrados": 136.45,
       "tipo": "Oficina",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Distrito Capital",
       "portal": "zonaven",
-      "descripcion": "Avenida Francisco de Miranda\nTorre Hewlett-Packard\nOficina en alquiler\nArea 650m2\nPrecio $18 por m2Condominio no incluido\nUbicada en esta centrica y reconocida torre corporativa. Se destaca por su seguridad al albergar la sede de Organismos Internacionales con representacion diplomatica en Venezuela\nDispone de\n-2 baterias de bano para 3 usuarios c/u\n-Amplios espacios para trabajo Open Space\n-Sala de reuniones\n-Cuarto de servidores\n-Cuarto de UMAS",
+      "descripcion": "Oficina comercial de 136 m² ubicada en una emblemática torre financiera de Las Mercedes, una de las zonas comerciales y corporativas más prestigiosas del este de Caracas. La propiedad ofrece espacio listo para iniciar operación inmediata sin necesidad de adecuaciones mayores — propuesta especialmente atractiva para profesionales y emprendedores con visión de instalación rápida.\n\nLa unidad es ideal para uso como spa, consultorio médico, oficina de servicios profesionales (legales, contables, cons",
       "moneda": "USD"
     },
     {
@@ -19627,18 +19912,18 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Casa 4 hab en Caracas — $1.200.000 | ZonaVen — No Disponible",
+      "titulo": "Casa 4 hab en Caracas — $1.220.000 | ZonaVen",
       "enlace": "https://zonaven.com/venta/hermosa-casa-en-venta-altamira-vgi-distrito-capital-069d5f",
-      "precio_texto": "$1200000",
-      "precio_usd": 1200000,
+      "precio_texto": "$1220000",
+      "precio_usd": 1220000,
       "habitaciones": 4,
       "banos": 7,
-      "metros_cuadrados": 500,
+      "metros_cuadrados": 753,
       "tipo": "Casa",
       "operacion_detectada": "Venta",
       "ubicacion": "Altamira, Distrito Capital",
       "portal": "zonaven",
-      "descripcion": "COD MLS #26-632 GABRIELA IRAÑETA 04143194466\n\nTe presento esta encantadora casa, con una excelente ubicacion, zona tranquila y conservadora, perfecta para quienes buscan tranquilidad y comodidad. Situada cerca del majestuoso Avila. Disfruta de noches de cine en tu propia sala, mantente activo en tu gimnasio y relájate en el sauna después de un largo día. Además el salón de fiesta es perfecto para disfrutar momentos especiales",
+      "descripcion": "Casa en venta en Santa Paula, Caracas - Baruta, Distrito Capital. Ideal para quienes buscan lujo y comodidad. 753 m² con 4 habitaciones, 7 baños, estudio, family room y área de servicio. Amplia zona social con piscina y parrillera. Perfecta para disfrutar y crear recuerdos. Precio: 1,220,000 USD.",
       "moneda": "USD"
     },
     {
@@ -19684,21 +19969,6 @@
       "ubicacion": "Las Mercedes, Distrito Capital",
       "portal": "zonaven",
       "descripcion": "Alquila este acogedor apartamento de 200 m² en La Campiña, Caracas - Libertador. Cuenta con 3 habitaciones, 4 baños y 4 puestos de estacionamiento. Ubicado en zona estratégica, cerca de servicios y transporte. Ideal para quienes buscan comodidad y ubicación privilegiada. Precio: 3,800 USD mensuales.",
-      "moneda": "USD"
-    },
-    {
-      "titulo": "Casa 9 hab en Caracas — $130.000 | ZonaVen — No Disponible",
-      "enlace": "https://zonaven.com/venta/casa-en-venta-san-bernardino-caracas-a-p-distrito-capital-f8476b",
-      "precio_texto": "$130000",
-      "precio_usd": 130000,
-      "habitaciones": 3,
-      "banos": 2,
-      "metros_cuadrados": 38226,
-      "tipo": "Casa",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Distrito Capital",
-      "portal": "zonaven",
-      "descripcion": "Casa en Venta – San Bernardino, Caracas\nA solo 3 cuadras de Crema Paraíso\n\nÁrea total: 382,26 m²\nDistribución en 2 niveles + anexos independientes\n\n* Nivel Superior:\n- 3 habitaciones\n- 2 baños\n- Espacio para oficina\n- Sala amplia\n- Cocina\n- Balcón con vista\n\n* Nivel Inferior – 3 Anexos Independientes:\n\n* Primer Anexo:\n- 2 habitaciones\n- 1 baño\n- Sala\n- Patio trasero\n\n* Segundo Anexo:\n- 2 habitaciones\n- 1 baño\n- Sala\n- Cocina\n- Patio trasero\n\n* Tercer Anexo:\n- 2 habitaciones\n- 1 baño\n- Sala\n\nEsta",
       "moneda": "USD"
     },
     {
@@ -19807,18 +20077,18 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Casa 4 hab en Caracas — $220.000 | ZonaVen — No Disponible",
+      "titulo": "Casa 4 hab en Caracas — $220.000 | ZonaVen",
       "enlace": "https://zonaven.com/venta/se-vende-casa-en-alto-prado-mls-26-6947-distrito-capital-6f295c",
       "precio_texto": "$220000",
       "precio_usd": 220000,
       "habitaciones": 4,
-      "banos": 2,
-      "metros_cuadrados": 260,
+      "banos": 3,
+      "metros_cuadrados": 252,
       "tipo": "Casa",
       "operacion_detectada": "Venta",
       "ubicacion": "Distrito Capital",
       "portal": "zonaven",
-      "descripcion": "MLS #26-6947\nCasa ubicada en calle cerrada con vigilancia 24 horas. 260 m² de construcción, con 4 habitaciones y 2 baños en la planta alta. En la planta baja: sala, comedor, cocina con excelente iluminación y ventilación cruzada, además de jardín delantero y patio trasero. Cuenta con estacionamiento para 2 vehículos, habitación de servicio con su baño.\n\nTanque de 4.000 L e internet activo.\nZona tranquila, sin problemas de agua.\nUna casa cómoda, funcional y lista para disfrutar.",
+      "descripcion": "Casa en venta en El Hatillo, Caracas, distrito capital. Ideal para quienes buscan un hogar cómodo y moderno. Cuenta con 4 habitaciones, 3 baños, 252 m² de área construida. Dispone de 2 puestos de estacionamiento, maletero aéreo y tanque subterráneo de 18,000 litros para suministro de agua. Terraza con piso de terracota y piscina. Ubicada en zona segura y residencial. Perfecta para familias o inversionistas.",
       "moneda": "USD"
     },
     {
@@ -19837,21 +20107,6 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Oficina 550m² en Caracas — $3.300/mes | ZonaVen — No Disponible",
-      "enlace": "https://zonaven.com/alquiler/oficina-alquiler-torre-indulac-macaracuay-ar-mls-26-12411-distrito-capital-2a2d92",
-      "precio_texto": "$3300",
-      "precio_usd": 3300,
-      "habitaciones": null,
-      "banos": 6,
-      "metros_cuadrados": 550,
-      "tipo": "Oficina",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Distrito Capital",
-      "portal": "zonaven",
-      "descripcion": "MLS # 26-12411\n\nEn Torre Comercial reconocida, Se alquila espacios para oficina. El edificio tiene vigilancia 24h, Lobby con Recepcion para control de visitas. Estacionamiento Privado y publico. A/A central. Espacio de comedor para trabajadores de la Torre, con bonita vista. Oficinas Tabicadas que hacen algunos cubiculos privados. Areas abiertas de trabajo, sala de reuniones. Recepcion privada. Banos. Kichinette\n\nAproximadamente 9 puestos cerrados y 16 abiertos\n\n\nPara ampliar información acerca ",
-      "moneda": "USD"
-    },
-    {
       "titulo": "Apartamento 2 hab en Caracas — $110.000 | ZonaVen",
       "enlace": "https://zonaven.com/venta/26-16332-apartamento-en-venta-en-el-bosque-distrito-capital-192824",
       "precio_texto": "$110000",
@@ -19867,18 +20122,18 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Apartamento 2 hab en Higuerote — $24.000 | ZonaVen — No Disponible",
+      "titulo": "Estudio en Los Salias — $25.000 | ZonaVen",
       "enlace": "https://zonaven.com/venta/venta-de-apartamento-en-higuerote-miranda-venezuela-bv",
-      "precio_texto": "$24000",
-      "precio_usd": 24000,
-      "habitaciones": 3,
+      "precio_texto": "$25000",
+      "precio_usd": 25000,
+      "habitaciones": null,
       "banos": 2,
-      "metros_cuadrados": 3,
+      "metros_cuadrados": 48,
       "tipo": "Apartamento",
       "operacion_detectada": "Venta",
       "ubicacion": "Miranda",
       "portal": "zonaven",
-      "descripcion": "SE VENDE\nPenthouse frente al mar 3h/2b/1PE en Higuerote, Edo. Miranda\n\nPodemos a su disposición amplio apartamento de 83m2 en el último piso del Conjunto Residencial Bermar, en Higuerote, ubicado estrategicamente frente a Playa Los Cocos en la Ave. Rotivar. Consta de 3 habitaciones, 2 baños, 1 puesto de estacionamiento, y piscina entre las areas comunes del edificio. Techo de madera, habitaciones iluminadas, ventiladas con vista al mar.\n\nExcelente oportunidad de inversión frente al mar para vivi",
+      "descripcion": "Apartamento de 48 m² en San Antonio, Miranda, ideal para inversión o vivienda. Cuenta con 2 baños, aire acondicionado, planta eléctrica y distribución funcional. Perfecto para quien busca comodidad y ubicación estratégica. Precio: 25,000 USD.",
       "moneda": "USD"
     },
     {
@@ -20047,18 +20302,18 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Casa 4 hab en Caracas — $1.450.000 | ZonaVen — No Disponible",
+      "titulo": "Casa 4 hab en Caracas — $1.220.000 | ZonaVen",
       "enlace": "https://zonaven.com/venta/gran-oportunidad-de-inversion-en-colinas-de-bello-monte-mm-distrito-capital-1dc8b5",
-      "precio_texto": "$1450000",
-      "precio_usd": 1450000,
+      "precio_texto": "$1220000",
+      "precio_usd": 1220000,
       "habitaciones": 4,
       "banos": 7,
-      "metros_cuadrados": 48392,
+      "metros_cuadrados": 753,
       "tipo": "Casa",
       "operacion_detectada": "Venta",
       "ubicacion": "Colinas De Be, Distrito Capital",
       "portal": "zonaven",
-      "descripcion": "#26-11766/68\nEsta Casa, completamente remodelada y ubicada en Colinas de Bello Monte, es ideal para una amplia variedad de proyectos como oficinas, consultorios médicos, spa, centros de belleza especializados, emprendimientos de catering, escuelas de gastronomía y mucho más. Con una arquitectura versátil, acabados modernos y espacios bien distribuidos, esta propiedad ofrece la oportunidad perfecta para desarrollar cualquier iniciativa en un entorno cómodo y funcional.\n\n****Especificaciones gener",
+      "descripcion": "Casa en venta en Santa Paula, Caracas - Baruta, Distrito Capital. Ideal para quienes buscan lujo y comodidad. 753 m² con 4 habitaciones, 7 baños, estudio, family room y área de servicio. Amplia zona social con piscina y parrillera. Perfecta para disfrutar y crear recuerdos. Precio: 1,220,000 USD.",
       "moneda": "USD"
     },
     {
@@ -20092,21 +20347,6 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Casa 6 hab en Caracas — $340.000 | ZonaVen — No Disponible",
-      "enlace": "https://zonaven.com/venta/jel-vendo-casa-en-prados-del-este-fg-26-14733-distrito-capital-a73dda",
-      "precio_texto": "$340000",
-      "precio_usd": 340000,
-      "habitaciones": 7,
-      "banos": 6,
-      "metros_cuadrados": 694,
-      "tipo": "Casa",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Prados Del Este, Distrito Capital",
-      "portal": "zonaven",
-      "descripcion": "El Lienzo Perfecto para tu Próximo Nivel. Ubicada en una de las zonas más privilegiadas de Caracas, esta imponente propiedad de 500 m² de construcción redefine el concepto de amplitud. Con una estructura de múltiples niveles que juega con la luz y la altura, la casa ofrece 7 habitaciones señoriales y 6 baños, diseñados para familias que valoran la independencia y el confort.",
-      "moneda": "USD"
-    },
-    {
       "titulo": "Local 9000m² en Los Teques — $49.000 | ZonaVen",
       "enlace": "https://zonaven.com/venta/local-en-venta-en-el-c-c-buenaventura-guatire-de-oportunidad-mso-miranda-c5244b",
       "precio_texto": "$49000",
@@ -20122,18 +20362,18 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Casa 4 hab en Caracas — $1.000.000 | ZonaVen — No Disponible",
+      "titulo": "Casa 4 hab en Caracas — $950.000 | ZonaVen",
       "enlace": "https://zonaven.com/venta/ls-vende-casa-prados-del-este-distrito-capital-7c3dac",
-      "precio_texto": "$1000000",
-      "precio_usd": 1000000,
+      "precio_texto": "$950000",
+      "precio_usd": 950000,
       "habitaciones": 4,
-      "banos": 8,
-      "metros_cuadrados": 758,
+      "banos": 5,
+      "metros_cuadrados": 2029,
       "tipo": "Casa",
       "operacion_detectada": "Venta",
       "ubicacion": "Prados Del Este, Distrito Capital",
       "portal": "zonaven",
-      "descripcion": "En venta hermosa casa, ubicada en una de las mejores y mas buscadas urbanizaciones de Caracas. 26-14956 Cuenta con un hermoso jardin, 4 comodas habitaciones cada una con su baño. La principal con vestier, terraza y jacuzzi. Posee magnifica area de parrillera, anexo independiente, planta electrica y gimnasio. Cocina totalmente remodelada y equipada. Ubicada en calle privada. Pida su cita.",
+      "descripcion": "Hermosa casa de un solo nivel en Cerro Verde, Caracas - Baruta, con 2.029 m² de terreno plano y vista panorámica. Ideal para ampliaciones o modernización, cuenta con 4 habitaciones, 5 baños, jardines integrados y un anexo independiente con 2 habitaciones, 2 baños y cocina adicional. Excelente iluminación natural y ventilación. Precio: USD 950.000.",
       "moneda": "USD"
     },
     {
@@ -20152,18 +20392,18 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Casa 4 hab en Caracas — $900.000 | ZonaVen — No Disponible",
+      "titulo": "Casa 4 hab en Caracas — $900.000 | ZonaVen",
       "enlace": "https://zonaven.com/venta/casa-en-venta-en-prados-del-este-caracas-26-4328-yf-distrito-capital-7786de",
       "precio_texto": "$900000",
       "precio_usd": 900000,
-      "habitaciones": 3,
-      "banos": 6,
-      "metros_cuadrados": 663,
+      "habitaciones": 4,
+      "banos": 4,
+      "metros_cuadrados": 1430,
       "tipo": "Casa",
       "operacion_detectada": "Venta",
       "ubicacion": "Prados Del Este, Distrito Capital",
       "portal": "zonaven",
-      "descripcion": "Hermosa casa en obra limpia, moderna con espacios abiertos, sala y cocina concepto abierto, entrada de luz natural en todos sus espacios, amplias areas sociales techada y destechada con parrillera y piscina. La habitación principal es amplia con baño y vestier, 03 habitaciones cada una con su baño, oficina, family room, Area de servicio con su baño. Tanque de 10.000 litros.",
+      "descripcion": "Hermosa casa en La Trinidad, Caracas - Baruta, con 4 habitaciones, 4 baños y 1.430 m² de área construida. Ideal para quienes buscan tranquilidad en una calle ciega, con jardín, gazebo, salón de fiestas, área de grill y vista a la montaña. Incluye jacuzzi en suite principal, vestier, salida al jardín y tecnología Starlink. Seguridad reforzada con cerco eléctrico y puertas. Perfecta para disfrutar del hogar en un entorno privilegiado.",
       "moneda": "USD"
     },
     {
@@ -21444,8 +21684,8 @@
   ],
   "diagnostico": {
     "urls_encontradas": 1668,
-    "exitos": 1429,
-    "fallos": 239,
-    "con_precio": 1429
+    "exitos": 1445,
+    "fallos": 223,
+    "con_precio": 1445
   }
 }
