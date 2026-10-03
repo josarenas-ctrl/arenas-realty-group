@@ -1,0 +1,87 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#0f3d5e"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon-192.png"><title>Captación · Arenas Realty Group</title>
+<style>
+:root{--bg:#f6f4ef;--cd:#fff;--tx:#1d2330;--mu:#6b7280;--bd:#e2ded4;--ac:#0f3d5e;--ok:#1f7a4d;--wa:#b7791f;--er:#b42318}
+@media(prefers-color-scheme:dark){:root{--bg:#10151c;--cd:#19212b;--tx:#e8ebf0;--mu:#97a1b0;--bd:#2a3441;--ac:#6fb1e0;--ok:#4cc38a;--wa:#e5b45c;--er:#f07b6f}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.4 system-ui,sans-serif;padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}
+header{position:sticky;top:0;background:var(--ac);color:#fff;padding:10px 14px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-size:14px;z-index:5}header b{font-size:16px;flex:1}
+.sim{background:var(--wa);color:#000;font-size:12px;padding:4px 14px}main{max-width:760px;margin:0 auto;padding:14px 14px 90px}
+.card{background:var(--cd);border:1px solid var(--bd);border-radius:12px;padding:14px;margin-bottom:12px}h2{font-size:14px;margin:0 0 10px;color:var(--mu);text-transform:uppercase}
+.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}.w{grid-column:1/-1}label{display:block;font-size:12px;color:var(--mu)}
+input,select,textarea{width:100%;margin-top:3px;padding:11px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--tx);font:inherit}
+button,.btn{display:inline-block;font:inherit;padding:11px 16px;border-radius:8px;border:1px solid var(--bd);background:var(--cd);color:var(--tx);cursor:pointer;margin:4px 4px 0 0}button.p{background:var(--ac);color:#fff;border-color:var(--ac)}button:disabled{opacity:.5}
+.mu{color:var(--mu);font-size:13px}.r{display:flex;gap:6px;align-items:center;flex-wrap:wrap;border-top:1px solid var(--bd);padding:8px 0}.r .n{flex:1 1 100%;font-size:13px;word-break:break-all}.r select,.r input{flex:1;min-width:120px;margin:0}
+.tag{font-size:12px;padding:2px 8px;border-radius:99px;border:1px solid var(--bd)}.o{color:var(--ok);border-color:var(--ok)}.w2{color:var(--wa);border-color:var(--wa)}
+.nav{position:fixed;left:0;right:0;bottom:0;background:var(--cd);border-top:1px solid var(--bd);padding:8px 14px calc(8px + env(safe-area-inset-bottom));display:flex;gap:8px;align-items:center;justify-content:space-between}
+.ob{padding:8px 10px;border-left:4px solid var(--wa);margin:6px 0;background:var(--bg);border-radius:6px;font-size:14px}#t{position:fixed;left:14px;right:14px;bottom:70px;background:#000c;color:#fff;padding:10px;border-radius:8px;display:none;z-index:9}
+</style></head><body>
+<header><b>Captación ARG</b><span id="net"></span><label style="color:#fff"><input type="checkbox" id="sim" style="width:auto;margin:0"> Simular sin señal</label></header>
+<div class="sim">MODO SIMULADO: la IA y el servidor son simulados. Usa solo datos de prueba.</div>
+<main id="app"></main><div id="t"></div>
+<script>
+const $=s=>document.querySelector(s),E=s=>(s==null?"":String(s)).replace(/[&<>"']/g,c=>"&#"+c.charCodeAt(0)+";"),sleep=ms=>new Promise(r=>setTimeout(r,ms));
+const slug=s=>(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,""),ext=n=>((n||"").match(/\.[^.]+$/)||[""])[0].toLowerCase(),nn=i=>String(i+1).padStart(2,"0");
+const APL={Casa:["area_terreno","area_construccion","habitaciones","banos","estacionamientos"],Apartamento:["area_construccion","habitaciones","banos","estacionamientos"],Local:["area_construccion","banos","estacionamientos"],Terreno:["area_terreno"]};
+const LB={area_terreno:"Área de terreno (m²)",area_construccion:"Área de construcción (m²)",habitaciones:"Habitaciones",banos:"Baños",estacionamientos:"Estacionamientos"};
+const DT=["Cédula / RIF del cliente","Documento de propiedad (registro)","Solvencia municipal","Cédula catastral","Autorización de venta / contrato de captación","Solvencia de condominio","Poder / autorización notarial","Otros documentos"],REQ=["titulo","operacion","tipo","precio","ubicacion","descripcion","asesor","whatsapp_asesor"];
+/* ---- almacenamiento local (IndexedDB) ---- */
+const idb=new Promise((ok,ko)=>{const r=indexedDB.open("arg",1);r.onupgradeneeded=()=>{const d=r.result;d.createObjectStore("cap",{keyPath:"batch"});d.createObjectStore("files");d.createObjectStore("srv",{keyPath:"batch"})};r.onsuccess=()=>ok(r.result);r.onerror=()=>ko(r.error)});
+const tx=async(s,m,f)=>{const d=await idb;return new Promise((ok,ko)=>{const t=d.transaction(s,m),o=f(t.objectStore(s));t.oncomplete=()=>ok(o.result);t.onerror=()=>ko(t.error)})};
+const get=(s,k)=>tx(s,"readonly",o=>o.get(k)),put=(s,v,k)=>tx(s,"readwrite",o=>o.put(v,k)),all=s=>tx(s,"readonly",o=>o.getAll()),del=(s,k)=>tx(s,"readwrite",o=>o.delete(k)),keys=s=>tx(s,"readonly",o=>o.getAllKeys());
+/* ---- estado ---- */
+let P=null,C=null,U={v:"list",step:1},tm;try{P=JSON.parse(localStorage.getItem("arg_p"))}catch(e){}
+const online=()=>!$("#sim").checked&&navigator.onLine,msg=t=>{const e=$("#t");e.textContent=t;e.style.display="block";clearTimeout(tm);tm=setTimeout(()=>e.style.display="none",3500)};
+const netUI=()=>$("#net").textContent=online()?"● Con señal":"○ Sin señal",save=()=>put("cap",C);
+const codeOf=n=>{const w=slug(n).split("-").filter(Boolean);return((w[0]||"x")[0]+(w[w.length-1]||"x")[0]).toUpperCase()};
+async function newBatch(){const A="ABCDEFGHJKMNPQRSTUVWXYZ23456789",d=new Date(),p=n=>String(n).padStart(2,"0");for(;;){let r="";for(let i=0;i<4;i++)r+=A[Math.random()*A.length|0];const b=`ARG-${P.code}-${String(d.getFullYear()).slice(2)}${p(d.getMonth()+1)}${p(d.getDate())}-${r}`;if(!await get("cap",b))return b}}
+const pub=c=>{const f=c.f,o={};["titulo","operacion","tipo","precio","ubicacion","mapa_url",...(APL[f.tipo]||[]),"descripcion","caracteristicas","video_url","asesor","whatsapp_asesor"].forEach(k=>{if(f[k])o[k]=f[k]});const s=slug(f.titulo);o.fotos=c.fotos.map((p,i)=>`/images/propiedades/${s}/${i+1}${ext(p.name)}`);o.publicada=false;return{slug:s,json:o}};
+const dl=(n,o)=>{const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([JSON.stringify(o,null,2)],{type:"application/json"}));a.download=n;a.click()};
+/* ---- IA y servidor SIMULADOS (aquí se conectarán los reales en la fase 2) ---- */
+async function ai(c){await sleep(1200);const rx=[[/condom/i,5],[/ced|\bci\b|rif/i,0],[/regist|propied/i,1],[/solvenc|municip/i,2],[/catastr/i,3],[/contrato|autoriz|captaci/i,4],[/poder|notar|sucesi|herede/i,6]];
+c.docs.forEach(d=>{if(!d.man){const m=rx.find(r=>r[0].test(d.name));d.tipo=DT[m?m[1]:7]}});c.docs.sort((a,b)=>DT.indexOf(a.tipo)-DT.indexOf(b.tipo));c.docs.forEach((d,i)=>d.nuevo=`${c.batch}_D${nn(i)}_${slug(d.tipo)}${ext(d.name)}`);
+const alt=c.docs.some(d=>/poder|sucesi|herede|conyuge|cónyuge/i.test(d.name));c.tit={titulares:[{nombre:alt?"(Otro titular, simulado)":c.f.i_prop,cedula_rif:alt?"":c.f.i_ci}],relacion:alt?"Apoderado":"Propietario",coincide:!alt,requisitos:alt?["Falta poder notarial o autorización del titular"]:[]};c.f.i_titular=c.tit.titulares[0].nombre||"";
+c.obs=[...REQ.filter(k=>!c.f[k]).map(k=>"Falta el campo: "+k),...DT.slice(0,5).filter(t=>!c.docs.some(d=>d.tipo==t)).map(t=>"Falta documento: "+t),...(c.fotos.length?[]:["Falta al menos 1 foto"]),...(c.docs.some(d=>d.tipo==DT[7])?["Hay documentos sin clasificar"]:[]),...(alt?["El titular no coincide con el cliente"]:[])];c.ai={sim:true,ts:Date.now()}}
+async function srv(c){await sleep(1500);await put("srv",{batch:c.batch,recibido:Date.now(),f:c.f,tit:c.tit,obs:c.obs,docs:c.docs.map(d=>({archivo:d.nuevo,tipo:d.tipo,a_nombre_de:d.et,bytes:d.size})),fotos:c.fotos.map((p,i)=>({archivo:`${c.batch}_F${nn(i)}${ext(p.name)}`,bytes:p.size})),videos:c.videos.length,web:pub(c)});
+for(const k of await keys("files"))if(String(k).startsWith(c.batch+":"))await del("files",k)}
+async function run(b){if(!online()){msg("Sin señal: queda en espera");return}const c=await get("cap",b);if(!c||["Borrador","Sincronizada"].includes(c.estado))return;try{
+if(!c.ai){c.estado="Analizando";await put("cap",c);await render();await ai(c);c.estado="Analizada";await put("cap",c);await render()}
+if(!online())return;c.estado="Sincronizando";await put("cap",c);await render();await srv(c);c.estado="Sincronizada";await put("cap",c);msg("Sincronizada: "+b)}catch(e){c.estado=c.ai?"Analizada":"Pendiente";await put("cap",c);msg("Se interrumpió, reintenta")}await render()}
+const runAll=async()=>{netUI();if(!online())return;for(const c of await all("cap"))if(["Pendiente","Analizada"].includes(c.estado))await run(c.batch)};
+/* ---- vistas ---- */
+const card=(t,h)=>`<section class="card"><h2>${t}</h2>${h}</section>`,G=x=>`<div class="g">${x}</div>`;
+const inp=(k,l,o={})=>`<label class="${o.w?"w":""}">${l}${o.sel?`<select data-k="${k}"><option value="">—</option>${o.sel.map(x=>`<option${C.f[k]==x?" selected":""}>${x}</option>`).join("")}</select>`:o.ta?`<textarea rows="${o.ta}" data-k="${k}">${E(C.f[k])}</textarea>`:`<input data-k="${k}" value="${E(C.f[k])}"${o.m?` inputmode="${o.m}"`:""}>`}</label>`;
+const up=(kind,acc,t)=>`<label class="btn">${t}<input type="file" multiple accept="${acc}" data-up="${kind}" hidden></label>`;
+const resH=c=>(c.obs&&c.obs.length?c.obs.map(o=>`<div class="ob">⚠️ ${E(o)}</div>`).join(""):'<div class="ob" style="border-color:var(--ok)">✅ Sin observaciones</div>')+(c.tit?`<div class="ob" style="border-color:var(--ac)"><b>Titularidad (simulada):</b> ${E(c.tit.titulares.map(t=>t.nombre).join(", ")||"No determinado")} · ${E(c.tit.relacion)}${c.tit.requisitos.map(r=>"<br>📄 "+E(r)).join("")}</div>`:"");
+function stepH(n){const f=C.f,o=f.operacion,t=f.tipo;
+if(n==1)return card("1 · Información del cliente (interna)",G(inp("i_prop","Nombre completo")+inp("i_ci","Cédula / RIF")+inp("i_tel","Teléfono",{m:"tel"})+inp("i_mail","Correo")));
+if(n==2)return card("2 · Operación y datos para la web",G(inp("operacion","Operación",{sel:["Venta","Alquiler"]})+inp("tipo","Tipo de propiedad",{sel:Object.keys(APL)}))+(o&&t?'<div class="g" style="margin-top:10px">'+inp("titulo","Título",{w:1})+inp("precio",o=="Alquiler"?"Canon mensual (USD)":"Precio de venta (USD)",{m:"numeric"})+inp("ubicacion","Ubicación (urbanización, ciudad)")+inp("mapa_url","Link de Google Maps",{w:1})+APL[t].map(k=>inp(k,LB[k],{m:"numeric"})).join("")+inp("descripcion","Descripción",{w:1,ta:4})+inp("caracteristicas","Características (una por línea)",{w:1,ta:3})+inp("video_url","Link de video (YouTube, Instagram, TikTok)",{w:1})+inp("asesor","Asesor")+inp("whatsapp_asesor","WhatsApp del asesor")+"</div>":'<p class="mu">Elige operación y tipo para ver los campos que aplican.</p>'));
+if(n==3)return card("3 · Información interna de la propiedad",G(inp("i_dir","Dirección exacta",{w:1})+inp("i_estado","Estado")+inp("i_mun","Municipio")+inp("i_urb","Urbanización / Sector")+inp("i_niv","Niveles / Piso")));
+if(n==4)return card("4 · Documentación",'<p class="mu">Sube todo mezclado: fotos, escaneos o PDF.</p>'+C.docs.map((d,i)=>`<div class="r"><span class="n">${E(d.nuevo||d.name)}</span><select data-d="${i}">${["Sin clasificar",...DT].map(x=>`<option${(d.tipo||"Sin clasificar")==x?" selected":""}>${x}</option>`).join("")}</select><input data-e="${i}" value="${E(d.et)}" placeholder="A nombre de"><button data-x="docs:${i}">Quitar</button></div>`).join("")+up("docs","image/*,application/pdf","Subir documentos"));
+if(n==5)return card("5 · Análisis y reordenamiento",'<p class="mu">Cuando haya señal, la IA clasifica, ordena y renombra los documentos, determina la titularidad y revisa el formulario. No hace falta hacer nada.</p>'+(C.ai?resH(C):'<p class="mu">Aún sin analizar.</p>')+`<button data-a="ai"${online()?"":" disabled"}>Analizar ahora</button>`);
+if(n==6)return card("6 · Fotos",C.fotos.map((p,i)=>`<div class="r"><span class="n">${C.batch}_F${nn(i)}${ext(p.name)}${i?"":" · portada"}</span><button data-x="fotos:${i}">Quitar</button></div>`).join("")+up("fotos","image/*","Agregar fotos"));
+if(n==7)return card("7 · Videos",'<p class="mu">El link para publicar va en el paso 2. Aquí, los archivos.</p>'+C.videos.map((p,i)=>`<div class="r"><span class="n">${C.batch}_V${nn(i)}${ext(p.name)}</span><button data-x="videos:${i}">Quitar</button></div>`).join("")+up("videos","video/*","Agregar videos"));
+const R=[...REQ.map(k=>[k,!!f[k]]),["foto",C.fotos.length>0]],m=R.filter(x=>!x[1]).map(x=>x[0]);
+return card("8 · Revisión final",`<div class="ob" style="border-color:${m.length?"var(--wa)":"var(--ok)"}">${m.length?"Faltan para publicar: "+m.join(", "):"✅ Checklist completo"}</div><p class="mu">Al terminar, la captación queda en cola: con señal se analiza y se sincroniza sola. Aunque falten datos se puede enviar; quedará con observaciones.</p><button class="p" data-a="fin">Terminar y poner en cola</button>`)}
+async function render(){const a=$("#app");netUI();
+if(!P){a.innerHTML=card("Registro del asesor",'<p class="mu">Solo la primera vez.</p><div class="g"><label>Nombre completo<input id="pn"></label><label>WhatsApp<input id="pw" inputmode="tel"></label></div><button class="p" id="pg">Guardar</button>');return}
+if(U.v=="form"){a.innerHTML=`<div class="mu">${C.batch} · ${C.estado}</div><div class="mu">Paso ${U.step} de 8</div><progress value="${U.step}" max="8" style="width:100%"></progress>`+stepH(U.step)+`<div class="nav"><button id="pv"${U.step==1?" disabled":""}>Anterior</button><button id="ls">Mis captaciones</button><button class="p" id="nx"${U.step==8?" disabled":""}>Siguiente</button></div>`;return}
+const rows=(await all("cap")).sort((x,y)=>y.ts-x.ts);a.innerHTML=`<button class="p" id="nw">Nueva captación</button> <span class="mu" id="sto"></span>`+(rows.length?rows.map(c=>`<section class="card"><b>${E(c.f.titulo||"(sin título)")}</b> <span class="tag ${c.estado=="Sincronizada"?"o":"w2"}">${c.estado}</span><div class="mu">${c.batch} · ${E(c.f.operacion||"")} ${E(c.f.tipo||"")}${c.obs&&c.obs.length?" · "+c.obs.length+" observaciones":""}</div>${c.estado=="Sincronizada"?'<div class="mu">Archivos borrados del teléfono tras sincronizar.</div>':""}${["Borrador","Pendiente"].includes(c.estado)?`<button data-o="${c.batch}">Editar</button>`:""}${["Pendiente","Analizada"].includes(c.estado)?`<button class="p" data-s="${c.batch}">Sincronizar</button>`:""}<button data-v="${c.batch}">Exportar</button><button data-q="${c.batch}">Eliminar</button></section>`).join(""):'<p class="mu">Aún no hay captaciones.</p>');
+navigator.storage?.estimate?.().then(e=>{const s=$("#sto");if(s)s.textContent=`Espacio usado: ${(e.usage/1048576).toFixed(0)} MB`})}
+/* ---- eventos ---- */
+document.addEventListener("input",e=>{const t=e.target,k=t.dataset.k;if(k&&C){C.f[k]=t.value;save();if(t.tagName=="SELECT"&&(k=="operacion"||k=="tipo"))render()}
+if(t.dataset.d!=null){const d=C.docs[t.dataset.d];d.tipo=t.value=="Sin clasificar"?"":t.value;d.man=true;save()}if(t.dataset.e!=null){C.docs[t.dataset.e].et=t.value;save()}});
+document.addEventListener("change",async e=>{const t=e.target,kind=t.dataset.up;if(!kind)return;for(const f of t.files){const fid=Date.now().toString(36)+Math.random().toString(36).slice(2,6);await put("files",f,C.batch+":"+fid);C[kind].push({fid,name:f.name,type:f.type,size:f.size,tipo:"",et:""})}await save();render()});
+document.addEventListener("click",async e=>{const t=e.target,d=t.dataset,i=t.id;
+if(i=="pg"){const n=$("#pn").value.trim(),w=$("#pw").value.trim();if(!n||!w)return msg("Completa nombre y WhatsApp");P={nombre:n,wa:w,code:codeOf(n)};localStorage.setItem("arg_p",JSON.stringify(P));navigator.storage?.persist?.();render()}
+if(i=="nw"){C={batch:await newBatch(),f:{asesor:P.nombre,whatsapp_asesor:P.wa},docs:[],fotos:[],videos:[],estado:"Borrador",ts:Date.now(),ai:null,obs:[],tit:null};await save();U={v:"form",step:1};render()}
+if(i=="pv"){U.step--;render()}if(i=="nx"){U.step++;render()}if(i=="ls"){U.v="list";render()}
+if(d.o){C=await get("cap",d.o);U={v:"form",step:1};render()}
+if(d.s)run(d.s);
+if(d.v){const c=await get("cap",d.v),s=await get("srv",d.v);dl(c.batch+"_ficha.json",{batch:c.batch,estado:c.estado,datos:c.f,titularidad:c.tit,observaciones:c.obs,documentos:c.docs.map(x=>({archivo:x.nuevo||x.name,tipo:x.tipo,a_nombre_de:x.et})),servidor_simulado:s||null});dl(pub(c).slug+".json",pub(c).json)}
+if(d.q&&confirm("¿Eliminar esta captación del teléfono?")){for(const k of await keys("files"))if(String(k).startsWith(d.q+":"))await del("files",k);await del("cap",d.q);render()}
+if(d.x){const[kind,n]=d.x.split(":"),it=C[kind].splice(+n,1)[0];await del("files",C.batch+":"+it.fid);await save();render()}
+if(d.a=="ai"){msg("Analizando…");await ai(C);await save();render()}
+if(d.a=="fin"){C.estado="Pendiente";C.ai=null;await save();U.v="list";await render();run(C.batch)}});
+$("#sim").addEventListener("change",runAll);addEventListener("online",runAll);addEventListener("offline",netUI);
+(async()=>{for(const c of await all("cap")){if(c.estado=="Analizando"||c.estado=="Sincronizando"){c.estado=c.ai?"Analizada":"Pendiente";await put("cap",c)}}await render();runAll()})();
+if("serviceWorker"in navigator)navigator.serviceWorker.register("sw.js");
+</script></body></html>
