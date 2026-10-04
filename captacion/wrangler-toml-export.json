@@ -1,0 +1,26 @@
+{
+  "main_module": "worker.js",
+  "bindings": [
+    {
+      "type": "d1_database",
+      "name": "DB",
+      "id": "8878ba28-8ba7-44da-b21b-5ae46ebb199e"
+    },
+    {
+      "type": "kv_namespace",
+      "name": "KV"
+    },
+    {
+      "type": "r2_bucket",
+      "name": "R2",
+      "bucket_name": "captacion-docs"
+    },
+    {
+      "type": "plain_text",
+      "name": "ADMIN_EMAILS",
+      "value": "arenasrealtygroup1@gmail.com,josarenas@gmail.com"
+    }
+  ],
+  "compatibility_date": "2024-12-01",
+  "usage_model": "standard"
+}

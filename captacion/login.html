@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Entrando a Captación...</title>
+    <style>
+        body { background: #0f3d5e; color: white; font-family: sans-serif; text-align: center; padding: 40px 20px; }
+        .spinner { border: 4px solid #fff3; border-top: 4px solid white; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; margin: 20px auto; }
+        @keyframes spin { 100% { transform: rotate(360deg); } }
+    </style>
+</head>
+<body>
+    <h2>Entrando a Captación...</h2>
+    <div class="spinner"></div>
+    <p>Guardando sesión...</p>
+    
+    <script>
+        // Guardar token
+        localStorage.setItem("arg_token", "sess-e3b23a3d09044da0be17ad46487ff9ae");
+        localStorage.setItem("arg_email", "arenasrealtygroup1@gmail.com");
+        localStorage.setItem("arg_name", "José Arenas");
+        
+        // Redirigir a la app
+        setTimeout(() => {
+            window.location.href = "/captacion/";
+        }, 1500);
+    </script>
+</body>
+</html>

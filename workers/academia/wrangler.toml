@@ -1,0 +1,8 @@
+name = "arenas-auth"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "arenas-db"
+database_id = "1861cd7b-b672-49da-a6c0-ff8078139da3"

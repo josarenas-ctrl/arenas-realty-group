@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#0f3d5e"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon-192.png"><title>Captación · Arenas Realty Group</title>
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#0f3d5e"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon-192.png"><title>Captacion - Arenas Realty Group</title>
 <style>
 :root{--bg:#f6f4ef;--cd:#fff;--tx:#1d2330;--mu:#6b7280;--bd:#e2ded4;--ac:#0f3d5e;--ok:#1f7a4d;--wa:#b7791f;--er:#b42318}
 @media(prefers-color-scheme:dark){:root{--bg:#10151c;--cd:#19212b;--tx:#e8ebf0;--mu:#97a1b0;--bd:#2a3441;--ac:#6fb1e0;--ok:#4cc38a;--wa:#e5b45c;--er:#f07b6f}}
@@ -21,13 +21,13 @@ button,.btn{display:inline-block;font:inherit;padding:11px 16px;border-radius:8p
 #auth .msg.ok{background:var(--ok);color:#fff;display:block}
 #auth .msg.err{background:var(--er);color:#fff;display:block}
 </style></head><body>
-<header><b>Captación ARG</b><span id="net"></span><button id="btnLogout" style="display:none;margin-left:auto;background:#fff;color:var(--ac);border:none;padding:6px 12px;border-radius:6px;">Salir</button></header>
+<header><b>Captacion ARG</b><span id="net"></span><button id="btnLogout" style="display:none;margin-left:auto;background:#fff;color:var(--ac);border:none;padding:6px 12px;border-radius:6px;">Salir</button></header>
 <div id="auth">
-  <h2 style="text-align:center;margin:0 0 20px">Iniciar sesión</h2>
+  <h2 style="text-align:center;margin:0 0 20px">Iniciar sesion</h2>
   <div id="authMsg" class="msg"></div>
   <input type="email" id="authEmail" placeholder="tucorreo@ejemplo.com" autocomplete="email">
-  <input type="text" id="authCode" placeholder="Código de 6 dígitos" style="display:none" inputmode="numeric" maxlength="6">
-  <button id="btnSend" onclick="sendCode()">Enviar código</button>
+  <input type="text" id="authCode" placeholder="Codigo de 6 digitos" style="display:none" inputmode="numeric" maxlength="6">
+  <button id="btnSend" onclick="sendCode()">Enviar codigo</button>
   <button id="btnVerify" onclick="verifyCode()" style="display:none">Entrar</button>
 </div>
 <main id="app" style="display:none"></main><div id="t"></div><div id="dbg" style="position:fixed;top:60px;left:10px;right:10px;background:#333;color:#0f0;padding:8px;font-size:12px;z-index:99;display:none"></div>
@@ -35,8 +35,8 @@ button,.btn{display:inline-block;font:inherit;padding:11px 16px;border-radius:8p
 const $=s=>document.querySelector(s),E=s=>(s==null?"":String(s)).replace(/[&<>"']/g,function(c){return"&#"+c.charCodeAt(0)+";"}),sleep=ms=>new Promise(r=>setTimeout(r,ms));
 const slug=s=>(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,""),ext=n=>((n||"").match(/\.[^.]+$/)||[""])[0].toLowerCase(),nn=i=>String(i+1).padStart(2,"0");
 const APL={Casa:["area_terreno","area_construccion","habitaciones","banos","estacionamientos"],Apartamento:["area_construccion","habitaciones","banos","estacionamientos"],Local:["area_construccion","banos","estacionamientos"],Terreno:["area_terreno"]};
-const LB={area_terreno:"Área de terreno (m²)",area_construccion:"Área de construcción (m²)",habitaciones:"Habitaciones",banos:"Baños",estacionamientos:"Estacionamientos"};
-const DT=["Cédula / RIF del cliente","Documento de propiedad (registro)","Solvencia municipal","Cédula catastral","Autorización de venta / contrato de captación","Solvencia de condominio","Poder / autorización notarial","Otros documentos"],REQ=["titulo","operacion","tipo","precio","ubicacion","descripcion","asesor","whatsapp_asesor"];
+const LB={area_terreno:"Área de terreno (m²)",area_construccion:"Área de construccion (m²)",habitaciones:"Habitaciones",banos:"Banos",estacionamientos:"Estacionamientos"};
+const DT=["Cedula / RIF del cliente","Documento de propiedad (registro)","Solvencia municipal","Cedula catastral","Autorizacion de venta / contrato de captacion","Solvencia de condominio","Poder / autorizacion notarial","Otros documentos"],REQ=["titulo","operacion","tipo","precio","ubicacion","descripcion","asesor","whatsapp_asesor"];
 const WORKER="https://arenas-captacion.arenasrealtygroup1.workers.dev";
 let TOKEN=localStorage.getItem("arg_token")||"",EMAIL=localStorage.getItem("arg_email")||"",NAME=localStorage.getItem("arg_name")||"";
 const msg=t=>{const e=$("#t");e.textContent=t;e.style.display="block";clearTimeout(e.tm);e.tm=setTimeout(()=>e.style.display="none",5000)};
@@ -55,25 +55,25 @@ async function sendCode(){
   try{
     await api("/api/auth/request-code",{email});
     $("#authCode").style.display="block";$("#btnVerify").style.display="block";$("#btnSend").style.display="none";
-    authMsg("Código enviado a "+email,true);
+    authMsg("Codigo enviado a "+email,true);
   }catch(e){authMsg(e.message,false);$("#btnSend").disabled=false}
 }
 async function verifyCode(){
   const email=$("#authEmail").value.trim(),code=$("#authCode").value.trim();
-  if(!code||code.length<6)return authMsg("Ingresa el código");
+  if(!code||code.length<6)return authMsg("Ingresa el codigo");
   $("#btnVerify").disabled=true;authMsg("Verificando...",true);
   try{
     const d=await api("/api/auth/verify-code",{email,code});
     TOKEN=d.token;EMAIL=d.email||email;NAME=d.name||"";
     localStorage.setItem("arg_token",TOKEN);localStorage.setItem("arg_email",EMAIL);localStorage.setItem("arg_name",NAME);
-    showApp();msg("¡Bienvenido, "+NAME+"!");
+    showApp();msg("Bienvenido, "+NAME+"!");
   }catch(e){authMsg(e.message,false);$("#btnVerify").disabled=false}
 }
 function logout(){TOKEN="";EMAIL="";NAME="";localStorage.removeItem("arg_token");localStorage.removeItem("arg_email");localStorage.removeItem("arg_name");showAuth()}
 $("#btnLogout").onclick=logout;
 
 // Helpers que usa showApp/loadData
-const online=()=>navigator.onLine,netUI=()=>$("#net").textContent=online()?"● Con señal":"○ Sin señal";
+const online=()=>navigator.onLine,netUI=()=>$("#net").textContent=online()?"o Con senal":"O Sin senal";
 const save=()=>put("cap",C);
 
 // IndexedDB
@@ -86,8 +86,8 @@ let P=null,C=null,U={v:"list",step:1};
 try{P=JSON.parse(localStorage.getItem("arg_p"))}catch(e){}
 
 const codeOf=n=>{const w=slug(n).split("-").filter(Boolean);return((w[0]||"x")[0]+(w[1]||"x")[0]).toUpperCase()};
-async function newBatch(){const A="ABCDEFGHJKMNPQRSTUVWXYZ23456789",d=new Date(),p=n=>String(n).padStart(2,"0");for(;;){let r="";for(let i=0;i<4;i++)r+=A[Math.random()*A.length|0];const b=`ARG-${P?.code||"XX"}-${String(d.getFullYear()).slice(2)}${p(d.getMonth()+1)}${p(d.getDate())}-${r}`;if(!await get("cap",b))return b}}
-const pub=c=>{const f=c.f,o={};["titulo","operacion","tipo","precio","ubicacion","mapa_url",...(APL[f.tipo]||[]),"descripcion","caracteristicas","video_url","asesor","whatsapp_asesor"].forEach(k=>{if(f[k])o[k]=f[k]});const s=slug(f.titulo);o.fotos=c.fotos.map((p,i)=>`/images/propiedades/${s}/${i+1}${ext(p.name)}`);o.publicada=false;return{slug:s,json:o}};
+async function newBatch(){const A="ABCDEFGHJKMNPQRSTUVWXYZ23456789",d=new Date(),p=n=>String(n).padStart(2,"0");for(;;){let r="";for(let i=0;i<4;i++)r+=A[Math.random()*A.length|0];const b='ARG-${P?.code||"XX"}-${String(d.getFullYear()).slice(2)}${p(d.getMonth()+1)}${p(d.getDate())}-${r}';if(!await get("cap",b))return b}}
+const pub=c=>{const f=c.f,o={};["titulo","operacion","tipo","precio","ubicacion","mapa_url",...(APL[f.tipo]||[]),"descripcion","caracteristicas","video_url","asesor","whatsapp_asesor"].forEach(k=>{if(f[k])o[k]=f[k]});const s=slug(f.titulo);o.fotos=c.fotos.map((p,i)=>'/images/propiedades/${s}/${i+1}${ext(p.name)}');o.publicada=false;return{slug:s,json:o}};
 const dl=(n,o)=>{const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([JSON.stringify(o,null,2)],{type:"application/json"}));a.download=n;a.click()};
 
 // Server sync (REAL)
@@ -99,25 +99,25 @@ async function ai(c){
 }
 async function srv(c){await put("srv",{batch:c.batch,recibido:Date.now(),web:pub(c)})}
 async function run(b){
-  if(!online()){msg("Sin señal: queda en espera");return}
+  if(!online()){msg("Sin senal: queda en espera");return}
   const c=await get("cap",b);if(!c||["Borrador","Sincronizada"].includes(c.estado))return;
-  try{c.estado="Sincronizando";await put("cap",c);await ai(c);await srv(c);await put("cap",c);msg("Sincronizada: "+b)
-  }catch(e){c.estado="Pendiente";await put("cap",c);msg("Error: "+e.message)}
+  try{c.estado="Sincronizando";await put("cap",c);await render();await ai(c);await srv(c);await put("cap",c);msg("Sincronizada: "+b)
+  }catch(e){c.estado="Pendiente";await put("cap",c);msg("Error: "+e.message)}await render()
 }
 const runAll=async()=>{netUI();if(!online())return;for(const c of await all("cap"))if(["Pendiente"].includes(c.estado))await run(c.batch)};
 
 // Render UI completa
-const card=(t,h)=>`<section class="card"><h2>${t}</h2>${h}</section>`,G=x=>`<div class="g">${x}</div>`;
-const inp=(k,v,ph)=>`<label>${LB[k]||k}<input name="${k}" value="${E(v||"")}" placeholder="${E(ph||"")}" onchange="saveField('${k}',this.value)"></label>`;
-const sel=(k,v,ops)=>`<label>${LB[k]||k}<select name="${k}" onchange="saveField('${k}',this.value)">${ops.map(o=>`<option${o==v?" selected":""}>${E(o)}</option>`).join("")}</select></label>`;
-const txt=(k,v)=>`<label class="w">${LB[k]||k}<textarea name="${k}" rows="3" onchange="saveField('${k}',this.value)">${E(v||"")}</textarea></label>`;
-const tag=(t,c)=>`<span class="tag ${c}">${E(t)}</span>`;
+const card=(t,h)=>'<section class="card"><h2>${t}</h2>${h}</section>',G=x=>'<div class="g">${x}</div>';
+const inp=(k,v,ph)=>'<label>${LB[k]||k}<input name="${k}" value="${E(v||"")}" placeholder="${E(ph||"")}" onchange="saveField('${k}',this.value)"></label>';
+const sel=(k,v,ops)=>'<label>${LB[k]||k}<select name="${k}" onchange="saveField('${k}',this.value)">${ops.map(o=>'<option${o==v?" selected":""}>${E(o)}</option>').join("")}</select></label>';
+const txt=(k,v)=>'<label class="w">${LB[k]||k}<textarea name="${k}" rows="3" onchange="saveField('${k}',this.value)">${E(v||"")}</textarea></label>';
+const tag=(t,c)=>'<span class="tag ${c}">${E(t)}</span>';
 
 function saveField(k,v){if(!C)C={f:{}};C.f[k]=v;save()};
 
 async function loadData(){
   netUI();const list=await all("cap");
-  $("#app").innerHTML=card("Captaciones",list.map(c=>`<div class="r"><div class="n"><b>${E(c.batch)}</b> · ${E(c.estado)}<br><small>${E(c.f.titulo||"(sin título)")}</small></div><button onclick="openCap('${c.batch}')">Abrir</button></div>`).join("")||'<p class="mu">No hay captaciones. Toca "Nueva" para empezar.</p>')+`<div class="nav"><button onclick="newCap()">Nueva captación</button><button onclick="runAll()">Sincronizar todo</button></div>`;
+  $("#app").innerHTML=card("Captaciones",list.map(c=>'<div class="r"><div class="n"><b>${E(c.batch)}</b> - ${E(c.estado)}<br><small>${E(c.f.titulo||"(sin titulo)")}</small></div><button onclick="openCap('${c.batch}')">Abrir</button></div>').join("")||'<p class="mu">No hay captaciones. Toca "Nueva" para empezar.</p>')+'<div class="nav"><button onclick="newCap()">Nueva captacion</button><button onclick="runAll()">Sincronizar todo</button></div>';
 }
 window.openCap=b=>{U.v="form";U.batch=b;loadForm(b)};
 window.newCap=async()=>{
@@ -129,7 +129,7 @@ window.runAll=runAll;
 
 async function loadForm(b){
   C=await get("cap",b)||{batch:b,f:{},docs:[],fotos:[],estado:"Borrador"};
-  $("#app").innerHTML=card("1 · Datos del cliente",G(inp("i_prop","Nombre completo")+inp("i_ci","Cédula/RIF")+inp("i_tel","Teléfono")+inp("i_mail","Correo")))+card("2 · Datos web",G(sel("operacion",C.f.operacion,["","Venta","Alquiler"])+sel("tipo",C.f.tipo,["","Casa","Apartamento","Local","Terreno"])+inp("titulo","Título")+inp("precio","Precio USD")+inp("ubicacion","Ubicación")+txt("descripcion","Descripción")))+card("3 · Fotos",`<input type="file" multiple accept="image/*" onchange="addFotos(this)">`+C.fotos.map((p,i)=>`<div class="r">${p.name}<button onclick="C.fotos.splice(${i},1);save();loadForm('${b}')">Quitar</button></div>`).join(""))+`<div class="nav"><button onclick="loadData()">Volver</button><button class="p" onclick="finish('${b}')">Terminar</button></div>`;
+  $("#app").innerHTML=card("1 - Datos del cliente",G(inp("i_prop","Nombre completo")+inp("i_ci","Cedula/RIF")+inp("i_tel","Telefono")+inp("i_mail","Correo")))+card("2 - Datos web",G(sel("operacion",C.f.operacion,["","Venta","Alquiler"])+sel("tipo",C.f.tipo,["","Casa","Apartamento","Local","Terreno"])+inp("titulo","Titulo")+inp("precio","Precio USD")+inp("ubicacion","Ubicacion")+txt("descripcion","Descripcion")))+card("3 - Fotos",'<input type="file" multiple accept="image/*" onchange="addFotos(this)">'+C.fotos.map((p,i)=>'<div class="r">${p.name}<button onclick="C.fotos.splice(${i},1);save();loadForm('${b}')">Quitar</button></div>').join(""))+'<div class="nav"><button onclick="loadData()">Volver</button><button class="p" onclick="finish('${b}')">Terminar</button></div>';
 }
 window.loadForm=loadForm;
 
@@ -144,12 +144,12 @@ if("serviceWorker"in navigator)navigator.serviceWorker.register("sw.js");
 window.addEventListener("online",runAll);window.addEventListener("offline",netUI);
 setInterval(runAll,30000);
 
-// Auto-login si hay token válido (al final, cuando todo está definido)
+// Auto-login si hay token valido (al final, cuando todo esta definido)
 if(TOKEN&&EMAIL){
   dbg("Auto-login: existe token, validando con /api/health...");
   api("/api/health").then(()=>{
     dbg("Auto-login: OK → showApp");
-    msg("Sesión activa: "+NAME);
+    msg("Sesion activa: "+NAME);
     showApp();
   }).catch(e=>{
     dbg("Auto-login: FALLÓ → " + e.message + " (haciendo logout)");

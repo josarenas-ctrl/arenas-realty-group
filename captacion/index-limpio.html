@@ -101,8 +101,8 @@ async function srv(c){await put("srv",{batch:c.batch,recibido:Date.now(),web:pub
 async function run(b){
   if(!online()){msg("Sin señal: queda en espera");return}
   const c=await get("cap",b);if(!c||["Borrador","Sincronizada"].includes(c.estado))return;
-  try{c.estado="Sincronizando";await put("cap",c);await ai(c);await srv(c);await put("cap",c);msg("Sincronizada: "+b)
-  }catch(e){c.estado="Pendiente";await put("cap",c);msg("Error: "+e.message)}
+  try{c.estado="Sincronizando";await put("cap",c);await render();await ai(c);await srv(c);await put("cap",c);msg("Sincronizada: "+b)
+  }catch(e){c.estado="Pendiente";await put("cap",c);msg("Error: "+e.message)}await render()
 }
 const runAll=async()=>{netUI();if(!online())return;for(const c of await all("cap"))if(["Pendiente"].includes(c.estado))await run(c.batch)};
 
@@ -161,3 +161,4 @@ if(TOKEN&&EMAIL){
   showAuth();
 }
 </script></body></html>
+```
