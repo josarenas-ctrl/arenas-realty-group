@@ -194,20 +194,8 @@ export default {
       const tokenData = await tokenRes.json();
       if (tokenData.error) return new Response(`Error: ${tokenData.error_description || tokenData.error}`, { status: 400 });
       const token = tokenData.access_token;
-      const html = `<!doctype html><html><body><script>
-(function(){
-  function receiveMessage(e) {
-    window.opener.postMessage(
-      'authorization:github:success:' + JSON.stringify({ token: '${token}', provider: 'github' }),
-      e.origin
-    );
-    window.removeEventListener('message', receiveMessage, false);
-  }
-  window.addEventListener('message', receiveMessage, false);
-  window.opener.postMessage('authorizing:github', '*');
-})();
-</script>Autenticando...</body></html>`;
-      return new Response(html, { headers: { "Content-Type": "text/html; charset=UTF-8" } });
+      const html = `<!doctype html><html><body><script>(function(){function r(e){window.opener.postMessage('authorization:github:success:${token}',e.origin);window.removeEventListener("message",r,false)}window.addEventListener("message",r,false);window.opener.postMessage("authorizing:github","*")})();</script>Autenticando...</body></html>`;
+      return new Response(html, { headers: { "Content-Type": "text/html" } });
     }
 
     if (path === "/invitar") {
