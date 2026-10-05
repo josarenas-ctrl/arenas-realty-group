@@ -5,7 +5,7 @@ backend:
   name: github
   repo: josarenas-ctrl/arenas-realty-group
   branch: cloudflare-test
-  base_url: https://arenas-auth.arenasrealtygroup.workers.dev
+  base_url: https://arenas-auth.arenasrealtygroup1.workers.dev
   auth_endpoint: auth
 
 media_folder: "images/uploads"
