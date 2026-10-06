@@ -1,0 +1,9 @@
+{
+  "titulo": "Test",
+  "operacion": "Venta",
+  "tipo": "Casa",
+  "precio": "100000",
+  "ubicacion": "Caracas",
+  "descripcion": "Test",
+  "publicada": false
+}
