@@ -4,3 +4,8 @@
 __pycache__/
 *.pyc
 _trash/
+
+# Tokens y secrets
+ARENAs-TOKENS-INVENTARIO.md
+cf-token.txt
+GHT General Github.txt
