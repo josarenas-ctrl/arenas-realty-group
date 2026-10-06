@@ -1,11 +1,9 @@
 // Academia ARG — Worker API (extensión de arenas-auth)
 // ES Module format + binding D1 nativo (env.DB). Sin token API.
 
-// JWT_SECRET debe venir de environment variable (Cloudflare Worker secret).
-// Valor hardcodeado solo para desarrollo local — en produccion usa env.JWT_SECRET.
-const JWT_SECRET_KEY = typeof env !== 'undefined' && env.JWT_SECRET
-  ? env.JWT_SECRET
-  : "academia-jwt-secret"; // FALLBACK inseguro — remover en produccion
+// JWT_SECRET viene exclusivamente del secret de Cloudflare (env.JWT_SECRET).
+// Sin fallback hardcodeado — si falta, el worker falla explicitamente.
+const JWT_SECRET_KEY = env.JWT_SECRET;
 
 function base64url(buf) {
   return btoa(String.fromCharCode(...new Uint8Array(buf)))
