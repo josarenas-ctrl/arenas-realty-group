@@ -1,0 +1,15 @@
+{
+  "zona": "miranda-dc-guaira",
+  "portal": "mercadopiso",
+  "operacion": "todas",
+  "url_busqueda": "rtcl_listing-sitemap 1-40",
+  "scrapeado_en": "2026-10-06T00:31:21.052Z",
+  "total": 0,
+  "anuncios": [],
+  "diagnostico": {
+    "urls_encontradas": 6000,
+    "exitos": 0,
+    "en_objetivo": 0,
+    "fallos": 6000
+  }
+}
