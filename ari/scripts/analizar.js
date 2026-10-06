@@ -6,10 +6,10 @@
 // EL MISMO ESTADO — comparar precios de Zulia contra precios de Miranda no
 // tendría sentido, los mercados son completamente distintos entre estados.
 //
-//   VERDE  — precio por m² al menos 15% por debajo del promedio de su
-//            estado (posible ganga, vale la pena que el asesor la revise)
-//   AMARILLO — dentro de +/- 15% del promedio (precio de mercado normal)
-//   ROJO   — al menos 15% por encima del promedio (sobrevalorada frente
+//   VERDE  — precio por m² al menos 25% por debajo del promedio de su
+//            estado (posible ganga real, vale la pena que el asesor la revise)
+//   AMARILLO — dentro de +/- 25% del promedio (precio de mercado normal)
+//   ROJO   — al menos 25% por encima del promedio (sobrevalorada frente
 //            a comparables del mismo tipo y estado)
 //
 // No usa IA: el cálculo es aritmético puro sobre los datos ya depurados.
@@ -27,8 +27,8 @@ const https = require("https");
 const path = require("path");
 
 const DATA_DIR = path.join(__dirname, "..", "data");
-const UMBRAL_GANGA = 0.15; // 15% por debajo del promedio = verde
-const UMBRAL_SOBREVALORADA = 0.15; // 15% por encima del promedio = rojo
+const UMBRAL_GANGA = 0.25; // 25% por debajo del promedio = verde (más estricto, menos falsos positivos)
+const UMBRAL_SOBREVALORADA = 0.25; // 25% por encima del promedio = rojo
 
 // Estados en los que trabaja Arenas Realty Group. Cualquier ficha que no
 // caiga en uno de estos se descarta ANTES del análisis: los scrapers pueden
@@ -323,7 +323,7 @@ function extraerZona(ubicacion) {
       // municipios del interior
       "zamora","páez","guaicaipuro","urdaneta","vargas","independencia","plaza",
       // ciudades satélite (no son urbanizaciones de Caracas)
-      "caracas","guarenas","guatire","charallave","carrizal","maiquetía",
+      "guarenas","guatire","charallave","carrizal","maiquetía",
       // parroquias y sectores genéricos
       "catia","mariche","gavilán","horizonte","la sabana","la peña",
       // playas / costa
@@ -331,8 +331,14 @@ function extraerZona(ubicacion) {
     ]);
     if (NO_ES_AREA.has(limpia.toLowerCase())) return null;
 
+    // Caracas y Maracay son ciudades grandes, no urbanizaciones específicas
+    // Pero si el estado ya está asignado, usamos el estado como zona válida
+    // para no descartar la ficha completa
+    if (limpia.toLowerCase() === "caracas") return null; // Demasiado amplio, usar estado
+    if (limpia.toLowerCase() === "maracay") return null; // Maracay es de Aragua, no de nuestros estados
+
     return limpia;
-}
+  }
 
 function normalizarTipo(tipo, titulo) {
   // Los anuncios de distintos estados escriben el tipo con mayúsculas
@@ -540,12 +546,17 @@ async function main() {
       m2PromedioPorGrupo.set(clave, m2s.reduce((s, v) => s + v, 0) / m2s.length);
     }
 
+  // 2) Con la zona ya resuelta (incluyendo fallback a estado), decidir semáforo
   const fichasAnalizadas = fichas.map((ficha) => {
-      const zona = ficha.zona || extraerZona(ficha.ubicacion);
-            const condicion = extraerCondicion(ficha);
-            const contacto = extraerContacto(ficha);
-            const { _precio_m2, _estado, ...resto } = ficha;
-      const clave = ficha.tipo && _estado
+    const zona = ficha.zona || extraerZona(ficha.ubicacion);
+    const condicion = extraerCondicion(ficha);
+    const contacto = extraerContacto(ficha);
+    const { _precio_m2, _estado, ...resto } = ficha;
+    
+    // FALLBACK: Si no hay zona pero sí estado válido, usar estado como zona
+    const zonaFinal = zona || _estado;
+    
+    const clave = ficha.tipo && _estado
               ? claveGrupo(ficha.tipo, _estado, extraerOperacion(ficha))
               : null;
       const promedioGrupo = clave ? promedioPorGrupo.get(clave) : null;
@@ -568,7 +579,7 @@ async function main() {
                 else if (diferencia >= UMBRAL_SOBREVALORADA) semaforo = "rojo";
                 else semaforo = "amarillo";
                 return {
-                                  ...resto, zona, condicion, contacto, _estado,
+                                  ...resto, zona: zonaFinal, condicion, contacto, _estado,
                                   precio_m2: Math.round(precioM2Estimado),
                   promedio_m2_tipo_zona: Math.round(promedioGrupo),
                   diferencia_vs_promedio_pct: Math.round(diferencia * 100),
@@ -577,7 +588,7 @@ async function main() {
                   m2_estimado_base: Math.round(m2Promedio),
                 };
               }
-              return { ...resto, _estado, zona, condicion, contacto, precio_m2: null, promedio_m2_tipo_zona: null, semaforo: "sin_datos_suficientes" };
+              return { ...resto, _estado, zona: zonaFinal, condicion, contacto, precio_m2: null, promedio_m2_tipo_zona: null, semaforo: "sin_datos_suficientes" };
             }
 
       // Ajustar precio/m² según condición antes de comparar contra el promedio.
@@ -598,7 +609,7 @@ async function main() {
 
     return {
               ...resto,
-              zona,
+              zona: zonaFinal,
               condicion,
               contacto,
               _estado,

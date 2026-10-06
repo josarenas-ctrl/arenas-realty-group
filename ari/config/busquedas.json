@@ -48,6 +48,48 @@
       "operacion": "todas",
       "url": "sitemaps://www.inmueblesconlupa.com/sitemap-listings/0-2.xml",
       "paginas": 1
+    },
+    {
+      "zona": "miranda",
+      "portal": "mercadolibre",
+      "operacion": "venta",
+      "url": "https://listado.mercadolibre.com.ve/inmuebles/venta/miranda",
+      "paginas": 10
+    },
+    {
+      "zona": "miranda",
+      "portal": "mercadolibre",
+      "operacion": "alquiler",
+      "url": "https://listado.mercadolibre.com.ve/inmuebles/alquiler/miranda",
+      "paginas": 10
+    },
+    {
+      "zona": "distrito-capital",
+      "portal": "mercadolibre",
+      "operacion": "venta",
+      "url": "https://listado.mercadolibre.com.ve/inmuebles/venta/distrito-capital",
+      "paginas": 10
+    },
+    {
+      "zona": "distrito-capital",
+      "portal": "mercadolibre",
+      "operacion": "alquiler",
+      "url": "https://listado.mercadolibre.com.ve/inmuebles/alquiler/distrito-capital",
+      "paginas": 10
+    },
+    {
+      "zona": "la-guaira",
+      "portal": "mercadolibre",
+      "operacion": "venta",
+      "url": "https://listado.mercadolibre.com.ve/inmuebles/venta/la-guaira",
+      "paginas": 10
+    },
+    {
+      "zona": "la-guaira",
+      "portal": "mercadolibre",
+      "operacion": "alquiler",
+      "url": "https://listado.mercadolibre.com.ve/inmuebles/alquiler/la-guaira",
+      "paginas": 10
     }
   ]
 }

@@ -1,0 +1,15 @@
+name = "arenas-captacion"
+main = "worker.js"
+compatibility_date = "2024-12-01"
+
+[env]
+vars = { ADMIN_EMAILS = "arenasrealtygroup1@gmail.com,josarenas@gmail.com" }
+
+[[d1_databases]]
+binding = "DB"
+database_name = "captacion-db"
+database_id = "8878ba28-8ba7-44da-b21b-5ae46ebb199e"
+
+[[r2_buckets]]
+binding = "R2"
+bucket_name = "captacion-docs"

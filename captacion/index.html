@@ -108,12 +108,15 @@ const runAll=async()=>{netUI();if(!online())return;for(const c of await all("cap
 
 // Render UI completa
 const card=(t,h)=>`<section class="card"><h2>${t}</h2>${h}</section>`,G=x=>`<div class="g">${x}</div>`;
-const inp=(k,v,ph)=>`<label>${LB[k]||k}<input name="${k}" value="${E(v||"")}" placeholder="${E(ph||"")}" onchange="saveField('${k}',this.value)"></label>`;
+const inp=(k,v,ph)=>`<label>${LB[k]||k}<input name="${k}" value="${E(v||"")}" placeholder="${E(ph||"")}" onchange="saveField('${k}',this.value)" onblur="saveField('${k}',this.value)"></label>`;
 const sel=(k,v,ops)=>`<label>${LB[k]||k}<select name="${k}" onchange="saveField('${k}',this.value)">${ops.map(o=>`<option${o==v?" selected":""}>${E(o)}</option>`).join("")}</select></label>`;
-const txt=(k,v)=>`<label class="w">${LB[k]||k}<textarea name="${k}" rows="3" onchange="saveField('${k}',this.value)">${E(v||"")}</textarea></label>`;
+const txt=(k,v)=>`<label class="w">${LB[k]||k}<textarea name="${k}" rows="3" onchange="saveField('${k}',this.value)" onblur="saveField('${k}',this.value)">${E(v||"")}</textarea></label>`;
 const tag=(t,c)=>`<span class="tag ${c}">${E(t)}</span>`;
 
 function saveField(k,v){if(!C)C={f:{}};C.f[k]=v;save()};
+
+async function delCap(b){if(!confirm("¿Eliminar captación "+b+"?"))return;await del("cap",b);msg("Eliminada: "+b);loadData()}
+window.delCap=delCap;
 
 async function loadData(){
   netUI();const list=await all("cap");

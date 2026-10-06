@@ -23,7 +23,7 @@ const DATA_DIR = path.join(__dirname, "..", "data");
 
 function normalizarPrecio(precioTexto) {
   if (!precioTexto) return "";
-  return precioTexto.replace(/[^\d]/g, ""); // deja solo dígitos
+  return String(precioTexto).replace(/[^\d]/g, ""); // deja solo dígitos
 }
 
 // Palabras que aparecen en casi cualquier anuncio de la zona y no ayudan a

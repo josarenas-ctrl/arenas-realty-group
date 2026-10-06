@@ -36,6 +36,7 @@ function staticResponse(body, contentType) {
 
 const SESSION_DAYS = 30;
 const SESSION_MS = SESSION_DAYS * 24 * 60 * 60 * 1000;
+const WORKER_VERSION = "20261006-0425"; // cache bust
 
 export default {
   async fetch(request, env) {
@@ -49,7 +50,9 @@ export default {
       const object = await env.R2.get(STATIC_PATHS[path]);
       if (object) {
         const ext = path.split(".").pop();
-        const contentType = MIME["." + ext] || "application/octet-stream";
+        let contentType = MIME["." + ext] || "application/octet-stream";
+        // Root path fix
+        if (path === "/" || path === "/captacion/") contentType = MIME[".html"];
         return staticResponse(object.body, contentType);
       }
       return new Response("Not found", { status: 404, headers: CORS });
@@ -197,9 +200,17 @@ export default {
 
         // Publish
         if (path === "/api/publish" && request.method === "POST") {
-          const { batch } = await request.json();
+          let batch;
+          let bodyText = "";
+          try {
+            bodyText = await request.text();
+            const body = JSON.parse(bodyText);
+            batch = body?.batch;
+          } catch (e) {
+            return json({ error: "JSON inválido: " + e.message, body: bodyText.slice(0, 200) }, 400);
+          }
           if (!batch) return json({ error: "batch requerido" }, 400);
-
+          
           const record = await env.DB.prepare(
             "SELECT id, ficha_json, pushed_at FROM batches WHERE ref = ? AND advisor_id = ? LIMIT 1"
           ).bind(batch, advisor.results[0].id).all();
@@ -229,20 +240,39 @@ export default {
           const api = `https://api.github.com/repos/josarenas-ctrl/arenas-realty-group/contents/propiedades/${encodeURIComponent(ficha.pub.slug)}.json`;
           const content = btoa(unescape(encodeURIComponent(JSON.stringify(publicJSON, null, 2))));
 
-          const putResp = await fetch(api, {
-            method: "PUT",
-            headers: {
-              "Authorization": "token " + env.GITHUB_TOKEN,
-              "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-              message: "Captación: " + ficha.pub.slug,
-              content: content,
-              branch: "cloudflare-test"
-            })
+          // Get existing file SHA if it exists
+          let fileSha = null;
+          const getResp = await fetch(api + "?ref=cloudflare-test", {
+            headers: { "Authorization": "token " + env.GITHUB_TOKEN, "User-Agent": "arenas-captacion-worker" }
           });
+          if (getResp.ok) {
+            const getData = await getResp.json();
+            fileSha = getData.sha;
+          }
 
-          const putData = await putResp.json();
+          const putBody = {
+            message: "Captación: " + ficha.pub.slug,
+            content: content,
+            branch: "cloudflare-test"
+          };
+          if (fileSha) putBody.sha = fileSha;
+
+          const putResp = await fetch(api, {
+                      method: "PUT",
+                      headers: {
+                        "Authorization": "token " + env.GITHUB_TOKEN,
+                        "Content-Type": "application/json",
+                        "User-Agent": "arenas-captacion-worker"
+                      },
+                      body: JSON.stringify(putBody)
+                    });
+          let putData;
+          try {
+            const putText = await putResp.text();
+            putData = JSON.parse(putText);
+          } catch (e) {
+            throw new Error("GitHub response no es JSON: " + putResp.status + " " + putResp.statusText + " | err: " + e.message);
+          }
           if (!putResp.ok) throw new Error("GitHub: " + (putData.message || putResp.status));
 
           await env.DB.prepare(

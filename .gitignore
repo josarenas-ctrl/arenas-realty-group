@@ -1,1 +1,6 @@
 # Ignorar carpeta ari (paquete Node.js para scraper interno)
+.wrangler/
+**/node_modules/
+__pycache__/
+*.pyc
+_trash/
