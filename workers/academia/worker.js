@@ -1,10 +1,6 @@
 // Academia ARG — Worker API (extensión de arenas-auth)
 // ES Module format + binding D1 nativo (env.DB). Sin token API.
 
-// JWT_SECRET viene exclusivamente del secret de Cloudflare (env.JWT_SECRET).
-// Sin fallback hardcodeado — si falta, el worker falla explicitamente.
-const JWT_SECRET_KEY = env.JWT_SECRET;
-
 function base64url(buf) {
   return btoa(String.fromCharCode(...new Uint8Array(buf)))
     .replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
@@ -23,20 +19,20 @@ async function hashPassword(password, salt) {
 async function verifyPassword(password, storedHash, salt) {
   return (await hashPassword(password, salt)) === storedHash;
 }
-async function createJWT(payload) {
+async function createJWT(payload, secret) {
   const encoder = new TextEncoder();
   const header = base64url(encoder.encode(JSON.stringify({ alg: 'HS256', typ: 'JWT' })));
   const body = base64url(encoder.encode(JSON.stringify({ ...payload, exp: Math.floor(Date.now()/1000) + 86400 * 7 })));
-  const key = await crypto.subtle.importKey('raw', encoder.encode(JWT_SECRET_KEY), { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']);
+  const key = await crypto.subtle.importKey('raw', encoder.encode(secret), { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']);
   const sig = await crypto.subtle.sign('HMAC', key, encoder.encode(`${header}.${body}`));
   return `${header}.${body}.${base64url(new Uint8Array(sig))}`;
 }
-async function verifyJWT(token) {
+async function verifyJWT(token, secret) {
   try {
     const parts = token.split('.');
     if (parts.length !== 3) return null;
     const encoder = new TextEncoder();
-    const key = await crypto.subtle.importKey('raw', encoder.encode(JWT_SECRET_KEY), { name: 'HMAC', hash: 'SHA-256' }, false, ['verify']);
+    const key = await crypto.subtle.importKey('raw', encoder.encode(secret), { name: 'HMAC', hash: 'SHA-256' }, false, ['verify']);
     const sig = base64urlDecode(parts[2]);
     if (!(await crypto.subtle.verify('HMAC', key, sig, encoder.encode(`${parts[0]}.${parts[1]}`)))) return null;
     const payload = JSON.parse(new TextDecoder().decode(base64urlDecode(parts[1])));
@@ -50,10 +46,10 @@ function json(data, status = 200) {
     headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Content-Type, Authorization', 'Access-Control-Allow-Methods': 'GET, POST, OPTIONS' }
   });
 }
-async function getUserId(request) {
+async function getUserId(request, env) {
   const auth = request.headers.get('Authorization');
   if (!auth || !auth.startsWith('Bearer ')) return null;
-  return (await verifyJWT(auth.slice(7)))?.sub || null;
+  return (await verifyJWT(auth.slice(7), env.JWT_SECRET))?.sub || null;
 }
 
 export default {
@@ -84,7 +80,7 @@ export default {
         }
         const created = await env.DB.prepare('SELECT id, email, name, role FROM users WHERE LOWER(email)=LOWER(?)').bind(email).all();
         const u = (created.results || [])[0];
-        const token = await createJWT({ sub: u.id, email, name, role: 'student' });
+        const token = await createJWT({ sub: u.id, email, name, role: 'student' }, env.JWT_SECRET);
         return json({ token, user: { id: u.id, email, name, role: 'student' } }, 201);
       } catch(e) { return json({ error: e.message }, 500); }
     }
@@ -99,14 +95,14 @@ export default {
         const user = result.results[0];
         const [salt, hash] = user.password_hash.split(':');
         if (!await verifyPassword(password, hash, salt)) return json({ error: 'Credenciales inválidas' }, 401);
-        const token = await createJWT({ sub: user.id, email: user.email, name: user.name, role: user.role });
+        const token = await createJWT({ sub: user.id, email: user.email, name: user.name, role: user.role }, env.JWT_SECRET);
         return json({ token, user: { id: user.id, email: user.email, name: user.name, role: user.role } });
       } catch(e) { return json({ error: e.message }, 500); }
     }
 
     // GET /academia/me
     if (path === '/academia/me' && request.method === 'GET') {
-      const userId = await getUserId(request);
+      const userId = await getUserId(request, env);
       if (!userId) return json({ error: 'No autorizado' }, 401);
       try {
         const userResult = await env.DB.prepare('SELECT id, email, name, role FROM users WHERE id = ?').bind(userId).all();
@@ -120,7 +116,7 @@ export default {
 
     // POST /academia/progress
     if (path === '/academia/progress' && request.method === 'POST') {
-      const userId = await getUserId(request);
+      const userId = await getUserId(request, env);
       if (!userId) return json({ error: 'No autorizado' }, 401);
       try {
         const { module_id, score } = await request.json();
@@ -132,7 +128,7 @@ export default {
 
     // GET /academia/admin/students
     if (path === '/academia/admin/students' && request.method === 'GET') {
-      const userId = await getUserId(request);
+      const userId = await getUserId(request, env);
       if (!userId) return json({ error: 'No autorizado' }, 401);
       try {
         const r = await env.DB.prepare('SELECT role FROM users WHERE id = ?').bind(userId).all();
@@ -145,7 +141,7 @@ export default {
 
     // POST /academia/admin/reset-password
     if (path === '/academia/admin/reset-password' && request.method === 'POST') {
-      const adminId = await getUserId(request);
+      const adminId = await getUserId(request, env);
       if (!adminId) return json({ error: 'No autorizado' }, 401);
       const r = await env.DB.prepare('SELECT role FROM users WHERE id = ?').bind(adminId).all();
       const admin = (r.results || [])[0];
@@ -163,7 +159,7 @@ export default {
 
     // POST /academia/admin/delete-user
     if (path === '/academia/admin/delete-user' && request.method === 'POST') {
-      const adminId = await getUserId(request);
+      const adminId = await getUserId(request, env);
       if (!adminId) return json({ error: 'No autorizado' }, 401);
       const r = await env.DB.prepare('SELECT role FROM users WHERE id = ?').bind(adminId).all();
       const admin = (r.results || [])[0];
