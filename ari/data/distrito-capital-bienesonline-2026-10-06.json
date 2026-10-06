@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "alquiler",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+alquiler+distrito+capital",
-  "scrapeado_en": "2026-10-06T14:10:27.378Z",
+  "scrapeado_en": "2026-10-06T22:31:08.208Z",
   "total": 100,
   "anuncios": [
     {
@@ -159,17 +159,6 @@
       "tipo": "Apartamento",
       "operacion_detectada": "alquiler",
       "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
-      "titulo": "EN ALQUILER APARTAMENTO EN CONJUNTO RESIDENCIAL LA DINASTIA LECHERIA",
-      "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/122798-en-alquiler-apartamento-en-conjunto-residencial-la-dinastia-lecheria",
-      "precio_texto": "USD 600",
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": null,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Lecheria, Anzoátegui"
     },
     {
       "titulo": "En alquiler Conjunto residencial isla dorada",
@@ -412,17 +401,6 @@
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
-      "titulo": "en alquiler diario res mochima",
-      "enlace": "https://bienesonline.ai/es/venezuela/barcelona/propiedad/56933-en-alquiler-diario-res-mochima",
-      "precio_texto": "USD 80",
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": null,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Barcelona, Anzoátegui"
     },
     {
       "titulo": "apartamento en alquiler campo alegre tlf  04242129768 rolando rodriguez codg 27-44",
@@ -746,10 +724,10 @@
     {
       "titulo": "apartamento en alquiler colinas de bello monte tlf  04242129768 rolando rodriguez codg 26-20552",
       "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/112078-apartamento-en-alquiler-colinas-de-bello-monte-tlf-04242129768-rolando-rodriguez-codg-26-20552",
-      "precio_texto": "USD 3.000",
-      "habitaciones": 3,
-      "banos": 5,
-      "metros_cuadrados": 173,
+      "precio_texto": "USD 700",
+      "habitaciones": 1,
+      "banos": 1,
+      "metros_cuadrados": 44,
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Caracas, Distrito Capital"
@@ -801,10 +779,10 @@
     {
       "titulo": "Apartamento en Alquiler Campo Alegre G. 04143054662",
       "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/123500-apartamento-en-alquiler-campo-alegre-g-04143054662",
-      "precio_texto": "USD 3.000",
-      "habitaciones": 3,
-      "banos": 5,
-      "metros_cuadrados": 173,
+      "precio_texto": "USD 700",
+      "habitaciones": 1,
+      "banos": 1,
+      "metros_cuadrados": 44,
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Caracas, Distrito Capital"
@@ -964,17 +942,6 @@
       "ubicacion": "Lecheria, Anzoátegui"
     },
     {
-      "titulo": "apartamento alquiler el rosal tlf 04242129768 rolando Rodríguez",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/33552-apartamento-alquiler-el-rosal-tlf-04242129768-rolando-rodriguez",
-      "precio_texto": "USD 1.500",
-      "habitaciones": 2,
-      "banos": 2,
-      "metros_cuadrados": 69,
-      "tipo": "Apartamento",
-      "operacion_detectada": "alquiler",
-      "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
       "titulo": "Apartamento en Alquiler Chacao G. 04143054662",
       "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/98476-apartamento-en-alquiler-chacao-g-04143054662",
       "precio_texto": "USD 950",
@@ -1032,13 +999,13 @@
     {
       "titulo": "Lindo Y Acogedor Apartamento En Alquiler Manzanares. Amoblado 27-1699",
       "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/121460-lindo-y-acogedor-apartamento-en-alquiler-manzanares-amoblado-27-1699",
-      "precio_texto": "USD 500",
+      "precio_texto": "USD 3.000",
       "habitaciones": 2,
       "banos": 3,
       "metros_cuadrados": 123,
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
-      "ubicacion": "Lechería, Anzoátegui"
+      "ubicacion": "Caracas, Distrito Capital"
     },
     {
       "titulo": "apartamento en alquiler el rosal tlf  04242129768 rolando rodriguez codg 26-21980",
@@ -1074,17 +1041,6 @@
       "ubicacion": "Chacao, Miranda"
     },
     {
-      "titulo": "Apartamento en Venta Las Acacias G. 04143054662 / 04143247646",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/79441-apartamento-en-venta-las-acacias-g-04143054662-04143247646",
-      "precio_texto": "USD 65.000",
-      "habitaciones": 1,
-      "banos": 1,
-      "metros_cuadrados": 40,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
       "titulo": "apartamento alquiler lomas de las mercedes tlf 04242129768 rolando Rodríguez",
       "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/33245-apartamento-alquiler-lomas-de-las-mercedes-tlf-04242129768-rolando-rodriguez",
       "precio_texto": "USD 5.700",
@@ -1105,6 +1061,50 @@
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "apartamento en alquiler los naranjos de las mercedes tlf 04242129768 rolando rodriguez codg 27-1832",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/121812-apartamento-en-alquiler-los-naranjos-de-las-mercedes-tlf-04242129768-rolando-rodriguez-codg-27-1832",
+      "precio_texto": "USD 2.200",
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 86,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "Oficinas en Alquiler en casco central de Lecheria",
+      "enlace": "https://bienesonline.ai/es/venezuela/diego-bautista-urbaneja/propiedad/58811-oficinas-en-alquiler-en-casco-central-de-lecheria",
+      "precio_texto": "USD 450",
+      "habitaciones": null,
+      "banos": null,
+      "metros_cuadrados": null,
+      "tipo": "Oficina",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Diego Bautista Urbaneja, Anzoátegui"
+    },
+    {
+      "titulo": "apartamento en  alquiler  colinas de bello monte codg 27-191",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/117690-apartamento-en-alquiler-colinas-de-bello-monte-codg-27-191",
+      "precio_texto": "USD 1.200",
+      "habitaciones": 1,
+      "banos": 2,
+      "metros_cuadrados": 63,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "En Alquiler excelente apartamento en San Diego San Francisco",
+      "enlace": "https://bienesonline.ai/es/venezuela/san-diego/propiedad/61680-en-alquiler-excelente-apartamento-en-san-diego-san-francisco",
+      "precio_texto": "USD 350",
+      "habitaciones": 3,
+      "banos": 2,
+      "metros_cuadrados": 73,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "San Diego, Carabobo"
     }
   ],
   "diagnostico": {
