@@ -3,31 +3,9 @@
   "portal": "bienesonline",
   "operacion": "alquiler",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+alquiler+miranda",
-  "scrapeado_en": "2026-10-06T14:10:25.021Z",
+  "scrapeado_en": "2026-10-06T22:31:06.232Z",
   "total": 100,
   "anuncios": [
-    {
-      "titulo": "apartamento en venta urb miranda tlf  04242129768 rolando rodriguez codg 27-2902",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/124390-apartamento-en-venta-urb-miranda-tlf-04242129768-rolando-rodriguez-codg-27-2902",
-      "precio_texto": "USD 380.000",
-      "habitaciones": 5,
-      "banos": 7,
-      "metros_cuadrados": 291,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
-      "titulo": "Venta de Apartamento en Miranda MLS #27-3950 Mirian Navarro +58 414 924 0379",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/127339-venta-de-apartamento-en-miranda-mls-27-3950-mirian-navarro-58-414-924-0379",
-      "precio_texto": "USD 160.000",
-      "habitaciones": 3,
-      "banos": 2,
-      "metros_cuadrados": 150,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Caracas, Distrito Capital"
-    },
     {
       "titulo": "Espacioso Apartamento En Alquiler Urbanización Miranda, Balcón Con Linda Vista Panorámica 27-4819",
       "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/128998-espacioso-apartamento-en-alquiler-urbanizacion-miranda-balcon-con-linda-vista-panoramica-27-4819",
@@ -37,17 +15,6 @@
       "metros_cuadrados": 207,
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
-      "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
-      "titulo": "Apartamento en Venta Urb. Miranda G. 04143054662",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/128011-apartamento-en-venta-urb-miranda-g-04143054662",
-      "precio_texto": "USD 160.000",
-      "habitaciones": 3,
-      "banos": 2,
-      "metros_cuadrados": 150,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
       "ubicacion": "Caracas, Distrito Capital"
     },
     {
@@ -73,39 +40,6 @@
       "ubicacion": "Chacao, Miranda"
     },
     {
-      "titulo": "Venta de Casa en Miranda MLS #25-7483 Mirian Navarro",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/87299-venta-de-casa-en-miranda-mls-25-7483-mirian-navarro",
-      "precio_texto": "USD 275.000",
-      "habitaciones": 4,
-      "banos": 7,
-      "metros_cuadrados": 657,
-      "tipo": "Casa",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
-      "titulo": "Apartamento En Venta Urb. Miranda",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/33481-apartamento-en-venta-urb-miranda",
-      "precio_texto": "USD 130.000",
-      "habitaciones": 3,
-      "banos": 3,
-      "metros_cuadrados": 124,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
-      "titulo": "Apartamento en Venta Urb. Miranda G. 04143054662",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/124166-apartamento-en-venta-urb-miranda-g-04143054662",
-      "precio_texto": "USD 380.000",
-      "habitaciones": 4,
-      "banos": 6,
-      "metros_cuadrados": 291,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
       "titulo": "apartamento en alquiler en la castellana tlf 04242129768 rolando rodriguez codg 27-4562",
       "enlace": "https://bienesonline.ai/es/venezuela/chacao/propiedad/128709-apartamento-en-alquiler-en-la-castellana-tlf-04242129768-rolando-rodriguez-codg-27-4562",
       "precio_texto": "USD 3.000",
@@ -128,28 +62,6 @@
       "ubicacion": "Sucre, Miranda"
     },
     {
-      "titulo": "CASA EN VENTA EN URB. CIUDAD MIRANDA CHARALLAVE API 6384",
-      "enlace": "https://bienesonline.ai/es/venezuela/charallave/propiedad/29747-casa-en-venta-en-urb-ciudad-miranda-charallave-api-6384",
-      "precio_texto": "USD 16.000",
-      "habitaciones": 4,
-      "banos": 3,
-      "metros_cuadrados": 85,
-      "tipo": "Casa",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Charallave, Miranda"
-    },
-    {
-      "titulo": "Estupendo Apartamento En Venta Urbanización Miranda, Totalmente Amoblado 27-2902",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/124227-estupendo-apartamento-en-venta-urbanizacion-miranda-totalmente-amoblado-27-2902",
-      "precio_texto": "USD 380.000",
-      "habitaciones": 5,
-      "banos": 7,
-      "metros_cuadrados": 291,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
       "titulo": "apartamento alquiler la alameda tlf 04242129768 rolando Rodríguez",
       "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/33729-apartamento-alquiler-la-alameda-tlf-04242129768-rolando-rodriguez",
       "precio_texto": "USD 1.000",
@@ -159,28 +71,6 @@
       "tipo": "Apartamento",
       "operacion_detectada": "alquiler",
       "ubicacion": "Baruta, Miranda"
-    },
-    {
-      "titulo": "Apartamento en Venta Urb. Miranda G. 04143054662",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/98497-apartamento-en-venta-urb-miranda-g-04143054662",
-      "precio_texto": "USD 165.000",
-      "habitaciones": 3,
-      "banos": 3,
-      "metros_cuadrados": 162,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
-      "titulo": "Apartamento en Venta Miranda G. 04143054662",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/122422-apartamento-en-venta-miranda-g-04143054662",
-      "precio_texto": "USD 220.000",
-      "habitaciones": 10,
-      "banos": 10,
-      "metros_cuadrados": 450,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Caracas, Distrito Capital"
     },
     {
       "titulo": "CASA EN ALQUILER EN BARRIO FRANCISCO DE MIRANDA MARACAIBO API 6992",
@@ -205,28 +95,6 @@
       "ubicacion": "Baruta, Miranda"
     },
     {
-      "titulo": "Espectacular apartamento en venta Urbanización Miranda  25-13625",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/77213-espectacular-apartamento-en-venta-urbanizacion-miranda-25-13625",
-      "precio_texto": "USD 280.000",
-      "habitaciones": 3,
-      "banos": 5,
-      "metros_cuadrados": 251,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
-      "titulo": "Apartamento en Venta Urb. Miranda G. 04143054662 / 041432476456",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/79446-apartamento-en-venta-urb-miranda-g-04143054662-041432476456",
-      "precio_texto": "USD 175.000",
-      "habitaciones": 3,
-      "banos": 4,
-      "metros_cuadrados": 168,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
       "titulo": "apartamento alquiler lomas de la alameda tlf 04242129768 rolando Rodríguez",
       "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/33948-apartamento-alquiler-lomas-de-la-alameda-tlf-04242129768-rolando-rodriguez",
       "precio_texto": "USD 2.000",
@@ -235,50 +103,6 @@
       "metros_cuadrados": 173,
       "tipo": "Apartamento",
       "operacion_detectada": "alquiler",
-      "ubicacion": "Baruta, Miranda"
-    },
-    {
-      "titulo": "casa en venta urb miranda tlf 04242129768  rolando rodriguez  codg 27-237",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/118168-casa-en-venta-urb-miranda-tlf-04242129768-rolando-rodriguez-codg-27-237",
-      "precio_texto": "USD 360.000",
-      "habitaciones": 3,
-      "banos": 5,
-      "metros_cuadrados": 450,
-      "tipo": "Casa",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
-      "titulo": "Apartamento en Venta Urbanizacion Miranda. Sandra White 0414-3140082  Cod. 26-10886",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/33202-apartamento-en-venta-urbanizacion-miranda-sandra-white-0414-3140082-cod-26-10886",
-      "precio_texto": "USD 185.000",
-      "habitaciones": 3,
-      "banos": 4,
-      "metros_cuadrados": 239,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
-      "titulo": "Apartamento en Venta Urb. Miranda G. 04143054662",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/126864-apartamento-en-venta-urb-miranda-g-04143054662",
-      "precio_texto": "USD 245.000",
-      "habitaciones": 3,
-      "banos": 4,
-      "metros_cuadrados": 215,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
-      "titulo": "apartamento en  alquiler en las mesetas de santa rosa de lima tlf 04242129768 rolando rodríguez",
-      "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/34107-apartamento-en-alquiler-en-las-mesetas-de-santa-rosa-de-lima-tlf-04242129768-rolando-rodriguez",
-      "precio_texto": "USD 1.800",
-      "habitaciones": 2,
-      "banos": 3,
-      "metros_cuadrados": 141,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
       "ubicacion": "Baruta, Miranda"
     },
     {
@@ -337,61 +161,6 @@
       "ubicacion": "Guatire, Miranda"
     },
     {
-      "titulo": "APARTAMENTO VENTA GUATIRE MIRANDA API 6458",
-      "enlace": "https://bienesonline.ai/es/venezuela/guatire/propiedad/29743-apartamento-venta-guatire-miranda-api-6458",
-      "precio_texto": "USD 17.000",
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": null,
-      "tipo": "Apartamento",
-      "operacion_detectada": "VENTA",
-      "ubicacion": "Guatire, Miranda"
-    },
-    {
-      "titulo": "Apartamento en Venta Urb. Miranda G. 04143054662",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/122962-apartamento-en-venta-urb-miranda-g-04143054662",
-      "precio_texto": "USD 396.000",
-      "habitaciones": 5,
-      "banos": 8,
-      "metros_cuadrados": 420,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
-      "titulo": "Bello y Agradable Apartamento en Venta Llano Alto, Altos Mirandino en Urb. Privada.",
-      "enlace": "https://bienesonline.ai/es/venezuela/carrizal/propiedad/63693-bello-y-agradable-apartamento-en-venta-llano-alto-altos-mirandino-en-urb-privada",
-      "precio_texto": "USD 75.000",
-      "habitaciones": 2,
-      "banos": 2,
-      "metros_cuadrados": 83,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Carrizal, Miranda"
-    },
-    {
-      "titulo": "APARTAMENTO EN VENTA EN HIGUEROTE EDO MIRANDA API 5113",
-      "enlace": "https://bienesonline.ai/es/venezuela/higuerote/propiedad/29739-apartamento-en-venta-en-higuerote-edo-miranda-api-5113",
-      "precio_texto": "USD 17.500",
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": null,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Higuerote, Miranda"
-    },
-    {
-      "titulo": "APARTAMENTO EN VENTA EN PASO REAL GUARENAS MIRANDA API 6522",
-      "enlace": "https://bienesonline.ai/es/venezuela/guarenas/propiedad/29437-apartamento-en-venta-en-paso-real-guarenas-miranda-api-6522",
-      "precio_texto": "USD 19.000",
-      "habitaciones": 3,
-      "banos": 2,
-      "metros_cuadrados": 74,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Guarenas, Miranda"
-    },
-    {
       "titulo": "oficina en alquiler los dos caminos tlf 04242129768 rolando rodríguez",
       "enlace": "https://bienesonline.ai/es/venezuela/sucre/propiedad/34113-oficina-en-alquiler-los-dos-caminos-tlf-04242129768-rolando-rodriguez",
       "precio_texto": "USD 800",
@@ -401,28 +170,6 @@
       "tipo": "Oficina",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Sucre, Miranda"
-    },
-    {
-      "titulo": "Excelente Apartamento En Venta En Urbanización Miranda 26-9010 Zoraida Sánchez 04143653415",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/33792-excelente-apartamento-en-venta-en-urbanizacion-miranda-26-9010-zoraida-sanchez-04143653415",
-      "precio_texto": "USD 75.000",
-      "habitaciones": 3,
-      "banos": 4,
-      "metros_cuadrados": 125,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
-      "titulo": "Casa en Venta en Urb Miranda  23-7688 25-12699 Zoraida Sánchez 04143653415",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/33990-casa-en-venta-en-urb-miranda-23-7688-25-12699-zoraida-sanchez-04143653415",
-      "precio_texto": "USD 195.000",
-      "habitaciones": 5,
-      "banos": 5,
-      "metros_cuadrados": 434,
-      "tipo": "Casa",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Caracas, Distrito Capital"
     },
     {
       "titulo": "apartamento en alquiler mirador de los campitos tlf  04242129768 rolando rodriguez codg 26-21784",
@@ -458,17 +205,6 @@
       "ubicacion": "Guarenas, Miranda"
     },
     {
-      "titulo": "Venta de casa en la Urbanizacion Miranda 27-1180 Asdrubal Medina",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/120210-venta-de-casa-en-la-urbanizacion-miranda-27-1180-asdrubal-medina",
-      "precio_texto": "USD 160.000",
-      "habitaciones": 3,
-      "banos": 3,
-      "metros_cuadrados": 158,
-      "tipo": "Casa",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
       "titulo": "apartamento en alquiler en nueva casarapa tlf  04242129768 rolando rodríguez",
       "enlace": "https://bienesonline.ai/es/venezuela/guarenas/propiedad/79420-apartamento-en-alquiler-en-nueva-casarapa-tlf-04242129768-rolando-rodriguez",
       "precio_texto": "USD 250",
@@ -491,17 +227,6 @@
       "ubicacion": "Maracaibo, Zulia"
     },
     {
-      "titulo": "Apartamento en Venta Urb. Miranda G. 04143054662",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/124913-apartamento-en-venta-urb-miranda-g-04143054662",
-      "precio_texto": "USD 280.000",
-      "habitaciones": 3,
-      "banos": 3,
-      "metros_cuadrados": 322,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
       "titulo": "local alquiler las mercedes tlf 04242129768 rolando rodriguez",
       "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/34070-local-alquiler-las-mercedes-tlf-04242129768-rolando-rodriguez",
       "precio_texto": "USD 16.000",
@@ -513,39 +238,6 @@
       "ubicacion": "Baruta, Miranda"
     },
     {
-      "titulo": "Estupendo Apartamento Ph En Urbanización Miranda, Amplia Terraza Con Hermosa Vista Panorámica 27-302...",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/124428-estupendo-apartamento-ph-en-urbanizacion-miranda-amplia-terraza-con-hermosa-vista-panoramica-27-3023",
-      "precio_texto": "USD 270.000",
-      "habitaciones": 3,
-      "banos": 3,
-      "metros_cuadrados": 322,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
-      "titulo": "Bellísimo y Cómodo Apartamento Dúplex en Venta Loma Mágica, Carrizal, Altos Mirandinos",
-      "enlace": "https://bienesonline.ai/es/venezuela/carrizal/propiedad/25156-bellisimo-y-comodo-apartamento-duplex-en-venta-loma-magica-carrizal-altos-mirandinos",
-      "precio_texto": "USD 43.000",
-      "habitaciones": 3,
-      "banos": 3,
-      "metros_cuadrados": 131,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Carrizal, Miranda"
-    },
-    {
-      "titulo": "Venta de Apartamento en Miravila MLS #26-1560 Mirian Navarro +58 414 924 0379",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/126913-venta-de-apartamento-en-miravila-mls-26-1560-mirian-navarro-58-414-924-0379",
-      "precio_texto": "USD 60.000",
-      "habitaciones": 2,
-      "banos": 2,
-      "metros_cuadrados": 67,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
       "titulo": "apartamento alquiler campo alegre tlf 04242129768 rolando rodriguez",
       "enlace": "https://bienesonline.ai/es/venezuela/chacao/propiedad/33986-apartamento-alquiler-campo-alegre-tlf-04242129768-rolando-rodriguez",
       "precio_texto": "USD 1.100",
@@ -555,17 +247,6 @@
       "tipo": "Apartamento",
       "operacion_detectada": "alquiler",
       "ubicacion": "Chacao, Miranda"
-    },
-    {
-      "titulo": "Acogedor Apartamento en Venta San Antonio de Los ALtos, Miranda",
-      "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/77105-acogedor-apartamento-en-venta-san-antonio-de-los-altos-miranda",
-      "precio_texto": "USD 65.000",
-      "habitaciones": 4,
-      "banos": 3,
-      "metros_cuadrados": 132,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Acogedor Apartamento en Venta San Antonio de Los ALtos, Miranda"
     },
     {
       "titulo": "Alquiler Mirador de los Campitos. MLS #27-1325 Fabiola Rodriguez",
@@ -620,17 +301,6 @@
       "metros_cuadrados": 68,
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
-      "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
-      "titulo": "Espacioso apartamento en venta Urbanización Miranda 25-13625",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/77240-espacioso-apartamento-en-venta-urbanizacion-miranda-25-13625",
-      "precio_texto": "USD 280.000",
-      "habitaciones": 3,
-      "banos": 5,
-      "metros_cuadrados": 251,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
       "ubicacion": "Caracas, Distrito Capital"
     },
     {
@@ -700,28 +370,6 @@
       "ubicacion": "Baruta, Miranda"
     },
     {
-      "titulo": "edificio en venta las mercedes tlf  04242129768 rolando rodriguez codg 27-5245",
-      "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/129770-edificio-en-venta-las-mercedes-tlf-04242129768-rolando-rodriguez-codg-27-5245",
-      "precio_texto": "USD 1.400",
-      "habitaciones": 2,
-      "banos": 2,
-      "metros_cuadrados": 100,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
-      "titulo": "apartamento venta las mercedes  rolando rodriguez tlf 04242129768",
-      "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/33846-apartamento-venta-las-mercedes-rolando-rodriguez-tlf-04242129768",
-      "precio_texto": "USD 490.000",
-      "habitaciones": 2,
-      "banos": 3,
-      "metros_cuadrados": 104,
-      "tipo": "Apartamento",
-      "operacion_detectada": "venta",
-      "ubicacion": "Baruta, Miranda"
-    },
-    {
       "titulo": "apartamento en alquiler en campo alegre tlf 04242129768 rolando rodriguez codg 27-4110",
       "enlace": "https://bienesonline.ai/es/venezuela/chacao/propiedad/127440-apartamento-en-alquiler-en-campo-alegre-tlf-04242129768-rolando-rodriguez-codg-27-4110",
       "precio_texto": "USD 2.500",
@@ -742,17 +390,6 @@
       "tipo": "Apartamento",
       "operacion_detectada": "ALQUILER",
       "ubicacion": "Guarenas, Miranda"
-    },
-    {
-      "titulo": "apartamento venta los naranjos de las mercedes  rolando rodriguez tlf 04242129768",
-      "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/33939-apartamento-venta-los-naranjos-de-las-mercedes-rolando-rodriguez-tlf-04242129768",
-      "precio_texto": "USD 150.000",
-      "habitaciones": 1,
-      "banos": 2,
-      "metros_cuadrados": 57,
-      "tipo": "Apartamento",
-      "operacion_detectada": "venta",
-      "ubicacion": "Baruta, Miranda"
     },
     {
       "titulo": "Alquiler de Apartamento en Colinas de la Tahona 27-1331 Asdrubal Medina",
@@ -777,17 +414,6 @@
       "ubicacion": "Guatire, Miranda"
     },
     {
-      "titulo": "Bello y Amplio apartamento Dúplex En Venta Rosalito San Antonio de Los Altos, Miranda",
-      "enlace": "https://bienesonline.ai/es/venezuela/san-antonio-de-los-altos/propiedad/25158-bello-y-amplio-apartamento-duplex-en-venta-rosalito-san-antonio-de-los-altos-miranda",
-      "precio_texto": "USD 50.000",
-      "habitaciones": 3,
-      "banos": 3,
-      "metros_cuadrados": 131,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Dúplex En Venta Rosalito San Antonio de Los Altos, Miranda"
-    },
-    {
       "titulo": "local en alquiler guarenas tlf  04242129768 rolando rodriguez codg 27-945",
       "enlace": "https://bienesonline.ai/es/venezuela/guarenas/propiedad/119609-local-en-alquiler-guarenas-tlf-04242129768-rolando-rodriguez-codg-27-945",
       "precio_texto": "USD 4.500",
@@ -808,28 +434,6 @@
       "tipo": "Local",
       "operacion_detectada": "Alquiler",
       "ubicacion": "San Antonio de Los Altos, Miranda"
-    },
-    {
-      "titulo": "APARTAMENTO VENTA GUATIRE MIRANDA API 6458",
-      "enlace": "https://bienesonline.ai/es/venezuela/guatire/propiedad/54220-apartamento-venta-guatire-miranda-api-6458",
-      "precio_texto": "USD 17.000",
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": null,
-      "tipo": "Apartamento",
-      "operacion_detectada": "VENTA",
-      "ubicacion": "Guatire, Miranda"
-    },
-    {
-      "titulo": "Apartamento en Venta Urb. Miranda G. 04143054662 / 04143247646",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/90401-apartamento-en-venta-urb-miranda-g-04143054662-04143247646",
-      "precio_texto": "USD 165.000",
-      "habitaciones": 3,
-      "banos": 3,
-      "metros_cuadrados": 154,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Caracas, Distrito Capital"
     },
     {
       "titulo": "Apartamento en Alquiler Mirador de los Campitos I G. 04143054662",
@@ -865,28 +469,6 @@
       "ubicacion": "Sucre, Miranda"
     },
     {
-      "titulo": "Apto en venta urb Alto Grande cod 26-21144  María Cárdenas Cel 0412-5812012",
-      "enlace": "https://bienesonline.ai/es/venezuela/guatire/propiedad/123392-apto-en-venta-urb-alto-grande-cod-26-21144-maria-cardenas-cel-0412-5812012",
-      "precio_texto": "USD 60.000",
-      "habitaciones": 3,
-      "banos": 2,
-      "metros_cuadrados": 86,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Guatire, Miranda"
-    },
-    {
-      "titulo": "Espectacular apartamento en Miranda, Caracas Venezuela. FLEX 26-21457, Mirian Navarro Telefono 04147...",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/90165-espectacular-apartamento-en-miranda-caracas-venezuela-flex-26-21457-mirian-navarro-telefono-04147863616",
-      "precio_texto": "USD 165.000",
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": null,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
       "titulo": "Local en Guatire EN ALQUILER",
       "enlace": "https://bienesonline.ai/es/venezuela/guatire/propiedad/30398-local-en-guatire-en-alquiler",
       "precio_texto": "USD 350",
@@ -907,28 +489,6 @@
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
-      "titulo": "apartamento en venta en manzanares tlf  04242129768 rolando rodriguez codg 27-2290",
-      "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/129858-apartamento-en-venta-en-manzanares-tlf-04242129768-rolando-rodriguez-codg-27-2290",
-      "precio_texto": "USD 175.000",
-      "habitaciones": 2,
-      "banos": 3,
-      "metros_cuadrados": 115,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Baruta, Miranda"
-    },
-    {
-      "titulo": "apartamento venta manzanares  rolando rodriguez tlf 04242129768",
-      "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/33606-apartamento-venta-manzanares-rolando-rodriguez-tlf-04242129768",
-      "precio_texto": "USD 92.000",
-      "habitaciones": 3,
-      "banos": 2,
-      "metros_cuadrados": 96,
-      "tipo": "Apartamento",
-      "operacion_detectada": "venta",
-      "ubicacion": "Baruta, Miranda"
     },
     {
       "titulo": "casa en alquiler prados del este tlf  04242129768 rolando rodriguez codg 27-4772",
@@ -953,17 +513,6 @@
       "ubicacion": "Caracas, Distrito Capital"
     },
     {
-      "titulo": "apartamento en venta nueva casarapa conj alambique tl f 04242129768 rolando rodriguez codg 26-17213",
-      "enlace": "https://bienesonline.ai/es/venezuela/guarenas/propiedad/117587-apartamento-en-venta-nueva-casarapa-conj-alambique-tl-f-04242129768-rolando-rodriguez-codg-26-17213",
-      "precio_texto": "USD 37.500",
-      "habitaciones": 3,
-      "banos": 2,
-      "metros_cuadrados": 74,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Guarenas, Miranda"
-    },
-    {
       "titulo": "oficina alquiler las mercedes rolando rodriguez tlf 04242129768",
       "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/33999-oficina-alquiler-las-mercedes-rolando-rodriguez-tlf-04242129768",
       "precio_texto": "USD 1.500",
@@ -975,28 +524,6 @@
       "ubicacion": "Baruta, Miranda"
     },
     {
-      "titulo": "casa en venta en los naranjos del cafetal   tlf 04242129768 rolando rodriguez",
-      "enlace": "https://bienesonline.ai/es/venezuela/el-hatillo/propiedad/33693-casa-en-venta-en-los-naranjos-del-cafetal-tlf-04242129768-rolando-rodriguez",
-      "precio_texto": "USD 550.000",
-      "habitaciones": 4,
-      "banos": 6,
-      "metros_cuadrados": 399,
-      "tipo": "Casa",
-      "operacion_detectada": "Venta",
-      "ubicacion": "El Hatillo, Miranda"
-    },
-    {
-      "titulo": "casa en venta en nueva casarapa tlf 04242129768 rolando rodriguez",
-      "enlace": "https://bienesonline.ai/es/venezuela/guarenas/propiedad/79511-casa-en-venta-en-nueva-casarapa-tlf-04242129768-rolando-rodriguez",
-      "precio_texto": "USD 55.000",
-      "habitaciones": 3,
-      "banos": 3,
-      "metros_cuadrados": 109,
-      "tipo": "Casa",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Guarenas, Miranda"
-    },
-    {
       "titulo": "Alquiler de Apartamento La Alameda MLS #26-21143 Mirian Navarro +58 414 924 0379",
       "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/90042-alquiler-de-apartamento-la-alameda-mls-26-21143-mirian-navarro-58-414-924-0379",
       "precio_texto": "USD 2.300",
@@ -1005,28 +532,6 @@
       "metros_cuadrados": 186,
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
-      "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
-      "titulo": "APARTAMENTO EN VENTA EN PASO REAL GUARENAS MIRANDA API 6522 - HYPATÍA GALLARDO",
-      "enlace": "https://bienesonline.ai/es/venezuela/guarenas/propiedad/56146-apartamento-en-venta-en-paso-real-guarenas-miranda-api-6522-hypatia-gallardo",
-      "precio_texto": "USD 19.000",
-      "habitaciones": 3,
-      "banos": 2,
-      "metros_cuadrados": 74,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Guarenas, Miranda"
-    },
-    {
-      "titulo": "Espacioso Apartamento En Venta Urbanización Miranda Caracas, Hermosa Vista Panorámica 27-3950",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/126671-espacioso-apartamento-en-venta-urbanizacion-miranda-caracas-hermosa-vista-panoramica-27-3950",
-      "precio_texto": "USD 160.000",
-      "habitaciones": 3,
-      "banos": 2,
-      "metros_cuadrados": 150,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
       "ubicacion": "Caracas, Distrito Capital"
     },
     {
@@ -1065,34 +570,12 @@
     {
       "titulo": "Apartamento en Aquiler  Mirador de los Campitos I G. 04143054662",
       "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/120932-apartamento-en-aquiler-mirador-de-los-campitos-i-g-04143054662",
-      "precio_texto": "USD 350",
+      "precio_texto": "USD 800",
       "habitaciones": 3,
       "banos": 2,
-      "metros_cuadrados": 94,
-      "tipo": "Local",
+      "metros_cuadrados": 142,
+      "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
-      "ubicacion": "Guatire, Miranda"
-    },
-    {
-      "titulo": "apartamento venta los naranjos de las mercedes   rolando rodriguez tlf 04242129768",
-      "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/33889-apartamento-venta-los-naranjos-de-las-mercedes-rolando-rodriguez-tlf-04242129768",
-      "precio_texto": "USD 500.000",
-      "habitaciones": 3,
-      "banos": 4,
-      "metros_cuadrados": 169,
-      "tipo": "Apartamento",
-      "operacion_detectada": "venta",
-      "ubicacion": "Baruta, Miranda"
-    },
-    {
-      "titulo": "Apartamento en Venta en Mirador de Los Campitos",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/117978-apartamento-en-venta-en-mirador-de-los-campitos",
-      "precio_texto": "USD 767.000",
-      "habitaciones": 3,
-      "banos": 4,
-      "metros_cuadrados": 264,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
       "ubicacion": "Caracas, Distrito Capital"
     },
     {
@@ -1105,6 +588,523 @@
       "tipo": "Apartamento",
       "operacion_detectada": "alquiler",
       "ubicacion": "Chacao, Miranda"
+    },
+    {
+      "titulo": "EN ALQUILER CASA EN EL MORRO AGUIAVILLAS",
+      "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/68682-en-alquiler-casa-en-el-morro-aguiavillas",
+      "precio_texto": "USD 1.400",
+      "habitaciones": 3,
+      "banos": 3,
+      "metros_cuadrados": 250,
+      "tipo": "Casa",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Lecheria, Anzoátegui"
+    },
+    {
+      "titulo": "apartamento en alquiler lomas de las mercedes tlf  04242129768 rolando rodriguez codg 27-5401",
+      "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/129944-apartamento-en-alquiler-lomas-de-las-mercedes-tlf-04242129768-rolando-rodriguez-codg-27-5401",
+      "precio_texto": "USD 2.400",
+      "habitaciones": 2,
+      "banos": 3,
+      "metros_cuadrados": 113,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Baruta, Miranda"
+    },
+    {
+      "titulo": "casa en alquiler alto hatillo tlf 04242129768 rolando rodriguez codg 25-19573",
+      "enlace": "https://bienesonline.ai/es/venezuela/el-hatillo/propiedad/126681-casa-en-alquiler-alto-hatillo-tlf-04242129768-rolando-rodriguez-codg-25-19573",
+      "precio_texto": "USD 15.000",
+      "habitaciones": 4,
+      "banos": 6,
+      "metros_cuadrados": 278,
+      "tipo": "Casa",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "El Hatillo, Miranda"
+    },
+    {
+      "titulo": "Apto en alquiler Urb Terrazas de San Pedro-Guatire cod 27-3750 Maria Cárdenas cel 0412-5812012",
+      "enlace": "https://bienesonline.ai/es/venezuela/guatire/propiedad/130620-apto-en-alquiler-urb-terrazas-de-san-pedro-guatire-cod-27-3750-maria-cardenas-cel-0412-5812012",
+      "precio_texto": "USD 500",
+      "habitaciones": 3,
+      "banos": 2,
+      "metros_cuadrados": 77,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Guatire, Miranda"
+    },
+    {
+      "titulo": "Apartamento en Alquiler en el Manzanares.  Sandra White +584143140082 Cod. 26-13511",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/33328-apartamento-en-alquiler-en-el-manzanares-sandra-white-584143140082-cod-26-13511",
+      "precio_texto": "USD 850",
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 92,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "En Alquiler Apartamento en Las Mercedes Caracas",
+      "enlace": "https://bienesonline.ai/es/venezuela/chacao/propiedad/32698-en-alquiler-apartamento-en-las-mercedes-caracas",
+      "precio_texto": "USD 1.900",
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 104,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Chacao, Miranda"
+    },
+    {
+      "titulo": "Apartamento en Alquiler Mirador de los Campitos I G. 04143054662",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/99431-apartamento-en-alquiler-mirador-de-los-campitos-i-g-04143054662",
+      "precio_texto": "USD 2.000",
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 97,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "Apartamento en Alquiler en Los Naranjos de las Mercedes.  Sandra White 0414-3140082  Cod. 26-12902",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/33541-apartamento-en-alquiler-en-los-naranjos-de-las-mercedes-sandra-white-0414-3140082-cod-26-12902",
+      "precio_texto": "USD 900",
+      "habitaciones": 1,
+      "banos": 2,
+      "metros_cuadrados": 49,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "local alquiler la urbina tlf 04242129768 rolando rodriguez",
+      "enlace": "https://bienesonline.ai/es/venezuela/sucre/propiedad/33678-local-alquiler-la-urbina-tlf-04242129768-rolando-rodriguez",
+      "precio_texto": "USD 2.900",
+      "habitaciones": null,
+      "banos": null,
+      "metros_cuadrados": null,
+      "tipo": "Local",
+      "operacion_detectada": "alquiler",
+      "ubicacion": "Sucre, Miranda"
+    },
+    {
+      "titulo": "local alquiler en Guarenas tlf 04242129768 rolando rodriguez codg 26-10006",
+      "enlace": "https://bienesonline.ai/es/venezuela/guarenas/propiedad/33713-local-alquiler-en-guarenas-tlf-04242129768-rolando-rodriguez-codg-26-10006",
+      "precio_texto": "USD 500",
+      "habitaciones": null,
+      "banos": null,
+      "metros_cuadrados": null,
+      "tipo": "Local",
+      "operacion_detectada": "alquiler",
+      "ubicacion": "Guarenas, Miranda"
+    },
+    {
+      "titulo": "apartamento en alquiler boleita norte tlf 04242129768 rolando rodriguez codg 27-4128",
+      "enlace": "https://bienesonline.ai/es/venezuela/leoncio-martinez/propiedad/127443-apartamento-en-alquiler-boleita-norte-tlf-04242129768-rolando-rodriguez-codg-27-4128",
+      "precio_texto": "USD 1.300",
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 89,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Leoncio Martínez, Miranda"
+    },
+    {
+      "titulo": "casa en alquiler en santa Gertrudis tlf 04242129768 rolando rodriguez codg 27-4365",
+      "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/128224-casa-en-alquiler-en-santa-gertrudis-tlf-04242129768-rolando-rodriguez-codg-27-4365",
+      "precio_texto": "USD 4.000",
+      "habitaciones": 3,
+      "banos": 4,
+      "metros_cuadrados": 250,
+      "tipo": "Casa",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Baruta, Miranda"
+    },
+    {
+      "titulo": "local alquiler los dos caminos tlf 04242129768 rolando rodriguez",
+      "enlace": "https://bienesonline.ai/es/venezuela/sucre/propiedad/33835-local-alquiler-los-dos-caminos-tlf-04242129768-rolando-rodriguez",
+      "precio_texto": "USD 2.500",
+      "habitaciones": null,
+      "banos": null,
+      "metros_cuadrados": null,
+      "tipo": "Local",
+      "operacion_detectada": "alquiler",
+      "ubicacion": "Sucre, Miranda"
+    },
+    {
+      "titulo": "apartamento en alquiler las mesetas de santa rosa de lima tlf  04242129768 rolando rodriguez codg 27...",
+      "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/128995-apartamento-en-alquiler-las-mesetas-de-santa-rosa-de-lima-tlf-04242129768-rolando-rodriguez-codg-27-4799",
+      "precio_texto": "USD 900",
+      "habitaciones": 1,
+      "banos": 2,
+      "metros_cuadrados": 49,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "apartamento alquiler campo alegre tlf 04242129768 rolando Rodríguez",
+      "enlace": "https://bienesonline.ai/es/venezuela/chacao/propiedad/33611-apartamento-alquiler-campo-alegre-tlf-04242129768-rolando-rodriguez",
+      "precio_texto": "USD 1.800",
+      "habitaciones": 1,
+      "banos": 2,
+      "metros_cuadrados": 81,
+      "tipo": "Apartamento",
+      "operacion_detectada": "alquiler",
+      "ubicacion": "Chacao, Miranda"
+    },
+    {
+      "titulo": "oficina alquiler las mercedes rolando rodriguez tlf 04242129768",
+      "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/33985-oficina-alquiler-las-mercedes-rolando-rodriguez-tlf-04242129768",
+      "precio_texto": "USD 2.500",
+      "habitaciones": null,
+      "banos": null,
+      "metros_cuadrados": null,
+      "tipo": "Oficina",
+      "operacion_detectada": "alquiler",
+      "ubicacion": "Baruta, Miranda"
+    },
+    {
+      "titulo": "en alquiler diario res mochima",
+      "enlace": "https://bienesonline.ai/es/venezuela/barcelona/propiedad/56893-en-alquiler-diario-res-mochima",
+      "precio_texto": "USD 100",
+      "habitaciones": null,
+      "banos": null,
+      "metros_cuadrados": null,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Barcelona, Anzoátegui"
+    },
+    {
+      "titulo": "Apartamento en Alquiler en Manzanares.  Sandra White 0414-3140082  Cod. 26-17777",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/63789-apartamento-en-alquiler-en-manzanares-sandra-white-0414-3140082-cod-26-17777",
+      "precio_texto": "USD 850",
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 89,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "oficina en alquiler en las mercedes tlf  04242129768 rolando rodriguez  codg 27-4836",
+      "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/129056-oficina-en-alquiler-en-las-mercedes-tlf-04242129768-rolando-rodriguez-codg-27-4836",
+      "precio_texto": "USD 1.300",
+      "habitaciones": null,
+      "banos": null,
+      "metros_cuadrados": null,
+      "tipo": "Oficina",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Baruta, Miranda"
+    },
+    {
+      "titulo": "apartamento en alquiler lomas de chuao tlf 04242129768 rolando rodriguez codg 27-4704",
+      "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/128946-apartamento-en-alquiler-lomas-de-chuao-tlf-04242129768-rolando-rodriguez-codg-27-4704",
+      "precio_texto": "USD 1.000",
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 96,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Baruta, Miranda"
+    },
+    {
+      "titulo": "Apartamento en Alquiler en Manzanares.  Sandra White 0414-3140082  Cod. 26-17209",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/63788-apartamento-en-alquiler-en-manzanares-sandra-white-0414-3140082-cod-26-17209",
+      "precio_texto": "USD 800",
+      "habitaciones": 3,
+      "banos": 3,
+      "metros_cuadrados": 125,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "apartamento alquiler la castellana tlf 04242129768 rolando rodriguez",
+      "enlace": "https://bienesonline.ai/es/venezuela/chacao/propiedad/34142-apartamento-alquiler-la-castellana-tlf-04242129768-rolando-rodriguez",
+      "precio_texto": "USD 2.500",
+      "habitaciones": 1,
+      "banos": 2,
+      "metros_cuadrados": 77,
+      "tipo": "Apartamento",
+      "operacion_detectada": "alquiler",
+      "ubicacion": "Chacao, Miranda"
+    },
+    {
+      "titulo": "Apartamento en Alquiler en Manzanares.  Sandra White 0414-3140082  Cod. 26-15621",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/63785-apartamento-en-alquiler-en-manzanares-sandra-white-0414-3140082-cod-26-15621",
+      "precio_texto": "USD 700",
+      "habitaciones": 3,
+      "banos": 2,
+      "metros_cuadrados": 96,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "apartamento en alquiler campo alegre tlf  04242129768 rolando rodriguez codg 27-5646",
+      "enlace": "https://bienesonline.ai/es/venezuela/chacao/propiedad/130519-apartamento-en-alquiler-campo-alegre-tlf-04242129768-rolando-rodriguez-codg-27-5646",
+      "precio_texto": "USD 2.100",
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 87,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Chacao, Miranda"
+    },
+    {
+      "titulo": "apartamento en alquiler la castellana tlf  04242129768 rolando rodriguez codg 27-5223",
+      "enlace": "https://bienesonline.ai/es/venezuela/chacao/propiedad/129771-apartamento-en-alquiler-la-castellana-tlf-04242129768-rolando-rodriguez-codg-27-5223",
+      "precio_texto": "USD 3.700",
+      "habitaciones": 3,
+      "banos": 3,
+      "metros_cuadrados": 207,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Chacao, Miranda"
+    },
+    {
+      "titulo": "apartamento en alquiler los naranjos de las mercedes tlf 04242129768 rolando rodriguez codg 27-1832",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/121812-apartamento-en-alquiler-los-naranjos-de-las-mercedes-tlf-04242129768-rolando-rodriguez-codg-27-1832",
+      "precio_texto": "USD 2.200",
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 86,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "Apartamento en Alquiler . Guarenas-Guatire urb Terrazas de San Pedro cel 0412-5812012 Maria Cárdenas...",
+      "enlace": "https://bienesonline.ai/es/venezuela/guarenas/propiedad/128339-apartamento-en-alquiler-guarenas-guatire-urb-terrazas-de-san-pedro-cel-0412-5812012-maria-cardenas-cod-27-3750",
+      "precio_texto": "USD 500",
+      "habitaciones": 3,
+      "banos": 2,
+      "metros_cuadrados": 77,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Guarenas, Miranda"
+    },
+    {
+      "titulo": "Los Geranios, Apartamento en Alquiler",
+      "enlace": "https://bienesonline.ai/es/venezuela/el-hatillo/propiedad/56423-los-geranios-apartamento-en-alquiler",
+      "precio_texto": "USD 998",
+      "habitaciones": 3,
+      "banos": 2,
+      "metros_cuadrados": 120,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "El Hatillo, Miranda"
+    },
+    {
+      "titulo": "Apartamento en Alquiler en Los Naranjos de las Mercedes.  Sandra White 0414-3140082 Cod. 26-10814",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/33635-apartamento-en-alquiler-en-los-naranjos-de-las-mercedes-sandra-white-0414-3140082-cod-26-10814",
+      "precio_texto": "USD 1.800",
+      "habitaciones": 2,
+      "banos": 3,
+      "metros_cuadrados": 61,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "apartamento en alquiler nueva casarapa conj el tablon tlf 04242129768 rolando rodriguez",
+      "enlace": "https://bienesonline.ai/es/venezuela/guarenas/propiedad/67172-apartamento-en-alquiler-nueva-casarapa-conj-el-tablon-tlf-04242129768-rolando-rodriguez",
+      "precio_texto": "USD 400",
+      "habitaciones": 3,
+      "banos": 2,
+      "metros_cuadrados": 74,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Guarenas, Miranda"
+    },
+    {
+      "titulo": "En Alquiler Temporal Apartamento CR Mochima Sector Colina de Neveri",
+      "enlace": "https://bienesonline.ai/es/venezuela/barcelona/propiedad/56970-en-alquiler-temporal-apartamento-cr-mochima-sector-colina-de-neveri",
+      "precio_texto": "USD 100",
+      "habitaciones": 3,
+      "banos": 2,
+      "metros_cuadrados": 112,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Barcelona, Anzoátegui"
+    },
+    {
+      "titulo": "oficina en alquiler las mercedes tlf 04242129768 rolando rodríguez",
+      "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/33824-oficina-en-alquiler-las-mercedes-tlf-04242129768-rolando-rodriguez",
+      "precio_texto": "USD 2.600",
+      "habitaciones": null,
+      "banos": null,
+      "metros_cuadrados": null,
+      "tipo": "Oficina",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Baruta, Miranda"
+    },
+    {
+      "titulo": "apartamento en alquiler colinas de valle arriba tlf 04242129768 rolando rodriguez",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/78380-apartamento-en-alquiler-colinas-de-valle-arriba-tlf-04242129768-rolando-rodriguez",
+      "precio_texto": "USD 3.600",
+      "habitaciones": 3,
+      "banos": 5,
+      "metros_cuadrados": 214,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "Local en Alquiler en Guatire. Sandra White 0414-3140082 Cod. 26-15843",
+      "enlace": "https://bienesonline.ai/es/venezuela/guatire/propiedad/33196-local-en-alquiler-en-guatire-sandra-white-0414-3140082-cod-26-15843",
+      "precio_texto": "USD 1.200",
+      "habitaciones": null,
+      "banos": null,
+      "metros_cuadrados": null,
+      "tipo": "Local",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Guatire, Miranda"
+    },
+    {
+      "titulo": "Apartamento en Alquiler en Las Mercedes. Sandra White 0414-3140082  Cod. 26-17334",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/41235-apartamento-en-alquiler-en-las-mercedes-sandra-white-0414-3140082-cod-26-17334",
+      "precio_texto": "USD 1.600",
+      "habitaciones": 3,
+      "banos": 4,
+      "metros_cuadrados": 193,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "CASA EN ALQUILER CONJUNTO RESIDENCIAL PUERTO MORRO",
+      "enlace": "https://bienesonline.ai/es/venezuela/puerto-la-cruz/propiedad/58351-casa-en-alquiler-conjunto-residencial-puerto-morro",
+      "precio_texto": "USD 550",
+      "habitaciones": 4,
+      "banos": 3,
+      "metros_cuadrados": 210,
+      "tipo": "Casa",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Puerto la Cruz, Anzoátegui"
+    },
+    {
+      "titulo": "galpón en alquiler en mariches tlf  04242129768 rolando rodríguez  codg 26-21264",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/91344-galpon-en-alquiler-en-mariches-tlf-04242129768-rolando-rodriguez-codg-26-21264",
+      "precio_texto": "USD 3.500",
+      "habitaciones": null,
+      "banos": null,
+      "metros_cuadrados": null,
+      "tipo": "",
+      "operacion_detectada": "",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "26-5587 Apartamento en Alquiler Las Lomas Guatire",
+      "enlace": "https://bienesonline.ai/es/venezuela/guatire/propiedad/120655-26-5587-apartamento-en-alquiler-las-lomas-guatire",
+      "precio_texto": "USD 300",
+      "habitaciones": 2,
+      "banos": 1,
+      "metros_cuadrados": 45,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Guatire, Miranda"
+    },
+    {
+      "titulo": "apartamento en alquiler los narnjos de las mercedes tlf 04242129768 rolando rodriguez",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/66031-apartamento-en-alquiler-los-narnjos-de-las-mercedes-tlf-04242129768-rolando-rodriguez",
+      "precio_texto": "USD 1.150",
+      "habitaciones": 1,
+      "banos": 2,
+      "metros_cuadrados": 67,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "Alquiler de Hermosa Casa en Los Naranjos del Cafetal MLS #25-20544 Mirian Navarro +58 414 924 0379",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/118787-alquiler-de-hermosa-casa-en-los-naranjos-del-cafetal-mls-25-20544-mirian-navarro-58-414-924-0379",
+      "precio_texto": "USD 5.000",
+      "habitaciones": 4,
+      "banos": 6,
+      "metros_cuadrados": 600,
+      "tipo": "Casa",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "Apartamento en Alquiler en Escampadero.  Sandra White 0414-3140082  Cod. 26-17535",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/59001-apartamento-en-alquiler-en-escampadero-sandra-white-0414-3140082-cod-26-17535",
+      "precio_texto": "USD 1.100",
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 118,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "oficina alquiler bello monte  rolando rodriguez tlf 04242129768",
+      "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/33686-oficina-alquiler-bello-monte-rolando-rodriguez-tlf-04242129768",
+      "precio_texto": "USD 1.200",
+      "habitaciones": null,
+      "banos": null,
+      "metros_cuadrados": null,
+      "tipo": "Oficina",
+      "operacion_detectada": "alquiler",
+      "ubicacion": "Baruta, Miranda"
+    },
+    {
+      "titulo": "Apartamento en Alquiler en Colinas de Bello Monte.  Sandra White 0414-3140082  Cod. 2617361",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/36058-apartamento-en-alquiler-en-colinas-de-bello-monte-sandra-white-0414-3140082-cod-2617361",
+      "precio_texto": "USD 600",
+      "habitaciones": 1,
+      "banos": 1,
+      "metros_cuadrados": 59,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "Se alquila Casa en san Diego. Solo clientes",
+      "enlace": "https://bienesonline.ai/es/venezuela/san-diego/propiedad/61610-se-alquila-casa-en-san-diego-solo-clientes",
+      "precio_texto": "USD 430",
+      "habitaciones": 3,
+      "banos": 2,
+      "metros_cuadrados": 240,
+      "tipo": "Casa",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "San Diego, Carabobo"
+    },
+    {
+      "titulo": "apartamento alquiler el rosal  tlf 04242129768 rolando Rodríguez",
+      "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/33646-apartamento-alquiler-el-rosal-tlf-04242129768-rolando-rodriguez",
+      "precio_texto": "USD 1.300",
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 79,
+      "tipo": "Apartamento",
+      "operacion_detectada": "alquiler",
+      "ubicacion": "Baruta, Miranda"
+    },
+    {
+      "titulo": "En Alquiler Temporal Apartamento CR Mochima",
+      "enlace": "https://bienesonline.ai/es/venezuela/barcelona/propiedad/57014-en-alquiler-temporal-apartamento-cr-mochima",
+      "precio_texto": "USD 100",
+      "habitaciones": 3,
+      "banos": 2,
+      "metros_cuadrados": 112,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Barcelona, Anzoátegui"
+    },
+    {
+      "titulo": "iris Hernandez Alquila Apartamento 85m2. El Bosque. Valencia",
+      "enlace": "https://bienesonline.ai/es/venezuela/valencia/propiedad/66509-iris-hernandez-alquila-apartamento-85m2-el-bosque-valencia",
+      "precio_texto": "USD 330",
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 85,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Valencia, Carabobo"
     }
   ],
   "diagnostico": {
