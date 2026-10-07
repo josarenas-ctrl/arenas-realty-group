@@ -1,0 +1,9 @@
+{
+  "titulo": "Prueba post-migraci�n",
+  "operacion": "venta",
+  "tipo": "Casa",
+  "precio": "150000",
+  "ubicacion": "Caracas, Venezuela",
+  "descripcion": "Prueba despu�s de migrar la tabla batches",
+  "publicada": false
+}
