@@ -1,9 +1,10 @@
 name = "arenas-captacion"
 main = "worker.js"
 compatibility_date = "2024-12-01"
+compatibility_flags = ["nodejs_compat"]
 
-[env]
-vars = { ADMIN_EMAILS = "arenasrealtygroup1@gmail.com,josarenas@gmail.com" }
+[vars]
+ADMIN_EMAILS = "arenasrealtygroup1@gmail.com,josarenas@gmail.com"
 
 [[d1_databases]]
 binding = "DB"

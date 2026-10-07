@@ -1,0 +1,482 @@
+[
+  {
+    "titulo": "Casa 3 Ambientes",
+    "precio_texto": "US$\n300",
+    "precio": 300,
+    "enlace": "https://apartamento.mercadolibre.com.ve/MLV-1021199046-casa-3-ambientes-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=1&type=item&tracking_id=1149068b-980c-4c3e-af29-dc259fd82948&sid=search",
+    "ubicacion": "ALTO GRANDE 04143184932, San Pedro, Guatire, Miranda",
+    "tipo": "casa",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_989394-MLV44628663312_012021-E.webp",
+    "portal": "mercadolibre",
+    "scrapeado_en": "2026-10-04T20:59:08.554875",
+    "contacto": {
+      "telefono": "584143184932",
+      "email": "",
+      "exito": true
+    }
+  },
+  {
+    "titulo": "Alquiler Villa Plaza Al Lado De Nueva Casarapa",
+    "precio_texto": "US$\n250",
+    "precio": 250,
+    "enlace": "https://apartamento.mercadolibre.com.ve/MLV-1021263534-alquiler-villa-plaza-al-lado-de-nueva-casarapa-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=2&type=item&tracking_id=1149068b-980c-4c3e-af29-dc259fd82948&sid=search",
+    "ubicacion": "Guarenas, Nueva Casarapa, Miranda",
+    "tipo": "casa",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_774428-MLV109888901876_042026-E.webp",
+    "portal": "mercadolibre",
+    "scrapeado_en": "2026-10-04T20:59:08.604437",
+    "contacto": {
+      "telefono": "",
+      "email": "",
+      "exito": false
+    }
+  },
+  {
+    "titulo": "Amplio Local Comercial En Alquiler En Av Miranda Maracay 24-13346 Irrr",
+    "precio_texto": "US$\n220",
+    "precio": 220,
+    "enlace": "https://inmueble.mercadolibre.com.ve/MLV-961138582-amplio-local-comercial-en-alquiler-en-av-miranda-maracay-24-13346-irrr-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=3&type=item&tracking_id=1149068b-980c-4c3e-af29-dc259fd82948&sid=search",
+    "ubicacion": "Maracay, Aragua, Venezuela, Otros, Girardot (Maracay), Aragua",
+    "tipo": "local",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_979048-MLV73805341651_012024-E.webp",
+    "portal": "mercadolibre",
+    "scrapeado_en": "2026-10-04T20:59:08.647411",
+    "contacto": {
+      "telefono": "",
+      "email": "",
+      "exito": false
+    }
+  },
+  {
+    "titulo": "Alquiler De Amplio Local Comercial Amoblado En Las Minas De San Antonio / Gc",
+    "precio_texto": "US$\n2.700",
+    "precio": 2700,
+    "enlace": "https://inmueble.mercadolibre.com.ve/MLV-1015310874-alquiler-de-amplio-local-comercial-amoblado-en-las-minas-de-san-antonio-gc-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=4&type=item&tracking_id=1149068b-980c-4c3e-af29-dc259fd82948&sid=search",
+    "ubicacion": "Carr. Panamericana, San Antonio De Los Altos, Las Minas, San Antonio, Miranda",
+    "tipo": "local",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_793310-MLV113357349511_062026-E.webp",
+    "portal": "mercadolibre",
+    "scrapeado_en": "2026-10-04T20:59:08.690383",
+    "contacto": {
+      "telefono": "",
+      "email": "",
+      "exito": false
+    }
+  },
+  {
+    "titulo": "Apartamento En Alquiler Los Teques Zr",
+    "precio_texto": "US$\n300",
+    "precio": 300,
+    "enlace": "https://apartamento.mercadolibre.com.ve/MLV-1020679796-apartamento-en-alquiler-los-teques-zr-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=5&type=item&tracking_id=1149068b-980c-4c3e-af29-dc259fd82948&sid=search",
+    "ubicacion": "Los Teques, El Barbecho, Miranda",
+    "tipo": "apartamento",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_863422-MLV113571458340_072026-E.webp",
+    "portal": "mercadolibre",
+    "scrapeado_en": "2026-10-04T20:59:08.730358",
+    "contacto": {
+      "telefono": "",
+      "email": "",
+      "exito": false
+    }
+  },
+  {
+    "titulo": "En Alquiler Local Comercial, Pie De Calle, Av. Miranda, Maracay, Estado Aragua, 26-19079 Gf",
+    "precio_texto": "US$\n800",
+    "precio": 800,
+    "enlace": "https://inmueble.mercadolibre.com.ve/MLV-1011069590-en-alquiler-local-comercial-pie-de-calle-av-miranda-maracay-estado-aragua-26-19079-gf-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=6&type=item&tracking_id=1149068b-980c-4c3e-af29-dc259fd82948&sid=search",
+    "ubicacion": "Maracay, Otros, Girardot (Maracay), Aragua",
+    "tipo": "local",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_872987-MLV111714573055_052026-E.webp",
+    "portal": "mercadolibre",
+    "scrapeado_en": "2026-10-04T20:59:08.770334",
+    "contacto": {
+      "telefono": "",
+      "email": "",
+      "exito": false
+    }
+  },
+  {
+    "titulo": "Apartamento En Alquiler, Urb. Miranda",
+    "precio_texto": "US$\n950",
+    "precio": 950,
+    "enlace": "https://apartamento.mercadolibre.com.ve/MLV-1025934046-apartamento-en-alquiler-urb-miranda-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=7&type=item&tracking_id=1149068b-980c-4c3e-af29-dc259fd82948&sid=search",
+    "ubicacion": "F6PF+P5P, Caracas 1073, Capital District, Venezuela, Urb. Miranda, Caracas - Sucre (norte), Distrito Capital",
+    "tipo": "apartamento",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_606342-MLV117216360187_092026-E.webp",
+    "portal": "mercadolibre",
+    "scrapeado_en": "2026-10-04T20:59:08.816305",
+    "contacto": {
+      "telefono": "",
+      "email": "",
+      "exito": false
+    }
+  },
+  {
+    "titulo": "Ana Torres. Locales Comerciales En Alquiler Y Venta 26-16835 En Charallave",
+    "precio_texto": "US$\n700",
+    "precio": 700,
+    "enlace": "https://inmueble.mercadolibre.com.ve/MLV-780654029-ana-torres-locales-comerciales-en-alquiler-y-venta-26-16835-en-charallave-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=8&type=item&tracking_id=1149068b-980c-4c3e-af29-dc259fd82948&sid=search",
+    "ubicacion": "Charallave, Charallave, Valles Del Tuy, Miranda",
+    "tipo": "local",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_671957-MLV118010797421_092026-E.webp",
+    "portal": "mercadolibre",
+    "scrapeado_en": "2026-10-04T20:59:08.856280",
+    "contacto": {
+      "telefono": "",
+      "email": "",
+      "exito": false
+    }
+  },
+  {
+    "titulo": "Cubiculo Alquiler Miranda Los Teques Inmobiliaria Day 7378",
+    "precio_texto": "US$\n200",
+    "precio": 200,
+    "enlace": "https://inmueble.mercadolibre.com.ve/MLV-918579042-cubiculo-alquiler-miranda-los-teques-inmobiliaria-day-7378-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=9&type=item&tracking_id=1149068b-980c-4c3e-af29-dc259fd82948&sid=search",
+    "ubicacion": "Los Teques, Miranda",
+    "tipo": "desconocido",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_665925-MLV94366337549_102025-E.webp",
+    "portal": "mercadolibre",
+    "scrapeado_en": "2026-10-04T20:59:08.896256",
+    "contacto": {
+      "telefono": "",
+      "email": "",
+      "exito": false
+    }
+  },
+  {
+    "titulo": "Ana Torres. Locales Comerciales En Alquiler Y Venta 26-8051 En Charallave",
+    "precio_texto": "US$\n500",
+    "precio": 500,
+    "enlace": "https://inmueble.mercadolibre.com.ve/MLV-780654095-ana-torres-locales-comerciales-en-alquiler-y-venta-26-8051-en-charallave-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=10&type=item&tracking_id=1149068b-980c-4c3e-af29-dc259fd82948&sid=search",
+    "ubicacion": "Charallave, Charallave, Valles Del Tuy, Miranda",
+    "tipo": "local",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_716241-MLV118011663525_092026-E.webp",
+    "portal": "mercadolibre",
+    "scrapeado_en": "2026-10-04T20:59:08.936231",
+    "contacto": {
+      "telefono": "",
+      "email": "",
+      "exito": false
+    }
+  },
+  {
+    "titulo": "Espectacular Local A Pie De Calle En Alquiler, Av. Francisco De Miranda, El Rosal, Chacao",
+    "precio_texto": "US$\n7.500",
+    "precio": 7500,
+    "enlace": "https://inmueble.mercadolibre.com.ve/MLV-1009957300-espectacular-local-a-pie-de-calle-en-alquiler-av-francisco-de-miranda-el-rosal-chacao-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=11&type=item&tracking_id=1149068b-980c-4c3e-af29-dc259fd82948&sid=search",
+    "ubicacion": "Torre Europa, Avenida Francisco De Miranda, Caracas 1060, Miranda, Venezuela, Chacao, Caracas - Chacao (sur), Distrito Capital",
+    "tipo": "local",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_705609-MLV116556900109_082026-E.webp",
+    "portal": "mercadolibre",
+    "scrapeado_en": "2026-10-04T20:59:08.979204",
+    "contacto": {
+      "telefono": "",
+      "email": "",
+      "exito": false
+    }
+  },
+  {
+    "titulo": "Jel Vendo Oficina En Buenaventura Fg 27-4623",
+    "precio_texto": "US$\n48.000",
+    "precio": 48000,
+    "enlace": "https://inmueble.mercadolibre.com.ve/MLV-1028067854-jel-vendo-oficina-en-buenaventura-fg-27-4623-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=12&type=item&tracking_id=1149068b-980c-4c3e-af29-dc259fd82948&sid=search",
+    "ubicacion": "FC8C+PG7 Residencias BuenaVentura Suite, Guatire, Buenaventura, Guatire, Miranda",
+    "tipo": "oficina",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_730976-MLV118342080039_092026-E.webp",
+    "portal": "mercadolibre",
+    "scrapeado_en": "2026-10-04T20:59:09.018712",
+    "contacto": {
+      "telefono": "",
+      "email": "",
+      "exito": false
+    }
+  },
+  {
+    "titulo": "Galpón / Depósito Alquiler Terrinca Mls - 25-16161",
+    "precio_texto": "US$\n8.500",
+    "precio": 8500,
+    "enlace": "https://inmueble.mercadolibre.com.ve/MLV-1022155452-galpon-deposito-alquiler-terrinca-mls-25-16161-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=13&type=item&tracking_id=1149068b-980c-4c3e-af29-dc259fd82948&sid=search",
+    "ubicacion": "Terrinca, Guatire, Terrinca, Guatire, Miranda",
+    "tipo": "galpon",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_686511-MLV115538096157_082026-E.webp",
+    "portal": "mercadolibre",
+    "scrapeado_en": "2026-10-04T20:59:09.059686",
+    "contacto": {
+      "telefono": "",
+      "email": "",
+      "exito": false
+    }
+  },
+  {
+    "titulo": "Alquiler Oficina 108m2 Altamira A Estrenar A Tan Solo Pasos Del Metro En La Av. Fco De Miranda",
+    "precio_texto": "US$\n850",
+    "precio": 850,
+    "enlace": "https://inmueble.mercadolibre.com.ve/MLV-779048523-alquiler-oficina-108m2-altamira-a-estrenar-a-tan-solo-pasos-del-metro-en-la-av-fco-de-miranda-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=14&type=item&tracking_id=1149068b-980c-4c3e-af29-dc259fd82948&sid=search",
+    "ubicacion": "Altamira, Caracas, Altamira, Caracas - Chacao (norte), Distrito Capital",
+    "tipo": "oficina",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_974451-MLV112502407374_062026-E.webp",
+    "portal": "mercadolibre",
+    "scrapeado_en": "2026-10-04T20:59:09.098662",
+    "contacto": {
+      "telefono": "",
+      "email": "",
+      "exito": false
+    }
+  },
+  {
+    "titulo": "Local A Pie De Calle En Alquiler, Plena Av. Francisco De Miranda, Urb. Chacao",
+    "precio_texto": "US$\n4.000",
+    "precio": 4000,
+    "enlace": "https://inmueble.mercadolibre.com.ve/MLV-776160825-local-a-pie-de-calle-en-alquiler-plena-av-francisco-de-miranda-urb-chacao-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=15&type=item&tracking_id=1149068b-980c-4c3e-af29-dc259fd82948&sid=search",
+    "ubicacion": "F4VW+9V4, Caracas 1060, Miranda, Venezuela, Chacao, Caracas - Chacao (sur), Distrito Capital",
+    "tipo": "local",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_661464-MLV115986402415_082026-E.webp",
+    "portal": "mercadolibre",
+    "scrapeado_en": "2026-10-04T20:59:09.139638",
+    "contacto": {
+      "telefono": "",
+      "email": "",
+      "exito": false
+    }
+  },
+  {
+    "titulo": "Local En Alquiler En Avenida Miranda Maracay Aragua 23-30472 Irrr",
+    "precio_texto": "US$\n600",
+    "precio": 600,
+    "enlace": "https://inmueble.mercadolibre.com.ve/MLV-956562522-local-en-alquiler-en-avenida-miranda-maracay-aragua-23-30472-irrr-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=16&type=item&tracking_id=1149068b-980c-4c3e-af29-dc259fd82948&sid=search",
+    "ubicacion": "Maracay, Aragua, Venezuela, Otros, Girardot (Maracay), Aragua",
+    "tipo": "local",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_945581-MLV70846033913_082023-E.webp",
+    "portal": "mercadolibre",
+    "scrapeado_en": "2026-10-04T20:59:09.180261",
+    "contacto": {
+      "telefono": "",
+      "email": "",
+      "exito": false
+    }
+  },
+  {
+    "titulo": "Alquilo Local 125m2 Buenaventura",
+    "precio_texto": "US$\n550",
+    "precio": 550,
+    "enlace": "https://inmueble.mercadolibre.com.ve/MLV-780989721-alquilo-local-125m2-buenaventura-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=17&type=item&tracking_id=1149068b-980c-4c3e-af29-dc259fd82948&sid=search",
+    "ubicacion": "Guatire, Av. Intercomunal, Miranda",
+    "tipo": "local",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_970155-MLV107385740955_022026-E.webp",
+    "portal": "mercadolibre",
+    "scrapeado_en": "2026-10-04T20:59:09.221236",
+    "contacto": {
+      "telefono": "",
+      "email": "",
+      "exito": false
+    }
+  },
+  {
+    "titulo": "Local A Pie De Calle En Alquiler, El Silencio, Cerca Av. Baralt, Plaza Miranda",
+    "precio_texto": "US$\n2.000",
+    "precio": 2000,
+    "enlace": "https://inmueble.mercadolibre.com.ve/MLV-1009970614-local-a-pie-de-calle-en-alquiler-el-silencio-cerca-av-baralt-plaza-miranda-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=18&type=item&tracking_id=1149068b-980c-4c3e-af29-dc259fd82948&sid=search",
+    "ubicacion": "G32H+MW7, Av. Lecuna, Caracas 1014, Distrito Capital, Venezuela, El Silencio, Caracas - Libertador (centro), Distrito Capital",
+    "tipo": "local",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_664382-MLV114617909230_082026-E.webp",
+    "portal": "mercadolibre",
+    "scrapeado_en": "2026-10-04T20:59:09.262211",
+    "contacto": {
+      "telefono": "",
+      "email": "",
+      "exito": false
+    }
+  },
+  {
+    "titulo": "Galpón Industrial En Alquiler En Los Teques (oc)",
+    "precio_texto": "US$\n2.500",
+    "precio": 2500,
+    "enlace": "https://inmueble.mercadolibre.com.ve/MLV-951167836-galpon-industrial-en-alquiler-en-los-teques-oc-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=19&type=item&tracking_id=1149068b-980c-4c3e-af29-dc259fd82948&sid=search",
+    "ubicacion": "Los Teques, Miranda",
+    "tipo": "galpon",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_929655-MLV104124087264_012026-E.webp",
+    "portal": "mercadolibre",
+    "scrapeado_en": "2026-10-04T20:59:09.302186",
+    "contacto": {
+      "telefono": "",
+      "email": "",
+      "exito": false
+    }
+  },
+  {
+    "titulo": "Apartamento En Alquiler - Guatire - Deigmarys Gil - Mls 26-5133",
+    "precio_texto": "US$\n430",
+    "precio": 430,
+    "enlace": "https://apartamento.mercadolibre.com.ve/MLV-1019365912-apartamento-en-alquiler-guatire-deigmarys-gil-mls-26-5133-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=20&type=item&tracking_id=1149068b-980c-4c3e-af29-dc259fd82948&sid=search",
+    "ubicacion": "Guatire, San Pedro, Miranda",
+    "tipo": "apartamento",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_930297-MLV105741828714_022026-E.webp",
+    "portal": "mercadolibre",
+    "scrapeado_en": "2026-10-04T20:59:09.343161",
+    "contacto": {
+      "telefono": "",
+      "email": "",
+      "exito": false
+    }
+  },
+  {
+    "titulo": "Gran Local Comercial A Nivel De Calle En Alquiler .urb. Charallave.",
+    "precio_texto": "US$\n2.000",
+    "precio": 2000,
+    "enlace": "https://inmueble.mercadolibre.com.ve/MLV-1026635040-gran-local-comercial-a-nivel-de-calle-en-alquiler-urb-charallave-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=21&type=item&tracking_id=1149068b-980c-4c3e-af29-dc259fd82948&sid=search",
+    "ubicacion": "Miranda, Charallave, Valles Del Tuy",
+    "tipo": "local",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_610419-MLV116093832266_092026-E.webp",
+    "portal": "mercadolibre",
+    "scrapeado_en": "2026-10-04T20:59:09.383136",
+    "contacto": {
+      "telefono": "",
+      "email": "",
+      "exito": false
+    }
+  },
+  {
+    "titulo": "Espectacular Apartamento En Alquiler - Urb. Miranda // Mls #27-4819",
+    "precio_texto": "US$\n1.000",
+    "precio": 1000,
+    "enlace": "https://apartamento.mercadolibre.com.ve/MLV-1027648470-espectacular-apartamento-en-alquiler-urb-miranda-mls-27-4819-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=22&type=item&tracking_id=1149068b-980c-4c3e-af29-dc259fd82948&sid=search",
+    "ubicacion": "Av. Miranda Este, Caracas, Urb. Miranda, Caracas - Sucre (norte), Distrito Capital",
+    "tipo": "apartamento",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_685772-MLV116551970864_092026-E.webp",
+    "portal": "mercadolibre",
+    "scrapeado_en": "2026-10-04T20:59:09.422113",
+    "contacto": {
+      "telefono": "",
+      "email": "",
+      "exito": false
+    }
+  },
+  {
+    "titulo": "Kb - Galpon En Alquiler En Guarenas, Excelente Ubicacion",
+    "precio_texto": "US$\n6.000",
+    "precio": 6000,
+    "enlace": "https://inmueble.mercadolibre.com.ve/MLV-1012976466-kb-galpon-en-alquiler-en-guarenas-excelente-ubicacion-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=23&type=item&tracking_id=1149068b-980c-4c3e-af29-dc259fd82948&sid=search",
+    "ubicacion": "Guarenas, Zona Ind. Del Este, Miranda",
+    "tipo": "desconocido",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_621645-MLV111258745144_052026-E.webp",
+    "portal": "mercadolibre",
+    "scrapeado_en": "2026-10-04T20:59:09.474080",
+    "contacto": {
+      "telefono": "",
+      "email": "",
+      "exito": false
+    }
+  },
+  {
+    "titulo": "Local O Casa Comercial En Alquiler Guarenas Casco Central A Pie De Calle 300m2- Gd",
+    "precio_texto": "US$\n1.000",
+    "precio": 1000,
+    "enlace": "https://inmueble.mercadolibre.com.ve/MLV-1027148984-local-o-casa-comercial-en-alquiler-guarenas-casco-central-a-pie-de-calle-300m2-gd-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=24&type=item&tracking_id=1149068b-980c-4c3e-af29-dc259fd82948&sid=search",
+    "ubicacion": "F9CG+C9C, Guarenas, Otros, Guarenas, Miranda",
+    "tipo": "casa",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_844203-MLV116313551832_092026-E.webp",
+    "portal": "mercadolibre",
+    "scrapeado_en": "2026-10-04T20:59:09.517053",
+    "contacto": {
+      "telefono": "",
+      "email": "",
+      "exito": false
+    }
+  },
+  {
+    "titulo": "Galpón Con Casa Comercial En Alquiler Centro De Guarenas 300m2- Gd",
+    "precio_texto": "US$\n1.000",
+    "precio": 1000,
+    "enlace": "https://inmueble.mercadolibre.com.ve/MLV-1027137176-galpon-con-casa-comercial-en-alquiler-centro-de-guarenas-300m2-gd-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=25&type=item&tracking_id=1149068b-980c-4c3e-af29-dc259fd82948&sid=search",
+    "ubicacion": "F9CG+C9C, Guarenas, Otros, Guarenas, Miranda",
+    "tipo": "casa",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_708435-MLV116314621304_092026-E.webp",
+    "portal": "mercadolibre",
+    "scrapeado_en": "2026-10-04T20:59:09.563025",
+    "contacto": {
+      "telefono": "",
+      "email": "",
+      "exito": false
+    }
+  },
+  {
+    "titulo": "Eaa-813 Apartamento Campo Alegre Municipio Chacao Estado Miranda",
+    "precio_texto": "US$\n2.800",
+    "precio": 2800,
+    "enlace": "https://apartamento.mercadolibre.com.ve/MLV-1024230406-eaa-813-apartamento-campo-alegre-municipio-chacao-estado-miranda-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=26&type=item&tracking_id=1149068b-980c-4c3e-af29-dc259fd82948&sid=search",
+    "ubicacion": "Segunda Avenida Campo Alegre, Caracas, Campo Alegre, Caracas - Chacao (sur), Distrito Capital",
+    "tipo": "apartamento",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_683320-MLV116322471561_082026-E.webp",
+    "portal": "mercadolibre",
+    "scrapeado_en": "2026-10-04T20:59:09.603000",
+    "contacto": {
+      "telefono": "",
+      "email": "",
+      "exito": false
+    }
+  },
+  {
+    "titulo": "Alquiler Apto En Tza. De Altos De San Pedro Mso",
+    "precio_texto": "US$\n500",
+    "precio": 500,
+    "enlace": "https://apartamento.mercadolibre.com.ve/MLV-780489393-alquiler-apto-en-tza-de-altos-de-san-pedro-mso-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=27&type=item&tracking_id=1149068b-980c-4c3e-af29-dc259fd82948&sid=search",
+    "ubicacion": "FC99+7QH, Avenida Intercomunal Guarenas Guatire, Av. Intercomunal Guarenas - Guatire, Guatire, Zamora, Miranda",
+    "tipo": "desconocido",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_755415-MLV117815555923_092026-E.webp",
+    "portal": "mercadolibre",
+    "scrapeado_en": "2026-10-04T20:59:09.643974",
+    "contacto": {
+      "telefono": "",
+      "email": "",
+      "exito": false
+    }
+  },
+  {
+    "titulo": "Alquiler Espectacular Apartamento Urb. Miranda (cpf) Mls #27-4819",
+    "precio_texto": "US$\n1.000",
+    "precio": 1000,
+    "enlace": "https://apartamento.mercadolibre.com.ve/MLV-1027977398-alquiler-espectacular-apartamento-urb-miranda-cpf-mls-27-4819-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=28&type=item&tracking_id=1149068b-980c-4c3e-af29-dc259fd82948&sid=search",
+    "ubicacion": "Av. Miranda Este, Caracas, Urb. Miranda, Caracas - Sucre (norte), Distrito Capital",
+    "tipo": "apartamento",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_679475-MLV116699583690_092026-E.webp",
+    "portal": "mercadolibre",
+    "scrapeado_en": "2026-10-04T20:59:09.686948",
+    "contacto": {
+      "telefono": "",
+      "email": "",
+      "exito": false
+    }
+  },
+  {
+    "titulo": "Alquiler Local Comercial. Centro Comercial El Refugio. Guatire",
+    "precio_texto": "US$\n200",
+    "precio": 200,
+    "enlace": "https://inmueble.mercadolibre.com.ve/MLV-776582515-alquiler-local-comercial-centro-comercial-el-refugio-guatire-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=29&type=item&tracking_id=1149068b-980c-4c3e-af29-dc259fd82948&sid=search",
+    "ubicacion": "Carretera Nacional Guarenas Guatire 04129933517, El Refugio, Guatire, Miranda",
+    "tipo": "local",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_955664-MLV83901812011_042025-E.webp",
+    "portal": "mercadolibre",
+    "scrapeado_en": "2026-10-04T20:59:09.727922",
+    "contacto": {
+      "telefono": "",
+      "email": "",
+      "exito": false
+    }
+  },
+  {
+    "titulo": "Sb En Alquiler Espacioso, Iluminado Y Con La Mejor Vista De Caracas Ph Duplex En Altamira, A Tan Solo Metros De La Av. Francisco De Miranda, La Autopista Y El Metro. Cuenta Con 154,96mt2. Cod#27-5269",
+    "precio_texto": "US$\n1.250",
+    "precio": 1250,
+    "enlace": "https://apartamento.mercadolibre.com.ve/MLV-1028063702-sb-en-alquiler-espacioso-iluminado-y-con-la-mejor-vista-de-caracas-ph-duplex-en-altamira-a-tan-solo-metros-de-la-av-francisco-de-miranda-la-autopista-y-el-metro-cuenta-con-15496mt2-cod27-5269-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=30&type=item&tracking_id=1149068b-980c-4c3e-af29-dc259fd82948&sid=search",
+    "ubicacion": "Altamira, Caracas, Altamira, Caracas - Chacao (norte), Distrito Capital",
+    "tipo": "desconocido",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_642245-MLV116756145668_092026-E.webp",
+    "portal": "mercadolibre",
+    "scrapeado_en": "2026-10-04T20:59:09.767897",
+    "contacto": {
+      "telefono": "",
+      "email": "",
+      "exito": false
+    }
+  }
+]

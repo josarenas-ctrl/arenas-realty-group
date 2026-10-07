@@ -5,6 +5,9 @@ const CORS = {
   "Access-Control-Allow-Headers": "Content-Type, Authorization"
 };
 
+// Import the HTML generator
+const { generateAndCommitHTML } = require('./generator.js');
+
 const STATIC_PATHS = {
   "/": "static/index.html",
   "/captacion/": "static/index.html",
@@ -173,7 +176,7 @@ export default {
           if (!batch || !ficha) return json({ error: "batch y ficha requeridos" }, 400);
 
           await env.DB.prepare(
-            "INSERT INTO batches (advisor_id, ref, ficha_json, created_at) VALUES (?, ?, ?, ?) ON CONFLICT(ref) DO UPDATE SET ficha_json=excluded.ficha_json, updated_at=?"
+            "INSERT INTO batches (advisor_id, ref, ficha_json, created_at) VALUES (?, ?, ?, ?) ON CONFLICT(ref) DO UPDATE SET ficha_json=excluded.ficha_json, updated_at=? "
           ).bind(advisor.results[0].id, batch, JSON.stringify(ficha), Date.now(), Date.now()).run();
 
           if (env.R2) {
@@ -210,7 +213,7 @@ export default {
             return json({ error: "JSON inválido: " + e.message, body: bodyText.slice(0, 200) }, 400);
           }
           if (!batch) return json({ error: "batch requerido" }, 400);
-          
+
           const record = await env.DB.prepare(
             "SELECT id, ficha_json, pushed_at FROM batches WHERE ref = ? AND advisor_id = ? LIMIT 1"
           ).bind(batch, advisor.results[0].id).all();
@@ -258,14 +261,14 @@ export default {
           if (fileSha) putBody.sha = fileSha;
 
           const putResp = await fetch(api, {
-                      method: "PUT",
-                      headers: {
-                        "Authorization": "token " + env.GITHUB_TOKEN,
-                        "Content-Type": "application/json",
-                        "User-Agent": "arenas-captacion-worker"
-                      },
-                      body: JSON.stringify(putBody)
-                    });
+                        method: "PUT",
+                        headers: {
+                          "Authorization": "token " + env.GITHUB_TOKEN,
+                          "Content-Type": "application/json",
+                          "User-Agent": "arenas-captacion-worker"
+                        },
+                        body: JSON.stringify(putBody)
+                      });
           let putData;
           try {
             const putText = await putResp.text();
@@ -279,11 +282,18 @@ export default {
             "UPDATE batches SET pushed_at = ?, github_commit_sha = ? WHERE id = ?"
           ).bind(Date.now(), putData.commit.sha, rec.id).run();
 
+          // Generate and commit HTML files for the newly published property
+          try {
+            await generateAndCommitHTML(env, ficha.pub.slug);
+          } catch(genError) {
+            // Log but don't fail the publish - property is already in GitHub
+            console.warn('HTML generation failed (non-critical):', genError);
+          }
+
           return json({ ok: true, path: "propiedades/" + ficha.pub.slug + ".json" });
         }
 
         return json({ error: "Ruta no encontrada" }, 404);
-
       } catch (e) {
         return json({ error: e.message }, 500);
       }

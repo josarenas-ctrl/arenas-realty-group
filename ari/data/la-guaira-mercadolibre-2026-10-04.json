@@ -1,0 +1,132 @@
+{
+  "zona": "la-guaira",
+  "portal": "mercadolibre",
+  "operacion": "alquiler",
+  "url_busqueda": "https://listado.mercadolibre.com.ve/inmuebles/alquiler/la-guaira",
+  "paginas_scrapeadas": 1,
+  "total_items": 11,
+  "scrapeado_en": "2026-10-04T21:59:35.178463",
+  "items": [
+    {
+      "titulo": "Vérsatil Galpón En Alquiler En Catia La Mar, Edo. La Guaira, Bv",
+      "precio_texto": "US$\n7.000",
+      "precio": 7000,
+      "enlace": "https://inmueble.mercadolibre.com.ve/MLV-776692191-versatil-galpon-en-alquiler-en-catia-la-mar-edo-la-guaira-bv-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=1&type=item&tracking_id=e837816e-2518-40bf-a8a5-1b0461e060e5&sid=search",
+      "ubicacion": "Catia La Mar, Catia La Mar, Vargas",
+      "tipo": "galpon",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_982385-MLV82088427736_022025-E.webp",
+      "portal": "mercadolibre",
+      "scrapeado_en": "2026-10-04T21:59:34.760918"
+    },
+    {
+      "titulo": "Local Comercial En Alquiler En Maiquetia La Guaira A Pie De Calle En El Corazon De Maiquetia A 5 Minutos Del Puerto De La Guaira",
+      "precio_texto": "US$\n2.200",
+      "precio": 2200,
+      "enlace": "https://inmueble.mercadolibre.com.ve/MLV-780594605-local-comercial-en-alquiler-en-maiquetia-la-guaira-a-pie-de-calle-en-el-corazon-de-maiquetia-a-5-minutos-del-puerto-de-la-guaira-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=2&type=item&tracking_id=e837816e-2518-40bf-a8a5-1b0461e060e5&sid=search",
+      "ubicacion": "Maiquetía, Maiquetía, Vargas",
+      "tipo": "local",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_757712-MLV115757836512_092026-E.webp",
+      "portal": "mercadolibre",
+      "scrapeado_en": "2026-10-04T21:59:34.806279"
+    },
+    {
+      "titulo": "Oficina En Alquiler En Catia La Mar La Guaira A Cinco Minutos Del Aeropuerto",
+      "precio_texto": "US$\n500",
+      "precio": 500,
+      "enlace": "https://inmueble.mercadolibre.com.ve/MLV-1025721466-oficina-en-alquiler-en-catia-la-mar-la-guaira-a-cinco-minutos-del-aeropuerto-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=3&type=item&tracking_id=e837816e-2518-40bf-a8a5-1b0461e060e5&sid=search",
+      "ubicacion": "Catia La Mar, La Atlantida, Vargas",
+      "tipo": "oficina",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_610324-MLV115695199456_092026-E.webp",
+      "portal": "mercadolibre",
+      "scrapeado_en": "2026-10-04T21:59:34.845255"
+    },
+    {
+      "titulo": "Se Alquila Local Comercial En Centro Comercial De Maiquetia La Guaira",
+      "precio_texto": "US$\n200",
+      "precio": 200,
+      "enlace": "https://inmueble.mercadolibre.com.ve/MLV-1028609362-se-alquila-local-comercial-en-centro-comercial-de-maiquetia-la-guaira-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=4&type=item&tracking_id=e837816e-2518-40bf-a8a5-1b0461e060e5&sid=search",
+      "ubicacion": "C. Los Baños, Maiquetía, Maiquetía, Vargas",
+      "tipo": "local",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_969668-MLV88107591653_072025-E.webp",
+      "portal": "mercadolibre",
+      "scrapeado_en": "2026-10-04T21:59:34.886230"
+    },
+    {
+      "titulo": "Oficina En Alquiler En La Guaira En El Casco De Maiquetia Cerca De La Plaza Lourdes",
+      "precio_texto": "US$\n800",
+      "precio": 800,
+      "enlace": "https://inmueble.mercadolibre.com.ve/MLV-1028411872-oficina-en-alquiler-en-la-guaira-en-el-casco-de-maiquetia-cerca-de-la-plaza-lourdes-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=5&type=item&tracking_id=e837816e-2518-40bf-a8a5-1b0461e060e5&sid=search",
+      "ubicacion": "Maiquetía, Maiquetía, Vargas",
+      "tipo": "oficina",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_660801-MLV117007849166_102026-E.webp",
+      "portal": "mercadolibre",
+      "scrapeado_en": "2026-10-04T21:59:34.926204"
+    },
+    {
+      "titulo": "Alquilo Oasis En La Guaira, El Mejor Conjunto De Tanaguarena",
+      "precio_texto": "US$\n1.000",
+      "precio": 1000,
+      "enlace": "https://apartamento.mercadolibre.com.ve/MLV-1027635814-alquilo-oasis-en-la-guaira-el-mejor-conjunto-de-tanaguarena-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=6&type=item&tracking_id=e837816e-2518-40bf-a8a5-1b0461e060e5&sid=search",
+      "ubicacion": "J56H+QR3, Caraballeda 1165, La Guaira, Venezuela, Tanaguarena, Caraballeda , Vargas",
+      "tipo": "desconocido",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_896760-MLV117441608611_092026-E.webp",
+      "portal": "mercadolibre",
+      "scrapeado_en": "2026-10-04T21:59:34.966179"
+    },
+    {
+      "titulo": "Ip Alquilo Local Comercial En Galipán 26-18205 Yf",
+      "precio_texto": "US$\n4.500",
+      "precio": 4500,
+      "enlace": "https://inmueble.mercadolibre.com.ve/MLV-776232963-ip-alquilo-local-comercial-en-galipan-26-18205-yf-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=7&type=item&tracking_id=e837816e-2518-40bf-a8a5-1b0461e060e5&sid=search",
+      "ubicacion": "G3FR+6MR, Vía Galipán, Caracas, Galipán, La Guaira , Vargas",
+      "tipo": "local",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_992531-MLV109776676246_042026-E.webp",
+      "portal": "mercadolibre",
+      "scrapeado_en": "2026-10-04T21:59:35.005155"
+    },
+    {
+      "titulo": "Local Comercial ( Restaurante Totalmente Operativo ) Alquiler Galipan Mls - 26-18205",
+      "precio_texto": "US$\n4.500",
+      "precio": 4500,
+      "enlace": "https://inmueble.mercadolibre.com.ve/MLV-775734799-local-comercial-restaurante-totalmente-operativo-alquiler-galipan-mls-26-18205-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=8&type=item&tracking_id=e837816e-2518-40bf-a8a5-1b0461e060e5&sid=search",
+      "ubicacion": "Vía Galipán, Galipán, La Guaira , Vargas",
+      "tipo": "local",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_668497-MLV110806830647_042026-E.webp",
+      "portal": "mercadolibre",
+      "scrapeado_en": "2026-10-04T21:59:35.046131"
+    },
+    {
+      "titulo": "Venta (cliente Directo). Local Obra Gris 15 Mts2. Centro Comercial Planeta Sotavento Cerca Del Hotel Eurobuilding Via Catia La Mar La Guaira. Milthonhouse53",
+      "precio_texto": "US$\n21.900",
+      "precio": 21900,
+      "enlace": "https://inmueble.mercadolibre.com.ve/MLV-1016430102-venta-cliente-directo-local-obra-gris-15-mts2-centro-comercial-planeta-sotavento-cerca-del-hotel-eurobuilding-via-catia-la-mar-la-guaira-milthonhouse53-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=9&type=item&tracking_id=e837816e-2518-40bf-a8a5-1b0461e060e5&sid=search",
+      "ubicacion": "Av. La Armada. Centro Comercial Planeta Sotavento. La Guaira. SN, Maiquetía, Vargas",
+      "tipo": "local",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_836661-MLV72633277804_112023-E.webp",
+      "portal": "mercadolibre",
+      "scrapeado_en": "2026-10-04T21:59:35.087105"
+    },
+    {
+      "titulo": "Local Comercial En La Guaira Alquiler",
+      "precio_texto": "US$\n250",
+      "precio": 250,
+      "enlace": "https://inmueble.mercadolibre.com.ve/MLV-929524364-local-comercial-en-la-guaira-alquiler-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=10&type=item&tracking_id=e837816e-2518-40bf-a8a5-1b0461e060e5&sid=search",
+      "ubicacion": "La Guaira, La Guaira, La Guaira , Vargas",
+      "tipo": "local",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_676814-MLV97672424875_112025-E.webp",
+      "portal": "mercadolibre",
+      "scrapeado_en": "2026-10-04T21:59:35.130493"
+    },
+    {
+      "titulo": "Alquilo Bello Galpon La Guaira, Sector Montesano",
+      "precio_texto": "US$\n5.000",
+      "precio": 5000,
+      "enlace": "https://inmueble.mercadolibre.com.ve/MLV-1026781810-alquilo-bello-galpon-la-guaira-sector-montesano-_JM#polycard_client=search-desktop&price_drop=not_apply&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=11&type=item&tracking_id=e837816e-2518-40bf-a8a5-1b0461e060e5&sid=search",
+      "ubicacion": "Maiquetía, Vargas",
+      "tipo": "desconocido",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_781890-MLV116176248914_092026-E.webp",
+      "portal": "mercadolibre",
+      "scrapeado_en": "2026-10-04T21:59:35.172467"
+    }
+  ]
+}
