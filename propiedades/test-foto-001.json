@@ -1,0 +1,9 @@
+{
+  "titulo": "Casa con fotos de prueba",
+  "operacion": "venta",
+  "tipo": "Casa",
+  "precio": "250000",
+  "ubicacion": "Caracas, Venezuela",
+  "descripcion": "Prueba de inclusi�n de fotos",
+  "publicada": false
+}
