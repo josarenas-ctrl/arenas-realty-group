@@ -1,0 +1,9 @@
+{
+  "titulo": "Casa de prueba en vivo",
+  "operacion": "venta",
+  "tipo": "Casa",
+  "precio": "200000",
+  "ubicacion": "Caracas, Venezuela",
+  "descripcion": "Prueba de publicaci�n en vivo desde Hermes",
+  "publicada": false
+}
