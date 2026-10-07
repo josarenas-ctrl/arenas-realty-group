@@ -163,6 +163,9 @@
     <h3>Zona / Urbanización</h3>
     <select id="sel-zona"><option value="todos">Todas las áreas</option></select>
 
+    <h3>Portal de origen</h3>
+    <select id="sel-portal"><option value="todos">Todos los portales</option></select>
+
     <h3>Precio (USD)</h3>
     <div class="precio-pair">
       <input type="number" id="precio-min" placeholder="Mín">
@@ -227,6 +230,10 @@
     return null;
   }
 
+  function extraerPortal(ficha) {
+    return ficha.portal_principal || null;
+  }
+
   // ── Populate dropdowns with counts ──
   function populateSelect(id, fichas, getValue, labelTodos) {
     const sel = document.getElementById(id);
@@ -267,6 +274,10 @@
     if (municipio !== "todos") fichas = fichas.filter(f => f._municipio === municipio);
     const zona = document.getElementById("sel-zona").value;
     if (zona !== "todos") fichas = fichas.filter(f => extraerZona(f) === zona);
+
+    // Portal filter
+    const portal = document.getElementById("sel-portal").value;
+    if (portal !== "todos") fichas = fichas.filter(f => f.portal_principal === portal);
 
     // Precio min/max
     const pMin = parseInt(document.getElementById("precio-min").value) || null;
