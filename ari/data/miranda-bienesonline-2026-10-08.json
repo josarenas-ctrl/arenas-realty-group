@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "alquiler",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+alquiler+miranda",
-  "scrapeado_en": "2026-10-08T13:05:48.482Z",
+  "scrapeado_en": "2026-10-08T23:07:03.130Z",
   "total": 100,
   "anuncios": [
     {
@@ -447,6 +447,17 @@
       "ubicacion": "Caracas, Distrito Capital"
     },
     {
+      "titulo": "apartamento en alquiler lomas de las mercedes tlf 04242129768 rolando rodriguez codg 27-5985",
+      "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/131596-apartamento-en-alquiler-lomas-de-las-mercedes-tlf-04242129768-rolando-rodriguez-codg-27-5985",
+      "precio_texto": "USD 3.000",
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 104,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Baruta, Miranda"
+    },
+    {
       "titulo": "Apartamento en Alquiler en Manzanares. Sandra White 0414-3140082 Cod. 26-15472",
       "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/33239-apartamento-en-alquiler-en-manzanares-sandra-white-0414-3140082-cod-26-15472",
       "precio_texto": "USD 800",
@@ -570,13 +581,13 @@
     {
       "titulo": "Apartamento en Aquiler  Mirador de los Campitos I G. 04143054662",
       "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/120932-apartamento-en-aquiler-mirador-de-los-campitos-i-g-04143054662",
-      "precio_texto": "USD 800",
-      "habitaciones": 3,
+      "precio_texto": "USD 3.000",
+      "habitaciones": 2,
       "banos": 2,
-      "metros_cuadrados": 142,
+      "metros_cuadrados": 104,
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
-      "ubicacion": "Caracas, Distrito Capital"
+      "ubicacion": "Baruta, Miranda"
     },
     {
       "titulo": "apartamento alquiler country club  tlf 04242129768 rolando Rodríguez",
@@ -735,10 +746,10 @@
     {
       "titulo": "apartamento en alquiler las mesetas de santa rosa de lima tlf  04242129768 rolando rodriguez codg 27...",
       "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/128995-apartamento-en-alquiler-las-mesetas-de-santa-rosa-de-lima-tlf-04242129768-rolando-rodriguez-codg-27-4799",
-      "precio_texto": "USD 900",
-      "habitaciones": 1,
+      "precio_texto": "USD 2.000",
+      "habitaciones": 2,
       "banos": 2,
-      "metros_cuadrados": 49,
+      "metros_cuadrados": 97,
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Caracas, Distrito Capital"
@@ -1094,17 +1105,6 @@
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Barcelona, Anzoátegui"
-    },
-    {
-      "titulo": "iris Hernandez Alquila Apartamento 85m2. El Bosque. Valencia",
-      "enlace": "https://bienesonline.ai/es/venezuela/valencia/propiedad/66509-iris-hernandez-alquila-apartamento-85m2-el-bosque-valencia",
-      "precio_texto": "USD 330",
-      "habitaciones": 2,
-      "banos": 2,
-      "metros_cuadrados": 85,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Valencia, Carabobo"
     }
   ],
   "diagnostico": {
