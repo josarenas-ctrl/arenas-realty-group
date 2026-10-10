@@ -1,0 +1,13 @@
+{
+  "zona": "la-guaira",
+  "portal": "bienesonline",
+  "operacion": "alquiler",
+  "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+alquiler+la-guaira",
+  "scrapeado_en": "2026-10-10T05:07:39.691Z",
+  "total": 0,
+  "anuncios": [],
+  "diagnostico": {
+    "ultimo_http_status": 429,
+    "paginas_pedidas": 5
+  }
+}
