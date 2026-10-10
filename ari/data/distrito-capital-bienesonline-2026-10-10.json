@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "alquiler",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+alquiler+distrito+capital",
-  "scrapeado_en": "2026-10-10T12:10:25.017Z",
+  "scrapeado_en": "2026-10-10T21:22:11.353Z",
   "total": 100,
   "anuncios": [
     {
@@ -16,6 +16,28 @@
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "apartamento en alquiler bello monte tfl 04242129768 rolando rodriguez codg 27-6117",
+      "enlace": "https://bienesonline.ai/es/venezuela/el-recreo/propiedad/132645-apartamento-en-alquiler-bello-monte-tfl-04242129768-rolando-rodriguez-codg-27-6117",
+      "precio_texto": "USD 1.000",
+      "habitaciones": 2,
+      "banos": 1,
+      "metros_cuadrados": 77,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "El Recreo, Distrito Capital"
+    },
+    {
+      "titulo": "apartamento en alquiler en campo alegre tlf  04242129768 rolando rodriguez codg 27-6118",
+      "enlace": "https://bienesonline.ai/es/venezuela/chacao/propiedad/132650-apartamento-en-alquiler-en-campo-alegre-tlf-04242129768-rolando-rodriguez-codg-27-6118",
+      "precio_texto": "USD 2.500",
+      "habitaciones": 2,
+      "banos": 5,
+      "metros_cuadrados": 148,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Chacao, Miranda"
     },
     {
       "titulo": "Apartamento en Alquiler El Marques G. 04143054662",
@@ -724,10 +746,10 @@
     {
       "titulo": "apartamento en alquiler colinas de bello monte tlf  04242129768 rolando rodriguez codg 26-20552",
       "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/112078-apartamento-en-alquiler-colinas-de-bello-monte-tlf-04242129768-rolando-rodriguez-codg-26-20552",
-      "precio_texto": "USD 700",
-      "habitaciones": 1,
-      "banos": 1,
-      "metros_cuadrados": 44,
+      "precio_texto": "USD 3.000",
+      "habitaciones": 3,
+      "banos": 5,
+      "metros_cuadrados": 173,
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Caracas, Distrito Capital"
@@ -779,10 +801,10 @@
     {
       "titulo": "Apartamento en Alquiler Campo Alegre G. 04143054662",
       "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/123500-apartamento-en-alquiler-campo-alegre-g-04143054662",
-      "precio_texto": "USD 700",
-      "habitaciones": 1,
-      "banos": 1,
-      "metros_cuadrados": 44,
+      "precio_texto": "USD 3.000",
+      "habitaciones": 3,
+      "banos": 5,
+      "metros_cuadrados": 173,
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Caracas, Distrito Capital"
@@ -999,13 +1021,13 @@
     {
       "titulo": "Lindo Y Acogedor Apartamento En Alquiler Manzanares. Amoblado 27-1699",
       "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/121460-lindo-y-acogedor-apartamento-en-alquiler-manzanares-amoblado-27-1699",
-      "precio_texto": "USD 3.000",
+      "precio_texto": "USD 500",
       "habitaciones": 2,
       "banos": 3,
       "metros_cuadrados": 123,
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
-      "ubicacion": "Caracas, Distrito Capital"
+      "ubicacion": "Lechería, Anzoátegui"
     },
     {
       "titulo": "apartamento en alquiler el rosal tlf  04242129768 rolando rodriguez codg 26-21980",
@@ -1083,28 +1105,6 @@
       "tipo": "Oficina",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Diego Bautista Urbaneja, Anzoátegui"
-    },
-    {
-      "titulo": "apartamento en  alquiler  colinas de bello monte codg 27-191",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/117690-apartamento-en-alquiler-colinas-de-bello-monte-codg-27-191",
-      "precio_texto": "USD 1.200",
-      "habitaciones": 1,
-      "banos": 2,
-      "metros_cuadrados": 63,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
-      "titulo": "En Alquiler excelente apartamento en San Diego San Francisco",
-      "enlace": "https://bienesonline.ai/es/venezuela/san-diego/propiedad/61680-en-alquiler-excelente-apartamento-en-san-diego-san-francisco",
-      "precio_texto": "USD 350",
-      "habitaciones": 3,
-      "banos": 2,
-      "metros_cuadrados": 73,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "San Diego, Carabobo"
     }
   ],
   "diagnostico": {
