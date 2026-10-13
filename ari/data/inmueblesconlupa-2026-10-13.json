@@ -3,8 +3,8 @@
   "portal": "inmueblesconlupa",
   "operacion": "venta",
   "url_busqueda": "sitemaps 0-2",
-  "scrapeado_en": "2026-10-13T00:34:18.292Z",
-  "total": 1053,
+  "scrapeado_en": "2026-10-13T14:05:42.288Z",
+  "total": 934,
   "anuncios": [
     {
       "titulo": "Apartamento en venta en El Hatillo, Miranda — $130.000",
@@ -167,24 +167,6 @@
         "estacionamiento",
         "ascensor",
         "terraza"
-      ]
-    },
-    {
-      "titulo": "Oficina en alquiler en Macaracuay, Miranda — $800/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/miranda/comercial-oficina-en-alquiler-en-macaracuay-distrito-metropolitano-rentahouse-26-19685",
-      "precio_texto": "$800",
-      "precio_usd": 800,
-      "habitaciones": null,
-      "banos": 1,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Macaracuay, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Oportunidad de alquilar esta OFICINA con gran potencial, excelente distribucion, sala de conferencia, puestos, recepcion, baño. Ubicada en Centro Empresarial muy seguro, posee vigilancia privada, estacionamiento publico y privado.",
-      "amenities": [
-        "vigilancia",
-        "estacionamiento"
       ]
     },
     {
@@ -1106,24 +1088,6 @@
       ]
     },
     {
-      "titulo": "Local Comercial en venta en Santa Paula, Miranda — $160.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/miranda/comercial-oficina-en-venta-en-santa-paula-distrito-metropolitano-rentahouse-27-6163",
-      "precio_texto": "$160.000",
-      "precio_usd": 160000,
-      "habitaciones": null,
-      "banos": 1,
-      "metros_cuadrados": null,
-      "tipo": "Local comercial",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Santa Paula, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "OPORTUNIDAD DE COMPRAR HERMOSA Y FUNCIONAL OFICINA AMOBLADA CON MUY POCO USO. 61 MTS EN UNA TORRE EMPRESARIAL MODERNA Y RECONOCIDA. AREA GENERAL DE TRABAJO (4 PTOS) TIENE UNA SALA DE CONFERENCIA Y DOS AREAS APARTE  TODAS SEPARADAS. COMODA  KICHINETTE CON MICROONDAS NEVERA EJECUTIVA Y FREGADERO. CUENTA CON 1 BAÑO. TIENE 4 PUESTOS PROPIOS EN SOTANO. VIGILANCIA 24 HORAS. ESTACIONAMIENTO PUBLICO CERCA",
-      "amenities": [
-        "vigilancia",
-        "estacionamiento"
-      ]
-    },
-    {
       "titulo": "Apartamento en venta en El Cigarral, Miranda — $230.000",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-1-nivel-en-venta-en-el-cigarral-distrito-metropolitano-rentahouse-27-6170",
       "precio_texto": "$230.000",
@@ -1452,21 +1416,6 @@
       "amenities": []
     },
     {
-      "titulo": "Local Comercial en venta en Santa Paula, Miranda — $88.500",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/miranda/comercial-oficina-en-venta-en-santa-paula-distrito-metropolitano-rentahouse-27-6198",
-      "precio_texto": "$88.500",
-      "precio_usd": 88500,
-      "habitaciones": null,
-      "banos": 1,
-      "metros_cuadrados": null,
-      "tipo": "Local comercial",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Santa Paula, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Buscas una oficina que sea la ideal y que puedas remodelar a tu gusto y necesidades de tu empresa? Aqui la tienes,con una ubicacion excelente,acceso a vias principales y una oportunidad de inversion.",
-      "amenities": []
-    },
-    {
       "titulo": "Casa en venta en Caicaguana, Miranda — $160.000",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/miranda/casa-casas-de-campo-en-venta-en-caicaguana-distrito-metropolitano-rentahouse-27-6196",
       "precio_texto": "$160.000",
@@ -1496,23 +1445,6 @@
       "descripcion": "Bello apto en venta original,  buen metraje y excelente distribuciÃ³n, iluminado y fresco.\nConsta de 3 habitaciones,  2 baÃ±os, 1 puesto doble de estacionamiento.  Piso medio-alto. Amplias areas sociales. Parque infantil, canchas deportivas.",
       "amenities": [
         "estacionamiento"
-      ]
-    },
-    {
-      "titulo": "Apartamento en venta en El Marques, Miranda — $95.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-1-nivel-en-venta-en-el-marques-distrito-metropolitano-rentahouse-27-6188",
-      "precio_texto": "$95.000",
-      "precio_usd": 95000,
-      "habitaciones": 3,
-      "banos": 4,
-      "metros_cuadrados": 95,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "El Marques, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Espacioso y comodo apartamento de 159,95  mts2 , semiamoblado para remodelar con excelente ubicacion y agradable vista panoramica. Con acceso a la Cota Mil , Av Romulo Gallegos y Av Francisco de Miranda. Cercano a todos los comercios y servicios",
-      "amenities": [
-        "vista"
       ]
     },
     {
@@ -2039,23 +1971,6 @@
       ]
     },
     {
-      "titulo": "Oficina en venta en Bello Monte, Miranda — $85.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/miranda/comercial-oficina-en-venta-en-bello-monte-distrito-metropolitano-rentahouse-25-1357",
-      "precio_texto": "$85.000",
-      "precio_usd": 85000,
-      "habitaciones": null,
-      "banos": 3,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Bello Monte, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Amplia y equipada oficina ubicada en Torre Lipesa. Tiene 2 despachos principales, 6 despachos auxiliares y una sala de conferencias, todos completamente tabicados con vidrios satinados. Cuenta con un espacio abierto con al menos 4 puestos de trabajo, sala de servidores, 2 banos, A/A Central, vista al norte y 2 puestos de estacionamiento techados. Ubicado en edificio con estacionamiento. Visitala!",
-      "amenities": [
-        "estacionamiento"
-      ]
-    },
-    {
       "titulo": "Local Comercial en alquiler en Distrito Capital — $1.200/mes",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-local-comercial-en-alquiler-en-mariperez-distrito-metropolitano-rentahouse-26-6255",
       "precio_texto": "$1.200",
@@ -2069,23 +1984,6 @@
       "portal": "inmueblesconlupa",
       "descripcion": "Oportunidad de Alquiler Comercial.\nSe alquila local ubicado en el piso 1 de una casa convertida en edificio, ideal para  personas con visión. Perfecto para:Producción de alimentos,Oficina administrativa ,Depósito o almacén\nCaracterísticas:Espacio versátil y funcional\nExcelente ubicación con fácil acceso\nBuena iluminación y ventilación\nPotencial para adecuacion según el tipo de negocio.",
       "amenities": []
-    },
-    {
-      "titulo": "Local Comercial en venta en Mampote, Miranda — $1.210.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/miranda/comercial-galpon-deposito-en-venta-en-mampote-miranda-rentahouse-26-1329",
-      "precio_texto": "$1.210.000",
-      "precio_usd": 1210000,
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": 718,
-      "tipo": "Local comercial",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Mampote, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "En venta complejo industrial de 6.718 mts2 de terreno con 4.528 mts2 de edificaciones y galpones techados con baños y oficinas. Posee una vivienda, vigilancia privada, amplio patio interno de asfalto y concreto para circulacion de vehiculos pesados largos y vehiculos livianos. Acceso con conexion directa de la carretera vieja Petare-Guarenas y por la autopista GMA, a 10 min del Dist. Metropolitan",
-      "amenities": [
-        "vigilancia"
-      ]
     },
     {
       "titulo": "Casa en venta en El Hatillo, Miranda — $795.000",
@@ -2102,25 +2000,6 @@
       "descripcion": "Exclusiva Residencia en venta de 853 m² de construccion sobre un terreno de 2.394 m² que ofrece un estilo de vida de lujo y privacidad.\nLa planta principal cuenta con recibo, comedor, salon principal, un bano de visitas y tres habitaciones con bano privado. El area de servicio incluye cocina, lavandero y dos habitaciones de servicio con un bano, ademas de una terraza techada...",
       "amenities": [
         "terraza"
-      ]
-    },
-    {
-      "titulo": "Oficina en venta en Sucre, Miranda — $1.400.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/miranda/comercial-oficina-en-venta-en-los-cortijos-de-lourdes-distrito-metropolitano-rentahouse-26-7803",
-      "precio_texto": "$1.400.000",
-      "precio_usd": 1400000,
-      "habitaciones": null,
-      "banos": 12,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Sucre, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Oficina espaciosa y remodelada de dos niveles, ubicada en zona comercial cerca del metro. Cuenta con 10 oficinas privadas, 3 salas de reuniones, área de kitchenette y terrazas al aire libre con vista panorámica de la ciudad. Ideal para empresas que buscan confort, accesibilidad y una excelente ubicación.",
-      "amenities": [
-        "vista",
-        "terraza",
-        "remodelado"
       ]
     },
     {
@@ -2195,23 +2074,6 @@
       ]
     },
     {
-      "titulo": "Local Comercial en alquiler en Chacao, Miranda — $2.800/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/miranda/comercial-oficina-en-alquiler-en-la-castellana-distrito-metropolitano-rentahouse-26-14519",
-      "precio_texto": "$2.800",
-      "precio_usd": 2800,
-      "habitaciones": null,
-      "banos": 2,
-      "metros_cuadrados": null,
-      "tipo": "Local comercial",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Chacao, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Estupenda oficina ubicada en la torre Copernico del Centro Comercial San Ignacio.\nCuenta con 3 oficinas pequeñas, 2 oficinas grandes con jardinera y vista espectaclar al Avila, una sala de conferencias, archivo y 2 baños.\nExcelente oportunidad para tener tu empresa en el centro comercial mas top de Caracas.",
-      "amenities": [
-        "jardín"
-      ]
-    },
-    {
       "titulo": "Terreno en venta en El Hatillo, Miranda — $45.000",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/terreno/venta/miranda/terreno-residencial-en-venta-en-el-hatillo-distrito-metropolitano-rentahouse-26-12854",
       "precio_texto": "$45.000",
@@ -2274,23 +2136,6 @@
       "descripcion": "¡Descubre la oportunidad que estabas esperando! Te presentamos un local comercial con una ubicación privilegiada, ideal para activar de inmediato un negocio de comida asiática. Este espacio ha sido recién remodelado con un diseño moderno y atractivo, que no solo cautivará a tus clientes, sino que también ofrecerá un ambiente acogedor y funcional para el servicio. cuenta con todo el mobiliario",
       "amenities": [
         "remodelado"
-      ]
-    },
-    {
-      "titulo": "Local Comercial en alquiler en Distrito Capital — $1.500/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-oficina-en-alquiler-en-chacao-distrito-metropolitano-rentahouse-26-16578",
-      "precio_texto": "$1.500",
-      "precio_usd": 1500,
-      "habitaciones": null,
-      "banos": 3,
-      "metros_cuadrados": null,
-      "tipo": "Local comercial",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Estupenda oficina ubicada en el Multicentro Empresarial del Este, el de mayor impacto comercial y empresarial en Chacao.\namplia y bien distribuida, cuenta con recepcion, varios espacios de trabajo, mobiliario, 2 oficinas cerradas, kitchenette,2 baños y area de archivo.\nIdeal para establecer tu empresa en una zona centrica y segura, ademas tiene asignado 2 puestos de estacionamiento.",
-      "amenities": [
-        "estacionamiento"
       ]
     },
     {
@@ -2361,21 +2206,6 @@
       ]
     },
     {
-      "titulo": "Local Comercial en alquiler en Sucre, Miranda — $3.800/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/miranda/comercial-oficina-en-alquiler-en-boleita-norte-distrito-metropolitano-rentahouse-27-3369",
-      "precio_texto": "$3.800",
-      "precio_usd": 3800,
-      "habitaciones": null,
-      "banos": 4,
-      "metros_cuadrados": null,
-      "tipo": "Local comercial",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Sucre, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Amplia oficina con acabados de primera,, 219 Mts muy bien distribuidos, equipada y amoblada con muy buen gusto, cuenta con recepcion, 2 oficinas principales privadas con baño interno, 4 oficinas cerradas, 8 puestos de trabajo abiertos, sala de reuniones, hermosa y comoda cocina,/comedor, lavadero, 2 banos para uso general, Archimovil grande, cuarto de servidores, data, telefonia, internet, sistema",
-      "amenities": []
-    },
-    {
       "titulo": "Apartamento en venta en Miranda, Distrito Capital — $400.000",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-duplex-en-venta-en-miranda-distrito-metropolitano-rentahouse-27-4344",
       "precio_texto": "$400.000",
@@ -2408,23 +2238,6 @@
       "portal": "inmueblesconlupa",
       "descripcion": "Excelente terreno con un potencial sin igual para la construccion de  posada turistica u hotel de su sue;o. Cuenta con una ubicacion privilegiada, centrica cerca del puerto pesquero de Cuc hibana, verlo es comprarlo",
       "amenities": []
-    },
-    {
-      "titulo": "Local Comercial en alquiler en Chacao, Miranda — $1.500/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/miranda/comercial-oficina-en-alquiler-en-el-rosal-distrito-metropolitano-rentahouse-27-4179",
-      "precio_texto": "$1.500",
-      "precio_usd": 1500,
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": null,
-      "tipo": "Local comercial",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Chacao, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Oficina completamente AMUEBLADA con acabados de primera. Ubicada en Av. financiera muy importante de la ciudad. Estacionamiento público y cerca de todos los servicios públicos. Contáctenos para más detalles..",
-      "amenities": [
-        "estacionamiento"
-      ]
     },
     {
       "titulo": "Apartamento en venta en La Boyera, Miranda — $126.000",
@@ -2525,25 +2338,6 @@
       "amenities": [
         "vigilancia",
         "estacionamiento"
-      ]
-    },
-    {
-      "titulo": "Apartamento en venta en El Encantado, Miranda — $95.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-1-nivel-en-venta-en-el-encantado-distrito-metropolitano-rentahouse-27-5991",
-      "precio_texto": "$95.000",
-      "precio_usd": 95000,
-      "habitaciones": 2,
-      "banos": 2,
-      "metros_cuadrados": null,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "El Encantado, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Espectalular Apto. listo para mudarse, 2 hab. 2 baños, 1 Pto. estacionamiento techado, cocina y baños remodelados, habitaciones con aire acondicionado Split nuevos, tanque, termotronic, esta propiedad está impecable, un hogar verdadero hermoso.",
-      "amenities": [
-        "estacionamiento",
-        "remodelado",
-        "aire_acondicionado"
       ]
     },
     {
@@ -3466,24 +3260,6 @@
       ]
     },
     {
-      "titulo": "Local Comercial en alquiler en La Urbina, Miranda — $590/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/miranda/comercial-oficina-en-alquiler-en-la-urbina-distrito-metropolitano-rentahouse-25-12739",
-      "precio_texto": "$590",
-      "precio_usd": 590,
-      "habitaciones": null,
-      "banos": 2,
-      "metros_cuadrados": null,
-      "tipo": "Local comercial",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "La Urbina, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Estrategica oficina en alquiler con opción para almacenamiento de mercancia livlana. incluye: 7 oficinas independientes de aprox 4 mts2, 4 de las cuales con  vista panorámica al Ávila; Área de Kitchinet, Oficinas principal y Sala de reuniones con vista panorámica al Ávila; 2 baños y área de recepción. El edificio cuenta con 4 ascensores, uno de los cuales es de carga.",
-      "amenities": [
-        "ascensor",
-        "vista"
-      ]
-    },
-    {
       "titulo": "Apartamento en venta en Distrito Capital — $195.000",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-el-cafetal-distrito-metropolitano-rentahouse-26-3120",
       "precio_texto": "$195.000",
@@ -3571,21 +3347,6 @@
         "vigilancia",
         "gimnasio"
       ]
-    },
-    {
-      "titulo": "Local Comercial en venta en Boleita Sur, Miranda",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/miranda/comercial-galpon-deposito-en-venta-en-boleita-sur-distrito-metropolitano-rentahouse-26-3584",
-      "precio_texto": "",
-      "precio_usd": null,
-      "habitaciones": null,
-      "banos": 2,
-      "metros_cuadrados": 80,
-      "tipo": "Local comercial",
-      "operacion_detectada": "Venta",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "GALPÓN EN VENTA - BOLEÍTA SUR (CARACAS). ÚNICO EN ÓPTIMAS CONDICIONES CON 1.332,80 M2. \n\nEste inmueble destaca por su condición espectacular y óptima, siendo el único en la zona que no requiere ninguna inversión ni reparación, lo que garantiza el inicio inmediato de sus operaciones.",
-      "amenities": []
     },
     {
       "titulo": "Apartamento en venta en El Cigarral, Miranda — $157.000",
@@ -3702,21 +3463,6 @@
       "amenities": []
     },
     {
-      "titulo": "Galpón en alquiler en Los Salias, Miranda — $2.500/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/miranda/comercial-galpon-deposito-en-alquiler-en-municipio-carrizal-miranda-rentahouse-26-17927",
-      "precio_texto": "$2.500",
-      "precio_usd": 2500,
-      "habitaciones": null,
-      "banos": 3,
-      "metros_cuadrados": null,
-      "tipo": "Local-comercial",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Se ofrece galpón amplio y funcional, perfecto para almacenamiento, logística o actividades comerciales. Cuenta con excelente ubicación y fácil acceso para vehículos de carga.",
-      "amenities": []
-    },
-    {
       "titulo": "Apartamento en venta en El Cigarral, Miranda — $125.000",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-1-nivel-en-venta-en-el-cigarral-distrito-metropolitano-rentahouse-26-18820",
       "precio_texto": "$125.000",
@@ -3803,23 +3549,6 @@
         "estacionamiento",
         "vista",
         "remodelado"
-      ]
-    },
-    {
-      "titulo": "Local Comercial en alquiler en Chacao, Miranda — $450/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/miranda/comercial-local-comercial-en-alquiler-en-chacao-distrito-metropolitano-rentahouse-27-1209",
-      "precio_texto": "$450",
-      "precio_usd": 450,
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": null,
-      "tipo": "Local comercial",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Chacao, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Ubicación estratégica | Vista panorámica | Excelente distribución\nSi buscas un espacio funcional, impecable y ubicado en la zona comercial de mayor movimiento y prestigio en Caracas, esta oficina de 34 m² en el Municipio Chacao es la oportunidad perfecta para potenciar tu marca o firma profesional.\n Características Destacadas:\n Superficie: 34 m² eficientemente distribuidos.\n Piso Alto: Excelen",
-      "amenities": [
-        "vista"
       ]
     },
     {
@@ -4142,43 +3871,6 @@
       "amenities": []
     },
     {
-      "titulo": "Local Comercial en alquiler en Miranda — $5.600/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/miranda/comercial-local-comercial-en-alquiler-en-el-valle-distrito-metropolitano-rentahouse-27-4515",
-      "precio_texto": "$5.600",
-      "precio_usd": 5600,
-      "habitaciones": null,
-      "banos": 2,
-      "metros_cuadrados": 940,
-      "tipo": "Local comercial",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Galpón Deposito de 940m2 ideal para cualquier tipo de negocio, cuenta con ascensor de carga, con su  respectiva zona de carga y descarga, tiene planta eléctrica, pozo de agua, vigilancia las 24 horas, complejo cerrado, puestos de estacionamiento.\n\nOportunidad",
-      "amenities": [
-        "vigilancia",
-        "estacionamiento",
-        "ascensor"
-      ]
-    },
-    {
-      "titulo": "Galpón en alquiler en El Valle, Miranda — $5.600/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/miranda/comercial-local-comercial-en-alquiler-en-el-valle-distrito-metropolitano-rentahouse-27-4328",
-      "precio_texto": "$5.600",
-      "precio_usd": 5600,
-      "habitaciones": null,
-      "banos": 2,
-      "metros_cuadrados": null,
-      "tipo": "Local-comercial",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Galpon o deposito , ideal para cualquier tipo de negocio, cuenta con ascensor de carga, con su  respectiva zona de carga y descarga, tiene planta eléctrica, pozo de agua, vigilancia las 24 horas, complejo cerrado.\n\nNo busques mas!!!!!",
-      "amenities": [
-        "vigilancia",
-        "ascensor"
-      ]
-    },
-    {
       "titulo": "Apartamento en alquiler en Distrito Capital — $830/mes",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/distrito-capital/apartamento-1-nivel-en-alquiler-en-la-alameda-distrito-metropolitano-rentahouse-27-4538",
       "precio_texto": "$830",
@@ -4196,25 +3888,6 @@
         "vigilancia",
         "estacionamiento",
         "vista"
-      ]
-    },
-    {
-      "titulo": "Local Comercial en alquiler en Miranda — $6.000/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/miranda/comercial-industrial-en-alquiler-en-el-valle-distrito-metropolitano-rentahouse-27-5416",
-      "precio_texto": "$6.000",
-      "precio_usd": 6000,
-      "habitaciones": null,
-      "banos": 2,
-      "metros_cuadrados": 1040,
-      "tipo": "Local comercial",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Local Industrial de 1040m2 ideal para cualquier tipo de negocio, cuenta con ascensor de carga, con su  respectiva zona de carga y descarga,, vigilancia las 24 horas, complejo cerrado, puestos de estacionamiento.\n\nOportunidad",
-      "amenities": [
-        "vigilancia",
-        "estacionamiento",
-        "ascensor"
       ]
     },
     {
@@ -4316,23 +3989,6 @@
       "amenities": []
     },
     {
-      "titulo": "Galpón en alquiler en El Valle, Miranda — $10.000/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/miranda/comercial-local-comercial-en-alquiler-en-el-valle-distrito-metropolitano-rentahouse-27-5431",
-      "precio_texto": "$10.000",
-      "precio_usd": 10000,
-      "habitaciones": null,
-      "banos": 4,
-      "metros_cuadrados": 1975,
-      "tipo": "Local-comercial",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Local Industrial  1975m2 , estacionamiento privado, planta eléctrica, pozo de agua, excelentes condiciones de negociacion, altura ideal de 3m, todo lo que necesitas en un mismo sitio.\n\nVamos a conocerlo, te encantará",
-      "amenities": [
-        "estacionamiento"
-      ]
-    },
-    {
       "titulo": "Casa en venta en Catia, Distrito Capital — $130.000",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/distrito-capital/casa-multipes-niveles-en-venta-en-catia-distrito-metropolitano-rentahouse-27-5564",
       "precio_texto": "$130.000",
@@ -4420,21 +4076,6 @@
       ]
     },
     {
-      "titulo": "Local Comercial en alquiler en Sucre, Miranda — $1.100/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/miranda/comercial-oficina-en-alquiler-en-los-palos-grandes-distrito-metropolitano-rentahouse-27-6024",
-      "precio_texto": "$1.100",
-      "precio_usd": 1100,
-      "habitaciones": null,
-      "banos": 2,
-      "metros_cuadrados": null,
-      "tipo": "Local comercial",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Sucre, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Se alquila anexo con entrada independiente ideal para oficina o depósito. \nEspacioso y  con funcional con una distribución óptima para tu equipo de trabajo.\n\nÁrea Ejecutiva 2 oficinas privadas, cada una con baño.  Áreas de trabajo compartidas, una amplia cocina.\n\nNO TIENE PERMISO COMERCIAL",
-      "amenities": []
-    },
-    {
       "titulo": "Local Comercial en alquiler en Distrito Capital — $2.800/mes",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-local-comercial-en-alquiler-en-parroquia-la-candelaria-distrito-metrop-rentahouse-27-6025",
       "precio_texto": "$2.800",
@@ -4482,23 +4123,6 @@
       ]
     },
     {
-      "titulo": "Local Comercial en El Valle, Distrito Capital — $13.400/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-galpon-deposito-en-alquiler-en-el-valle-distrito-metropolitano-rentahouse-27-6034",
-      "precio_texto": "$13.400",
-      "precio_usd": 13400,
-      "habitaciones": null,
-      "banos": 3,
-      "metros_cuadrados": 910,
-      "tipo": "Local-comercial",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Deposito de1.910m2 x 3m de altura de area continua de Almacenamiento y/o espacio de Oficinas o area administrativa; Ideal para establecer un centro de operaciones, almacenaje, o distribucion. Cuenta con montacargas. Ubicación privilegiada y estrategica de múltiples accesos. Amplios Espacio. Ubicado dentro de un compelo industrial cerrado y con vigilancia las 24H. Pozo de agua y planta electrica.",
-      "amenities": [
-        "vigilancia"
-      ]
-    },
-    {
       "titulo": "Apartamento en venta en Distrito Capital — $315.000",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-el-rosal-distrito-metropolitano-rentahouse-27-6039",
       "precio_texto": "$315.000",
@@ -4512,40 +4136,6 @@
       "portal": "inmueblesconlupa",
       "descripcion": "Ubicado en una de las zonas más estratégicas y demandadas de Caracas, éste cómodo apartamento ofrece el equilibrio perfecto entre funcionalidad y confort. Gracias a su excelente distribución, cada rincón destaca por su luminosidad y ventilación natural. Sólo dos apartamentos por piso, mantenido en óptimas condiciones y con pozo de agua.",
       "amenities": []
-    },
-    {
-      "titulo": "Local Comercial en alquiler en Distrito Capital — $6.800/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-galpon-deposito-en-alquiler-en-el-valle-distrito-metropolitano-rentahouse-27-6041",
-      "precio_texto": "$6.800",
-      "precio_usd": 6800,
-      "habitaciones": null,
-      "banos": 3,
-      "metros_cuadrados": 970,
-      "tipo": "Local comercial",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Deposito de 970 m2 x 3m de altura de area continua de Almacenamiento y/o espacio de Oficinas o area administrativa; Ideal para establecer un centro de operaciones, almacenaje, o distribucion. Cuenta con montacargas. Ubicación privilegiada y estrategica de múltiples accesos. Amplios Espacio. Ubicado dentro de un compelo industrial cerrado y con vigilancia las 24H. Pozo de agua y planta electrica.",
-      "amenities": [
-        "vigilancia"
-      ]
-    },
-    {
-      "titulo": "Local Comercial en alquiler en Distrito Capital — $6.600/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-galpon-deposito-en-alquiler-en-el-valle-distrito-metropolitano-rentahouse-27-6038",
-      "precio_texto": "$6.600",
-      "precio_usd": 6600,
-      "habitaciones": null,
-      "banos": 3,
-      "metros_cuadrados": 934,
-      "tipo": "Local comercial",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Deposito de 934m2 x 3m de altura de area continua de Almacenamiento y/o espacio de Oficinas o area administrativa; Ideal para establecer un centro de operaciones, almacenaje, o distribucion. Cuenta con montacargas. Ubicación privilegiada y estrategica de múltiples accesos. Amplios Espacio. Ubicado dentro de un compelo industrial cerrado y con vigilancia las 24H. Pozo de agua y planta electrica.",
-      "amenities": [
-        "vigilancia"
-      ]
     },
     {
       "titulo": "Apartamento en venta en Chuao, Miranda — $162.000",
@@ -4953,23 +4543,6 @@
       "amenities": []
     },
     {
-      "titulo": "Local Comercial en venta en Distrito Capital — $55.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-oficina-en-venta-en-bello-monte-distrito-metropolitano-rentahouse-27-6096",
-      "precio_texto": "$55.000",
-      "precio_usd": 55000,
-      "habitaciones": null,
-      "banos": 1,
-      "metros_cuadrados": null,
-      "tipo": "Local comercial",
-      "operacion_detectada": "Venta",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Te ofrecemos la oportunidad de comprar moderna Oficina, ubicada en el Centro Comercial Bello Monte, cuenta con un excelente espacio 3 Oficinas,1 sala de reuniones y un espacio con 4 estaciones de trabajo, 1 baño privado, y cuenta con  una vista privilegiada. Buena iluminacion, aire acondicionado central en perfectas condiciones,puerta de seguridad.",
-      "amenities": [
-        "aire_acondicionado"
-      ]
-    },
-    {
       "titulo": "Apartamento en venta en La Urbina, Miranda — $130.000",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-1-nivel-en-venta-en-la-urbina-distrito-metropolitano-rentahouse-27-6098",
       "precio_texto": "$130.000",
@@ -4983,24 +4556,6 @@
       "portal": "inmueblesconlupa",
       "descripcion": "Apartamento de 86 m² en excelente ubicación\n\nPráctico, iluminado y con fácil acceso a las vías principales. Cuenta con 2 habitaciones + servicio, 2 baños y 2 puestos de estacionamiento.",
       "amenities": [
-        "estacionamiento"
-      ]
-    },
-    {
-      "titulo": "Oficina en alquiler en El Valle, Miranda — $1.200/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/miranda/comercial-oficina-en-alquiler-en-el-valle-distrito-metropolitano-rentahouse-27-6089",
-      "precio_texto": "$1.200",
-      "precio_usd": 1200,
-      "habitaciones": null,
-      "banos": 2,
-      "metros_cuadrados": 200,
-      "tipo": "Oficina",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "El Valle, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Oficina ideal para cualquier tipo de negocio, ofrece vigilancia privada 24/7, 200m2 para una excelente distribución, agua constante, estacionamiento sin costo adicional y excelentes condiciones de negociacion. \n\nVamos a Verlo, te encantará",
-      "amenities": [
-        "vigilancia",
         "estacionamiento"
       ]
     },
@@ -5815,143 +5370,6 @@
       ]
     },
     {
-      "titulo": "Oficina en alquiler en Chuao, Miranda — $1.300/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/miranda/comercial-oficina-en-alquiler-en-chuao-distrito-metropolitano-rentahouse-24-28954",
-      "precio_texto": "$1.300",
-      "precio_usd": 1300,
-      "habitaciones": null,
-      "banos": 1,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Chuao, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Ascensor para ejecutivos. Vista. Baño privado. Kitchinette. Carpinteria fina. Central con capacidad para seis telefonos. Ideal para grupo medico. 4 cubiculos. Excelentes Aires aconcionados a estrenar.",
-      "amenities": [
-        "ascensor"
-      ]
-    },
-    {
-      "titulo": "Local Comercial en alquiler en Distrito Capital — $500/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-oficina-en-alquiler-en-la-candelaria-distrito-metropolitano-rentahouse-25-3259",
-      "precio_texto": "$500",
-      "precio_usd": 500,
-      "habitaciones": null,
-      "banos": 3,
-      "metros_cuadrados": null,
-      "tipo": "Local comercial",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Oficina en alquiler con excelente ubicación, en el corazón del centro, frente a la plaza La Candelaria. Posee 3 amplias salas o cubículos independientes. Ideal para consultorio médico, odontológico, oficinas administrativas, salones para clases o corporativos. HORARIO DE TRABAJO DE LUNES A VIERNES DE 8 AM A 7 PM SABADOS DE 8 AM A 2 PM Solicita tu cita ya!!",
-      "amenities": []
-    },
-    {
-      "titulo": "Oficina en alquiler en Distrito Capital — $450/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-oficina-en-alquiler-en-la-castellana-distrito-metropolitano-rentahouse-26-7031",
-      "precio_texto": "$450",
-      "precio_usd": 450,
-      "habitaciones": null,
-      "banos": 3,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Cómoda oficina privada.\n\n\nAlquiler con derecho a:\n.- Internet sin costo adicional al canon.\n.- Recepción.\n.- Kitchenette.\n.-Baños damas y caballeros.\n.- Sala de conferencia.\n.-Archivador en pasillo.\n\n.-Internet ABA y Net Uno.",
-      "amenities": []
-    },
-    {
-      "titulo": "Local Comercial en alquiler en Distrito Capital — $300/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-oficina-en-alquiler-en-la-castellana-distrito-metropolitano-rentahouse-26-7037",
-      "precio_texto": "$300",
-      "precio_usd": 300,
-      "habitaciones": null,
-      "banos": 3,
-      "metros_cuadrados": null,
-      "tipo": "Local comercial",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Cómodo cubículo para 3 personas.\nAlquiler con derecho a: \nSe alquila con derecho a: \n.- Internet sin costo adicional al canon.\n.- Recepción.\n.- Kitchenette.\n.-Baños damas y caballeros.\n.- Sala de conferencia.\n.-Archivo.\n\n.-Internet ABA y Net uno.",
-      "amenities": []
-    },
-    {
-      "titulo": "Local Comercial en alquiler en Distrito Capital — $300/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-oficina-en-alquiler-en-la-castellana-distrito-metropolitano-rentahouse-26-7637",
-      "precio_texto": "$300",
-      "precio_usd": 300,
-      "habitaciones": null,
-      "banos": 3,
-      "metros_cuadrados": null,
-      "tipo": "Local comercial",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Cómodo y funcional cubículo para dos personas. \n\nAlquiler con derecho a:\n.- Internet sin costo adicional al canon.\n.- Recepción.\n.- Kitchenette.\n.-Baños damas y caballeros.\n.- Sala de conferencia.\n.-Archivador en pasillo.\n\n.-Internet ABA y Net Uno.",
-      "amenities": []
-    },
-    {
-      "titulo": "Oficina en alquiler en Distrito Capital — $300/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-oficina-en-alquiler-en-la-castellana-distrito-metropolitano-rentahouse-26-7203",
-      "precio_texto": "$300",
-      "precio_usd": 300,
-      "habitaciones": null,
-      "banos": 3,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Cómodo y funcional cubículo tabique alto para mayor privacidad. \n\n\nAlquiler con derecho a:\n.- Internet sin costo adicional al canon.\n.- Recepción.\n.- Kitchenette.\n.-Baños damas y caballeros.\n.- Sala de conferencia.\n.- Archivo.\n\n.-Internet ABA y Net Uno.",
-      "amenities": []
-    },
-    {
-      "titulo": "Local Comercial en alquiler en Distrito Capital — $350/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-oficina-en-alquiler-en-la-castellana-distrito-metropolitano-rentahouse-26-7205",
-      "precio_texto": "$350",
-      "precio_usd": 350,
-      "habitaciones": null,
-      "banos": 3,
-      "metros_cuadrados": null,
-      "tipo": "Local comercial",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Cómodo y funcional cubículo con tabique alto para mayor privacidad. \n\n\nAlquiler con derecho a:\n.- Internet sin costo adicional al canon.\n.- Recepción.\n.- Kitchenette.\n.-Baños damas y caballeros.\n.- Sala de conferencia.\n.-Archivador en pasillo.\n\n.-Internet ABA y Net Uno.",
-      "amenities": []
-    },
-    {
-      "titulo": "Oficina en alquiler en Distrito Capital — $350/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-oficina-en-alquiler-en-la-castellana-distrito-metropolitano-rentahouse-26-7207",
-      "precio_texto": "$350",
-      "precio_usd": 350,
-      "habitaciones": null,
-      "banos": 3,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Cómodo y funcional cubículo con tabique alto para mayor privacidad. \n\nAlquiler con derecho a:\n.- Internet sin costo adicional al canon,\n.- Recepción.\n.- Kitchenette.\n.-Baños damas y caballeros.\n.- Sala de conferencia.\n.-Archivador en pasillo.\n\n.-Internet ABA y Net Uno.",
-      "amenities": []
-    },
-    {
-      "titulo": "Oficina en alquiler en Distrito Capital — $300/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-oficina-en-alquiler-en-la-castellana-distrito-metropolitano-rentahouse-26-7636",
-      "precio_texto": "$300",
-      "precio_usd": 300,
-      "habitaciones": null,
-      "banos": 3,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Cómodo y funcional cubículo para dos personas. \n\nAlquiler con derecho a:\n.- Internet sin costo adicional al canon.\n.- Recepción.\n.- Kitchenette.\n.-Baños damas y caballeros.\n.- Sala de conferencia.\n.-Archivador en pasillo.\n\n.-Internet ABA y Net Uno.",
-      "amenities": []
-    },
-    {
       "titulo": "Local Comercial en venta en La Urbina, Miranda — $860.000",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/miranda/comercial-local-comercial-en-venta-en-la-urbina-distrito-metropolitano-rentahouse-26-14130",
       "precio_texto": "$860.000",
@@ -6016,23 +5434,6 @@
       "amenities": [
         "ascensor",
         "terraza"
-      ]
-    },
-    {
-      "titulo": "Oficina en venta en Los Samanes, Miranda — $150.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/miranda/comercial-oficina-en-venta-en-los-samanes-distrito-metropolitano-rentahouse-26-17916",
-      "precio_texto": "$150.000",
-      "precio_usd": 150000,
-      "habitaciones": null,
-      "banos": 3,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Los Samanes, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Magnifica oportunidad, oficina ubicada en excelente zona del sureste de Caracas, en un Centro Comercial, A/A central, techos de plafon con iluminacion e instalaciones, posee 2 puertas de acceso, actualmente esta dividida en 2 oficinas independientes; en conjunto posee 2 areas de recepcion, 11 oficinas y/o cubiculos, 2 baños; pisos de vinil gris una y parquet la otra y vista panoramica. El CC tiene",
-      "amenities": [
-        "vista"
       ]
     },
     {
@@ -6477,24 +5878,6 @@
       "amenities": []
     },
     {
-      "titulo": "Oficina en alquiler en Distrito Capital — $700/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-oficina-en-alquiler-en-parroquia-la-candelaria-distrito-metropolitano-rentahouse-27-5940",
-      "precio_texto": "$700",
-      "precio_usd": 700,
-      "habitaciones": null,
-      "banos": 2,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Ampia comoda e impecable Oficina en el corazon de la Candelaria,completamente remodealda Tiene area de ecpecion, 3 cubiculos 2 banos y area de kichinett Posee aire acondicionado en todas las areas, puerta de seguridad y panees blackout\nIdeal para oficinas administrativas, despachos de abogados o el area administrativa que desee Todo el edificio son oficinas con vigilancia privada",
-      "amenities": [
-        "vigilancia",
-        "aire_acondicionado"
-      ]
-    },
-    {
       "titulo": "Local Comercial en venta en Distrito Capital — $325.000",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-local-comercial-en-venta-en-santa-monica-distrito-metropolitano-rentahouse-27-5938",
       "precio_texto": "$325.000",
@@ -6609,25 +5992,6 @@
       ]
     },
     {
-      "titulo": "Apartamento en venta en Santa Fe Sur, Miranda — $135.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-1-nivel-en-venta-en-santa-fe-sur-distrito-metropolitano-rentahouse-27-5954",
-      "precio_texto": "$135.000",
-      "precio_usd": 135000,
-      "habitaciones": 3,
-      "banos": 3,
-      "metros_cuadrados": null,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Santa Fe Sur, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Maravilloso  apartamento en Santa Fe Sur, ubicado en calle cerrada con vigilancia, zona con Agua Constante, clima de montaña. Se encuentra funcional , ofreciendo un gran potencial para Remodelarlo y adaptarlo a su propio estilo. \nCuenta con hermosa vista panoramica, 3 habitaciones mas servicio, 2 baÃ±os mas servicio y 1 puesto de estacionamiento techado.",
-      "amenities": [
-        "vigilancia",
-        "estacionamiento",
-        "vista"
-      ]
-    },
-    {
       "titulo": "Apartamento en alquiler en Parque Caiza, Miranda — $350/mes",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/miranda/apartamento-multiples-niveles-en-alquiler-en-parque-caiza-distrito-metropolitano-rentahouse-27-5963",
       "precio_texto": "$350",
@@ -6643,21 +6007,6 @@
       "amenities": [
         "estacionamiento"
       ]
-    },
-    {
-      "titulo": "Oficina en alquiler en Distrito Capital — $600/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-oficina-en-alquiler-en-san-bernardino-distrito-metropolitano-rentahouse-27-5960",
-      "precio_texto": "$600",
-      "precio_usd": 600,
-      "habitaciones": null,
-      "banos": 2,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Ubicada en el corazón de San Bernardino, dentro del Centro Salud, esta impecable oficina de 70 m² destaca por su posición privilegiada y de fácil acceso. Una excelente oportunidad comercial que combina practicidad, modernidad y una ubicación estratégica ideal para tu negocio o consultorio.",
-      "amenities": []
     },
     {
       "titulo": "Local Comercial en alquiler en Distrito Capital — $350/mes",
@@ -7508,36 +6857,6 @@
       ]
     },
     {
-      "titulo": "Oficina en alquiler en Macaracuay, Miranda — $2.500/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/miranda/comercial-oficina-en-alquiler-en-macaracuay-distrito-metropolitano-rentahouse-26-4665",
-      "precio_texto": "$2.500",
-      "precio_usd": 2500,
-      "habitaciones": null,
-      "banos": 3,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Macaracuay, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Bellisima, moderna e impecable oficina, con sistema biometrico de acceso con huella, camaras. Aire central, 2 oficinas principales, 1 oficina comun, varias areas de trabajo,area de cafe-lunch. Area de deposito para los mÃ³dulos de tecnologia. Central telefonica. 4 lineas. internet. 2 banos. Area de archivo con 2 modulos de archimovil y estante. Hay estc. publico, y se puede alquilar puestos.",
-      "amenities": []
-    },
-    {
-      "titulo": "Local Comercial en venta en Distrito Capital — $2.100.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-galpon-deposito-en-venta-en-colinas-de-bello-monte-distrito-metropolit-rentahouse-26-6956",
-      "precio_texto": "$2.100.000",
-      "precio_usd": 2100000,
-      "habitaciones": null,
-      "banos": 17,
-      "metros_cuadrados": null,
-      "tipo": "Local comercial",
-      "operacion_detectada": "Venta",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Un espacio de 6.000m2 para grandes visiones empresariales.\nPresentamos un inmueble único que redefine el concepto de funcionalidad y proyección corporativa, este espacio ha sido concebido para responder a las más altas exigencias de empresas que buscan un centro integral de operaciones. Áreas de depósito: amplias, seguras y de fácil adaptación, diseñadas para optimizar procesos logísticos,",
-      "amenities": []
-    },
-    {
       "titulo": "Casa en venta en Los Palos Grandes, Miranda — $480.000",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/miranda/casa-1-nivel-en-venta-en-los-palos-grandes-distrito-metropolitano-rentahouse-26-7667",
       "precio_texto": "$480.000",
@@ -7553,21 +6872,6 @@
       "amenities": [
         "estacionamiento"
       ]
-    },
-    {
-      "titulo": "Oficina en venta en Distrito Capital — $2.100.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-oficina-en-venta-en-colinas-de-bello-monte-distrito-metropolitano-rentahouse-26-7096",
-      "precio_texto": "$2.100.000",
-      "precio_usd": 2100000,
-      "habitaciones": null,
-      "banos": 17,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Venta",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Un espacio de 6.000m2 para grandes visiones empresariales.\nPresentamos un inmueble único que redefine el concepto de funcionalidad y proyección corporativa, este espacio ha sido concebido para responder a las más altas exigencias de empresas que buscan un centro integral de operaciones. Áreas de depósito: amplias, seguras y de fácil adaptación, diseñadas para optimizar procesos logísticos,",
-      "amenities": []
     },
     {
       "titulo": "Casa en venta en Alto Hatillo, Miranda — $450.000",
@@ -7876,21 +7180,6 @@
       ]
     },
     {
-      "titulo": "Galpón en alquiler en Mariche, Distrito Capital — $1.100/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-galpon-deposito-en-alquiler-en-mariche-distrito-metropolitano-rentahouse-27-577",
-      "precio_texto": "$1.100",
-      "precio_usd": 1100,
-      "habitaciones": null,
-      "banos": 2,
-      "metros_cuadrados": null,
-      "tipo": "Local-comercial",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Disponible en alquiler espacioso galpón, ideal para almacén de mercancía, textil o mercancía seca  únicamente figura jurídica. cuenta con luz trifásica. EL espacio disponible en alquiler es de 300 metros.",
-      "amenities": []
-    },
-    {
       "titulo": "Apartamento en venta en Distrito Capital — $190.000",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-san-bernardino-distrito-metropolitano-rentahouse-26-21593",
       "precio_texto": "$190.000",
@@ -8028,24 +7317,6 @@
       "descripcion": "Cómodo Apartamento Distribuido en 3 Habitaciones, 1 Baño, 1 Puesto. Piso alto , Edificio Mantenido Ascensores en excelente estado. Tiene Gas directo, Siempre hay agua. Transporte Publico",
       "amenities": [
         "ascensor"
-      ]
-    },
-    {
-      "titulo": "Oficina en alquiler en Chacao, Miranda — $1.900/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/miranda/comercial-local-comercial-en-alquiler-en-los-palos-grandes-distrito-metropolitan-rentahouse-27-2842",
-      "precio_texto": "$1.900",
-      "precio_usd": 1900,
-      "habitaciones": null,
-      "banos": 3,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Chacao, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Espectacular oficina en Alquiler.  Lista para iniciar tu negocio!!\nSon 7 Cubiculos Privados y amplio salon para mas lugares de trabajo, cuenta con AA central y 3 Splits, 1 linea telefonica, conexiones adaptadas para trabajar con Net Uno.\nFacil acceso a la oficina por la entrada de Estar Seguros, subir un solo piso escaleras o ascensor\nTambien tiene el beneficio de 2 Terrazas techadas de 40 y 20mts",
-      "amenities": [
-        "ascensor",
-        "terraza"
       ]
     },
     {
@@ -8220,21 +7491,6 @@
       ]
     },
     {
-      "titulo": "Oficina en venta en Libertador, Distrito Capital — $69.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-oficina-en-venta-en-las-delicias-de-sabana-grande-distrito-metropolita-rentahouse-27-5346",
-      "precio_texto": "$69.000",
-      "precio_usd": 69000,
-      "habitaciones": null,
-      "banos": 3,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Libertador, Distrito Capital",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Comoda oficina ubicada en torre muy bien conservada en urbanizacion muy centrica, cuenta con dos amplios despachos, dos banos, area de kchinette y amplia recepcion, facilidad de acceso en transporte publico y comercios a su alrededor",
-      "amenities": []
-    },
-    {
       "titulo": "Apartamento en venta en Macaracuay, Miranda — $143.000",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-1-nivel-en-venta-en-macaracuay-distrito-metropolitano-rentahouse-27-4745",
       "precio_texto": "$143.000",
@@ -8284,23 +7540,6 @@
       "amenities": [
         "vigilancia",
         "remodelado"
-      ]
-    },
-    {
-      "titulo": "Oficina en venta en Las Mercedes, Miranda — $125.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/miranda/comercial-oficina-en-venta-en-las-mercedes-distrito-metropolitano-rentahouse-27-5859",
-      "precio_texto": "$125.000",
-      "precio_usd": 125000,
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Las Mercedes, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Esta oficina de 17 m² destaca por su aprovechamiento del espacio, moderna remodelación y ubicación estratégica en una de las zonas empresariales y comerciales más cotizadas de la ciudad. Emplazada en una torre corporativa de reciente data sobre la Av.Principal de Las Mercedes. Ofrece acceso directo a comercios, servicios y principales vías de tránsito. Con gran vista panoramica al hotel TAMANACO.",
-      "amenities": [
-        "vista"
       ]
     },
     {
@@ -8422,24 +7661,6 @@
         "vigilancia",
         "estacionamiento",
         "ascensor"
-      ]
-    },
-    {
-      "titulo": "Local Comercial en venta en La Castellana, Miranda",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/miranda/comercial-oficina-en-venta-en-la-castellana-distrito-metropolitano-rentahouse-27-5870",
-      "precio_texto": "",
-      "precio_usd": null,
-      "habitaciones": null,
-      "banos": 1,
-      "metros_cuadrados": 50,
-      "tipo": "Local comercial",
-      "operacion_detectada": "Venta",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Alquila la mejor sede para tu empresa en prestigioso edificio empresarial, Redoma de La Castellana. Esta moderna oficina de 50 mts2., cuenta con recepción, despacho privado, amplia area para coworking, baño interno y kitchenette . Edificio corporativo con vigilancia 24/7, control de acceso, estacionamiento publico y pozo de agua, todo a pasos de la mejor red de servicios y transporte de la zona.",
-      "amenities": [
-        "vigilancia",
-        "estacionamiento"
       ]
     },
     {
@@ -8682,21 +7903,6 @@
       ]
     },
     {
-      "titulo": "Oficina en alquiler en Los Dos Caminos, Miranda — $800/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/miranda/comercial-oficina-en-alquiler-en-los-dos-caminos-distrito-metropolitano-rentahouse-27-5892",
-      "precio_texto": "$800",
-      "precio_usd": 800,
-      "habitaciones": null,
-      "banos": 2,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Los Dos Caminos, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Excelente oportunidad en alquiler funcional y amplia oficina de 88 m², distribuida en tres cubículos independientes sin amoblar, ideales para despachos gerenciales, salas de reuniones o áreas de trabajo adaptable a las necesidades de su empresa. en una zona estratégica de alta transitabilidad que ofrece rápida conectividad a estaciones de metro y transporte público, además de contar en su entorno",
-      "amenities": []
-    },
-    {
       "titulo": "Apartamento en alquiler en Baruta, Miranda — $1.200/mes",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/miranda/apartamento-1-nivel-en-alquiler-en-colinas-de-valle-arriba-distrito-metropolitan-rentahouse-27-5897",
       "precio_texto": "$1.200",
@@ -8764,21 +7970,6 @@
       "amenities": []
     },
     {
-      "titulo": "Local Comercial en alquiler en Distrito Capital — $460/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-oficina-en-alquiler-en-san-bernardino-distrito-metropolitano-rentahouse-27-5921",
-      "precio_texto": "$460",
-      "precio_usd": 460,
-      "habitaciones": null,
-      "banos": 2,
-      "metros_cuadrados": null,
-      "tipo": "Local comercial",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Ubicada en el corazón de San Bernardino, dentro del Centro Salud, esta impecable oficina de 35,72 m² destaca por su posición privilegiada y de fácil acceso. Una excelente oportunidad comercial que combina practicidad, modernidad y una ubicación estratégica ideal para tu negocio o consultorio.",
-      "amenities": []
-    },
-    {
       "titulo": "Apartamento en venta en Distrito Capital — $60.000",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-parroquia-la-candelaria-distrito-metropolitano-rentahouse-27-5911",
       "precio_texto": "$60.000",
@@ -8792,25 +7983,6 @@
       "portal": "inmueblesconlupa",
       "descripcion": "Excelente oportunidad de inversion en pleno corazon de la ciudad. Apartamento convertido en Oficina ubicada en edificio residencial/comercial a media cuadra de la Plaza La Candelaria.",
       "amenities": []
-    },
-    {
-      "titulo": "Apartamento en alquiler en Distrito Capital — $2.000/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/distrito-capital/apartamento-1-nivel-en-alquiler-en-la-florida-distrito-metropolitano-rentahouse-27-5924",
-      "precio_texto": "$2.000",
-      "precio_usd": 2000,
-      "habitaciones": 3,
-      "banos": 4,
-      "metros_cuadrados": null,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Confortable y Moderno Apartamento Totalmente Amoblado y Equipado con Excelente Gusto en La Florida, Calle Ciega, Doble sistema de Vigilancia. Sala-Comedor con Amplios Ventanales proporcionando Luz Natural, Frescura y Estupenda Vista al Avila, con Cocina Equipada, Sin problemas de Agua. Tiene 3 habitaciones+servicio, 2 Banos+visita+servicio. 4 Amplios Puestos de Estacionamiento. Verlo es ALQUILARLO",
-      "amenities": [
-        "vigilancia",
-        "estacionamiento",
-        "vista"
-      ]
     },
     {
       "titulo": "Apartamento en alquiler en Distrito Capital — $500/mes",
@@ -8881,21 +8053,6 @@
       ]
     },
     {
-      "titulo": "Oficina en venta en Distrito Capital — $2.700.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-consultorio-medico-en-venta-en-alta-florida-distrito-metropolitano-rentahouse-27-5926",
-      "precio_texto": "$2.700.000",
-      "precio_usd": 2700000,
-      "habitaciones": null,
-      "banos": 10,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Venta",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Oportunidad Única de Inversión. \nEdificio Corporativo y Clínico de Alta Capacidad\nEsta imponente estructura combina una ubicación estratégica, un diseño arquitectónico funcional de cuatro niveles y una infraestructura robusta para albergar un centro de salud de primer nivel o ser adaptada para el proyecto comercial de gran envergadura que tienes en mente.\nFicha Técnica Destacada....",
-      "amenities": []
-    },
-    {
       "titulo": "Apartamento en venta en Distrito Capital — $135.000",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-san-bernardino-distrito-metropolitano-rentahouse-27-5925",
       "precio_texto": "$135.000",
@@ -8930,40 +8087,6 @@
       ]
     },
     {
-      "titulo": "Oficina en alquiler en Distrito Capital — $1.000/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-oficina-en-alquiler-en-el-rosal-distrito-metropolitano-rentahouse-27-5915",
-      "precio_texto": "$1.000",
-      "precio_usd": 1000,
-      "habitaciones": null,
-      "banos": 1,
-      "metros_cuadrados": 100,
-      "tipo": "Oficina",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Ofrecemos en Venta comoda oficina de 100 mts2, ubicada en El Rosal, totalmente alfombrada con aire acondicionado, consta de 4 oficinas mas ofc de conferencia,1 baño, 2 puestos de estacionamiento y vigilancia las 24 horas",
-      "amenities": [
-        "vigilancia",
-        "estacionamiento",
-        "aire_acondicionado"
-      ]
-    },
-    {
-      "titulo": "Oficina en alquiler en Distrito Capital — $400/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-oficina-en-alquiler-en-san-bernardino-distrito-metropolitano-rentahouse-27-5922",
-      "precio_texto": "$400",
-      "precio_usd": 400,
-      "habitaciones": null,
-      "banos": 2,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Ubicada en el corazón de San Bernardino, dentro del Centro Salud, esta impecable oficina de 35,72 m² destaca por su posición privilegiada y de fácil acceso. Una excelente oportunidad comercial que combina practicidad, modernidad y una ubicación estratégica ideal para tu negocio o consultorio.",
-      "amenities": []
-    },
-    {
       "titulo": "Local Comercial en venta en Bello Monte, Miranda",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/miranda/comercial-local-comercial-en-venta-en-bello-monte-distrito-metropolitano-rentahouse-27-5927",
       "precio_texto": "",
@@ -8979,23 +8102,6 @@
       "amenities": [
         "vigilancia",
         "estacionamiento"
-      ]
-    },
-    {
-      "titulo": "Apartamento en venta en Baruta, Miranda — $219.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-en-venta-con-espectacular-vista-al-avila-urb-chuao-102-m-26-79-remax-346066",
-      "precio_texto": "$219.000",
-      "precio_usd": 219000,
-      "habitaciones": 2,
-      "banos": 1,
-      "metros_cuadrados": 80,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Baruta, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Chuao, Caracas, Baruta, Miranda, VEN. Excelente oportunidad de inversión en la prestigiosa Urbanización Chuao, Municipio Baruta. Se vende amplio y cómodo apartamento de 102 m² ubicado en el piso 8, en la Avenida Araure. La propiedad destaca por su impresionante vista despejada hacia el Ávila y la ciudad, ofreciendo una iluminación natural impecable y una ventilación envidiable. Cuenta con una excelente distribución que abarca una espaciosa sala-comedor con salida a un agradable balcón para disfrutar del paisaje, cocina en excelentes condiciones, nevera a estrenar con área de lavadero independiente, dos dormitorios principales, un baño completo y una habitación de servicio con su baño auxiliar. Ubicado",
-      "amenities": [
-        "terraza"
       ]
     },
     {
@@ -9297,25 +8403,6 @@
       ]
     },
     {
-      "titulo": "Oficina en venta en El Rosal, Distrito Capital — $120.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-oficina-en-venta-en-el-rosal-distrito-metropolitano-rentahouse-24-24867",
-      "precio_texto": "$120.000",
-      "precio_usd": 120000,
-      "habitaciones": null,
-      "banos": 1,
-      "metros_cuadrados": 100,
-      "tipo": "Oficina",
-      "operacion_detectada": "Venta",
-      "ubicacion": "El Rosal, Distrito Capital",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Ofrecemos en Venta comoda oficina de 100 mts2, ubicada en El Rosal, totalmente alfombrada con aire acondicionado, consta de 4 oficinas mas ofc de conferencia,1 baño, 2 puestos de estacionamiento y vigilancia las 24 horas",
-      "amenities": [
-        "vigilancia",
-        "estacionamiento",
-        "aire_acondicionado"
-      ]
-    },
-    {
       "titulo": "Local Comercial en venta en Distrito Capital — $95.000",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-local-comercial-en-venta-en-puente-hierro-distrito-metropolitano-rentahouse-26-949",
       "precio_texto": "$95.000",
@@ -9475,24 +8562,6 @@
       "amenities": []
     },
     {
-      "titulo": "Oficina en alquiler en Distrito Capital — $1.500/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-oficina-en-alquiler-en-las-delicias-de-sabana-grande-distrito-metropol-rentahouse-26-16033",
-      "precio_texto": "$1.500",
-      "precio_usd": 1500,
-      "habitaciones": null,
-      "banos": 2,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Descubre la oficina perfecta con 105m en un exclusivo cuarto piso con acceso directo por el ascensor. Este espacio ofrece una gran area abierta, 4 oficinas cerradas, deposito, kitchenette y 2 puestos de estacionamiento asignados. Ademas, el propietario cubre el costo del condominio. Ubicada en una zona centrica, es la oportunidad para potenciar tu negocio.",
-      "amenities": [
-        "estacionamiento",
-        "ascensor"
-      ]
-    },
-    {
       "titulo": "Casa en venta en Puerto Encantado, Miranda — $545.000",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/miranda/casa-en-venta-con-acabados-de-primera-y-diseno-minimalista-lista-para-habitar-en-MLV-776176201",
       "precio_texto": "$545.000",
@@ -9505,36 +8574,6 @@
       "ubicacion": "Puerto Encantado, Miranda",
       "portal": "inmueblesconlupa",
       "descripcion": "Tu Refugio Exclusivo en el Corazon de Higuerote.\nImagina despertar con el reflejo del sol sobre el canal privado y la libertad de tener tu embarcacion frente a tu casa. Esta propiedad, ubicada en la zona mas privilegiada de Higuerote, ha sido ideada para quienes no solo buscan una casa, sino un estilo de vida superior.\nCon acabados de primera y su diseno minimalista, esta maravilla",
-      "amenities": []
-    },
-    {
-      "titulo": "Oficina en venta en La Trinidad, Miranda — $290.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/miranda/comercial-consultorio-medico-en-venta-en-la-trinidad-distrito-metropolitano-rentahouse-26-17653",
-      "precio_texto": "$290.000",
-      "precio_usd": 290000,
-      "habitaciones": null,
-      "banos": 1,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Venta",
-      "ubicacion": "La Trinidad, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Te presento este espectacular consultorio odontológico, una joya arquitectónica y funcional ubicada estratégicamente al lado del Centro Médico Docente La Trinidad, diseñado bajo un concepto moderno y minimalista, donde cada detalle ha sido pensado para proyectar éxito y profesionalismo. Espacios amplios, iluminados y con una decoración moderna que transmite paz y confianza desde el primer momento.",
-      "amenities": []
-    },
-    {
-      "titulo": "Oficina en venta en Los Palos Grandes, Miranda — $740.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/miranda/comercial-oficina-en-venta-en-los-palos-grandes-distrito-metropolitano-rentahouse-26-18032",
-      "precio_texto": "$740.000",
-      "precio_usd": 740000,
-      "habitaciones": null,
-      "banos": 3,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Los Palos Grandes, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "589m² de Poder Corporativo: Piso Completo en Centro Plaza \nEleve el prestigio de su empresa con una sede que lo tiene todo. En el corazÃ³n de Los Palos Grandes, presentamos esta oportunidad Ãºnica: una planta completa de 589mÂ², totalmente amoblada y diseÃ±ada para el mÃ¡ximo rendimiento empresarial en el iconico Centro Plaza.   ...... CONTINUA....",
       "amenities": []
     },
     {
@@ -10008,21 +9047,6 @@
       ]
     },
     {
-      "titulo": "Galpón en venta en Catia, Distrito Capital — $435.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-galpon-deposito-en-venta-en-catia-distrito-metropolitano-rentahouse-27-5615",
-      "precio_texto": "$435.000",
-      "precio_usd": 435000,
-      "habitaciones": null,
-      "banos": 2,
-      "metros_cuadrados": null,
-      "tipo": "Local-comercial",
-      "operacion_detectada": "Venta",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Se vende en Zona Industrial de Catia galpón/depósito con excelente mantenimiento, baños y duchas. Ubicación estratégica con fácil acceso vial e ideal para depósito o comercialización por su cercanía al Puerto de La Guaira. Capacidad para ingreso de camiones 350 y 750, doble puerta metálica corrediza y techos altos. ¡Llama ya y lleva tu negocio al próximo nivel!",
-      "amenities": []
-    },
-    {
       "titulo": "Apartamento en venta en Distrito Capital — $130.000",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-santa-monica-distrito-metropolitano-rentahouse-27-5456",
       "precio_texto": "$130.000",
@@ -10086,23 +9110,6 @@
       "amenities": [
         "estacionamiento",
         "remodelado"
-      ]
-    },
-    {
-      "titulo": "Oficina en alquiler en Las Mercedes, Miranda — $1.500/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/miranda/comercial-oficina-en-alquiler-en-las-mercedes-distrito-metropolitano-rentahouse-27-5786",
-      "precio_texto": "$1.500",
-      "precio_usd": 1500,
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Las Mercedes, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Esta oficina de 17 m² destaca por su aprovechamiento del espacio, moderna remodelación y ubicación estratégica en una de las zonas empresariales y comerciales más cotizadas de la ciudad. Emplazada en una torre corporativa de reciente data sobre la Av.Principal de Las Mercedes. Ofrece acceso directo a comercios, servicios y principales vías de tránsito. Con gran vista panoramica al hotel TAMANACO.",
-      "amenities": [
-        "vista"
       ]
     },
     {
@@ -10885,21 +9892,6 @@
       ]
     },
     {
-      "titulo": "Oficina en venta en El Marques, Miranda — $65.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/miranda/comercial-oficina-en-venta-en-el-marques-distrito-metropolitano-rentahouse-27-5856",
-      "precio_texto": "$65.000",
-      "precio_usd": 65000,
-      "habitaciones": null,
-      "banos": 2,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Venta",
-      "ubicacion": "El Marques, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Amplia oficina, cuenta con sala de reuniones, cubiculos privados, dos baños, muy cómoda e iluminada. Ubicada en zona céntrica, cerca de comercios y de fácil acceso, lo que permite una mejor calidad de vida. Muy cerca de transporte público.",
-      "amenities": []
-    },
-    {
       "titulo": "Apartamento en venta en Sucre, Miranda — $55.000",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/remodelado-apartamento-en-av-apto-av-fco-de-miranda-remax-345997",
       "precio_texto": "$55.000",
@@ -11046,23 +10038,6 @@
       ]
     },
     {
-      "titulo": "Galpón en alquiler en Distrito Capital — $1.100/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-galpon-deposito-en-alquiler-en-antimano-distrito-metropolitano-rentahouse-25-1563",
-      "precio_texto": "$1.100",
-      "precio_usd": 1100,
-      "habitaciones": null,
-      "banos": 3,
-      "metros_cuadrados": null,
-      "tipo": "Local-comercial",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Anhela con tener un Local o Deposito en la zona industrial de Antimano, tenemos este magnifico espacio que cuenta con 300 mts, ideal para el rerguardo o almacenaje de cualquier tipo de  mercancia no perecedera, o si desean instalar cavas para otro tipo de alimentos perecederos.  Esta propiedad se encuentra ubicada en un 1er piso de un edificio, y posee un ascensor monta carga (actualemente sin",
-      "amenities": [
-        "ascensor"
-      ]
-    },
-    {
       "titulo": "Casa en venta en La Trinidad, Distrito Capital — $140.000",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/distrito-capital/casa-duplex-en-venta-en-la-trinidad-distrito-metropolitano-rentahouse-25-24568",
       "precio_texto": "$140.000",
@@ -11077,24 +10052,6 @@
       "descripcion": "Oprtunudad¡ casa de dos plantas iindependientes para ser remodelada a tu gusto.\nEcelente ubicacion, calle privda, cerca de comercios, colegios etc.Maravilloso clima, alejado de la contaminacion",
       "amenities": [
         "remodelado"
-      ]
-    },
-    {
-      "titulo": "Oficina en venta en Libertador, Distrito Capital — $35.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-oficina-en-venta-en-parroquia-catedral-distrito-metropolitano-rentahouse-26-5795",
-      "precio_texto": "$35.000",
-      "precio_usd": 35000,
-      "habitaciones": null,
-      "banos": 1,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Libertador, Distrito Capital",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Oficina en venta con excelente ubicación como es el corazón de Caracas. Cerca de gran variedad de negocios. Edificio muy bien mantenido. ideal para Despacho de Abogados, Spa, Oficina Administrativa, etc.\n\nSin problemas de luz y agua, ascensores operativos, seguridad 24/7.\n\nDocumentos al día ya para firmar. No dejes pasar esta oportunidad de tener tu propio espacio para emprender tu negocio.",
-      "amenities": [
-        "vigilancia",
-        "ascensor"
       ]
     },
     {
@@ -11219,21 +10176,6 @@
       ]
     },
     {
-      "titulo": "Galpón en alquiler en Mariche, Distrito Capital — $2.500/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-galpon-deposito-en-alquiler-en-mariche-distrito-metropolitano-rentahouse-27-2711",
-      "precio_texto": "$2.500",
-      "precio_usd": 2500,
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": 400,
-      "tipo": "Local-comercial",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Excelente oportunidad para empresas de logÃ­stica, distribuciÃ³n o comercio que requieren maximizar su capacidad de inventario. 400 mt2 aprox. optimizado con una segunda planta diseÃ±ada exclusivamente para almacenamiento, con amplia zona libre para operaciones pesadas, carga, descarga y stock principal. Nivel superior ideal para depÃ³sito de mercancÃ­a ligera, archivo o inventario seleccionado.",
-      "amenities": []
-    },
-    {
       "titulo": "Apartamento en venta en Altamira, Miranda — $120.000",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-1-nivel-en-venta-en-altamira-distrito-metropolitano-rentahouse-27-1999",
       "precio_texto": "$120.000",
@@ -11265,21 +10207,6 @@
         "ascensor",
         "terraza"
       ]
-    },
-    {
-      "titulo": "Galpón en alquiler en Mariche, Distrito Capital — $1.700/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-galpon-deposito-en-alquiler-en-mariche-distrito-metropolitano-rentahouse-27-2716",
-      "precio_texto": "$1.700",
-      "precio_usd": 1700,
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": 600,
-      "tipo": "Local-comercial",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Excelente oportunidad para empresas de logística, centros de distribución, manufactura ligera o grandes comercios. Se ofrece en alquiler un imponente galpón industrial de 600 mt2 aprox de construcción, estratégicamente diseñado en dos niveles para maximizar la capacidad de almacenamiento y operación. Amplia PB libre de gran altura, ideal para operaciones pesadas y maquinaria pesada",
-      "amenities": []
     },
     {
       "titulo": "Apartamento en venta en Prados del Este, Miranda — $95.000",
@@ -11936,23 +10863,6 @@
       ]
     },
     {
-      "titulo": "Galpón en venta en Rio Tuy, Miranda — $1.480.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/miranda/comercial-galpon-deposito-en-venta-en-rio-tuy-miranda-rentahouse-26-13963",
-      "precio_texto": "$1.480.000",
-      "precio_usd": 1480000,
-      "habitaciones": null,
-      "banos": 6,
-      "metros_cuadrados": null,
-      "tipo": "Local-comercial",
-      "operacion_detectada": "Venta",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Imponente y espectacular galpon, con un area de const. de 5003 mts.compuesto por dos naves, con altura de 10 mts. Posee caseta de vigilancia, el terreno totalmente plano consta de 7139.18 mts.cuenta con mezz. de 209.mts. 113mts. dedicados a baño y vestuarios y 113 mt, para area de comedor.\nPosee area de descarga, oficinas, baño de visitas, recepción y almacén.",
-      "amenities": [
-        "vigilancia"
-      ]
-    },
-    {
       "titulo": "Local Comercial en alquiler en Distrito Capital — $130/mes",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-local-comercial-en-alquiler-en-zona-centro-aragua-rentahouse-27-1316",
       "precio_texto": "$130",
@@ -12018,23 +10928,6 @@
       "amenities": [
         "remodelado",
         "aire_acondicionado"
-      ]
-    },
-    {
-      "titulo": "Oficina en venta en Chuao, Miranda — $315.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/miranda/comercial-oficina-en-venta-en-chuao-distrito-metropolitano-rentahouse-27-2293",
-      "precio_texto": "$315.000",
-      "precio_usd": 315000,
-      "habitaciones": null,
-      "banos": 3,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Chuao, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Elegante Oficina en prestigioso y muy centrico Centro Comercial, con envidiable ubicacion, con 2 oficinas internas con excelente vista al Sur Este de la ciudad, 2 banos, kichinette, sala de reunion, cuarto de servidor, area de recepcion y una amplio espacio de oficina abierto que pudiera servir para call center u otro uso similiar; 1 pto de estacionamiento, segun documento de propiedad",
-      "amenities": [
-        "estacionamiento"
       ]
     },
     {
@@ -12445,21 +11338,6 @@
       ]
     },
     {
-      "titulo": "Oficina en venta en Macaracuay, Miranda — $85.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/miranda/comercial-oficina-en-venta-en-macaracuay-distrito-metropolitano-rentahouse-27-5736",
-      "precio_texto": "$85.000",
-      "precio_usd": 85000,
-      "habitaciones": null,
-      "banos": 1,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Macaracuay, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Estupenda oficina de 53 m&#65533; ubicada en la prestigiosa Torre Express de Macaracuay. Cuenta con una hermosa y despejada vista a la monta&#65533;a que aporta gran iluminaci&#65533;n natural y un ambiente de trabajo inspirador. Espacio moderno, c&#65533;modo y funcional, ideal para potenciar tu negocio en una zona estrat&#65533;gica y de f&#65533;cil acceso. &#65533;Cont&#65533;ctanos y agenda tu visita!",
-      "amenities": []
-    },
-    {
       "titulo": "Apartamento en venta en Distrito Capital — $85.000",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-el-valle-distrito-metropolitano-rentahouse-27-5720",
       "precio_texto": "$85.000",
@@ -12494,24 +11372,6 @@
         "estacionamiento",
         "terraza",
         "aire_acondicionado"
-      ]
-    },
-    {
-      "titulo": "Galpón en alquiler en Distrito Capital — $2.500/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-galpon-deposito-en-alquiler-en-la-yaguara-distrito-metropolitano-rentahouse-27-5737",
-      "precio_texto": "$2.500",
-      "precio_usd": 2500,
-      "habitaciones": null,
-      "banos": 1,
-      "metros_cuadrados": 180,
-      "tipo": "Local-comercial",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Se alquila galpon recien construido, 180mts2 en planta baja, con una altura de mas de 10 metros,  ideal para almacenaje de cualquier tipo, y 50mts mezzanina donde esta la oficina administrativa y el baño, se encuentra ubicado dentro de un gran estacionamiento/terreno donde convergen un conjunto de galpones, vigilancia privada, entran gandolas sin problemas, en una zona muy segura y de facil acceso",
-      "amenities": [
-        "vigilancia",
-        "estacionamiento"
       ]
     },
     {
@@ -13186,21 +12046,6 @@
       ]
     },
     {
-      "titulo": "Oficina en alquiler en Distrito Capital — $350/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-oficina-en-alquiler-en-la-castellana-distrito-metropolitano-rentahouse-26-7208",
-      "precio_texto": "$350",
-      "precio_usd": 350,
-      "habitaciones": null,
-      "banos": 3,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Cómodo y funcional cubículo con tabique alto para mayor privacidad. \n\n\nAlquiler con derecho a:\n.- Internet sin costo adicional al canon.\n.- Recepción.\n.- Kitchenette.\n.-Baños damas y caballeros.\n.- Sala de conferencia.\n.-Archivador en pasillo.\n\n.-Internet ABA y Net Uno.",
-      "amenities": []
-    },
-    {
       "titulo": "Local Comercial en venta en Distrito Capital — $126.000",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-local-comercial-en-venta-en-parroquia-la-candelaria-distrito-metropoli-rentahouse-26-38",
       "precio_texto": "$126.000",
@@ -13214,23 +12059,6 @@
       "portal": "inmueblesconlupa",
       "descripcion": "Invierte con visión: local comercial equipado + financiamiento flexible\n¿Buscas una oportunidad rentable con condiciones accesibles? Este local comercial de dos niveles, completamente equipado y listo para operar como restaurante, es la combinación perfecta entre ubicación, infraestructura y financiamiento a tu medida.\nIdeal para restaurante de estilo italiano o el concepto",
       "amenities": []
-    },
-    {
-      "titulo": "Oficina en alquiler en Sucre, Miranda — $350/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/miranda/comercial-consultorio-medico-en-alquiler-en-la-california-norte-distrito-metropo-rentahouse-26-14341",
-      "precio_texto": "$350",
-      "precio_usd": 350,
-      "habitaciones": null,
-      "banos": 3,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Sucre, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Alquiler Cubiculo de 9mts2, para servicio de salud, cualquier especialidad, Tiene disponible: recepcion, sala de esperas, baño para pacientes, baño para internos, 1 linea telefonica, Internet, AA central, central telefonica, tanque de agua 500lts. La Torre cuenta con estacionamiento publico y seguridad",
-      "amenities": [
-        "estacionamiento"
-      ]
     },
     {
       "titulo": "Apartamento en venta en Distrito Capital — $123.000",
@@ -13528,23 +12356,6 @@
       "portal": "inmueblesconlupa",
       "descripcion": "Domina Caracas desde el Alto Hatillo. Esta joya arquitectónica de Alberto Manrique ofrece una vista de 180° que redefine el lujo. 900m² de diseño superior con 6 suites, Family Room con Bar y exclusiva cancha de Beach Tennis LED. Seguridad absoluta, 3.000m² de áreas verdes y tanque de 75.000L. No es solo una casa, es el trofeo a tu éxito en la zona más privada. Agenda tu experiencia privada.",
       "amenities": []
-    },
-    {
-      "titulo": "Oficina en alquiler en Las Mercedes, Miranda — $12.000/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/miranda/comercial-oficina-en-alquiler-en-las-mercedes-distrito-metropolitano-rentahouse-27-4228",
-      "precio_texto": "$12.000",
-      "precio_usd": 12000,
-      "habitaciones": null,
-      "banos": 3,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Las Mercedes, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Increible oficina recien remodelada, con la mas alta tecnoloigia y lujo de una oficina con vista completa al Avila.\nOfrece 6 puestos de trabajo y 4 oficinas independientes.\nUna amplia sala de reuniones.\nUna amplia cocina.\nArea de servidores.",
-      "amenities": [
-        "remodelado"
-      ]
     },
     {
       "titulo": "Casa en venta en Sucre, Miranda — $320.000",
@@ -13957,21 +12768,6 @@
       ]
     },
     {
-      "titulo": "Oficina en alquiler en Distrito Capital — $630/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-oficina-en-alquiler-en-las-delicias-de-sabana-grande-distrito-metropol-rentahouse-27-5699",
-      "precio_texto": "$630",
-      "precio_usd": 630,
-      "habitaciones": null,
-      "banos": 1,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "ESPECTACULAR e IMPECABLE OFICINA\nUBICADA en la TORRE MEGA III \nESTE PERFECTO ESPACIO de TRABAJO, posee; 1 RECEPCIÓN, 4 OFICINAS MED, 1 SALA de ESPERA, 1 BAÑO, A/A CENTRAL en PERFECTO EDO.\nTODOS los AMBIENTES se encuentran envueltos con una luminosidad MARAVILLOSA que aporta PAZ para el DESEMPEÑO de la ACTIVIDAD COMERCIAL que vayas a DESARROLLAR. COMPLETAMENTE AMOBLADA. ESPERA POR TI Y TU EQUIPO...",
-      "amenities": []
-    },
-    {
       "titulo": "Casa en venta en Los Palos Grandes, Miranda — $870.000",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/miranda/casa-1-nivel-en-venta-en-los-palos-grandes-distrito-metropolitano-rentahouse-27-5702",
       "precio_texto": "$870.000",
@@ -14034,24 +12830,6 @@
       "portal": "inmueblesconlupa",
       "descripcion": "Vive con estilo y comodidad en este hermoso apartamento de 91 m2, ubicado en uno de los edificios más nuevos y cotizados de la Urbanización Maripérez. Su diseño funcional ofrece 3 habitaciones, 2 baños y 1 puesto cubierto, brindando el espacio y la iluminación ideal para tu día a día en una ubicación estratégica que te conecta con toda la ciudad. Con pozo!",
       "amenities": []
-    },
-    {
-      "titulo": "Oficina en alquiler en Distrito Capital — $450/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-oficina-en-alquiler-en-los-samanes-distrito-metropolitano-rentahouse-27-5691",
-      "precio_texto": "$450",
-      "precio_usd": 450,
-      "habitaciones": null,
-      "banos": 1,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Bella oficina ubicada en excelente Centro Profesional cuenta con area de recepción, sala de espera y tres confortables despachos, iluminados y con bellas vistas. El edificio cuenta con estacionamiento para visitantes, vigilancia la s 24 hrrs. y convenientes locales comerciales en PB.",
-      "amenities": [
-        "vigilancia",
-        "estacionamiento"
-      ]
     },
     {
       "titulo": "Apartamento en venta en Santa Fe Sur, Miranda — $185.000",
@@ -14979,43 +13757,6 @@
       ]
     },
     {
-      "titulo": "Oficina en venta en 5 de Julio, Distrito Capital — $400.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-oficina-en-venta-en-5-de-julio-zulia-rentahouse-20-16517",
-      "precio_texto": "$400.000",
-      "precio_usd": 400000,
-      "habitaciones": null,
-      "banos": 2,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Venta",
-      "ubicacion": "5 de Julio, Distrito Capital",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Medio piso lado izquierdo.Ideal para oficinas,24 hr seguridad,circuito cerrado,vigilancia,sistema contra incendios,escalera de emergencia,2 ascensores,2 puestos de estacionamiento en mezzanina ,lineas telefonicas, tabiqueria, cielo raso,luminarias,aire acondicionado,acabados internos de primera,bateria de baños, 2 privados.",
-      "amenities": [
-        "vigilancia",
-        "estacionamiento",
-        "ascensor",
-        "aire_acondicionado"
-      ]
-    },
-    {
-      "titulo": "Oficina en alquiler en Distrito Capital — $480/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-oficina-en-alquiler-en-los-caobos-distrito-metropolitano-rentahouse-24-6520",
-      "precio_texto": "$480",
-      "precio_usd": 480,
-      "habitaciones": null,
-      "banos": 1,
-      "metros_cuadrados": 22,
-      "tipo": "Oficina",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Disponible en alquiler, cómoda oficina de 22Mts2,monoambiente, baño privado y área externa para colocar dispensador de agua, microondas y cafetea. Asimismo posee aire acondicionado, internet y planta eléctrica.",
-      "amenities": [
-        "aire_acondicionado"
-      ]
-    },
-    {
       "titulo": "Terreno en venta en El Hatillo, Miranda — $900.000",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/terreno/venta/miranda/terreno-residencial-en-venta-en-los-naranjos-del-cafetal-distrito-metropolitano-rentahouse-24-8899",
       "precio_texto": "$900.000",
@@ -15049,21 +13790,6 @@
         "terraza",
         "aire_acondicionado"
       ]
-    },
-    {
-      "titulo": "Galpón en venta en Montecristo, Miranda — $1.600.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/miranda/comercial-galpon-deposito-en-venta-en-montecristo-distrito-metropolitano-rentahouse-26-143",
-      "precio_texto": "$1.600.000",
-      "precio_usd": 1600000,
-      "habitaciones": null,
-      "banos": 3,
-      "metros_cuadrados": 630,
-      "tipo": "Local-comercial",
-      "operacion_detectada": "Venta",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "A PIE DE CALLE, venta de Galpón  de 630 mt2 de construcción, 15 metros de frente y 30 metros de profundidad, muy cerca de la Avda. Rómulo Gallegos. Ideal para desarrollar actividades que requieran amplios espacios y buena altura. Actualmente, funciona un taller automotriz de excelente trayectoria, cuyo fondo de comercio también está a la venta.",
-      "amenities": []
     },
     {
       "titulo": "Casa en venta en Caicaguana, Distrito Capital — $250.000",
@@ -15180,21 +13906,6 @@
       ]
     },
     {
-      "titulo": "Galpón en venta en Antimano, Distrito Capital — $2.400.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-galpon-deposito-en-venta-en-antimano-distrito-metropolitano-rentahouse-26-19790",
-      "precio_texto": "$2.400.000",
-      "precio_usd": 2400000,
-      "habitaciones": null,
-      "banos": 5,
-      "metros_cuadrados": 860,
-      "tipo": "Local-comercial",
-      "operacion_detectada": "Venta",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Esta propiedad excepcional diseÃ±ada para proyectos de gran envergadura. Ubicado estratÃ©gica sobre la Avenida Principal cerca de la yaguara,imponente GalpÃ³n de aprox  4,860 m2 ofrece la infraestructura y visibilidad que toda empresa sÃ³lida requiere para dominar el mercado. Bondades EstratÃ©gicas:\nUbicaciÃ³n Privilegiada: Situado en plena arteria principal, garantizando un flujo constante de personas",
-      "amenities": []
-    },
-    {
       "titulo": "Apartamento en venta en Distrito Capital — $250.000",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-duplex-en-venta-en-los-caobos-distrito-metropolitano-rentahouse-26-8319",
       "precio_texto": "$250.000",
@@ -15226,23 +13937,6 @@
       "portal": "inmueblesconlupa",
       "descripcion": "Hermoso apto en Alquiler, amplio, iluminado y ventilado, totalmente amoblado para solo llegar con las maletas, ubicado a las faldas del Avila de forma estrategica, con acceso a las principales vias de la ciudad, cerca del CC Milenium, Parque del Este y comercios. Con excelete vista a El Avila. Conjunto Residencial con Pozo de agua, parque infantil, salon de fiesta, camineria de mas de 400 mt,",
       "amenities": []
-    },
-    {
-      "titulo": "Oficina en venta en Las Mercedes, Miranda — $399.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/miranda/comercial-oficina-en-venta-en-las-mercedes-distrito-metropolitano-rentahouse-26-17668",
-      "precio_texto": "$399.000",
-      "precio_usd": 399000,
-      "habitaciones": null,
-      "banos": 3,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Las Mercedes, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Oficina de 9 años en calle California. Domina el mercado desde tu terraza privada con vista al Golf de Valle Arriba, un lujo escaso en Las Mercedes. Se entrega en obra gris para que diseñes tu centro de poder a medida, sin límites. Tu enfoque está blindado con planta eléctrica total y pozo de agua propio. Exclusividad y control absoluto en la ubicación más estratégica de Caracas.",
-      "amenities": [
-        "terraza"
-      ]
     },
     {
       "titulo": "Local Comercial en alquiler en Chacao, Miranda — $1.200/mes",
@@ -15298,38 +13992,6 @@
       ]
     },
     {
-      "titulo": "Oficina en alquiler en Las Mercedes, Miranda — $1.200/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/miranda/comercial-oficina-en-alquiler-en-las-mercedes-distrito-metropolitano-rentahouse-26-20051",
-      "precio_texto": "$1.200",
-      "precio_usd": 1200,
-      "habitaciones": null,
-      "banos": 1,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Las Mercedes, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Espacio ideal para tu empresa o emprendimiento, ubicada en la mejor zona finaciera y comercial de Caracas Estupenda oficina con aire acondicionado central, areas para oficinas privadas y espacio para oficinas comunes.",
-      "amenities": [
-        "aire_acondicionado"
-      ]
-    },
-    {
-      "titulo": "Oficina en alquiler en Altamira, Miranda — $900/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/miranda/comercial-oficina-en-alquiler-en-altamira-distrito-metropolitano-rentahouse-26-21367",
-      "precio_texto": "$900",
-      "precio_usd": 900,
-      "habitaciones": null,
-      "banos": 2,
-      "metros_cuadrados": 20,
-      "tipo": "Oficina",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Altamira, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "En alquiler espaciosa oficina de 108m², en edificio con ETIQUETA VERDE,en estratégica ubicación en la Urb. Altamira, en la esquina de la Av. Francisco de Miranda al lado del Metro, lo que garantiza conectividad y accesibilidad para clientes y aliados. Ideal para consultorios, agencias de viaje, tiendas online, call center  y oficinas en general.",
-      "amenities": []
-    },
-    {
       "titulo": "Casa en venta en Libertador, Distrito Capital — $175.000",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/distrito-capital/casa-1-nivel-en-venta-en-la-california-sur-distrito-metropolitano-rentahouse-27-1734",
       "precio_texto": "$175.000",
@@ -15344,23 +14006,6 @@
       "descripcion": "Excelente casa ,actualmente funciona como casa comercial y deposito,tiene 4 cuartos que hacen de espacios ambientados para una agencia de festejos ,tiene estacionamiento para 3 carros y espacio de almacenaje",
       "amenities": [
         "estacionamiento"
-      ]
-    },
-    {
-      "titulo": "Oficina en alquiler en El Bosque, Miranda — $3.700/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/miranda/comercial-oficina-en-alquiler-en-el-bosque-distrito-metropolitano-rentahouse-27-246",
-      "precio_texto": "$3.700",
-      "precio_usd": 3700,
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "El Bosque, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Exclusiva oficina de 300 m² en El Bosque. Ubicada en zona estratégica con cercanía a transporte publico. Cuenta con distribución eficiente: 9 oficinas privadas, tres (3) baños, área de cocina y área de recepción. Aire Acondicionado en cada oficina, internet. ¡Espacio corporativo para impulsar tu negocio!",
-      "amenities": [
-        "aire_acondicionado"
       ]
     },
     {
@@ -15613,25 +14258,6 @@
       "descripcion": "TU PROXIMO HOGAR CON VISTA AL AVILA.\nSi buscas amplitud, frescura y una vista privilegiada que te desconecte del caos de la ciudad, este apartamento es ideal para ti. ya es una zona con alta demanda por su clima, conectividad y tranquilidad con fÃ¡cil acceso a vÃ­as principales, comercios y servicios.",
       "amenities": [
         "vista"
-      ]
-    },
-    {
-      "titulo": "Apartamento en venta en Las Esmeraldas, Miranda — $290.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-1-nivel-en-venta-en-las-esmeraldas-distrito-metropolitano-rentahouse-27-5025",
-      "precio_texto": "$290.000",
-      "precio_usd": 290000,
-      "habitaciones": 4,
-      "banos": 5,
-      "metros_cuadrados": 332,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Las Esmeraldas, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Exclusivo apartamento en edificio de baja densidad de solo 3 niveles, dos apartamentos por piso con ascensor privado,  tiene un área de 332m2 más 81m2 de terraza con hermosa vista panorámica, consta de 4 habitaciones, dos de ellas con baño privado, área de servicio con 2 hab. y baño interno, baño de visitas, cocina actualizada, lavandero y cuarto de depósito. 3 puestos. Todo un privilegio!",
-      "amenities": [
-        "ascensor",
-        "vista",
-        "terraza"
       ]
     },
     {
@@ -16170,38 +14796,6 @@
       ]
     },
     {
-      "titulo": "Oficina en venta en El Rosal, Miranda — $90.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/miranda/comercial-oficina-en-venta-en-el-rosal-distrito-metropolitano-rentahouse-27-5612",
-      "precio_texto": "$90.000",
-      "precio_usd": 90000,
-      "habitaciones": null,
-      "banos": 1,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Venta",
-      "ubicacion": "El Rosal, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Excelente oficina remodela de 42 Mts para la venta con un cubículo y una sala de reuniones para (6) personas y recepción, en zona exclusiva de Caracas, Torre Exa en El Rosal, con estacionamiento privado para comodidad y seguridad. Muy bien ubicada cerca de bancos, establecimientos comerciales y recreativos. Verla es comprarla..!",
-      "amenities": [
-        "estacionamiento"
-      ]
-    },
-    {
-      "titulo": "Galpón en venta en Catia, Distrito Capital — $3.200",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-galpon-deposito-en-venta-en-catia-distrito-metropolitano-rentahouse-27-5614",
-      "precio_texto": "$3.200",
-      "precio_usd": 3200,
-      "habitaciones": null,
-      "banos": 2,
-      "metros_cuadrados": null,
-      "tipo": "Local-comercial",
-      "operacion_detectada": "Venta",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Excelente oportunidad estrategica para su operaciion logi­stica y almacenamiento en una de las zonas de mayor conectividad de Caracas.\n\nUbicacion Estrategica: Zona Industrial de Catia, con inmejorable acceso vial y cercani­a directa a las vi­as de conexion hacia el Puerto de La Guaira.\n\nMantenimiento Impecable: Instalaciones en estupendo estado de conservacion, listas para ocupar.",
-      "amenities": []
-    },
-    {
       "titulo": "Apartamento en venta en Manzanares, Miranda — $130.000",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-1-nivel-en-venta-en-manzanares-distrito-metropolitano-rentahouse-27-5621",
       "precio_texto": "$130.000",
@@ -16235,21 +14829,6 @@
       "amenities": [
         "vigilancia"
       ]
-    },
-    {
-      "titulo": "Oficina en alquiler en Sucre, Miranda — $300/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/miranda/comercial-oficina-en-alquiler-en-la-california-norte-distrito-metropolitano-rentahouse-27-5624",
-      "precio_texto": "$300",
-      "precio_usd": 300,
-      "habitaciones": null,
-      "banos": 1,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Sucre, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Ubicación estratégica, comodidad y la imagen profesional que tu empresa o emprendimiento necesita. Esta oficina cuenta con todas las facilidades para instalarte de inmediato y empezar a producir. Paga servicios propietaria",
-      "amenities": []
     },
     {
       "titulo": "Apartamento en venta en Baruta, Miranda — $72.000",
@@ -16339,21 +14918,6 @@
       ]
     },
     {
-      "titulo": "Oficina en venta en Libertador, Distrito Capital — $150.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-oficina-en-venta-en-parroquia-la-candelaria-distrito-metropolitano-rentahouse-27-5639",
-      "precio_texto": "$150.000",
-      "precio_usd": 150000,
-      "habitaciones": null,
-      "banos": 1,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Libertador, Distrito Capital",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Oportunidad única en el corazón del Centro Financiero Latino.  \nSe vende oficina totalmente amoblada de 116,38 m², lista para comenzar a producir desde el primer día. Ubicada en piso medio, combina funcionalidad, prestigio y ubicación estratégica.  \n\nCaracterísticas principales:  \n- 3 oficinas privadas y sala de conferencia  \n- Recepción elegante y área de trabajo con 17 puestos conectados",
-      "amenities": []
-    },
-    {
       "titulo": "Apartamento en venta en El Hatillo, Miranda — $380.000",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-1-nivel-en-venta-en-los-naranjos-del-cafetal-distrito-metropolitano-rentahouse-27-5629",
       "precio_texto": "$380.000",
@@ -16398,21 +14962,6 @@
       "ubicacion": "San Roman, Miranda",
       "portal": "inmueblesconlupa",
       "descripcion": "Hermosa y espaciosa casa de un solo nivel caracterizada por sus amplios ambientes, excelente iluminación natural y hermosas áreas verdes que rodean la propiedad.\n\n Desarrollada sobre una parcela con zonificación R3, la casa cuenta con 4 amplias habitaciones, siendo la principal equipada con baño privado y vestier. En total dispone de 3 baños completos y un cómodo 1/2 baño de visitas.",
-      "amenities": []
-    },
-    {
-      "titulo": "Oficina en alquiler en Distrito Capital — $2.000/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-oficina-en-alquiler-en-parroquia-la-candelaria-distrito-metropolitano-rentahouse-27-5641",
-      "precio_texto": "$2.000",
-      "precio_usd": 2000,
-      "habitaciones": null,
-      "banos": 1,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Oportunidad única en el corazón del Centro Financiero Latino.  \nAlquiler de oficina totalmente amoblada de 116,38 m², lista para comenzar a producir desde el primer día. Ubicada en piso medio, combina funcionalidad, prestigio y ubicación estratégica.  \n\nCaracterísticas principales:  \n- 3 oficinas privadas y sala de conferencia  \n- Recepción elegante y área de trabajo con 17 puestos conectado",
       "amenities": []
     },
     {
@@ -17226,625 +15775,96 @@
       "amenities": []
     },
     {
-      "titulo": "Local Comercial en alquiler en Baruta, Miranda — $3.500/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/miranda/nb-local-comercial-en-alquiler-en-santa-fe-a-pie-de-calle-26-19538-MLV-776927401",
-      "precio_texto": "$3.500",
-      "precio_usd": 3500,
-      "habitaciones": null,
-      "banos": 4,
-      "metros_cuadrados": 187,
-      "tipo": "Local comercial",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Baruta, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Te presentamos este local a pie de calle, con una gran área sin columnas, ubicado en avenida con alto flujo vehicular, remodelado en el año 2016, en el que se pueden ejecutar diferentes actividades comerciales como restaurantes, bodegones, tiendas en general y cualquier rubro económico. Ademas de estar rodeado de tiendas de interes.\nDispone de una oficina, tres medios baños, área de cocina, aire acondicionado, nunca falta el agua. El mobiliario y los equipos no estan incluidos en el alquiler, pero se podrían negociar de manera separada.",
-      "amenities": [
-        "remodelado",
-        "aire_acondicionado"
-      ]
-    },
-    {
-      "titulo": "Oficina en alquiler en Sucre, Miranda — $350/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/miranda/gc-alq-anexo-48-m2-en-campo-claro-persona-sola-MLV-925729050",
-      "precio_texto": "$350",
-      "precio_usd": 350,
-      "habitaciones": null,
-      "banos": 1,
-      "metros_cuadrados": 48,
-      "tipo": "Oficina",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Sucre, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Alquilo anexo de quinta, para persona sola o pequeña oficina.\nUrb Campo Claro, 48 m2, 1 baño, 1 pto de estacionamiento. \nCerca de Av Ppal de Los Ruices y de La Carlota.\nZona tranquila.\nA 2 cdas de la estación de metro.\nCánon 350\nNegociación 5 meses.",
-      "amenities": [
-        "estacionamiento"
-      ]
-    },
-    {
-      "titulo": "Local Comercial en venta en Guaicaipuro, Miranda — $23.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/miranda/local-comercial-obra-gris-en-san-diego-de-los-altos-88-18-m2-acropolis-tf-MLV-776863263",
-      "precio_texto": "$23.000",
-      "precio_usd": 23000,
-      "habitaciones": null,
-      "banos": 1,
-      "metros_cuadrados": 88,
-      "tipo": "Local comercial",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Guaicaipuro, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "¡Gran oportunidad! En venta un local de 88,18 m² en obra gris, ubicado en el corazón del Centro Comercial La OCI San Diego de los Altos. Este espacio ofrece una estructura sólida aporticada con vigas y columnas de concreto armado, paredes frisadas y pintadas, y un techo construido con losa, tabelones y perfiles IPN, listo para adaptar a tus necesidades.\n\nCuenta con un acceso desde el pasillo principal y doble entrada (delantera y trasera) que facilitan la circulación y la privacidad. Incluye un baño equipado con piezas sanitarias y acabado en cerámica, listo para su uso.\n\nSu amplia zona de estacionamiento con capacidad para 40 vehículos garantiza comodidad para clientes y empleados. Además, dispone de excelente vialidad y fácil salida directa a la carretera nacional, ideal para negocios con alto flujo vehicular.\n\nEste espacio es perfecto para montar una variedad de negocios como tienda de repuestos, salón de belleza, pizzería, restaurante, consultorio médico o laboratorio clínico.\n\n¡No pierdas la oportunidad de establecerte en una ubicación estratégica con gran potencial!",
-      "amenities": [
-        "estacionamiento"
-      ]
-    },
-    {
-      "titulo": "Local Comercial en venta en Carrizal, Miranda — $1.350.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/miranda/en-venta-terreno-mas-local-en-via-carretera-panamericana-MLV-770481321",
-      "precio_texto": "$1.350.000",
-      "precio_usd": 1350000,
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": 3136,
-      "tipo": "Local comercial",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Carrizal, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "En venta amplia propiedad ubicada en el km 22 de la carretera Panamericana, los Teques a 150 mts de Hiper Lider, red vital, Macro en la urbanización club hípico de los cerritos , carrizal los teques cuenta con dos parcelas de un terreno total de 3136.45 metros2 y 1143.04 metros2 de construcción, una parcela cuenta con 1398.75 metros2 de terreno, la otra parcela que colindan cuenta con 1736.70 metros2 de terrenoel cual cuenta con las siguientes características área de taller 600metros2, área de patio 480 metros2, área de oficinas, 48 metros2, área de mezzanina, 48 metros2, en planta baja área de oficinas 120 metros2, área de exhibición 330 metros2, área de repuestos 156 metros2, área de estacionamiento 150 metros2, cuenta con una ubicación excelente para ila inversion de cualquier ramo comercial ya que está ubicado a pie de calle a orilla de la carretera panamerica.",
-      "amenities": [
-        "estacionamiento"
-      ]
-    },
-    {
-      "titulo": "Local Comercial en alquiler en Baruta, Miranda — $2.700/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/miranda/en-alquiler-local-comercial-en-c-c-santa-fe-norte-yf-MLV-777136703",
-      "precio_texto": "$2.700",
-      "precio_usd": 2700,
-      "habitaciones": null,
-      "banos": 2,
-      "metros_cuadrados": 263,
-      "tipo": "Local comercial",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Baruta, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "codigo 26-21086\nEspacio perfecto para tu proximo exito gastronomico. En alquiler Local Comercial en C.C Santa Fe Norte. Ideal para Restaurante. Se ofrece en alquiler amplio y estrategico local comercial con una superficie total de 263,81 m2. area techada de 228,55 m2 ideales para una distribucion fluida de mesas cocina y barra. Terraza abierta de 35,26 m2 al aire libre y excelente vista.\n\naire acondicionado central, conexion de gas, lineas telefonica e internet. dos baños internos. Amplio estacionamiento para sus clientes y vigilancia privada las 24 horas. Atractivas condiciones de negociacion",
-      "amenities": [
-        "vigilancia",
-        "estacionamiento",
-        "terraza",
-        "aire_acondicionado"
-      ]
-    },
-    {
-      "titulo": "Inmueble en alquiler en Sucre, Miranda — $3.999/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/otro/alquiler/miranda/los-cortijos-de-lourdes-alquiler-de-pisos-industriales-desde-295-m2-aproximadame-MLV-906850506",
-      "precio_texto": "$3.999",
-      "precio_usd": 3999,
-      "habitaciones": null,
-      "banos": 4,
-      "metros_cuadrados": 435,
-      "tipo": "Inmueble",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Sucre, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Elige tu piso Industrial en Los Cortijos, Exelente ubicación estacionamiento independiente en el mismo Edf., Aire acondicionado central, modifícalo a tu gusto , alta seguridad, ventilados e iluminados, excelente Altura, Ascensor de Cargas , excelente para tu Industria, 3.300 $, Los puestos de estacionamientos se alquilan aparte en 45$ mensuales",
-      "amenities": [
-        "estacionamiento",
-        "ascensor",
-        "aire_acondicionado"
-      ]
-    },
-    {
-      "titulo": "Galpón en venta en Los Salias, Miranda — $247.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/galpon/venta/miranda/galpon-vendo-sobre-panamericana-MLV-905385794",
-      "precio_texto": "$247.000",
-      "precio_usd": 247000,
-      "habitaciones": null,
-      "banos": 3,
-      "metros_cuadrados": 1750,
-      "tipo": "Galpon",
-      "operacion_detectada": "Venta",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Buen Galpón ubicado a 50 mts. de Panamericana en San Antonio  de los Altos. Posee 1000 mts. de terreno y 750mts.2 construidos. Gran planta baja que permite cualquier tipo de negocio. Mezzanina de 510 mts. en estructura metalica y madera. Depósito  de 120 mts. además de un anexo externo con baño de 70 mts. Tanque de agua. Zona muy tranquila.",
-      "amenities": []
-    },
-    {
-      "titulo": "Apartamento en venta en Baruta, Miranda — $180.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/tg-oportunidad-apartamento-en-venta-en-santa-fe-norte-queda-amoblado-y-equipado--MLV-1014209642",
-      "precio_texto": "$180.000",
-      "precio_usd": 180000,
-      "habitaciones": 2,
-      "banos": 3,
-      "metros_cuadrados": 142,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Baruta, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Apartamento amoblado y equipado en cotizada urbanización cerrada con vigilancia privada 24/7. Ubicado en piso medio, destaca por su diseño remodelado, ventilación natural y espectaculares vistas panorámicas. Una propiedad impecable y lista para habitar que representa una inversión estratégica de alto rendimiento. Agende su visita privada hoy mismo y descubra el próximo hogar de sus sueños.",
-      "amenities": [
-        "vigilancia",
-        "remodelado"
-      ]
-    },
-    {
-      "titulo": "Apartamento en venta en Baruta, Miranda — $350.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/nv-estupenda-planta-baja-en-venta-santa-fe-norte-mls-25-16739-MLV-776602225",
-      "precio_texto": "$350.000",
-      "precio_usd": 350000,
+      "titulo": "Apartamento en venta en Distrito Capital — $81.000",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-santa-rosalia-aragua-rentahouse-27-5506",
+      "precio_texto": "$81.000",
+      "precio_usd": 81000,
       "habitaciones": 3,
-      "banos": 3,
-      "metros_cuadrados": 291,
+      "banos": 2,
+      "metros_cuadrados": null,
       "tipo": "Apartamento",
       "operacion_detectada": "Venta",
-      "ubicacion": "Baruta, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Estupenda Planta Baja en obra gris, ubicado en un condominio pequeño y exclusivo, de diseño moderno y elegante.\n\nEl apartamento cuenta con 197,78 mts2 de construcción y 93,82 mts2 de jardín privado que goza de una imponente vista al Ávila, ideal para reuniones con familiares y amigos al aire libre. El inmueble tiene además amplios ventanales que permiten una grata iluminación natural. La habitación principal posee baño completo, vestier y salida directa hacia el jardín. Las dos habitaciones auxiliares cuentan con baño privado.\n\nTiene 4 puestos de estacionamiento techados, 2 maleteros y 1 cuarto de chofer. Es una excelente opción para que viva en Caracas e ideal para remodelar a su gusto\n\nNV - MLS #25-16739",
-      "amenities": [
-        "jardín",
-        "estacionamiento",
-        "vista"
-      ]
-    },
-    {
-      "titulo": "Local Comercial en alquiler en Sucre, Miranda — $3.150/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/miranda/amplio-local-comercial-a-pie-de-calle-en-la-avenida-romulo-gallegos-los-dos-cami-MLV-994418630",
-      "precio_texto": "$3.150",
-      "precio_usd": 3150,
-      "habitaciones": null,
-      "banos": 3,
-      "metros_cuadrados": 240,
-      "tipo": "Local comercial",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Sucre, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "25-16167\nBello e impecable local comercial ubicado a nivel de calle, en la Av. Rómulo Gallegos con Calle El Carmen. Cuenta con excelente tránsito peatonal y de vehicular, diversos comercios, colegios, universidades e iglesia en su alrededor. Ideal para la comercialización de diversos rubros desde alimentos hasta repuestos. Posee pisos con pintura epóxica y elegante porcelanato. Gran oportunidad.",
-      "amenities": []
-    },
-    {
-      "titulo": "Terreno en venta en Baruta, Miranda — $189.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/terreno/venta/miranda/terreno-en-venta-en-santa-fe-norte-ng-26-6217-yg-MLV-916030782",
-      "precio_texto": "$189.000",
-      "precio_usd": 189000,
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": 400,
-      "tipo": "Terreno",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Baruta, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Terreno versátil para construir la casa de tus sueños y 2 apartamentos adicionales, como inversión o para la familia o servicio. En documento están reflejados 400,26 m2, y 950m2 de áreas verdes totalmente planas. El terreno tiene un estudio de suelo, se realizó remoción de tierra para construcción de sótano, tiene muros de anclajes sobre pilotines, 50 toneladas. Posee agua, luz, gas directo.",
-      "amenities": []
-    },
-    {
-      "titulo": "Local Comercial en alquiler en Baruta, Miranda — $3.500/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/miranda/excelente-local-comercial-en-alquiler-ubicado-en-santa-fe-norte-contactame-edith-MLV-976790778",
-      "precio_texto": "$3.500",
-      "precio_usd": 3500,
-      "habitaciones": null,
-      "banos": 3,
-      "metros_cuadrados": 187,
-      "tipo": "Local comercial",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Baruta, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Edith Chacón\n\nMLS #25-765 \nTe presentamos este local a pie de calle, con una gran área sin columnas, ubicado en avenida con alto flujo vehicular, remodelado en el año 2016, en el que se pueden ejecutar diferentes actividades comerciales como restaurantes, bodegones, tiendas en general y cualquier rubro económico. Además de estar rodeado de tiendas de interés.",
-      "amenities": [
-        "remodelado"
-      ]
-    },
-    {
-      "titulo": "Terreno en venta en Baruta, Miranda — $380.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/terreno/venta/miranda/terreno-en-santa-fe-norte-en-urbanizacion-cerrada-con-vigilancia-no-pierdas-la-o-MLV-1009481258",
-      "precio_texto": "$380.000",
-      "precio_usd": 380000,
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": 735,
-      "tipo": "Terreno",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Baruta, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Terreno en venta en Baruta, Miranda. 735 m². $380.000 ($517/m²). Precio/m² típico de la zona. Historial de precios y comparables en InmueblesConLupa.",
-      "amenities": []
-    },
-    {
-      "titulo": "Galpón en alquiler en Plaza, Miranda — $5.000/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/galpon/alquiler/miranda/galpon-en-intermarine-guatire-5-936-95-mts-MLV-987192872",
-      "precio_texto": "$5.000",
-      "precio_usd": 5000,
-      "habitaciones": null,
-      "banos": 1,
-      "metros_cuadrados": 5937,
-      "tipo": "Galpon",
-      "operacion_detectada": "Alquiler",
       "ubicacion": "",
       "portal": "inmueblesconlupa",
-      "descripcion": "Excelente Galpón+Patio de maniobras en totalmente cerrado en muro de concreto, adyacente a la Av. Intercomunal Guarenas-Guatire, sector Sojo entrando por Lanchas Intermarine de la Ciudad de Guatire, uso: Patio mantenimiento maquinarias pesada, almacenaje, comercio, industrial, con amplia zona de maniobra y estacionamiento. Pisos de concreto reforzado para el manejo de cargas pesadas. Techos de Techos de Acerolit. Sin columnas internas para el mayor aprovechamiento de los espacios. Portón de acceso motorizado, manejo de contenedores y cualquier tipo de vehículos de carga. Central de incendios. Cuenta con Oficinas Administrativas con sus baños internos, igualmente cuenta con baños y duchas para personal obrero. Puestos de estacionamiento para vehículos personal y visitantes.\n• Estructura de concreto armado.\n• Altura libre: 9 mts.\n• Terreno: área: 5.936,95 mts².\n• Galpón: área: 1.575 mts².\n• Anexo al Galpón: 366 mts2\n• Estacionamiento Techado 1: 200 mts2\n• Estacionamiento Techado 2: 333 mts2\n• Almacén de chatarra: 114 mts2\n• Almacén de equipos: 231 mts2\n• Área de oficinas: 500 mts².\n• Paredes Perimetrales: 660 mts2\n• Muro de contención: 225 mst2\n• Pisos Externos: 1.249 mts2\n• Estacionamiento y expansión 1.500 mts².\n• Tanque de agua subterráneo con hidroneumático.\n• Sistema contra incendio.\n• Todos los servicios.\n• Casa de conserjería y de vigilancia interna al terreno.\n• Uso: industrial\n\nContáctenos para mayor información",
-      "amenities": [
-        "vigilancia",
-        "estacionamiento"
-      ]
-    },
-    {
-      "titulo": "Galpón en venta en Sucre, Miranda — $650.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/galpon/venta/miranda/ls-vende-galpon-la-florida-MLV-1008869104",
-      "precio_texto": "$650.000",
-      "precio_usd": 650000,
-      "habitaciones": null,
-      "banos": 3,
-      "metros_cuadrados": 811,
-      "tipo": "Galpon",
-      "operacion_detectada": "Venta",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Excelente Galpón/Deposito de 811 metros planos. instalaciones adecuadas para cualquier tipo de actividad comercial e industrial, acceso de vehículos pesados para carga y descarga, posee 6 oficinas, sala de reuniones, recepción , 3 baños,puertas de seguridad, tanque de agua, sistema de cámaras de seguridad.  26-17575  Ubicado a nivel de calle, facil acceso a la cota mil y av. Libertador.",
+      "descripcion": "¡TU PRÓXIMO HOGAR ESTÁ LISTO PARA RECIBIRTE! \n\n¿Imaginas mudarte sin preocuparte por comprar nada? Este moderno apartamento no solo está totalmente equipado, sino que cuenta con acabados de revista diseñados para brindarte el máximo confort.\n Detalles del Inmueble:\n• Cocina empotrada de concepto cálido y funcional.\n• Climatizado (A/A) en todos sus ambientes.\n• Techos en drywall con iluminación",
       "amenities": []
     },
     {
-      "titulo": "Local Comercial en venta en Los Salias, Miranda — $65.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/miranda/local-en-venta-50mts-c-c-castillejo-guatire-1-bano-1-p-e-MLV-945811986",
-      "precio_texto": "$65.000",
-      "precio_usd": 65000,
-      "habitaciones": null,
-      "banos": 1,
-      "metros_cuadrados": 50,
-      "tipo": "Local comercial",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Los Salias, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "En venta Local Comercial \nCentro Comercial Castillejo \nCarretera Nacional Guatire, piso 1 \nCuerpo2\nEtapa 1\nPuesto # 177\n50 m + Mezzanina\nBaño 1\nDepósito de mercancía \n1 puesto estacionamiento",
-      "amenities": [
-        "estacionamiento"
-      ]
-    },
-    {
-      "titulo": "Apartamento en venta en Acevedo, Miranda — $25.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apto-venta-en-rio-chico-MLV-775830811",
-      "precio_texto": "$25.000",
-      "precio_usd": 25000,
+      "titulo": "Apartamento en alquiler en Distrito Capital — $1.500/mes",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/distrito-capital/apartamento-1-nivel-en-alquiler-en-colinas-de-bello-monte-distrito-metropolitano-rentahouse-27-5529",
+      "precio_texto": "$1.500",
+      "precio_usd": 1500,
       "habitaciones": 1,
       "banos": 2,
-      "metros_cuadrados": 56,
+      "metros_cuadrados": null,
       "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Acevedo, Miranda",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "",
       "portal": "inmueblesconlupa",
-      "descripcion": "Se vende lindo apartamento en Río Chico Ubicado en uno de los edificios más emblemáticos por su diseño estructural, este apartamento ofrece una experiencia de vida superior. Exclusivo apartamento de fácil acceso en el piso 1, donde cada metro cuadrado ha sido aprovechado con maestría. Disfruta de un área social integrada que fluye naturalmente hacia una cocina moderna, 1 habitación amplia con baño privado + baño auxiliar para visitas. Terraza techada. Equipado con aire acondicionado central para tu máximo confort. Areas comunes muy bien mantenidas, disfruta de piscina, muelle privado y caminerías con la mejor vista a la laguna. Disfrutarás de bonitos atardeceres. ¡El refugio ideal para quienes buscan un estilo de vida práctico sin renunciar a la elegancia! \n\n56,61 Mts  \n1 Hab\n2Baños\nTerraza\n1 Puesto\nRef 25.000\nCliente Directo",
+      "descripcion": "En alquiler hermoso apartamento totalmente remodelado, a estrenar. Con ubicación estratégica, a tan solo 5 minutos de las mercedes y salida a las principales vías de la ciudad. El apartamento cuenta con 1 habitacion con baño, un medio baño para visitas, cocina moderna y equipada. Vista al Avila. Edificio con piscina, caminerias y múltiples puestos para visitantes.",
       "amenities": [
         "piscina",
-        "terraza",
-        "aire_acondicionado"
-      ]
-    },
-    {
-      "titulo": "Casa en venta en Baruta, Miranda — $285.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/miranda/en-venta-extraordinaria-casa-de-dos-plantas-ubicada-en-santa-fe-norte-26-4134-cv-MLV-776238631",
-      "precio_texto": "$285.000",
-      "precio_usd": 285000,
-      "habitaciones": 5,
-      "banos": 4,
-      "metros_cuadrados": 403,
-      "tipo": "Casa",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Baruta, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Extraordinaria casa de dos plantas, totalmente remodelada, ubicada en Santa Fe Norte, amplios espacios, acabados de primera, 4 Habitaciones mas servicio, 4 Baños mas servicio, terraza techada para múltiples usos, jardín, área de parrilla, Calle segura. MLS #26-4134",
-      "amenities": [
-        "jardín",
-        "terraza",
+        "vista",
         "remodelado"
       ]
     },
     {
-      "titulo": "Terreno en venta en Baruta, Miranda — $1.950.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/terreno/venta/miranda/terreno-en-venta-en-sabana-grande-as-MLV-911206600",
-      "precio_texto": "$1.950.000",
-      "precio_usd": 1950000,
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": 1490,
-      "tipo": "Terreno",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Baruta, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "#25-21993\nEspectacular terreno de 1490 mts2 que incluye una casa comercial de 184m2, el terreno está a pie de calle ideal para cualquier tipo de construcción, con precio de oportunidad ideal para ti.\nVamos a visitarlo, te encantará",
-      "amenities": []
-    },
-    {
-      "titulo": "Local Comercial en venta en Baruta, Miranda — $45.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/miranda/local-comercial-en-venta-santa-fe-norte-mls-26-20581-MLV-1013425514",
-      "precio_texto": "$45.000",
-      "precio_usd": 45000,
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": 16,
-      "tipo": "Local comercial",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Baruta, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Excelente local comercial ubicado en el Centro Comercial Santa Fe, Nivel 3, desocupado, sin mobiliario, bien ubicado. Oportunidad de inversion y/o negocio.  Negociable.\n\n\nMG - MLS #26-20581",
-      "amenities": []
-    },
-    {
-      "titulo": "Apartamento en venta en Chacao, Miranda — $135.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/venta-apartamento-altamira-sur-132-m2-3-hab-3-banos-3-puestos-isabel-26-21636-MLV-1014606284",
-      "precio_texto": "$135.000",
-      "precio_usd": 135000,
+      "titulo": "Apartamento en venta en Santa Fe Sur, Miranda — $145.000",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-1-nivel-en-venta-en-santa-fe-sur-distrito-metropolitano-rentahouse-27-5398",
+      "precio_texto": "$145.000",
+      "precio_usd": 145000,
       "habitaciones": 3,
       "banos": 3,
-      "metros_cuadrados": 132,
+      "metros_cuadrados": null,
       "tipo": "Apartamento",
       "operacion_detectada": "Venta",
-      "ubicacion": "Chacao, Miranda",
+      "ubicacion": "Santa Fe Sur, Miranda",
       "portal": "inmueblesconlupa",
-      "descripcion": "Cliente Directo\n\nExcepcional apartamento para actualizar con gran potencial de revalorizacion Salon comedor , 3 habitaciones mas servicio 3 baños con 3 puestos de estacionamiento Ubicación en zona segura y de fácil acceso, destacando su servicio de agua ininterrumpido. ¡La inversión inteligente que estaba buscando!\n\nIsabel Gomez\nAsesor Inmobiliario\nCodigo MLS #26-21636",
+      "descripcion": "¡Oportunidad en Santa Fe Sur en calle cerrada con vigilancia! Precio competitivo para modernizar a tu gusto. Amplio apartamento de 134 mtrs ubicado en una de las zonas más exclusivas, tranquilas y seguras de Santa Fe Sur. Se destaca por su excelente iluminación natural y una hermosa vista panorámica. 3 hab (la principal con baño interno) 2 baños, hab y baño de servicio, 1 puesto techado.",
+      "amenities": [
+        "vigilancia",
+        "vista"
+      ]
+    },
+    {
+      "titulo": "Apartamento en venta en La Rosaleda, Miranda — $60.000",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-1-nivel-en-venta-en-la-rosaleda-miranda-rentahouse-27-3401",
+      "precio_texto": "$60.000",
+      "precio_usd": 60000,
+      "habitaciones": 3,
+      "banos": 3,
+      "metros_cuadrados": null,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
+      "ubicacion": "La Rosaleda, Miranda",
+      "portal": "inmueblesconlupa",
+      "descripcion": "Descubre el equilibrio perfecto entre confort y calidad de vida en este conservado apartamento, es una oportunidad única para quienes valoran la solidez y el cuidado en cada detalle, cuenta con una distribución funcional de 3 habitaciones, 2 baños completos y 1 puesto de estacionamiento, ofreciendo el espacio ideal para ver crecer a tu familia o disfrutar de un retiro pleno.",
       "amenities": [
         "estacionamiento"
       ]
     },
     {
-      "titulo": "Apartamento en venta en Chacao, Miranda — $220.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/venta-apartamento-altamira-123-mt2-2-hab-2-banos-2-puestos-remodelado-vista-isab-MLV-1013722406",
-      "precio_texto": "$220.000",
-      "precio_usd": 220000,
-      "habitaciones": 2,
-      "banos": 2,
-      "metros_cuadrados": 123,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Chacao, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Cliente Directo\n\nHermoso apartamento con inmejorable ubicacion en frente a la Plaza Altamira. Posee 2 dormitorios + un estudio, una amplia e iluminada area social con hermosa vista al Avila. Esta remodelado, tiene aire acondicionado en las 2 habitaciones y el estudio. 2 Puestos de estacionamiento.\n\nIsabel Gomez\nAsesor Inmobiliario RAH\nPor favor toma nota de este codigo para hacer la consulta MLS #26-21055",
-      "amenities": [
-        "estacionamiento",
-        "vista",
-        "remodelado",
-        "aire_acondicionado"
-      ]
-    },
-    {
-      "titulo": "Oficina en alquiler en Sucre, Miranda — $650/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/miranda/lm-oficina-alquiler-los-cortijos-de-lourdes-cod-25-24468-yg-MLV-867450296",
-      "precio_texto": "$650",
-      "precio_usd": 650,
-      "habitaciones": null,
-      "banos": 1,
-      "metros_cuadrados": 80,
-      "tipo": "Oficina",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Sucre, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Esta oficina está ubicada en una de las zonas más demandadas de caracas por su fácil acceso, y los nuevos desarrollos económicos del lugar, cuenta con internet, bella vista al Ávila ya un paso del Metro.",
-      "amenities": [
-        "vista"
-      ]
-    },
-    {
-      "titulo": "Galpón en alquiler en Plaza, Miranda — $8.500/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/galpon/alquiler/miranda/galpon-urbanizacion-industrial-el-marques-sur-guatire-MLV-776582161",
-      "precio_texto": "$8.500",
-      "precio_usd": 8500,
-      "habitaciones": null,
-      "banos": 5,
-      "metros_cuadrados": 3500,
-      "tipo": "Galpon",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Galpón industrial de dos naves ubicado en la Urbanización Industrial El Marqués Sur, en la ciudad de Guatire. Cuenta con una inmejorable ubicación dentro de la zona industrial por la inmediata accesibilidad a la Avenida Intercomunal Guarenas-Guatire y las principales vías de comunicación con Caracas y el oriente del país. \nEl inmueble posee una superficie aproximada de 2399,04 mts2. Tanques subterráneos y sistema hidroneumático en excelentes condiciones. Iluminación interior, láminas translucidas para aprovechamiento de luz solar e iluminación de las áreas exteriores. Área de mezzanina con secciones para oficinas y almacenamiento con estanterías. Posee en sus distintas áreas la ducteria para la instalación de cámaras de seguridad. Baños para el personal, área para comedor, oficinas administrativas, entre otros. Dos portones corredizos para la accesibilidad interna, caseta de vigilancia. Todo su perímetro protegido con cerco eléctrico.\n\nContáctenos para mayor información",
-      "amenities": [
-        "vigilancia"
-      ]
-    },
-    {
-      "titulo": "Casa en venta en Baruta, Miranda — $850.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/miranda/ls-vende-casa-la-tahona-calle-los-granados-MLV-776749961",
-      "precio_texto": "$850.000",
-      "precio_usd": 850000,
+      "titulo": "Casa en venta en San Roman, Miranda — $495.000",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/miranda/casa-1-nivel-en-venta-en-san-roman-distrito-metropolitano-rentahouse-27-5636",
+      "precio_texto": "$495.000",
+      "precio_usd": 495000,
       "habitaciones": 4,
-      "banos": 7,
-      "metros_cuadrados": 910,
+      "banos": 4,
+      "metros_cuadrados": null,
       "tipo": "Casa",
       "operacion_detectada": "Venta",
-      "ubicacion": "Baruta, Miranda",
+      "ubicacion": "San Roman, Miranda",
       "portal": "inmueblesconlupa",
-      "descripcion": "Estupenda casa construida con los mejores acabados:   26-19462  sobria fachada de coralina y piedra, impecables pisos de mármol en las áreas sociales, lindo jardín con terraza y bar con barra y parrillera, ideal para reuniones familiares. Todo, en una exclusiva y segura calle cerrada, con doble acceso de seguridad. La casa cuenta con sistema de cámaras, cerco eléctrico y tanque de agua de 20.000 litros.",
-      "amenities": [
-        "jardín",
-        "terraza"
-      ]
-    },
-    {
-      "titulo": "Local Comercial en alquiler en Baruta, Miranda — $3.500/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/miranda/local-en-alquiler-santa-fe-norte-26-19538-MLV-776765353",
-      "precio_texto": "$3.500",
-      "precio_usd": 3500,
-      "habitaciones": null,
-      "banos": 4,
-      "metros_cuadrados": 187,
-      "tipo": "Local comercial",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Baruta, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Te presentamos este local a pie de calle, con una gran área sin columnas, ubicado en avenida con alto flujo vehicular, remodelado en el año 2016, en el que se pueden ejecutar diferentes actividades comerciales como restaurantes, bodegones, tiendas en general y cualquier rubro económico. Ademas de estar rodeado de tiendas de interes. \n\n \nCODIGO: 26-19538",
-      "amenities": [
-        "remodelado"
-      ]
-    },
-    {
-      "titulo": "Terreno en venta en Baruta, Miranda — $380.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/terreno/venta/miranda/exclusivo-terreno-en-venta-en-calle-cerrada-con-vigilancia-en-santa-fe-norte-mfl-MLV-1009446870",
-      "precio_texto": "$380.000",
-      "precio_usd": 380000,
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": 735,
-      "tipo": "Terreno",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Baruta, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Terreno con un potencial increíble, en una zona muy demandada para vivir, urbanización cerrada con vigilancia de solo 20 casas muy exclusiva, ese terreno ya tiene un trabajo realizado de maquinaria para poderlo adecuar a la construcción de un nuevo hogar, los propietarios tiene un proyecto hermoso que ellos pueden compartir.",
-      "amenities": [
-        "vigilancia"
-      ]
-    },
-    {
-      "titulo": "Apartamento en alquiler en Baruta, Miranda — $800/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/miranda/apartamento-en-alquiler-ubicado-en-santa-fe-norte-cod-26-18689-MLV-1008863628",
-      "precio_texto": "$800",
-      "precio_usd": 800,
-      "habitaciones": 3,
-      "banos": 2,
-      "metros_cuadrados": 94,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Baruta, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Apartamento en alquiler con magnifica ubicación en la Urb. Santa Fe Norte, 94 Mts2 con excelente distribución, frescas e iluminadas areas sociales con agradable vista, espaciosa cocina con tope de granito, artefactos eléctricos nuevos (microondas, nevera y campana) area de lavandero, tres habitaciones, dos baños, y un puesto de estacionamiento.\n\nCod. 26-18689",
-      "amenities": [
-        "estacionamiento"
-      ]
-    },
-    {
-      "titulo": "Galpón en venta en Lander, Miranda — $390.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/galpon/venta/miranda/galpon-industrial-en-venta-urb-rio-tuy-charallave-MLV-864210508",
-      "precio_texto": "$390.000",
-      "precio_usd": 390000,
-      "habitaciones": null,
-      "banos": 2,
-      "metros_cuadrados": 3724,
-      "tipo": "Galpon",
-      "operacion_detectada": "Venta",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Terreno: 2 Parcelas planas \n\n3.724,72 Mtrs²\nAccesos: 1 Entrada peatonal (Puerta) 3 Entradas Vehiculares con Portones (Camiones) uno de los Portones con Motor Eléctrico con control remote\nÁrea Techada: 1.810m2\nÁrea Construída Edificada: 2 Plantas con 180m2\nAltura del Galpón 11,50m\nArea de comedor\n2 Oficinas con 2 baños 90m2 aproximadamente, con aires acondicionados \nDepósito\n2 Baños con vestuarios para trabajadores\nOficina con baño\nArea de conserjería\nElectricidad trifasica, con tres (3) Transformadores 37.5 KWA\n4 Focos de alumbrado externo con fotocelda 400 watts\nInstalaciones eléctricas\nCámaras de seguridad (13)\nGenerador eléctrico 70 KWA con transfer instalado en su caseta\nTanque de agua 40.000ltrs con hidroneumático\nCentral telefónica \nMuebles de oficina\nPlanta eléctrica \n\nPrecio: 390.000$",
-      "amenities": []
-    },
-    {
-      "titulo": "Local Comercial en alquiler en Sucre, Miranda",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/miranda/local-en-alquiler-en-la-florida-1600-m2-MLV-770845989",
-      "precio_texto": "",
-      "precio_usd": null,
-      "habitaciones": null,
-      "banos": 4,
-      "metros_cuadrados": 1600,
-      "tipo": "Local comercial",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Local de 1600 m2\n\nLa Florida\n\nExcelente lugar para consecionario, o tienda  ofrecemos esta propiedad con area de vidrio como sala de espera, estacionamiento para visitantes (12), estacionamiento para exponer vehiculos adicional o se puede adaptar para entreda de gandolas. Oficinas.\nIdeal para cualquier comercio grande .\nAparte tiene una zona de taller con puente, area de lavado precio A convenir",
-      "amenities": [
-        "estacionamiento"
-      ]
-    },
-    {
-      "titulo": "Galpón en alquiler en Sucre, Miranda — $4.800/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/galpon/alquiler/miranda/ls-alquila-galpon-sabana-grande-MLV-1013401840",
-      "precio_texto": "$4.800",
-      "precio_usd": 4800,
-      "habitaciones": null,
-      "banos": 2,
-      "metros_cuadrados": 398,
-      "tipo": "Galpon",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Moderno Galpón/Taller/Centro de Producción,  26-17311   remodelado con Área administrativa amoblada 398mts2. Distribuidos en dos niveles Altura de Acceso Nivel Pb 4.20m Pb: Portón eléctrico, Acceso Peatonal Estacionamiento para 4 vehículos o para ingresar un contenedor de 40 pies. Portón de seguridad. Nivel 1: Área administrativa y de faena, sala de conferencia.",
-      "amenities": [
-        "estacionamiento",
-        "remodelado"
-      ]
-    },
-    {
-      "titulo": "Local Comercial en venta en Baruta, Miranda — $66.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/miranda/ea-local-en-venta-urb-santa-fe-norte-caracas-yf-26-20878-MLV-1013635010",
-      "precio_texto": "$66.000",
-      "precio_usd": 66000,
-      "habitaciones": null,
-      "banos": 1,
-      "metros_cuadrados": 57,
-      "tipo": "Local comercial",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Baruta, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Fabuloso local en Venta, en el Centro Comercial Santa Fe, este espectacular y movido Centro Comercial Santa Fe, dentro de sus ofertas de tiendas y negocios, cuenta con el Supermercado Gamma, Farmatodo, Mc Donald, Panadería ''Como en Italia'', Clínica, Laboratorio Médico, Grupo Odontológico, bodegones, peluquerías, restaurantes, taller mecánico, venta y cambio de aceite, venta de baterías.",
-      "amenities": []
-    },
-    {
-      "titulo": "Apartamento en alquiler en Baruta, Miranda — $1.300/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/miranda/apartamento-en-alquiler-santa-fe-norte-rah-mls26-20336-MLV-1013605010",
-      "precio_texto": "$1.300",
-      "precio_usd": 1300,
-      "habitaciones": 3,
-      "banos": 2,
-      "metros_cuadrados": 95,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Baruta, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "RentAHouse La Boyera alquila. Espectacular Apartamento totalmente remodelado todo a estrenar diseñado para personas que exigen lo mejor 3 habitaciones dos baños 2 puestos de estacionamiento mas puestos para visitantes cerca del CC Santa Fe, Colegios Transporte.\n\nPara confirma precio, disponibilidad o para coordinar visitas tome nota del código para hacer su consulta",
-      "amenities": [
-        "estacionamiento",
-        "remodelado"
-      ]
-    },
-    {
-      "titulo": "Oficina en alquiler en Sucre, Miranda — $600/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/miranda/oficina-en-alquiler-ubicada-en-los-cortijos-MLV-1001742874",
-      "precio_texto": "$600",
-      "precio_usd": 600,
-      "habitaciones": null,
-      "banos": 4,
-      "metros_cuadrados": 88,
-      "tipo": "Oficina",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Sucre, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Oficina en alquiler.\nTorre profesional ubicada en Los Cortijos \n88m² .\n4 cubículos. \nOficina lista para empezar actividades.\n4 Baños, (compartidos con las oficinas que se encuentran en el mismo piso).\nMontacargas.\n4 ascensores.\n\nCanon 600 + IVA + Condominio \n\nCondiciones de negociación:\n3 meses de depósito \n3 meses de adelanto \n1 mes por honorarios",
-      "amenities": [
-        "ascensor"
-      ]
-    },
-    {
-      "titulo": "Apartamento en venta en Baruta, Miranda — $350.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-venta-santa-fe-norte-1-lp-MLV-1014105588",
-      "precio_texto": "$350.000",
-      "precio_usd": 350000,
-      "habitaciones": 3,
-      "banos": 4,
-      "metros_cuadrados": 291,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Baruta, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Estupenda Planta Baja en obra gris, ubicado en un condominio pequeño y exclusivo, de diseño moderno y elegante. El apartamento cuenta con 197,78 mts2 de construcción y 93,82 mts2 de jardín privado que goza de una imponente vista al Ávila, ideal para reuniones con familiares y amigos al aire libre. MLS  25-16739",
-      "amenities": [
-        "jardín",
-        "vista"
-      ]
-    },
-    {
-      "titulo": "Galpón en venta en Lander, Miranda — $780.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/galpon/venta/miranda/galpon-en-venta-rio-tuy-charallave-MLV-876612852",
-      "precio_texto": "$780.000",
-      "precio_usd": 780000,
-      "habitaciones": null,
-      "banos": 1,
-      "metros_cuadrados": 2220,
-      "tipo": "Galpon",
-      "operacion_detectada": "Venta",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "GALPÓN EN VENTA \nRío Tuy – Charallave \n\n2.220 Mtrs²\nNave grande\nOficina con baño \nOtro galpòn 435m2\nGalpòn más terreno 2.220m2\nLuz trifásica  con 3 transformadores (no tiene luz)\n\nPrecio: 780.000$ \nCanon:2.500$",
+      "descripcion": "Hermosa y espaciosa casa de un solo nivel caracterizada por sus amplios ambientes, excelente iluminación natural y hermosas áreas verdes que rodean la propiedad.\n\n Desarrollada sobre una parcela con zonificación R3, la casa cuenta con 4 amplias habitaciones, siendo la principal equipada con baño privado y vestier. En total dispone de 3 baños completos y un cómodo 1/2 baño de visitas.",
       "amenities": []
     }
   ],
   "diagnostico": {
     "urls_encontradas": 2000,
-    "paginas_scrapeadas": 1053,
-    "fallos": 947,
-    "con_m2": 412,
-    "con_hab": 722,
-    "con_banos": 957
+    "paginas_scrapeadas": 934,
+    "fallos": 1066,
+    "con_m2": 354,
+    "con_hab": 711,
+    "con_banos": 852
   }
 }
