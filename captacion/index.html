@@ -8,159 +8,129 @@ main{max-width:760px;margin:0 auto;padding:14px 14px 90px}
 .card{background:var(--cd);border:1px solid var(--bd);border-radius:12px;padding:14px;margin-bottom:12px}h2{font-size:14px;margin:0 0 10px;color:var(--mu);text-transform:uppercase}
 .g{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}.w{grid-column:1/-1}label{display:block;font-size:12px;color:var(--mu)}
 input,select,textarea{width:100%;margin-top:3px;padding:11px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--tx);font:inherit}
-button,.btn{display:inline-block;font:inherit;padding:11px 16px;border-radius:8px;border:1px solid var(--bd);background:var(--cd);color:var(--tx);cursor:pointer;margin:4px 4px 0 0}button.p{background:var(--ac);color:#fff;border-color:var(--ac)}button:disabled{opacity:.5}
-.mu{color:var(--mu);font-size:13px}.r{display:flex;gap:6px;align-items:center;flex-wrap:wrap;border-top:1px solid var(--bd);padding:8px 0}.r .n{flex:1 1 100%;font-size:13px;word-break:break-all}.r select,.r input{flex:1;min-width:120px;margin:0}
-.tag{font-size:12px;padding:2px 8px;border-radius:99px;border:1px solid var(--bd)}.o{color:var(--ok);border-color:var(--ok)}.w2{color:var(--wa);border-color:var(--wa)}
-.nav{position:fixed;left:0;right:0;bottom:0;background:var(--cd);border-top:1px solid var(--bd);padding:8px 14px calc(8px + env(safe-area-inset-bottom));display:flex;gap:8px;align-items:center;justify-content:space-between}
-.ob{padding:8px 10px;border-left:4px solid var(--wa);margin:6px 0;background:var(--bg);border-radius:6px;font-size:14px}#t{position:fixed;left:14px;right:14px;bottom:70px;background:#000c;color:#fff;padding:10px;border-radius:8px;display:none;z-index:9}
-#auth{display:flex;flex-direction:column;gap:10px;max-width:400px;margin:40px auto;padding:20px}
-#auth input{padding:14px;font-size:16px;border:1px solid var(--bd);border-radius:8px;background:var(--cd);color:var(--tx)}
-#auth button{padding:14px;font-size:16px;background:var(--ac);color:#fff;border:none;border-radius:8px;cursor:pointer}
-#auth button:disabled{opacity:.5}
-#auth .msg{padding:10px;border-radius:8px;text-align:center;display:none}
-#auth .msg.ok{background:var(--ok);color:#fff;display:block}
-#auth .msg.err{background:var(--er);color:#fff;display:block}
+button{font:inherit;padding:11px 16px;border-radius:8px;border:1px solid var(--bd);background:var(--cd);color:var(--tx);cursor:pointer;margin:4px 4px 0 0}button.p{background:var(--ac);color:#fff;border-color:var(--ac)}button:disabled{opacity:.5}
+.mu{color:var(--mu);font-size:13px}.er{color:var(--er);font-size:13px}.r{display:flex;gap:6px;align-items:center;flex-wrap:wrap;border-top:1px solid var(--bd);padding:8px 0}.r .n{flex:1 1 60%;font-size:13px;word-break:break-all}.r input{flex:1 1 100%;margin:0}
+.nav{position:fixed;left:0;right:0;bottom:0;background:var(--cd);border-top:1px solid var(--bd);padding:8px 14px calc(8px + env(safe-area-inset-bottom));display:flex;gap:8px;align-items:center;justify-content:space-between;z-index:4}
+#t{position:fixed;left:14px;right:14px;bottom:76px;background:#000d;color:#fff;padding:10px;border-radius:8px;display:none;z-index:9}
+#auth{display:flex;flex-direction:column;gap:10px;max-width:400px;margin:40px auto;padding:20px}#auth input{padding:14px}#auth button{padding:14px;background:var(--ac);color:#fff;border:none}
+#auth .msg{padding:10px;border-radius:8px;text-align:center;display:none;color:#fff}#auth .msg.ok{background:var(--ok);display:block}#auth .msg.err{background:var(--er);display:block}
 </style></head><body>
-<header><b>Captación ARG</b><span id="net"></span><button id="btnLogout" style="display:none;margin-left:auto;background:#fff;color:var(--ac);border:none;padding:6px 12px;border-radius:6px;">Salir</button></header>
+<header><b>Captación ARG</b><span id="net"></span><button id="btnLogout" style="display:none;background:#fff;color:#0f3d5e;border:none;padding:6px 12px;margin:0">Salir</button></header>
 <div id="auth">
-  <h2 style="text-align:center;margin:0 0 20px">Iniciar sesión</h2>
-  <div id="authMsg" class="msg"></div>
+  <h2 style="text-align:center;margin:0 0 10px">Iniciar sesión</h2><div id="authMsg" class="msg"></div>
   <input type="email" id="authEmail" placeholder="tucorreo@ejemplo.com" autocomplete="email">
   <input type="text" id="authCode" placeholder="Código de 6 dígitos" style="display:none" inputmode="numeric" maxlength="6">
-  <button id="btnSend" onclick="sendCode()">Enviar código</button>
-  <button id="btnVerify" onclick="verifyCode()" style="display:none">Entrar</button>
+  <button id="btnSend">Enviar código</button><button id="btnVerify" style="display:none">Entrar</button>
 </div>
-<main id="app" style="display:none"></main><div id="t"></div><div id="dbg" style="position:fixed;top:60px;left:10px;right:10px;background:#333;color:#0f0;padding:8px;font-size:12px;z-index:99;display:none"></div>
+<main id="app" style="display:none"></main><div id="t"></div>
 <script>
-const $=s=>document.querySelector(s),E=s=>(s==null?"":String(s)).replace(/[&<>"']/g,function(c){return"&#"+c.charCodeAt(0)+";"}),sleep=ms=>new Promise(r=>setTimeout(r,ms));
-const slug=s=>(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,""),ext=n=>((n||"").match(/\.[^.]+$/)||[""])[0].toLowerCase(),nn=i=>String(i+1).padStart(2,"0");
-const APL={Casa:["area_terreno","area_construccion","habitaciones","banos","estacionamientos"],Apartamento:["area_construccion","habitaciones","banos","estacionamientos"],Local:["area_construccion","banos","estacionamientos"],Terreno:["area_terreno"]};
-const LB={area_terreno:"Área de terreno (m²)",area_construccion:"Área de construcción (m²)",habitaciones:"Habitaciones",banos:"Baños",estacionamientos:"Estacionamientos"};
-const DT=["Cédula / RIF del cliente","Documento de propiedad (registro)","Solvencia municipal","Cédula catastral","Autorización de venta / contrato de captación","Solvencia de condominio","Poder / autorización notarial","Otros documentos"],REQ=["titulo","operacion","tipo","precio","ubicacion","descripcion","asesor","whatsapp_asesor"];
+const $=s=>document.querySelector(s),E=s=>(s==null?"":String(s)).replace(/[&<>"']/g,c=>"&#"+c.charCodeAt(0)+";");
+const slug=s=>(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,""),ext=n=>((n||"").match(/\.[^.]+$/)||[""])[0].toLowerCase(),nn=i=>String(i).padStart(2,"0");
 const WORKER="https://arenas-captacion.arenasrealtygroup1.workers.dev";
-let TOKEN=localStorage.getItem("arg_token")||"",EMAIL=localStorage.getItem("arg_email")||"",NAME=localStorage.getItem("arg_name")||"";
+const APL={Casa:["area_terreno","area_construccion","habitaciones","banos","estacionamientos"],Apartamento:["area_construccion","habitaciones","banos","estacionamientos"],Local:["area_construccion","banos","estacionamientos"],Terreno:["area_terreno"]};
+const LB={i_prop:"Nombre completo del cliente",i_ci:"Cédula / RIF",i_tel:"Teléfono",i_mail:"Correo",operacion:"Operación",tipo:"Tipo de inmueble",titulo:"Título",precio:"Precio USD",ubicacion:"Ubicación",mapa_url:"Link de mapa (Google Maps)",area_terreno:"Área de terreno (m²)",area_construccion:"Área de construcción (m²)",habitaciones:"Habitaciones",banos:"Baños",estacionamientos:"Estacionamientos",asesor:"Asesor",whatsapp_asesor:"WhatsApp del asesor (con código de país, solo números)",descripcion:"Descripción",caracteristicas:"Características (una por línea)",video_url:"Link de video publicable"};
+const DT=["Cédula / RIF del cliente","Documento de propiedad (registro)","Solvencia municipal","Cédula catastral","Autorización de venta / contrato de captación","Solvencia de condominio","Poder / autorización notarial","Otros documentos"];
+const REQ=["titulo","operacion","tipo","precio","ubicacion","descripcion","asesor","whatsapp_asesor"];
+let TOKEN=localStorage.getItem("arg_token")||"",EMAIL=localStorage.getItem("arg_email")||"",NAME=localStorage.getItem("arg_name")||"",C=null,busy=false;
 const msg=t=>{const e=$("#t");e.textContent=t;e.style.display="block";clearTimeout(e.tm);e.tm=setTimeout(()=>e.style.display="none",5000)};
-const dbg=t=>{const e=$("#dbg");if(e){e.textContent=t;e.style.display="block"}else{alert(t)}console.log(t)};
 const authMsg=(t,ok)=>{const e=$("#authMsg");e.textContent=t;e.className="msg "+(ok?"ok":"err")};
-const showAuth=()=>{$("#auth").style.display="flex";$("#app").style.display="none";$("#btnLogout").style.display="none"};
-const showApp=()=>{$("#auth").style.display="none";$("#app").style.display="block";$("#btnLogout").style.display="inline-block";$("#btnLogout").textContent="Salir ("+NAME+")";loadData()};
-const api=async(path,body)=>{const h={"Content-Type":"application/json"};if(TOKEN)h.Authorization="Bearer "+TOKEN;
-const r=await fetch(WORKER+path,{method:body?"POST":"GET",headers:h,body:body?JSON.stringify(body):null});
-const d=await r.json().catch(()=>({}));if(!r.ok)throw Error(d.error||"Error "+r.status);return d};
-
-// Login flow
-async function sendCode(){
-  const email=$("#authEmail").value.trim();if(!email)return authMsg("Ingresa tu correo");
-  $("#btnSend").disabled=true;authMsg("Enviando...",true);
-  try{
-    await api("/api/auth/request-code",{email});
-    $("#authCode").style.display="block";$("#btnVerify").style.display="block";$("#btnSend").style.display="none";
-    authMsg("Código enviado a "+email,true);
-  }catch(e){authMsg(e.message,false);$("#btnSend").disabled=false}
-}
-async function verifyCode(){
-  const email=$("#authEmail").value.trim(),code=$("#authCode").value.trim();
-  if(!code||code.length<6)return authMsg("Ingresa el código");
-  $("#btnVerify").disabled=true;authMsg("Verificando...",true);
-  try{
-    const d=await api("/api/auth/verify-code",{email,code});
-    TOKEN=d.token;EMAIL=d.email||email;NAME=d.name||"";
-    localStorage.setItem("arg_token",TOKEN);localStorage.setItem("arg_email",EMAIL);localStorage.setItem("arg_name",NAME);
-    showApp();msg("¡Bienvenido, "+NAME+"!");
-  }catch(e){authMsg(e.message,false);$("#btnVerify").disabled=false}
-}
-function logout(){TOKEN="";EMAIL="";NAME="";localStorage.removeItem("arg_token");localStorage.removeItem("arg_email");localStorage.removeItem("arg_name");showAuth()}
-$("#btnLogout").onclick=logout;
-
-// Helpers que usa showApp/loadData
 const online=()=>navigator.onLine,netUI=()=>$("#net").textContent=online()?"● Con señal":"○ Sin señal";
-const save=()=>put("cap",C);
+async function api(path,body){const h={"Content-Type":"application/json"};if(TOKEN)h.Authorization="Bearer "+TOKEN;
+  const r=await fetch(WORKER+path,{method:body?"POST":"GET",headers:h,body:body?JSON.stringify(body):null});
+  const d=await r.json().catch(()=>({}));if(!r.ok)throw Error(d.error||"Error "+r.status);return d}
 
-// IndexedDB
+// ---- IndexedDB (misma base "arg" v1) ----
 const idb=new Promise((ok,ko)=>{const r=indexedDB.open("arg",1);r.onupgradeneeded=()=>{const d=r.result;d.createObjectStore("cap",{keyPath:"batch"});d.createObjectStore("files");d.createObjectStore("srv",{keyPath:"batch"})};r.onsuccess=()=>ok(r.result);r.onerror=()=>ko(r.error)});
 const tx=async(s,m,f)=>{const d=await idb;return new Promise((ok,ko)=>{const t=d.transaction(s,m),o=f(t.objectStore(s));t.oncomplete=()=>ok(o.result);t.onerror=()=>ko(t.error)})};
-const get=(s,k)=>tx(s,"readonly",o=>o.get(k)),put=(s,v,k)=>tx(s,"readwrite",o=>o.put(v,k)),all=s=>tx(s,"readonly",o=>o.getAll()),del=(s,k)=>tx(s,"readwrite",o=>o.delete(k));
+const get=(s,k)=>tx(s,"readonly",o=>o.get(k)),put=(s,v,k)=>tx(s,"readwrite",o=>k===undefined?o.put(v):o.put(v,k)),all=s=>tx(s,"readonly",o=>o.getAll()),del=(s,k)=>tx(s,"readwrite",o=>o.delete(k));
+const save=()=>put("cap",C);
 
-// App state
-let P=null,C=null,U={v:"list",step:1};
-try{P=JSON.parse(localStorage.getItem("arg_p"))}catch(e){}
+// ---- Login ----
+async function sendCode(){const email=$("#authEmail").value.trim();if(!email)return authMsg("Ingresa tu correo");
+  $("#btnSend").disabled=true;authMsg("Enviando...",true);
+  try{await api("/api/auth/request-code",{email});$("#authCode").style.display="block";$("#btnVerify").style.display="block";$("#btnSend").style.display="none";authMsg("Código enviado a "+email,true)}
+  catch(e){authMsg(e.message,false);$("#btnSend").disabled=false}}
+async function verifyCode(){const email=$("#authEmail").value.trim(),code=$("#authCode").value.trim();
+  if(code.length<6)return authMsg("Ingresa el código de 6 dígitos");
+  $("#btnVerify").disabled=true;authMsg("Verificando...",true);
+  try{const d=await api("/api/auth/verify-code",{email,code});TOKEN=d.token;EMAIL=d.email||email;NAME=d.name||"";
+    localStorage.setItem("arg_token",TOKEN);localStorage.setItem("arg_email",EMAIL);localStorage.setItem("arg_name",NAME);showApp()}
+  catch(e){authMsg(e.message,false);$("#btnVerify").disabled=false}}
+function logout(){TOKEN=EMAIL=NAME="";["arg_token","arg_email","arg_name"].forEach(k=>localStorage.removeItem(k));$("#btnSend").disabled=false;$("#btnSend").style.display="block";$("#btnVerify").style.display="none";$("#btnVerify").disabled=false;$("#authCode").style.display="none";$("#authCode").value="";authMsg("",true);$("#authMsg").className="msg";showAuth()}
+const showAuth=()=>{$("#auth").style.display="flex";$("#app").style.display="none";$("#btnLogout").style.display="none"};
+const showApp=()=>{$("#auth").style.display="none";$("#app").style.display="block";$("#btnLogout").style.display="inline-block";$("#btnLogout").textContent="Salir ("+NAME+")";loadData();runAll()};
+$("#btnSend").onclick=sendCode;$("#btnVerify").onclick=verifyCode;$("#btnLogout").onclick=logout;
 
-const codeOf=n=>{const w=slug(n).split("-").filter(Boolean);return((w[0]||"x")[0]+(w[1]||"x")[0]).toUpperCase()};
-async function newBatch(){const A="ABCDEFGHJKMNPQRSTUVWXYZ23456789",d=new Date(),p=n=>String(n).padStart(2,"0");for(;;){let r="";for(let i=0;i<4;i++)r+=A[Math.random()*A.length|0];const b=`ARG-${P?.code||"XX"}-${String(d.getFullYear()).slice(2)}${p(d.getMonth()+1)}${p(d.getDate())}-${r}`;if(!await get("cap",b))return b}}
-const pub=c=>{const f=c.f,o={};["titulo","operacion","tipo","precio","ubicacion","mapa_url",...(APL[f.tipo]||[]),"descripcion","caracteristicas","video_url","asesor","whatsapp_asesor"].forEach(k=>{if(f[k])o[k]=f[k]});const s=slug(f.titulo);o.fotos=c.fotos.map((p,i)=>`/images/propiedades/${s}/${i+1}${ext(p.name)}`);o.publicada=false;return{slug:s,json:o}};
-const dl=(n,o)=>{const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([JSON.stringify(o,null,2)],{type:"application/json"}));a.download=n;a.click()};
+// ---- Utilidades de archivos ----
+const b64=b=>new Promise((ok,ko)=>{const r=new FileReader();r.onload=()=>ok(String(r.result).split(",")[1]);r.onerror=()=>ko(r.error);r.readAsDataURL(b)});
+async function shrink(f){try{const im=await createImageBitmap(f),k=Math.min(1,1600/Math.max(im.width,im.height)),cv=document.createElement("canvas");cv.width=Math.round(im.width*k);cv.height=Math.round(im.height*k);cv.getContext("2d").drawImage(im,0,0,cv.width,cv.height);
+  const bl=await new Promise(r=>cv.toBlob(r,"image/jpeg",.82));return bl&&bl.size<f.size?bl:f}catch(e){return f}}
+const uid=()=>crypto.randomUUID().replace(/-/g,"");
 
-// Server sync (REAL)
-async function ai(c){
+// ---- Batch ----
+const codeOf=n=>{const w=slug(n).split("-").filter(Boolean);return((w[0]||"x")[0]+(w[1]||w[0]||"x")[0]).toUpperCase()};
+async function newBatch(){const A="ABCDEFGHJKMNPQRSTUVWXYZ23456789",d=new Date(),p=n=>String(n).padStart(2,"0");for(;;){let r="";for(let i=0;i<4;i++)r+=A[Math.random()*A.length|0];
+  const b=`ARG-${codeOf(NAME||EMAIL.split("@")[0])}-${String(d.getFullYear()).slice(2)}${p(d.getMonth()+1)}${p(d.getDate())}-${r}`;if(!await get("cap",b))return b}}
+
+// ---- Sincronización ----
+async function syncOne(b){
+  const c=await get("cap",b);if(!c)return;c.estado="Sincronizando";c.obs=[];await put("cap",c);
   try{
-    const d=await api("/api/upload",{batch:c.batch,ficha:c.f,docs:c.docs.map(d=>({...d,data_b64:null})),fotos:c.fotos.map(f=>({...f,data_b64:null}))});
-    c.estado="Sincronizada";msg("Sincronizada: "+c.batch);
-  }catch(e){c.obs=["Error: "+e.message];c.estado="Pendiente"}
-}
-async function srv(c){await put("srv",{batch:c.batch,recibido:Date.now(),web:pub(c)})}
-async function run(b){
-  if(!online()){msg("Sin señal: queda en espera");return}
-  const c=await get("cap",b);if(!c||["Borrador","Sincronizada"].includes(c.estado))return;
-  try{c.estado="Sincronizando";await put("cap",c);await ai(c);await srv(c);await put("cap",c);msg("Sincronizada: "+b)
-  }catch(e){c.estado="Pendiente";await put("cap",c);msg("Error: "+e.message)}
-}
-const runAll=async()=>{netUI();if(!online())return;for(const c of await all("cap"))if(["Pendiente"].includes(c.estado))await run(c.batch)};
+    const meta={...c.f,_batch:b,_docs:c.docs.map(d=>({tipo:d.tipo,nuevo:d.nuevo})),_fotos:c.fotos.length};
+    await api("/api/upload",{batch:b,ficha:meta});
+    const pend=[...c.docs.map(x=>["d",x]),...c.fotos.map(x=>["f",x])].filter(([,x])=>!x.sent);let i=0;
+    for(const [k,x] of pend){msg(`Subiendo ${++i}/${pend.length}: ${b}`);
+      const bl=await get("files",b+"/"+x.uuid);if(!bl)throw Error("Falta el archivo local "+x.name+" (quítalo y vuelve a agregarlo)");
+      const data_b64=await b64(bl);
+      await api("/api/upload",{batch:b,ficha:meta,...(k=="d"?{docs:[{nuevo:x.nuevo,data_b64}]}:{fotos:[{uuid:x.uuid,ext:x.ext,data_b64}]})});
+      x.sent=1;await put("cap",c)}
+    c.estado="Sincronizada";msg("Sincronizada: "+b);
+  }catch(e){c.estado="Pendiente";c.obs=[e.message];if(/Sesión|Auth/.test(e.message)){await put("cap",c);msg("Sesión vencida: vuelve a entrar");logout();return}}
+  await put("cap",c)}
+async function runAll(){netUI();if(busy||!online()||!TOKEN)return;busy=true;
+  try{for(const c of await all("cap"))if(["Pendiente","Sincronizando"].includes(c.estado)&&c.estado!=="Borrador")await syncOne(c.batch)}finally{busy=false}
+  if($("#app").dataset.v==="list")loadData()}
+async function publish(b){if(!online())return msg("Necesitas señal para enviar a la web");if(!confirm("Se creará la propiedad como BORRADOR en la web (no se publica sola). ¿Continuar?"))return;
+  try{await api("/api/publish",{batch:b});const c=await get("cap",b);c.estado="Publicada";await put("cap",c);msg("Creada como borrador en la web")}catch(e){msg("Error: "+e.message)}loadData()}
 
-// Render UI completa
+// ---- UI ----
 const card=(t,h)=>`<section class="card"><h2>${t}</h2>${h}</section>`,G=x=>`<div class="g">${x}</div>`;
-const inp=(k,v,ph)=>`<label>${LB[k]||k}<input name="${k}" value="${E(v||"")}" placeholder="${E(ph||"")}" onchange="saveField('${k}',this.value)" onblur="saveField('${k}',this.value)"></label>`;
-const sel=(k,v,ops)=>`<label>${LB[k]||k}<select name="${k}" onchange="saveField('${k}',this.value)">${ops.map(o=>`<option${o==v?" selected":""}>${E(o)}</option>`).join("")}</select></label>`;
-const txt=(k,v)=>`<label class="w">${LB[k]||k}<textarea name="${k}" rows="3" onchange="saveField('${k}',this.value)" onblur="saveField('${k}',this.value)">${E(v||"")}</textarea></label>`;
-const tag=(t,c)=>`<span class="tag ${c}">${E(t)}</span>`;
+const inp=k=>`<label>${LB[k]}<input name="${k}" value="${E(C.f[k])}" onchange="saveField('${k}',this.value)"></label>`;
+const sel=(k,ops)=>`<label>${LB[k]}<select onchange="saveField('${k}',this.value,1)">${ops.map(o=>`<option${o==C.f[k]?" selected":""}>${E(o)}</option>`).join("")}</select></label>`;
+const txt=k=>`<label class="w">${LB[k]}<textarea rows="3" onchange="saveField('${k}',this.value)">${E(C.f[k])}</textarea></label>`;
+async function saveField(k,v,re){C.f[k]=v;await save();if(re)loadForm(C.batch)}
+window.saveField=saveField;
+async function loadData(){$("#app").dataset.v="list";netUI();const list=(await all("cap")).sort((a,b)=>b.batch.localeCompare(a.batch));
+  $("#app").innerHTML=card("Captaciones",list.map(c=>`<div class="r"><div class="n"><b>${E(c.batch)}</b> · ${E(c.estado)}<br>${E(c.f.titulo||"(sin título)")}${c.obs&&c.obs[0]?`<br><span class="er">${E(c.obs[0])}</span>`:""}</div>
+    <button onclick="openCap('${c.batch}')">Abrir</button>${c.estado=="Sincronizada"?`<button class="p" onclick="publish('${c.batch}')">Enviar a la web</button>`:""}<button onclick="delCap('${c.batch}')">Eliminar</button></div>`).join("")||'<p class="mu">No hay captaciones. Toca "Nueva captación".</p>')+`<div class="nav"><button class="p" onclick="newCap()">Nueva captación</button><button onclick="runAll()">Sincronizar todo</button></div>`}
+window.openCap=b=>loadForm(b);window.publish=publish;window.runAll=runAll;
+window.newCap=async()=>{const b=await newBatch();C={batch:b,estado:"Borrador",f:{asesor:NAME},docs:[],fotos:[],obs:[]};await save();loadForm(b)};
+window.delCap=async b=>{if(!confirm("¿Eliminar "+b+" de este teléfono?"))return;const c=await get("cap",b);for(const x of[...(c?.docs||[]),...(c?.fotos||[])])await del("files",b+"/"+x.uuid);await del("cap",b);loadData()};
+async function loadForm(b){C=await get("cap",b);if(!C)return loadData();C.f=C.f||{};C.docs=C.docs||[];C.fotos=C.fotos||[];$("#app").dataset.v="form";
+  const f=C.f,ap=APL[f.tipo]||[];
+  const docs=DT.map((t,i)=>{const mine=C.docs.map((d,j)=>[d,j]).filter(([d])=>d.tipo===t);
+    return `<div class="r"><div class="n"><b>${E(t)}</b> <span class="mu">(${mine.length})</span></div><input type="file" multiple accept="image/*,application/pdf" onchange="addDocs(${i},this)">`+mine.map(([d,j])=>`<div class="n">${E(d.name)} <button onclick="remDoc(${j})">Quitar</button></div>`).join("")+`</div>`}).join("");
+  $("#app").innerHTML=card("1 · Cliente",G(inp("i_prop")+inp("i_ci")+inp("i_tel")+inp("i_mail")))
+   +card("2 · Operación",G(sel("operacion",["","Venta","Alquiler"])+sel("tipo",["","Casa","Apartamento","Local","Terreno"])))
+   +card("3 · Datos de la propiedad (web)",G(inp("titulo")+inp("precio")+inp("ubicacion")+inp("mapa_url")+ap.map(inp).join("")+inp("asesor")+inp("whatsapp_asesor")+inp("video_url")+txt("descripcion")+txt("caracteristicas")))
+   +card("4 · Documentos de la propiedad",docs)
+   +card("5 · Fotos",`<input type="file" multiple accept="image/*" onchange="addFotos(this)"><p class="mu">${C.fotos.length} foto(s)</p>`+C.fotos.map((p,i)=>`<div class="r"><div class="n">${E(p.name)}</div><button onclick="remFoto(${i})">Quitar</button></div>`).join(""))
+   +`<div class="nav"><button onclick="loadData()">Volver</button><button class="p" onclick="finish()">Terminar</button></div>`}
+window.addDocs=async(i,input)=>{const t=DT[i];for(const f of input.files){const n=C.docs.filter(d=>d.tipo===t).length+1,uuid=uid();
+  await put("files",f,C.batch+"/"+uuid);C.docs.push({uuid,tipo:t,name:f.name,nuevo:`${C.batch}_${slug(t)}_${nn(n)}${ext(f.name)}`})}await save();loadForm(C.batch)};
+window.remDoc=async j=>{const d=C.docs.splice(j,1)[0];await del("files",C.batch+"/"+d.uuid);await save();loadForm(C.batch)};
+window.addFotos=async input=>{for(const f of input.files){const bl=await shrink(f),uuid=uid();await put("files",bl,C.batch+"/"+uuid);C.fotos.push({uuid,name:f.name,ext:bl===f?(ext(f.name).slice(1)||"jpg"):"jpg"})}await save();loadForm(C.batch)};
+window.remFoto=async i=>{const d=C.fotos.splice(i,1)[0];await del("files",C.batch+"/"+d.uuid);await save();loadForm(C.batch)};
+window.finish=async()=>{const falta=REQ.filter(k=>!String(C.f[k]||"").trim());if(falta.length)return alert("Faltan datos:\n- "+falta.map(k=>LB[k]).join("\n- "));
+  C.estado="Pendiente";C.obs=[];await save();msg(online()?"Sincronizando...":"En cola: se enviará cuando haya señal");loadData();runAll()};
 
-function saveField(k,v){if(!C)C={f:{}};C.f[k]=v;save()};
-
-async function delCap(b){if(!confirm("¿Eliminar captación "+b+"?"))return;await del("cap",b);msg("Eliminada: "+b);loadData()}
-window.delCap=delCap;
-
-async function loadData(){
-  netUI();const list=await all("cap");
-  $("#app").innerHTML=card("Captaciones",list.map(c=>`<div class="r"><div class="n"><b>${E(c.batch)}</b> · ${E(c.estado)}<br><small>${E(c.f.titulo||"(sin título)")}</small></div><button onclick="openCap('${c.batch}')">Abrir</button></div>`).join("")||'<p class="mu">No hay captaciones. Toca "Nueva" para empezar.</p>')+`<div class="nav"><button onclick="newCap()">Nueva captación</button><button onclick="runAll()">Sincronizar todo</button></div>`;
-}
-window.openCap=b=>{U.v="form";U.batch=b;loadForm(b)};
-window.newCap=async()=>{
-  const b=await newBatch();
-  C={batch:b,estado:"Borrador",f:{},docs:[],fotos:[],videos:[],obs:[],ai:null,tit:null};
-  await save();U.v="form";U.batch=b;P={code:codeOf(NAME||"XX")};localStorage.setItem("arg_p",JSON.stringify(P));loadForm(b);
-};
-window.runAll=runAll;
-
-async function loadForm(b){
-  C=await get("cap",b)||{batch:b,f:{},docs:[],fotos:[],estado:"Borrador"};
-  $("#app").innerHTML=card("1 · Datos del cliente",G(inp("i_prop","Nombre completo")+inp("i_ci","Cédula/RIF")+inp("i_tel","Teléfono")+inp("i_mail","Correo")))+card("2 · Datos web",G(sel("operacion",C.f.operacion,["","Venta","Alquiler"])+sel("tipo",C.f.tipo,["","Casa","Apartamento","Local","Terreno"])+inp("titulo","Título")+inp("precio","Precio USD")+inp("ubicacion","Ubicación")+txt("descripcion","Descripción")))+card("3 · Fotos",`<input type="file" multiple accept="image/*" onchange="addFotos(this)">`+C.fotos.map((p,i)=>`<div class="r">${p.name}<button onclick="C.fotos.splice(${i},1);save();loadForm('${b}')">Quitar</button></div>`).join(""))+`<div class="nav"><button onclick="loadData()">Volver</button><button class="p" onclick="finish('${b}')">Terminar</button></div>`;
-}
-window.loadForm=loadForm;
-
-function addFotos(input){for(const f of input.files){C.fotos.push({name:f.name,size:f.size,type:f.type})}save();loadForm(C.batch)}
-window.addFotos=addFotos;
-
-async function finish(b){C.estado="Pendiente";await save();msg("En cola para sincronizar");loadData()}
-window.finish=finish;
-
-// Init
-if("serviceWorker"in navigator)navigator.serviceWorker.register("sw.js");
-window.addEventListener("online",runAll);window.addEventListener("offline",netUI);
-setInterval(runAll,30000);
-
-// Auto-login si hay token válido (al final, cuando todo está definido)
-if(TOKEN&&EMAIL){
-  dbg("Auto-login: existe token, validando con /api/health...");
-  api("/api/health").then(()=>{
-    dbg("Auto-login: OK → showApp");
-    msg("Sesión activa: "+NAME);
-    showApp();
-  }).catch(e=>{
-    dbg("Auto-login: FALLÓ → " + e.message + " (haciendo logout)");
-    logout();
-    showAuth();
-  });
-}else{
-  dbg("Auto-login: sin token → showAuth");
-  showAuth();
-}
+// ---- Inicio ----
+if("serviceWorker"in navigator)navigator.serviceWorker.register("sw.js",{updateViaCache:"none"}).catch(()=>{});
+addEventListener("online",runAll);addEventListener("offline",netUI);setInterval(runAll,30000);
+(async()=>{netUI();
+  if(!TOKEN){showAuth();return}
+  showApp();
+  if(online())try{const d=await api("/api/me");NAME=d.name||NAME;localStorage.setItem("arg_name",NAME);$("#btnLogout").textContent="Salir ("+NAME+")"}
+  catch(e){if(/Sesión|Auth/.test(e.message)){msg("Sesión vencida: vuelve a entrar");logout()}}
+})();
 </script></body></html>
