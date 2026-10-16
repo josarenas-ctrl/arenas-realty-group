@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Noticias del sector | Arenas Realty Group</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+<style>
+  /* Cambia estos colores por los de tu marca cuando el logo esté listo */
+  :root {
+    --papel: #F6F7F6;
+    --tinta: #15262B;
+    --tinta-suave: #4C5C61;
+    --linea: #D5DBDA;
+    --inmobiliario: #B98A45;
+    --legal: #2F5D6B;
+    --economia: #6B7A3C;
+    --serif: "Source Serif 4", Georgia, serif;
+    --sans: "Source Sans 3", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --papel: #10191C;
+      --tinta: #E8EDEC;
+      --tinta-suave: #A3B1B4;
+      --linea: #2A3A3F;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--papel); color: var(--tinta); font-family: var(--sans); line-height: 1.55; }
+  main { max-width: 52rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+  h1 { font-family: var(--serif); font-weight: 600; font-size: clamp(1.9rem, 5vw, 2.6rem); line-height: 1.15; margin: 0 0 .5rem; }
+  .intro { color: var(--tinta-suave); margin: 0 0 2rem; max-width: 40rem; }
+  .filtros { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 2rem; }
+  .filtros button {
+    font: inherit; font-size: .95rem; padding: .4rem .95rem; border-radius: 2rem; cursor: pointer;
+    background: transparent; color: var(--tinta); border: 1px solid var(--linea);
+  }
+  .filtros button[aria-pressed="true"] { background: var(--tinta); color: var(--papel); border-color: var(--tinta); }
+  .filtros button:focus-visible, a:focus-visible { outline: 3px solid var(--legal); outline-offset: 2px; }
+  ul { list-style: none; margin: 0; padding: 0; }
+  li.nota {
+    display: grid; grid-template-columns: 6.5rem 1fr; gap: 1.25rem;
+    padding: 1.4rem 0 1.4rem 1rem; border-top: 1px solid var(--linea); border-left: 4px solid var(--c, var(--linea));
+  }
+  li.nota:last-child { border-bottom: 1px solid var(--linea); }
+  .fecha { color: var(--tinta-suave); font-size: .9rem; padding-top: .2rem; }
+  .nota h2 { font-family: var(--serif); font-weight: 600; font-size: 1.25rem; line-height: 1.3; margin: 0 0 .4rem; }
+  .nota p { margin: 0 0 .6rem; max-width: 38rem; }
+  .meta { font-size: .9rem; color: var(--tinta-suave); }
+  .meta a { color: var(--tinta); text-underline-offset: 3px; }
+  .estado { color: var(--tinta-suave); padding: 2rem 0; }
+  @media (max-width: 34rem) {
+    li.nota { grid-template-columns: 1fr; gap: .25rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Noticias del sector inmobiliario y legal en Venezuela</h1>
+  <p class="intro">Seleccionamos y resumimos lo más relevante para quien compra, vende o alquila. Cada nota enlaza a la fuente original.</p>
+
+  <div class="filtros" role="group" aria-label="Filtrar por tema" id="filtros">
+    <button type="button" data-cat="todas" aria-pressed="true">Todas</button>
+    <button type="button" data-cat="inmobiliario" aria-pressed="false">Inmobiliario</button>
+    <button type="button" data-cat="legal" aria-pressed="false">Legal</button>
+    <button type="button" data-cat="economia" aria-pressed="false">Economía</button>
+  </div>
+
+  <ul id="lista" aria-live="polite"></ul>
+  <p class="estado" id="estado">Cargando noticias…</p>
+</main>
+
+<script>
+(function () {
+  var lista = document.getElementById("lista");
+  var estado = document.getElementById("estado");
+  var filtros = document.getElementById("filtros");
+  var noticias = [];
+  var actual = "todas";
+
+  function colorDe(cat) { return "var(--" + cat + ")"; }
+
+  function formatoFecha(iso) {
+    var p = iso.split("-");
+    var d = new Date(Number(p[0]), Number(p[1]) - 1, Number(p[2]));
+    return d.toLocaleDateString("es-VE", { day: "numeric", month: "short", year: "numeric" });
+  }
+
+  function pintar() {
+    lista.textContent = "";
+    var visibles = noticias.filter(function (n) { return actual === "todas" || n.categoria === actual; });
+    estado.hidden = visibles.length > 0;
+    if (!visibles.length) { estado.textContent = "No hay noticias en este tema por ahora."; return; }
+    visibles.forEach(function (n) {
+      var li = document.createElement("li");
+      li.className = "nota";
+      li.style.setProperty("--c", colorDe(n.categoria));
+
+      var fecha = document.createElement("div");
+      fecha.className = "fecha";
+      fecha.textContent = formatoFecha(n.fecha);
+
+      var cuerpo = document.createElement("div");
+      var h2 = document.createElement("h2");
+      h2.textContent = n.titulo;
+      var p = document.createElement("p");
+      p.textContent = n.resumen;
+      var meta = document.createElement("div");
+      meta.className = "meta";
+      var a = document.createElement("a");
+      a.href = n.url; a.target = "_blank"; a.rel = "noopener noreferrer";
+      a.textContent = "Leer en " + n.fuente;
+      meta.appendChild(a);
+
+      cuerpo.appendChild(h2); cuerpo.appendChild(p); cuerpo.appendChild(meta);
+      li.appendChild(fecha); li.appendChild(cuerpo);
+      lista.appendChild(li);
+    });
+  }
+
+  filtros.addEventListener("click", function (ev) {
+    var b = ev.target.closest("button");
+    if (!b) return;
+    actual = b.dataset.cat;
+    filtros.querySelectorAll("button").forEach(function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
+    pintar();
+  });
+
+  fetch("noticias.json", { cache: "no-cache" })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (datos) {
+      noticias = datos.sort(function (a, b) { return b.fecha.localeCompare(a.fecha); });
+      pintar();
+    })
+    .catch(function () { estado.textContent = "No pudimos cargar las noticias. Intenta de nuevo en unos minutos."; });
+})();
+</script>
+</body>
+</html>
