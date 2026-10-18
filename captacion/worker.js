@@ -1,17 +1,23 @@
-// arenas-captacion Worker — v2 (20261016)
-// API de captación: login por código al correo, subida de batches a D1/R2
-// y publicación del JSON de la propiedad en el repo (sin publicar: publicada=false).
-// Las páginas HTML las genera el workflow build-properties al detectar el JSON nuevo.
-// La app (PWA) se sirve desde Cloudflare Pages en /captacion/, NO desde este Worker.
+// arenas-captacion Worker — Fase 1 (20261018)
+// Cambios sobre la v2 en producción:
+//  1) Límite de intentos en el código de acceso (5 fallos = bloqueo de 15 min).
+//  2) Tokens de sesión y códigos guardados cifrados (SHA-256), no en texto claro.
+//  3) Respaldo diario (cron) de la base de datos y de los archivos a un bucket aparte,
+//     y ruta de admin para lanzarlo a mano.
+// Todo lo demás (subida, publicación, alta de asesores) queda igual que la v2.
 
 const REPO = "josarenas-ctrl/arenas-realty-group";
 const BRANCH = "cloudflare-test";
-const WORKER_VERSION = "20261016-v2";
+const WORKER_VERSION = "20261018-f1";
 
 const SESSION_DAYS = 30;
 const SESSION_MS = SESSION_DAYS * 24 * 60 * 60 * 1000;
 const CODE_MS = 10 * 60 * 1000;
 const CODE_COOLDOWN_MS = 60 * 1000;
+const MAX_ATTEMPTS = 5;
+const LOCK_MS = 15 * 60 * 1000;
+const BACKUP_MAX_COPIES = 25;   // archivos nuevos por corrida (el resto sigue al día siguiente)
+const BACKUP_KEEP_DB = 30;      // respaldos de base de datos que se conservan
 
 const ALLOWED_ORIGINS = [
   "https://www.arenasrealtygroup.com",
@@ -56,6 +62,13 @@ function newCode() {
   return String(100000 + n);
 }
 
+async function sha256hex(s) {
+  const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(s));
+  return [...new Uint8Array(buf)].map((x) => x.toString(16).padStart(2, "0")).join("");
+}
+
+const codeHash = (email, code) => sha256hex(email + ":" + code);
+
 function slugify(s) {
   return String(s || "")
     .normalize("NFD")
@@ -90,6 +103,51 @@ const PUB_FIELDS = [
   "descripcion", "caracteristicas", "video_url", "asesor", "whatsapp_asesor"
 ];
 
+// ---------- Respaldo ----------
+// Base de datos: JSON sin secretos (sin códigos ni tokens). Archivos: copia incremental.
+async function runBackup(env) {
+  if (!env.BACKUP) return { ok: false, error: "Bucket de respaldo no configurado" };
+  const stamp = new Date().toISOString();
+  const day = stamp.slice(0, 10);
+
+  const advisors = (await env.DB.prepare(
+    "SELECT id, email, name, verified, code_expires, session_expires, created_at, code_attempts, locked_until FROM advisors"
+  ).all()).results || [];
+  const batches = (await env.DB.prepare("SELECT * FROM batches").all()).results || [];
+  await env.BACKUP.put("db/" + day + ".json", JSON.stringify({ generado: stamp, advisors, batches }, null, 1));
+
+  // Retención: se conservan los últimos BACKUP_KEEP_DB respaldos de la base
+  const dbList = await env.BACKUP.list({ prefix: "db/" });
+  const dbKeys = dbList.objects.map((o) => o.key).sort();
+  const old = dbKeys.slice(0, Math.max(0, dbKeys.length - BACKUP_KEEP_DB));
+  if (old.length) await env.BACKUP.delete(old);
+
+  // Archivos: copiar los que faltan (o cambiaron de tamaño), con tope por corrida
+  const have = new Map();
+  let c1;
+  do {
+    const l = await env.BACKUP.list({ prefix: "files/", cursor: c1 });
+    for (const o of l.objects) have.set(o.key.slice(6), o.size);
+    c1 = l.truncated ? l.cursor : undefined;
+  } while (c1);
+
+  let copied = 0, already = 0, pending = 0, c2;
+  do {
+    const l = await env.R2.list({ cursor: c2 });
+    for (const o of l.objects) {
+      if (have.get(o.key) === o.size) { already++; continue; }
+      if (copied >= BACKUP_MAX_COPIES) { pending++; continue; }
+      const obj = await env.R2.get(o.key);
+      if (obj) { await env.BACKUP.put("files/" + o.key, await obj.arrayBuffer()); copied++; }
+    }
+    c2 = l.truncated ? l.cursor : undefined;
+  } while (c2);
+
+  const res = { ok: true, fecha: stamp, advisors: advisors.length, batches: batches.length, archivos_copiados: copied, archivos_ya_respaldados: already, archivos_pendientes: pending };
+  await env.BACKUP.put("estado/ultimo.json", JSON.stringify(res));
+  return res;
+}
+
 export default {
   async fetch(request, env) {
     const cors = corsFor(request);
@@ -111,6 +169,7 @@ export default {
           ts: Date.now(),
           has_db: !!env.DB,
           has_r2: !!env.R2,
+          has_backup: !!env.BACKUP,
           has_resend: !!env.RESEND_API_KEY,
           has_github: !!env.GITHUB_TOKEN,
           session_days: SESSION_DAYS
@@ -122,7 +181,7 @@ export default {
         const email = normEmail(body.email);
         if (!isEmail(email)) return json({ error: "email requerido" }, 400, cors);
 
-        let row = (await env.DB.prepare("SELECT id, name, code_expires FROM advisors WHERE email = ?")
+        let row = (await env.DB.prepare("SELECT id, name, code_expires, locked_until FROM advisors WHERE email = ?")
           .bind(email).all()).results?.[0];
 
         // Los correos de ADMIN_EMAILS se dan de alta solos la primera vez
@@ -130,11 +189,16 @@ export default {
           await env.DB.prepare(
             "INSERT INTO advisors (email, name, session_token, session_expires, created_at, verified) VALUES (?, ?, ?, ?, ?, 1)"
           ).bind(email, email.split("@")[0], newToken(), 0, Date.now()).run();
-          row = (await env.DB.prepare("SELECT id, name, code_expires FROM advisors WHERE email = ?")
+          row = (await env.DB.prepare("SELECT id, name, code_expires, locked_until FROM advisors WHERE email = ?")
             .bind(email).all()).results?.[0];
         }
 
         if (!row) return json({ error: "Email no registrado" }, 403, cors);
+
+        if (row.locked_until && row.locked_until > Date.now()) {
+          const min = Math.ceil((row.locked_until - Date.now()) / 60000);
+          return json({ error: "Acceso bloqueado por intentos fallidos. Intenta de nuevo en " + min + " min" }, 429, cors);
+        }
 
         // Antirrebote: un código nuevo cada 60 s como máximo
         if (row.code_expires && row.code_expires - CODE_MS + CODE_COOLDOWN_MS > Date.now()) {
@@ -144,8 +208,8 @@ export default {
         if (!env.RESEND_API_KEY) return json({ error: "Correo no configurado" }, 500, cors);
 
         const code = newCode();
-        await env.DB.prepare("UPDATE advisors SET code = ?, code_expires = ? WHERE email = ?")
-          .bind(code, Date.now() + CODE_MS, email).run();
+        await env.DB.prepare("UPDATE advisors SET code = ?, code_expires = ?, code_attempts = 0 WHERE email = ?")
+          .bind(await codeHash(email, code), Date.now() + CODE_MS, email).run();
 
         const resp = await fetch("https://api.resend.com/emails", {
           method: "POST",
@@ -173,15 +237,34 @@ export default {
         const code = String(body.code || "").trim();
         if (!email || !code) return json({ error: "Faltan datos" }, 400, cors);
 
-        const a = (await env.DB.prepare("SELECT id, code, code_expires, name FROM advisors WHERE email = ?")
-          .bind(email).all()).results?.[0];
-        if (!a || !a.code || a.code_expires < Date.now() || a.code !== code) {
-          return json({ error: "Código inválido o expirado" }, 401, cors);
+        const a = (await env.DB.prepare(
+          "SELECT id, code, code_expires, name, code_attempts, locked_until FROM advisors WHERE email = ?"
+        ).bind(email).all()).results?.[0];
+        const invalid = () => json({ error: "Código inválido o expirado" }, 401, cors);
+        if (!a) return invalid();
+
+        if (a.locked_until && a.locked_until > Date.now()) {
+          const min = Math.ceil((a.locked_until - Date.now()) / 60000);
+          return json({ error: "Acceso bloqueado por intentos fallidos. Intenta de nuevo en " + min + " min" }, 429, cors);
+        }
+        if (!a.code || !a.code_expires || a.code_expires < Date.now()) return invalid();
+
+        if (a.code !== await codeHash(email, code)) {
+          const attempts = (a.code_attempts || 0) + 1;
+          if (attempts >= MAX_ATTEMPTS) {
+            // Se invalida el código y se bloquea el acceso un rato
+            await env.DB.prepare("UPDATE advisors SET code = NULL, code_expires = NULL, code_attempts = 0, locked_until = ? WHERE id = ?")
+              .bind(Date.now() + LOCK_MS, a.id).run();
+            return json({ error: "Demasiados intentos. Acceso bloqueado 15 min" }, 429, cors);
+          }
+          await env.DB.prepare("UPDATE advisors SET code_attempts = ? WHERE id = ?").bind(attempts, a.id).run();
+          return json({ error: "Código inválido. Te quedan " + (MAX_ATTEMPTS - attempts) + " intentos" }, 401, cors);
         }
 
         const token = newToken();
-        await env.DB.prepare("UPDATE advisors SET code = NULL, code_expires = NULL, session_token = ?, session_expires = ? WHERE id = ?")
-          .bind(token, Date.now() + SESSION_MS, a.id).run();
+        await env.DB.prepare(
+          "UPDATE advisors SET code = NULL, code_expires = NULL, code_attempts = 0, locked_until = NULL, session_token = ?, session_expires = ? WHERE id = ?"
+        ).bind(await sha256hex(token), Date.now() + SESSION_MS, a.id).run();
 
         return json({ ok: true, token, email, name: a.name || "", expires_days: SESSION_DAYS }, 200, cors);
       }
@@ -192,7 +275,7 @@ export default {
       const token = auth.slice(7).trim();
 
       const me = (await env.DB.prepare("SELECT id, email, name, session_expires FROM advisors WHERE session_token = ?")
-        .bind(token).all()).results?.[0];
+        .bind(await sha256hex(token)).all()).results?.[0];
       if (!me) return json({ error: "Sesión inválida" }, 401, cors);
       if (!me.session_expires || me.session_expires < Date.now()) {
         return json({ error: "Sesión expirada" }, 401, cors);
@@ -219,6 +302,12 @@ export default {
           "INSERT INTO advisors (email, name, session_token, session_expires, created_at, verified) VALUES (?, ?, ?, ?, ?, 1)"
         ).bind(email, name, newToken(), 0, Date.now()).run();
         return json({ ok: true, email, name }, 200, cors);
+      }
+
+      // Respaldo a mano (solo admin)
+      if (path === "/api/admin/backup" && request.method === "POST") {
+        if (!isAdmin) return json({ error: "No autorizado" }, 403, cors);
+        return json(await runBackup(env), 200, cors);
       }
 
       // Subida de un batch (ficha + documentos + fotos)
@@ -333,5 +422,14 @@ export default {
       console.error("Error en Worker:", e && e.message ? e.message : e);
       return json({ error: "Error interno" }, 500, cors);
     }
+  },
+
+  // Cron diario: respaldo de la base de datos y de los archivos
+  async scheduled(event, env, ctx) {
+    ctx.waitUntil(
+      runBackup(env)
+        .then((r) => console.log("Respaldo:", JSON.stringify(r)))
+        .catch((e) => console.error("Respaldo falló:", e && e.message ? e.message : e))
+    );
   }
 };
