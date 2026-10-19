@@ -115,7 +115,7 @@
       a.textContent = "Leer en " + n.fuente;
       meta.appendChild(a);
 
-      cuerpo.appendChild(h2); cuerpo.appendChild(p); cuerpo.appendChild(meta);
+      cuerpo.appendChild(h2); if (n.resumen) cuerpo.appendChild(p); cuerpo.appendChild(meta);
       li.appendChild(fecha); li.appendChild(cuerpo);
       lista.appendChild(li);
     });
