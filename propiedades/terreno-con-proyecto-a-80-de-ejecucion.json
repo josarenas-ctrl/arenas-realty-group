@@ -3,12 +3,20 @@
   "operacion": "Venta",
   "tipo": "Terreno",
   "precio": "Consultar",
-  "ubicacion": "Urb Club de Campo San Antonio de los Altos ",
+  "ubicacion": "Urb Club de Campo San Antonio de los Altos",
   "mapa_url": "https://maps.app.goo.gl/P7VtEPTcKJJJNPD56?g_st=ac",
   "area_terreno": "1294.85",
+  "area_construccion": "",
+  "habitaciones": "",
+  "banos": "",
+  "estacionamientos": "",
   "descripcion": "Terreno con proyecto a un 80 %",
+  "caracteristicas": "",
+  "fotos": [
+    "/images/uploads/lar-IMG-20200708-WA0019.jpg"
+  ],
+  "video_url": "",
   "asesor": "José Arenas",
   "whatsapp_asesor": "0414 9218120",
-  "fotos": [],
-  "publicada": false
+  "publicada": true
 }
