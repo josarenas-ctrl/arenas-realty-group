@@ -3,8 +3,8 @@
   "portal": "zonaven",
   "operacion": "todas",
   "url_busqueda": "sitemap-listings-1/2",
-  "scrapeado_en": "2026-10-21T17:15:08.346Z",
-  "total": 1276,
+  "scrapeado_en": "2026-10-21T21:42:30.270Z",
+  "total": 1275,
   "anuncios": [
     {
       "titulo": "Apartamento 4 hab en Caracas — $230.000 | ZonaVen",
@@ -7909,21 +7909,6 @@
       "ubicacion": "Distrito Capital",
       "portal": "zonaven",
       "descripcion": "Galpón de 400 m² en zona segura de Caracas - Libertador, ubicado en calle cerrada con control de acceso. 200 m² en planta baja y 200 m² en mezzanina, con ascensor de montacargas. Excelentes condiciones, acceso fácil y estacionamiento para visitantes. Terreno frente al inmueble de 400 m² ideal para estacionamiento. Alquiler: 2.200 USD mensuales.",
-      "moneda": "USD"
-    },
-    {
-      "titulo": "Depósito 5100m² en Caracas — $4.800/mes | ZonaVen",
-      "enlace": "https://zonaven.com/alquiler/extraordinario-galpon-5000-metros-alquiler-mls-26-9335-baruta-distrito-capital-ee3f3f",
-      "precio_texto": "$4800",
-      "precio_usd": 4800,
-      "habitaciones": null,
-      "banos": 2,
-      "metros_cuadrados": 5100,
-      "tipo": null,
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Baruta, Distrito Capital",
-      "portal": "zonaven",
-      "descripcion": "Alquiler de almacén industrial en Antímano, Caracas - Libertador. Total 1.200 m², con planta interna de 200 m² para carga-descarga y mezzanina de 1.000 m². Incluye montacargas industrial (1.500 kg), 2 baños múltiples, estacionamiento para 3 camiones, energía eléctrica industrial y sistema de extinción de incendios. Ideal para almacenamiento rápido y despachos. Precio: USD 4.800.",
       "moneda": "USD"
     },
     {
@@ -19149,8 +19134,8 @@
   ],
   "diagnostico": {
     "urls_encontradas": 1276,
-    "exitos": 1276,
-    "fallos": 0,
-    "con_precio": 1276
+    "exitos": 1275,
+    "fallos": 1,
+    "con_precio": 1275
   }
 }
