@@ -3,9 +3,24 @@
   "portal": "zonaven",
   "operacion": "todas",
   "url_busqueda": "sitemap-listings-1/2",
-  "scrapeado_en": "2026-10-22T04:20:24.046Z",
-  "total": 1276,
+  "scrapeado_en": "2026-10-22T11:46:17.841Z",
+  "total": 1277,
   "anuncios": [
+    {
+      "titulo": "Anexo en Guatire — $180/mes | ZonaVen",
+      "enlace": "https://zonaven.com/alquiler/alquilo-anexo-urb-la-rosa-guatire-edo-miranda-c5c54dd3",
+      "precio_texto": "$180",
+      "precio_usd": 180,
+      "habitaciones": 2,
+      "banos": null,
+      "metros_cuadrados": 38,
+      "tipo": null,
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Guatire, Miranda",
+      "portal": "zonaven",
+      "descripcion": "Alquilo Anexo, con entrada independiente, ubicado en la Urbanización La Rosa, Guatire, Edo. Miranda.\nIdeal para pareja o persona sola.\nPosee 2 habitaciones con closet en mamposteria, cocina en mamposteria, un baño\nCerca de centros comerciales, comercios, transporte publico, terminal transmiranda, colegios públicos y privados.\ncontáctame hoy para agendar una tu cita.",
+      "moneda": "USD"
+    },
     {
       "titulo": "Apartamento 4 hab en Caracas — $230.000 | ZonaVen",
       "enlace": "https://zonaven.com/venta/se-vende-hermoso-ph-en-santa-paula-r-o-distrito-capital-57c2b0",
@@ -19148,9 +19163,9 @@
     }
   ],
   "diagnostico": {
-    "urls_encontradas": 1276,
-    "exitos": 1276,
+    "urls_encontradas": 1277,
+    "exitos": 1277,
     "fallos": 0,
-    "con_precio": 1276
+    "con_precio": 1277
   }
 }

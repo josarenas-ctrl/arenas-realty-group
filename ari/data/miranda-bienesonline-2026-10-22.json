@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "alquiler",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+alquiler+miranda",
-  "scrapeado_en": "2026-10-22T03:59:55.008Z",
+  "scrapeado_en": "2026-10-22T11:26:51.240Z",
   "total": 100,
   "anuncios": [
     {
@@ -821,6 +821,17 @@
       "ubicacion": "Barcelona, Anzoátegui"
     },
     {
+      "titulo": "apartamento en alquiler en la castellana tlf  04242129768 rolando rodriguez  codg 27-6715",
+      "enlace": "https://bienesonline.ai/es/venezuela/chacao/propiedad/134213-apartamento-en-alquiler-en-la-castellana-tlf-04242129768-rolando-rodriguez-codg-27-6715",
+      "precio_texto": "USD 6.000",
+      "habitaciones": 4,
+      "banos": 5,
+      "metros_cuadrados": 345,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Chacao, Miranda"
+    },
+    {
       "titulo": "Apartamento en Alquiler en Manzanares.  Sandra White 0414-3140082  Cod. 26-17777",
       "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/63789-apartamento-en-alquiler-en-manzanares-sandra-white-0414-3140082-cod-26-17777",
       "precio_texto": "USD 850",
@@ -1094,17 +1105,6 @@
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
-      "titulo": "oficina alquiler bello monte  rolando rodriguez tlf 04242129768",
-      "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/33686-oficina-alquiler-bello-monte-rolando-rodriguez-tlf-04242129768",
-      "precio_texto": "USD 1.200",
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "alquiler",
-      "ubicacion": "Baruta, Miranda"
     }
   ],
   "diagnostico": {
