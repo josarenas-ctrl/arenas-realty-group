@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "alquiler",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+alquiler+distrito+capital",
-  "scrapeado_en": "2026-10-22T16:53:56.512Z",
+  "scrapeado_en": "2026-10-22T21:21:10.425Z",
   "total": 100,
   "anuncios": [
     {
@@ -29,17 +29,6 @@
       "ubicacion": "El Recreo, Distrito Capital"
     },
     {
-      "titulo": "apartamento en alquiler en campo alegre tlf  04242129768 rolando rodriguez codg 27-6118",
-      "enlace": "https://bienesonline.ai/es/venezuela/chacao/propiedad/132650-apartamento-en-alquiler-en-campo-alegre-tlf-04242129768-rolando-rodriguez-codg-27-6118",
-      "precio_texto": "USD 2.500",
-      "habitaciones": 2,
-      "banos": 5,
-      "metros_cuadrados": 148,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Chacao, Miranda"
-    },
-    {
       "titulo": "Apartamento en Alquiler El Marques G. 04143054662",
       "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/125672-apartamento-en-alquiler-el-marques-g-04143054662",
       "precio_texto": "USD 750",
@@ -49,17 +38,6 @@
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
-      "titulo": "apartamento en alquiler en la castellana tlf 04242129768 rolando rodriguez codg 27-4562",
-      "enlace": "https://bienesonline.ai/es/venezuela/chacao/propiedad/128709-apartamento-en-alquiler-en-la-castellana-tlf-04242129768-rolando-rodriguez-codg-27-4562",
-      "precio_texto": "USD 3.000",
-      "habitaciones": 2,
-      "banos": 3,
-      "metros_cuadrados": 110,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Chacao, Miranda"
     },
     {
       "titulo": "Apartamento alquiler El Marques. Codigo: 26-14194 Carla Mora 26-14194",
@@ -161,28 +139,6 @@
       "ubicacion": "Caracas, Distrito Capital"
     },
     {
-      "titulo": "En Alquiler Apartamento en Las Mercedes Caracas",
-      "enlace": "https://bienesonline.ai/es/venezuela/chacao/propiedad/32698-en-alquiler-apartamento-en-las-mercedes-caracas",
-      "precio_texto": "USD 1.900",
-      "habitaciones": 2,
-      "banos": 2,
-      "metros_cuadrados": 104,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Chacao, Miranda"
-    },
-    {
-      "titulo": "En Alquiler  Penthouse 240 mts2 am  Sólo Clientes oblado 4 hab 4.5 baños 4 pstos pozo Seguridad 24 h...",
-      "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/133575-en-alquiler-penthouse-240-mts2-am-solo-clientes-oblado-4-hab-45-banos-4-pstos-pozo-seguridad-24-horas-conjunto-cerrado",
-      "precio_texto": "USD 3.000",
-      "habitaciones": 4,
-      "banos": 4,
-      "metros_cuadrados": 240,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Baruta, Miranda"
-    },
-    {
       "titulo": "apartamento alquiler la alameda tlf 04242129768 rolando rodriguez codg 26-22124",
       "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/113065-apartamento-alquiler-la-alameda-tlf-04242129768-rolando-rodriguez-codg-26-22124",
       "precio_texto": "USD 3.500",
@@ -191,17 +147,6 @@
       "metros_cuadrados": 189,
       "tipo": "Apartamento",
       "operacion_detectada": "alquiler",
-      "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
-      "titulo": "En alquiler Conjunto residencial isla dorada",
-      "enlace": "https://bienesonline.ai/es/venezuela/barcelona/propiedad/95204-en-alquiler-conjunto-residencial-isla-dorada",
-      "precio_texto": "USD 5.000",
-      "habitaciones": 4,
-      "banos": 5,
-      "metros_cuadrados": 267,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
       "ubicacion": "Caracas, Distrito Capital"
     },
     {
@@ -249,17 +194,6 @@
       "ubicacion": "Caracas, Distrito Capital"
     },
     {
-      "titulo": "TOWNHOUSE EN ALQUILER UBICADO EN LA RES. TERRANOSTRA, SAN DIEGO. LIM",
-      "enlace": "https://bienesonline.ai/es/venezuela/valencia/propiedad/133573-townhouse-en-alquiler-ubicado-en-la-res-terranostra-san-diego-lim",
-      "precio_texto": "USD 600",
-      "habitaciones": 4,
-      "banos": 4,
-      "metros_cuadrados": 1,
-      "tipo": "Casa",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Valencia, Carabobo"
-    },
-    {
       "titulo": "Apartamento en Caracas El Marques (amoblado) EN ALQUILER",
       "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/30384-apartamento-en-caracas-el-marques-amoblado-en-alquiler",
       "precio_texto": "USD 700",
@@ -280,28 +214,6 @@
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
-      "titulo": "SE ALQUILA: Apartamento Totalmente Equipado y Listo para Habitar",
-      "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/123993-se-alquila-apartamento-totalmente-equipado-y-listo-para-habitar",
-      "precio_texto": "USD 600",
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": null,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Lecheria, Anzoátegui"
-    },
-    {
-      "titulo": "en alquiler diario res mochima",
-      "enlace": "https://bienesonline.ai/es/venezuela/barcelona/propiedad/56893-en-alquiler-diario-res-mochima",
-      "precio_texto": "USD 100",
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": null,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Barcelona, Anzoátegui"
     },
     {
       "titulo": "Apartamento en Alquiler El Cafetal G. 04143054662",
@@ -326,28 +238,6 @@
       "ubicacion": "Caracas, Distrito Capital"
     },
     {
-      "titulo": "ALQUILER DE APARTAMENTO",
-      "enlace": "https://bienesonline.ai/es/venezuela/diego-bautista-urbaneja/propiedad/57294-alquiler-de-apartamento",
-      "precio_texto": "USD 399",
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": null,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Diego Bautista Urbaneja, Anzoátegui"
-    },
-    {
-      "titulo": "APARTAMENTO EN ALQUILER EN C.R. ISLA DORADA",
-      "enlace": "https://bienesonline.ai/es/venezuela/barcelona/propiedad/117972-apartamento-en-alquiler-en-cr-isla-dorada",
-      "precio_texto": "USD 380",
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": null,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Barcelona, Anzoátegui"
-    },
-    {
       "titulo": "Apartamento en Alquiler La Alameda G. 04143054662",
       "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/133116-apartamento-en-alquiler-la-alameda-g-04143054662",
       "precio_texto": "USD 1.000",
@@ -357,17 +247,6 @@
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
-      "titulo": "APARTAMENTO EN ALQUILER C.R DINASTIA, LECHERIA",
-      "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/123662-apartamento-en-alquiler-cr-dinastia-lecheria",
-      "precio_texto": "USD 600",
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": null,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Lecheria, Anzoátegui"
     },
     {
       "titulo": "Apartamento en Alquiler en Campo Alegre. Solo Clientes Directos.",
@@ -434,17 +313,6 @@
       "tipo": "Apartamento",
       "operacion_detectada": "alquiler",
       "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
-      "titulo": "OPORTUNIDAD DE ALQUILER: Apartamento en Conjunto Residencial Isla Dorada",
-      "enlace": "https://bienesonline.ai/es/venezuela/barcelona/propiedad/113073-oportunidad-de-alquiler-apartamento-en-conjunto-residencial-isla-dorada",
-      "precio_texto": "USD 380",
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": null,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Barcelona, Anzoátegui"
     },
     {
       "titulo": "apartamento en alquiler colinas de bello monte tlf  04242129768 rolando rodriguez codg 27-1048",
@@ -590,17 +458,6 @@
       "ubicacion": "Caracas, Distrito Capital"
     },
     {
-      "titulo": "apartamento en alquiler campo alegre tlf 04242129768 rolando rodriguez  codg 27-4156",
-      "enlace": "https://bienesonline.ai/es/venezuela/chacao/propiedad/127890-apartamento-en-alquiler-campo-alegre-tlf-04242129768-rolando-rodriguez-codg-27-4156",
-      "precio_texto": "USD 16.000",
-      "habitaciones": 3,
-      "banos": 5,
-      "metros_cuadrados": 584,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Chacao, Miranda"
-    },
-    {
       "titulo": "Apartamento en alquiler en Boleita Norte. Piso bajo",
       "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/117599-apartamento-en-alquiler-en-boleita-norte-piso-bajo",
       "precio_texto": "USD 700",
@@ -623,17 +480,6 @@
       "ubicacion": "Caracas, Distrito Capital"
     },
     {
-      "titulo": "apartamento alquiler la castellana tlf 04242129768 rolando Rodríguez",
-      "enlace": "https://bienesonline.ai/es/venezuela/chacao/propiedad/33822-apartamento-alquiler-la-castellana-tlf-04242129768-rolando-rodriguez",
-      "precio_texto": "USD 4.500",
-      "habitaciones": 4,
-      "banos": 6,
-      "metros_cuadrados": 364,
-      "tipo": "Apartamento",
-      "operacion_detectada": "alquiler",
-      "ubicacion": "Chacao, Miranda"
-    },
-    {
       "titulo": "apartamento en alquiler los chorros tlf 04242129768 rolando rodriguez  codg 26-21496",
       "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/90994-apartamento-en-alquiler-los-chorros-tlf-04242129768-rolando-rodriguez-codg-26-21496",
       "precio_texto": "USD 1.500",
@@ -654,17 +500,6 @@
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
-      "titulo": "APARTAMENTO EN ALQUILER EN C.R DINASTIA, LECHERIA",
-      "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/122936-apartamento-en-alquiler-en-cr-dinastia-lecheria",
-      "precio_texto": "USD 600",
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": null,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Lecheria, Anzoátegui"
     },
     {
       "titulo": "Apartamento en Alquiler 3 Habitaciones con 134 mts2. Las Palmas. Caracas.  RAH Juan Villarroel.",
@@ -700,17 +535,6 @@
       "ubicacion": "Caracas, Distrito Capital"
     },
     {
-      "titulo": "Townhouse amoblado en alquiler en zona norte",
-      "enlace": "https://bienesonline.ai/es/venezuela/maracaibo/propiedad/50065-townhouse-amoblado-en-alquiler-en-zona-norte",
-      "precio_texto": "USD 600",
-      "habitaciones": 3,
-      "banos": 5,
-      "metros_cuadrados": 345,
-      "tipo": "Casa",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Maracaibo, Zulia"
-    },
-    {
       "titulo": "apartamento en alquiler la castellana tlf 04242129768 rolando rodriguez",
       "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/64556-apartamento-en-alquiler-la-castellana-tlf-04242129768-rolando-rodriguez",
       "precio_texto": "USD 3.000",
@@ -720,17 +544,6 @@
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
-      "titulo": "apartamento alquiler lomas de la alameda tlf 04242129768 rolando Rodríguez",
-      "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/33948-apartamento-alquiler-lomas-de-la-alameda-tlf-04242129768-rolando-rodriguez",
-      "precio_texto": "USD 2.000",
-      "habitaciones": 3,
-      "banos": 5,
-      "metros_cuadrados": 173,
-      "tipo": "Apartamento",
-      "operacion_detectada": "alquiler",
-      "ubicacion": "Baruta, Miranda"
     },
     {
       "titulo": "Apartamento en Alquiler El Rosal G. 04143054662",
@@ -753,17 +566,6 @@
       "tipo": "Local",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
-      "titulo": "apartamento en alquiler lomas de chuao tlf 04242129768 rolando rodriguez codg 27-4704",
-      "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/128946-apartamento-en-alquiler-lomas-de-chuao-tlf-04242129768-rolando-rodriguez-codg-27-4704",
-      "precio_texto": "USD 1.000",
-      "habitaciones": 2,
-      "banos": 2,
-      "metros_cuadrados": 96,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Baruta, Miranda"
     },
     {
       "titulo": "Apartamento en Alquiler Clns. de los Chaguaramos G. 04143054662",
@@ -790,10 +592,10 @@
     {
       "titulo": "apartamento en alquiler colinas de bello monte tlf  04242129768 rolando rodriguez codg 26-20552",
       "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/112078-apartamento-en-alquiler-colinas-de-bello-monte-tlf-04242129768-rolando-rodriguez-codg-26-20552",
-      "precio_texto": "USD 700",
+      "precio_texto": "USD 950",
       "habitaciones": 3,
-      "banos": 3,
-      "metros_cuadrados": 134,
+      "banos": 2,
+      "metros_cuadrados": 195,
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Caracas, Distrito Capital"
@@ -810,28 +612,6 @@
       "ubicacion": "Caracas, Distrito Capital"
     },
     {
-      "titulo": "En alquiler apartamento en Lecheria",
-      "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/57558-en-alquiler-apartamento-en-lecheria",
-      "precio_texto": "USD 600",
-      "habitaciones": 3,
-      "banos": 3,
-      "metros_cuadrados": 157,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Lechería, Anzoátegui"
-    },
-    {
-      "titulo": "EN ALQUILER HERMOSO APARTAMENTO EN RESIDENCIAS SAN FRANCISCO SAN DIEGO",
-      "enlace": "https://bienesonline.ai/es/venezuela/san-diego/propiedad/61648-en-alquiler-hermoso-apartamento-en-residencias-san-francisco-san-diego",
-      "precio_texto": "USD 350",
-      "habitaciones": 3,
-      "banos": 2,
-      "metros_cuadrados": 73,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "San Diego, Carabobo"
-    },
-    {
       "titulo": "apartamento alquiler las mercedes tlf 04242129768 rolando rodriguez",
       "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/68886-apartamento-alquiler-las-mercedes-tlf-04242129768-rolando-rodriguez",
       "precio_texto": "USD 1.700",
@@ -845,24 +625,13 @@
     {
       "titulo": "Apartamento en Alquiler Campo Alegre G. 04143054662",
       "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/123500-apartamento-en-alquiler-campo-alegre-g-04143054662",
-      "precio_texto": "USD 700",
+      "precio_texto": "USD 950",
       "habitaciones": 3,
-      "banos": 3,
-      "metros_cuadrados": 134,
+      "banos": 2,
+      "metros_cuadrados": 195,
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
-      "titulo": "En alquiler fijo en la dinastía lecheria",
-      "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/122987-en-alquiler-fijo-en-la-dinastia-lecheria",
-      "precio_texto": "USD 600",
-      "habitaciones": 2,
-      "banos": 2,
-      "metros_cuadrados": 70,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Lecheria, Anzoátegui"
     },
     {
       "titulo": "apartamento en alquiler campo alegre tlf 04242129768 rolando rodriguez codg 26-21891",
@@ -909,17 +678,6 @@
       "ubicacion": "Caracas, Distrito Capital"
     },
     {
-      "titulo": "APARTAMENTO EN ALQUILER CONJUNTO RESIDENCIAL ALTAIR",
-      "enlace": "https://bienesonline.ai/es/venezuela/diego-bautista-urbaneja/propiedad/58765-apartamento-en-alquiler-conjunto-residencial-altair",
-      "precio_texto": "USD 500",
-      "habitaciones": 2,
-      "banos": 2,
-      "metros_cuadrados": 74,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Diego Bautista Urbaneja, Anzoátegui"
-    },
-    {
       "titulo": "Habitaciones en Terrazas del Ávila EN ALQUILER",
       "enlace": "https://bienesonline.ai/es/venezuela/sucre/propiedad/30419-habitaciones-en-terrazas-del-avila-en-alquiler",
       "precio_texto": "USD 180",
@@ -929,28 +687,6 @@
       "tipo": "",
       "operacion_detectada": "",
       "ubicacion": "Sucre, Distrito Capital"
-    },
-    {
-      "titulo": "En alquiler apartamento en Lecheria",
-      "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/57372-en-alquiler-apartamento-en-lecheria",
-      "precio_texto": "USD 500",
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": null,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Lechería, Anzoátegui"
-    },
-    {
-      "titulo": "SE ALQUILA: Amplia Casa en el Conjunto Residencial Bosque del Ingenio",
-      "enlace": "https://bienesonline.ai/es/venezuela/barcelona/propiedad/124008-se-alquila-amplia-casa-en-el-conjunto-residencial-bosque-del-ingenio",
-      "precio_texto": "USD 1.000",
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": null,
-      "tipo": "Casa",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Barcelona, Anzoátegui"
     },
     {
       "titulo": "Apartamento En Alquiler Los Campitos",
@@ -997,17 +733,6 @@
       "ubicacion": "Caracas, Distrito Capital"
     },
     {
-      "titulo": "APARTAMENTO EN ALQUILER EN C.R. DINASTIA, LECHERIA",
-      "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/124835-apartamento-en-alquiler-en-cr-dinastia-lecheria",
-      "precio_texto": "USD 600",
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": null,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Lecheria, Anzoátegui"
-    },
-    {
       "titulo": "Apartamento en Alquiler Chacao G. 04143054662",
       "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/98476-apartamento-en-alquiler-chacao-g-04143054662",
       "precio_texto": "USD 950",
@@ -1030,47 +755,14 @@
       "ubicacion": "Caracas, Distrito Capital"
     },
     {
-      "titulo": "APARTAMENTO EN ALQUILER EN CIRCUNVALACIÓN NRO DOS",
-      "enlace": "https://bienesonline.ai/es/venezuela/maracaibo/propiedad/118657-apartamento-en-alquiler-en-circunvalacion-nro-dos",
-      "precio_texto": "USD 330",
-      "habitaciones": 3,
-      "banos": 2,
-      "metros_cuadrados": 90,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Maracaibo, Zulia"
-    },
-    {
-      "titulo": "¡EN ALQUILER! Cómodo Apartamento Semi-Amoblado en Conj Res. San Francisco, San Diego",
-      "enlace": "https://bienesonline.ai/es/venezuela/san-diego/propiedad/61697-en-alquiler-comodo-apartamento-semi-amoblado-en-conj-res-san-francisco-san-diego",
-      "precio_texto": "USD 350",
-      "habitaciones": 3,
-      "banos": 2,
-      "metros_cuadrados": 73,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "San Diego, Carabobo"
-    },
-    {
-      "titulo": "APARTAMENTO EN ALQUILER EN CIUDADELA FARIA",
-      "enlace": "https://bienesonline.ai/es/venezuela/maracaibo/propiedad/95058-apartamento-en-alquiler-en-ciudadela-faria",
-      "precio_texto": "USD 350",
-      "habitaciones": 2,
-      "banos": 2,
-      "metros_cuadrados": 72,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Maracaibo, Zulia"
-    },
-    {
       "titulo": "Lindo Y Acogedor Apartamento En Alquiler Manzanares. Amoblado 27-1699",
       "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/121460-lindo-y-acogedor-apartamento-en-alquiler-manzanares-amoblado-27-1699",
-      "precio_texto": "USD 1.800",
-      "habitaciones": 3,
-      "banos": 4,
-      "metros_cuadrados": 232,
+      "precio_texto": "USD 1.350",
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 74,
       "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
+      "operacion_detectada": "alquiler",
       "ubicacion": "Caracas, Distrito Capital"
     },
     {
@@ -1096,15 +788,323 @@
       "ubicacion": "Caracas, Distrito Capital"
     },
     {
-      "titulo": "apartamento alquiler campo alegre tlf 04242129768 rolando Rodríguez",
-      "enlace": "https://bienesonline.ai/es/venezuela/chacao/propiedad/33869-apartamento-alquiler-campo-alegre-tlf-04242129768-rolando-rodriguez",
-      "precio_texto": "USD 3.200",
+      "titulo": "apartamento alquiler lomas de las mercedes tlf 04242129768 rolando Rodríguez",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/33245-apartamento-alquiler-lomas-de-las-mercedes-tlf-04242129768-rolando-rodriguez",
+      "precio_texto": "USD 5.700",
       "habitaciones": 3,
       "banos": 4,
-      "metros_cuadrados": 226,
+      "metros_cuadrados": 246,
       "tipo": "Apartamento",
       "operacion_detectada": "alquiler",
-      "ubicacion": "Chacao, Miranda"
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "Apartamento en Alquiler Boleita Norte G. 04143054662",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/99324-apartamento-en-alquiler-boleita-norte-g-04143054662",
+      "precio_texto": "USD 850",
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 120,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "apartamento en alquiler los naranjos de las mercedes tlf 04242129768 rolando rodriguez codg 27-1832",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/121812-apartamento-en-alquiler-los-naranjos-de-las-mercedes-tlf-04242129768-rolando-rodriguez-codg-27-1832",
+      "precio_texto": "USD 2.200",
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 86,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "Apartamento en Alquiler Alto Prado G. 04143054662",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/133750-apartamento-en-alquiler-alto-prado-g-04143054662",
+      "precio_texto": "USD 1.200",
+      "habitaciones": 3,
+      "banos": 2,
+      "metros_cuadrados": 117,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "apartamento en  alquiler  colinas de bello monte codg 27-191",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/117690-apartamento-en-alquiler-colinas-de-bello-monte-codg-27-191",
+      "precio_texto": "USD 1.200",
+      "habitaciones": 1,
+      "banos": 2,
+      "metros_cuadrados": 63,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "apartamento alquiler el solar del hatillo tlf 04242129768 rolando Rodríguez",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/33553-apartamento-alquiler-el-solar-del-hatillo-tlf-04242129768-rolando-rodriguez",
+      "precio_texto": "USD 1.200",
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 78,
+      "tipo": "Apartamento",
+      "operacion_detectada": "alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "apartamento alquiler Altamira   rolando rodriguez tlf 04242129768",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/33056-apartamento-alquiler-altamira-rolando-rodriguez-tlf-04242129768",
+      "precio_texto": "USD 2.700",
+      "habitaciones": 5,
+      "banos": 6,
+      "metros_cuadrados": 312,
+      "tipo": "Apartamento",
+      "operacion_detectada": "alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "Alquiler de Apartamento en Altamira 27-1290 Asdrubal Medina",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/120559-alquiler-de-apartamento-en-altamira-27-1290-asdrubal-medina",
+      "precio_texto": "USD 1.450",
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 89,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "apartamento en alquiler el rosal tlf  042421297 rolando rodriguez  codg 27-331",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/118494-apartamento-en-alquiler-el-rosal-tlf-042421297-rolando-rodriguez-codg-27-331",
+      "precio_texto": "USD 1.100",
+      "habitaciones": 1,
+      "banos": 1,
+      "metros_cuadrados": 58,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "Apartamento en Alquiler Boleita Norte G. 04143054662",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/112771-apartamento-en-alquiler-boleita-norte-g-04143054662",
+      "precio_texto": "USD 700",
+      "habitaciones": 1,
+      "banos": 1,
+      "metros_cuadrados": 45,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "apartamento alquiler campo alegre tlf  04242129768 rolando rodriguez",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/79427-apartamento-alquiler-campo-alegre-tlf-04242129768-rolando-rodriguez",
+      "precio_texto": "USD 2.500",
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 104,
+      "tipo": "Apartamento",
+      "operacion_detectada": "alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "apartamento alquiler campo alegre tlf 04242129768 rolando Rodríguez",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/34214-apartamento-alquiler-campo-alegre-tlf-04242129768-rolando-rodriguez",
+      "precio_texto": "USD 1.800",
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 121,
+      "tipo": "Apartamento",
+      "operacion_detectada": "alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "Apartamento alquiler Chacao. Cod: 26-14207 Carla Mora 0412-5885892",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/33381-apartamento-alquiler-chacao-cod-26-14207-carla-mora-0412-5885892",
+      "precio_texto": "USD 800",
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 64,
+      "tipo": "Apartamento",
+      "operacion_detectada": "alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "Local en alquiler en Altamira",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/91124-local-en-alquiler-en-altamira",
+      "precio_texto": "USD 1.500",
+      "habitaciones": null,
+      "banos": null,
+      "metros_cuadrados": null,
+      "tipo": "Local",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "Alquiler de Apartamento La Alameda MLS #26-21143 Mirian Navarro +58 414 924 0379",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/90042-alquiler-de-apartamento-la-alameda-mls-26-21143-mirian-navarro-58-414-924-0379",
+      "precio_texto": "USD 2.300",
+      "habitaciones": 3,
+      "banos": 3,
+      "metros_cuadrados": 186,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "apartamento en alquiler campo alegre tlf  04242129768 rolando rodriguez",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/66528-apartamento-en-alquiler-campo-alegre-tlf-04242129768-rolando-rodriguez",
+      "precio_texto": "USD 3.000",
+      "habitaciones": 2,
+      "banos": 3,
+      "metros_cuadrados": 111,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "Apartamento alquiler. La Boyera Cod: 26-12777 Carla Mora 0412-5885892",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/33465-apartamento-alquiler-la-boyera-cod-26-12777-carla-mora-0412-5885892",
+      "precio_texto": "USD 650",
+      "habitaciones": 2,
+      "banos": 1,
+      "metros_cuadrados": 39,
+      "tipo": "Apartamento",
+      "operacion_detectada": "alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "Apartamento en Alquiler Campo Alegre G. 04143054662 / 04143247646",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/79440-apartamento-en-alquiler-campo-alegre-g-04143054662-04143247646",
+      "precio_texto": "USD 1.600",
+      "habitaciones": 3,
+      "banos": 2,
+      "metros_cuadrados": 138,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "Acogedora Casa En Alquiler El Marques, Lindos Jardines Calle Cerrada 27-5392 Ng",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/130052-acogedora-casa-en-alquiler-el-marques-lindos-jardines-calle-cerrada-27-5392-ng",
+      "precio_texto": "USD 1.250",
+      "habitaciones": 2,
+      "banos": 3,
+      "metros_cuadrados": 250,
+      "tipo": "Casa",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "Apartamento en Alquiler en Manzanares.  Sandra White 0414-3140082  Cod. 26-17777",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/63789-apartamento-en-alquiler-en-manzanares-sandra-white-0414-3140082-cod-26-17777",
+      "precio_texto": "USD 850",
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 89,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "apartamento alquiler campo alegre tlf 04242129768 rolando Rodríguez",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/34216-apartamento-alquiler-campo-alegre-tlf-04242129768-rolando-rodriguez",
+      "precio_texto": "USD 1.400",
+      "habitaciones": 1,
+      "banos": 2,
+      "metros_cuadrados": 56,
+      "tipo": "Apartamento",
+      "operacion_detectada": "alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "Apartamento alquiler. La Boyera Cod: 26-12777 Cm",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/33464-apartamento-alquiler-la-boyera-cod-26-12777-cm",
+      "precio_texto": "USD 650",
+      "habitaciones": 2,
+      "banos": 1,
+      "metros_cuadrados": 39,
+      "tipo": "Apartamento",
+      "operacion_detectada": "alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "Apartamento en Alquiler Los Dos Caminos G. 04143054662",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/123761-apartamento-en-alquiler-los-dos-caminos-g-04143054662",
+      "precio_texto": "USD 1.600",
+      "habitaciones": 3,
+      "banos": 3,
+      "metros_cuadrados": 170,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "EN ALQUILER LOCAL 275 METROS EN BOLEITA",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas-dc/propiedad/56521-en-alquiler-local-275-metros-en-boleita",
+      "precio_texto": "USD 2.200",
+      "habitaciones": null,
+      "banos": null,
+      "metros_cuadrados": null,
+      "tipo": "Local",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": ""
+    },
+    {
+      "titulo": "apartamento en alquiler colinas de valle arriba  rolando rodriguez tlf 04242129768",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/33052-apartamento-en-alquiler-colinas-de-valle-arriba-rolando-rodriguez-tlf-04242129768",
+      "precio_texto": "USD 4.500",
+      "habitaciones": 4,
+      "banos": 5,
+      "metros_cuadrados": 271,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "ALQUILO APARTAMENTO EN RESIDENCIAS PARQUE CARABOBO PLAZA, A UNA CUADRA DE PARQUE CENTRAL",
+      "enlace": "https://bienesonline.ai/es/venezuela/san-agustin/propiedad/30276-alquilo-apartamento-en-residencias-parque-carabobo-plaza-a-una-cuadra-de-parque-central",
+      "precio_texto": "USD 400",
+      "habitaciones": 2,
+      "banos": 1,
+      "metros_cuadrados": 69,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "San Agustín, Distrito Capital"
+    },
+    {
+      "titulo": "Apartamento en Alquiler La Castellana G. 04143054662",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/128010-apartamento-en-alquiler-la-castellana-g-04143054662",
+      "precio_texto": "USD 1.200",
+      "habitaciones": 1,
+      "banos": 2,
+      "metros_cuadrados": 64,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "Apartamento en Alquiler Urb. Miranda G. 04143054662 / 04143247646",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/66023-apartamento-en-alquiler-urb-miranda-g-04143054662-04143247646",
+      "precio_texto": "USD 900",
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 84,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
+      "titulo": "Local en alquiler en Chuao.",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/91133-local-en-alquiler-en-chuao",
+      "precio_texto": "USD 12.340",
+      "habitaciones": null,
+      "banos": null,
+      "metros_cuadrados": null,
+      "tipo": "Local",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
     }
   ],
   "diagnostico": {
