@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "alquiler",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+alquiler+miranda",
-  "scrapeado_en": "2026-10-23T11:16:48.463Z",
+  "scrapeado_en": "2026-10-23T16:45:34.908Z",
   "total": 100,
   "anuncios": [
     {
@@ -744,6 +744,17 @@
       "ubicacion": "Guatire, Miranda"
     },
     {
+      "titulo": "apartamento en alquiler el rosal tlf 04242129768 rolando rodriguez  codg 27-6862",
+      "enlace": "https://bienesonline.ai/es/venezuela/chacao/propiedad/134449-apartamento-en-alquiler-el-rosal-tlf-04242129768-rolando-rodriguez-codg-27-6862",
+      "precio_texto": "USD 2.800",
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 80,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Chacao, Miranda"
+    },
+    {
       "titulo": "26-5587 Apartamento en Alquiler Las Lomas Guatire",
       "enlace": "https://bienesonline.ai/es/venezuela/guatire/propiedad/120655-26-5587-apartamento-en-alquiler-las-lomas-guatire",
       "precio_texto": "USD 300",
@@ -1065,13 +1076,13 @@
     {
       "titulo": "Apartamento en Aquiler  Mirador de los Campitos I G. 04143054662",
       "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/120932-apartamento-en-aquiler-mirador-de-los-campitos-i-g-04143054662",
-      "precio_texto": "USD 500",
-      "habitaciones": 3,
+      "precio_texto": "USD 1.100",
+      "habitaciones": 2,
       "banos": 2,
-      "metros_cuadrados": 207,
-      "tipo": "Local",
+      "metros_cuadrados": 80,
+      "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
-      "ubicacion": "Baruta, Miranda"
+      "ubicacion": "Chacao, Miranda"
     },
     {
       "titulo": "EN ALQUILER CASA EN EL MORRO AGUIAVILLAS",
@@ -1091,17 +1102,6 @@
       "habitaciones": 2,
       "banos": 2,
       "metros_cuadrados": 92,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
-      "titulo": "Apartamento en Alquiler Mirador de los Campitos I G. 04143054662",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/99431-apartamento-en-alquiler-mirador-de-los-campitos-i-g-04143054662",
-      "precio_texto": "USD 2.000",
-      "habitaciones": 2,
-      "banos": 2,
-      "metros_cuadrados": 97,
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Caracas, Distrito Capital"

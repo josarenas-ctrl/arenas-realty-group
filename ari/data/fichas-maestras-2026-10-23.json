@@ -1,7 +1,7 @@
 {
-  "generado_en": "2026-10-23T11:51:28.606Z",
-  "total_anuncios_originales": 3461,
-  "total_fichas_maestras": 1959,
+  "generado_en": "2026-10-23T17:28:49.552Z",
+  "total_anuncios_originales": 3390,
+  "total_fichas_maestras": 1912,
   "fichas": [
     {
       "titulo": "Apartamento 3 hab en Caracas — $1.500/mes | ZonaVen",
@@ -2826,75 +2826,6 @@
       ]
     },
     {
-      "titulo": "Local Comercial en alquiler en Baruta, Miranda — $500/mes",
-      "precio_texto": "$500",
-      "habitaciones": null,
-      "banos": 1,
-      "metros_cuadrados": 70,
-      "tipo": "Local comercial",
-      "ubicacion": "Baruta, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/miranda/comercial-local-comercial-en-alquiler-en-baruta-distrito-metropolitano-rentahouse-26-22207",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 11,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-local-comercial-en-alquiler-en-centro-distrito-metropolitano-rentahouse-27-5565",
-          "portal": "inmueblesconlupa",
-          "titulo": "Local Comercial en alquiler en Distrito Capital — $500/mes"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/distrito-capital/comercial-oficina-en-alquiler-en-parroquia-altagracia-distrito-metropolitano-rentahouse-26-17343",
-          "portal": "inmueblesconlupa",
-          "titulo": "Oficina en alquiler en Distrito Capital — $500/mes"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/distrito-capital/apartamento-1-nivel-en-alquiler-en-parroquia-la-candelaria-distrito-metropolitan-rentahouse-27-4014",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en alquiler en Distrito Capital — $500/mes"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/alquiler-de-local-comercial-en-el-cc-multiplaza-el-paraiso-jc-25-16293-MLV-915601994",
-          "portal": "inmueblesconlupa",
-          "titulo": "Local Comercial en alquiler en Distrito Capital — $500/mes"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-local-comercial-en-alquiler-en-prado-de-maria-distrito-metropolitano-rentahouse-25-11323",
-          "portal": "inmueblesconlupa",
-          "titulo": "Local Comercial en alquiler en Distrito Capital — $500/mes"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/distrito-capital/alquiler-oficina-actualizada-en-el-centro-MLV-958357270",
-          "portal": "inmueblesconlupa",
-          "titulo": "Oficina en alquiler en Distrito Capital — $500/mes"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/distrito-capital/alquiler-oficina-actualizada-en-el-centro-MLV-958181482",
-          "portal": "inmueblesconlupa",
-          "titulo": "Oficina en alquiler en Distrito Capital — $500/mes"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/distrito-capital/comercial-oficina-en-alquiler-en-parroquia-catedral-distrito-metropolitano-rentahouse-26-18588",
-          "portal": "inmueblesconlupa",
-          "titulo": "Oficina en alquiler en Distrito Capital — $500/mes"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-local-comercial-en-alquiler-en-la-mata-lara-rentahouse-26-12730",
-          "portal": "inmueblesconlupa",
-          "titulo": "Local Comercial en alquiler en Distrito Capital — $500/mes"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-local-comercial-en-alquiler-en-parroquia-catedral-distrito-metropolita-rentahouse-27-5561",
-          "portal": "inmueblesconlupa",
-          "titulo": "Local Comercial en alquiler en Distrito Capital — $500/mes"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/miranda/comercial-local-comercial-en-alquiler-en-baruta-distrito-metropolitano-rentahouse-26-22207",
-          "portal": "inmueblesconlupa",
-          "titulo": "Local Comercial en alquiler en Baruta, Miranda — $500/mes"
-        }
-      ]
-    },
-    {
       "titulo": "Apartamento 3 hab en Caraballeda — $350.000 | ZonaVen",
       "precio_texto": "$350000",
       "habitaciones": 3,
@@ -3235,70 +3166,6 @@
       ]
     },
     {
-      "titulo": "Apartamento en venta en Centro, Distrito Capital — $110.000",
-      "precio_texto": "$110.000",
-      "habitaciones": 2,
-      "banos": 1,
-      "metros_cuadrados": 66,
-      "tipo": "Apartamento",
-      "ubicacion": "Centro, Distrito Capital",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-centro-distrito-metropolitano-rentahouse-27-6805",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 10,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/distrito-capital/amplia-casa-en-venta-la-pastora-remax-347192",
-          "portal": "inmueblesconlupa",
-          "titulo": "Casa en venta en Libertador, Distrito Capital — $110.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/venta/distrito-capital/26-9717-excelente-oficina-en-sabana-grande-MLV-992572812",
-          "portal": "inmueblesconlupa",
-          "titulo": "Oficina en venta en Caracas, Distrito Capital — $110.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/venta/distrito-capital/cliente-directo-venta-26-9717-excelente-oficina-totalmente-remodelada-y-equipada-MLV-989403240",
-          "portal": "inmueblesconlupa",
-          "titulo": "Oficina en venta en Distrito Capital — $110.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/venta/distrito-capital/oficina-en-venta-sabana-grande-26-9717-MLV-969600188",
-          "portal": "inmueblesconlupa",
-          "titulo": "Oficina en venta en Libertador, Distrito Capital — $110.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-en-venta-portico-del-avila-en-san-bernardino-26-16933-mr-MLV-776836221",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Distrito Capital — $110.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-centro-distrito-metropolitano-rentahouse-27-6805",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Centro, Distrito Capital — $110.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/venta/distrito-capital/comercial-oficina-en-venta-en-sabana-grande-distrito-metropolitano-rentahouse-22-15857",
-          "portal": "inmueblesconlupa",
-          "titulo": "Oficina en venta en Libertador, Distrito Capital — $110.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-san-bernardino-distrito-metropolitano-rentahouse-27-4043",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Distrito Capital — $110.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-santa-monica-distrito-metropolitano-rentahouse-24-9960",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Distrito Capital — $110.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-el-paraiso-distrito-metropolitano-rentahouse-26-22190",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Distrito Capital — $110.000"
-        }
-      ]
-    },
-    {
       "titulo": "Local Comercial en venta en Distrito Capital — $1.800.000",
       "precio_texto": "$1.800.000",
       "habitaciones": null,
@@ -3487,6 +3354,70 @@
           "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/distrito-capital/apartamento-penthouse-en-alquiler-en-san-bernardino-distrito-metropolitano-rentahouse-26-13590",
           "portal": "inmueblesconlupa",
           "titulo": "Apartamento en alquiler en Distrito Capital — $2.500/mes"
+        }
+      ]
+    },
+    {
+      "titulo": "Apartamento en alquiler en Distrito Capital — $500/mes",
+      "precio_texto": "$500",
+      "habitaciones": 2,
+      "banos": 1,
+      "metros_cuadrados": 60,
+      "tipo": "Apartamento",
+      "ubicacion": "",
+      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/distrito-capital/apartamento-1-nivel-en-alquiler-en-parroquia-la-candelaria-distrito-metropolitan-rentahouse-27-4014",
+      "portal_principal": "inmueblesconlupa",
+      "total_publicaciones_encontradas": 10,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-local-comercial-en-alquiler-en-centro-distrito-metropolitano-rentahouse-27-5565",
+          "portal": "inmueblesconlupa",
+          "titulo": "Local Comercial en alquiler en Distrito Capital — $500/mes"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/distrito-capital/comercial-oficina-en-alquiler-en-parroquia-altagracia-distrito-metropolitano-rentahouse-26-17343",
+          "portal": "inmueblesconlupa",
+          "titulo": "Oficina en alquiler en Distrito Capital — $500/mes"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/distrito-capital/apartamento-1-nivel-en-alquiler-en-parroquia-la-candelaria-distrito-metropolitan-rentahouse-27-4014",
+          "portal": "inmueblesconlupa",
+          "titulo": "Apartamento en alquiler en Distrito Capital — $500/mes"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/alquiler-de-local-comercial-en-el-cc-multiplaza-el-paraiso-jc-25-16293-MLV-915601994",
+          "portal": "inmueblesconlupa",
+          "titulo": "Local Comercial en alquiler en Distrito Capital — $500/mes"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-local-comercial-en-alquiler-en-prado-de-maria-distrito-metropolitano-rentahouse-25-11323",
+          "portal": "inmueblesconlupa",
+          "titulo": "Local Comercial en alquiler en Distrito Capital — $500/mes"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/distrito-capital/alquiler-oficina-actualizada-en-el-centro-MLV-958357270",
+          "portal": "inmueblesconlupa",
+          "titulo": "Oficina en alquiler en Distrito Capital — $500/mes"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/distrito-capital/alquiler-oficina-actualizada-en-el-centro-MLV-958181482",
+          "portal": "inmueblesconlupa",
+          "titulo": "Oficina en alquiler en Distrito Capital — $500/mes"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/distrito-capital/comercial-oficina-en-alquiler-en-parroquia-catedral-distrito-metropolitano-rentahouse-26-18588",
+          "portal": "inmueblesconlupa",
+          "titulo": "Oficina en alquiler en Distrito Capital — $500/mes"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-local-comercial-en-alquiler-en-la-mata-lara-rentahouse-26-12730",
+          "portal": "inmueblesconlupa",
+          "titulo": "Local Comercial en alquiler en Distrito Capital — $500/mes"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-local-comercial-en-alquiler-en-parroquia-catedral-distrito-metropolita-rentahouse-27-5561",
+          "portal": "inmueblesconlupa",
+          "titulo": "Local Comercial en alquiler en Distrito Capital — $500/mes"
         }
       ]
     },
@@ -3683,6 +3614,65 @@
       ]
     },
     {
+      "titulo": "Apartamento en venta en Centro, Distrito Capital — $110.000",
+      "precio_texto": "$110.000",
+      "habitaciones": 2,
+      "banos": 1,
+      "metros_cuadrados": 66,
+      "tipo": "Apartamento",
+      "ubicacion": "Centro, Distrito Capital",
+      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-centro-distrito-metropolitano-rentahouse-27-6805",
+      "portal_principal": "inmueblesconlupa",
+      "total_publicaciones_encontradas": 9,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/distrito-capital/amplia-casa-en-venta-la-pastora-remax-347192",
+          "portal": "inmueblesconlupa",
+          "titulo": "Casa en venta en Libertador, Distrito Capital — $110.000"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/venta/distrito-capital/26-9717-excelente-oficina-en-sabana-grande-MLV-992572812",
+          "portal": "inmueblesconlupa",
+          "titulo": "Oficina en venta en Caracas, Distrito Capital — $110.000"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/venta/distrito-capital/cliente-directo-venta-26-9717-excelente-oficina-totalmente-remodelada-y-equipada-MLV-989403240",
+          "portal": "inmueblesconlupa",
+          "titulo": "Oficina en venta en Distrito Capital — $110.000"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/venta/distrito-capital/oficina-en-venta-sabana-grande-26-9717-MLV-969600188",
+          "portal": "inmueblesconlupa",
+          "titulo": "Oficina en venta en Libertador, Distrito Capital — $110.000"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-en-venta-portico-del-avila-en-san-bernardino-26-16933-mr-MLV-776836221",
+          "portal": "inmueblesconlupa",
+          "titulo": "Apartamento en venta en Distrito Capital — $110.000"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-centro-distrito-metropolitano-rentahouse-27-6805",
+          "portal": "inmueblesconlupa",
+          "titulo": "Apartamento en venta en Centro, Distrito Capital — $110.000"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/venta/distrito-capital/comercial-oficina-en-venta-en-sabana-grande-distrito-metropolitano-rentahouse-22-15857",
+          "portal": "inmueblesconlupa",
+          "titulo": "Oficina en venta en Libertador, Distrito Capital — $110.000"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-san-bernardino-distrito-metropolitano-rentahouse-27-4043",
+          "portal": "inmueblesconlupa",
+          "titulo": "Apartamento en venta en Distrito Capital — $110.000"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-santa-monica-distrito-metropolitano-rentahouse-24-9960",
+          "portal": "inmueblesconlupa",
+          "titulo": "Apartamento en venta en Distrito Capital — $110.000"
+        }
+      ]
+    },
+    {
       "titulo": "Casa en venta en La Trinidad, Distrito Capital — $320.000",
       "precio_texto": "$320.000",
       "habitaciones": 7,
@@ -3797,65 +3787,6 @@
           "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/distrito-capital/casa-1-nivel-en-venta-en-la-piedad-norte-lara-rentahouse-26-16734",
           "portal": "inmueblesconlupa",
           "titulo": "Casa en venta en La Piedad Norte, Distrito Capital — $80.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Apartamento en venta en Sebucan, Distrito Capital — $180.000",
-      "precio_texto": "$180.000",
-      "habitaciones": 2,
-      "banos": 2,
-      "metros_cuadrados": 102,
-      "tipo": "Apartamento",
-      "ubicacion": "Sebucan, Distrito Capital",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-sebucan-distrito-metropolitano-rentahouse-27-6906",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 9,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-sebucan-distrito-metropolitano-rentahouse-27-6906",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Sebucan, Distrito Capital — $180.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/otro/venta/distrito-capital/negocios-y-empresas-entretenimiento-en-venta-en-colinas-de-bello-monte-distrito--rentahouse-27-700",
-          "portal": "inmueblesconlupa",
-          "titulo": "Inmueble en venta en Libertador, Distrito Capital — $180.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/distrito-capital/casa-multipes-niveles-en-venta-en-los-rosales-distrito-metropolitano-rentahouse-26-20246",
-          "portal": "inmueblesconlupa",
-          "titulo": "Casa en venta en Los Rosales, Distrito Capital — $180.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-terrazas-del-avila-distrito-metropolitano-rentahouse-27-6812",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Distrito Capital — $180.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/distrito-capital/casa-1-nivel-en-venta-en-la-mata-lara-rentahouse-23-24409",
-          "portal": "inmueblesconlupa",
-          "titulo": "Casa en venta en La Mata, Distrito Capital — $180.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-1-nivel-en-venta-en-villa-nueva-hatillo-distrito-metropolitano-rentahouse-27-5505",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en El Hatillo, Miranda — $180.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/distrito-capital/casa-colonial-en-venta-en-el-paraiso-distrito-metropolitano-rentahouse-26-13649",
-          "portal": "inmueblesconlupa",
-          "titulo": "Casa en venta en El Paraiso, Distrito Capital — $180.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-duplex-en-venta-en-lomas-de-la-lagunita-distrito-metropolitano-rentahouse-25-22114",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Distrito Capital — $180.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/penthouse/venta/distrito-capital/ofrezco-en-venta-ph-en-el-paraiso-century21-1179448",
-          "portal": "inmueblesconlupa",
-          "titulo": "Penthouse en venta en Distrito Capital — $180.000"
         }
       ]
     },
@@ -4509,6 +4440,60 @@
       ]
     },
     {
+      "titulo": "Apartamento en venta en Sebucan, Distrito Capital — $180.000",
+      "precio_texto": "$180.000",
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 102,
+      "tipo": "Apartamento",
+      "ubicacion": "Sebucan, Distrito Capital",
+      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-sebucan-distrito-metropolitano-rentahouse-27-6906",
+      "portal_principal": "inmueblesconlupa",
+      "total_publicaciones_encontradas": 8,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-sebucan-distrito-metropolitano-rentahouse-27-6906",
+          "portal": "inmueblesconlupa",
+          "titulo": "Apartamento en venta en Sebucan, Distrito Capital — $180.000"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/otro/venta/distrito-capital/negocios-y-empresas-entretenimiento-en-venta-en-colinas-de-bello-monte-distrito--rentahouse-27-700",
+          "portal": "inmueblesconlupa",
+          "titulo": "Inmueble en venta en Libertador, Distrito Capital — $180.000"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/distrito-capital/casa-multipes-niveles-en-venta-en-los-rosales-distrito-metropolitano-rentahouse-26-20246",
+          "portal": "inmueblesconlupa",
+          "titulo": "Casa en venta en Los Rosales, Distrito Capital — $180.000"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-terrazas-del-avila-distrito-metropolitano-rentahouse-27-6812",
+          "portal": "inmueblesconlupa",
+          "titulo": "Apartamento en venta en Distrito Capital — $180.000"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/distrito-capital/casa-1-nivel-en-venta-en-la-mata-lara-rentahouse-23-24409",
+          "portal": "inmueblesconlupa",
+          "titulo": "Casa en venta en La Mata, Distrito Capital — $180.000"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-1-nivel-en-venta-en-villa-nueva-hatillo-distrito-metropolitano-rentahouse-27-5505",
+          "portal": "inmueblesconlupa",
+          "titulo": "Apartamento en venta en El Hatillo, Miranda — $180.000"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/distrito-capital/casa-colonial-en-venta-en-el-paraiso-distrito-metropolitano-rentahouse-26-13649",
+          "portal": "inmueblesconlupa",
+          "titulo": "Casa en venta en El Paraiso, Distrito Capital — $180.000"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-duplex-en-venta-en-lomas-de-la-lagunita-distrito-metropolitano-rentahouse-25-22114",
+          "portal": "inmueblesconlupa",
+          "titulo": "Apartamento en venta en Distrito Capital — $180.000"
+        }
+      ]
+    },
+    {
       "titulo": "Apartamento en alquiler en Distrito Capital — $750/mes",
       "precio_texto": "$750",
       "habitaciones": 1,
@@ -4559,60 +4544,6 @@
           "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/distrito-capital/comercial-oficina-en-alquiler-en-parroquia-la-candelaria-distrito-metropolitano-rentahouse-26-6270",
           "portal": "inmueblesconlupa",
           "titulo": "Oficina en alquiler en Distrito Capital — $750/mes"
-        }
-      ]
-    },
-    {
-      "titulo": "Oficina en alquiler en Chacao, Distrito Capital — $600/mes",
-      "precio_texto": "$600",
-      "habitaciones": null,
-      "banos": 2,
-      "metros_cuadrados": 11,
-      "tipo": "Oficina",
-      "ubicacion": "Chacao, Distrito Capital",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/distrito-capital/comercial-consultorio-medico-en-alquiler-en-chacao-distrito-metropolitano-rentahouse-26-20136",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 8,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/distrito-capital/comercial-consultorio-medico-en-alquiler-en-chacao-distrito-metropolitano-rentahouse-26-20136",
-          "portal": "inmueblesconlupa",
-          "titulo": "Oficina en alquiler en Chacao, Distrito Capital — $600/mes"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-local-comercial-en-alquiler-en-el-hatillo-distrito-metropolitano-rentahouse-26-6907",
-          "portal": "inmueblesconlupa",
-          "titulo": "Local Comercial en alquiler en Distrito Capital — $600/mes"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/distrito-capital/comercial-oficina-en-alquiler-en-san-bernardino-distrito-metropolitano-rentahouse-27-4353",
-          "portal": "inmueblesconlupa",
-          "titulo": "Oficina en alquiler en Distrito Capital — $600/mes"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/distrito-capital/comercial-oficina-en-alquiler-en-las-acacias-distrito-metropolitano-rentahouse-26-2180",
-          "portal": "inmueblesconlupa",
-          "titulo": "Oficina en alquiler en Distrito Capital — $600/mes"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-local-comercial-en-alquiler-en-parroquia-la-candelaria-distrito-metrop-rentahouse-27-4441",
-          "portal": "inmueblesconlupa",
-          "titulo": "Local Comercial en alquiler en Distrito Capital — $600/mes"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/distrito-capital/comercial-oficina-en-alquiler-en-parroquia-santa-teresa-distrito-metropolitano-rentahouse-26-3834",
-          "portal": "inmueblesconlupa",
-          "titulo": "Oficina en alquiler en Distrito Capital — $600/mes"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/distrito-capital/comercial-oficina-en-alquiler-en-los-caobos-distrito-metropolitano-rentahouse-26-4125",
-          "portal": "inmueblesconlupa",
-          "titulo": "Oficina en alquiler en Distrito Capital — $600/mes"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/distrito-capital/alquilo-apartamento-en-el-paraiso-remax-347890",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en alquiler en Distrito Capital — $600/mes"
         }
       ]
     },
@@ -5186,153 +5117,6 @@
       ]
     },
     {
-      "titulo": "Inmueble en venta en Libertador, Distrito Capital — $165.000",
-      "precio_texto": "$165.000",
-      "habitaciones": 3,
-      "banos": 3,
-      "metros_cuadrados": 188,
-      "tipo": "Inmueble",
-      "ubicacion": "Libertador, Distrito Capital",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/otro/venta/distrito-capital/hermoso-pent-house-en-venta-los-chaguaramos-century21-1095945",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 7,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/terreno/venta/distrito-capital/terreno-finca-en-venta-en-el-jarillo-miranda-rentahouse-26-6304",
-          "portal": "inmueblesconlupa",
-          "titulo": "Terreno en venta en El Jarillo, Distrito Capital — $165.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-duplex-en-venta-en-valle-abajo-distrito-metropolitano-rentahouse-26-16430",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Distrito Capital — $165.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-local-comercial-en-venta-en-el-valle-distrito-metropolitano-rentahouse-26-13299",
-          "portal": "inmueblesconlupa",
-          "titulo": "Local Comercial en venta en Distrito Capital — $165.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-colinas-de-la-tahona-distrito-metropolitano-rentahouse-27-2974",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Distrito Capital — $165.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-local-comercial-en-venta-en-parroquia-altagracia-distrito-metropolitan-rentahouse-27-6282",
-          "portal": "inmueblesconlupa",
-          "titulo": "Local Comercial en venta en Distrito Capital — $165.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/otro/venta/distrito-capital/hermoso-pent-house-en-venta-los-chaguaramos-century21-1095945",
-          "portal": "inmueblesconlupa",
-          "titulo": "Inmueble en venta en Libertador, Distrito Capital — $165.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-137-mts-en-la-florida-venta-piso-bajo-remax-347787",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Distrito Capital — $165.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Oficina en venta en Libertador, Distrito Capital — $45.000",
-      "precio_texto": "$45.000",
-      "habitaciones": null,
-      "banos": 1,
-      "metros_cuadrados": 68,
-      "tipo": "Oficina",
-      "ubicacion": "Libertador, Distrito Capital",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/oficina/venta/distrito-capital/oficina-en-sabana-grande-68-m2-MLV-1011071726",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 7,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/otro/venta/distrito-capital/negocios-y-empresas-mayorista-y-distribucion-en-venta-en-parroquia-catedral-dist-rentahouse-26-16096",
-          "portal": "inmueblesconlupa",
-          "titulo": "Inmueble en venta en Libertador, Distrito Capital — $45.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/venta/distrito-capital/oficina-en-sabana-grande-68-m2-MLV-1011071726",
-          "portal": "inmueblesconlupa",
-          "titulo": "Oficina en venta en Libertador, Distrito Capital — $45.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/venta/distrito-capital/oficina-en-venta-av-urdaneta-centro-caracas-MLV-929967566",
-          "portal": "inmueblesconlupa",
-          "titulo": "Oficina en venta en Libertador, Distrito Capital — $45.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-local-comercial-en-venta-en-los-haticos-zulia-rentahouse-27-6783",
-          "portal": "inmueblesconlupa",
-          "titulo": "Local Comercial en venta en Distrito Capital — $45.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-santa-rosa-aragua-rentahouse-27-3358",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Distrito Capital — $45.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/ofrezco-en-venta-apartamento-ubicado-en-la-candelaria-century21-1255908",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Distrito Capital — $45.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/terreno/venta/distrito-capital/terreno-comercial-en-venta-en-la-velita-falcon-rentahouse-26-11090",
-          "portal": "inmueblesconlupa",
-          "titulo": "Terreno en venta en La Velita, Distrito Capital — $45.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Apartamento en venta en Distrito Capital — $95.000",
-      "precio_texto": "$95.000",
-      "habitaciones": 4,
-      "banos": 3,
-      "metros_cuadrados": 132,
-      "tipo": "Apartamento",
-      "ubicacion": "",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-parque-central-distrito-metropolitano-rentahouse-27-5299",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 7,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-parque-central-distrito-metropolitano-rentahouse-27-5299",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Distrito Capital — $95.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-local-comercial-en-venta-en-centro-distrito-metropolitano-rentahouse-24-24501",
-          "portal": "inmueblesconlupa",
-          "titulo": "Local Comercial en venta en Distrito Capital — $95.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/terreno/venta/distrito-capital/terreno-residencial-en-venta-en-caicaguana-distrito-metropolitano-rentahouse-26-14526",
-          "portal": "inmueblesconlupa",
-          "titulo": "Terreno en venta en Caicaguana, Distrito Capital — $95.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-parroquia-la-candelaria-distrito-metropolitano-rentahouse-26-5417",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Distrito Capital — $95.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-local-comercial-en-venta-en-propatria-distrito-metropolitano-rentahouse-25-9410",
-          "portal": "inmueblesconlupa",
-          "titulo": "Local Comercial en venta en Distrito Capital — $95.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/venta-de-apartamento-en-la-av-fuerzas-armadas-remax-327742",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Distrito Capital — $95.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/tu-proximo-local-para-tu-negocio-con-alta-visibilidad-y-acceso-century21-1192639",
-          "portal": "inmueblesconlupa",
-          "titulo": "Local Comercial en venta en Distrito Capital — $95.000"
-        }
-      ]
-    },
-    {
       "titulo": "Inmueble en venta en Libertador, Distrito Capital — $220.000",
       "precio_texto": "$220.000",
       "habitaciones": null,
@@ -5574,6 +5358,55 @@
           "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/distrito-capital/comercial-oficina-en-alquiler-en-parroquia-la-candelaria-distrito-metropolitano-rentahouse-26-20652",
           "portal": "inmueblesconlupa",
           "titulo": "Oficina en alquiler en Distrito Capital — $200/mes"
+        }
+      ]
+    },
+    {
+      "titulo": "Oficina en alquiler en Chacao, Distrito Capital — $600/mes",
+      "precio_texto": "$600",
+      "habitaciones": null,
+      "banos": 2,
+      "metros_cuadrados": 11,
+      "tipo": "Oficina",
+      "ubicacion": "Chacao, Distrito Capital",
+      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/distrito-capital/comercial-consultorio-medico-en-alquiler-en-chacao-distrito-metropolitano-rentahouse-26-20136",
+      "portal_principal": "inmueblesconlupa",
+      "total_publicaciones_encontradas": 7,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/distrito-capital/comercial-consultorio-medico-en-alquiler-en-chacao-distrito-metropolitano-rentahouse-26-20136",
+          "portal": "inmueblesconlupa",
+          "titulo": "Oficina en alquiler en Chacao, Distrito Capital — $600/mes"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-local-comercial-en-alquiler-en-el-hatillo-distrito-metropolitano-rentahouse-26-6907",
+          "portal": "inmueblesconlupa",
+          "titulo": "Local Comercial en alquiler en Distrito Capital — $600/mes"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/distrito-capital/comercial-oficina-en-alquiler-en-san-bernardino-distrito-metropolitano-rentahouse-27-4353",
+          "portal": "inmueblesconlupa",
+          "titulo": "Oficina en alquiler en Distrito Capital — $600/mes"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/distrito-capital/comercial-oficina-en-alquiler-en-las-acacias-distrito-metropolitano-rentahouse-26-2180",
+          "portal": "inmueblesconlupa",
+          "titulo": "Oficina en alquiler en Distrito Capital — $600/mes"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-local-comercial-en-alquiler-en-parroquia-la-candelaria-distrito-metrop-rentahouse-27-4441",
+          "portal": "inmueblesconlupa",
+          "titulo": "Local Comercial en alquiler en Distrito Capital — $600/mes"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/distrito-capital/comercial-oficina-en-alquiler-en-parroquia-santa-teresa-distrito-metropolitano-rentahouse-26-3834",
+          "portal": "inmueblesconlupa",
+          "titulo": "Oficina en alquiler en Distrito Capital — $600/mes"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/distrito-capital/comercial-oficina-en-alquiler-en-los-caobos-distrito-metropolitano-rentahouse-26-4125",
+          "portal": "inmueblesconlupa",
+          "titulo": "Oficina en alquiler en Distrito Capital — $600/mes"
         }
       ]
     },
@@ -6102,90 +5935,46 @@
       ]
     },
     {
-      "titulo": "Apartamento en venta en El Valle, Distrito Capital — $55.000",
-      "precio_texto": "$55.000",
+      "titulo": "Inmueble en venta en Libertador, Distrito Capital — $165.000",
+      "precio_texto": "$165.000",
       "habitaciones": 3,
-      "banos": 1,
-      "metros_cuadrados": 81,
-      "tipo": "Apartamento",
-      "ubicacion": "El Valle, Distrito Capital",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-el-valle-distrito-metropolitano-rentahouse-26-17483",
+      "banos": 3,
+      "metros_cuadrados": 188,
+      "tipo": "Inmueble",
+      "ubicacion": "Libertador, Distrito Capital",
+      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/otro/venta/distrito-capital/hermoso-pent-house-en-venta-los-chaguaramos-century21-1095945",
       "portal_principal": "inmueblesconlupa",
       "total_publicaciones_encontradas": 6,
       "todos_los_anuncios": [
         {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/distrito-capital/casa-1-nivel-en-venta-en-agua-clara-portuguesa-rentahouse-27-6873",
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/terreno/venta/distrito-capital/terreno-finca-en-venta-en-el-jarillo-miranda-rentahouse-26-6304",
           "portal": "inmueblesconlupa",
-          "titulo": "Casa en venta en Agua Clara, Distrito Capital — $55.000"
+          "titulo": "Terreno en venta en El Jarillo, Distrito Capital — $165.000"
         },
         {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/venta/distrito-capital/comercial-oficina-en-venta-en-parroquia-catedral-distrito-metropolitano-rentahouse-27-3773",
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-duplex-en-venta-en-valle-abajo-distrito-metropolitano-rentahouse-26-16430",
           "portal": "inmueblesconlupa",
-          "titulo": "Oficina en venta en Libertador, Distrito Capital — $55.000"
+          "titulo": "Apartamento en venta en Distrito Capital — $165.000"
         },
         {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-el-valle-distrito-metropolitano-rentahouse-26-17483",
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-local-comercial-en-venta-en-el-valle-distrito-metropolitano-rentahouse-26-13299",
           "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en El Valle, Distrito Capital — $55.000"
+          "titulo": "Local Comercial en venta en Distrito Capital — $165.000"
         },
         {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/venta/distrito-capital/venta-oficina-actualizada-en-el-centro-MLV-1012186110",
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-colinas-de-la-tahona-distrito-metropolitano-rentahouse-27-2974",
           "portal": "inmueblesconlupa",
-          "titulo": "Oficina en venta en Altagracia, Distrito Capital — $55.000"
+          "titulo": "Apartamento en venta en Distrito Capital — $165.000"
         },
         {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/distrito-capital/casa-1-nivel-en-venta-en-centro-miranda-rentahouse-26-18708",
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-local-comercial-en-venta-en-parroquia-altagracia-distrito-metropolitan-rentahouse-27-6282",
           "portal": "inmueblesconlupa",
-          "titulo": "Casa en venta en Centro, Distrito Capital — $55.000"
+          "titulo": "Local Comercial en venta en Distrito Capital — $165.000"
         },
         {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/venta-de-apartamento-en-la-av-san-martin-parroquia-san-juan-remax-347741",
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/otro/venta/distrito-capital/hermoso-pent-house-en-venta-los-chaguaramos-century21-1095945",
           "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Distrito Capital — $55.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Apartamento en venta en Agua Sal, Distrito Capital — $65.000",
-      "precio_texto": "$65.000",
-      "habitaciones": 2,
-      "banos": 2,
-      "metros_cuadrados": 81,
-      "tipo": "Apartamento",
-      "ubicacion": "Agua Sal, Distrito Capital",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-agua-sal-miranda-rentahouse-23-19658",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 6,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/venta/distrito-capital/comercial-oficina-en-venta-en-sabana-grande-distrito-metropolitano-rentahouse-26-8831",
-          "portal": "inmueblesconlupa",
-          "titulo": "Oficina en venta en Libertador, Distrito Capital — $65.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/otro/venta/distrito-capital/negocios-y-empresas-alimentos-y-bebidas-en-venta-en-parroquia-altagracia-distrit-rentahouse-26-16572",
-          "portal": "inmueblesconlupa",
-          "titulo": "Inmueble en venta en Libertador, Distrito Capital — $65.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-en-venta-en-santa-rosalia-remax-335541",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Distrito Capital — $65.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/en-venta-potencial-apto-en-catia-remax-347510",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Distrito Capital — $65.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-agua-sal-miranda-rentahouse-23-19658",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Agua Sal, Distrito Capital — $65.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/boulevard-sabana-grande-cc-metropolitano-vendo-local-46m2-remax-346889",
-          "portal": "inmueblesconlupa",
-          "titulo": "Local Comercial en venta en Distrito Capital — $65.000"
+          "titulo": "Inmueble en venta en Libertador, Distrito Capital — $165.000"
         }
       ]
     },
@@ -6406,50 +6195,6 @@
           "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/distrito-capital/comercial-oficina-en-alquiler-en-los-chaguaramos-distrito-metropolitano-rentahouse-25-6638",
           "portal": "inmueblesconlupa",
           "titulo": "Oficina en alquiler en Distrito Capital — $550/mes"
-        }
-      ]
-    },
-    {
-      "titulo": "Oficina en alquiler en Chacao, Distrito Capital — $650/mes",
-      "precio_texto": "$650",
-      "habitaciones": null,
-      "banos": 2,
-      "metros_cuadrados": 12,
-      "tipo": "Oficina",
-      "ubicacion": "Chacao, Distrito Capital",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/distrito-capital/comercial-consultorio-medico-en-alquiler-en-chacao-distrito-metropolitano-rentahouse-26-20135",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 6,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/distrito-capital/comercial-consultorio-medico-en-alquiler-en-chacao-distrito-metropolitano-rentahouse-26-20135",
-          "portal": "inmueblesconlupa",
-          "titulo": "Oficina en alquiler en Chacao, Distrito Capital — $650/mes"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/distrito-capital/comoda-y-elegante-oficina-entre-av-casanova-y-plaza-venezuela-torre-banorient-la-MLV-956835970",
-          "portal": "inmueblesconlupa",
-          "titulo": "Oficina en alquiler en Distrito Capital — $650/mes"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/distrito-capital/apartamento-1-nivel-en-alquiler-en-la-california-norte-distrito-metropolitano-rentahouse-27-6176",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en alquiler en Distrito Capital — $650/mes"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-local-comercial-en-alquiler-en-las-acacias-distrito-metropolitano-rentahouse-25-16169",
-          "portal": "inmueblesconlupa",
-          "titulo": "Local Comercial en alquiler en Distrito Capital — $650/mes"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/distrito-capital/comercial-oficina-en-alquiler-en-bello-monte-distrito-metropolitano-rentahouse-26-19148",
-          "portal": "inmueblesconlupa",
-          "titulo": "Oficina en alquiler en Distrito Capital — $650/mes"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/distrito-capital/apartamento-en-alquiler-en-quinta-crespo-remax-347607",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en alquiler en Distrito Capital — $650/mes"
         }
       ]
     },
@@ -7133,6 +6878,45 @@
       ]
     },
     {
+      "titulo": "Apartamento en venta en El Valle, Distrito Capital — $55.000",
+      "precio_texto": "$55.000",
+      "habitaciones": 3,
+      "banos": 1,
+      "metros_cuadrados": 81,
+      "tipo": "Apartamento",
+      "ubicacion": "El Valle, Distrito Capital",
+      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-el-valle-distrito-metropolitano-rentahouse-26-17483",
+      "portal_principal": "inmueblesconlupa",
+      "total_publicaciones_encontradas": 5,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/distrito-capital/casa-1-nivel-en-venta-en-agua-clara-portuguesa-rentahouse-27-6873",
+          "portal": "inmueblesconlupa",
+          "titulo": "Casa en venta en Agua Clara, Distrito Capital — $55.000"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/venta/distrito-capital/comercial-oficina-en-venta-en-parroquia-catedral-distrito-metropolitano-rentahouse-27-3773",
+          "portal": "inmueblesconlupa",
+          "titulo": "Oficina en venta en Libertador, Distrito Capital — $55.000"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-el-valle-distrito-metropolitano-rentahouse-26-17483",
+          "portal": "inmueblesconlupa",
+          "titulo": "Apartamento en venta en El Valle, Distrito Capital — $55.000"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/venta/distrito-capital/venta-oficina-actualizada-en-el-centro-MLV-1012186110",
+          "portal": "inmueblesconlupa",
+          "titulo": "Oficina en venta en Altagracia, Distrito Capital — $55.000"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/distrito-capital/casa-1-nivel-en-venta-en-centro-miranda-rentahouse-26-18708",
+          "portal": "inmueblesconlupa",
+          "titulo": "Casa en venta en Centro, Distrito Capital — $55.000"
+        }
+      ]
+    },
+    {
       "titulo": "Apartamento en alquiler en Distrito Capital — $900/mes",
       "precio_texto": "$900",
       "habitaciones": 1,
@@ -7172,6 +6956,45 @@
       ]
     },
     {
+      "titulo": "Apartamento en venta en Agua Sal, Distrito Capital — $65.000",
+      "precio_texto": "$65.000",
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 81,
+      "tipo": "Apartamento",
+      "ubicacion": "Agua Sal, Distrito Capital",
+      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-agua-sal-miranda-rentahouse-23-19658",
+      "portal_principal": "inmueblesconlupa",
+      "total_publicaciones_encontradas": 5,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/venta/distrito-capital/comercial-oficina-en-venta-en-sabana-grande-distrito-metropolitano-rentahouse-26-8831",
+          "portal": "inmueblesconlupa",
+          "titulo": "Oficina en venta en Libertador, Distrito Capital — $65.000"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/otro/venta/distrito-capital/negocios-y-empresas-alimentos-y-bebidas-en-venta-en-parroquia-altagracia-distrit-rentahouse-26-16572",
+          "portal": "inmueblesconlupa",
+          "titulo": "Inmueble en venta en Libertador, Distrito Capital — $65.000"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-en-venta-en-santa-rosalia-remax-335541",
+          "portal": "inmueblesconlupa",
+          "titulo": "Apartamento en venta en Distrito Capital — $65.000"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/en-venta-potencial-apto-en-catia-remax-347510",
+          "portal": "inmueblesconlupa",
+          "titulo": "Apartamento en venta en Distrito Capital — $65.000"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-agua-sal-miranda-rentahouse-23-19658",
+          "portal": "inmueblesconlupa",
+          "titulo": "Apartamento en venta en Agua Sal, Distrito Capital — $65.000"
+        }
+      ]
+    },
+    {
       "titulo": "Galpón en venta en Libertador, Distrito Capital — $2.500.000",
       "precio_texto": "$2.500.000",
       "habitaciones": null,
@@ -7207,6 +7030,84 @@
           "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-edificio-en-venta-en-mampote-miranda-rentahouse-24-27067",
           "portal": "inmueblesconlupa",
           "titulo": "Local Comercial en venta en Distrito Capital — $2.500.000"
+        }
+      ]
+    },
+    {
+      "titulo": "Oficina en venta en Libertador, Distrito Capital — $45.000",
+      "precio_texto": "$45.000",
+      "habitaciones": null,
+      "banos": 1,
+      "metros_cuadrados": 68,
+      "tipo": "Oficina",
+      "ubicacion": "Libertador, Distrito Capital",
+      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/oficina/venta/distrito-capital/oficina-en-sabana-grande-68-m2-MLV-1011071726",
+      "portal_principal": "inmueblesconlupa",
+      "total_publicaciones_encontradas": 5,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/otro/venta/distrito-capital/negocios-y-empresas-mayorista-y-distribucion-en-venta-en-parroquia-catedral-dist-rentahouse-26-16096",
+          "portal": "inmueblesconlupa",
+          "titulo": "Inmueble en venta en Libertador, Distrito Capital — $45.000"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/venta/distrito-capital/oficina-en-sabana-grande-68-m2-MLV-1011071726",
+          "portal": "inmueblesconlupa",
+          "titulo": "Oficina en venta en Libertador, Distrito Capital — $45.000"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/venta/distrito-capital/oficina-en-venta-av-urdaneta-centro-caracas-MLV-929967566",
+          "portal": "inmueblesconlupa",
+          "titulo": "Oficina en venta en Libertador, Distrito Capital — $45.000"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-local-comercial-en-venta-en-los-haticos-zulia-rentahouse-27-6783",
+          "portal": "inmueblesconlupa",
+          "titulo": "Local Comercial en venta en Distrito Capital — $45.000"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-santa-rosa-aragua-rentahouse-27-3358",
+          "portal": "inmueblesconlupa",
+          "titulo": "Apartamento en venta en Distrito Capital — $45.000"
+        }
+      ]
+    },
+    {
+      "titulo": "Apartamento en venta en Distrito Capital — $95.000",
+      "precio_texto": "$95.000",
+      "habitaciones": 4,
+      "banos": 3,
+      "metros_cuadrados": 132,
+      "tipo": "Apartamento",
+      "ubicacion": "",
+      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-parque-central-distrito-metropolitano-rentahouse-27-5299",
+      "portal_principal": "inmueblesconlupa",
+      "total_publicaciones_encontradas": 5,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-parque-central-distrito-metropolitano-rentahouse-27-5299",
+          "portal": "inmueblesconlupa",
+          "titulo": "Apartamento en venta en Distrito Capital — $95.000"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-local-comercial-en-venta-en-centro-distrito-metropolitano-rentahouse-24-24501",
+          "portal": "inmueblesconlupa",
+          "titulo": "Local Comercial en venta en Distrito Capital — $95.000"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/terreno/venta/distrito-capital/terreno-residencial-en-venta-en-caicaguana-distrito-metropolitano-rentahouse-26-14526",
+          "portal": "inmueblesconlupa",
+          "titulo": "Terreno en venta en Caicaguana, Distrito Capital — $95.000"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-parroquia-la-candelaria-distrito-metropolitano-rentahouse-26-5417",
+          "portal": "inmueblesconlupa",
+          "titulo": "Apartamento en venta en Distrito Capital — $95.000"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-local-comercial-en-venta-en-propatria-distrito-metropolitano-rentahouse-25-9410",
+          "portal": "inmueblesconlupa",
+          "titulo": "Local Comercial en venta en Distrito Capital — $95.000"
         }
       ]
     },
@@ -7285,6 +7186,45 @@
           "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-local-comercial-en-venta-en-los-naranjos-del-cafetal-distrito-metropol-rentahouse-25-2974",
           "portal": "inmueblesconlupa",
           "titulo": "Local Comercial en venta en Distrito Capital — $145.000"
+        }
+      ]
+    },
+    {
+      "titulo": "Oficina en alquiler en Chacao, Distrito Capital — $650/mes",
+      "precio_texto": "$650",
+      "habitaciones": null,
+      "banos": 2,
+      "metros_cuadrados": 12,
+      "tipo": "Oficina",
+      "ubicacion": "Chacao, Distrito Capital",
+      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/distrito-capital/comercial-consultorio-medico-en-alquiler-en-chacao-distrito-metropolitano-rentahouse-26-20135",
+      "portal_principal": "inmueblesconlupa",
+      "total_publicaciones_encontradas": 5,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/distrito-capital/comercial-consultorio-medico-en-alquiler-en-chacao-distrito-metropolitano-rentahouse-26-20135",
+          "portal": "inmueblesconlupa",
+          "titulo": "Oficina en alquiler en Chacao, Distrito Capital — $650/mes"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/distrito-capital/comoda-y-elegante-oficina-entre-av-casanova-y-plaza-venezuela-torre-banorient-la-MLV-956835970",
+          "portal": "inmueblesconlupa",
+          "titulo": "Oficina en alquiler en Distrito Capital — $650/mes"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/distrito-capital/apartamento-1-nivel-en-alquiler-en-la-california-norte-distrito-metropolitano-rentahouse-27-6176",
+          "portal": "inmueblesconlupa",
+          "titulo": "Apartamento en alquiler en Distrito Capital — $650/mes"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/comercial-local-comercial-en-alquiler-en-las-acacias-distrito-metropolitano-rentahouse-25-16169",
+          "portal": "inmueblesconlupa",
+          "titulo": "Local Comercial en alquiler en Distrito Capital — $650/mes"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/distrito-capital/comercial-oficina-en-alquiler-en-bello-monte-distrito-metropolitano-rentahouse-26-19148",
+          "portal": "inmueblesconlupa",
+          "titulo": "Oficina en alquiler en Distrito Capital — $650/mes"
         }
       ]
     },
@@ -7480,6 +7420,45 @@
           "enlace": "https://zonaven.com/alquiler/galpon-en-alquiler-en-boleita-norte-25-24759-csa-distrito-capital-6f6bc1",
           "portal": "zonaven",
           "titulo": "Depósito 538m² en Caracas — $2.900/mes | ZonaVen"
+        }
+      ]
+    },
+    {
+      "titulo": "Apartamento 1 hab en Caracas — $1.100/mes | ZonaVen",
+      "precio_texto": "$1100",
+      "habitaciones": 1,
+      "banos": 2,
+      "metros_cuadrados": 62,
+      "tipo": "Apartamento",
+      "ubicacion": "Distrito Capital",
+      "enlace_principal": "https://zonaven.com/alquiler/mls-26-11894-apartamento-en-alquiler-campo-alegre-yelixa-a-distrito-capital-433a7e",
+      "portal_principal": "zonaven",
+      "total_publicaciones_encontradas": 5,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://zonaven.com/alquiler/casa-quinta-en-alquiler-urbanizacion-valle-arriba-guatire-jam-miranda-30f256",
+          "portal": "zonaven",
+          "titulo": "Casa 3 hab en Baruta — $1.100/mes | ZonaVen"
+        },
+        {
+          "enlace": "https://zonaven.com/alquiler/moderna-oficina-en-alquiler-c-c-xpress-urb-macaracuay-distrito-capital-dbfc57",
+          "portal": "zonaven",
+          "titulo": "Oficina 180m² en Caracas — $1.100/mes | ZonaVen"
+        },
+        {
+          "enlace": "https://zonaven.com/alquiler/alquiler-en-los-caobos-casa-comercial-400m2-distrito-capital-9326a6",
+          "portal": "zonaven",
+          "titulo": "Casa 3 hab en Caracas — $1.100/mes | ZonaVen"
+        },
+        {
+          "enlace": "https://zonaven.com/alquiler/mls-26-11894-apartamento-en-alquiler-campo-alegre-yelixa-a-distrito-capital-433a7e",
+          "portal": "zonaven",
+          "titulo": "Apartamento 1 hab en Caracas — $1.100/mes | ZonaVen"
+        },
+        {
+          "enlace": "https://zonaven.com/alquiler/apartamento-en-alquiler-urb-escampadero-mim-26-5064-distrito-capital-bbd4f3",
+          "portal": "zonaven",
+          "titulo": "Apartamento 3 hab en Caracas — $1.100/mes | ZonaVen"
         }
       ]
     },
@@ -8029,40 +8008,6 @@
       ]
     },
     {
-      "titulo": "Inmueble en venta en Libertador, Distrito Capital — $225.000",
-      "precio_texto": "$225.000",
-      "habitaciones": 3,
-      "banos": 3,
-      "metros_cuadrados": 120,
-      "tipo": "Inmueble",
-      "ubicacion": "Libertador, Distrito Capital",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/otro/venta/distrito-capital/busca-su-propiedad-casa-apartamento-comercial-terreno-con-las-franquicias-inmobi-rentahouse-27-1887",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 4,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-edificio-en-venta-en-prado-de-maria-distrito-metropolitano-rentahouse-25-4197",
-          "portal": "inmueblesconlupa",
-          "titulo": "Local Comercial en venta en Distrito Capital — $225.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/distrito-capital/casa-multipes-niveles-en-venta-en-la-california-sur-distrito-metropolitano-rentahouse-27-4525",
-          "portal": "inmueblesconlupa",
-          "titulo": "Casa en venta en Libertador, Distrito Capital — $225.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/terreno/venta/distrito-capital/terreno-residencial-en-venta-en-puerto-encantado-miranda-rentahouse-26-857",
-          "portal": "inmueblesconlupa",
-          "titulo": "Terreno en venta en Libertador, Distrito Capital — $225.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/otro/venta/distrito-capital/busca-su-propiedad-casa-apartamento-comercial-terreno-con-las-franquicias-inmobi-rentahouse-27-1887",
-          "portal": "inmueblesconlupa",
-          "titulo": "Inmueble en venta en Libertador, Distrito Capital — $225.000"
-        }
-      ]
-    },
-    {
       "titulo": "Apartamento en venta en Distrito Capital — $595.000",
       "precio_texto": "$595.000",
       "habitaciones": 4,
@@ -8263,40 +8208,6 @@
           "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/distrito-capital/casa-multipes-niveles-en-venta-en-parroquia-santa-teresa-distrito-metropolitano-rentahouse-27-2432",
           "portal": "inmueblesconlupa",
           "titulo": "Casa en venta en Libertador, Distrito Capital — $330.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Oficina en venta en Libertador, Distrito Capital — $135.000",
-      "precio_texto": "$135.000",
-      "habitaciones": null,
-      "banos": 4,
-      "metros_cuadrados": 300,
-      "tipo": "Oficina",
-      "ubicacion": "Libertador, Distrito Capital",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/oficina/venta/distrito-capital/yb-se-ofrece-en-venta-gran-oficina-en-plaza-venezuela-23-8230-MLV-924705338",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 4,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-montalban-ii-distrito-metropolitano-rentahouse-27-3521",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Distrito Capital — $135.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/venta/distrito-capital/yb-se-ofrece-en-venta-gran-oficina-en-plaza-venezuela-23-8230-MLV-924705338",
-          "portal": "inmueblesconlupa",
-          "titulo": "Oficina en venta en Libertador, Distrito Capital — $135.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-los-chaguaramos-distrito-metropolitano-rentahouse-25-22988",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Distrito Capital — $135.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-la-union-distrito-metropolitano-rentahouse-26-3126",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Distrito Capital — $135.000"
         }
       ]
     },
@@ -8535,108 +8446,6 @@
           "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-el-paraiso-distrito-metropolitano-rentahouse-26-2370",
           "portal": "inmueblesconlupa",
           "titulo": "Apartamento en venta en Distrito Capital — $120.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Casa en venta en Alta Florida, Distrito Capital — $900.000",
-      "precio_texto": "$900.000",
-      "habitaciones": 9,
-      "banos": 5,
-      "metros_cuadrados": 840,
-      "tipo": "Casa",
-      "ubicacion": "Alta Florida, Distrito Capital",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/distrito-capital/casa-duplex-en-venta-en-alta-florida-distrito-metropolitano-rentahouse-24-19347",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 4,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/distrito-capital/casa-duplex-en-venta-en-alta-florida-distrito-metropolitano-rentahouse-24-19347",
-          "portal": "inmueblesconlupa",
-          "titulo": "Casa en venta en Alta Florida, Distrito Capital — $900.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-local-comercial-en-venta-en-playa-grande-vargas-rentahouse-26-11401",
-          "portal": "inmueblesconlupa",
-          "titulo": "Local Comercial en venta en Distrito Capital — $900.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-edificio-en-venta-en-la-guairita-miranda-rentahouse-27-5001",
-          "portal": "inmueblesconlupa",
-          "titulo": "Local Comercial en venta en Distrito Capital — $900.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/terreno/venta/distrito-capital/terreno-comercial-en-venta-en-ezequiel-zamora-vargas-rentahouse-24-24422",
-          "portal": "inmueblesconlupa",
-          "titulo": "Terreno en venta en Libertador, Distrito Capital — $900.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Galpón en venta en Cementerio, Distrito Capital — $750.000",
-      "precio_texto": "$750.000",
-      "habitaciones": null,
-      "banos": 2,
-      "metros_cuadrados": 419,
-      "tipo": "Galpon",
-      "ubicacion": "",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/galpon/venta/distrito-capital/comercial-industrial-en-venta-en-cementerio-distrito-metropolitano-rentahouse-24-676",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 4,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-edificio-en-venta-en-las-mercedes-zulia-rentahouse-25-12821",
-          "portal": "inmueblesconlupa",
-          "titulo": "Local Comercial en venta en Distrito Capital — $750.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-local-comercial-en-venta-en-parroquia-altagracia-distrito-metropolitan-rentahouse-25-14373",
-          "portal": "inmueblesconlupa",
-          "titulo": "Local Comercial en venta en Distrito Capital — $750.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/galpon/venta/distrito-capital/comercial-industrial-en-venta-en-cementerio-distrito-metropolitano-rentahouse-24-676",
-          "portal": "inmueblesconlupa",
-          "titulo": "Galpón en venta en Cementerio, Distrito Capital — $750.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/galpon/venta/distrito-capital/comercial-industrial-en-venta-en-cementerio-distrito-metropolitano-rentahouse-24-737",
-          "portal": "inmueblesconlupa",
-          "titulo": "Galpón en venta en Cementerio, Distrito Capital — $750.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Apartamento en alquiler en Sucre, Miranda — $700/mes",
-      "precio_texto": "$700",
-      "habitaciones": 3,
-      "banos": 2,
-      "metros_cuadrados": 97,
-      "tipo": "Apartamento",
-      "ubicacion": "Sucre, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/miranda/apartamento-en-alquiler-con-excelente-ubicacion-en-la-urbina-century21-1252985",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 4,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/miranda/comercial-local-comercial-en-alquiler-en-macaracuay-distrito-metropolitano-rentahouse-26-10684",
-          "portal": "inmueblesconlupa",
-          "titulo": "Local Comercial en alquiler en Sucre, Miranda — $700/mes"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/miranda/comercial-local-comercial-en-alquiler-en-la-castellana-distrito-metropolitano-rentahouse-26-12447",
-          "portal": "inmueblesconlupa",
-          "titulo": "Local Comercial en alquiler en Chacao, Miranda — $700/mes"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/miranda/comercial-local-comercial-en-alquiler-en-la-castellana-distrito-metropolitano-rentahouse-26-12446",
-          "portal": "inmueblesconlupa",
-          "titulo": "Local Comercial en alquiler en Chacao, Miranda — $700/mes"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/miranda/apartamento-en-alquiler-con-excelente-ubicacion-en-la-urbina-century21-1252985",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en alquiler en Sucre, Miranda — $700/mes"
         }
       ]
     },
@@ -8977,40 +8786,6 @@
           "enlace": "https://zonaven.com/venta/venta-galpon-comercial-550m2-bello-monte-caracas-luz-trifasica-distrito-capital-3a11d7",
           "portal": "zonaven",
           "titulo": "Depósito 500m² en Caracas — $300.000 | ZonaVen"
-        }
-      ]
-    },
-    {
-      "titulo": "Apartamento 1 hab en Caracas — $1.100/mes | ZonaVen",
-      "precio_texto": "$1100",
-      "habitaciones": 1,
-      "banos": 2,
-      "metros_cuadrados": 62,
-      "tipo": "Apartamento",
-      "ubicacion": "Distrito Capital",
-      "enlace_principal": "https://zonaven.com/alquiler/mls-26-11894-apartamento-en-alquiler-campo-alegre-yelixa-a-distrito-capital-433a7e",
-      "portal_principal": "zonaven",
-      "total_publicaciones_encontradas": 4,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://zonaven.com/alquiler/moderna-oficina-en-alquiler-c-c-xpress-urb-macaracuay-distrito-capital-dbfc57",
-          "portal": "zonaven",
-          "titulo": "Oficina 180m² en Caracas — $1.100/mes | ZonaVen"
-        },
-        {
-          "enlace": "https://zonaven.com/alquiler/alquiler-en-los-caobos-casa-comercial-400m2-distrito-capital-9326a6",
-          "portal": "zonaven",
-          "titulo": "Casa 3 hab en Caracas — $1.100/mes | ZonaVen"
-        },
-        {
-          "enlace": "https://zonaven.com/alquiler/mls-26-11894-apartamento-en-alquiler-campo-alegre-yelixa-a-distrito-capital-433a7e",
-          "portal": "zonaven",
-          "titulo": "Apartamento 1 hab en Caracas — $1.100/mes | ZonaVen"
-        },
-        {
-          "enlace": "https://zonaven.com/alquiler/apartamento-en-alquiler-urb-escampadero-mim-26-5064-distrito-capital-bbd4f3",
-          "portal": "zonaven",
-          "titulo": "Apartamento 3 hab en Caracas — $1.100/mes | ZonaVen"
         }
       ]
     },
@@ -9383,6 +9158,35 @@
       ]
     },
     {
+      "titulo": "Casa en venta en Libertador, Distrito Capital — $225.000",
+      "precio_texto": "$225.000",
+      "habitaciones": 9,
+      "banos": 6,
+      "metros_cuadrados": 525,
+      "tipo": "Casa",
+      "ubicacion": "Libertador, Distrito Capital",
+      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/distrito-capital/casa-multipes-niveles-en-venta-en-la-california-sur-distrito-metropolitano-rentahouse-27-4525",
+      "portal_principal": "inmueblesconlupa",
+      "total_publicaciones_encontradas": 3,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-edificio-en-venta-en-prado-de-maria-distrito-metropolitano-rentahouse-25-4197",
+          "portal": "inmueblesconlupa",
+          "titulo": "Local Comercial en venta en Distrito Capital — $225.000"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/distrito-capital/casa-multipes-niveles-en-venta-en-la-california-sur-distrito-metropolitano-rentahouse-27-4525",
+          "portal": "inmueblesconlupa",
+          "titulo": "Casa en venta en Libertador, Distrito Capital — $225.000"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/terreno/venta/distrito-capital/terreno-residencial-en-venta-en-puerto-encantado-miranda-rentahouse-26-857",
+          "portal": "inmueblesconlupa",
+          "titulo": "Terreno en venta en Libertador, Distrito Capital — $225.000"
+        }
+      ]
+    },
+    {
       "titulo": "Casa en venta en Libertador, Distrito Capital — $100.000",
       "precio_texto": "$100.000",
       "habitaciones": 3,
@@ -9499,35 +9303,6 @@
       ]
     },
     {
-      "titulo": "Oficina en venta en Bello Monte, Distrito Capital — $495.000",
-      "precio_texto": "$495.000",
-      "habitaciones": null,
-      "banos": 5,
-      "metros_cuadrados": 480,
-      "tipo": "Oficina",
-      "ubicacion": "Bello Monte, Distrito Capital",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/oficina/venta/distrito-capital/comercial-oficina-en-venta-en-bello-monte-distrito-metropolitano-rentahouse-27-605",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 3,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-estacionamiento-en-venta-en-parroquia-santa-rosalia-distrito-metropoli-rentahouse-25-18219",
-          "portal": "inmueblesconlupa",
-          "titulo": "Local Comercial en venta en Distrito Capital — $495.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-la-castellana-distrito-metropolitano-rentahouse-25-11678",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Distrito Capital — $495.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/venta/distrito-capital/comercial-oficina-en-venta-en-bello-monte-distrito-metropolitano-rentahouse-27-605",
-          "portal": "inmueblesconlupa",
-          "titulo": "Oficina en venta en Bello Monte, Distrito Capital — $495.000"
-        }
-      ]
-    },
-    {
       "titulo": "Oficina en venta en Catedral, Distrito Capital — $25.000",
       "precio_texto": "$25.000",
       "habitaciones": null,
@@ -9557,60 +9332,31 @@
       ]
     },
     {
-      "titulo": "Casa en venta en Libertador, Distrito Capital — $550.000",
-      "precio_texto": "$550.000",
-      "habitaciones": 8,
-      "banos": 5,
-      "metros_cuadrados": 262,
-      "tipo": "Casa",
-      "ubicacion": "Libertador, Distrito Capital",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/distrito-capital/esta-propiedad-en-venta-cuenta-con-un-local-comercial-a-pie-de-calle-cuenta-con--MLV-776919083",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 3,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/distrito-capital/esta-propiedad-en-venta-cuenta-con-un-local-comercial-a-pie-de-calle-cuenta-con--MLV-776919083",
-          "portal": "inmueblesconlupa",
-          "titulo": "Casa en venta en Libertador, Distrito Capital — $550.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/distrito-capital/casa-duplex-en-venta-en-lomas-de-la-lagunita-distrito-metropolitano-rentahouse-27-4775",
-          "portal": "inmueblesconlupa",
-          "titulo": "Casa en venta en Libertador, Distrito Capital — $550.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-mirador-de-los-campitos-i-distrito-metropolitano-rentahouse-26-622",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Distrito Capital — $550.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Oficina en venta en Libertador, Distrito Capital — $105.000",
-      "precio_texto": "$105.000",
+      "titulo": "Oficina en venta en Libertador, Distrito Capital — $135.000",
+      "precio_texto": "$135.000",
       "habitaciones": null,
-      "banos": 2,
-      "metros_cuadrados": 218,
+      "banos": 4,
+      "metros_cuadrados": 300,
       "tipo": "Oficina",
       "ubicacion": "Libertador, Distrito Capital",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/oficina/venta/distrito-capital/comercial-oficina-en-venta-en-parroquia-catedral-distrito-metropolitano-rentahouse-26-19808",
+      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/oficina/venta/distrito-capital/yb-se-ofrece-en-venta-gran-oficina-en-plaza-venezuela-23-8230-MLV-924705338",
       "portal_principal": "inmueblesconlupa",
       "total_publicaciones_encontradas": 3,
       "todos_los_anuncios": [
         {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-san-bernardino-distrito-metropolitano-rentahouse-26-22212",
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-montalban-ii-distrito-metropolitano-rentahouse-27-3521",
           "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Distrito Capital — $105.000"
+          "titulo": "Apartamento en venta en Distrito Capital — $135.000"
         },
         {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/venta/distrito-capital/comercial-oficina-en-venta-en-parroquia-catedral-distrito-metropolitano-rentahouse-26-19808",
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/venta/distrito-capital/yb-se-ofrece-en-venta-gran-oficina-en-plaza-venezuela-23-8230-MLV-924705338",
           "portal": "inmueblesconlupa",
-          "titulo": "Oficina en venta en Libertador, Distrito Capital — $105.000"
+          "titulo": "Oficina en venta en Libertador, Distrito Capital — $135.000"
         },
         {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/se-vende-apartamento-en-la-candelaria-remax-343936",
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-los-chaguaramos-distrito-metropolitano-rentahouse-25-22988",
           "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Distrito Capital — $105.000"
+          "titulo": "Apartamento en venta en Distrito Capital — $135.000"
         }
       ]
     },
@@ -10017,6 +9763,64 @@
           "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/venta/distrito-capital/comercial-oficina-en-venta-en-parroquia-altagracia-distrito-metropolitano-rentahouse-24-15228",
           "portal": "inmueblesconlupa",
           "titulo": "Oficina en venta en Libertador, Distrito Capital — $50.000"
+        }
+      ]
+    },
+    {
+      "titulo": "Casa en venta en Alta Florida, Distrito Capital — $900.000",
+      "precio_texto": "$900.000",
+      "habitaciones": 9,
+      "banos": 5,
+      "metros_cuadrados": 840,
+      "tipo": "Casa",
+      "ubicacion": "Alta Florida, Distrito Capital",
+      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/distrito-capital/casa-duplex-en-venta-en-alta-florida-distrito-metropolitano-rentahouse-24-19347",
+      "portal_principal": "inmueblesconlupa",
+      "total_publicaciones_encontradas": 3,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/distrito-capital/casa-duplex-en-venta-en-alta-florida-distrito-metropolitano-rentahouse-24-19347",
+          "portal": "inmueblesconlupa",
+          "titulo": "Casa en venta en Alta Florida, Distrito Capital — $900.000"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-local-comercial-en-venta-en-playa-grande-vargas-rentahouse-26-11401",
+          "portal": "inmueblesconlupa",
+          "titulo": "Local Comercial en venta en Distrito Capital — $900.000"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-edificio-en-venta-en-la-guairita-miranda-rentahouse-27-5001",
+          "portal": "inmueblesconlupa",
+          "titulo": "Local Comercial en venta en Distrito Capital — $900.000"
+        }
+      ]
+    },
+    {
+      "titulo": "Local Comercial en alquiler en Sucre, Miranda — $700/mes",
+      "precio_texto": "$700",
+      "habitaciones": null,
+      "banos": 1,
+      "metros_cuadrados": 43,
+      "tipo": "Local comercial",
+      "ubicacion": "Sucre, Miranda",
+      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/miranda/comercial-local-comercial-en-alquiler-en-macaracuay-distrito-metropolitano-rentahouse-26-10684",
+      "portal_principal": "inmueblesconlupa",
+      "total_publicaciones_encontradas": 3,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/miranda/comercial-local-comercial-en-alquiler-en-macaracuay-distrito-metropolitano-rentahouse-26-10684",
+          "portal": "inmueblesconlupa",
+          "titulo": "Local Comercial en alquiler en Sucre, Miranda — $700/mes"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/miranda/comercial-local-comercial-en-alquiler-en-la-castellana-distrito-metropolitano-rentahouse-26-12447",
+          "portal": "inmueblesconlupa",
+          "titulo": "Local Comercial en alquiler en Chacao, Miranda — $700/mes"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/miranda/comercial-local-comercial-en-alquiler-en-la-castellana-distrito-metropolitano-rentahouse-26-12446",
+          "portal": "inmueblesconlupa",
+          "titulo": "Local Comercial en alquiler en Chacao, Miranda — $700/mes"
         }
       ]
     },
@@ -11313,6 +11117,30 @@
       ]
     },
     {
+      "titulo": "apartamento en alquiler el rosal tlf 04242129768 rolando rodriguez  codg 27-6862",
+      "precio_texto": "USD 2.800",
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 80,
+      "tipo": "Apartamento",
+      "ubicacion": "Chacao, Miranda",
+      "enlace_principal": "https://bienesonline.ai/es/venezuela/chacao/propiedad/134449-apartamento-en-alquiler-el-rosal-tlf-04242129768-rolando-rodriguez-codg-27-6862",
+      "portal_principal": "bienesonline",
+      "total_publicaciones_encontradas": 2,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/miranda/apartamento-1-nivel-en-alquiler-en-el-rosal-distrito-metropolitano-rentahouse-27-6864",
+          "portal": "inmueblesconlupa",
+          "titulo": "Apartamento en alquiler en El Rosal, Miranda — $2.800/mes"
+        },
+        {
+          "enlace": "https://bienesonline.ai/es/venezuela/chacao/propiedad/134449-apartamento-en-alquiler-el-rosal-tlf-04242129768-rolando-rodriguez-codg-27-6862",
+          "portal": "bienesonline",
+          "titulo": "apartamento en alquiler el rosal tlf 04242129768 rolando rodriguez  codg 27-6862"
+        }
+      ]
+    },
+    {
       "titulo": "Oficina en alquiler en Bello Monte, Miranda — $5.000/mes",
       "precio_texto": "$5.000",
       "habitaciones": null,
@@ -11697,6 +11525,54 @@
       ]
     },
     {
+      "titulo": "Apartamento en venta en Distrito Capital — $495.000",
+      "precio_texto": "$495.000",
+      "habitaciones": 3,
+      "banos": 4,
+      "metros_cuadrados": 246,
+      "tipo": "Apartamento",
+      "ubicacion": "",
+      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-la-castellana-distrito-metropolitano-rentahouse-25-11678",
+      "portal_principal": "inmueblesconlupa",
+      "total_publicaciones_encontradas": 2,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-estacionamiento-en-venta-en-parroquia-santa-rosalia-distrito-metropoli-rentahouse-25-18219",
+          "portal": "inmueblesconlupa",
+          "titulo": "Local Comercial en venta en Distrito Capital — $495.000"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-la-castellana-distrito-metropolitano-rentahouse-25-11678",
+          "portal": "inmueblesconlupa",
+          "titulo": "Apartamento en venta en Distrito Capital — $495.000"
+        }
+      ]
+    },
+    {
+      "titulo": "Casa en venta en Libertador, Distrito Capital — $550.000",
+      "precio_texto": "$550.000",
+      "habitaciones": 8,
+      "banos": 5,
+      "metros_cuadrados": 262,
+      "tipo": "Casa",
+      "ubicacion": "Libertador, Distrito Capital",
+      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/distrito-capital/esta-propiedad-en-venta-cuenta-con-un-local-comercial-a-pie-de-calle-cuenta-con--MLV-776919083",
+      "portal_principal": "inmueblesconlupa",
+      "total_publicaciones_encontradas": 2,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/distrito-capital/esta-propiedad-en-venta-cuenta-con-un-local-comercial-a-pie-de-calle-cuenta-con--MLV-776919083",
+          "portal": "inmueblesconlupa",
+          "titulo": "Casa en venta en Libertador, Distrito Capital — $550.000"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/distrito-capital/casa-duplex-en-venta-en-lomas-de-la-lagunita-distrito-metropolitano-rentahouse-27-4775",
+          "portal": "inmueblesconlupa",
+          "titulo": "Casa en venta en Libertador, Distrito Capital — $550.000"
+        }
+      ]
+    },
+    {
       "titulo": "Apartamento en venta en Oripoto, Distrito Capital — $175.000",
       "precio_texto": "$175.000",
       "habitaciones": 3,
@@ -11889,30 +11765,6 @@
       ]
     },
     {
-      "titulo": "Apartamento en venta en Miranda, Distrito Capital — $245.000",
-      "precio_texto": "$245.000",
-      "habitaciones": 3,
-      "banos": 2,
-      "metros_cuadrados": 225,
-      "tipo": "Apartamento",
-      "ubicacion": "Miranda, Distrito Capital",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-miranda-distrito-metropolitano-rentahouse-27-424",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 2,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-miranda-distrito-metropolitano-rentahouse-27-424",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Miranda, Distrito Capital — $245.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-los-naranjos-del-cafetal-distrito-metropolitano-rentahouse-26-17823",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Distrito Capital — $245.000"
-        }
-      ]
-    },
-    {
       "titulo": "Apartamento en venta en Distrito Capital — $160.000",
       "precio_texto": "$160.000",
       "habitaciones": 4,
@@ -12077,6 +11929,30 @@
           "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-en-venta-en-residencias-cristal-av-francisco-de-miranda-remax-347960",
           "portal": "inmueblesconlupa",
           "titulo": "Apartamento en venta en Sucre, Miranda — $110.000"
+        }
+      ]
+    },
+    {
+      "titulo": "Oficina en venta en Libertador, Distrito Capital — $105.000",
+      "precio_texto": "$105.000",
+      "habitaciones": null,
+      "banos": 2,
+      "metros_cuadrados": 218,
+      "tipo": "Oficina",
+      "ubicacion": "Libertador, Distrito Capital",
+      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/oficina/venta/distrito-capital/comercial-oficina-en-venta-en-parroquia-catedral-distrito-metropolitano-rentahouse-26-19808",
+      "portal_principal": "inmueblesconlupa",
+      "total_publicaciones_encontradas": 2,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-san-bernardino-distrito-metropolitano-rentahouse-26-22212",
+          "portal": "inmueblesconlupa",
+          "titulo": "Apartamento en venta en Distrito Capital — $105.000"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/venta/distrito-capital/comercial-oficina-en-venta-en-parroquia-catedral-distrito-metropolitano-rentahouse-26-19808",
+          "portal": "inmueblesconlupa",
+          "titulo": "Oficina en venta en Libertador, Distrito Capital — $105.000"
         }
       ]
     },
@@ -12729,30 +12605,6 @@
       ]
     },
     {
-      "titulo": "Casa en venta en San Rafael, Distrito Capital — $47.000",
-      "precio_texto": "$47.000",
-      "habitaciones": 4,
-      "banos": 4,
-      "metros_cuadrados": 350,
-      "tipo": "Casa",
-      "ubicacion": "San Rafael, Distrito Capital",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/distrito-capital/casa-1-nivel-en-venta-en-san-rafael-zulia-rentahouse-27-4273",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 2,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/distrito-capital/casa-1-nivel-en-venta-en-san-rafael-zulia-rentahouse-27-4273",
-          "portal": "inmueblesconlupa",
-          "titulo": "Casa en venta en San Rafael, Distrito Capital — $47.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-parroquia-santa-rosalia-distrito-metropolitano-rentahouse-26-16469",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Distrito Capital — $47.000"
-        }
-      ]
-    },
-    {
       "titulo": "Apartamento en venta en El Cigarral, Miranda — $280.000",
       "precio_texto": "$280.000",
       "habitaciones": 3,
@@ -12797,30 +12649,6 @@
           "enlace": "https://www.inmueblesconlupa.com/inmuebles/galpon/venta/miranda/comercial-galpon-deposito-en-venta-en-el-marques-miranda-rentahouse-27-6772",
           "portal": "inmueblesconlupa",
           "titulo": "Galpón en venta en El Marqués, Miranda — $850.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Casa en venta en Lomas de La Trinidad, Miranda — $240.000",
-      "precio_texto": "$240.000",
-      "habitaciones": 4,
-      "banos": 4,
-      "metros_cuadrados": 200,
-      "tipo": "Casa",
-      "ubicacion": "Lomas de La Trinidad, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/miranda/casa-1-nivel-en-venta-en-lomas-de-la-trinidad-distrito-metropolitano-rentahouse-27-6777",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 2,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/miranda/casa-1-nivel-en-venta-en-lomas-de-la-trinidad-distrito-metropolitano-rentahouse-27-6777",
-          "portal": "inmueblesconlupa",
-          "titulo": "Casa en venta en Lomas de La Trinidad, Miranda — $240.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/miranda/casa-en-venta-lomas-de-la-trinidad-remax-347721",
-          "portal": "inmueblesconlupa",
-          "titulo": "Casa en venta en Baruta, Miranda — $240.000"
         }
       ]
     },
@@ -12893,6 +12721,30 @@
           "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/distrito-capital/casa-duplex-en-venta-en-alto-prado-distrito-metropolitano-rentahouse-27-3718",
           "portal": "inmueblesconlupa",
           "titulo": "Casa en venta en Alto Prado, Distrito Capital — $335.000"
+        }
+      ]
+    },
+    {
+      "titulo": "Local Comercial en venta en Distrito Capital — $750.000",
+      "precio_texto": "$750.000",
+      "habitaciones": null,
+      "banos": 4,
+      "metros_cuadrados": 1753,
+      "tipo": "Local comercial",
+      "ubicacion": "",
+      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-edificio-en-venta-en-las-mercedes-zulia-rentahouse-25-12821",
+      "portal_principal": "inmueblesconlupa",
+      "total_publicaciones_encontradas": 2,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-edificio-en-venta-en-las-mercedes-zulia-rentahouse-25-12821",
+          "portal": "inmueblesconlupa",
+          "titulo": "Local Comercial en venta en Distrito Capital — $750.000"
+        },
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-local-comercial-en-venta-en-parroquia-altagracia-distrito-metropolitan-rentahouse-25-14373",
+          "portal": "inmueblesconlupa",
+          "titulo": "Local Comercial en venta en Distrito Capital — $750.000"
         }
       ]
     },
@@ -13277,54 +13129,6 @@
           "enlace": "https://zonaven.com/alquiler/alquiler-apto-en-la-urbina-calle-15-miranda-d761cf",
           "portal": "zonaven",
           "titulo": "Apartamento 2 hab en Sucre — $500/mes | ZonaVen"
-        }
-      ]
-    },
-    {
-      "titulo": "Apartamento en alquiler en Baruta, Miranda — $1.100/mes",
-      "precio_texto": "$1.100",
-      "habitaciones": 2,
-      "banos": 1,
-      "metros_cuadrados": 59,
-      "tipo": "Apartamento",
-      "ubicacion": "Baruta, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/miranda/santa-fe-apartamento-en-alquiler-remax-341880",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 2,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/miranda/santa-fe-apartamento-en-alquiler-remax-341880",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en alquiler en Baruta, Miranda — $1.100/mes"
-        },
-        {
-          "enlace": "https://zonaven.com/alquiler/casa-quinta-en-alquiler-urbanizacion-valle-arriba-guatire-jam-miranda-30f256",
-          "portal": "zonaven",
-          "titulo": "Casa 3 hab en Baruta — $1.100/mes | ZonaVen"
-        }
-      ]
-    },
-    {
-      "titulo": "Apartamento en venta en El Hatillo, Miranda — $297.000",
-      "precio_texto": "$297.000",
-      "habitaciones": 4,
-      "banos": 4,
-      "metros_cuadrados": 180,
-      "tipo": "Apartamento",
-      "ubicacion": "El Hatillo, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-6d-remax-347802",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 2,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-6d-remax-347802",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en El Hatillo, Miranda — $297.000"
-        },
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-6a-remax-347793",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en El Hatillo, Miranda — $297.000"
         }
       ]
     },
@@ -17143,25 +16947,6 @@
           "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-1-nivel-en-venta-en-colinas-de-bello-monte-distrito-metropolitano-rentahouse-27-6863",
           "portal": "inmueblesconlupa",
           "titulo": "Apartamento en venta en Chacao, Miranda — $250.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Apartamento en alquiler en El Rosal, Miranda — $2.800/mes",
-      "precio_texto": "$2.800",
-      "habitaciones": 2,
-      "banos": 2,
-      "metros_cuadrados": 80,
-      "tipo": "Apartamento",
-      "ubicacion": "El Rosal, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/miranda/apartamento-1-nivel-en-alquiler-en-el-rosal-distrito-metropolitano-rentahouse-27-6864",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/miranda/apartamento-1-nivel-en-alquiler-en-el-rosal-distrito-metropolitano-rentahouse-27-6864",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en alquiler en El Rosal, Miranda — $2.800/mes"
         }
       ]
     },
@@ -21213,6 +20998,25 @@
       ]
     },
     {
+      "titulo": "Apartamento en venta en Miranda, Distrito Capital — $245.000",
+      "precio_texto": "$245.000",
+      "habitaciones": 3,
+      "banos": 2,
+      "metros_cuadrados": 225,
+      "tipo": "Apartamento",
+      "ubicacion": "Miranda, Distrito Capital",
+      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-miranda-distrito-metropolitano-rentahouse-27-424",
+      "portal_principal": "inmueblesconlupa",
+      "total_publicaciones_encontradas": 1,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-miranda-distrito-metropolitano-rentahouse-27-424",
+          "portal": "inmueblesconlupa",
+          "titulo": "Apartamento en venta en Miranda, Distrito Capital — $245.000"
+        }
+      ]
+    },
+    {
       "titulo": "Apartamento en venta en Distrito Capital — $199.000",
       "precio_texto": "$199.000",
       "habitaciones": 3,
@@ -24040,6 +23844,25 @@
           "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/miranda/casa-en-venta-en-santa-paula-para-remodelar-calle-cerrada-vista-panoramica-MLV-1013400946",
           "portal": "inmueblesconlupa",
           "titulo": "Casa en venta en Santa Paula, Miranda — $400.000"
+        }
+      ]
+    },
+    {
+      "titulo": "Apartamento en venta en El Hatillo, Miranda — $245.000",
+      "precio_texto": "$245.000",
+      "habitaciones": 5,
+      "banos": 5,
+      "metros_cuadrados": 230,
+      "tipo": "Apartamento",
+      "ubicacion": "El Hatillo, Miranda",
+      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-los-naranjos-del-cafetal-distrito-metropolitano-rentahouse-26-17823",
+      "portal_principal": "inmueblesconlupa",
+      "total_publicaciones_encontradas": 1,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-los-naranjos-del-cafetal-distrito-metropolitano-rentahouse-26-17823",
+          "portal": "inmueblesconlupa",
+          "titulo": "Apartamento en venta en El Hatillo, Miranda — $245.000"
         }
       ]
     },
@@ -27958,6 +27781,25 @@
       ]
     },
     {
+      "titulo": "Casa en venta en San Rafael, Distrito Capital — $47.000",
+      "precio_texto": "$47.000",
+      "habitaciones": 4,
+      "banos": 4,
+      "metros_cuadrados": 350,
+      "tipo": "Casa",
+      "ubicacion": "San Rafael, Distrito Capital",
+      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/distrito-capital/casa-1-nivel-en-venta-en-san-rafael-zulia-rentahouse-27-4273",
+      "portal_principal": "inmueblesconlupa",
+      "total_publicaciones_encontradas": 1,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/distrito-capital/casa-1-nivel-en-venta-en-san-rafael-zulia-rentahouse-27-4273",
+          "portal": "inmueblesconlupa",
+          "titulo": "Casa en venta en San Rafael, Distrito Capital — $47.000"
+        }
+      ]
+    },
+    {
       "titulo": "Apartamento en venta en El Hatillo, Miranda — $159.000",
       "precio_texto": "$159.000",
       "habitaciones": 2,
@@ -28258,6 +28100,25 @@
           "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-1-nivel-en-venta-en-el-paraiso-distrito-metropolitano-rentahouse-27-6773",
           "portal": "inmueblesconlupa",
           "titulo": "Apartamento en venta en El Paraiso, Distrito Capital"
+        }
+      ]
+    },
+    {
+      "titulo": "Casa en venta en Lomas de La Trinidad, Miranda — $240.000",
+      "precio_texto": "$240.000",
+      "habitaciones": 4,
+      "banos": 4,
+      "metros_cuadrados": 200,
+      "tipo": "Casa",
+      "ubicacion": "Lomas de La Trinidad, Miranda",
+      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/miranda/casa-1-nivel-en-venta-en-lomas-de-la-trinidad-distrito-metropolitano-rentahouse-27-6777",
+      "portal_principal": "inmueblesconlupa",
+      "total_publicaciones_encontradas": 1,
+      "todos_los_anuncios": [
+        {
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/miranda/casa-1-nivel-en-venta-en-lomas-de-la-trinidad-distrito-metropolitano-rentahouse-27-6777",
+          "portal": "inmueblesconlupa",
+          "titulo": "Casa en venta en Lomas de La Trinidad, Miranda — $240.000"
         }
       ]
     },
@@ -37458,876 +37319,21 @@
       ]
     },
     {
-      "titulo": "Galpón en venta en Mariche, Miranda — $430.000",
-      "precio_texto": "$430.000",
-      "habitaciones": null,
-      "banos": 6,
-      "metros_cuadrados": 1600,
-      "tipo": "Galpon",
-      "ubicacion": "",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/galpon/venta/miranda/comercial-galpon-deposito-en-venta-en-mariche-distrito-metropolitano-rentahouse-27-2927",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/galpon/venta/miranda/comercial-galpon-deposito-en-venta-en-mariche-distrito-metropolitano-rentahouse-27-2927",
-          "portal": "inmueblesconlupa",
-          "titulo": "Galpón en venta en Mariche, Miranda — $430.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Apartamento en venta en Alto Hatillo, Miranda — $252.000",
-      "precio_texto": "$252.000",
-      "habitaciones": 3,
-      "banos": 2,
-      "metros_cuadrados": 180,
-      "tipo": "Apartamento",
-      "ubicacion": "Alto Hatillo, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-1-nivel-en-venta-en-alto-hatillo-distrito-metropolitano-rentahouse-25-626",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-1-nivel-en-venta-en-alto-hatillo-distrito-metropolitano-rentahouse-25-626",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Alto Hatillo, Miranda — $252.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Apartamento en venta en Zamora, Miranda — $75.000",
-      "precio_texto": "$75.000",
-      "habitaciones": 3,
-      "banos": 2,
-      "metros_cuadrados": 98,
-      "tipo": "Apartamento",
-      "ubicacion": "Zamora, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-en-venta-urbanizacion-terrazas-altos-de-san-pedro-remax-347634",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-en-venta-urbanizacion-terrazas-altos-de-san-pedro-remax-347634",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Zamora, Miranda — $75.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Casa en venta en El Hatillo, Miranda — $850.000",
-      "precio_texto": "$850.000",
+      "titulo": "Casa en alquiler en Los Samanes, Miranda — $6.500/mes",
+      "precio_texto": "$6.500",
       "habitaciones": 4,
       "banos": 5,
-      "metros_cuadrados": 278,
+      "metros_cuadrados": 500,
       "tipo": "Casa",
-      "ubicacion": "El Hatillo, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/miranda/lujoso-town-house-en-la-hatillana-remax-345213",
+      "ubicacion": "Los Samanes, Miranda",
+      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/casa/alquiler/miranda/casa-duplex-en-alquiler-en-los-samanes-distrito-metropolitano-rentahouse-27-6726",
       "portal_principal": "inmueblesconlupa",
       "total_publicaciones_encontradas": 1,
       "todos_los_anuncios": [
         {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/miranda/lujoso-town-house-en-la-hatillana-remax-345213",
+          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/alquiler/miranda/casa-duplex-en-alquiler-en-los-samanes-distrito-metropolitano-rentahouse-27-6726",
           "portal": "inmueblesconlupa",
-          "titulo": "Casa en venta en El Hatillo, Miranda — $850.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Apartamento en alquiler en El Hatillo, Miranda — $1.200/mes",
-      "precio_texto": "$1.200",
-      "habitaciones": 2,
-      "banos": 2,
-      "metros_cuadrados": 71,
-      "tipo": "Apartamento",
-      "ubicacion": "El Hatillo, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/miranda/apartamento-en-alquiler-en-lomas-del-sol-2615002-josmary-sanjuan-MLV-988607584",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/miranda/apartamento-en-alquiler-en-lomas-del-sol-2615002-josmary-sanjuan-MLV-988607584",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en alquiler en El Hatillo, Miranda — $1.200/mes"
-        }
-      ]
-    },
-    {
-      "titulo": "Apartamento en venta en Lomas del Sol, Miranda — $220.000",
-      "precio_texto": "$220.000",
-      "habitaciones": 2,
-      "banos": 2,
-      "metros_cuadrados": 71,
-      "tipo": "Apartamento",
-      "ubicacion": "Lomas del Sol, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-en-alquiler-en-lomas-del-sol-2615002-josmary-sanjuan-MLV-988607584",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-en-alquiler-en-lomas-del-sol-2615002-josmary-sanjuan-MLV-988607584",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Lomas del Sol, Miranda — $220.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Apartamento en venta en El Hatillo, Miranda — $217.000",
-      "precio_texto": "$217.000",
-      "habitaciones": 4,
-      "banos": 4,
-      "metros_cuadrados": 180,
-      "tipo": "Apartamento",
-      "ubicacion": "El Hatillo, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-remax-347791",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-remax-347791",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en El Hatillo, Miranda — $217.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Apartamento en venta en Chacao, Miranda — $305.000",
-      "precio_texto": "$305.000",
-      "habitaciones": 3,
-      "banos": 2,
-      "metros_cuadrados": 180,
-      "tipo": "Apartamento",
-      "ubicacion": "Chacao, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-en-venta-urb-la-castellana-remax-347871",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-en-venta-urb-la-castellana-remax-347871",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Chacao, Miranda — $305.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Casa en venta en El Hatillo, Miranda — $1.700.000",
-      "precio_texto": "$1.700.000",
-      "habitaciones": 4,
-      "banos": 6,
-      "metros_cuadrados": 1400,
-      "tipo": "Casa",
-      "ubicacion": "El Hatillo, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/miranda/proyecto-casa-de-lujo-la-boyera-1400m-entrega-diciembre-2026-remax-347808",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/miranda/proyecto-casa-de-lujo-la-boyera-1400m-entrega-diciembre-2026-remax-347808",
-          "portal": "inmueblesconlupa",
-          "titulo": "Casa en venta en El Hatillo, Miranda — $1.700.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Apartamento en venta en Sucre, Miranda — $70.000",
-      "precio_texto": "$70.000",
-      "habitaciones": 1,
-      "banos": 1,
-      "metros_cuadrados": 46,
-      "tipo": "Apartamento",
-      "ubicacion": "Sucre, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-tipo-estudio-en-venta-edificio-sismo-resistente-remax-347762",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-tipo-estudio-en-venta-edificio-sismo-resistente-remax-347762",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Sucre, Miranda — $70.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Apartamento en venta en Chacao, Miranda — $145.000",
-      "precio_texto": "$145.000",
-      "habitaciones": 1,
-      "banos": 2,
-      "metros_cuadrados": 65,
-      "tipo": "Apartamento",
-      "ubicacion": "Chacao, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-en-venta-los-chorros-remax-347882",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-en-venta-los-chorros-remax-347882",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Chacao, Miranda — $145.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Apartamento en venta en Baruta, Miranda — $170.000",
-      "precio_texto": "$170.000",
-      "habitaciones": 3,
-      "banos": 2,
-      "metros_cuadrados": 129,
-      "tipo": "Apartamento",
-      "ubicacion": "Baruta, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/amplio-apartamento-en-venta-remax-346821",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/amplio-apartamento-en-venta-remax-346821",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Baruta, Miranda — $170.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Apartamento en alquiler en El Hatillo, Miranda — $850/mes",
-      "precio_texto": "$850",
-      "habitaciones": 1,
-      "banos": 2,
-      "metros_cuadrados": 48,
-      "tipo": "Apartamento",
-      "ubicacion": "El Hatillo, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/miranda/el-cigarral-apartamento-en-alquiler-remax-341777",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/miranda/el-cigarral-apartamento-en-alquiler-remax-341777",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en alquiler en El Hatillo, Miranda — $850/mes"
-        }
-      ]
-    },
-    {
-      "titulo": "Apartamento en venta en Distrito Capital — $720.000",
-      "precio_texto": "$720.000",
-      "habitaciones": 4,
-      "banos": 3,
-      "metros_cuadrados": 305,
-      "tipo": "Apartamento",
-      "ubicacion": "",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-planta-baja-en-venta-en-el-country-club-caracas-remax-340473",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-planta-baja-en-venta-en-el-country-club-caracas-remax-340473",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Distrito Capital — $720.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Casa en venta en Baruta, Miranda — $750.000",
-      "precio_texto": "$750.000",
-      "habitaciones": 6,
-      "banos": 6,
-      "metros_cuadrados": 750,
-      "tipo": "Casa",
-      "ubicacion": "Baruta, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/miranda/mucho-mas-que-una-quinta-el-escenario-perfecto-para-sus-mejores-momentos-familia-remax-347648",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/miranda/mucho-mas-que-una-quinta-el-escenario-perfecto-para-sus-mejores-momentos-familia-remax-347648",
-          "portal": "inmueblesconlupa",
-          "titulo": "Casa en venta en Baruta, Miranda — $750.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Casa en venta en El Hatillo, Miranda — $98.000",
-      "precio_texto": "$98.000",
-      "habitaciones": 4,
-      "banos": 2,
-      "metros_cuadrados": 260,
-      "tipo": "Casa",
-      "ubicacion": "El Hatillo, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/miranda/casa-altos-de-sabaneta-1374-25-terreno-venta-remax-347833",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/miranda/casa-altos-de-sabaneta-1374-25-terreno-venta-remax-347833",
-          "portal": "inmueblesconlupa",
-          "titulo": "Casa en venta en El Hatillo, Miranda — $98.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Apartamento en venta en Distrito Capital — $59.800",
-      "precio_texto": "$59.800",
-      "habitaciones": 2,
-      "banos": 1,
-      "metros_cuadrados": 108,
-      "tipo": "Apartamento",
-      "ubicacion": "",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/venta-apartamento-en-san-martin-remax-347878",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/venta-apartamento-en-san-martin-remax-347878",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Distrito Capital — $59.800"
-        }
-      ]
-    },
-    {
-      "titulo": "Casa en venta en Sucre, Miranda — $360.000",
-      "precio_texto": "$360.000",
-      "habitaciones": 5,
-      "banos": 5,
-      "metros_cuadrados": 444,
-      "tipo": "Casa",
-      "ubicacion": "Sucre, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/miranda/casa-macaracuay-444m2-remax-347587",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/miranda/casa-macaracuay-444m2-remax-347587",
-          "portal": "inmueblesconlupa",
-          "titulo": "Casa en venta en Sucre, Miranda — $360.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Apartamento en alquiler en Sucre, Miranda — $580/mes",
-      "precio_texto": "$580",
-      "habitaciones": 3,
-      "banos": 2,
-      "metros_cuadrados": 74,
-      "tipo": "Apartamento",
-      "ubicacion": "Sucre, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/miranda/apartamento-3-hab-en-alquiler-via-macaracuay-colinas-de-la-california-remax-347338",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/miranda/apartamento-3-hab-en-alquiler-via-macaracuay-colinas-de-la-california-remax-347338",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en alquiler en Sucre, Miranda — $580/mes"
-        }
-      ]
-    },
-    {
-      "titulo": "Apartamento en alquiler en Baruta, Miranda — $100/mes",
-      "precio_texto": "$100",
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": 200,
-      "tipo": "Apartamento",
-      "ubicacion": "Baruta, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/miranda/alquilo-apartamento-airbnb-en-las-mercedes-duplex-remax-347857",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/miranda/alquilo-apartamento-airbnb-en-las-mercedes-duplex-remax-347857",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en alquiler en Baruta, Miranda — $100/mes"
-        }
-      ]
-    },
-    {
-      "titulo": "Apartamento en alquiler en El Hatillo, Miranda — $800/mes",
-      "precio_texto": "$800",
-      "habitaciones": 1,
-      "banos": 2,
-      "metros_cuadrados": 58,
-      "tipo": "Apartamento",
-      "ubicacion": "El Hatillo, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/miranda/apartamento-en-la-boyera-remax-347660",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/miranda/apartamento-en-la-boyera-remax-347660",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en alquiler en El Hatillo, Miranda — $800/mes"
-        }
-      ]
-    },
-    {
-      "titulo": "Apartamento en venta en Baruta, Miranda — $750.000",
-      "precio_texto": "$750.000",
-      "habitaciones": 4,
-      "banos": 4,
-      "metros_cuadrados": 245,
-      "tipo": "Apartamento",
-      "ubicacion": "Baruta, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apto-chulavista-245mts-mas-terraza-venta-remax-347849",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apto-chulavista-245mts-mas-terraza-venta-remax-347849",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Baruta, Miranda — $750.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Apartamento en alquiler en Baruta, Miranda — $600/mes",
-      "precio_texto": "$600",
-      "habitaciones": 3,
-      "banos": 2,
-      "metros_cuadrados": 80,
-      "tipo": "Apartamento",
-      "ubicacion": "Baruta, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/miranda/apartamento-en-alquiler-la-bonita-remax-347525",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/miranda/apartamento-en-alquiler-la-bonita-remax-347525",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en alquiler en Baruta, Miranda — $600/mes"
-        }
-      ]
-    },
-    {
-      "titulo": "Apartamento en venta en Los Salias, Miranda — $105.000",
-      "precio_texto": "$105.000",
-      "habitaciones": 3,
-      "banos": 2,
-      "metros_cuadrados": 114,
-      "tipo": "Apartamento",
-      "ubicacion": "Los Salias, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-en-venta-res-alborada-el-picacho-san-antonio-de-los-altos-MLV-997552698",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-en-venta-res-alborada-el-picacho-san-antonio-de-los-altos-MLV-997552698",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Los Salias, Miranda — $105.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Apartamento en venta en Chacao, Miranda — $180.000",
-      "precio_texto": "$180.000",
-      "habitaciones": 4,
-      "banos": 2,
-      "metros_cuadrados": 105,
-      "tipo": "Apartamento",
-      "ubicacion": "Chacao, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/ofrezco-venta-apartamento-105mt2-altamira-chacao-remax-347683",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/ofrezco-venta-apartamento-105mt2-altamira-chacao-remax-347683",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Chacao, Miranda — $180.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Apartamento en venta en El Hatillo, Miranda — $279.000",
-      "precio_texto": "$279.000",
-      "habitaciones": 4,
-      "banos": 4,
-      "metros_cuadrados": 180,
-      "tipo": "Apartamento",
-      "ubicacion": "El Hatillo, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-4a-remax-347788",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-4a-remax-347788",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en El Hatillo, Miranda — $279.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Apartamento en venta en Plaza, Miranda — $42.000",
-      "precio_texto": "$42.000",
-      "habitaciones": 3,
-      "banos": 2,
-      "metros_cuadrados": 74,
-      "tipo": "Apartamento",
-      "ubicacion": "Plaza, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/bello-apartamento-en-venta-en-urbanizacion-nueva-casarapa-guarenas-remax-347704",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/bello-apartamento-en-venta-en-urbanizacion-nueva-casarapa-guarenas-remax-347704",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Plaza, Miranda — $42.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Casa en venta en El Hatillo, Miranda — $690.000",
-      "precio_texto": "$690.000",
-      "habitaciones": 6,
-      "banos": 5,
-      "metros_cuadrados": 400,
-      "tipo": "Casa",
-      "ubicacion": "El Hatillo, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/miranda/espectacular-casa-en-los-naranjos-remax-345504",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/miranda/espectacular-casa-en-los-naranjos-remax-345504",
-          "portal": "inmueblesconlupa",
-          "titulo": "Casa en venta en El Hatillo, Miranda — $690.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Apartamento en venta en El Hatillo, Miranda — $261.000",
-      "precio_texto": "$261.000",
-      "habitaciones": 4,
-      "banos": 4,
-      "metros_cuadrados": 180,
-      "tipo": "Apartamento",
-      "ubicacion": "El Hatillo, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/alto-hatillo-apartamento-2d-obra-gris-financiado-180m-4h-5b-2p-1m-remax-347783",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/alto-hatillo-apartamento-2d-obra-gris-financiado-180m-4h-5b-2p-1m-remax-347783",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en El Hatillo, Miranda — $261.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Oficina en alquiler en Baruta, Miranda — $2.200/mes",
-      "precio_texto": "$2.200",
-      "habitaciones": null,
-      "banos": 2,
-      "metros_cuadrados": 154,
-      "tipo": "Oficina",
-      "ubicacion": "Baruta, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/miranda/impulsa-tu-empresa-en-esta-amplia-oficina-en-alquiler-en-las-mercedes-baruta-century21-1179834",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/miranda/impulsa-tu-empresa-en-esta-amplia-oficina-en-alquiler-en-las-mercedes-baruta-century21-1179834",
-          "portal": "inmueblesconlupa",
-          "titulo": "Oficina en alquiler en Baruta, Miranda — $2.200/mes"
-        }
-      ]
-    },
-    {
-      "titulo": "Penthouse en alquiler en Los Salias, Miranda — $1.200/mes",
-      "precio_texto": "$1.200",
-      "habitaciones": 4,
-      "banos": 3,
-      "metros_cuadrados": 248,
-      "tipo": "Penthouse",
-      "ubicacion": "Los Salias, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/penthouse/alquiler/miranda/alquiler-de-pent-house-semi-amoblado-en-urb-las-minas-san-antonio-de-los-altos-century21-1255632",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/penthouse/alquiler/miranda/alquiler-de-pent-house-semi-amoblado-en-urb-las-minas-san-antonio-de-los-altos-century21-1255632",
-          "portal": "inmueblesconlupa",
-          "titulo": "Penthouse en alquiler en Los Salias, Miranda — $1.200/mes"
-        }
-      ]
-    },
-    {
-      "titulo": "Apartamento en venta en Chacao, Miranda — $295.000",
-      "precio_texto": "$295.000",
-      "habitaciones": 2,
-      "banos": 2,
-      "metros_cuadrados": 105,
-      "tipo": "Apartamento",
-      "ubicacion": "Chacao, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-de-105mts-en-venta-el-la-castellana-century21-1256079",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-de-105mts-en-venta-el-la-castellana-century21-1256079",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Chacao, Miranda — $295.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Casa en venta en El Hatillo, Miranda — $450.000",
-      "precio_texto": "$450.000",
-      "habitaciones": 1,
-      "banos": 1,
-      "metros_cuadrados": 458,
-      "tipo": "Casa",
-      "ubicacion": "El Hatillo, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/miranda/tu-refugio-sonado-en-el-hatillo-espacios-que-inspiran-century21-913187",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/miranda/tu-refugio-sonado-en-el-hatillo-espacios-que-inspiran-century21-913187",
-          "portal": "inmueblesconlupa",
-          "titulo": "Casa en venta en El Hatillo, Miranda — $450.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Terreno en venta en Plaza, Miranda — $65.000",
-      "precio_texto": "$65.000",
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": 1227,
-      "tipo": "Terreno",
-      "ubicacion": "Plaza, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/terreno/venta/miranda/excelente-parcela-industrial-en-venta-guarenas-century21-1239600",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/terreno/venta/miranda/excelente-parcela-industrial-en-venta-guarenas-century21-1239600",
-          "portal": "inmueblesconlupa",
-          "titulo": "Terreno en venta en Plaza, Miranda — $65.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Oficina en venta en Sucre, Miranda — $47.000",
-      "precio_texto": "$47.000",
-      "habitaciones": null,
-      "banos": 1,
-      "metros_cuadrados": 56,
-      "tipo": "Oficina",
-      "ubicacion": "Sucre, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/oficina/venta/miranda/oficina-en-venta-en-av-romulo-gallegos-los-dos-caminos-frente-iglesia-claret-century21-1082604",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/venta/miranda/oficina-en-venta-en-av-romulo-gallegos-los-dos-caminos-frente-iglesia-claret-century21-1082604",
-          "portal": "inmueblesconlupa",
-          "titulo": "Oficina en venta en Sucre, Miranda — $47.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Local Comercial en venta en El Rosal, Miranda — $300.100",
-      "precio_texto": "$300.100",
-      "habitaciones": null,
-      "banos": 3,
-      "metros_cuadrados": 144,
-      "tipo": "Local comercial",
-      "ubicacion": "El Rosal, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/miranda/comercial-local-comercial-en-venta-en-el-rosal-distrito-metropolitano-rentahouse-25-17297",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/miranda/comercial-local-comercial-en-venta-en-el-rosal-distrito-metropolitano-rentahouse-25-17297",
-          "portal": "inmueblesconlupa",
-          "titulo": "Local Comercial en venta en El Rosal, Miranda — $300.100"
-        }
-      ]
-    },
-    {
-      "titulo": "Casa en venta en Monte Elena, Miranda — $700.000",
-      "precio_texto": "$700.000",
-      "habitaciones": 5,
-      "banos": 5,
-      "metros_cuadrados": 310,
-      "tipo": "Casa",
-      "ubicacion": "Monte Elena, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/miranda/casa-duplex-en-venta-en-monte-elena-distrito-metropolitano-rentahouse-26-15134",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/miranda/casa-duplex-en-venta-en-monte-elena-distrito-metropolitano-rentahouse-26-15134",
-          "portal": "inmueblesconlupa",
-          "titulo": "Casa en venta en Monte Elena, Miranda — $700.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Apartamento en venta en La Boyera, Miranda — $105.000",
-      "precio_texto": "$105.000",
-      "habitaciones": 3,
-      "banos": 2,
-      "metros_cuadrados": 88,
-      "tipo": "Apartamento",
-      "ubicacion": "La Boyera, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-en-venta-la-boyera-mls-26-17087-sag-MLV-1013736194",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-en-venta-la-boyera-mls-26-17087-sag-MLV-1013736194",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en La Boyera, Miranda — $105.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Local Comercial en venta en La Castellana, Miranda — $51.000",
-      "precio_texto": "$51.000",
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": 15,
-      "tipo": "Local comercial",
-      "ubicacion": "La Castellana, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/miranda/comercial-local-comercial-en-venta-en-la-castellana-distrito-metropolitano-rentahouse-26-16770",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/miranda/comercial-local-comercial-en-venta-en-la-castellana-distrito-metropolitano-rentahouse-26-16770",
-          "portal": "inmueblesconlupa",
-          "titulo": "Local Comercial en venta en La Castellana, Miranda — $51.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Casa en venta en Baruta, Miranda — $950.000",
-      "precio_texto": "$950.000",
-      "habitaciones": 6,
-      "banos": 6,
-      "metros_cuadrados": 740,
-      "tipo": "Casa",
-      "ubicacion": "Baruta, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/miranda/casa-duplex-en-venta-en-la-lagunita-country-club-distrito-metropolitano-rentahouse-26-18052",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/miranda/casa-duplex-en-venta-en-la-lagunita-country-club-distrito-metropolitano-rentahouse-26-18052",
-          "portal": "inmueblesconlupa",
-          "titulo": "Casa en venta en Baruta, Miranda — $950.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Apartamento en venta en Chacao, Miranda — $195.000",
-      "precio_texto": "$195.000",
-      "habitaciones": 3,
-      "banos": 2,
-      "metros_cuadrados": 163,
-      "tipo": "Apartamento",
-      "ubicacion": "Chacao, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-1-nivel-en-venta-en-los-palos-grandes-distrito-metropolitano-rentahouse-26-20768",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-1-nivel-en-venta-en-los-palos-grandes-distrito-metropolitano-rentahouse-26-20768",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Chacao, Miranda — $195.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Apartamento en venta en Baruta, Miranda — $120.000",
-      "precio_texto": "$120.000",
-      "habitaciones": 3,
-      "banos": 3,
-      "metros_cuadrados": 119,
-      "tipo": "Apartamento",
-      "ubicacion": "Baruta, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-1-nivel-en-venta-en-colinas-de-bello-monte-distrito-metropolitano-rentahouse-26-19778",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-1-nivel-en-venta-en-colinas-de-bello-monte-distrito-metropolitano-rentahouse-26-19778",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en venta en Baruta, Miranda — $120.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Inmueble en venta en El Llanito, Miranda — $280.000",
-      "precio_texto": "$280.000",
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": null,
-      "tipo": "Inmueble",
-      "ubicacion": "El Llanito, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/otro/venta/miranda/negocios-y-empresas-alimentos-y-bebidas-en-venta-en-el-llanito-distrito-metropol-rentahouse-26-20215",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/otro/venta/miranda/negocios-y-empresas-alimentos-y-bebidas-en-venta-en-el-llanito-distrito-metropol-rentahouse-26-20215",
-          "portal": "inmueblesconlupa",
-          "titulo": "Inmueble en venta en El Llanito, Miranda — $280.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Apartamento en alquiler en Baruta, Miranda — $1.200/mes",
-      "precio_texto": "$1.200",
-      "habitaciones": 2,
-      "banos": 2,
-      "metros_cuadrados": 64,
-      "tipo": "Apartamento",
-      "ubicacion": "Baruta, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/miranda/apartamento-1-nivel-en-alquiler-en-los-naranjos-de-las-mercedes-distrito-metropo-rentahouse-26-21111",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/miranda/apartamento-1-nivel-en-alquiler-en-los-naranjos-de-las-mercedes-distrito-metropo-rentahouse-26-21111",
-          "portal": "inmueblesconlupa",
-          "titulo": "Apartamento en alquiler en Baruta, Miranda — $1.200/mes"
-        }
-      ]
-    },
-    {
-      "titulo": "Casa en venta en Lomas de Bello Monte, Miranda — $550.000",
-      "precio_texto": "$550.000",
-      "habitaciones": 15,
-      "banos": 10,
-      "metros_cuadrados": 1200,
-      "tipo": "Casa",
-      "ubicacion": "Lomas de Bello Monte, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/miranda/casa-multipes-niveles-en-venta-en-lomas-de-bello-monte-distrito-metropolitano-rentahouse-26-22426",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/miranda/casa-multipes-niveles-en-venta-en-lomas-de-bello-monte-distrito-metropolitano-rentahouse-26-22426",
-          "portal": "inmueblesconlupa",
-          "titulo": "Casa en venta en Lomas de Bello Monte, Miranda — $550.000"
-        }
-      ]
-    },
-    {
-      "titulo": "Casa en venta en Oripoto, Miranda — $1.250.000",
-      "precio_texto": "$1.250.000",
-      "habitaciones": 4,
-      "banos": 6,
-      "metros_cuadrados": 658,
-      "tipo": "Casa",
-      "ubicacion": "Oripoto, Miranda",
-      "enlace_principal": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/miranda/casa-duplex-en-venta-en-oripoto-distrito-metropolitano-rentahouse-27-6745",
-      "portal_principal": "inmueblesconlupa",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/miranda/casa-duplex-en-venta-en-oripoto-distrito-metropolitano-rentahouse-27-6745",
-          "portal": "inmueblesconlupa",
-          "titulo": "Casa en venta en Oripoto, Miranda — $1.250.000"
+          "titulo": "Casa en alquiler en Los Samanes, Miranda — $6.500/mes"
         }
       ]
     },
@@ -38922,12 +37928,12 @@
     },
     {
       "titulo": "Apartamento en Aquiler  Mirador de los Campitos I G. 04143054662",
-      "precio_texto": "USD 500",
-      "habitaciones": 3,
+      "precio_texto": "USD 1.100",
+      "habitaciones": 2,
       "banos": 2,
-      "metros_cuadrados": 207,
-      "tipo": "Local",
-      "ubicacion": "Baruta, Miranda",
+      "metros_cuadrados": 80,
+      "tipo": "Apartamento",
+      "ubicacion": "Chacao, Miranda",
       "enlace_principal": "https://bienesonline.ai/es/venezuela/caracas/propiedad/120932-apartamento-en-aquiler-mirador-de-los-campitos-i-g-04143054662",
       "portal_principal": "bienesonline",
       "total_publicaciones_encontradas": 1,
@@ -38955,25 +37961,6 @@
           "enlace": "https://bienesonline.ai/es/venezuela/lecheria/propiedad/68682-en-alquiler-casa-en-el-morro-aguiavillas",
           "portal": "bienesonline",
           "titulo": "EN ALQUILER CASA EN EL MORRO AGUIAVILLAS"
-        }
-      ]
-    },
-    {
-      "titulo": "Apartamento en Alquiler Mirador de los Campitos I G. 04143054662",
-      "precio_texto": "USD 2.000",
-      "habitaciones": 2,
-      "banos": 2,
-      "metros_cuadrados": 97,
-      "tipo": "Apartamento",
-      "ubicacion": "Caracas, Distrito Capital",
-      "enlace_principal": "https://bienesonline.ai/es/venezuela/caracas/propiedad/99431-apartamento-en-alquiler-mirador-de-los-campitos-i-g-04143054662",
-      "portal_principal": "bienesonline",
-      "total_publicaciones_encontradas": 1,
-      "todos_los_anuncios": [
-        {
-          "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/99431-apartamento-en-alquiler-mirador-de-los-campitos-i-g-04143054662",
-          "portal": "bienesonline",
-          "titulo": "Apartamento en Alquiler Mirador de los Campitos I G. 04143054662"
         }
       ]
     },
