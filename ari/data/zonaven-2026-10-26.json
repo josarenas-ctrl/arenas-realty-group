@@ -3,8 +3,8 @@
   "portal": "zonaven",
   "operacion": "todas",
   "url_busqueda": "sitemap-listings-1/2",
-  "scrapeado_en": "2026-10-26T12:54:54.737Z",
-  "total": 1277,
+  "scrapeado_en": "2026-10-26T22:42:18.196Z",
+  "total": 1275,
   "anuncios": [
     {
       "titulo": "Anexo en Guatire — $180/mes | ZonaVen",
@@ -9262,21 +9262,6 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Terreno 1000m² en Los Teques — $15.000 | ZonaVen",
-      "enlace": "https://zonaven.com/venta/colinas-de-carrizal-bella-parcela-miranda-f031e4",
-      "precio_texto": "$15000",
-      "precio_usd": 15000,
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": 1000,
-      "tipo": "Terreno",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Miranda",
-      "portal": "zonaven",
-      "descripcion": "Bella parcela plana con hermosa vista. Ubicada en Zona privada.\nColinas de Carrizal- Sector AVP- Santa Isabel\nServicios de agua, luz, asfalto,\nA solo 2 kilómetros de la carretera panamericana y de Montaña Alta. Y a solo 25 minutos de Caracas\nExcelente lugar para vivir por la tranquilidad, rodeado de vegetación y agradable clima fresco de montaña.\nPoca inversión",
-      "moneda": "USD"
-    },
-    {
       "titulo": "Casa 5 hab en Caracas — $950.000 | ZonaVen",
       "enlace": "https://zonaven.com/venta/ld-casa-en-venta-urb-cerro-verde-caracas-yf-26-2266-distrito-capital-98a081",
       "precio_texto": "$950000",
@@ -11209,21 +11194,6 @@
       "ubicacion": "San Antonio De Los Altos, Miranda",
       "portal": "zonaven",
       "descripcion": "Ideal para inversión o vivienda propia, este apartamento de 132 m² en Res. Trébol Hills, El Picacho, San Antonio de los Altos, ofrece 2 habitaciones, 2 baños, sala-comedor con balcón, cocina empotrada con lavandero y 1 puesto de estacionamiento techado. La residencia cuenta con canchas deportivas, áreas comunes y ascensores operativos. Precio: USD 65,000.",
-      "moneda": "USD"
-    },
-    {
-      "titulo": "Apartamento 3 hab en Cua — $200/mes | ZonaVen",
-      "enlace": "https://zonaven.com/alquiler/apartamento-en-alquiler-residencias-la-foret-cua-edo-miranda-5cdf1e1e",
-      "precio_texto": "$200",
-      "precio_usd": 200,
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": 79,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Miranda",
-      "portal": "zonaven",
-      "descripcion": "Excelente oportunidad de alquiler apartamento súper cómodo",
       "moneda": "USD"
     },
     {
@@ -19163,9 +19133,9 @@
     }
   ],
   "diagnostico": {
-    "urls_encontradas": 1277,
-    "exitos": 1277,
+    "urls_encontradas": 1275,
+    "exitos": 1275,
     "fallos": 0,
-    "con_precio": 1277
+    "con_precio": 1275
   }
 }
