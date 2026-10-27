@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "alquiler",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+alquiler+miranda",
-  "scrapeado_en": "2026-10-27T11:51:01.816Z",
+  "scrapeado_en": "2026-10-27T17:44:47.659Z",
   "total": 100,
   "anuncios": [
     {
@@ -183,17 +183,6 @@
       "ubicacion": "Sucre, Miranda"
     },
     {
-      "titulo": "APARTAMENTO ALQUILER CIUDAD CASARAPA GUARENAS API 67811",
-      "enlace": "https://bienesonline.ai/es/venezuela/guarenas/propiedad/53897-apartamento-alquiler-ciudad-casarapa-guarenas-api-67811",
-      "precio_texto": "USD 300",
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": null,
-      "tipo": "Apartamento",
-      "operacion_detectada": "ALQUILER",
-      "ubicacion": "Guarenas, Miranda"
-    },
-    {
       "titulo": "apartamento alquiler las mercedes tlf 04242129768 rolando Rodríguez",
       "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/33867-apartamento-alquiler-las-mercedes-tlf-04242129768-rolando-rodriguez",
       "precio_texto": "USD 6.500",
@@ -203,6 +192,17 @@
       "tipo": "Apartamento",
       "operacion_detectada": "alquiler",
       "ubicacion": "Baruta, Miranda"
+    },
+    {
+      "titulo": "APARTAMENTO ALQUILER CIUDAD CASARAPA GUARENAS API 67811",
+      "enlace": "https://bienesonline.ai/es/venezuela/guarenas/propiedad/53897-apartamento-alquiler-ciudad-casarapa-guarenas-api-67811",
+      "precio_texto": "USD 300",
+      "habitaciones": null,
+      "banos": null,
+      "metros_cuadrados": null,
+      "tipo": "Apartamento",
+      "operacion_detectada": "ALQUILER",
+      "ubicacion": "Guarenas, Miranda"
     },
     {
       "titulo": "apartamento en alquiler en nueva casarapa tlf  04242129768 rolando rodríguez",

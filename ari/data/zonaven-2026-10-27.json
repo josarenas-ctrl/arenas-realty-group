@@ -3,8 +3,8 @@
   "portal": "zonaven",
   "operacion": "todas",
   "url_busqueda": "sitemap-listings-1/2",
-  "scrapeado_en": "2026-10-27T12:10:36.675Z",
-  "total": 1275,
+  "scrapeado_en": "2026-10-27T18:07:30.430Z",
+  "total": 1274,
   "anuncios": [
     {
       "titulo": "Anexo en Guatire — $180/mes | ZonaVen",
@@ -8224,21 +8224,6 @@
       "ubicacion": "La Guaira",
       "portal": "zonaven",
       "descripcion": "Alquila local comercial de 28.000 m² en el corazón de Maiquetía, Vargas. Ubicado en zona estratégica con alto flujo de clientes, ideal para emprendedores. Espacio versátil con planta baja y mezzanina, en excelentes condiciones. Perfecto para negocios que requieren funcionalidad y comodidad. Alquiler a USD 350. ¡Agenda tu visita hoy!",
-      "moneda": "USD"
-    },
-    {
-      "titulo": "Local 14740m² en La Guaira — $400/mes | ZonaVen",
-      "enlace": "https://zonaven.com/alquiler/alquiler-local-comercial-ubicado-en-maiquetia-edo-la-guaira-la-guaira-13998e",
-      "precio_texto": "$400",
-      "precio_usd": 400,
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": 14740,
-      "tipo": "Local comercial",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "La Guaira",
-      "portal": "zonaven",
-      "descripcion": "Alquila local comercial de 14.740 m² en el Centro Comercial Planeta Sotavento, ubicado en Av. La Armada, lado izquierdo hacia el Aeropuerto de Maiquetía. Ideal para tienda, piso 1, nivel Playa Grande. Precio: USD 400. Negociable: año adelantado o pago semestral. Depósito: 2 meses. Comisión: 1 mes. Gastos de redacción contrato: USD 350.",
       "moneda": "USD"
     },
     {
@@ -19134,8 +19119,8 @@
   ],
   "diagnostico": {
     "urls_encontradas": 1275,
-    "exitos": 1275,
-    "fallos": 0,
-    "con_precio": 1275
+    "exitos": 1274,
+    "fallos": 1,
+    "con_precio": 1274
   }
 }
