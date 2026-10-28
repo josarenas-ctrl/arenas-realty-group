@@ -4,7 +4,6 @@
   "private": true,
   "description": "Arenas Realty Intelligence — scraper y análisis interno de oportunidades para asesores",
   "scripts": {
-    "scrape:mercadolibre": "node scripts/scrape-mercadolibre.js",
     "scrape:bienesonline": "node scripts/scrape-bienesonline.js",
     "scrape:inmueblesconlupa": "node scripts/scrape-inmueblesconlupa.js",
         "scrape:zonaven": "node scripts/scrape-zonaven.js",

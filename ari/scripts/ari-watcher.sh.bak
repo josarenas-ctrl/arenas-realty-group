@@ -1,0 +1,40 @@
+#!/bin/bash
+set -euo pipefail
+LOG_FILE="/var/log/ari-pipeline.log"
+WATCH_DIR="/root/servidor-hermes/"
+PIPELINE="/root/arenas-realty-group/ari/scripts/run-pipeline.sh"
+DEBOUNCE_FILE="/tmp/ari-watcher-lastrun"
+
+log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] [WATCHER] $1" | tee -a "$LOG_FILE"; }
+
+cleanup() {
+    log "Recibida señal de terminación. Cerrando watcher..."
+    kill "$INOTIFY_PID" 2>/dev/null || true
+    exit 0
+}
+trap cleanup SIGTERM SIGINT
+
+log "Iniciando watcher en $WATCH_DIR"
+
+/usr/bin/inotifywait -m -e close_write --format '%w%f' "$WATCH_DIR" | \
+while read -r FILE; do
+    if [[ "$FILE" == *"inmuebles.db"* ]]; then
+        NOW=$(date +%s)
+        LAST_RUN=0
+        [[ -f "$DEBOUNCE_FILE" ]] && LAST_RUN=$(cat "$DEBOUNCE_FILE" 2>/dev/null || echo 0)
+        if (( NOW - LAST_RUN < 5 )); then
+            log "Debounce: ignorando evento repetido para $FILE"
+            continue
+        fi
+        echo "$NOW" > "$DEBOUNCE_FILE"
+        log "Detectado: $FILE"
+        if "$PIPELINE" "$FILE"; then
+            log "Pipeline completado OK"
+        else
+            log "Pipeline terminó con error (código $?)"
+        fi
+    fi
+done &
+
+INOTIFY_PID=$!
+wait "$INOTIFY_PID"

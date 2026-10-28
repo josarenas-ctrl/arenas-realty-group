@@ -41,10 +41,6 @@ jobs:
         working-directory: ari
         run: npm run scrape:mercadopiso
 
-      - name: Correr scraper de Mercado Libre (puede quedar vacío por bloqueo)
-        working-directory: ari
-        run: npm run scrape:mercadolibre
-        continue-on-error: true
 
       - name: Agrupar anuncios duplicados en fichas maestras
         working-directory: ari

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<!-- ari v2.2 — sidebar + dropdowns + live counters -->
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>ARI — Oportunidades para Asesores</title>
+<style>
+  :root {
+    --bg: #f5f6f8;
+    --card-bg: #ffffff;
+    --texto: #1a1a2e;
+    --texto-suave: #6b7280;
+    --borde: #e5e7eb;
+    --verde: #16a34a;
+    --verde-bg: #dcfce7;
+    --amarillo: #b45309;
+    --amarillo-bg: #fef3c7;
+    --rojo: #dc2626;
+    --rojo-bg: #fee2e2;
+    --gris: #6b7280;
+    --gris-bg: #f3f4f6;
+    --acento: #1e3a5f;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    box-sizing: border-box;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--texto);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  /* ── Header ── */
+  header {
+    background: var(--acento);
+    color: #fff;
+    padding: env(safe-area-inset-top, 0px) 16px 14px;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+  }
+  header h1 { font-size: 18px; margin: 12px 0 2px; }
+  header p { margin: 0; font-size: 13px; opacity: 0.8; }
+
+  /* ── Layout ── */
+  .layout { display: flex; min-height: calc(100vh - 80px); }
+  .sidebar {
+    width: 280px; flex: none; background: #fff; border-right: 1px solid var(--borde);
+    padding: 16px; overflow-y: auto; position: sticky; top: 80px; height: calc(100vh - 80px);
+    z-index: 10;
+  }
+  .main-area { flex: 1; min-width: 0; padding: 16px 20px 32px; max-width: 860px; margin: 0 auto; }
+
+  /* ── Semáforo chips (top) ── */
+  .semaforo-row {
+    display: flex; gap: 8px; flex-wrap: wrap; padding: 12px 16px; background: #fff;
+    border-bottom: 1px solid var(--borde); position: sticky; top: 68px; z-index: 9;
+  }
+  .chip {
+    flex: none; padding: 6px 14px; border-radius: 999px; border: 1px solid var(--borde);
+    background: #fff; font-size: 13px; cursor: pointer; white-space: nowrap; transition: all 0.15s;
+  }
+  .chip:hover { border-color: var(--acento); }
+  .chip.activo { background: var(--acento); color: #fff; border-color: var(--acento); }
+
+  /* ── Sidebar filters ── */
+  .sidebar h3 { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--texto-suave); margin: 16px 0 6px; }
+  .sidebar h3:first-child { margin-top: 0; }
+  .sidebar select, .sidebar input {
+    width: 100%; padding: 8px 10px; border: 1px solid var(--borde); border-radius: 6px;
+    font-size: 13px; font-family: inherit; color: var(--texto); background: #fff;
+    transition: border-color 0.15s; outline: none;
+  }
+  .sidebar select:focus, .sidebar input:focus { border-color: var(--acento); box-shadow: 0 0 0 2px rgba(30,58,95,0.1); }
+  .precio-pair { display: flex; gap: 6px; align-items: center; }
+  .precio-pair input { width: 50%; }
+  .precio-pair span { font-size: 13px; color: var(--texto-suave); flex: none; }
+  .btn-reset {
+    width: 100%; margin-top: 16px; padding: 8px; border: 1px solid var(--borde);
+    border-radius: 6px; background: #fff; font-size: 13px; cursor: pointer; color: var(--texto-suave);
+    transition: all 0.15s;
+  }
+  .btn-reset:hover { color: var(--rojo); border-color: var(--rojo); }
+
+  /* ── Cards ── */
+  .resumen { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
+  .resumen span { font-size: 12px; padding: 4px 10px; border-radius: 8px; background: var(--gris-bg); color: var(--texto-suave); }
+  .card {
+    background: var(--card-bg); border-radius: 12px; padding: 14px; margin-bottom: 10px;
+    border: 1px solid var(--borde);
+  }
+  .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+  .badge {
+    font-size: 11px; font-weight: 600; padding: 3px 9px; border-radius: 999px; white-space: nowrap;
+  }
+  .badge.verde { background: var(--verde-bg); color: var(--verde); }
+  .badge.amarillo { background: var(--amarillo-bg); color: var(--amarillo); }
+  .badge.rojo { background: var(--rojo-bg); color: var(--rojo); }
+  .badge.sin_datos_suficientes { background: var(--gris-bg); color: var(--gris); }
+  .card h3 { font-size: 15px; margin: 8px 0 4px; line-height: 1.3; }
+  .precio { font-size: 17px; font-weight: 700; color: var(--acento); }
+  .detalle { font-size: 13px; color: var(--texto-suave); margin-top: 4px; }
+  .m2 { font-size: 12px; color: var(--texto-suave); margin-top: 6px; }
+  .m2 strong { color: var(--texto); }
+  .dup { display: inline-block; margin-top: 8px; font-size: 11px; background: #eef2ff; color: #4338ca; padding: 3px 8px; border-radius: 6px; }
+  .acciones { margin-top: 10px; display: flex; gap: 8px; }
+  .acciones a { flex: 1; text-align: center; text-decoration: none; font-size: 13px; padding: 8px; border-radius: 8px; background: var(--acento); color: #fff; }
+  .condicion-tag { display: inline-block; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-left: 6px; }
+  .condicion-tag.impecable { background: #dbeafe; color: #1d4ed8; }
+  .condicion-tag.estandar { background: #f3f4f6; color: #6b7280; }
+  .condicion-tag.por_remodelar { background: #fef3c7; color: #b45309; }
+  .amenities { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
+  .amenity { font-size: 11px; padding: 2px 6px; border-radius: 4px; background: #f0fdf4; color: #166534; }
+  .vacio, .cargando { text-align: center; color: var(--texto-suave); padding: 40px 16px; font-size: 14px; }
+  .result-count { font-size: 12px; color: var(--texto-suave); margin-bottom: 8px; }
+
+  /* ── Mobile ── */
+  @media (max-width: 768px) {
+    .layout { flex-direction: column; }
+    .sidebar {
+      width: 100%; position: relative; top: 0; height: auto; border-right: none;
+      border-bottom: 1px solid var(--borde); padding: 12px 16px;
+    }
+    .sidebar h3 { margin-top: 8px; }
+    .main-area { padding: 12px 12px 32px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="/" style="color:#fff;text-decoration:none;font-size:13px;opacity:0.75;display:inline-block;margin-bottom:4px;">← Arenas Realty Group</a>
+  <h1>ARI — Oportunidades</h1>
+  <p id="subtitulo">Cargando...</p>
+</header>
+
+<div class="semaforo-row" id="filtros-semaforo">
+  <button class="chip activo" data-filtro="todos">Todas</button>
+  <button class="chip" data-filtro="verde">🟢 Gangas</button>
+  <button class="chip" data-filtro="amarillo">🟡 Precio normal</button>
+  <button class="chip" data-filtro="rojo">🔴 Sobrevaloradas</button>
+  <button class="chip" data-filtro="sin_datos_suficientes">⚪ Sin datos</button>
+</div>
+
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <h3>Estado</h3>
+    <select id="sel-estado" autocomplete="off"><option value="todos">Todos los estados</option></select>
+
+    <h3>Operación</h3>
+    <select id="sel-operacion" autocomplete="off"><option value="todos">Venta y alquiler</option></select>
+
+    <h3>Tipo de propiedad</h3>
+    <select id="sel-tipo" autocomplete="off"><option value="todos">Todos los tipos</option></select>
+
+    <h3>Municipio</h3>
+    <select id="sel-municipio" autocomplete="off"><option value="todos">Todos los municipios</option></select>
+
+    <h3>Zona / Urbanización</h3>
+    <select id="sel-zona" autocomplete="off"><option value="todos">Todas las áreas</option></select>
+
+    <h3>Portal de origen</h3>
+    <select id="sel-portal" autocomplete="off"><option value="todos">Todos los portales</option></select>
+
+    <h3>Precio (USD)</h3>
+    <div class="precio-pair">
+      <input type="number" id="precio-min" placeholder="Mín" autocomplete="off">
+      <span>–</span>
+      <input type="number" id="precio-max" placeholder="Máx" autocomplete="off">
+    </div>
+
+    <button class="btn-reset" id="btn-reset">✕ Limpiar filtros</button>
+  </aside>
+
+  <main class="main-area">
+    <div class="resumen" id="resumen"></div>
+    <div class="result-count" id="result-count"></div>
+    <div id="lista" class="cargando">Cargando propiedades...</div>
+  </main>
+</div>
+
+<script>
+  const RUTA_DATOS = "../data/ultimo-analisis.json?v=" + Date.now();
+  let fichasOriginal = [];
+  let filtroSemaforo = "todos";
+
+  const NOMBRES_CONDICION = {
+    impecable: "✨ Impecable",
+    estandar: "🏠 Estándar",
+    por_remodelar: "🔧 Por remodelar",
+  };
+  const NOMBRES_SEMAFORO = {
+    verde: "🟢 Ganga",
+    amarillo: "🟡 Precio de mercado",
+    rojo: "🔴 Sobrevalorada",
+    sin_datos_suficientes: "⚪ Sin datos suficientes",
+  };
+
+  function formatoUSD(numero) {
+    if (numero === null || numero === undefined) return "—";
+    return "USD " + numero.toLocaleString("es-VE");
+  }
+
+  function extraerPrecioNumerico(ficha) {
+    const n = parseInt(String(ficha.precio_texto || "").replace(/[^\d]/g, ""), 10);
+    return isNaN(n) ? null : n;
+  }
+
+  function extraerZona(ficha) {
+    if (ficha.zona) return ficha.zona;
+    if (ficha.ubicacion && ficha.ubicacion.includes(",")) return ficha.ubicacion.split(",")[0].trim();
+    return ficha.ubicacion || null;
+  }
+
+  function extraerEstado(ficha) {
+    if (ficha._estado) return ficha._estado;
+    if (!ficha.ubicacion || !ficha.ubicacion.includes(",")) return null;
+    return ficha.ubicacion.split(",").pop().trim();
+  }
+
+  function extraerOperacion(ficha) {
+    if (ficha.operacion) return ficha.operacion;
+    const t = (ficha.titulo || "").toLowerCase();
+    if (/alquiler/i.test(t)) return "Alquiler";
+    if (/venta/i.test(t)) return "Venta";
+    return null;
+  }
+
+  function extraerPortal(ficha) {
+    return ficha.portal_principal || null;
+  }
+
+  // ── Populate dropdowns with counts ──
+  function populateSelect(id, fichas, getValue, labelTodos) {
+    const sel = document.getElementById(id);
+    const vals = {};
+    fichas.forEach(f => { const v = getValue(f); if (v) vals[v] = (vals[v] || 0) + 1; });
+    const sorted = Object.entries(vals).sort((a,b) => a[0].localeCompare(b[0]));
+    const currentVal = sel.value;
+    sel.innerHTML = `<option value="todos">${labelTodos} (${fichas.length})</option>`;
+    sorted.forEach(([v, c]) => {
+      sel.innerHTML += `<option value="${v}">${v} (${c})</option>`;
+    });
+    if ([...sel.options].some(o => o.value === currentVal)) sel.value = currentVal;
+    else sel.value = "todos";
+  }
+
+  function populateAllSelects(fichas) {
+    populateSelect("sel-estado",     fichas, f => extraerEstado(f),    "Todos los estados");
+    populateSelect("sel-operacion",  fichas, f => extraerOperacion(f), "Venta y alquiler");
+    populateSelect("sel-tipo",       fichas, f => f.tipo,              "Todos los tipos");
+    populateSelect("sel-municipio",  fichas, f => f._municipio,        "Todos los municipios");
+    populateSelect("sel-zona",       fichas, f => extraerZona(f),      "Todas las áreas");
+  }
+
+  function filtrar() {
+    let fichas = fichasOriginal;
+
+    // Semáforo
+    if (filtroSemaforo !== "todos") fichas = fichas.filter(f => f.semaforo === filtroSemaforo);
+
+    // Dropdowns
+    const estado = document.getElementById("sel-estado").value;
+    if (estado !== "todos") fichas = fichas.filter(f => extraerEstado(f) === estado);
+    const operacion = document.getElementById("sel-operacion").value;
+    if (operacion !== "todos") fichas = fichas.filter(f => extraerOperacion(f) === operacion);
+    const tipo = document.getElementById("sel-tipo").value;
+    if (tipo !== "todos") fichas = fichas.filter(f => f.tipo === tipo);
+    const municipio = document.getElementById("sel-municipio").value;
+    if (municipio !== "todos") fichas = fichas.filter(f => f._municipio === municipio);
+    const zona = document.getElementById("sel-zona").value;
+    if (zona !== "todos") fichas = fichas.filter(f => extraerZona(f) === zona);
+
+    // Portal filter
+    const portal = document.getElementById("sel-portal").value;
+    if (portal !== "todos") fichas = fichas.filter(f => f.portal_principal === portal);
+
+    // Precio min/max
+    const pMin = parseInt(document.getElementById("precio-min").value) || null;
+    const pMax = parseInt(document.getElementById("precio-max").value) || null;
+    if (pMin !== null || pMax !== null) {
+      fichas = fichas.filter(f => {
+        const p = extraerPrecioNumerico(f);
+        if (p === null) return false;
+        if (pMin !== null && p < pMin) return false;
+        if (pMax !== null && p > pMax) return false;
+        return true;
+      });
+    }
+
+    // Repopulate dropdowns (show only possible values)
+    populateAllSelects(fichas);
+
+    // Update result count
+    document.getElementById("result-count").textContent = fichas.length + " propiedades";
+
+    // Render cards
+    const lista = document.getElementById("lista");
+    if (fichas.length === 0) {
+      lista.className = "vacio";
+      lista.textContent = "No hay propiedades con estos filtros.";
+      return;
+    }
+    lista.className = "";
+    lista.innerHTML = fichas.map(f => {
+      const specs = [
+        f.habitaciones ? `${f.habitaciones} hab` : null,
+        f.banos ? `${f.banos} baños` : null,
+        f.metros_cuadrados ? `${f.metros_cuadrados} m²` : null,
+      ].filter(Boolean).join(" · ");
+
+      const m2linea = f.precio_m2 && f.promedio_m2_tipo_zona
+        ? `<div class="m2">USD <strong>${f.precio_m2}</strong>/m²${f.m2_estimado ? ' <em style="font-size:0.8em;opacity:0.7">(estimado)</em>' : ''} — promedio de ${f.tipo?.toLowerCase() || "la zona"}: USD ${f.promedio_m2_tipo_zona}/m² (${f.diferencia_vs_promedio_pct > 0 ? "+" : ""}${f.diferencia_vs_promedio_pct}%)</div>`
+        : "";
+
+      const dupLinea = f.total_publicaciones_encontradas > 1
+        ? `<span class="dup">Publicada ${f.total_publicaciones_encontradas} veces</span>` : "";
+
+      const condicionTag = f.condicion && f.condicion !== "estandar"
+        ? `<span class="condicion-tag ${f.condicion}">${NOMBRES_CONDICION[f.condicion] || f.condicion}</span>` : "";
+
+      const amenitiesHtml = f.amenities && f.amenities.length
+        ? `<div class="amenities">${f.amenities.map(a => `<span class="amenity">${a}</span>`).join("")}</div>` : "";
+
+      const contactoHtml = f.contacto?.telefono
+        ? `<a href="https://wa.me/58${f.contacto.telefono}" target="_blank" rel="noopener" style="background:#25D366">📞 WhatsApp</a>` : "";
+
+      return `<div class="card">
+        <div class="card-top">
+          <span class="badge ${f.semaforo}">${NOMBRES_SEMAFORO[f.semaforo] || f.semaforo}</span>
+          ${condicionTag}
+        </div>
+        <h3>${f.titulo}</h3>
+        <div class="precio">${formatoUSD(extraerPrecioNumerico(f))}</div>
+        <div class="detalle">${specs || "Sin specs detalladas"} · ${[extraerZona(f), extraerEstado(f)].filter(Boolean).join(", ") || f.ubicacion || ""}</div>
+        ${m2linea}
+        ${dupLinea}
+        ${amenitiesHtml}
+        <div class="acciones">
+          <a href="${f.enlace_principal}" target="_blank" rel="noopener">Ver publicación</a>
+          ${contactoHtml}
+        </div>
+      </div>`;
+    }).join("");
+  }
+
+  function renderResumen(resumen) {
+    document.getElementById("resumen").innerHTML = `
+      <span>🟢 ${resumen.verde || 0} gangas</span>
+      <span>🟡 ${resumen.amarillo || 0} normales</span>
+      <span>🔴 ${resumen.rojo || 0} sobrevaloradas</span>
+      <span>⚪ ${resumen.sin_datos_suficientes || 0} sin datos</span>
+    `;
+  }
+
+  // ── Event listeners ──
+  document.querySelectorAll("#filtros-semaforo .chip").forEach(chip => {
+    chip.addEventListener("click", () => {
+      filtroSemaforo = chip.dataset.filtro;
+      document.querySelectorAll("#filtros-semaforo .chip").forEach(c => c.classList.remove("activo"));
+      chip.classList.add("activo");
+      filtrar();
+    });
+  });
+
+  document.getElementById("sel-estado").addEventListener("change", filtrar);
+  document.getElementById("sel-operacion").addEventListener("change", filtrar);
+  document.getElementById("sel-tipo").addEventListener("change", filtrar);
+  document.getElementById("sel-municipio").addEventListener("change", filtrar);
+  document.getElementById("sel-zona").addEventListener("change", filtrar);
+
+  let precioTimeout;
+  document.getElementById("precio-min").addEventListener("input", () => {
+    clearTimeout(precioTimeout);
+    precioTimeout = setTimeout(filtrar, 400);
+  });
+  document.getElementById("precio-max").addEventListener("input", () => {
+    clearTimeout(precioTimeout);
+    precioTimeout = setTimeout(filtrar, 400);
+  });
+
+  document.getElementById("btn-reset").addEventListener("click", () => {
+    document.getElementById("sel-estado").value = "todos";
+    document.getElementById("sel-operacion").value = "todos";
+    document.getElementById("sel-tipo").value = "todos";
+    document.getElementById("sel-municipio").value = "todos";
+    document.getElementById("sel-zona").value = "todos";
+    document.getElementById("precio-min").value = "";
+    document.getElementById("precio-max").value = "";
+    filtroSemaforo = "todos";
+    document.querySelectorAll("#filtros-semaforo .chip").forEach(c => c.classList.remove("activo"));
+    document.querySelector("[data-filtro='todos']").classList.add("activo");
+    filtrar();
+  });
+
+  // ── Init ──
+  fetch(RUTA_DATOS)
+    .then(r => { if (!r.ok) throw new Error("No se pudo cargar"); return r.json(); })
+    .then(data => {
+      fichasOriginal = data.fichas || [];
+      document.getElementById("subtitulo").textContent = "Actualizado: " + new Date(data.generado_en).toLocaleString("es-VE");
+      renderResumen(data.resumen || {});
+      populateAllSelects(fichasOriginal);
+
+      // ── OPCIÓN A: FORZAR RESET DE FILTROS AL CARGAR ──
+      filtroSemaforo = "todos";
+      document.querySelectorAll("#filtros-semaforo .chip").forEach(c => c.classList.remove("activo"));
+      document.querySelector('[data-filtro="todos"]').classList.add("activo");
+
+      document.getElementById("sel-estado").value = "todos";
+      document.getElementById("sel-operacion").value = "todos";
+      document.getElementById("sel-tipo").value = "todos";
+      document.getElementById("sel-municipio").value = "todos";
+      document.getElementById("sel-zona").value = "todos";
+      document.getElementById("sel-portal").value = "todos";
+      document.getElementById("precio-min").value = "";
+      document.getElementById("precio-max").value = "";
+
+      filtrar();
+    })
+    .catch(err => {
+      document.getElementById("subtitulo").textContent = "Error al cargar datos";
+      document.getElementById("lista").className = "vacio";
+      document.getElementById("lista").textContent = "No se pudo cargar el análisis. Verifica que exista ari/data/ultimo-analisis.json";
+      console.error(err);
+    });
+</script>
+
+</body>
+</html>
