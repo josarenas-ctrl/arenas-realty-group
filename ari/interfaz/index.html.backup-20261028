@@ -389,45 +389,77 @@
     document.getElementById("sel-tipo").value = "todos";
     document.getElementById("sel-municipio").value = "todos";
     document.getElementById("sel-zona").value = "todos";
+    document.getElementById("sel-portal").value = "todos";
     document.getElementById("precio-min").value = "";
     document.getElementById("precio-max").value = "";
     filtroSemaforo = "todos";
     document.querySelectorAll("#filtros-semaforo .chip").forEach(c => c.classList.remove("activo"));
-    document.querySelector("[data-filtro='todos']").classList.add("activo");
+    document.querySelector('[data-filtro="todos"]').classList.add("activo");
     filtrar();
   });
 
   // ── Init ──
-  fetch(RUTA_DATOS)
-    .then(r => { if (!r.ok) throw new Error("No se pudo cargar"); return r.json(); })
-    .then(data => {
-      fichasOriginal = data.fichas || [];
-      document.getElementById("subtitulo").textContent = "Actualizado: " + new Date(data.generado_en).toLocaleString("es-VE");
-      renderResumen(data.resumen || {});
-      populateAllSelects(fichasOriginal);
+  function resetFiltros() {
+    filtroSemaforo = "todos";
+    document.querySelectorAll("#filtros-semaforo .chip").forEach(c => c.classList.remove("activo"));
+    document.querySelector('[data-filtro="todos"]').classList.add("activo");
 
-      // ── OPCIÓN A: FORZAR RESET DE FILTROS AL CARGAR ──
-      filtroSemaforo = "todos";
-      document.querySelectorAll("#filtros-semaforo .chip").forEach(c => c.classList.remove("activo"));
-      document.querySelector('[data-filtro="todos"]').classList.add("activo");
+    document.getElementById("sel-estado").value = "todos";
+    document.getElementById("sel-operacion").value = "todos";
+    document.getElementById("sel-tipo").value = "todos";
+    document.getElementById("sel-municipio").value = "todos";
+    document.getElementById("sel-zona").value = "todos";
+    document.getElementById("sel-portal").value = "todos";
+    document.getElementById("precio-min").value = "";
+    document.getElementById("precio-max").value = "";
 
-      document.getElementById("sel-estado").value = "todos";
-      document.getElementById("sel-operacion").value = "todos";
-      document.getElementById("sel-tipo").value = "todos";
-      document.getElementById("sel-municipio").value = "todos";
-      document.getElementById("sel-zona").value = "todos";
-      document.getElementById("sel-portal").value = "todos";
-      document.getElementById("precio-min").value = "";
-      document.getElementById("precio-max").value = "";
+    filtrar();
+  }
 
-      filtrar();
-    })
-    .catch(err => {
-      document.getElementById("subtitulo").textContent = "Error al cargar datos";
-      document.getElementById("lista").className = "vacio";
-      document.getElementById("lista").textContent = "No se pudo cargar el análisis. Verifica que exista ari/data/ultimo-analisis.json";
-      console.error(err);
-    });
+  function initDashboard() {
+    fetch(RUTA_DATOS)
+      .then(r => { if (!r.ok) throw new Error("No se pudo cargar"); return r.json(); })
+      .then(data => {
+        fichasOriginal = data.fichas || [];
+        document.getElementById("subtitulo").textContent = "Actualizado: " + new Date(data.generado_en).toLocaleString("es-VE");
+        renderResumen(data.resumen || {});
+        populateAllSelects(fichasOriginal);
+
+        // ── FORZAR RESET DE FILTROS AL CARGAR ──
+        filtroSemaforo = "todos";
+        document.querySelectorAll("#filtros-semaforo .chip").forEach(c => c.classList.remove("activo"));
+        document.querySelector('[data-filtro="todos"]').classList.add("activo");
+
+        document.getElementById("sel-estado").value = "todos";
+        document.getElementById("sel-operacion").value = "todos";
+        document.getElementById("sel-tipo").value = "todos";
+        document.getElementById("sel-municipio").value = "todos";
+        document.getElementById("sel-zona").value = "todos";
+        document.getElementById("sel-portal").value = "todos";
+        document.getElementById("precio-min").value = "";
+        document.getElementById("precio-max").value = "";
+
+        filtrar();
+      })
+      .catch(err => {
+        document.getElementById("subtitulo").textContent = "Error al cargar datos";
+        document.getElementById("lista").className = "vacio";
+        document.getElementById("lista").textContent = "No se pudo cargar el análisis. Verifica que exista ari/data/ultimo-analisis.json";
+        console.error(err);
+      });
+  }
+
+  // ── Manejar bfcache restore (página restaurada desde caché del navegador) ──
+  window.addEventListener("pageshow", (event) => {
+    if (event.persisted) {
+      // Página restaurada desde bfcache: forzar reset de filtros
+      console.log("[ARI] Página restaurada desde bfcache, reiniciando filtros...");
+      setTimeout(resetFiltros, 0);
+    }
+  };
+
+  // Inicialización
+  initDashboard();
 </script>
 
 </body>

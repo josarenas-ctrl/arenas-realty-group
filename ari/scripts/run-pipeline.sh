@@ -26,3 +26,32 @@ npm run ia-dedupe || log "⚠️ IA-Dedupe falló (continuando)"
 log "📊 Análisis..."
 npm run analizar || { log "❌ Falló análisis"; exit 1; }
 log "=== Pipeline completado ==="
+
+# AUTO-PUSH a GitHub (solo pipeline local pushea ultimo-analisis.json)
+cd /root/arenas-realty-group
+git config user.name "ari-bot"
+git config user.email "ari-bot@users.noreply.github.com"
+
+# 1. Preparar y commitear TODOS los archivos generados por pipeline
+git add ari/data/ultimo-analisis.json
+git add ari/data/analisis-*.json 2>/dev/null || true
+git add ari/data/fichas-maestras-*.json 2>/dev/null || true
+
+# 2. Si hay cambios, commitear
+if ! git diff --staged --quiet; then
+    git commit -m "ARI: auto-update from local pipeline $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+    
+    # 3. Pull con rebase y autostash (maneja automáticamente los cambios locales tracked)
+    if git pull --rebase --autostash origin cloudflare-test 2>&1 | tee -a "$LOG_FILE"; then
+        # 4. Push
+        if git push origin cloudflare-test 2>&1 | tee -a "$LOG_FILE"; then
+            log "✅ Push a GitHub completado → Cloudflare Pages deployará automáticamente"
+        else
+            log "❌ Push falló. Revisar credenciales o conflictos."
+        fi
+    else
+        log "❌ Pull --rebase falló. Revisar conflictos."
+    fi
+else
+    log "ℹ️ Sin cambios en datos, no hay push necesario"
+fi
