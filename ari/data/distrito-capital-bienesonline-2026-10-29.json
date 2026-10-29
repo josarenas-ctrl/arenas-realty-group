@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "alquiler",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+alquiler+distrito+capital",
-  "scrapeado_en": "2026-10-29T19:00:37.579Z",
+  "scrapeado_en": "2026-10-29T20:58:20.517Z",
   "total": 100,
   "anuncios": [
     {
@@ -359,6 +359,17 @@
       "ubicacion": "Caracas, Distrito Capital"
     },
     {
+      "titulo": "Apartamento en Alquiler Manzanares G. 04143054662",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/136024-apartamento-en-alquiler-manzanares-g-04143054662",
+      "precio_texto": "USD 800",
+      "habitaciones": 3,
+      "banos": 2,
+      "metros_cuadrados": 91,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
       "titulo": "Apartamento en Alquiler Campo Alegre G. 04143054662",
       "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/123752-apartamento-en-alquiler-campo-alegre-g-04143054662",
       "precio_texto": "USD 2.500",
@@ -592,10 +603,10 @@
     {
       "titulo": "apartamento en alquiler colinas de bello monte tlf  04242129768 rolando rodriguez codg 26-20552",
       "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/112078-apartamento-en-alquiler-colinas-de-bello-monte-tlf-04242129768-rolando-rodriguez-codg-26-20552",
-      "precio_texto": "USD 950",
-      "habitaciones": 3,
-      "banos": 2,
-      "metros_cuadrados": 195,
+      "precio_texto": "USD 1.100",
+      "habitaciones": 2,
+      "banos": 1,
+      "metros_cuadrados": 67,
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Caracas, Distrito Capital"
@@ -625,10 +636,10 @@
     {
       "titulo": "Apartamento en Alquiler Campo Alegre G. 04143054662",
       "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/123500-apartamento-en-alquiler-campo-alegre-g-04143054662",
-      "precio_texto": "USD 950",
-      "habitaciones": 3,
-      "banos": 2,
-      "metros_cuadrados": 195,
+      "precio_texto": "USD 1.100",
+      "habitaciones": 2,
+      "banos": 1,
+      "metros_cuadrados": 67,
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Caracas, Distrito Capital"
@@ -757,12 +768,12 @@
     {
       "titulo": "Lindo Y Acogedor Apartamento En Alquiler Manzanares. Amoblado 27-1699",
       "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/121460-lindo-y-acogedor-apartamento-en-alquiler-manzanares-amoblado-27-1699",
-      "precio_texto": "USD 1.350",
-      "habitaciones": 2,
-      "banos": 2,
-      "metros_cuadrados": 74,
+      "precio_texto": "USD 1.800",
+      "habitaciones": 3,
+      "banos": 4,
+      "metros_cuadrados": 232,
       "tipo": "Apartamento",
-      "operacion_detectada": "alquiler",
+      "operacion_detectada": "Alquiler",
       "ubicacion": "Caracas, Distrito Capital"
     },
     {
@@ -1092,17 +1103,6 @@
       "banos": 2,
       "metros_cuadrados": 84,
       "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
-      "titulo": "Local en alquiler en Chuao.",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/91133-local-en-alquiler-en-chuao",
-      "precio_texto": "USD 12.340",
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": null,
-      "tipo": "Local",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Caracas, Distrito Capital"
     }
