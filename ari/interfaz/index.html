@@ -260,7 +260,42 @@
     populateSelect("sel-zona",       fichas, f => extraerZona(f),      "Todas las áreas");
   }
 
-function filtrar() {
+// ── Populate dropdowns with counts (OPTIMIZADO: max 200 opciones por dropdown) ──
+  function populateAllSelects(fichas) {
+    // Diferir a idle callback para no bloquear main thread
+    if (window.requestIdleCallback) {
+      requestIdleCallback(() => doPopulateAllSelects(fichas), { timeout: 2000 });
+    } else {
+      setTimeout(() => doPopulateAllSelects(fichas), 0);
+    }
+  }
+
+  function doPopulateAllSelects(fichas) {
+    populateSelect("sel-estado",     fichas, f => extraerEstado(f),    "Todos los estados");
+    populateSelect("sel-operacion",  fichas, f => extraerOperacion(f), "Venta y alquiler");
+    populateSelect("sel-tipo",       fichas, f => f.tipo,              "Todos los tipos");
+    populateSelect("sel-municipio",  fichas, f => f._municipio,        "Todos los municipios");
+    populateSelect("sel-zona",       fichas, f => extraerZona(f),      "Todas las áreas");
+    populateSelect("sel-portal",     fichas, f => f.portal_principal,  "Todos los portales");
+  }
+
+  function populateSelect(id, fichas, getValue, labelTodos) {
+    const sel = document.getElementById(id);
+    const vals = {};
+    fichas.forEach(f => { const v = getValue(f); if (v) vals[v] = (vals[v] || 0) + 1; });
+    const sorted = Object.entries(vals).sort((a,b) => a[0].localeCompare(b[0]));
+    // LIMITE: máx 200 opciones para no saturar DOM
+    const limited = sorted.slice(0, 200);
+    const currentVal = sel.value;
+    sel.innerHTML = `<option value="todos">${labelTodos} (${fichas.length})</option>`;
+    limited.forEach(([v, c]) => {
+      sel.innerHTML += `<option value="${v}">${v} (${c})</option>`;
+    });
+    if ([...sel.options].some(o => o.value === currentVal)) sel.value = currentVal;
+    else sel.value = "todos";
+  }
+
+  function filtrar() {
     // RESET paginaActual al cambiar filtros
     paginaActual = 1;
 
@@ -298,7 +333,7 @@ function filtrar() {
       });
     }
 
-    // Repopulate dropdowns (show only possible values)
+    // Repopulate dropdowns (show only possible values) - DIFERIDO
     populateAllSelects(fichas);
 
     // Update result count
@@ -380,7 +415,6 @@ function filtrar() {
     paginaActual = n;
     filtrar();
   }
-
   function renderResumen(resumen) {
     document.getElementById("resumen").innerHTML = `
       <span>🟢 ${resumen.verde || 0} gangas</span>
