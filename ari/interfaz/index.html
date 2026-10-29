@@ -179,6 +179,7 @@
   <main class="main-area">
     <div class="resumen" id="resumen"></div>
     <div class="result-count" id="result-count"></div>
+    <div id="paginacion" style="text-align:center;margin:16px 0;"></div>
     <div id="lista" class="cargando">Cargando propiedades...</div>
   </main>
 </div>
@@ -187,6 +188,8 @@
   const RUTA_DATOS = "../data/ultimo-analisis.json?v=" + Date.now();
   let fichasOriginal = [];
   let filtroSemaforo = "todos";
+  let paginaActual = 1;
+  const POR_PAGINA = 50;
 
   const NOMBRES_CONDICION = {
     impecable: "✨ Impecable",
@@ -257,7 +260,10 @@
     populateSelect("sel-zona",       fichas, f => extraerZona(f),      "Todas las áreas");
   }
 
-  function filtrar() {
+function filtrar() {
+    // RESET paginaActual al cambiar filtros
+    paginaActual = 1;
+
     let fichas = fichasOriginal;
 
     // Semáforo
@@ -298,15 +304,23 @@
     // Update result count
     document.getElementById("result-count").textContent = fichas.length + " propiedades";
 
-    // Render cards
+    // PAGINACIÓN
+    const totalPaginas = Math.ceil(fichas.length / POR_PAGINA);
+    if (paginaActual > totalPaginas) paginaActual = totalPaginas || 1;
+    const inicio = (paginaActual - 1) * POR_PAGINA;
+    const fin = inicio + POR_PAGINA;
+    const fichasPagina = fichas.slice(inicio, fin);
+
+    // Render cards SOLO de la página actual
     const lista = document.getElementById("lista");
-    if (fichas.length === 0) {
+    if (fichasPagina.length === 0) {
       lista.className = "vacio";
       lista.textContent = "No hay propiedades con estos filtros.";
+      renderPaginacion(totalPaginas);
       return;
     }
     lista.className = "";
-    lista.innerHTML = fichas.map(f => {
+    lista.innerHTML = fichasPagina.map(f => {
       const specs = [
         f.habitaciones ? `${f.habitaciones} hab` : null,
         f.banos ? `${f.banos} baños` : null,
@@ -346,6 +360,25 @@
         </div>
       </div>`;
     }).join("");
+
+    renderPaginacion(totalPaginas);
+  }
+
+  // Renderiza controles de paginación
+  function renderPaginacion(totalPaginas) {
+    const container = document.getElementById("paginacion");
+    if (!container) return;
+    if (totalPaginas <= 1) { container.innerHTML = ""; return; }
+    container.innerHTML = `
+      <button ${paginaActual === 1 ? "disabled" : ""} onclick="cambiarPagina(${paginaActual - 1})">← Anterior</button>
+      <span style="margin: 0 16px;">Página ${paginaActual} de ${totalPaginas}</span>
+      <button ${paginaActual === totalPaginas ? "disabled" : ""} onclick="cambiarPagina(${paginaActual + 1})">Siguiente →</button>
+    `;
+  }
+
+  function cambiarPagina(n) {
+    paginaActual = n;
+    filtrar();
   }
 
   function renderResumen(resumen) {
