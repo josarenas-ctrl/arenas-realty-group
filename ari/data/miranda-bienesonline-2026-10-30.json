@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "alquiler",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+alquiler+miranda",
-  "scrapeado_en": "2026-10-30T05:02:00.227Z",
+  "scrapeado_en": "2026-10-30T22:05:02.131Z",
   "total": 100,
   "anuncios": [
     {
@@ -579,6 +579,17 @@
       "ubicacion": "Leoncio Martínez, Miranda"
     },
     {
+      "titulo": "apartamento en alquiler en campo alegre tlf  04242129768 rolando rodriguez codg 27-7297",
+      "enlace": "https://bienesonline.ai/es/venezuela/chacao/propiedad/136076-apartamento-en-alquiler-en-campo-alegre-tlf-04242129768-rolando-rodriguez-codg-27-7297",
+      "precio_texto": "USD 2.700",
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 109,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Chacao, Miranda"
+    },
+    {
       "titulo": "casa en alquiler en santa Gertrudis tlf 04242129768 rolando rodriguez codg 27-4365",
       "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/128224-casa-en-alquiler-en-santa-gertrudis-tlf-04242129768-rolando-rodriguez-codg-27-4365",
       "precio_texto": "USD 4.000",
@@ -1091,17 +1102,6 @@
       "habitaciones": 3,
       "banos": 2,
       "metros_cuadrados": 94,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
-      "titulo": "Alquiler Apartamento Los Naranjos de Las Mercedes MLS #26-2823 Mirian Navarro +58 414 924 0379",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/90036-alquiler-apartamento-los-naranjos-de-las-mercedes-mls-26-2823-mirian-navarro-58-414-924-0379",
-      "precio_texto": "USD 2.200",
-      "habitaciones": 2,
-      "banos": 3,
-      "metros_cuadrados": 128,
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Caracas, Distrito Capital"
