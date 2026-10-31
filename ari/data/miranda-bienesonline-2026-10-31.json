@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "alquiler",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+alquiler+miranda",
-  "scrapeado_en": "2026-10-31T11:56:00.074Z",
+  "scrapeado_en": "2026-10-31T17:05:36.645Z",
   "total": 100,
   "anuncios": [
     {
@@ -381,6 +381,17 @@
       "ubicacion": "Guatire, Miranda"
     },
     {
+      "titulo": "apartamento en alquiler santa fe norte tlf  04242129768 rolando rodriguez codg  27-7315",
+      "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/136185-apartamento-en-alquiler-santa-fe-norte-tlf-04242129768-rolando-rodriguez-codg-27-7315",
+      "precio_texto": "USD 1.500",
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 109,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Baruta, Miranda"
+    },
+    {
       "titulo": "local en alquiler guarenas tlf  04242129768 rolando rodriguez codg 27-945",
       "enlace": "https://bienesonline.ai/es/venezuela/guarenas/propiedad/119609-local-en-alquiler-guarenas-tlf-04242129768-rolando-rodriguez-codg-27-945",
       "precio_texto": "USD 4.500",
@@ -546,6 +557,17 @@
       "ubicacion": "Chacao, Miranda"
     },
     {
+      "titulo": "apartamento en alquiler campo alegre tlf 04242129768 rolando rodriguez codg 27",
+      "enlace": "https://bienesonline.ai/es/venezuela/chacao/propiedad/136187-apartamento-en-alquiler-campo-alegre-tlf-04242129768-rolando-rodriguez-codg-27",
+      "precio_texto": "USD 8.000",
+      "habitaciones": 5,
+      "banos": 6,
+      "metros_cuadrados": 544,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Chacao, Miranda"
+    },
+    {
       "titulo": "local alquiler la urbina tlf 04242129768 rolando rodriguez",
       "enlace": "https://bienesonline.ai/es/venezuela/sucre/propiedad/33678-local-alquiler-la-urbina-tlf-04242129768-rolando-rodriguez",
       "precio_texto": "USD 2.900",
@@ -614,12 +636,12 @@
     {
       "titulo": "apartamento en alquiler las mesetas de santa rosa de lima tlf  04242129768 rolando rodriguez codg 27...",
       "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/128995-apartamento-en-alquiler-las-mesetas-de-santa-rosa-de-lima-tlf-04242129768-rolando-rodriguez-codg-27-4799",
-      "precio_texto": "USD 1.500",
-      "habitaciones": 2,
-      "banos": 2,
-      "metros_cuadrados": 72,
-      "tipo": "Oficina",
-      "operacion_detectada": "alquiler",
+      "precio_texto": "USD 14.000",
+      "habitaciones": 6,
+      "banos": 6,
+      "metros_cuadrados": 878,
+      "tipo": "Casa",
+      "operacion_detectada": "Alquiler",
       "ubicacion": "Baruta, Miranda"
     },
     {
@@ -1080,28 +1102,6 @@
       "habitaciones": 4,
       "banos": 6,
       "metros_cuadrados": 294,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
-      "titulo": "Apartamento en Alquiler en Manzanares. Sandra White 0414-3140082 Cod. 26-15472",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/33239-apartamento-en-alquiler-en-manzanares-sandra-white-0414-3140082-cod-26-15472",
-      "precio_texto": "USD 800",
-      "habitaciones": 3,
-      "banos": 2,
-      "metros_cuadrados": 142,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
-      "titulo": "Apartamento en Alquiler en Manzanares. Sandra White 0414-3140082  Cod. 26-9166",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/63783-apartamento-en-alquiler-en-manzanares-sandra-white-0414-3140082-cod-26-9166",
-      "precio_texto": "USD 600",
-      "habitaciones": 3,
-      "banos": 2,
-      "metros_cuadrados": 94,
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Caracas, Distrito Capital"
