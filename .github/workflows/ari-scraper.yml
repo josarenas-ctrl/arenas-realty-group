@@ -1,17 +1,32 @@
 name: ARI - Scraper de propiedades
 
+# v2 (2026-10-31)
+# Este workflow SOLO recoge datos crudos de los portales.
+# El analisis y ari/data/ultimo-analisis.json los genera unicamente la VPS
+# (ari/scripts/run-pipeline.sh), para que nunca haya dos escritores del mismo archivo.
+# Cambios frente a v1:
+#   - ya no corre dedupe, ia-dedupe ni analizar
+#   - ya no hace "git push --force" (si el push no se puede, el job falla y se ve en rojo)
+#   - ya no se dispara con cada push a ari/** (eso creaba un ciclo con la VPS)
+#   - solo un job a la vez (concurrency) y con limite de tiempo
+
 on:
   schedule:
     # Corre cada 6 horas.
     - cron: "0 */6 * * *"
   workflow_dispatch: {}
-  push:
-    paths:
-      - "ari/**"
+
+concurrency:
+  group: ari-scraper
+  cancel-in-progress: false
+
+permissions:
+  contents: write
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -41,42 +56,27 @@ jobs:
         working-directory: ari
         run: npm run scrape:mercadopiso
 
-
-      - name: Agrupar anuncios duplicados en fichas maestras
-        working-directory: ari
-        run: npm run dedupe
-
-      - name: Revisar duplicados dudosos con IA
-        working-directory: ari
-        run: npm run ia-dedupe
-        env:
-                  GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-                  GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-        continue-on-error: true
-
-      - name: Analizar valor y asignar semáforo
-        working-directory: ari
-        run: npm run analizar
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-
-      - name: Commitear datos nuevos (si hay cambios)
+      - name: Commitear datos crudos (si hay cambios)
         run: |
           git config user.name "ari-bot"
           git config user.email "ari-bot@users.noreply.github.com"
           git add ari/data
           if git diff --staged --quiet; then
-            echo "Sin cambios nuevos — nada que commitear"
-          else
-            git commit -m "ARI: actualización de datos scrapeados"
-            git pull --rebase --autostash origin cloudflare-test || {
-              echo "Rebase falló (conflicto en datos) — force push con nuestros datos"
-              git rebase --abort 2>/dev/null
-              git checkout --theirs ari/data/*.json 2>/dev/null
-              git add ari/data
-              git commit --amend --no-edit 2>/dev/null
-              GIT_ASKPASS="" GIT_TERMINAL_PROMPT=0 git push --force origin HEAD:cloudflare-test
-              exit 0
-            }
-            git push
+            echo "Sin cambios nuevos - nada que commitear"
+            exit 0
           fi
+          git commit -m "ARI: actualización de datos scrapeados"
+          for intento in 1 2 3; do
+            if git push origin HEAD:cloudflare-test; then
+              echo "Publicado"
+              exit 0
+            fi
+            echo "Push rechazado (intento $intento); integrando cambios del remoto..."
+            git pull --rebase origin cloudflare-test || {
+              git rebase --abort 2>/dev/null || true
+              echo "Conflicto de rebase. No se fuerza nada: el job falla para que se vea."
+              exit 1
+            }
+          done
+          echo "No se pudo publicar tras 3 intentos"
+          exit 1
