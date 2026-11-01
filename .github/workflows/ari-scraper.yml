@@ -1,14 +1,17 @@
 name: ARI - Scraper de propiedades
 
-# v2 (2026-10-31)
+# v2.1 (2026-11-01)
 # Este workflow SOLO recoge datos crudos de los portales.
 # El analisis y ari/data/ultimo-analisis.json los genera unicamente la VPS
 # (ari/scripts/run-pipeline.sh), para que nunca haya dos escritores del mismo archivo.
-# Cambios frente a v1:
-#   - ya no corre dedupe, ia-dedupe ni analizar
-#   - ya no hace "git push --force" (si el push no se puede, el job falla y se ve en rojo)
-#   - ya no se dispara con cada push a ari/** (eso creaba un ciclo con la VPS)
-#   - solo un job a la vez (concurrency) y con limite de tiempo
+#
+# Cambios de v2.1 frente a v2 (la v2 se cancelaba a los 30 min y no guardaba nada):
+#   - limite del job: 60 min; limite por scraper: 20 min
+#   - MercadoPiso desactivado: las ultimas corridas dieron 0 anuncios (todas las paginas fallaban)
+#     y gastaba 12+ min. Para reactivarlo, borrar la linea "if: ${{ false }}" de ese paso.
+#   - el paso de commit corre aunque un portal falle (se guardan los datos de los demas);
+#     el job queda en rojo para que el fallo se vea. Si el job se cancela, no se commitea nada.
+#   - sin "git push --force"; sin disparo por push (evita el ciclo con la VPS)
 
 on:
   schedule:
@@ -26,7 +29,7 @@ permissions:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 60
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -41,22 +44,28 @@ jobs:
         run: npm install
 
       - name: Correr scraper de Bienes Online (Miranda, DC, La Guaira)
+        timeout-minutes: 20
         working-directory: ari
         run: npm run scrape:bienesonline
 
       - name: Correr scraper de InmueblesConLupa (agrega RE/MAX, Century21, Rent-A-House)
+        timeout-minutes: 20
         working-directory: ari
         run: npm run scrape:inmueblesconlupa
 
       - name: Correr scraper de ZonaVen (portal directo)
+        timeout-minutes: 20
         working-directory: ari
         run: npm run scrape:zonaven
 
-      - name: Correr scraper de MercadoPiso (10k properties, JSON-LD)
+      - name: Correr scraper de MercadoPiso (DESACTIVADO - daba 0 anuncios)
+        if: ${{ false }}
+        timeout-minutes: 5
         working-directory: ari
         run: npm run scrape:mercadopiso
 
       - name: Commitear datos crudos (si hay cambios)
+        if: ${{ !cancelled() }}
         run: |
           git config user.name "ari-bot"
           git config user.email "ari-bot@users.noreply.github.com"
