@@ -3,8 +3,8 @@
   "portal": "zonaven",
   "operacion": "todas",
   "url_busqueda": "sitemap-listings-1/2",
-  "scrapeado_en": "2026-11-02T05:29:10.007Z",
-  "total": 1273,
+  "scrapeado_en": "2026-11-02T15:31:30.107Z",
+  "total": 1272,
   "anuncios": [
     {
       "titulo": "Anexo en Guatire — $180/mes | ZonaVen",
@@ -17407,21 +17407,6 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Apartamento 1 hab en Caracas — $47.500 | ZonaVen",
-      "enlace": "https://zonaven.com/venta/venta-de-apartamento-en-los-rosales-distrito-capital-c6751e",
-      "precio_texto": "$47500",
-      "precio_usd": 47500,
-      "habitaciones": 1,
-      "banos": 1,
-      "metros_cuadrados": 46,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Distrito Capital",
-      "portal": "zonaven",
-      "descripcion": "Ideal para inversión o primera vivienda, este apartamento de 46 m² en San Bernardino, Caracas - Libertador, ofrece 1 habitación y 1 baño. Ubicado en edificio de baja densidad con servicios confiables y acabados modernos. Precio: 47,500 USD. Perfecto para quienes buscan comodidad y tranquilidad en zona estratégica.",
-      "moneda": "USD"
-    },
-    {
       "titulo": "Oficina 428m² en Caracas — $820.000 | ZonaVen",
       "enlace": "https://zonaven.com/venta/oficina-en-venta-en-el-rosal-mls-25-17952-mm-distrito-capital-8bae90",
       "precio_texto": "$820000",
@@ -19104,8 +19089,8 @@
   ],
   "diagnostico": {
     "urls_encontradas": 1273,
-    "exitos": 1273,
-    "fallos": 0,
-    "con_precio": 1273
+    "exitos": 1272,
+    "fallos": 1,
+    "con_precio": 1272
   }
 }
