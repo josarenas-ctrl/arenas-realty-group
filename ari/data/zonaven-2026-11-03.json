@@ -3,7 +3,7 @@
   "portal": "zonaven",
   "operacion": "todas",
   "url_busqueda": "sitemap-listings-1/2",
-  "scrapeado_en": "2026-11-03T01:10:07.818Z",
+  "scrapeado_en": "2026-11-03T14:13:49.982Z",
   "total": 1269,
   "anuncios": [
     {
@@ -919,21 +919,6 @@
       "ubicacion": "Distrito Capital",
       "portal": "zonaven",
       "descripcion": "Venta de casa en La Yaguara, municipio Libertador, Caracas. Ideal para uso comercial o depósito, ubicada a pie de calle con gran potencial. Distribuida en 3 niveles: planta baja con salón, barra, área lavandero y baño; planta alta con 3 habitaciones, 3 baños, salón, cocina y acceso al techo; planta techo con tanque elevado. Construcción con techo platabanda, paredes de piedra ornamental, pisos de porcelanato y cemento pulido. Zona industrial y comercial. Área total de 100 m². Precio: USD 75,000.",
-      "moneda": "USD"
-    },
-    {
-      "titulo": "Townhouse 4 hab en Cúa — $17.000 | ZonaVen",
-      "enlace": "https://zonaven.com/venta/townhouses-en-venta-urb-villa-falcon-cua-miranda-93d0a6",
-      "precio_texto": "$17000",
-      "precio_usd": 17000,
-      "habitaciones": 4,
-      "banos": 3,
-      "metros_cuadrados": 104,
-      "tipo": "Casa",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Miranda",
-      "portal": "zonaven",
-      "descripcion": "TOWNHOUSES EN VENTA\nUrb. Villa Falcón – Cúa\n\n104 Mtrs²\n4 Habitaciones\n3 Baños\nCocina\nComedor\nSala\nArea de Lavandero\nZona privilegiada de Cúa\n\nServicios:\nAgua\nLuz\nPortón de seguridad cerrado con sistema GSM.\n\nInventario:\nAire 36mil BTU para reparar\nAire split de 12mil BTU\nCocina de tope\nHorno\n2 Tanques de 2mil litros cada uno ya conectados a la casa.\n\nCuenta con:\n2 Puesto de estacionamiento\n\nPrecio:17.000$",
       "moneda": "USD"
     },
     {
@@ -17089,6 +17074,21 @@
       "ubicacion": "Distrito Capital",
       "portal": "zonaven",
       "descripcion": "Venta de excelente fondo de comercio de carnicería en La Candelaria, Caracas - Libertador, Distrito Capital. Ideal para operatividad inmediata. Área de 102,0 m², 2 baños. Todo en perfecto estado, listo para surtir y comenzar a vender. Precio: 70.000 USD. Ubicación estratégica en el centro de Caracas.",
+      "moneda": "USD"
+    },
+    {
+      "titulo": "Local 564m² en Caracas — $930.000 | ZonaVen",
+      "enlace": "https://zonaven.com/venta/se-vende-casa-comercial-en-los-palos-grandes-mls-26-7739-distrito-capital-79a176",
+      "precio_texto": "$930000",
+      "precio_usd": 930000,
+      "habitaciones": null,
+      "banos": null,
+      "metros_cuadrados": 564,
+      "tipo": "Local comercial",
+      "operacion_detectada": "Venta",
+      "ubicacion": "Distrito Capital",
+      "portal": "zonaven",
+      "descripcion": "Venta de local comercial de 564 m² en Av. Francisco de Miranda, Altamira, Chacao. Dos niveles con entradas independientes, vista a la calle y fachada de vidrio. Ideal para remodelar. Incluye estacionamiento privado en edificio empresarial. Ubicado en zona comercial y financiera. Precio: 930.000 USD.",
       "moneda": "USD"
     },
     {
