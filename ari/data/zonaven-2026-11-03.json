@@ -3,7 +3,7 @@
   "portal": "zonaven",
   "operacion": "todas",
   "url_busqueda": "sitemap-listings-1/2",
-  "scrapeado_en": "2026-11-03T14:13:49.982Z",
+  "scrapeado_en": "2026-11-03T23:24:16.272Z",
   "total": 1269,
   "anuncios": [
     {
@@ -19043,9 +19043,9 @@
     }
   ],
   "diagnostico": {
-    "urls_encontradas": 1270,
+    "urls_encontradas": 1269,
     "exitos": 1269,
-    "fallos": 1,
+    "fallos": 0,
     "con_precio": 1269
   }
 }
