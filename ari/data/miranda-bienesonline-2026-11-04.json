@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "alquiler",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+alquiler+miranda",
-  "scrapeado_en": "2026-11-04T05:34:17.019Z",
+  "scrapeado_en": "2026-11-04T14:00:54.878Z",
   "total": 100,
   "anuncios": [
     {
@@ -194,17 +194,6 @@
       "ubicacion": "Sucre, Miranda"
     },
     {
-      "titulo": "apartamento alquiler las mercedes tlf 04242129768 rolando Rodríguez",
-      "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/33867-apartamento-alquiler-las-mercedes-tlf-04242129768-rolando-rodriguez",
-      "precio_texto": "USD 6.500",
-      "habitaciones": 3,
-      "banos": 5,
-      "metros_cuadrados": 282,
-      "tipo": "Apartamento",
-      "operacion_detectada": "alquiler",
-      "ubicacion": "Baruta, Miranda"
-    },
-    {
       "titulo": "APARTAMENTO ALQUILER CIUDAD CASARAPA GUARENAS API 67811",
       "enlace": "https://bienesonline.ai/es/venezuela/guarenas/propiedad/53897-apartamento-alquiler-ciudad-casarapa-guarenas-api-67811",
       "precio_texto": "USD 300",
@@ -214,6 +203,17 @@
       "tipo": "Apartamento",
       "operacion_detectada": "ALQUILER",
       "ubicacion": "Guarenas, Miranda"
+    },
+    {
+      "titulo": "apartamento alquiler las mercedes tlf 04242129768 rolando Rodríguez",
+      "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/33867-apartamento-alquiler-las-mercedes-tlf-04242129768-rolando-rodriguez",
+      "precio_texto": "USD 6.500",
+      "habitaciones": 3,
+      "banos": 5,
+      "metros_cuadrados": 282,
+      "tipo": "Apartamento",
+      "operacion_detectada": "alquiler",
+      "ubicacion": "Baruta, Miranda"
     },
     {
       "titulo": "apartamento en alquiler en nueva casarapa tlf  04242129768 rolando rodríguez",
@@ -337,17 +337,6 @@
       "ubicacion": "Baruta, Miranda"
     },
     {
-      "titulo": "apartamento en alquiler en campo alegre tlf 04242129768 rolando rodriguez codg 27-4110",
-      "enlace": "https://bienesonline.ai/es/venezuela/chacao/propiedad/127440-apartamento-en-alquiler-en-campo-alegre-tlf-04242129768-rolando-rodriguez-codg-27-4110",
-      "precio_texto": "USD 2.500",
-      "habitaciones": 2,
-      "banos": 3,
-      "metros_cuadrados": 108,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Chacao, Miranda"
-    },
-    {
       "titulo": "APARTAMENTO ALQUILER CIUDAD CASARAPA GUARENAS API 67811",
       "enlace": "https://bienesonline.ai/es/venezuela/guarenas/propiedad/29317-apartamento-alquiler-ciudad-casarapa-guarenas-api-67811",
       "precio_texto": "USD 300",
@@ -357,6 +346,17 @@
       "tipo": "Apartamento",
       "operacion_detectada": "ALQUILER",
       "ubicacion": "Guarenas, Miranda"
+    },
+    {
+      "titulo": "apartamento en alquiler en campo alegre tlf 04242129768 rolando rodriguez codg 27-4110",
+      "enlace": "https://bienesonline.ai/es/venezuela/chacao/propiedad/127440-apartamento-en-alquiler-en-campo-alegre-tlf-04242129768-rolando-rodriguez-codg-27-4110",
+      "precio_texto": "USD 2.500",
+      "habitaciones": 2,
+      "banos": 3,
+      "metros_cuadrados": 108,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Chacao, Miranda"
     },
     {
       "titulo": "Alquiler de Apartamento en Colinas de la Tahona 27-1331 Asdrubal Medina",
@@ -832,6 +832,17 @@
       "ubicacion": "Guatire, Miranda"
     },
     {
+      "titulo": "oficina en alquiler las mercedes tlf  04242129768 rolando rodriguez codg 27-7601",
+      "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/136445-oficina-en-alquiler-las-mercedes-tlf-04242129768-rolando-rodriguez-codg-27-7601",
+      "precio_texto": "USD 1.200",
+      "habitaciones": null,
+      "banos": null,
+      "metros_cuadrados": null,
+      "tipo": "Oficina",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Baruta, Miranda"
+    },
+    {
       "titulo": "oficina alquiler bello monte  rolando rodriguez tlf 04242129768",
       "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/33686-oficina-alquiler-bello-monte-rolando-rodriguez-tlf-04242129768",
       "precio_texto": "USD 1.200",
@@ -1091,17 +1102,6 @@
       "habitaciones": 1,
       "banos": 2,
       "metros_cuadrados": 68,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
-      "titulo": "apartamento en alquiler los naranjos de las mercedes tlf  04242129768 rolando rodriguez codg 26-2102...",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/87929-apartamento-en-alquiler-los-naranjos-de-las-mercedes-tlf-04242129768-rolando-rodriguez-codg-26-21029",
-      "precio_texto": "USD 1.400",
-      "habitaciones": 2,
-      "banos": 2,
-      "metros_cuadrados": 100,
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Caracas, Distrito Capital"

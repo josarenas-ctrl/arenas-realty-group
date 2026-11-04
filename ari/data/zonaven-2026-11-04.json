@@ -3,8 +3,8 @@
   "portal": "zonaven",
   "operacion": "todas",
   "url_busqueda": "sitemap-listings-1/2",
-  "scrapeado_en": "2026-11-04T05:56:14.451Z",
-  "total": 1269,
+  "scrapeado_en": "2026-11-04T14:23:50.837Z",
+  "total": 1268,
   "anuncios": [
     {
       "titulo": "Anexo en Guatire — $180/mes | ZonaVen",
@@ -11332,21 +11332,6 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Apartamento 3 hab en Caraballeda — $350.000 | ZonaVen",
-      "enlace": "https://zonaven.com/venta/penthouse-410m2-frente-al-mar-tanaguarena-la-guaira-4-habitaciones-salida-playa-jacuzzi-cine-privado",
-      "precio_texto": "$350000",
-      "precio_usd": 350000,
-      "habitaciones": 3,
-      "banos": 4,
-      "metros_cuadrados": 320,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "La Guaira",
-      "portal": "zonaven",
-      "descripcion": "Increíble penthouse en venta en Caraballeda, Vargas, frente al mar y con salida directa a la playa. Ideal para quienes buscan lujo y confort. 320 m² distribuidos en 3 habitaciones, 4 baños, 3 pisos, 2 cocinas de alta gama y amplios espacios para disfrutar. Perfecto para estrenar, con balcón, salón de juegos, cine y área de lavado. Precio: 350.000 USD.",
-      "moneda": "USD"
-    },
-    {
       "titulo": "Casa 3 hab en Caracas — $500.000 | ZonaVen",
       "enlace": "https://zonaven.com/venta/yf-casa-se-vende-en-cerro-verde-mls-26-12665-distrito-capital-c0b880",
       "precio_texto": "$500000",
@@ -19044,8 +19029,8 @@
   ],
   "diagnostico": {
     "urls_encontradas": 1269,
-    "exitos": 1269,
-    "fallos": 0,
-    "con_precio": 1269
+    "exitos": 1268,
+    "fallos": 1,
+    "con_precio": 1268
   }
 }
