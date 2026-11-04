@@ -3,7 +3,7 @@
   "portal": "zonaven",
   "operacion": "todas",
   "url_busqueda": "sitemap-listings-1/2",
-  "scrapeado_en": "2026-11-04T14:23:50.837Z",
+  "scrapeado_en": "2026-11-04T23:50:39.384Z",
   "total": 1268,
   "anuncios": [
     {
@@ -5014,21 +5014,6 @@
       "ubicacion": "Los Teques, Miranda",
       "portal": "zonaven",
       "descripcion": "Casa en venta en Casco Central, Los Teques, Miranda. Ubicada cerca de la Catedral, con fácil acceso a comercios, colegios, panaderías y transporte público. Terreno de 328 m², construcción de 164 m², distribuida en 2 niveles. Cuenta con 9 habitaciones, 6 baños, sala, comedor, pasillos amplios y cocina. Ideal para uso familiar, escuela o actividades religiosas. Precio: USD 90,000.",
-      "moneda": "USD"
-    },
-    {
-      "titulo": "Casa 4 hab en Los Teques — $90.000 | ZonaVen",
-      "enlace": "https://zonaven.com/venta/casa-en-venta-guatire-deigmarys-gil-mls-24-28510-miranda-07c8ff",
-      "precio_texto": "$90000",
-      "precio_usd": 90000,
-      "habitaciones": 4,
-      "banos": 3,
-      "metros_cuadrados": 140,
-      "tipo": "Casa",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Guatire, Miranda",
-      "portal": "zonaven",
-      "descripcion": "Bonita casa en venta en la zona de La Unión, El Hatillo, Caracas. Distribuida en 4 niveles, cuenta con 4 habitaciones, 3 baños y 140 m² de área construida. Ideal para familia, con amplios espacios, terrazas, estudio, cocina y zona de lavandería. Perfecta para vivir en una urbanización privada en zona segura y tranquila. Precio: 90,000 dólares.",
       "moneda": "USD"
     },
     {
@@ -11329,6 +11314,21 @@
       "ubicacion": "La Guaira",
       "portal": "zonaven",
       "descripcion": "Venta de quinta en esquina en Las Colinas, Catia La Mar, Vargas. Ideal para dos familias, con 5 habitaciones, 6 baños y 420 m² de construcción. Terreno de 457 m², excelente estado, jardín con fuente, garage y acceso independiente por planta. Precio: 285.000 USD.",
+      "moneda": "USD"
+    },
+    {
+      "titulo": "Apartamento 3 hab en Caraballeda — $350.000 | ZonaVen",
+      "enlace": "https://zonaven.com/venta/penthouse-410m2-frente-al-mar-tanaguarena-la-guaira-4-habitaciones-salida-playa-jacuzzi-cine-privado",
+      "precio_texto": "$350000",
+      "precio_usd": 350000,
+      "habitaciones": 3,
+      "banos": 4,
+      "metros_cuadrados": 320,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
+      "ubicacion": "La Guaira",
+      "portal": "zonaven",
+      "descripcion": "Increíble penthouse en venta en Caraballeda, Vargas, frente al mar y con salida directa a la playa. Ideal para quienes buscan lujo y confort. 320 m² distribuidos en 3 habitaciones, 4 baños, 3 pisos, 2 cocinas de alta gama y amplios espacios para disfrutar. Perfecto para estrenar, con balcón, salón de juegos, cine y área de lavado. Precio: 350.000 USD.",
       "moneda": "USD"
     },
     {
@@ -19028,9 +19028,9 @@
     }
   ],
   "diagnostico": {
-    "urls_encontradas": 1269,
+    "urls_encontradas": 1268,
     "exitos": 1268,
-    "fallos": 1,
+    "fallos": 0,
     "con_precio": 1268
   }
 }
