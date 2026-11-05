@@ -3,8 +3,8 @@
   "portal": "zonaven",
   "operacion": "todas",
   "url_busqueda": "sitemap-listings-1/2",
-  "scrapeado_en": "2026-11-05T06:14:10.628Z",
-  "total": 1268,
+  "scrapeado_en": "2026-11-05T14:43:25.355Z",
+  "total": 1267,
   "anuncios": [
     {
       "titulo": "Anexo en Guatire — $180/mes | ZonaVen",
@@ -16252,21 +16252,6 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Apartamento 1 hab en La Guaira — $450/mes | ZonaVen",
-      "enlace": "https://zonaven.com/alquiler/apartamento-con-vista-al-mar-en-alquiler-en-la-guaira-la-guaira-b27ce3",
-      "precio_texto": "$450",
-      "precio_usd": 450,
-      "habitaciones": 1,
-      "banos": 1,
-      "metros_cuadrados": 50,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "La Guaira",
-      "portal": "zonaven",
-      "descripcion": "Alquila este acogedor apartamento de 50 m² en La Guaira, Vargas, con vista al mar. Cuenta con 1 habitación, 1 baño, sala, comedor y cocina. Incluye WiFi, agua constante y 2 puestos de estacionamiento. Ubicado frente al Playón, ideal para quienes buscan tranquilidad y comodidad. Alquiler: USD 450 mensuales, contrato de 1 año con renovación, 6 meses adelantados, 3 meses de depósito y 1 mes de comisión.",
-      "moneda": "USD"
-    },
-    {
       "titulo": "Casa 7 hab en Los Salias — $180.000 | ZonaVen",
       "enlace": "https://zonaven.com/venta/se-vende-casa-en-urbanizacion-la-suiza-san-antonio-de-los-altos-miranda-miranda-f210a5",
       "precio_texto": "$180000",
@@ -19028,9 +19013,9 @@
     }
   ],
   "diagnostico": {
-    "urls_encontradas": 1268,
-    "exitos": 1268,
+    "urls_encontradas": 1267,
+    "exitos": 1267,
     "fallos": 0,
-    "con_precio": 1268
+    "con_precio": 1267
   }
 }

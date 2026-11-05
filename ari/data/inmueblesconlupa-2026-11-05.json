@@ -3,8 +3,8 @@
   "portal": "inmueblesconlupa",
   "operacion": "venta",
   "url_busqueda": "sitemaps 0-2",
-  "scrapeado_en": "2026-11-05T06:07:18.351Z",
-  "total": 695,
+  "scrapeado_en": "2026-11-05T14:36:35.170Z",
+  "total": 718,
   "anuncios": [
     {
       "titulo": "Apartamento en venta en El Hatillo, Miranda — $219.000",
@@ -326,25 +326,6 @@
       "descripcion": "El Rosal, Caracas, Chacao, Miranda, VEN. Oficina Comercial en Planta Baja – Torre Forum, El Rosal  Un espacio versátil con techos de doble altura y terraza, diseñado para destacar.   Características Generales: Metraje: 262,92 m²  Ubicación: Planta Baja – Torre Forum, El Rosal  Altura de techos: 6 metros (ideal para diseño de mezzaninas o ambientes imponentes)  Distribución y Espacios: Área de recepción elegante y de gran presencia  2 Oficinas principales  2 Oficinas cerradas con vidrio (mayor privacidad y estilo moderno)  Salón grande y múltiples áreas de trabajo adaptables  4 Baños modernos  Depósito privado ubicado en planta semi sótano  Acceso y uso de terraza abierta (un plus exclusivo para eventos o descanso del personal)  Seguridad y Comodidades: Doble seguridad con sistema de",
       "amenities": [
         "terraza"
-      ]
-    },
-    {
-      "titulo": "Apartamento en venta en Sebucan, Miranda — $290.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/sebucan-vendo-apartamento-remodelado-72m2-remax-349479",
-      "precio_texto": "$290.000",
-      "precio_usd": 290000,
-      "habitaciones": 2,
-      "banos": 2,
-      "metros_cuadrados": 72,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Sebucan, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Sebucán, Caracas, Sucre, Miranda, VEN. Este hermoso apartamento Actualizado y remodelado a estrenar, está ubicado en una de las mejores zonas del Municipio Sucre, como lo es la Urbanización Sebucán, lo que te permitirá disfrutar de la comodidad y tranquilidad  de un excelente edificio residencial de nueva data. Con un área de 72m2 de construcción: 62 m2 + 10 m2 de terraza.  Consta de dos acogedoras habitaciones con hermosa vista al Ávila y pequeña terraza, la principal con vestir y baño, además encontrarás un segundo baño completo.  Una bella y actualizada cocina empotrada totalmente equipada y con acabados de primera calidad y electrodomésticos de alta gama, filtro de",
-      "amenities": [
-        "vista",
-        "terraza",
-        "remodelado"
       ]
     },
     {
@@ -850,21 +831,6 @@
       ]
     },
     {
-      "titulo": "Apartamento en venta en Baruta, Miranda — $160.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/26-21275-venta-apartamento-colinas-de-la-tahona-MLV-1014050524",
-      "precio_texto": "$160.000",
-      "precio_usd": 160000,
-      "habitaciones": 3,
-      "banos": 2,
-      "metros_cuadrados": 92,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Baruta, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Colinas de la Tahona, Caracas, Baruta, Miranda, VEN. ¡Imagínate despertar cada día en este oasis de tranquilidad! Este apartamento de 92 m² en Colinas de la Tahona activa tus emociones y te conecta de inmediato con el estilo de vida que tu familia merece.  * Espacios versátiles y funcionales: Disfruta de una distribución inteligente con 2 habitaciones, 2 baños y un estudio convertible listo para transformarse en tu tercera habitación.  * Á social integrada: Un cálido salón-comedor que conecta de manera fluida con la cocina, ideal para crear momentos memorables.  * Comodidad y seguridad: Ubicado en piso bajo para mayor practicidad, dentro de una urbanización privada con garita",
-      "amenities": []
-    },
-    {
       "titulo": "Apartamento en alquiler en Baruta, Miranda — $900/mes",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/miranda/26-21275-venta-apartamento-colinas-de-la-tahona-MLV-1014050524",
       "precio_texto": "$900",
@@ -874,6 +840,21 @@
       "metros_cuadrados": 92,
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
+      "ubicacion": "Baruta, Miranda",
+      "portal": "inmueblesconlupa",
+      "descripcion": "Colinas de la Tahona, Caracas, Baruta, Miranda, VEN. ¡Imagínate despertar cada día en este oasis de tranquilidad! Este apartamento de 92 m² en Colinas de la Tahona activa tus emociones y te conecta de inmediato con el estilo de vida que tu familia merece.  * Espacios versátiles y funcionales: Disfruta de una distribución inteligente con 2 habitaciones, 2 baños y un estudio convertible listo para transformarse en tu tercera habitación.  * Á social integrada: Un cálido salón-comedor que conecta de manera fluida con la cocina, ideal para crear momentos memorables.  * Comodidad y seguridad: Ubicado en piso bajo para mayor practicidad, dentro de una urbanización privada con garita",
+      "amenities": []
+    },
+    {
+      "titulo": "Apartamento en venta en Baruta, Miranda — $160.000",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/26-21275-venta-apartamento-colinas-de-la-tahona-MLV-1014050524",
+      "precio_texto": "$160.000",
+      "precio_usd": 160000,
+      "habitaciones": 3,
+      "banos": 2,
+      "metros_cuadrados": 92,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
       "ubicacion": "Baruta, Miranda",
       "portal": "inmueblesconlupa",
       "descripcion": "Colinas de la Tahona, Caracas, Baruta, Miranda, VEN. ¡Imagínate despertar cada día en este oasis de tranquilidad! Este apartamento de 92 m² en Colinas de la Tahona activa tus emociones y te conecta de inmediato con el estilo de vida que tu familia merece.  * Espacios versátiles y funcionales: Disfruta de una distribución inteligente con 2 habitaciones, 2 baños y un estudio convertible listo para transformarse en tu tercera habitación.  * Á social integrada: Un cálido salón-comedor que conecta de manera fluida con la cocina, ideal para crear momentos memorables.  * Comodidad y seguridad: Ubicado en piso bajo para mayor practicidad, dentro de una urbanización privada con garita",
@@ -892,21 +873,6 @@
       "ubicacion": "",
       "portal": "inmueblesconlupa",
       "descripcion": "La mayoría sigue buscando un local en plena avenida principal, esperando que los clientes lleguen caminando frente a su vitrina.\r\nY luego están los empresarios como tú, que entienden que hoy los clientes también llegan por una cita, una recomendación o una compra por internet. Muchos ya saben lo que quieren. Solo necesitan un lugar donde conocer el producto, recibir un servicio o retirar su compra.\r\nPorque hoy hay negocios que tienen clientes mucho antes de tener una tienda física y más movimiento en WhatsApp que haría palidecer de envidia a muchas vitrinas. Operan a puerta cerrada, y cuidan su utilidad neta.\r\nCuando decides abrir una sede, trasladarte o ampliar tus operaciones, la decisión va mucho más allá de conseguir cuatro paredes. Se trata de darle presencia a tu marca, una dirección donde tus clientes sepan encontrarte y un espacio donde tu equipo pueda trabajar sin que una actividad interrumpa a la otra. Y todo a un canon mensual que, sin duda, le sacará una sonrisa a tu contabilidad.\r\nEn Santa Mónica, este local comercial de 68,88 m² tiene atributos que merecen tu atención.\r\nSu planta rectangular y sus dos accesos, frontal y lateral, resuelven de golpe el caos operativo: separan la atención al público de las actividades internas. Puedes recibir a un cliente con privacidad, exhibir tus productos sin convertir el espacio en un depósito o coordinar pedidos y entregas mientras el resto de tu negocio continúa funcionando. Porque una cosa es tener ventas y otra muy distinta es pagar un alquiler costoso para terminar trabajando, atendiendo y buscando mercancía en el mismo metro cuadrado.\r\nLa excelente iluminación natural contribuye a crear un ambiente agradable para tu equipo y para quienes te visitan. Porque trabajar a gusto también se nota en la manera de atender.\r\nUna dirección. Muchas maneras de hacer negocios.\r\nIdeal para consultorios de atención por citas, despachos contables y jurídicos, oficinas de seguros, consultorías y servicios administrativos. También para tiendas online que necesitan organizar inventario y despachos, puntos de recepción y retiro de encomiendas, servicios tecnológicos, showrooms de productos especializados y centros de estética y bienestar. Y cualquier otra actividad cuyos clientes ya saben lo que buscan y necesitan una dirección donde recibir atención, conocer productos o retirar sus compras.\r\nSanta Mónica: una ubicación que también trabaja a favor de tu negocio.\r\nSu conexión entre el este y el oeste de Caracas favorece los desplazamientos hacia distintos sectores de la capital, facilitando la recepción de mercancía, la coordinación de entregas y el acceso de clientes, trabajadores y proveedores. Porque bastante tienes con dirigir tu negocio como para complicarte también con la logística de llegar hasta él.\r\nAquí puedes darle una dirección a tu marca, organizar mejor la atención y contar con un punto desde donde desarrollar tus operaciones, sin asumir los costos de exposición comercial que tu modelo de negocio quizás ni siquiera necesita.\r\nLo que has construido hasta ahora te ha traído hasta aquí.\r\nContactame y conoce este local!\r\nLa visita puede mostrarte posibilidades que una fotografía no alcanza a contar.",
-      "amenities": []
-    },
-    {
-      "titulo": "Local Comercial en alquiler en Distrito Capital — $420/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/se-alquila-practico-deposito-comercial-de-42-m-en-santa-rosalia-century21-1266133",
-      "precio_texto": "$420",
-      "precio_usd": 420,
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": 42,
-      "tipo": "Local comercial",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Local versátil y altamente funcional para adaptarse como Local Comercial, Depósito o Almacén.  Por su excelente ubicación céntrica y accesibilidad, resulta perfecto para diversos rubros tales como: Venta de Repuestos o accesorios automotrices, Comercialización de tecnología, celulares y computación. Centro de recarga y expendio de agua potable, Comercialización de alimentos, bebidas o rubros especializados. Depósito, resguardo de inventario seco o punto de distribución logística. Características Principales:Canon de arrendamiento: $420 USD / mes.  Superficie: 42 m² de planta libre.   Seguridad: Cerramiento externo con rejas metálicas batientes y puerta tipo Santa María. Ubicación: Zona céntrica de alto movimiento comercial y excelente conectividad.Condiciones de la Negociación:Contrato anual (renovable). Depósito de garantía: A convenir entre las partes. Modalidad de pago: Divisas ($) o Bolívares calculados a la tasa oficial del Euro (BCV).",
       "amenities": []
     },
     {
@@ -1054,24 +1020,6 @@
       "amenities": [
         "estacionamiento",
         "terraza"
-      ]
-    },
-    {
-      "titulo": "Casa en venta en Vargas, La Guaira — $75.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/la-guaira/venta-de-casa-en-el-km-33-carretera-el-junquito-colonia-de-tovar-lfm-century21-1123837",
-      "precio_texto": "$75.000",
-      "precio_usd": 75000,
-      "habitaciones": 3,
-      "banos": 2,
-      "metros_cuadrados": 132,
-      "tipo": "Casa",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Vargas, La Guaira",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Exclusividad, Seguridad y Autonomía en la Montaña\r\nEsta propiedad no es solo una casa, es un activo de alto perfil diseñado para quienes exigen privacidad absoluta, operatividad total y mantenimiento impecable. Ubicada en la exclusiva Urbanización El Pinar (Petaquire), representa la combinación perfecta entre el lujo rústico y la tranquilidad logística.\r\n\r\n   UBICACIÓN Y ENTORNO\r\nSector: Urbanización El Pinar, Petaquire.\r\n\r\nPrivacidad: Comunidad cerrada de apenas 40 residencias.\r\n\r\nConectividad: Un refugio de montaña a solo minutos de la Colonia de Tor y el Junquito.\r\n\r\n   SEGURIDAD DE ÉLITE\r\nControl de Acceso: Garita con vigilancia privada las 24 horas.\r\n\r\nMonitoreo: Circuito Cerrado de Televisión (CCTV) integrado tanto en la urbanización como en la propiedad.\r\n\r\n   AUTONOMÍA HÍDRICA GARANTIZADA\r\nFuente Natural: Acceso a agua de manantial pura 24/7.\r\n\r\nReserva Privada: Sistema robusto de tanques de reserva propios para garantizar suministro ininterrumpido.\r\n\r\n  ESPECIFICACIONES TÉCNICAS\r\nTerreno: 841 m².\r\n\r\nConstrucción: 132 m² en madera tratada.\r\n\r\nDistribucion  3 habitaciones, 2 baños, sala-comedor y conina concepto abierto, 2 puestos de estacionamiento.                                                                                                                        Condición: Estado \"Coleccionista\" (mantenimiento riguroso, lista para mudanza inmediata).\r\nLa propiedad más segura y con el mejor suministro de agua de toda la zona",
-      "amenities": [
-        "vigilancia",
-        "estacionamiento"
       ]
     },
     {
@@ -2607,23 +2555,6 @@
       ]
     },
     {
-      "titulo": "Oficina en alquiler en Distrito Capital — $500/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/distrito-capital/comercial-oficina-en-alquiler-en-san-bernardino-distrito-metropolitano-rentahouse-27-4353",
-      "precio_texto": "$500",
-      "precio_usd": 500,
-      "habitaciones": null,
-      "banos": 1,
-      "metros_cuadrados": 38,
-      "tipo": "Oficina",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Buscas la ubicacion ideal para tu empresa, consultorio o estudio profesional en Caracas?\nEstablece tu proyecto en un punto estrategico de San Bernardino, dentro de un edificio de gran trayectoria y reconocimiento.\nEsta oficina de 38.14 metros ha sido totalmente remodelada con acabados modernos, excelente distribucion y lista para operar.",
-      "amenities": [
-        "remodelado"
-      ]
-    },
-    {
       "titulo": "Oficina en alquiler en Distrito Capital — $300/mes",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/distrito-capital/comercial-oficina-en-alquiler-en-tierra-negra-zulia-rentahouse-27-4559",
       "precio_texto": "$300",
@@ -3080,23 +3011,6 @@
       "amenities": []
     },
     {
-      "titulo": "Apartamento en venta en Sebucan, Miranda",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-1-nivel-en-venta-en-sebucan-distrito-metropolitano-rentahouse-27-7534",
-      "precio_texto": "",
-      "precio_usd": null,
-      "habitaciones": 3,
-      "banos": 4,
-      "metros_cuadrados": 154,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Precioso apartamento en Edificio de 5 pisos, 2 apartamentos por piso mas PH, tiene ascensor privado, entrada de servicio, edificio en perfecto mantenimiento, tiene salón de fiesta, area de parrillera, servicio de agua continuo, 3 habitaciones mas servicio con baño, 2 baños completos mas visita, la cocina no es integrada.\n\nLa cocina está equipada, y tiene aires acondicionados, 3 puestos de estacio",
-      "amenities": [
-        "ascensor"
-      ]
-    },
-    {
       "titulo": "Apartamento en venta en Alto Grande, Miranda — $52.000",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-1-nivel-en-venta-en-alto-grande-miranda-rentahouse-27-7539",
       "precio_texto": "$52.000",
@@ -3536,21 +3450,6 @@
       "amenities": [
         "aire_acondicionado"
       ]
-    },
-    {
-      "titulo": "Local Comercial en venta en Distrito Capital — $79.900",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-local-comercial-en-venta-en-parroquia-santa-teresa-distrito-metropolit-rentahouse-27-7572",
-      "precio_texto": "$79.900",
-      "precio_usd": 79900,
-      "habitaciones": null,
-      "banos": 1,
-      "metros_cuadrados": 124,
-      "tipo": "Local comercial",
-      "operacion_detectada": "Venta",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "¡OPORTUNIDAD DE INVERSIÓN! LOCAL COMERCIAL EN VENTA - 82,12 m²\n\nDale vida a tu próximo proyecto comercial.  ubicado estratégicamente en planta baja, ideal para desarrollar un negocio, establecer una tienda, showroom, oficina o cualquier actividad comercial.\n\nSu estado actual representa una excelente oportunidad para quienes buscan invertir, remodelar y",
-      "amenities": []
     },
     {
       "titulo": "Local Comercial en alquiler en Distrito Capital — $300/mes",
@@ -4170,25 +4069,6 @@
       ]
     },
     {
-      "titulo": "Oficina en venta en Chacao, Miranda",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/venta/miranda/piso-de-oficinas-en-venta-en-centro-galipan-remax-279664",
-      "precio_texto": "",
-      "precio_usd": null,
-      "habitaciones": 5,
-      "banos": 2,
-      "metros_cuadrados": 118,
-      "tipo": "Oficina",
-      "operacion_detectada": "Venta",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Se alquila oficina amoblada de 118 m2 con amplio espacio para cubículos, sala de reuniones, 4 oficinas cerradas, kitchenette y 2 baños.\r\nLa torre cuenta con dos ascensores operativos, estacionamiento público y vigilancia privada. Está ubicada en el corazón de El Rosal, en la Av. Francisco de Miranda, ideal para tomar transporte público y con fácil acceso a las principales vías de Caracas. Hay comercios, restaurantes y servicios en las zonas aledañas.\r\nNegociación: 3 meses por adelantado + 3 meses de depósito + 1 mes de comisión.",
-      "amenities": [
-        "vigilancia",
-        "estacionamiento",
-        "ascensor"
-      ]
-    },
-    {
       "titulo": "Oficina en alquiler en Chacao, Miranda — $1.550/mes",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/miranda/piso-de-oficinas-en-venta-en-centro-galipan-remax-279664",
       "precio_texto": "$1.550",
@@ -4199,6 +4079,25 @@
       "tipo": "Oficina",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Chacao, Miranda",
+      "portal": "inmueblesconlupa",
+      "descripcion": "Se alquila oficina amoblada de 118 m2 con amplio espacio para cubículos, sala de reuniones, 4 oficinas cerradas, kitchenette y 2 baños.\r\nLa torre cuenta con dos ascensores operativos, estacionamiento público y vigilancia privada. Está ubicada en el corazón de El Rosal, en la Av. Francisco de Miranda, ideal para tomar transporte público y con fácil acceso a las principales vías de Caracas. Hay comercios, restaurantes y servicios en las zonas aledañas.\r\nNegociación: 3 meses por adelantado + 3 meses de depósito + 1 mes de comisión.",
+      "amenities": [
+        "vigilancia",
+        "estacionamiento",
+        "ascensor"
+      ]
+    },
+    {
+      "titulo": "Oficina en venta en Chacao, Miranda",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/venta/miranda/piso-de-oficinas-en-venta-en-centro-galipan-remax-279664",
+      "precio_texto": "",
+      "precio_usd": null,
+      "habitaciones": 5,
+      "banos": 2,
+      "metros_cuadrados": 118,
+      "tipo": "Oficina",
+      "operacion_detectada": "Venta",
+      "ubicacion": "",
       "portal": "inmueblesconlupa",
       "descripcion": "Se alquila oficina amoblada de 118 m2 con amplio espacio para cubículos, sala de reuniones, 4 oficinas cerradas, kitchenette y 2 baños.\r\nLa torre cuenta con dos ascensores operativos, estacionamiento público y vigilancia privada. Está ubicada en el corazón de El Rosal, en la Av. Francisco de Miranda, ideal para tomar transporte público y con fácil acceso a las principales vías de Caracas. Hay comercios, restaurantes y servicios en las zonas aledañas.\r\nNegociación: 3 meses por adelantado + 3 meses de depósito + 1 mes de comisión.",
       "amenities": [
@@ -4508,23 +4407,6 @@
       ]
     },
     {
-      "titulo": "Apartamento en venta en Distrito Capital — $154.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-de-119-mts2-en-venta-en-la-campina-nueva-construccion-2h-estudio3b2p-remax-309224",
-      "precio_texto": "$154.000",
-      "precio_usd": 154000,
-      "habitaciones": 1,
-      "banos": 1,
-      "metros_cuadrados": 55,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Calle Los Huertos, El Mirador, Caracas, Libertador, Distrito Capital, 1050, VEN. Alquiler. Apartamento. La Campiña. Caracas   Apartamento en Alquiler en La Campiña, este encantador apartamento de 55 m², ubicado en La Campiña, un espacio diseñado para ofrecerte comodidad y funcionalidad.   Consta de 1 habitación amplia y luminosa, un estudio perfecto para trabajar desde casa o como un espacio adicional para tus hobbies, dispone de 1 baño, equipado con todo lo necesario para tu confort.   Cuenta con Área de Lavandería, facilitando las tareas del hogar y Tanque   Posee 1 puesto de estacionamiento privado, techado, también incluye un maletero, ideal para almacenar tus pertenencias.   Áreas Comunes: salón de fiesta, perfecto para celebrar ocasiones",
-      "amenities": [
-        "estacionamiento"
-      ]
-    },
-    {
       "titulo": "Apartamento en alquiler en Distrito Capital — $600/mes",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/distrito-capital/apartamento-de-119-mts2-en-venta-en-la-campina-nueva-construccion-2h-estudio3b2p-remax-309224",
       "precio_texto": "$600",
@@ -4534,6 +4416,23 @@
       "metros_cuadrados": 55,
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
+      "ubicacion": "",
+      "portal": "inmueblesconlupa",
+      "descripcion": "Calle Los Huertos, El Mirador, Caracas, Libertador, Distrito Capital, 1050, VEN. Alquiler. Apartamento. La Campiña. Caracas   Apartamento en Alquiler en La Campiña, este encantador apartamento de 55 m², ubicado en La Campiña, un espacio diseñado para ofrecerte comodidad y funcionalidad.   Consta de 1 habitación amplia y luminosa, un estudio perfecto para trabajar desde casa o como un espacio adicional para tus hobbies, dispone de 1 baño, equipado con todo lo necesario para tu confort.   Cuenta con Área de Lavandería, facilitando las tareas del hogar y Tanque   Posee 1 puesto de estacionamiento privado, techado, también incluye un maletero, ideal para almacenar tus pertenencias.   Áreas Comunes: salón de fiesta, perfecto para celebrar ocasiones",
+      "amenities": [
+        "estacionamiento"
+      ]
+    },
+    {
+      "titulo": "Apartamento en venta en Distrito Capital — $154.000",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-de-119-mts2-en-venta-en-la-campina-nueva-construccion-2h-estudio3b2p-remax-309224",
+      "precio_texto": "$154.000",
+      "precio_usd": 154000,
+      "habitaciones": 1,
+      "banos": 1,
+      "metros_cuadrados": 55,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
       "ubicacion": "",
       "portal": "inmueblesconlupa",
       "descripcion": "Calle Los Huertos, El Mirador, Caracas, Libertador, Distrito Capital, 1050, VEN. Alquiler. Apartamento. La Campiña. Caracas   Apartamento en Alquiler en La Campiña, este encantador apartamento de 55 m², ubicado en La Campiña, un espacio diseñado para ofrecerte comodidad y funcionalidad.   Consta de 1 habitación amplia y luminosa, un estudio perfecto para trabajar desde casa o como un espacio adicional para tus hobbies, dispone de 1 baño, equipado con todo lo necesario para tu confort.   Cuenta con Área de Lavandería, facilitando las tareas del hogar y Tanque   Posee 1 puesto de estacionamiento privado, techado, también incluye un maletero, ideal para almacenar tus pertenencias.   Áreas Comunes: salón de fiesta, perfecto para celebrar ocasiones",
@@ -4575,24 +4474,6 @@
       ]
     },
     {
-      "titulo": "Apartamento en alquiler en Baruta, Miranda — $1.000/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/miranda/apartamento-1-nivel-en-alquiler-en-santa-fe-norte-distrito-metropolitano-rentahouse-26-18863",
-      "precio_texto": "$1.000",
-      "precio_usd": 1000,
-      "habitaciones": 3,
-      "banos": 2,
-      "metros_cuadrados": 111,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Baruta, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Alquiler de amplio apartamento . 111 M2 de comodos espacios con 3 habitaciones , dos de ellas poseen cama la tercera Hab. se usa como estudio, sala comedor cocina, 2 banos, 2 puestos.\n\nAmoblado y equipado con lo necesario, edificio de mediana densidad, ascensores operativos, el conjunto posee con caminarías y parque infantil, vigilancia 24 horas en calle cerrada .\n\nagenda tu visita",
-      "amenities": [
-        "vigilancia",
-        "ascensor"
-      ]
-    },
-    {
       "titulo": "Apartamento en venta en Santa Fe Norte, Miranda",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-1-nivel-en-alquiler-en-santa-fe-norte-distrito-metropolitano-rentahouse-26-18863",
       "precio_texto": "",
@@ -4603,6 +4484,24 @@
       "tipo": "Apartamento",
       "operacion_detectada": "Venta",
       "ubicacion": "",
+      "portal": "inmueblesconlupa",
+      "descripcion": "Alquiler de amplio apartamento . 111 M2 de comodos espacios con 3 habitaciones , dos de ellas poseen cama la tercera Hab. se usa como estudio, sala comedor cocina, 2 banos, 2 puestos.\n\nAmoblado y equipado con lo necesario, edificio de mediana densidad, ascensores operativos, el conjunto posee con caminarías y parque infantil, vigilancia 24 horas en calle cerrada .\n\nagenda tu visita",
+      "amenities": [
+        "vigilancia",
+        "ascensor"
+      ]
+    },
+    {
+      "titulo": "Apartamento en alquiler en Baruta, Miranda — $1.000/mes",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/miranda/apartamento-1-nivel-en-alquiler-en-santa-fe-norte-distrito-metropolitano-rentahouse-26-18863",
+      "precio_texto": "$1.000",
+      "precio_usd": 1000,
+      "habitaciones": 3,
+      "banos": 2,
+      "metros_cuadrados": 111,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Baruta, Miranda",
       "portal": "inmueblesconlupa",
       "descripcion": "Alquiler de amplio apartamento . 111 M2 de comodos espacios con 3 habitaciones , dos de ellas poseen cama la tercera Hab. se usa como estudio, sala comedor cocina, 2 banos, 2 puestos.\n\nAmoblado y equipado con lo necesario, edificio de mediana densidad, ascensores operativos, el conjunto posee con caminarías y parque infantil, vigilancia 24 horas en calle cerrada .\n\nagenda tu visita",
       "amenities": [
@@ -7677,15 +7576,15 @@
       ]
     },
     {
-      "titulo": "Apartamento en alquiler en La Tahona, Miranda — $3.200/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/miranda/ph-en-venta-urb-la-tahona-381-76mt2-5h-5b-2e-25-114-remax-306667",
-      "precio_texto": "$3.200",
-      "precio_usd": 3200,
+      "titulo": "Apartamento en venta en La Tahona, Miranda — $430.000",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/ph-en-venta-urb-la-tahona-381-76mt2-5h-5b-2e-25-114-remax-306667",
+      "precio_texto": "$430.000",
+      "precio_usd": 430000,
       "habitaciones": 4,
       "banos": 4,
       "metros_cuadrados": 382,
       "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
+      "operacion_detectada": "Venta",
       "ubicacion": "La Tahona, Miranda",
       "portal": "inmueblesconlupa",
       "descripcion": "Av Principal de la tahona, La Tahona. Penthouse en Alquiler – Urb. La Tahona, Caracas   Amplitud, elegancia y una vista espectacular de 180° al majestuoso Ávila  Ubicado en una de las zonas más exclusivas y tranquilas del este de Caracas, este penthouse tipo dúplex combina espacios amplios, funcionalidad y una vista panorámica incomparable, ideal para quienes buscan confort, privacidad y una experiencia de vida de alto nivel.   Características generales:   Área total: 550 m² aprox. (381,76 m² + ampliación de terraza de 168,24 m²)  2 puestos de estacionamiento techados  1 maletero grande  Edificio de solo 23 apartamentos, 8 pisos y 2 ascensores operativos   Distribución interna:   Amplia sala-comedor con excelente iluminación",
@@ -7697,15 +7596,15 @@
       ]
     },
     {
-      "titulo": "Apartamento en venta en La Tahona, Miranda — $430.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/ph-en-venta-urb-la-tahona-381-76mt2-5h-5b-2e-25-114-remax-306667",
-      "precio_texto": "$430.000",
-      "precio_usd": 430000,
+      "titulo": "Apartamento en alquiler en La Tahona, Miranda — $3.200/mes",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/miranda/ph-en-venta-urb-la-tahona-381-76mt2-5h-5b-2e-25-114-remax-306667",
+      "precio_texto": "$3.200",
+      "precio_usd": 3200,
       "habitaciones": 4,
       "banos": 4,
       "metros_cuadrados": 382,
       "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
+      "operacion_detectada": "Alquiler",
       "ubicacion": "La Tahona, Miranda",
       "portal": "inmueblesconlupa",
       "descripcion": "Av Principal de la tahona, La Tahona. Penthouse en Alquiler – Urb. La Tahona, Caracas   Amplitud, elegancia y una vista espectacular de 180° al majestuoso Ávila  Ubicado en una de las zonas más exclusivas y tranquilas del este de Caracas, este penthouse tipo dúplex combina espacios amplios, funcionalidad y una vista panorámica incomparable, ideal para quienes buscan confort, privacidad y una experiencia de vida de alto nivel.   Características generales:   Área total: 550 m² aprox. (381,76 m² + ampliación de terraza de 168,24 m²)  2 puestos de estacionamiento techados  1 maletero grande  Edificio de solo 23 apartamentos, 8 pisos y 2 ascensores operativos   Distribución interna:   Amplia sala-comedor con excelente iluminación",
@@ -7886,25 +7785,6 @@
       ]
     },
     {
-      "titulo": "Apartamento en venta en Libertador, Distrito Capital",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/alquiler-temporal-para-4-personas-35-el-dia-MLV-775356985",
-      "precio_texto": "",
-      "precio_usd": null,
-      "habitaciones": 2,
-      "banos": 2,
-      "metros_cuadrados": 65,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Venta",
-      "ubicacion": "",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Necesitas hacer diligencias en Caracas de negocios o salud?, te presento este cómodo apartamento Ubicado en zona céntrica muy movida y con todo cerca en edificio de nueva data.\nY consta de:\n65 m2\n2 habitaciones\n2 baños\n1 puesto\nLas residencias cuenta con áreas de esparcimiento, áreas verdes, 3 ascensores activos, agua constante, vigilancia privada las 24h, con hermosa vista al Ávila, ubicación privilegiada, zona céntrica de Caracas, cerca de complejos culturales, museos, estaciones de metro, universidades, colegios, plazas, comercios, parques, de fácil acceso vehicular a las vías principales y autopista.\nPrecio por día 35$.\nSOLO INTERESADOS DIRECTOS",
-      "amenities": [
-        "vigilancia",
-        "ascensor",
-        "vista"
-      ]
-    },
-    {
       "titulo": "Apartamento en alquiler en Distrito Capital — $35/mes",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/distrito-capital/alquiler-temporal-para-4-personas-35-el-dia-MLV-775356985",
       "precio_texto": "$35",
@@ -7924,21 +7804,22 @@
       ]
     },
     {
-      "titulo": "Oficina en alquiler en Baruta, Miranda — $7.875/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/miranda/oficina-en-alquiler-obra-gris-las-mercedes-century21-1228334",
-      "precio_texto": "$7.875",
-      "precio_usd": 7875,
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": 315,
-      "tipo": "Oficina",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Baruta, Miranda",
+      "titulo": "Apartamento en venta en Libertador, Distrito Capital",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/alquiler-temporal-para-4-personas-35-el-dia-MLV-775356985",
+      "precio_texto": "",
+      "precio_usd": null,
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 65,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
+      "ubicacion": "",
       "portal": "inmueblesconlupa",
-      "descripcion": "Torre 302 | Su sede corporativa en el corazón de Las Mercedes.\r\nInteligencia operativa 24/7, automatización integral y estándares de clase mundial. Fachada acristalada con protección UV, climatización Carrier de última generación, respaldo energético con 3 plantas de 3.000 kVA y tanque de 450.000 litros.\r\n\r\nOficinas desde 130 hasta 315 m², diseñadas para albergar y potenciar su proyecto lleno modernidad, lujo y exclusividad.\r\n\r\nInfraestructura premium:\r\n365 puestos de estacionamiento\r\n4 niveles de estacionamientos elevados.\r\n3 niveles de sótano.\r\nValet parking.\r\nAscensores Mitsubishi®️ de alta velocidad.\r\nSeguridad privada permanente y control de accesos.\r\n\r\nCondiciones: oficinas disponibles en alquiler o venta en obra gris, con financiamiento directo sin intereses.\r\n\r\nTorre 302. Donde su empresa no solo opera, sino que trasciende.\r\nContáctenos y asegure la mejor ubicación del mercado",
+      "descripcion": "Necesitas hacer diligencias en Caracas de negocios o salud?, te presento este cómodo apartamento Ubicado en zona céntrica muy movida y con todo cerca en edificio de nueva data.\nY consta de:\n65 m2\n2 habitaciones\n2 baños\n1 puesto\nLas residencias cuenta con áreas de esparcimiento, áreas verdes, 3 ascensores activos, agua constante, vigilancia privada las 24h, con hermosa vista al Ávila, ubicación privilegiada, zona céntrica de Caracas, cerca de complejos culturales, museos, estaciones de metro, universidades, colegios, plazas, comercios, parques, de fácil acceso vehicular a las vías principales y autopista.\nPrecio por día 35$.\nSOLO INTERESADOS DIRECTOS",
       "amenities": [
-        "estacionamiento",
-        "ascensor"
+        "vigilancia",
+        "ascensor",
+        "vista"
       ]
     },
     {
@@ -7951,6 +7832,24 @@
       "metros_cuadrados": 315,
       "tipo": "Oficina",
       "operacion_detectada": "Venta",
+      "ubicacion": "Baruta, Miranda",
+      "portal": "inmueblesconlupa",
+      "descripcion": "Torre 302 | Su sede corporativa en el corazón de Las Mercedes.\r\nInteligencia operativa 24/7, automatización integral y estándares de clase mundial. Fachada acristalada con protección UV, climatización Carrier de última generación, respaldo energético con 3 plantas de 3.000 kVA y tanque de 450.000 litros.\r\n\r\nOficinas desde 130 hasta 315 m², diseñadas para albergar y potenciar su proyecto lleno modernidad, lujo y exclusividad.\r\n\r\nInfraestructura premium:\r\n365 puestos de estacionamiento\r\n4 niveles de estacionamientos elevados.\r\n3 niveles de sótano.\r\nValet parking.\r\nAscensores Mitsubishi®️ de alta velocidad.\r\nSeguridad privada permanente y control de accesos.\r\n\r\nCondiciones: oficinas disponibles en alquiler o venta en obra gris, con financiamiento directo sin intereses.\r\n\r\nTorre 302. Donde su empresa no solo opera, sino que trasciende.\r\nContáctenos y asegure la mejor ubicación del mercado",
+      "amenities": [
+        "estacionamiento",
+        "ascensor"
+      ]
+    },
+    {
+      "titulo": "Oficina en alquiler en Baruta, Miranda — $7.875/mes",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/miranda/oficina-en-alquiler-obra-gris-las-mercedes-century21-1228334",
+      "precio_texto": "$7.875",
+      "precio_usd": 7875,
+      "habitaciones": null,
+      "banos": null,
+      "metros_cuadrados": 315,
+      "tipo": "Oficina",
+      "operacion_detectada": "Alquiler",
       "ubicacion": "Baruta, Miranda",
       "portal": "inmueblesconlupa",
       "descripcion": "Torre 302 | Su sede corporativa en el corazón de Las Mercedes.\r\nInteligencia operativa 24/7, automatización integral y estándares de clase mundial. Fachada acristalada con protección UV, climatización Carrier de última generación, respaldo energético con 3 plantas de 3.000 kVA y tanque de 450.000 litros.\r\n\r\nOficinas desde 130 hasta 315 m², diseñadas para albergar y potenciar su proyecto lleno modernidad, lujo y exclusividad.\r\n\r\nInfraestructura premium:\r\n365 puestos de estacionamiento\r\n4 niveles de estacionamientos elevados.\r\n3 niveles de sótano.\r\nValet parking.\r\nAscensores Mitsubishi®️ de alta velocidad.\r\nSeguridad privada permanente y control de accesos.\r\n\r\nCondiciones: oficinas disponibles en alquiler o venta en obra gris, con financiamiento directo sin intereses.\r\n\r\nTorre 302. Donde su empresa no solo opera, sino que trasciende.\r\nContáctenos y asegure la mejor ubicación del mercado",
@@ -8064,16 +7963,16 @@
       ]
     },
     {
-      "titulo": "Casa en venta en Colinas de Bello Monte, Miranda — $450.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/miranda/se-vende-espectacular-casa-remodelada-en-colinas-de-bello-monte-lista-para-estre-remax-321205",
-      "precio_texto": "$450.000",
-      "precio_usd": 450000,
+      "titulo": "Casa en alquiler en Colinas de Bello Monte, Miranda",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/alquiler/miranda/se-vende-espectacular-casa-remodelada-en-colinas-de-bello-monte-lista-para-estre-remax-321205",
+      "precio_texto": "",
+      "precio_usd": null,
       "habitaciones": 4,
       "banos": 3,
       "metros_cuadrados": 600,
       "tipo": "Casa",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Colinas de Bello Monte, Miranda",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "",
       "portal": "inmueblesconlupa",
       "descripcion": "Calle Suapure Colinas de Bello Monte. COLINAS DE BELLO MONTE ​ Residencia Remodelada | Lista para habitar y estrenar. - ​Superficie: 600 m² aproximadamente de puro diseño moderno.  - ​Distribución: 4 Habitaciones + Servicio. (1 Hab con vestier,  balcon y terraza) - ​Baños: 4 Baños completos + Servicio (Totalmente nuevos). - ​Estacionamiento: 3 puestos (2 techados) + Maletero. - ​Áreas Sociales: Sala-comedor con pisos de porcelanato, cocina moderna equipada, área de gimnasio convertible o family room. - ​Exteriores: Piscina, área de parrillera, jardín y terraza techada. - ​Servicios y Seguridad: Tanque de agua de 20.000 litros, sistema de cámaras de seguridad, internet de alta velocidad y aire acondicionado en habitación principal. - ​Ubicación:",
       "amenities": [
@@ -8087,16 +7986,16 @@
       ]
     },
     {
-      "titulo": "Casa en alquiler en Colinas de Bello Monte, Miranda",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/alquiler/miranda/se-vende-espectacular-casa-remodelada-en-colinas-de-bello-monte-lista-para-estre-remax-321205",
-      "precio_texto": "",
-      "precio_usd": null,
+      "titulo": "Casa en venta en Colinas de Bello Monte, Miranda — $450.000",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/miranda/se-vende-espectacular-casa-remodelada-en-colinas-de-bello-monte-lista-para-estre-remax-321205",
+      "precio_texto": "$450.000",
+      "precio_usd": 450000,
       "habitaciones": 4,
       "banos": 3,
       "metros_cuadrados": 600,
       "tipo": "Casa",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "",
+      "operacion_detectada": "Venta",
+      "ubicacion": "Colinas de Bello Monte, Miranda",
       "portal": "inmueblesconlupa",
       "descripcion": "Calle Suapure Colinas de Bello Monte. COLINAS DE BELLO MONTE ​ Residencia Remodelada | Lista para habitar y estrenar. - ​Superficie: 600 m² aproximadamente de puro diseño moderno.  - ​Distribución: 4 Habitaciones + Servicio. (1 Hab con vestier,  balcon y terraza) - ​Baños: 4 Baños completos + Servicio (Totalmente nuevos). - ​Estacionamiento: 3 puestos (2 techados) + Maletero. - ​Áreas Sociales: Sala-comedor con pisos de porcelanato, cocina moderna equipada, área de gimnasio convertible o family room. - ​Exteriores: Piscina, área de parrillera, jardín y terraza techada. - ​Servicios y Seguridad: Tanque de agua de 20.000 litros, sistema de cámaras de seguridad, internet de alta velocidad y aire acondicionado en habitación principal. - ​Ubicación:",
       "amenities": [
@@ -8299,26 +8198,6 @@
       ]
     },
     {
-      "titulo": "Oficina en alquiler en Los Dos Caminos, Miranda — $800/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/miranda/oficina-en-alquiler-urb-los-dos-caminos-remax-291030",
-      "precio_texto": "$800",
-      "precio_usd": 800,
-      "habitaciones": null,
-      "banos": 2,
-      "metros_cuadrados": 157,
-      "tipo": "Oficina",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Los Dos Caminos, Miranda",
-      "portal": "inmueblesconlupa",
-      "descripcion": "Los Dos Caminos, Caracas, Sucre, Miranda. Se Alquila excelente oficina comercial, lista para utilizar, distribuir y acondicionar espacios según tus necesidades, ubicada en la prestigiosa Torre de oficinas Centro Parque Boyacá, en la Av. Sucre de los Dos caminos.  Posee un área de 157 m2, conformado por (01) área de recepción, (06) oficinas, sala de conferencia, (01) área de kitchenette, sala de baños, una para dama y otra para caballero.   Ubicado en Piso 17, dos oficinas por piso, 6 ascensores, cableado con red para 24 puntos, área de servidores, tanque interno de agua, Aire Acondicionado central, sistema contra incendio, linda vista, amplio estacionamiento público, vigilancia privada.   Puede",
-      "amenities": [
-        "vigilancia",
-        "estacionamiento",
-        "ascensor",
-        "aire_acondicionado"
-      ]
-    },
-    {
       "titulo": "Oficina en venta en Los Dos Caminos, Miranda",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/venta/miranda/oficina-en-alquiler-urb-los-dos-caminos-remax-291030",
       "precio_texto": "",
@@ -8329,6 +8208,26 @@
       "tipo": "Oficina",
       "operacion_detectada": "Venta",
       "ubicacion": "",
+      "portal": "inmueblesconlupa",
+      "descripcion": "Los Dos Caminos, Caracas, Sucre, Miranda. Se Alquila excelente oficina comercial, lista para utilizar, distribuir y acondicionar espacios según tus necesidades, ubicada en la prestigiosa Torre de oficinas Centro Parque Boyacá, en la Av. Sucre de los Dos caminos.  Posee un área de 157 m2, conformado por (01) área de recepción, (06) oficinas, sala de conferencia, (01) área de kitchenette, sala de baños, una para dama y otra para caballero.   Ubicado en Piso 17, dos oficinas por piso, 6 ascensores, cableado con red para 24 puntos, área de servidores, tanque interno de agua, Aire Acondicionado central, sistema contra incendio, linda vista, amplio estacionamiento público, vigilancia privada.   Puede",
+      "amenities": [
+        "vigilancia",
+        "estacionamiento",
+        "ascensor",
+        "aire_acondicionado"
+      ]
+    },
+    {
+      "titulo": "Oficina en alquiler en Los Dos Caminos, Miranda — $800/mes",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/miranda/oficina-en-alquiler-urb-los-dos-caminos-remax-291030",
+      "precio_texto": "$800",
+      "precio_usd": 800,
+      "habitaciones": null,
+      "banos": 2,
+      "metros_cuadrados": 157,
+      "tipo": "Oficina",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Los Dos Caminos, Miranda",
       "portal": "inmueblesconlupa",
       "descripcion": "Los Dos Caminos, Caracas, Sucre, Miranda. Se Alquila excelente oficina comercial, lista para utilizar, distribuir y acondicionar espacios según tus necesidades, ubicada en la prestigiosa Torre de oficinas Centro Parque Boyacá, en la Av. Sucre de los Dos caminos.  Posee un área de 157 m2, conformado por (01) área de recepción, (06) oficinas, sala de conferencia, (01) área de kitchenette, sala de baños, una para dama y otra para caballero.   Ubicado en Piso 17, dos oficinas por piso, 6 ascensores, cableado con red para 24 puntos, área de servidores, tanque interno de agua, Aire Acondicionado central, sistema contra incendio, linda vista, amplio estacionamiento público, vigilancia privada.   Puede",
       "amenities": [
@@ -12447,6 +12346,441 @@
       ]
     },
     {
+      "titulo": "Apartamento en venta en Distrito Capital — $85.000",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-y-local-en-venta-prado-de-maria-MLV-1014420624",
+      "precio_texto": "$85.000",
+      "precio_usd": 85000,
+      "habitaciones": null,
+      "banos": 1,
+      "metros_cuadrados": 65,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
+      "ubicacion": "",
+      "portal": "inmueblesconlupa",
+      "descripcion": "La propiedad tiene 65 m de construcción distribuidos en:\n3 Habitaciones.\n1 Baño.\nLavadero.\nSala.\nCocina.\nComedor.\nLocal.\nComodidades del inmueble:\nAscensores.\nCerca eléctrica.\nSuministro de energía a 110/220V.\nInternet.\nClósets.\nTanque de agua residencial.\nTanque de reserva.\nCalentador de agua.\nUna cocina empotrada.\nAcondicionador de aire.\nVentanales.\nEnrejado de seguridad.\nExteriores del inmueble:\nEstacionamiento para visitantes.\nEstacionamiento por condominio.\nAdyacencias del inmueble:\nUn centro comercial.\nUn centro de servicios para automóviles.\nRestaurantes.\nColegios.\nAutomercados.\nFruterías.\nServicios médicos.\nA pie de calle.\nEn una Av. principal.\nárea comercial.\nEstacionamiento: 1 puesto.\nLas condiciones de negocio son:\nPrecio de venta: $80,000",
+      "amenities": [
+        "estacionamiento",
+        "ascensor"
+      ]
+    },
+    {
+      "titulo": "Casa en venta en Bosque Valle, Distrito Capital — $175.000",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/distrito-capital/amplia-y-hermosa-quinta-en-venta-en-la-urb-bosque-valle-MLV-776578489",
+      "precio_texto": "$175.000",
+      "precio_usd": 175000,
+      "habitaciones": 5,
+      "banos": 3,
+      "metros_cuadrados": 800,
+      "tipo": "Casa",
+      "operacion_detectada": "Venta",
+      "ubicacion": "Bosque Valle, Distrito Capital",
+      "portal": "inmueblesconlupa",
+      "descripcion": "Hermosa Quinta ubicada en la exclusiva Urbanización Bosque Valle, con clima de montaña, que cuenta con 800 mts de construcción y 200 mts2 de terreno. Tiene una magnífica distribución: En la planta baja se encuentra una amplia sala-comedor, cocina completamente remodelada con tope de granito, amplia sala de estar, un (1) bar, dos (2) cómodas habitaciones, un baño completo y área de lavado. En el segundo nivel se encuentra una sala de estar, dos (2) cómodas habitaciones que comparten un (1) baño completo y la habitación principal, con baño privado (con ducha y bañera) y vestier. La habitación principal es sumamente amplia y tiene acceso a una amplia terraza techada con una hermosa y relajante vista.\nLa quinta tiene además tres (3) puestos de estacionamiento techados, con la posibilidad de estacionar también en el frente de la casa, donde caben tres (3) vehículos. Tiene tres tanques de agua con capacidad para 30.000 Lts con sus bombas hidroneumáticas. Cuenta con gas directo, línea CANTV e Internet ABA.\nLa urbanización tiene un excelente mecanismo de control para la seguridad de sus habitantes y cuenta con casetas de vigilancia privada permanente.\nDefinitivamente, si usted desea vivir bien esta es su mejor opción!!!\nVerla es comprarla!!",
+      "amenities": [
+        "vigilancia",
+        "estacionamiento",
+        "terraza",
+        "remodelado"
+      ]
+    },
+    {
+      "titulo": "Casa en venta en El Hatillo, Miranda — $750.000",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/miranda/espectacular-casa-en-venta-o-alquiler-urb-la-lagunita-country-club-MLV-776143023",
+      "precio_texto": "$750.000",
+      "precio_usd": 750000,
+      "habitaciones": 3,
+      "banos": 5,
+      "metros_cuadrados": 2342,
+      "tipo": "Casa",
+      "operacion_detectada": "Venta",
+      "ubicacion": "El Hatillo, Miranda",
+      "portal": "inmueblesconlupa",
+      "descripcion": "Espectacular Casa de una sola planta. Disfrute de una suite ppal conn star íntimo, vestier y cuarto de masaje, junto a dos habitaciones auxiliares que comparten baño. Un Family room tipo cine y un hoobye room perfectos para relajarse. La sala principal se integra a la Terraza, ideal para eventos. Cocina dual con desayunador privado. Piscina climatizada con jacuzzi y sistema de iluminación.\nTambién cuenta con sauna y área de parrilla perfecta para reuniones familiares. Cancha de Pickleball y jardín con parque infantil, diversión asegurada para los pequeños. Equipado con 16 cámaras de seguridad, cerco eléctrico, alarma con sensores de movimiento y botón de pánico para su tranquilidad. Además cuenta con sistema domótico, y planta eléctrica de 55 kva, 12 puestos de estacionamiento e internet por fibra óptica. Tanque de agua de 60.000 lts. Area de servicio con dos cuartos.\nLa casa se vende totalmente amoblada (excepto obras de arte) y cuenta con arboles frutales que añaden un toque especial a su jardín.",
+      "amenities": [
+        "piscina",
+        "jardín",
+        "estacionamiento",
+        "terraza",
+        "sauna"
+      ]
+    },
+    {
+      "titulo": "Apartamento en venta en Baruta, Miranda — $88.000",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-en-venta-baruta-monte-pino-clima-montana-remax-332007",
+      "precio_texto": "$88.000",
+      "precio_usd": 88000,
+      "habitaciones": 3,
+      "banos": 2,
+      "metros_cuadrados": 100,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
+      "ubicacion": "Baruta, Miranda",
+      "portal": "inmueblesconlupa",
+      "descripcion": "Baruta Residencias Monte pino, Caracas, Baruta, Miranda, VEN. Apartamento en venta Baruta  Residencias Monte pino   100mt2  3 habitaciones  2 baños  Cocina  Sala  Comedor  1 puesto de estacionamiento  1 maletero   Bello Apartamento con clima de montaña, te brinda amplios espacios entre sala comedor y cocina, ubicado en piso alto, sus 2 ascensores operativos. Pisos de parquet y cocina con tope de granito. ",
+      "amenities": [
+        "estacionamiento",
+        "ascensor"
+      ]
+    },
+    {
+      "titulo": "Apartamento en alquiler en El Hatillo, Miranda — $1.050/mes",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/miranda/acogedor-y-practico-apartamento-en-alquiler-en-una-de-las-mejores-zonas-del-sure-MLV-1010930688",
+      "precio_texto": "$1.050",
+      "precio_usd": 1050,
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 75,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "El Hatillo, Miranda",
+      "portal": "inmueblesconlupa",
+      "descripcion": "MLS #26-19468\nAcogedor y practico apartamento en una de las mejores zonas del sureste de la ciudad. Completamente equipado con todo lo necesario para vivir cómodamente. Aires acondicionados en cada área, camas, televisores, lavadora secadora, cocina, nevera, horno. Agua y vigilancia 24/7. Estacionamiento para visitantes. El apartamento consta de 75m2, 2 habitaciones, 2 baños, 2 puestos techados y 1 maletero.\n\nJOSE CARRILLO\nPROFESIONAL INMOBILIARIO",
+      "amenities": [
+        "vigilancia",
+        "estacionamiento"
+      ]
+    },
+    {
+      "titulo": "Oficina en alquiler en Distrito Capital — $1.000/mes",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/distrito-capital/amplia-oficina-en-plaza-venezuela-torre-corporativa-torre-domus-piso-9-mls-26-10-MLV-1014938100",
+      "precio_texto": "$1.000",
+      "precio_usd": 1000,
+      "habitaciones": null,
+      "banos": 2,
+      "metros_cuadrados": 147,
+      "tipo": "Oficina",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "",
+      "portal": "inmueblesconlupa",
+      "descripcion": "La Torre Domus se erige como un punto de referencia de solidez y prestigio en el centro financiero y comercial de Plaza Venezuela, en la ciudad de Caracas. Este imponente rascacielos, cuya construcción se completó en 1994, alcanza aproximadamente los 104 metros de altura distribuidos en 25 pisos. Visualmente, la estructura destaca por su combinación de diseño moderno y fachadas de vidrio, proyectando una imagen corporativa de alto nivel. Al establecer operaciones en este edificio, se percibe de inmediato un ambiente ideal para oficinas comerciales, financieras y gubernamentales. Además, desde sus niveles superiores, la torre ofrece una excepcional vista panorámica que permite contemplar el valle de Caracas y la cordillera del Ávila, brindando un entorno que inspira claridad y enfoque para los negocios.\n\nDentro de este imponente y prestigioso entorno, te presento los detalles de este espacio corporativo, estratégicamente ubicado en esquina y listo para elevar el nivel operativo de tu empresa:\n\nCaracterísticas y Distribución del Espacio\nAmbientes: 11 ambientes de trabajo inteligentemente distribuidos, incluyendo 6 despachos privados y 12 puestos de trabajo funcionales.\n\nMobiliario: Parcialmente amoblado, ofreciendo flexibilidad para adaptarlo a la identidad visual de tu marca.\n\nAcabados: Pisos que combinan la calidez del parquet con la practicidad de la cerámica, complementados con modernos techos de Dry Wall.\n\nServicios, Climatización y Electricidad\nEnfriamiento: Sistema de aire acondicionado central y unidades individuales, garantizando una temperatura confortable en todas las áreas.\n\nElectricidad: Conexiones duales de 110 Vlts y 220 Vlts para satisfacer todas las exigencias tecnológicas de tus equipos.\n\nAguas y Drenajes: Suministro de agua potable directo de la red municipal, sistema de descarga por cloacas y drenajes con red de sumideros.\n\nSeguridad y Prevención Integral\nTranquilidad garantizada: Vigilancia privada continua y sistema de alarma para resguardar tu inversión.\n\nSistema Anti-incendio: Equipado con detectores de humo, extintores, luces de emergencia y sistema de regaderas (Nota: El inmueble no cuenta con planta eléctrica).\n\nFacilidades del Edificio y Accesibilidad\nEstacionamiento: El edificio dispone de un estacionamiento público con capacidad para 200 vehículos y un sistema de acceso controlado, operativo en un cómodo horario de 7:00 am a 6:30 pm.\n\nMovilidad: Excelente accesibilidad gracias a su cercanía directa al sistema Metro y el respaldo de los ascensores internos de la torre empresarial.\nUbicación: Caracas, Venezuela",
+      "amenities": [
+        "vigilancia",
+        "estacionamiento",
+        "ascensor",
+        "vista",
+        "aire_acondicionado"
+      ]
+    },
+    {
+      "titulo": "Oficina en venta en Lomas de La Lagunita, Miranda — $55.000",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/venta/miranda/oficina-lomas-de-la-lagunita-MLV-937133128",
+      "precio_texto": "$55.000",
+      "precio_usd": 55000,
+      "habitaciones": null,
+      "banos": null,
+      "metros_cuadrados": 41,
+      "tipo": "Oficina",
+      "operacion_detectada": "Venta",
+      "ubicacion": "Lomas de La Lagunita, Miranda",
+      "portal": "inmueblesconlupa",
+      "descripcion": "San-bri presenta hermosa oficina en Lomas de la Lagunita, 41,67 mts2 de construcción.\nRecepción, sala de espera, sala de reuniones, archivo, aire acondicionado, cableado de red, líneas de teléfono, amoblada, pisos de cerámica, zona de carga, ascensores, vigilancia.\nHaz con nosotros el negocio de tu vida. Referencia: 5358804",
+      "amenities": [
+        "vigilancia",
+        "ascensor",
+        "aire_acondicionado"
+      ]
+    },
+    {
+      "titulo": "Casa en venta en La Lagunita, Miranda — $420.000",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/miranda/se-vende-casa-550m2-7h-6b-4p-la-lagunita-MLV-775487181",
+      "precio_texto": "$420.000",
+      "precio_usd": 420000,
+      "habitaciones": 7,
+      "banos": 6,
+      "metros_cuadrados": 1500,
+      "tipo": "Casa",
+      "operacion_detectada": "Venta",
+      "ubicacion": "La Lagunita, Miranda",
+      "portal": "inmueblesconlupa",
+      "descripcion": "Casa Estilo Colonial con gran potencial y amplio jardín.\n1.500 Mt2 de terreno\n550 Mt2 de construcción\nHermosa Casa de dos plantas:\nPB: Casa con pasillos internos alrededor de unpatio interior.\n Modulo estudio de dos pisos con escalera de caracol independiente.\n Terraza alrededor de la casa con amplio jardín.\n Área de servicio con doshabitaciones y un baño\n Amplia área de lavadero\n Cuarto de hidroneumático\n 4 puestos de estacionamiento\n Cerco eléctrico y CCTV\nTanque de agua subterráneo de 30.000 Lts\n 2 depósitos grandes y 2 pequeños\nNivel Superior:\n Habitación ppal con baño y vestier\n 4 habitaciones secundarias\n3 baños secundarios\n Un Family room",
+      "amenities": [
+        "jardín",
+        "estacionamiento",
+        "terraza"
+      ]
+    },
+    {
+      "titulo": "Oficina en alquiler en Distrito Capital — $650/mes",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/distrito-capital/sabana-grande-oficina-iluminada-en-alquiler-con-3-cubiculos-privados-MLV-1014448140",
+      "precio_texto": "$650",
+      "precio_usd": 650,
+      "habitaciones": null,
+      "banos": 1,
+      "metros_cuadrados": 55,
+      "tipo": "Oficina",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "",
+      "portal": "inmueblesconlupa",
+      "descripcion": "Bienes Raíces Vzla, ofrece:\n\nLas Delicias de Sabana Grande, Torre Mega III, oficina en alquiler:\n\n55m2\n3 oficinas privadas\nUn espacio central amplio de trabajo\nÁrea de espera\n1 baño\nKitchenette\nEstacionamiento público en la misma torre.\n\nEdificio ubicado próximo a PDVSA La Campiña con fácil acceso por la Av. Libertador y la Av. Francisco Solano, dos importantes canales viales en la ciudad. La oficina cuenta con espacios amplios muy bien iluminados y aire acondicionado central. Todas las oficinas privadas tienen grandes ventanales, proporcionando mucha iluminación natural. La oficina incluye mobiliario.\n\nHorario del edificio:\nDe lunes a sábado de 7am a 7pm\n\nEl edificio cuenta con dos ascensores operativos, seguridad privada con recepción en la vigilancia y servicio de internet por fibra óptica. Se puede adquirir puestos de estacionamiento fijo mensual dentro de la Torre.\n\nCanon: $650\nNegociación (meses):\nTres (3) adelanto\nDos (2) depósito\nUno (1) honorarios inmobiliarios\nContratos anuales.\n\n¡Contáctanos y con gusto lo visitamos!\nSomos: Bienes Raíces Vzla\nJunto a ustedes, estamos: #Sembrando Buenas Raíces.",
+      "amenities": [
+        "vigilancia",
+        "estacionamiento",
+        "ascensor",
+        "aire_acondicionado"
+      ]
+    },
+    {
+      "titulo": "Apartamento en venta en Caracas, Distrito Capital — $196.000",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-en-venta-santa-eduvigis-andreina-castro-mls-26-20696-MLV-1013741362",
+      "precio_texto": "$196.000",
+      "precio_usd": 196000,
+      "habitaciones": 4,
+      "banos": 5,
+      "metros_cuadrados": 206,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
+      "ubicacion": "Caracas, Distrito Capital",
+      "portal": "inmueblesconlupa",
+      "descripcion": "Excelente oportunidad de Pent House en venta con maravillosa vista al Avila. Cuenta con 4 habitaciones, 5 banos, estudio, cuarto de servicio, 2 puestos techados, 2 maleteros y terraza. El edificio cuenta con salon de fiestas, jardin, pozo, (siempre hay agua), piscina y parque infantil. Ubicado cerca de colegios, comercios, farmacias, panaderias, metro, iglesia y sinagoga. Excelente oportunidad!",
+      "amenities": [
+        "piscina",
+        "jardín",
+        "estacionamiento",
+        "vista",
+        "terraza"
+      ]
+    },
+    {
+      "titulo": "Apartamento en venta en Baruta, Miranda — $260.000",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/carla-gonzalez-apartamento-en-venta-en-el-cafetal-mls-25-8640-cr-MLV-1013356740",
+      "precio_texto": "$260.000",
+      "precio_usd": 260000,
+      "habitaciones": 3,
+      "banos": 6,
+      "metros_cuadrados": 344,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
+      "ubicacion": "Baruta, Miranda",
+      "portal": "inmueblesconlupa",
+      "descripcion": "MLS #25-8640\n\nExcelente apartamento ubicado en calle cerrada con doble vigilancia, bellisima vista al Avila. Tres comodas habitaciones con bano intimo, mas servicio y bano social.\n\n Cuenta con dos puestos de estacionamiento techados y puestos para visitantes, cerca de colegios y centro comerciales. Apartamento con la mejor vista de caracas, apartamento por piso. 2 maleteros.\n\n! Los precios de oportunidad se agotan rápido !\n! Contáctame al WhatsApp y Agenda Tú visita !\n\nCarla González\nProfesional Inmobiliario RENT-A-HOUSE\n\n****Abstenerse intermediaros ****",
+      "amenities": [
+        "vigilancia",
+        "estacionamiento",
+        "vista"
+      ]
+    },
+    {
+      "titulo": "Local Comercial en venta en Distrito Capital — $1.650.000",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/venta/distrito-capital/comercial-local-comercial-en-venta-en-la-florida-distrito-metropolitano-rentahouse-24-1357",
+      "precio_texto": "$1.650.000",
+      "precio_usd": 1650000,
+      "habitaciones": null,
+      "banos": 3,
+      "metros_cuadrados": 359,
+      "tipo": "Local comercial",
+      "operacion_detectada": "Venta",
+      "ubicacion": "",
+      "portal": "inmueblesconlupa",
+      "descripcion": "NUEVO a Estrenar!! Edificio Comercial con excelente distribución: PB con 359 m2, Piso 1 con 351 m2, Piso 2 con 367 m2 y Piso 3 190 m2.  Un baño por piso, escaleras laterales y ascensores. Ideal para Consultorios, Centro de Estética, Mini Centro Comercial, bodegones, etc. Adaptable al negocio que desee. Ubicado en zona de alto tránsito y cerca de todo tipo de avenidas. OPORTUNIDAD DE INVERSION.",
+      "amenities": [
+        "ascensor"
+      ]
+    },
+    {
+      "titulo": "Apartamento en venta en La Alameda, Miranda — $230.000",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/bello-aparamento-en-una-excelente-zona-de-caracas-mls-26-21567-rm-MLV-1014424752",
+      "precio_texto": "$230.000",
+      "precio_usd": 230000,
+      "habitaciones": 3,
+      "banos": 3,
+      "metros_cuadrados": 124,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
+      "ubicacion": "La Alameda, Miranda",
+      "portal": "inmueblesconlupa",
+      "descripcion": "Espectacular apartamento remodelado con buen gusto y materiales de alta calidad. Amoblado, son 3 habitaciones y 3 baños completos más un espacio de lavandero que puede ser dividido en habitación de servicio. Ubicado en una de las mejores urbanizaciones de Caracas, edificio bien mantenido dentro de calle cerrada con vigilancia privada, con dos puestos de estacionamiento techados y un maletero",
+      "amenities": [
+        "vigilancia",
+        "estacionamiento",
+        "remodelado"
+      ]
+    },
+    {
+      "titulo": "Apartamento en venta en Distrito Capital — $95.000",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/apartamento-en-el-paraiso-remax-317523",
+      "precio_texto": "$95.000",
+      "precio_usd": 95000,
+      "habitaciones": 4,
+      "banos": 2,
+      "metros_cuadrados": 135,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
+      "ubicacion": "",
+      "portal": "inmueblesconlupa",
+      "descripcion": "Calle Araguaney, Washington, Caracas, El Paraíso, Libertador, Distrito Capital, 1020, VEN. Disponible para la Venta Apartamento ubicado en El Paraíso! Descubra este espacioso apartamento de 135 m² que le ofrece una distribución cómoda y amplias áreas para su máximo disfrute. Este hogar ideal cuenta con:   4 habitaciones   1 habitación de servicio   2 baños completos   1 baño de servicio   2 puestos de estacionamientos techados por documento     1 un amplio maletero Disfrute de una ubicación privilegiada en calle cerrada con acceso conveniente a supermercados, panaderías, clínicas, talleres automotores, Daka y Damasco.  Para Mayor información no dude en contactarnos.",
+      "amenities": [
+        "estacionamiento"
+      ]
+    },
+    {
+      "titulo": "Apartamento en venta en Playa Grande, La Guaira — $210.000",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/la-guaira/apartamento-en-venta-ubicado-en-la-urbanizacion-playa-grande-26-4151-MLV-774903467",
+      "precio_texto": "$210.000",
+      "precio_usd": 210000,
+      "habitaciones": 3,
+      "banos": 3,
+      "metros_cuadrados": 132,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
+      "ubicacion": "Playa Grande, La Guaira",
+      "portal": "inmueblesconlupa",
+      "descripcion": "#26-4151 Venta Pent-house Dúplex 132 mts2 en Playa Grande con hermosa vista al mar, tres habitaciones, tres baños, habitación principal con baño privado, sala, comedor, cocina concepto abierto, tanque de agua, tres puestos de estacionamientos techados, Seguridad las veinticuatro horas, piscinas, canchas de tenis, gimnasios, saunas. sala fiestas, parrilleras, caminerías, parque infantil",
+      "amenities": [
+        "piscina",
+        "estacionamiento",
+        "gimnasio",
+        "sauna"
+      ]
+    },
+    {
+      "titulo": "Apartamento en venta en La Lagunita, Miranda — $320.000",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/venta-apartamento-la-lagunita-ad-MLV-1014447988",
+      "precio_texto": "$320.000",
+      "precio_usd": 320000,
+      "habitaciones": 3,
+      "banos": 3,
+      "metros_cuadrados": 330,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
+      "ubicacion": "La Lagunita, Miranda",
+      "portal": "inmueblesconlupa",
+      "descripcion": "Bello Apartamento de 330 mts, ubicado en una de las mejores\nUrbanizaciones de Caracas, Municipio El Hatillo, muy iluminado y\nventilado, con una hermosa vista, clima de montana,  PB,  edificio de\nbaja, densidad, de nueva data, distribuido de la siguiente manera,\nsala,comedor, cocina concepto abierto, tres  (3) habitaciones, un\n(1/2) medio bano de visitas, un  (1 ) baño completo que comparten  dos\nhabitaciones y un (1) baño privado en la habitación principal, área de\nlavadero, la terraza posee 200 mts, con parrillera, area de\nlavaplatos, vista 360o, 3 puestos de estacionamiento techados,\nmaletero y una área techada en el sótano en el cual se puede construir\notro maletero de ser necesario. Vigilancia privada 24/7.  Fácil\nacceso.",
+      "amenities": [
+        "vigilancia",
+        "estacionamiento",
+        "terraza"
+      ]
+    },
+    {
+      "titulo": "Oficina en alquiler en Sucre, Miranda — $2.800/mes",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/alquiler/miranda/oficina-alquiler-los-ruices-600-mts2-sonmetros2-MLV-1012483962",
+      "precio_texto": "$2.800",
+      "precio_usd": 2800,
+      "habitaciones": null,
+      "banos": 2,
+      "metros_cuadrados": 600,
+      "tipo": "Oficina",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Sucre, Miranda",
+      "portal": "inmueblesconlupa",
+      "descripcion": "• Área: 600 mts2.\n• Piso: Alfombra.\n• Techo: Cielo Raso (laminas y luminarias).\n• Aire Acondicionado: Central.\n• Estacionamiento: Estacionamiento de gran capacidad.\n• Dos (2) Escaleras de Emergencia (Interna).\n• Dos (2) Ascensores.\n• Control de Acceso al Edificio con tarjeta para visitantes.\n• Edificio con Cobertura de CCTV y Vigilancia Privada 24 H.\n• Condiciones Generales: Oficina posee amplio espacios, Áreas Múltiples, baño. Ubicación en zona Comercial de Fácil acceso. Oficina lista para mudarse hoy.\n\nSonMetros2\nOtra Forma De Ver Los Negocios",
+      "amenities": [
+        "vigilancia",
+        "estacionamiento",
+        "ascensor",
+        "aire_acondicionado"
+      ]
+    },
+    {
+      "titulo": "Galpón en alquiler en Distrito Capital — $450/mes",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/galpon/alquiler/distrito-capital/deposito-en-la-yaguara-para-alquiler-MLV-1006873474",
+      "precio_texto": "$450",
+      "precio_usd": 450,
+      "habitaciones": null,
+      "banos": null,
+      "metros_cuadrados": 50,
+      "tipo": "Galpon",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "",
+      "portal": "inmueblesconlupa",
+      "descripcion": "Oportunidad estratégica para tu negocio! Se alquila amplio y seguro depósito ubicado en una de las zonas industriales más importantes de Caracas: La Yaguara. Ideal para resguardo de mercancía, archivo muerto o logística de última milla.\nCaracterísticas Principales:\n•\tSuperficie: 50 de espacio techado y bien distribuido.\n•\tUbicación: Excelente acceso vehicular en la zona industrial de La Yaguara.\nSeguridad de Alto Nivel:\nEntendemos que la protección de tu inventario es lo más importante. El galpón cuenta con:\n•\tCerco eléctrico perimetral en toda la estructura.\n•\tConcertina de seguridad reforzada.\n•\tSistema de cámaras de video-vigilancia (CCTV).\nHorarios y Logística Flexibles:\n•\tHorario Administrativo: Lunes a viernes de 8:00 am a 4:30 pm.\n•\tAcceso Especial: ¿Necesitas entrar fuera de horario? Te ofrecemos flexibilidad. Solo debes notificarnos con 24 horas de antelación (Aplica un cargo adicional de $30 por acceso extraordinario).\n¿Por qué este depósito?\nEs el espacio perfecto para quienes buscan tranquilidad operativa en una ubicación céntrica y con protocolos de seguridad ya instalados.\n¡Contáctanos hoy mismo para agendar una visita!\nHaga crecer su empresa en el mejor sector industrial de la zona Contáctenos para agendar una visita.",
+      "amenities": [
+        "vigilancia"
+      ]
+    },
+    {
+      "titulo": "Oficina en venta en Libertador, Distrito Capital — $40.000",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/venta/distrito-capital/venta-de-oficina-50-m2-1-bano-en-el-boulevard-de-sabana-grande-MLV-1009930394",
+      "precio_texto": "$40.000",
+      "precio_usd": 40000,
+      "habitaciones": null,
+      "banos": 1,
+      "metros_cuadrados": 50,
+      "tipo": "Oficina",
+      "operacion_detectada": "Venta",
+      "ubicacion": "Libertador, Distrito Capital",
+      "portal": "inmueblesconlupa",
+      "descripcion": "Venta de oficina de 50 m2. Tiene área de recepción, 1 oficina gerencial, adicionalmente 4 puestos de trabajo, área para cocina, comedor, un baño. Posee aire acondicionado split de 18 mil BTU, 2 líneas telefónicas con internet aba de alta velocidad. Piso medio. Torre Provincial en Sabana Grande. Edificio con vigilancia, ascensores operativos, buen mantenimiento. Opciones para estacionar cerca. Oportunidad de inversión.",
+      "amenities": [
+        "vigilancia",
+        "ascensor",
+        "aire_acondicionado"
+      ]
+    },
+    {
+      "titulo": "Galpón en alquiler en Distrito Capital — $816/mes",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/galpon/alquiler/distrito-capital/deposito-en-alquiler-la-yaguara-MLV-775896537",
+      "precio_texto": "$816",
+      "precio_usd": 816,
+      "habitaciones": null,
+      "banos": 1,
+      "metros_cuadrados": 102,
+      "tipo": "Galpon",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "",
+      "portal": "inmueblesconlupa",
+      "descripcion": "Oportunidad estratégica para tu negocio! Se alquila amplio y seguro depósito ubicado en una de las zonas industriales más importantes de Caracas: La Yaguara. Ideal para resguardo de mercancía, archivo muerto o logística de última milla. Características Principales: • Superficie: 102 mts de espacio techado y bien distribuido. • Ubicación: Excelente acceso vehicular en la zona industrial de La Yaguara. Seguridad de Alto Nivel: Entendemos que la protección de tu inventario es lo más importante. El galpón cuenta con: • Cerco eléctrico perimetral en toda la estructura. • Concertina de seguridad reforzada. • Sistema de cámaras de video-vigilancia (CCTV). Horarios y Logística Flexibles: • Horario Administrativo: Lunes a viernes de 8:00 am a 4:30 pm. • Acceso Especial: ¿Necesitas entrar fuera de horario? Te ofrecemos flexibilidad. Solo debes notificarnos con 24 horas de antelación (Aplica un cargo adicional de $30 por acceso extraordinario). ¿Por qué este depósito? Es el espacio perfecto para quienes buscan tranquilidad operativa en una ubicación céntrica y con protocolos de seguridad ya instalados. ¡Contáctanos hoy mismo para agendar una visita! Haga crecer su empresa en el mejor sector industrial de la zona Contáctenos para agendar una visita.",
+      "amenities": [
+        "vigilancia"
+      ]
+    },
+    {
+      "titulo": "Apartamento en venta en Loma Linda, Miranda — $95.167",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-en-venta-en-loma-linda-241-remax-318903",
+      "precio_texto": "$95.167",
+      "precio_usd": 95167,
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 90,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
+      "ubicacion": "Loma Linda, Miranda",
+      "portal": "inmueblesconlupa",
+      "descripcion": "Loma Linda, Caracas, El Hatillo, Miranda, 1083, VEN. Apartamentos en venta en Loma Linda. Zona privilegiada de Caracas, en el Municipio el Hatillo. Muy cerca del centro comercial La Lagunita y el pueblo del Hatillo. En Obra gris, Desde 88m2. Dos habitaciones. Dos baños. Dos puestos de estacionamiento y un maletero. Urbanización cerrada con vigilancia privada.  Características:   -.Desde 90m2  -.2 Habitaciones   -.2 Baños  -.2 Puestos de Estacionamiento   -. 1 Maletero  -. Cuenta con todos los servicios (agua, luz, teléfono, gas e internet).   -. Urbanizacion cerrada con vigilancia privada.   -. Los ascensores van directo a los apartamentos.  -. Terrazas con vista espectacular y clima agradable.   Ref: Desde $95.167",
+      "amenities": [
+        "vigilancia",
+        "estacionamiento",
+        "ascensor",
+        "terraza"
+      ]
+    },
+    {
+      "titulo": "Casa en venta en El Paraiso, Distrito Capital — $150.000",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/distrito-capital/casa-en-venta-el-paraiso-26-7199-jca-MLV-775855267",
+      "precio_texto": "$150.000",
+      "precio_usd": 150000,
+      "habitaciones": 5,
+      "banos": 4,
+      "metros_cuadrados": 398,
+      "tipo": "Casa",
+      "operacion_detectada": "Venta",
+      "ubicacion": "El Paraiso, Distrito Capital",
+      "portal": "inmueblesconlupa",
+      "descripcion": "Helena Granadino Kruger /  Julio Cesar Andrade  Asesores inmobiliarios Rent A House.\nEn Venta Casa Multiniveles, ubicada en Calle ciega de la Urb. El Paraiso, la cual fue recientemente remodelada, con los mejores materiales y acabados. Cuenta con una amplia terraza con parrillera para el disfrute familiar. Tanque de Agua de 15 Mil Lts. Linea e Internet de CANTV, Cerco Eléctrico, Camaras de seguridad. Ven a visitarla.",
+      "amenities": [
+        "terraza",
+        "remodelado"
+      ]
+    },
+    {
+      "titulo": "Apartamento en alquiler en Sucre, Miranda — $450/mes",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/miranda/alquiler-de-apartamento-amoblado-en-el-llanito-remax-329678",
+      "precio_texto": "$450",
+      "precio_usd": 450,
+      "habitaciones": 2,
+      "banos": 1,
+      "metros_cuadrados": 65,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Sucre, Miranda",
+      "portal": "inmueblesconlupa",
+      "descripcion": "El Llanito, Caracas, Petare, Sucre, Miranda, 1073, VEN.  El Llanito, Municipio Sucre. Una zona con excelente conectividad, transporte público y todo tipo de comercios, servicios y colegios a la mano.   Ubicado dentro de un exclusivo conjunto cerrado con vigilancia privada las 24 horas. Un urbanismo tranquilo y privado de solo 5 edificios.  Torre de 14 pisos en excelentes condiciones de mantenimiento, equipada con ascensores operativos. El apartamento se encuentra en el piso 13, lo que le otorga una excelente ventilación, iluminación natural y una vista despejada. Solo 4 apartamentos por piso, garantizando mayor tranquilidad y privacidad.  ",
+      "amenities": [
+        "vigilancia",
+        "ascensor"
+      ]
+    },
+    {
       "titulo": "Inmueble en venta en Distrito Capital — $1.650.000",
       "enlace": "https://www.inmueblesconlupa.com/inmuebles/otro/venta/distrito-capital/edificio-en-venta-en-la-florida-caracas-a-estrenar-3-pisos-MLV-1008713454",
       "precio_texto": "$1.650.000",
@@ -12464,53 +12798,160 @@
       ]
     },
     {
-      "titulo": "Local Comercial en alquiler en Distrito Capital — $1.300/mes",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/local-comercial/alquiler/distrito-capital/local-comercial-piso-industrial-en-alquiler-piso-1-MLV-776838763",
-      "precio_texto": "$1.300",
-      "precio_usd": 1300,
-      "habitaciones": null,
+      "titulo": "Apartamento en alquiler en Los Chorros, Miranda — $1.400/mes",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/alquiler/miranda/apartamento-en-alquiler-los-chorros-mls-26-20638-elsy-machado-MLV-1013360480",
+      "precio_texto": "$1.400",
+      "precio_usd": 1400,
+      "habitaciones": 3,
       "banos": 2,
-      "metros_cuadrados": 190,
-      "tipo": "Local comercial",
+      "metros_cuadrados": 117,
+      "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
+      "ubicacion": "Los Chorros, Miranda",
+      "portal": "inmueblesconlupa",
+      "descripcion": "Hermoso apartamento con amplios espacios y acabados de lujo, espectacular cocina , amoblado, 3 amplias habitaciones, aire acondicionado en todas las áreas, piscina, parque infantil, 2 puestos de estacionamiento techados, en un confortable y muy bien mantenido conjunto residencial, muy cerca a Centros comerciales, colegios y transporte público. Visítelo...!",
+      "amenities": [
+        "piscina",
+        "estacionamiento",
+        "aire_acondicionado"
+      ]
+    },
+    {
+      "titulo": "Apartamento en venta en Distrito Capital — $150.000",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/distrito-capital/hermosos-apartamentos-a-estrenar-urb-el-paraiso-century21-722787",
+      "precio_texto": "$150.000",
+      "precio_usd": 150000,
+      "habitaciones": 3,
+      "banos": 3,
+      "metros_cuadrados": 100,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
       "ubicacion": "",
       "portal": "inmueblesconlupa",
-      "descripcion": "OPORTUNIDAD ÚNICA EN LOS ROSALES, CARACAS \nTu empresa merece el mejor espacio.\nAlquila este  Piso Industrial de 190 m  listo para operar \n¿Por qué este es el ideal? \nLOGÍSTICA TOP:  Ascensor de Carga (600 kg) directo al piso 1. \nCERO ESTRÉS DE AGUA  Tanque de 63.000 litros. Operación continua garantizada. \nCONEXIÓN TOTAL:  220V, Trifásica, CANTV/Internet y  Fibra Óptica lista. \nEspacio Funcional:  Recepción, 2 oficinas privadas, comedor y área de trabajo adaptable (Drywall).\nSeguridad: Cerco eléctrico y vigilancia para tu tranquilidad.\nUbicación: Estratégica en Los Rosales\nExpande tu negocio sin límites ni preocupaciones. \nCondiciones de Negociación: 3 meses Depósito | 3 meses Adelantados | 1 mes Comisión.\nContáctanos para agendar tu visita",
+      "descripcion": "Hermosos apartamentos a estrenar, y con excelente distribución, ubicados en la calle más privilegiada en. El Paraíso, edificio de 11 pisos, con 2 apartamentos por piso y 2 ascensores por piso.\r\nHall de entrada, garita de seguridad, salón de fiestas, zonas verdes, pozo de agua, tanque de 90.000 litros.\r\nApartamentos con acabados de primera, ventanas panorámicas con hermosa vista y excelente iluminación .Espacio para la ubicación de los compresores de aire acondicionado, un maletero.\r\nEl inmueble se entrega en obra gris, con sus puertas y closets en madera, sus respectivas cerraduras, switches, tomacorrientes y cerámica tanto en pared como piso en los baños y el lavandero con cerámica solo en pared, \r\nPrecio de venta $150.000 con financiamiento máximo por 12 meses ,dando el 50% de inicial.\r\nPrecio de contado $140.000",
+      "amenities": [
+        "estacionamiento",
+        "ascensor",
+        "aire_acondicionado"
+      ]
+    },
+    {
+      "titulo": "Apartamento en venta en Higuerote, Miranda — $18.000",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apto-monoambiente-sin-pscina-higuerote-MLV-1010249138",
+      "precio_texto": "$18.000",
+      "precio_usd": 18000,
+      "habitaciones": null,
+      "banos": 1,
+      "metros_cuadrados": 23,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
+      "ubicacion": "Higuerote, Miranda",
+      "portal": "inmueblesconlupa",
+      "descripcion": "Apartamento monoambiente al lado del club aguasal. El conjunto tiene vigilancia privada. Y ascensores. Áreas verdes.",
       "amenities": [
         "vigilancia",
         "ascensor"
       ]
     },
     {
-      "titulo": "Apartamento en venta en Los Corales, La Guaira — $136.000",
-      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/la-guaira/apartamento-en-venta-en-la-guaira-con-amplia-terraza-y-espectacular-piscina-MLV-1013714084",
-      "precio_texto": "$136.000",
-      "precio_usd": 136000,
-      "habitaciones": 3,
-      "banos": 2,
-      "metros_cuadrados": 150,
+      "titulo": "Oficina en venta en Libertador, Distrito Capital — $35.000",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/oficina/venta/distrito-capital/se-vende-oficina-42m2-sabana-grande-MLV-937248896",
+      "precio_texto": "$35.000",
+      "precio_usd": 35000,
+      "habitaciones": null,
+      "banos": 1,
+      "metros_cuadrados": 42,
+      "tipo": "Oficina",
+      "operacion_detectada": "Venta",
+      "ubicacion": "Libertador, Distrito Capital",
+      "portal": "inmueblesconlupa",
+      "descripcion": "Oficina Venta/ Alquiler /Sabana Grande / 42.65m\nUbicada Avenida solano, Ideal para el desarrollo empresarial. La oficina cuenta con 4 cubículos, en excelente estado de conservación y una hermosa vista a nuestro imponente Ávila. Con facilidades de transporte para el personal, pues en sus alrededores se concentran las principales rutas urbanas y extraurbanas de la ciudad, en el principal distribuidor de las líneas de metro. Edificio con todos los servicios y esquemas de seguridad.\n42.65 mt2.\nÁrea de recepción.\n4 oficinas cerradas.\nrecepción\n1 baños .\n3 ascensores operativos\nNo posee linea CANTV\nEstacionamiento Público",
+      "amenities": [
+        "estacionamiento",
+        "ascensor"
+      ]
+    },
+    {
+      "titulo": "Apartamento en venta en Lomas del Sol, Miranda — $290.000",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-en-venta-lomas-del-sol-26-921-MLV-1012575122",
+      "precio_texto": "$290.000",
+      "precio_usd": 290000,
+      "habitaciones": 4,
+      "banos": 4,
+      "metros_cuadrados": 160,
       "tipo": "Apartamento",
       "operacion_detectada": "Venta",
-      "ubicacion": "Los Corales, La Guaira",
+      "ubicacion": "Lomas del Sol, Miranda",
       "portal": "inmueblesconlupa",
-      "descripcion": "Amplio apartamento en venta primera línea costera residencia Mar de Leva. Caraballeda Los Corales Avenida la Playa, La Guaira\nRemodelado \nApartamento con vista al mar / amplias ventanas en todas sus areas y excelente ventilacion \n156 Mts2\nConsta de:\n3 Habitaciones\n2 Baños\nBalcón con terraza y jardinera \nCocina empotrada \nAmplia Sala Comedor \nResidencia con agua constante \n1 Puesto de estacionamiento + 16 de visitantes techado \nCancha deportiva \nChuruata para area BBQ\nSalón de fiesta\nCaminerias \nGimnasio \nSauna \nSeguridad privada las 24 H\nBella piscina con jardines",
+      "descripcion": "Vive en un espectacular apto ubicado en una exclusiva urbanización privada diseñado con estilo moderno donde combina la elegancia y funcionalidad, cuenta con ascensor privado y servicio , sus cuatro habitaciones y cuatro baños cómodos y amplios además disfruta de una espectacular vista al Ávila que te regala un paisaje distinto cada momento posee puesto techados 2 y 1maletero\n\nSOLO CLIENTE DIRECTO\nContactame y agendamos una Visita",
+      "amenities": [
+        "estacionamiento",
+        "ascensor",
+        "vista"
+      ]
+    },
+    {
+      "titulo": "Galpón en alquiler en Boleita Sur, Miranda — $8.500/mes",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/galpon/alquiler/miranda/galpon-industrial-en-alquiler-1-700-m2-urb-boleita-sur-MLV-985271528",
+      "precio_texto": "$8.500",
+      "precio_usd": 8500,
+      "habitaciones": null,
+      "banos": 6,
+      "metros_cuadrados": 2000,
+      "tipo": "Galpon",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "",
+      "portal": "inmueblesconlupa",
+      "descripcion": "Ofrecemos amplio galpon industrial en venta con una excelente ubicacion en la Urb.Boleita Sur, cercano a avenida principal cuenta con transporte publico, comercios, centros comerciales, facil acceso a la autopista.\nDescripcion:\n2.000 m2 en total\n1700 m2 techado\n8 metros de altura\n9 oficinas con aire acondicionado\nSala de juntas\n6 banos ( 1 con ducha )\nLineas telefonicas\nPortones electricos\ncerco electrico y camaras de seguridad\nSistema contra incendio\nTablero electrico hasta 36 KVA",
+      "amenities": [
+        "aire_acondicionado"
+      ]
+    },
+    {
+      "titulo": "Apartamento en venta en Los Ruices, Miranda — $75.000",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/apartamento/venta/miranda/apartamento-los-ruices-MLV-997370528",
+      "precio_texto": "$75.000",
+      "precio_usd": 75000,
+      "habitaciones": 3,
+      "banos": 2,
+      "metros_cuadrados": 99,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
+      "ubicacion": "Los Ruices, Miranda",
+      "portal": "inmueblesconlupa",
+      "descripcion": "Los Ruices, Caracas, Sucre, Miranda, VEN. Se ofrece en alquiler este amplio y hermoso apartamento de 99 Mts2 amoblado y equipado, con una magnífica distribiución: tiene una amplia sala, comedor, una cómoda cocina y área de lavado. Tiene tres (3) cómodas habitaciones, una (1) de ellas con baño privado y las otras dos (2) comparten un (1) baño . Tiene un tanque de agua instalado con capacidad de aproximadamente 500 Lts.        El apartamento tiene un (1) puesto  estacionamiento techado. Está ubicado en piso medio y el edificio está muy bien mantenido con ambos ascensores operativos. El edificio está muy",
+      "amenities": [
+        "estacionamiento",
+        "ascensor"
+      ]
+    },
+    {
+      "titulo": "Casa en venta en Altos de Parque Caiza, Miranda — $130.000",
+      "enlace": "https://www.inmueblesconlupa.com/inmuebles/casa/venta/miranda/hermosa-casa-en-karimao-country-MLV-1012601042",
+      "precio_texto": "$130.000",
+      "precio_usd": 130000,
+      "habitaciones": 3,
+      "banos": 4,
+      "metros_cuadrados": 2700,
+      "tipo": "Casa",
+      "operacion_detectada": "Venta",
+      "ubicacion": "Altos de Parque Caiza, Miranda",
+      "portal": "inmueblesconlupa",
+      "descripcion": "Ubicada en la prestigiosa y tranquila Urbanización Karimao Country, esta imponente propiedad destaca por su majestuosa escala, privacidad y un diseño arquitectónico pensado para el máximo disfrute familiar y el entretenimiento social. Rodeada de áreas verdes y un clima privilegiado, representa una oportunidad única de inversión en una de las zonas más exclusivas.\n\nDIMENSIONES GENERALES\n•\tÁrea Total del Terreno: 2.700 m2. Amplia parcela que garantiza privacidad, frescura y potencial para paisajismo o áreas recreacionales como una piscina, canchas deportivas, anexos o un proyecto de paisajismo exuberante.\n•\tÁrea de Construcción: 1.500 m2 (Incluyendo una espectacular terraza techada y descubierta). Los espacios internos son generosos, de techos altos y gran prestancia.\n\nDISTRIBUCIÓN ARQUITECTÓNICA DEL INMUEBLE\nÁrea Íntima (Descanso y Almacenamiento)\n•\tTres (3) Habitaciones Principales: Espaciosas, con excelente iluminación natural, ventilación cruzada y clósets integrados.\n•\tUn (1) Depósito Multifuncional: Ideal para almacenamiento organizado, despensa extra o maletero de gran capacidad.\nÁrea de Servicios Sanitarios\n•\tDos (2) Baños Completos: Equipados con piezas sanitarias de calidad y duchas.\n•\tDos (2) Baños Auxiliares: Estratégicamente ubicados para el uso de visitas y áreas sociales, garantizando la privacidad de las habitaciones.\nÁreas Operativas y de Servicio\n•\tCocina: Espacio amplio y funcional, con disposición ideal para el diseño de una cocina de concepto abierto o tradicional con isla central.\n•\tÁrea de Lavandero: Independiente, con conexiones listas para lavadora/secadora y batea de servicio, bien ventilada.\nÁreas Sociales y de Esparcimiento\n•\tGran Terraza (1.500 m2 de construcción total): El corazón social de la casa. Un espacio versátil ideal para reuniones, salones de estar al aire libre y disfrute de la vista hacia la parcela.\n\nESTACIONAMIENTO Y ACCESOS\nLa propiedad cuenta con una amplia zona de parqueo con capacidad total para cuatro (4) vehículos, distribuida de la siguiente manera:\n•\tDos (2) Puestos Techados: Resguardados de la intemperie y el sol.\n•\tDos (2) Puestos Abiertos: Ideales para visitantes o vehículos de uso diario.\n\nINFRAESTRUCTURA Y SERVICIOS AUTÓNOMOS\nGarantía de Suministro de Agua: La quinta cuenta con un tanque de agua subterráneo con capacidad de 7.000 litros, equipado con su respectivo sistema de bombeo (hidroneumático), lo que asegura total autonomía y continuidad en el servicio de agua potable para toda la parcela.\nSeguridad y Exclusividad: Karimao Country es reconocida por su control de acceso, vigilancia y un ambiente seguro y familiar.",
       "amenities": [
         "piscina",
-        "jardín",
+        "vigilancia",
         "estacionamiento",
-        "terraza",
-        "remodelado",
-        "gimnasio",
-        "sauna"
+        "terraza"
       ]
     }
   ],
   "diagnostico": {
     "urls_encontradas": 2000,
-    "paginas_scrapeadas": 695,
-    "fallos": 1305,
-    "con_m2": 678,
-    "con_hab": 428,
-    "con_banos": 637
+    "paginas_scrapeadas": 718,
+    "fallos": 1282,
+    "con_m2": 701,
+    "con_hab": 443,
+    "con_banos": 659
   }
 }
