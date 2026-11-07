@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "alquiler",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+alquiler+miranda",
-  "scrapeado_en": "2026-11-07T12:42:43.864Z",
+  "scrapeado_en": "2026-11-07T21:37:44.501Z",
   "total": 100,
   "anuncios": [
     {
@@ -1008,6 +1008,17 @@
       "ubicacion": "Baruta, Miranda"
     },
     {
+      "titulo": "casa en alquiler los naranjos del cafetal tlf  04242129768 rolando rodriguez codg  27-7666",
+      "enlace": "https://bienesonline.ai/es/venezuela/el-hatillo/propiedad/136994-casa-en-alquiler-los-naranjos-del-cafetal-tlf-04242129768-rolando-rodriguez-codg-27-7666",
+      "precio_texto": "USD 6.000",
+      "habitaciones": 3,
+      "banos": 5,
+      "metros_cuadrados": 569,
+      "tipo": "Casa",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "El Hatillo, Miranda"
+    },
+    {
       "titulo": "oficina alquiler los Ruices rolando rodriguez tlf 04242129768",
       "enlace": "https://bienesonline.ai/es/venezuela/sucre/propiedad/33803-oficina-alquiler-los-ruices-rolando-rodriguez-tlf-04242129768",
       "precio_texto": "USD 1.500",
@@ -1017,6 +1028,17 @@
       "tipo": "Oficina",
       "operacion_detectada": "alquiler",
       "ubicacion": "Sucre, Miranda"
+    },
+    {
+      "titulo": "apartamento en alquiler en el rosal tlf  04242129768 rolando rodriguez codg 27-",
+      "enlace": "https://bienesonline.ai/es/venezuela/chacao/propiedad/136993-apartamento-en-alquiler-en-el-rosal-tlf-04242129768-rolando-rodriguez-codg-27",
+      "precio_texto": "USD 1.900",
+      "habitaciones": 1,
+      "banos": 1,
+      "metros_cuadrados": 44,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Chacao, Miranda"
     },
     {
       "titulo": "galpón alquiler boleíta norte tlf 04242129768 rolando rodriguez",
@@ -1083,28 +1105,6 @@
       "tipo": "Casa",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Maracaibo, Zulia"
-    },
-    {
-      "titulo": "Alquiler Mirador de los Campitos. MLS #27-1325 Fabiola Rodriguez",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/120556-alquiler-mirador-de-los-campitos-mls-27-1325-fabiola-rodriguez",
-      "precio_texto": "USD 4.500",
-      "habitaciones": 4,
-      "banos": 5,
-      "metros_cuadrados": 264,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
-      "titulo": "Apartamento en Alquiler en Campo Alegre. Solo clientes directos.",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/117602-apartamento-en-alquiler-en-campo-alegre-solo-clientes-directos",
-      "precio_texto": "USD 1.150",
-      "habitaciones": 1,
-      "banos": 2,
-      "metros_cuadrados": 68,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Caracas, Distrito Capital"
     }
   ],
   "diagnostico": {
