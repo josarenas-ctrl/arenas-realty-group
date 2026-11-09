@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "alquiler",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+alquiler+miranda",
-  "scrapeado_en": "2026-11-09T05:29:57.786Z",
+  "scrapeado_en": "2026-11-09T15:41:44.356Z",
   "total": 100,
   "anuncios": [
     {
@@ -192,6 +192,17 @@
       "tipo": "Oficina",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Sucre, Miranda"
+    },
+    {
+      "titulo": "apartamento en alquiler en las mercedes tlf 04242129768 rolando rodriguez codg 27-7811",
+      "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/137060-apartamento-en-alquiler-en-las-mercedes-tlf-04242129768-rolando-rodriguez-codg-27-7811",
+      "precio_texto": "USD 1.600",
+      "habitaciones": 1,
+      "banos": 2,
+      "metros_cuadrados": 75,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Baruta, Miranda"
     },
     {
       "titulo": "apartamento alquiler las mercedes tlf 04242129768 rolando Rodríguez",
@@ -636,13 +647,13 @@
     {
       "titulo": "apartamento en alquiler las mesetas de santa rosa de lima tlf  04242129768 rolando rodriguez codg 27...",
       "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/128995-apartamento-en-alquiler-las-mesetas-de-santa-rosa-de-lima-tlf-04242129768-rolando-rodriguez-codg-27-4799",
-      "precio_texto": "USD 14.000",
+      "precio_texto": "USD 350",
       "habitaciones": 6,
       "banos": 6,
       "metros_cuadrados": 878,
-      "tipo": "Casa",
+      "tipo": "Local",
       "operacion_detectada": "Alquiler",
-      "ubicacion": "Baruta, Miranda"
+      "ubicacion": "Guatire, Miranda"
     },
     {
       "titulo": "apartamento alquiler campo alegre tlf 04242129768 rolando Rodríguez",
@@ -764,6 +775,17 @@
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
       "ubicacion": "El Hatillo, Miranda"
+    },
+    {
+      "titulo": "apartamento en alquiler santa ines tlf  04242129768 rolando rodriguez codg 27-7789",
+      "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/137061-apartamento-en-alquiler-santa-ines-tlf-04242129768-rolando-rodriguez-codg-27-7789",
+      "precio_texto": "USD 1.500",
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 85,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Baruta, Miranda"
     },
     {
       "titulo": "apartamento en alquiler nueva casarapa conj el tablon tlf 04242129768 rolando rodriguez",
@@ -1076,28 +1098,6 @@
     {
       "titulo": "CASA EN ALQUILER EN BARRIO FRANCISCO DE MIRANDA MARACAIBO API 6992",
       "enlace": "https://bienesonline.ai/es/venezuela/maracaibo/propiedad/53563-casa-en-alquiler-en-barrio-francisco-de-miranda-maracaibo-api-6992",
-      "precio_texto": "USD 220",
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": null,
-      "tipo": "Casa",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Maracaibo, Zulia"
-    },
-    {
-      "titulo": "apartamento en alquiler mirador de los campitos tlf  04242129768 rolando rodriguez codg 26-21784",
-      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/101839-apartamento-en-alquiler-mirador-de-los-campitos-tlf-04242129768-rolando-rodriguez-codg-26-21784",
-      "precio_texto": "USD 2.000",
-      "habitaciones": 2,
-      "banos": 2,
-      "metros_cuadrados": 97,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
-      "titulo": "API 6992 CASA EN ALQUILER EN BARRIO FRANCISCO DE MIRANDA   $ 220",
-      "enlace": "https://bienesonline.ai/es/venezuela/maracaibo/propiedad/127050-api-6992-casa-en-alquiler-en-barrio-francisco-de-miranda-220",
       "precio_texto": "USD 220",
       "habitaciones": null,
       "banos": null,
