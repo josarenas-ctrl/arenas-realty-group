@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "alquiler",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+alquiler+miranda",
-  "scrapeado_en": "2026-11-10T01:20:18.435Z",
+  "scrapeado_en": "2026-11-10T14:36:29.822Z",
   "total": 100,
   "anuncios": [
     {
@@ -854,17 +854,6 @@
       "ubicacion": "Chacao, Miranda"
     },
     {
-      "titulo": "oficina en alquiler las mercedes tlf  04242129768 rolando rodriguez codg 27-7601",
-      "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/136445-oficina-en-alquiler-las-mercedes-tlf-04242129768-rolando-rodriguez-codg-27-7601",
-      "precio_texto": "USD 1.200",
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Baruta, Miranda"
-    },
-    {
       "titulo": "26-5587 Apartamento en Alquiler Las Lomas Guatire",
       "enlace": "https://bienesonline.ai/es/venezuela/guatire/propiedad/120655-26-5587-apartamento-en-alquiler-las-lomas-guatire",
       "precio_texto": "USD 300",
@@ -874,6 +863,17 @@
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Guatire, Miranda"
+    },
+    {
+      "titulo": "oficina en alquiler las mercedes tlf  04242129768 rolando rodriguez codg 27-7601",
+      "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/136445-oficina-en-alquiler-las-mercedes-tlf-04242129768-rolando-rodriguez-codg-27-7601",
+      "precio_texto": "USD 1.200",
+      "habitaciones": null,
+      "banos": null,
+      "metros_cuadrados": null,
+      "tipo": "Oficina",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Baruta, Miranda"
     },
     {
       "titulo": "oficina alquiler bello monte  rolando rodriguez tlf 04242129768",
