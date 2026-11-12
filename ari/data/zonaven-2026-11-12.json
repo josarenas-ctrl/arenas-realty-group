@@ -3,8 +3,8 @@
   "portal": "zonaven",
   "operacion": "todas",
   "url_busqueda": "sitemap-listings-1/2",
-  "scrapeado_en": "2026-11-12T15:11:29.685Z",
-  "total": 1265,
+  "scrapeado_en": "2026-11-12T23:40:19.967Z",
+  "total": 1264,
   "anuncios": [
     {
       "titulo": "Anexo en Guatire — $180/mes | ZonaVen",
@@ -16777,21 +16777,6 @@
       "moneda": "USD"
     },
     {
-      "titulo": "Townhouse 2 hab en Los Teques — $22.000 | ZonaVen",
-      "enlace": "https://zonaven.com/venta/yf-townhouse-en-venta-en-los-canales-de-rio-chico-26-6853-merw-miranda-6068ef",
-      "precio_texto": "$22000",
-      "precio_usd": 22000,
-      "habitaciones": 2,
-      "banos": 2,
-      "metros_cuadrados": 90,
-      "tipo": "Casa",
-      "operacion_detectada": "Venta",
-      "ubicacion": "Miranda",
-      "portal": "zonaven",
-      "descripcion": "Excelente opción para disfrutar tus fines de semana en la playa. Conjunto de casas adosadas ubicadas alrededor de la piscina y área social, hechas para compartir con familiares y amigos. Salón con cocina concepto abierto, 2 habitaciones y 2 baños. Agradable terraza con vista al canal.",
-      "moneda": "USD"
-    },
-    {
       "titulo": "Apartamento 3 hab en La Guaira — $60.000 | ZonaVen",
       "enlace": "https://zonaven.com/venta/venta-apartamento-con-excelente-ubicacion-ubicado-en-catia-la-mar-edo-la-guaira-667b92",
       "precio_texto": "$60000",
@@ -18984,8 +18969,8 @@
   ],
   "diagnostico": {
     "urls_encontradas": 1265,
-    "exitos": 1265,
-    "fallos": 0,
-    "con_precio": 1265
+    "exitos": 1264,
+    "fallos": 1,
+    "con_precio": 1264
   }
 }
