@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "alquiler",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+alquiler+miranda",
-  "scrapeado_en": "2026-11-14T05:40:46.630Z",
+  "scrapeado_en": "2026-11-14T13:14:22.411Z",
   "total": 100,
   "anuncios": [
     {
@@ -216,17 +216,6 @@
       "ubicacion": "Baruta, Miranda"
     },
     {
-      "titulo": "APARTAMENTO ALQUILER CIUDAD CASARAPA GUARENAS API 67811",
-      "enlace": "https://bienesonline.ai/es/venezuela/guarenas/propiedad/53897-apartamento-alquiler-ciudad-casarapa-guarenas-api-67811",
-      "precio_texto": "USD 300",
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": null,
-      "tipo": "Apartamento",
-      "operacion_detectada": "ALQUILER",
-      "ubicacion": "Guarenas, Miranda"
-    },
-    {
       "titulo": "apartamento alquiler las mercedes tlf 04242129768 rolando Rodríguez",
       "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/33867-apartamento-alquiler-las-mercedes-tlf-04242129768-rolando-rodriguez",
       "precio_texto": "USD 6.500",
@@ -236,6 +225,17 @@
       "tipo": "Apartamento",
       "operacion_detectada": "alquiler",
       "ubicacion": "Baruta, Miranda"
+    },
+    {
+      "titulo": "APARTAMENTO ALQUILER CIUDAD CASARAPA GUARENAS API 67811",
+      "enlace": "https://bienesonline.ai/es/venezuela/guarenas/propiedad/53897-apartamento-alquiler-ciudad-casarapa-guarenas-api-67811",
+      "precio_texto": "USD 300",
+      "habitaciones": null,
+      "banos": null,
+      "metros_cuadrados": null,
+      "tipo": "Apartamento",
+      "operacion_detectada": "ALQUILER",
+      "ubicacion": "Guarenas, Miranda"
     },
     {
       "titulo": "apartamento en alquiler en nueva casarapa tlf  04242129768 rolando rodríguez",
@@ -623,17 +623,6 @@
       "ubicacion": "Guarenas, Miranda"
     },
     {
-      "titulo": "apartamento en alquiler en campo alegre tlf  04242129768 rolando rodriguez codg 27-7297",
-      "enlace": "https://bienesonline.ai/es/venezuela/chacao/propiedad/136076-apartamento-en-alquiler-en-campo-alegre-tlf-04242129768-rolando-rodriguez-codg-27-7297",
-      "precio_texto": "USD 2.700",
-      "habitaciones": 2,
-      "banos": 2,
-      "metros_cuadrados": 109,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Chacao, Miranda"
-    },
-    {
       "titulo": "apartamento en alquiler boleita norte tlf 04242129768 rolando rodriguez codg 27-4128",
       "enlace": "https://bienesonline.ai/es/venezuela/leoncio-martinez/propiedad/127443-apartamento-en-alquiler-boleita-norte-tlf-04242129768-rolando-rodriguez-codg-27-4128",
       "precio_texto": "USD 1.300",
@@ -643,6 +632,17 @@
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Leoncio Martínez, Miranda"
+    },
+    {
+      "titulo": "apartamento en alquiler en campo alegre tlf  04242129768 rolando rodriguez codg 27-7297",
+      "enlace": "https://bienesonline.ai/es/venezuela/chacao/propiedad/136076-apartamento-en-alquiler-en-campo-alegre-tlf-04242129768-rolando-rodriguez-codg-27-7297",
+      "precio_texto": "USD 2.700",
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 109,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Chacao, Miranda"
     },
     {
       "titulo": "casa en alquiler en santa Gertrudis tlf 04242129768 rolando rodriguez codg 27-4365",
@@ -931,17 +931,6 @@
       "ubicacion": "Baruta, Miranda"
     },
     {
-      "titulo": "apartamento en alquiler en valle grande tlf  04242129768 rolando rodriguez codg 27-6603",
-      "enlace": "https://bienesonline.ai/es/venezuela/guatire/propiedad/133820-apartamento-en-alquiler-en-valle-grande-tlf-04242129768-rolando-rodriguez-codg-27-6603",
-      "precio_texto": "USD 400",
-      "habitaciones": 2,
-      "banos": 2,
-      "metros_cuadrados": 64,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Guatire, Miranda"
-    },
-    {
       "titulo": "apartamento en alquiler en cumbres de curumo  tlf 04242129768 rolando rodriguez codg 27-1089",
       "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/129876-apartamento-en-alquiler-en-cumbres-de-curumo-tlf-04242129768-rolando-rodriguez-codg-27-1089",
       "precio_texto": "USD 1.400",
@@ -951,6 +940,17 @@
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Baruta, Miranda"
+    },
+    {
+      "titulo": "apartamento en alquiler en valle grande tlf  04242129768 rolando rodriguez codg 27-6603",
+      "enlace": "https://bienesonline.ai/es/venezuela/guatire/propiedad/133820-apartamento-en-alquiler-en-valle-grande-tlf-04242129768-rolando-rodriguez-codg-27-6603",
+      "precio_texto": "USD 400",
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 64,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Guatire, Miranda"
     },
     {
       "titulo": "local alquiler Chacao tlf 04242129768 rolando rodriguez",
