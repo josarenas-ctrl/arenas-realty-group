@@ -3,9 +3,48 @@
   "portal": "zonaven",
   "operacion": "todas",
   "url_busqueda": "sitemap-listings-1/2",
-  "scrapeado_en": "2026-11-14T13:27:10.255Z",
-  "total": 726,
+  "scrapeado_en": "2026-11-14T22:23:16.402Z",
+  "total": 729,
   "anuncios": [
+    {
+      "titulo": "62 Propiedades en Alquiler en Los Teques — Noviembre 2026",
+      "enlace": "https://zonaven.com/alquiler/local-comercial-en-alquiler-en-avenina-francisco-de-miranda-los-teques-usd-500-e44195",
+      "precio_texto": "",
+      "tipo": null,
+      "ubicacion": "Los Teques, Miranda",
+      "portal": "zonaven",
+      "moneda": "USD"
+    },
+    {
+      "titulo": "Local 340m² en Vargas — $85.000 | ZonaVen",
+      "enlace": "https://zonaven.com/venta/local-comercial-en-venta-en-vargas-usd-85-000-e6be3f",
+      "precio_texto": "$85000",
+      "precio_usd": 85000,
+      "habitaciones": null,
+      "banos": 2,
+      "metros_cuadrados": 340,
+      "tipo": "Local comercial",
+      "operacion_detectada": "Venta",
+      "ubicacion": "La Guaira",
+      "portal": "zonaven",
+      "descripcion": "Local comercial en venta de 340 m² en Vargas, estado Vargas. Cuenta con 2 baños. Precio: USD 85.000.",
+      "moneda": "USD"
+    },
+    {
+      "titulo": "Terreno 10000m² en Vargas — $150.000 | ZonaVen",
+      "enlace": "https://zonaven.com/venta/terreno-en-venta-en-vargas-usd-150-000-e976e3",
+      "precio_texto": "$150000",
+      "precio_usd": 150000,
+      "habitaciones": null,
+      "banos": null,
+      "metros_cuadrados": 10000,
+      "tipo": "Terreno",
+      "operacion_detectada": "Venta",
+      "ubicacion": "La Guaira",
+      "portal": "zonaven",
+      "descripcion": "Terreno en venta de 10.000 m² en Vargas, estado Vargas. Precio: USD 150.000.",
+      "moneda": "USD"
+    },
     {
       "titulo": "Apartamento 4 hab en Caracas — $230.000 | ZonaVen",
       "enlace": "https://zonaven.com/venta/se-vende-hermoso-ph-en-santa-paula-r-o-distrito-capital-57c2b0",
@@ -10898,9 +10937,9 @@
     }
   ],
   "diagnostico": {
-    "urls_encontradas": 726,
-    "exitos": 726,
+    "urls_encontradas": 729,
+    "exitos": 729,
     "fallos": 0,
-    "con_precio": 726
+    "con_precio": 728
   }
 }
