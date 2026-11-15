@@ -3,7 +3,7 @@
   "portal": "zonaven",
   "operacion": "todas",
   "url_busqueda": "sitemap-listings-1/2",
-  "scrapeado_en": "2026-11-15T05:52:56.720Z",
+  "scrapeado_en": "2026-11-15T13:53:47.567Z",
   "total": 75,
   "anuncios": [
     {
@@ -82,39 +82,63 @@
       "moneda": "USD"
     },
     {
-      "titulo": "104 Propiedades en Venta en Coro — Noviembre 2026",
+      "titulo": "Apartamento 3 hab en Coro — $35.000 | ZonaVen",
       "enlace": "https://zonaven.com/venta/apartamento-en-venta-en-miranda-coro-coro-3-hab-usd-35-000-7787c8",
-      "precio_texto": "",
-      "tipo": null,
+      "precio_texto": "$35000",
+      "precio_usd": 35000,
+      "habitaciones": 3,
+      "banos": 1,
+      "metros_cuadrados": 62,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
       "ubicacion": "Miranda",
       "portal": "zonaven",
+      "descripcion": "Apartamento en venta de 62 m² en Miranda (Coro), Coro, estado Falcón. Cuenta con 3 habitaciones y 1 baño. Precio: USD 35.000.",
       "moneda": "USD"
     },
     {
-      "titulo": "104 Propiedades en Venta en Coro — Noviembre 2026",
+      "titulo": "Apartamento 3 hab en Coro — $45.000 | ZonaVen",
       "enlace": "https://zonaven.com/venta/apartamento-en-venta-en-miranda-coro-coro-3-hab-usd-45-000-d4eadc",
-      "precio_texto": "",
-      "tipo": null,
+      "precio_texto": "$45000",
+      "precio_usd": 45000,
+      "habitaciones": 3,
+      "banos": 1,
+      "metros_cuadrados": 62,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
       "ubicacion": "Miranda",
       "portal": "zonaven",
+      "descripcion": "Apartamento en venta de 62 m² en Miranda (Coro), Coro, estado Falcón. Cuenta con 3 habitaciones y 1 baño. Precio: USD 45.000.",
       "moneda": "USD"
     },
     {
-      "titulo": "104 Propiedades en Venta en Coro — Noviembre 2026",
+      "titulo": "Apartamento 2 hab en Coro — $55.000 | ZonaVen",
       "enlace": "https://zonaven.com/venta/apartamento-en-venta-en-miranda-coro-coro-2-hab-usd-55-000-1efadd",
-      "precio_texto": "",
-      "tipo": null,
+      "precio_texto": "$55000",
+      "precio_usd": 55000,
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 69,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
       "ubicacion": "Miranda",
       "portal": "zonaven",
+      "descripcion": "Apartamento en venta de 69 m² en Miranda (Coro), Coro, estado Falcón. Cuenta con 2 habitaciones y 2 baños. Precio: USD 55.000.",
       "moneda": "USD"
     },
     {
-      "titulo": "104 Propiedades en Venta en Coro — Noviembre 2026",
+      "titulo": "Apartamento 2 hab en Coro — $38.000 | ZonaVen",
       "enlace": "https://zonaven.com/venta/apartamento-en-venta-en-miranda-coro-coro-2-hab-usd-38-000-8016cb",
-      "precio_texto": "",
-      "tipo": null,
+      "precio_texto": "$38000",
+      "precio_usd": 38000,
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 75,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
       "ubicacion": "Miranda",
       "portal": "zonaven",
+      "descripcion": "Apartamento en venta de 75 m² en Miranda (Coro), Coro, estado Falcón. Cuenta con 2 habitaciones y 2 baños. Precio: USD 38.000.",
       "moneda": "USD"
     },
     {
@@ -133,21 +157,33 @@
       "moneda": "USD"
     },
     {
-      "titulo": "104 Propiedades en Venta en Coro — Noviembre 2026",
+      "titulo": "Apartamento 5 hab en Coro — $120.000 | ZonaVen",
       "enlace": "https://zonaven.com/venta/apartamento-en-venta-en-miranda-coro-coro-5-hab-usd-120-000-42bc5e",
-      "precio_texto": "",
-      "tipo": null,
+      "precio_texto": "$120000",
+      "precio_usd": 120000,
+      "habitaciones": 5,
+      "banos": 4,
+      "metros_cuadrados": 342,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
       "ubicacion": "Miranda",
       "portal": "zonaven",
+      "descripcion": "Apartamento en venta de 342 m² en Miranda (Coro), Coro, estado Falcón. Cuenta con 5 habitaciones y 4 baños. Precio: USD 120.000.",
       "moneda": "USD"
     },
     {
-      "titulo": "Propiedades en Venta en Miranda Coro — Noviembre 2026",
+      "titulo": "Apartamento 2 hab en Miranda (Coro) — $72.000 | ZonaVen",
       "enlace": "https://zonaven.com/venta/apartamento-en-venta-en-barinas-miranda-coro-2-hab-usd-72-000-699bc6",
-      "precio_texto": "",
-      "tipo": null,
+      "precio_texto": "$72000",
+      "precio_usd": 72000,
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 62,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
       "ubicacion": "Miranda",
       "portal": "zonaven",
+      "descripcion": "Apartamento en venta de 62 m² en Barinas, Miranda (Coro), estado Falcón. Cuenta con 2 habitaciones y 2 baños. Precio: USD 72.000.",
       "moneda": "USD"
     },
     {
@@ -436,12 +472,18 @@
       "moneda": "USD"
     },
     {
-      "titulo": "104 Propiedades en Venta en Coro — Noviembre 2026",
+      "titulo": "Apartamento 3 hab en Coro — $38.000 | ZonaVen",
       "enlace": "https://zonaven.com/venta/apartamento-en-venta-en-miranda-coro-coro-3-hab-usd-38-000-55d47c",
-      "precio_texto": "",
-      "tipo": null,
+      "precio_texto": "$38000",
+      "precio_usd": 38000,
+      "habitaciones": 3,
+      "banos": 1,
+      "metros_cuadrados": 62,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
       "ubicacion": "Miranda",
       "portal": "zonaven",
+      "descripcion": "Apartamento en venta de 62 m² en Miranda (Coro), Coro, estado Falcón. Cuenta con 3 habitaciones y 1 baño. Precio: USD 38.000.",
       "moneda": "USD"
     },
     {
@@ -475,12 +517,18 @@
       "moneda": "USD"
     },
     {
-      "titulo": "104 Propiedades en Venta en Coro — Noviembre 2026",
+      "titulo": "Apartamento 3 hab en Coro — $45.000 | ZonaVen",
       "enlace": "https://zonaven.com/venta/apartamento-en-venta-en-miranda-coro-coro-3-hab-usd-45-000-78eacd",
-      "precio_texto": "",
-      "tipo": null,
+      "precio_texto": "$45000",
+      "precio_usd": 45000,
+      "habitaciones": 3,
+      "banos": 1,
+      "metros_cuadrados": 62,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
       "ubicacion": "Miranda",
       "portal": "zonaven",
+      "descripcion": "Apartamento en venta de 62 m² en Miranda (Coro), Coro, estado Falcón. Cuenta con 3 habitaciones y 1 baño. Precio: USD 45.000.",
       "moneda": "USD"
     },
     {
@@ -889,21 +937,33 @@
       "moneda": "USD"
     },
     {
-      "titulo": "104 Propiedades en Venta en Coro — Noviembre 2026",
+      "titulo": "Apartamento 2 hab en Coro — $72.000 | ZonaVen",
       "enlace": "https://zonaven.com/venta/apartamento-en-venta-en-miranda-coro-coro-2-hab-usd-72-000-d5ff1c",
-      "precio_texto": "",
-      "tipo": null,
+      "precio_texto": "$72000",
+      "precio_usd": 72000,
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 62,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
       "ubicacion": "Miranda",
       "portal": "zonaven",
+      "descripcion": "Apartamento en venta de 62 m² en Miranda (Coro), Coro, estado Falcón. Cuenta con 2 habitaciones y 2 baños. Precio: USD 72.000.",
       "moneda": "USD"
     },
     {
-      "titulo": "104 Propiedades en Venta en Coro — Noviembre 2026",
+      "titulo": "Apartamento 4 hab en Coro — $50.000 | ZonaVen",
       "enlace": "https://zonaven.com/venta/apartamento-en-venta-en-miranda-coro-coro-4-hab-usd-50-000-afcaba",
-      "precio_texto": "",
-      "tipo": null,
+      "precio_texto": "$50000",
+      "precio_usd": 50000,
+      "habitaciones": 4,
+      "banos": 2,
+      "metros_cuadrados": 89,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Venta",
       "ubicacion": "Miranda",
       "portal": "zonaven",
+      "descripcion": "Apartamento en venta de 89 m² en Miranda (Coro), Coro, estado Falcón. Cuenta con 4 habitaciones y 2 baños. Precio: USD 50.000.",
       "moneda": "USD"
     },
     {
@@ -1076,6 +1136,6 @@
     "urls_encontradas": 75,
     "exitos": 75,
     "fallos": 0,
-    "con_precio": 65
+    "con_precio": 75
   }
 }
