@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "alquiler",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+alquiler+miranda",
-  "scrapeado_en": "2026-11-22T14:20:31.796Z",
+  "scrapeado_en": "2026-11-22T23:25:55.924Z",
   "total": 100,
   "anuncios": [
     {
@@ -16,6 +16,17 @@
       "tipo": "Apartamento",
       "operacion_detectada": "alquiler",
       "ubicacion": "Chacao, Miranda"
+    },
+    {
+      "titulo": "apartamento en alquiler los naranjos e las mercedes tlf  04242129768 rolando rodriguez codg 27-8565",
+      "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/139117-apartamento-en-alquiler-los-naranjos-e-las-mercedes-tlf-04242129768-rolando-rodriguez-codg-27-8565",
+      "precio_texto": "USD 2.200",
+      "habitaciones": 2,
+      "banos": 3,
+      "metros_cuadrados": 98,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Baruta, Miranda"
     },
     {
       "titulo": "apartamento en alquiler en la castellana tlf 04242129768 rolando rodriguez codg 27-4562",
@@ -669,13 +680,13 @@
     {
       "titulo": "apartamento en alquiler las mesetas de santa rosa de lima tlf  04242129768 rolando rodriguez codg 27...",
       "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/128995-apartamento-en-alquiler-las-mesetas-de-santa-rosa-de-lima-tlf-04242129768-rolando-rodriguez-codg-27-4799",
-      "precio_texto": "USD 1.800",
+      "precio_texto": "USD 2.500",
       "habitaciones": 3,
       "banos": 4,
       "metros_cuadrados": 141,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Baruta, Miranda"
+      "tipo": "Local",
+      "operacion_detectada": "alquiler",
+      "ubicacion": "Sucre, Miranda"
     },
     {
       "titulo": "apartamento alquiler campo alegre tlf 04242129768 rolando Rodríguez",
@@ -1094,17 +1105,6 @@
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Chacao, Miranda"
-    },
-    {
-      "titulo": "galpón alquiler boleíta norte tlf 04242129768 rolando rodriguez",
-      "enlace": "https://bienesonline.ai/es/venezuela/sucre/propiedad/33779-galpon-alquiler-boleita-norte-tlf-04242129768-rolando-rodriguez",
-      "precio_texto": "USD 6.000",
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": null,
-      "tipo": "",
-      "operacion_detectada": "",
-      "ubicacion": "Sucre, Miranda"
     }
   ],
   "diagnostico": {
