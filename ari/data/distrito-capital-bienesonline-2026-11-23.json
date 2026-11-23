@@ -3,7 +3,7 @@
   "portal": "bienesonline",
   "operacion": "alquiler",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+alquiler+distrito+capital",
-  "scrapeado_en": "2026-11-23T06:41:54.904Z",
+  "scrapeado_en": "2026-11-23T23:37:38.546Z",
   "total": 100,
   "anuncios": [
     {
@@ -1063,6 +1063,17 @@
       "ubicacion": "Caracas, Distrito Capital"
     },
     {
+      "titulo": "Acogedor apartamento en alquiler Mariperez",
+      "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/139284-acogedor-apartamento-en-alquiler-mariperez",
+      "precio_texto": "USD 750",
+      "habitaciones": 1,
+      "banos": 1,
+      "metros_cuadrados": 45,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Caracas, Distrito Capital"
+    },
+    {
       "titulo": "Apartamento en Alquiler Los Dos Caminos G. 04143054662",
       "enlace": "https://bienesonline.ai/es/venezuela/caracas/propiedad/123761-apartamento-en-alquiler-los-dos-caminos-g-04143054662",
       "precio_texto": "USD 1.600",
@@ -1094,17 +1105,6 @@
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Caracas, Distrito Capital"
-    },
-    {
-      "titulo": "ALQUILO APARTAMENTO EN RESIDENCIAS PARQUE CARABOBO PLAZA, A UNA CUADRA DE PARQUE CENTRAL",
-      "enlace": "https://bienesonline.ai/es/venezuela/san-agustin/propiedad/30276-alquilo-apartamento-en-residencias-parque-carabobo-plaza-a-una-cuadra-de-parque-central",
-      "precio_texto": "USD 400",
-      "habitaciones": 2,
-      "banos": 1,
-      "metros_cuadrados": 69,
-      "tipo": "Apartamento",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "San Agustín, Distrito Capital"
     }
   ],
   "diagnostico": {
