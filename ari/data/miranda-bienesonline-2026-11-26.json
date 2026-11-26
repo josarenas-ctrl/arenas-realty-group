@@ -3,9 +3,20 @@
   "portal": "bienesonline",
   "operacion": "alquiler",
   "url_busqueda": "https://bienesonline.ai/es/search-properties?country=Venezuela&search=propiedades+en+alquiler+miranda",
-  "scrapeado_en": "2026-11-26T07:36:57.226Z",
+  "scrapeado_en": "2026-11-26T21:10:43.452Z",
   "total": 100,
   "anuncios": [
+    {
+      "titulo": "apartamento en alquiler los naranjos de las mercedes tlf  04242129768 rolando ropdriguez codg 27-864...",
+      "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/139589-apartamento-en-alquiler-los-naranjos-de-las-mercedes-tlf-04242129768-rolando-ropdriguez-codg-27-8648",
+      "precio_texto": "USD 1.600",
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 100,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Baruta, Miranda"
+    },
     {
       "titulo": "apartamento alquiler campo alegre tlf 04242129768 rolando Rodríguez",
       "enlace": "https://bienesonline.ai/es/venezuela/chacao/propiedad/33869-apartamento-alquiler-campo-alegre-tlf-04242129768-rolando-rodriguez",
@@ -513,6 +524,17 @@
       "ubicacion": "Baruta, Miranda"
     },
     {
+      "titulo": "apartamento en alquiler santa fe norte tlf  04242129768 rolando rodriguez codg 27-8686",
+      "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/139632-apartamento-en-alquiler-santa-fe-norte-tlf-04242129768-rolando-rodriguez-codg-27-8686",
+      "precio_texto": "USD 1.200",
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 130,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Baruta, Miranda"
+    },
+    {
       "titulo": "Apartamento en Alquiler en Guarenas Buenaventura Suites. Sandra White 0414-3140082 Cod. 26-15521",
       "enlace": "https://bienesonline.ai/es/venezuela/guarenas/propiedad/33255-apartamento-en-alquiler-en-guarenas-buenaventura-suites-sandra-white-0414-3140082-cod-26-15521",
       "precio_texto": "USD 650",
@@ -691,13 +713,13 @@
     {
       "titulo": "apartamento en alquiler las mesetas de santa rosa de lima tlf  04242129768 rolando rodriguez codg 27...",
       "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/128995-apartamento-en-alquiler-las-mesetas-de-santa-rosa-de-lima-tlf-04242129768-rolando-rodriguez-codg-27-4799",
-      "precio_texto": "USD 4.000",
-      "habitaciones": 3,
-      "banos": 4,
-      "metros_cuadrados": 250,
-      "tipo": "Casa",
+      "precio_texto": "USD 1.300",
+      "habitaciones": 2,
+      "banos": 2,
+      "metros_cuadrados": 89,
+      "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
-      "ubicacion": "Baruta, Miranda"
+      "ubicacion": "Leoncio Martínez, Miranda"
     },
     {
       "titulo": "apartamento alquiler campo alegre tlf 04242129768 rolando Rodríguez",
@@ -882,6 +904,17 @@
       "habitaciones": 2,
       "banos": 2,
       "metros_cuadrados": 80,
+      "tipo": "Apartamento",
+      "operacion_detectada": "Alquiler",
+      "ubicacion": "Chacao, Miranda"
+    },
+    {
+      "titulo": "apartamento en alquiler el rosal tlf 04242129768 rolando rodriguez codg 27-8654",
+      "enlace": "https://bienesonline.ai/es/venezuela/chacao/propiedad/139633-apartamento-en-alquiler-el-rosal-tlf-04242129768-rolando-rodriguez-codg-27-8654",
+      "precio_texto": "USD 1.200",
+      "habitaciones": 1,
+      "banos": 2,
+      "metros_cuadrados": 50,
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Chacao, Miranda"
@@ -1072,39 +1105,6 @@
       "tipo": "Apartamento",
       "operacion_detectada": "Alquiler",
       "ubicacion": "Chacao, Miranda"
-    },
-    {
-      "titulo": "local en alquiler prados del este c.c concresa tlf  04242129768 rolando rodriguez codg 27-3913",
-      "enlace": "https://bienesonline.ai/es/venezuela/baruta/propiedad/126645-local-en-alquiler-prados-del-este-cc-concresa-tlf-04242129768-rolando-rodriguez-codg-27-3913",
-      "precio_texto": "USD 500",
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": null,
-      "tipo": "Local",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "Baruta, Miranda"
-    },
-    {
-      "titulo": "casa en alquiler los naranjos del cafetal tlf  04242129768 rolando rodriguez codg  27-7666",
-      "enlace": "https://bienesonline.ai/es/venezuela/el-hatillo/propiedad/136994-casa-en-alquiler-los-naranjos-del-cafetal-tlf-04242129768-rolando-rodriguez-codg-27-7666",
-      "precio_texto": "USD 6.000",
-      "habitaciones": 3,
-      "banos": 5,
-      "metros_cuadrados": 569,
-      "tipo": "Casa",
-      "operacion_detectada": "Alquiler",
-      "ubicacion": "El Hatillo, Miranda"
-    },
-    {
-      "titulo": "oficina alquiler los Ruices rolando rodriguez tlf 04242129768",
-      "enlace": "https://bienesonline.ai/es/venezuela/sucre/propiedad/33803-oficina-alquiler-los-ruices-rolando-rodriguez-tlf-04242129768",
-      "precio_texto": "USD 1.500",
-      "habitaciones": null,
-      "banos": null,
-      "metros_cuadrados": null,
-      "tipo": "Oficina",
-      "operacion_detectada": "alquiler",
-      "ubicacion": "Sucre, Miranda"
     }
   ],
   "diagnostico": {
