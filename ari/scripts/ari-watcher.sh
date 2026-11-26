@@ -39,10 +39,16 @@ while read -r FILE; do
             continue
         fi
         
+        if [ "$MTIME" = "${ULTIMO_MTIME:-}" ]; then
+            log "mtime $MTIME ya procesado OK. Ignorando."
+            continue
+        fi
+
         log "Detectado cambio real en $FILE (mtime: $MTIME, hace $DIFF seg)"
         
         # Ejecutar pipeline
         if "$PIPELINE" "$FILE"; then
+            ULTIMO_MTIME="$MTIME"
             log "Pipeline completado OK"
         else
             log "Pipeline terminado con error (código $?)"

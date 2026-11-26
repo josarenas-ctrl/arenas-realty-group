@@ -54,7 +54,7 @@ ARCHIVO_DB="${1:-}"
 log "=== Iniciando pipeline v2 ==="
 log "Archivo: $ARCHIVO_DB"
 [ -f "$ARCHIVO_DB" ] || fallar "No existe"
-sqlite3 "$ARCHIVO_DB" ".tables" >/dev/null 2>&1 || fallar "No es SQLite valido o no accesible"
+sqlite3 -readonly "$ARCHIVO_DB" ".tables" >/dev/null 2>&1 || fallar "No es SQLite valido o no accesible"
 TAMANO=$(stat -c%s "$ARCHIVO_DB" 2>/dev/null || echo 0)
 [ "$TAMANO" -ge 1024 ] || fallar "Muy pequeño ($TAMANO bytes)"
 log "✅ SQLite valido ($TAMANO bytes)"
