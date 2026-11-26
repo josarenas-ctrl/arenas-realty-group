@@ -94,6 +94,18 @@ npm run ia-dedupe || log "⚠️ IA-Dedupe fallo (continuando)"
 log "📊 Analisis..."
 npm run analizar || fallar "Fallo analisis"
 
+# --- Zonas con el Llama propio (InstaBox). Nunca detiene el pipeline ---
+log "🗺️ Zonas (Llama propio)..."
+ZONAS_LOG="${ARI_ZONAS_LOG:-/var/log/ari-zonas.log}"
+ZH_ANTES=$(md5sum data/zona-ia-cache.json 2>/dev/null | cut -d' ' -f1) || true
+CACHE_DIR="$ARI_DIR/data" timeout 1200 node scripts/zona-llama.js > "$ZONAS_LOG" 2>&1 || log "⚠️ Zonas incompletas (caja dormida, error o tiempo): quedan para la siguiente entrega"
+log "Zonas: $(grep -E 'resumen|Titulos unicos|no responde|Ya hay' "$ZONAS_LOG" | tail -n 2 | tr '\n' ' ' | cut -c1-230)"
+ZH_DESPUES=$(md5sum data/zona-ia-cache.json 2>/dev/null | cut -d' ' -f1) || true
+if [ "$ZH_ANTES" != "$ZH_DESPUES" ]; then
+    log "📊 Analisis (2a pasada, con zonas nuevas)..."
+    npm run analizar || fallar "Fallo analisis (2a pasada)"
+fi
+
 # --- Compuerta de calidad ---
 compuerta() {
     local f="$ARI_DIR/data/ultimo-analisis.json"
@@ -139,6 +151,7 @@ log "✅ Compuerta de calidad superada"
 # --- Publicar ---
 cd "$REPO_DIR"
 git add ari/data/ultimo-analisis.json
+git add ari/data/zona-ia-cache.json 2>/dev/null || true
 git add ari/data/analisis-*.json ari/data/fichas-maestras-*.json 2>/dev/null || true
 
 if git diff --cached --quiet; then
