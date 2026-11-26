@@ -85,6 +85,8 @@ async function extraerZonaConIA(titulo) {
 // o el sitio no capturó bien el dato), no una ganga real. Sin esto, un
 // solo anuncio roto puede arruinar el promedio de todo un estado.
 const PRECIO_MINIMO_VALIDO = 500; // por debajo de esto, se descarta
+const PRECIO_MINIMO_ALQUILER = 100; // alquileres reales desde ~USD 100/mes
+const USD_M2_MINIMO_ALQUILER = 0.5; // por debajo es dato roto
 const M2_MINIMO_VALIDO = 5; // menos de esto tampoco es una propiedad real
 
 function normalizarNumero(texto) {
@@ -422,7 +424,7 @@ function calcularPrecioM2(ficha) {
   const precio = normalizarNumero(ficha.precio_texto);
   const m2 = normalizarNumero(ficha.metros_cuadrados);
   if (!precio || !m2 || m2 <= 0) return null;
-  if (precio < PRECIO_MINIMO_VALIDO || m2 < M2_MINIMO_VALIDO) return null; // dato roto, no una ganga real
+  const alq = extraerOperacion(ficha) === "Alquiler"; if (precio < (alq ? PRECIO_MINIMO_ALQUILER : PRECIO_MINIMO_VALIDO) || m2 < M2_MINIMO_VALIDO) return null; if (alq && precio / m2 < USD_M2_MINIMO_ALQUILER) return null; const LIM_M2 = { apartamento: 600, oficina: 1500, casa: 2000, townhouse: 800 }; const lk = Object.keys(LIM_M2).find((t) => new RegExp("^" + t, "i").test(String(ficha.tipo || ""))); if (lk && m2 > LIM_M2[lk]) return null; if (!alq && precio < 10000) return null; // dato roto, no una ganga real
   return precio / m2;
 }
 
@@ -494,7 +496,7 @@ async function main() {
     const zonaCache = new Map();
     console.log(`  Consultando IA para ${titulosSinZona.length} titulos sin zona...`);
     let iaLlamadas = 0;
-    for (const titulo of titulosSinZona) {
+    for (const titulo of (process.env.GEMINI_API_KEY ? titulosSinZona : [])) {
       const z = await extraerZonaConIA(titulo);
       if (z) zonaCache.set(titulo, z);
       iaLlamadas++;
@@ -504,7 +506,17 @@ async function main() {
       }
     }
 
+    // zona_corta: zona normalizada por el Llama propio (cache en disco + reglas)
+    const ZONA_CORTA = new Map();
+    try {
+      const zr = require(process.env.ZONA_REGLAS || path.join(__dirname, "zona-reglas.js"));
+      const zc = JSON.parse(require("fs").readFileSync(process.env.ZONA_CACHE || path.join(DATA_DIR, "zona-ia-cache.json"), "utf8"));
+      const zp = zr.procesar(zc).res;
+      for (const [k, r] of Object.entries(zp)) if (r.zona) ZONA_CORTA.set(k, r.zona);
+      console.log(`  zona_corta: ${ZONA_CORTA.size} titulos con zona (cache)`);
+    } catch (e) { console.log("  zona_corta: sin cache, se omite (" + e.message + ")"); }
     for (const ficha of fichas) {
+      ficha.zona_corta = ZONA_CORTA.get((ficha.titulo || "").toLowerCase().trim()) || null;
       if (!ficha.zona && ficha.titulo && zonaCache.has(ficha.titulo)) {
         ficha.zona = zonaCache.get(ficha.titulo);
       }
@@ -567,9 +579,9 @@ async function main() {
               // empiezan en ~$10K, los alquileres en ~$200/mes.
               const precio = normalizarNumero(ficha.precio_texto);
               const op = extraerOperacion(ficha);
-              const precioMinimo = op === "Alquiler" ? PRECIO_MINIMO_VALIDO : 10000;
+              const precioMinimo = op === "Alquiler" ? PRECIO_MINIMO_ALQUILER : 10000;
               const m2Promedio = clave ? m2PromedioPorGrupo.get(clave) : null;
-              if (precio && precio >= precioMinimo && m2Promedio && promedioGrupo) {
+              if (precio && precio >= precioMinimo && m2Promedio && promedioGrupo && !normalizarNumero(ficha.metros_cuadrados)) {
                 const precioM2Estimado = precio / m2Promedio;
                 const factor = FACTOR_CONDICION[condicion] || 1.0;
                 const precioAjustado = precioM2Estimado / factor;
