@@ -175,6 +175,8 @@ function main() {
       ubicacion: maestra.ubicacion,
       enlace_principal: maestra.enlace,
       portal_principal: maestra._portal,
+      ultima_vez: grupo.map((a) => a.ultima_vez).filter(Boolean).sort().pop() || null,
+      primera_vez: grupo.map((a) => a.primera_vez).filter(Boolean).sort()[0] || null,
       total_publicaciones_encontradas: grupo.length,
       todos_los_anuncios: grupo.map((a) => ({
         enlace: a.enlace,

@@ -163,6 +163,9 @@
     <h3>Zona / Urbanización</h3>
     <select id="sel-zona" autocomplete="off"><option value="todos">Todas las áreas</option></select>
 
+    <h3>Última vez visto</h3>
+    <select id="sel-vigencia" autocomplete="off"><option value="todos">Cualquier fecha</option><option value="7">Últimos 7 días</option><option value="14">Últimos 14 días</option><option value="30">Últimos 30 días</option></select>
+
     <h3>Portal de origen</h3>
     <select id="sel-portal" autocomplete="off"><option value="todos">Todos los portales</option></select>
 
@@ -332,6 +335,14 @@
     const zona = document.getElementById("sel-zona").value;
     if (zona !== "todos") fichas = fichas.filter(f => extraerZona(f) === zona);
 
+    // Última vez visto (las fichas sin fecha, de otros portales, no se filtran)
+    const vigSel = document.getElementById("sel-vigencia").value;
+    if (vigSel !== "todos") {
+      const refVisto = fichasOriginal.reduce((m, f) => (f.ultima_vez ? Math.max(m, Date.parse(f.ultima_vez)) : m), 0);
+      const limVisto = refVisto - parseInt(vigSel, 10) * 86400000;
+      fichas = fichas.filter(f => !f.ultima_vez || Date.parse(f.ultima_vez) >= limVisto);
+    }
+
     // Portal filter
     const portal = document.getElementById("sel-portal").value;
     if (portal !== "todos") fichas = fichas.filter(f => f.portal_principal === portal);
@@ -408,6 +419,7 @@
         <div class="detalle">${specs || "Sin specs detalladas"} · ${[extraerZona(f), extraerEstado(f)].filter(Boolean).join(", ") || f.ubicacion || ""}</div>
         ${m2linea}
         ${dupLinea}
+        ${f.ultima_vez ? `<span class="dup">Visto por última vez: ${f.ultima_vez.split("-").reverse().join("/")}</span>` : ""}
         ${amenitiesHtml}
         <div class="acciones">
           <a href="${f.enlace_principal}" target="_blank" rel="noopener">Ver publicación</a>
@@ -555,6 +567,8 @@
 
   // Inicialización
   initDashboard();
+  const selVigencia = document.getElementById("sel-vigencia");
+  if (selVigencia) selVigencia.addEventListener("change", filtrar);
 </script>
 
 </body>

@@ -56,6 +56,8 @@ function generarJSON() {
         operacion_detectada: row.operacion ? (row.operacion.charAt(0).toUpperCase() + row.operacion.slice(1).toLowerCase()) : "",
         ubicacion: row.ubicacion || "",
         _fuente: "ml_python",
+        ultima_vez: row.ultima_vez ? String(row.ultima_vez).slice(0, 10) : null,
+        primera_vez: row.primera_vez ? String(row.primera_vez).slice(0, 10) : null,
     })).filter(a => {
         const precioNum = parseFloat(String(a.precio_texto).replace(/[^\d.]/g, ""));
         const m2 = a.metros_cuadrados;
