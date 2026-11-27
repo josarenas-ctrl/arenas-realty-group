@@ -245,8 +245,25 @@ function extraerEstado(ubicacion) {
   }
   return null;
 }
-function extraerMunicipio(ubicacion) {
-  return extraerMunicipioNuevo(ubicacion);
+const MUNICIPIOS_CANON = ["Baruta", "Libertador", "Sucre", "Chacao", "El Hatillo", "San Antonio de los Altos", "San Diego de los Altos", "Los Teques", "Guarenas", "Guatire", "Carrizal", "Charallave", "Zamora", "Brión", "Valles del Tuy", "Costa Mirandina", "La Guaira", "Catia La Mar", "Caraballeda", "Maiquetía", "Macuto", "Naiguatá", "Carayaca", "Caruao"];
+const _quitarAcentos = (s) => String(s).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim();
+const _ALIAS_MUNICIPIO = new Map(MUNICIPIOS_CANON.map((m) => [_quitarAcentos(m), m]));
+_ALIAS_MUNICIPIO.set("san antonio", "San Antonio de los Altos");
+function _municipioConocido(texto) {
+  let c = String(texto || "").trim();
+  const m = c.match(/^Caracas\s*-\s*([^(]+?)\s*(?:\(.*\))?$/i);
+  if (m) c = m[1];
+  return _ALIAS_MUNICIPIO.get(_quitarAcentos(c)) || null;
+}
+function extraerMunicipio(ubicacion, zona) {
+  // Lista cerrada: solo es municipio válido lo que está en MUNICIPIOS_CANON; el resto va a "Otros".
+  const trozos = [...String(ubicacion || "").split(",").reverse(), ...String(zona || "").split(",").reverse()].map((s) => s.trim());
+  for (const t of trozos) {
+    const k = _municipioConocido(t);
+    if (k) return k;
+  }
+  if (trozos.some((t) => _quitarAcentos(t) === "caracas")) return "Caracas";
+  return ubicacion ? "Otros" : null;
 }
 function extraerMunicipioViejo(ubicacion) {
           // Extrae el municipio/ciudad: la parte antes de la última coma.
@@ -548,7 +565,7 @@ async function main() {
       ficha.tipo = normalizarTipo(ficha.tipo, ficha.titulo); // corrige mayúsculas antes de agrupar y de guardar
       const precioM2 = calcularPrecioM2(ficha);
       const estado = extraerEstado(ficha.ubicacion);
-            const municipio = extraerMunicipio(ficha.ubicacion);
+            const municipio = extraerMunicipio(ficha.ubicacion, ficha.zona);
             ficha._precio_m2 = precioM2;
                 ficha._estado = estado;
                 ficha._municipio = municipio;
@@ -608,7 +625,7 @@ async function main() {
     if (!f._precio_m2 || !f.tipo || !f._estado) continue;
     const base = claveGrupo(f.tipo, f._estado, extraerOperacion(f));
     const claves = [base];
-    if (f._municipio) claves.push(base + "||" + f._municipio);
+    if (f._municipio && f._municipio !== "Otros") claves.push(base + "||" + f._municipio);
     for (const k of claves) {
       if (!_gruposPrecio.has(k)) _gruposPrecio.set(k, []);
       _gruposPrecio.get(k).push(f._precio_m2);
@@ -617,7 +634,7 @@ async function main() {
   const promedioRobusto = (f) => {
     if (!f.tipo || !f._estado) return null;
     const base = claveGrupo(f.tipo, f._estado, extraerOperacion(f));
-    const am = f._municipio ? _gruposPrecio.get(base + "||" + f._municipio) : null;
+    const am = (f._municipio && f._municipio !== "Otros") ? _gruposPrecio.get(base + "||" + f._municipio) : null;
     if (am && am.length >= MIN_GRUPO_MUNICIPIO) return _mediana(am);
     const ae = _gruposPrecio.get(base);
     if (ae && ae.length >= MIN_GRUPO_ESTADO) return _mediana(ae);

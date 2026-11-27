@@ -119,6 +119,8 @@ compuerta() {
     est=$(jq '[.fichas[] | select(.m2_estimado == true)] | length' "$f")
     mun_mal=$(jq '[.fichas[] | select((._municipio // "") | test("^[0-9]|\\+"))] | length' "$f")
     verdes=$(jq '[.fichas[] | select(.semaforo == "verde")] | length' "$f")
+    mun_n=$(jq '[.fichas[]._municipio] | unique | length' "$f")
+    otros=$(jq '[.fichas[] | select(._municipio == "Otros")] | length' "$f")
     prev=$(git -C "$REPO_DIR" show "HEAD:ari/data/ultimo-analisis.json" 2>/dev/null | jq '.fichas | length' 2>/dev/null || echo 0)
     prev="${prev:-0}"
 
@@ -144,6 +146,12 @@ compuerta() {
     fi
     if [ $((verdes * 100)) -gt $((total * 40)) ]; then
         log "Compuerta: demasiadas gangas ($verdes de $total, maximo 40%): revisar promedios"; ok=1
+    fi
+    if [ "$mun_n" -gt 40 ]; then
+        log "Compuerta: demasiados municipios distintos ($mun_n, maximo 40): revisar extraccion"; ok=1
+    fi
+    if [ $((otros * 100)) -gt $((total * 15)) ]; then
+        log "Compuerta: demasiadas fichas en municipio Otros ($otros de $total, maximo 15%)"; ok=1
     fi
     return "$ok"
 }
