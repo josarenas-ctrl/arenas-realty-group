@@ -152,7 +152,7 @@
     <select id="sel-estado" autocomplete="off"><option value="todos">Todos los estados</option></select>
 
     <h3>Operación</h3>
-    <select id="sel-operacion" autocomplete="off"><option value="todos">Venta y alquiler</option></select>
+    <select id="sel-operacion" autocomplete="off"><option value="todos">Todas las operaciones</option></select>
 
     <h3>Tipo de propiedad</h3>
     <select id="sel-tipo" autocomplete="off"><option value="todos">Todos los tipos</option></select>
@@ -214,9 +214,13 @@
   }
 
   function extraerZona(ficha) {
-    if (ficha.zona) return ficha.zona;
-    if (ficha.ubicacion && ficha.ubicacion.includes(",")) return ficha.ubicacion.split(",")[0].trim();
-    return ficha.ubicacion || null;
+    // Zona para el filtro: zona corta (Llama) o primer tramo de la zona; nunca el estado ni números.
+    const NO_ZONA = ["distrito capital", "miranda", "vargas", "venezuela", "otros"];
+    let z = ficha.zona_corta;
+    if (!z && ficha.zona) z = String(ficha.zona).split(",")[0].trim();
+    if (!z && ficha.ubicacion) z = String(ficha.ubicacion).split(",")[0].trim();
+    if (!z || NO_ZONA.includes(z.toLowerCase()) || /^\d/.test(z)) return null;
+    return z;
   }
 
   function extraerEstado(ficha) {
@@ -242,7 +246,7 @@
     const sel = document.getElementById(id);
     const vals = {};
     fichas.forEach(f => { const v = getValue(f); if (v) vals[v] = (vals[v] || 0) + 1; });
-    const sorted = Object.entries(vals).sort((a,b) => a[0].localeCompare(b[0]));
+    const sorted = Object.entries(vals).filter(([v, c]) => id !== "sel-zona" || c >= 3).sort((a,b) => a[0].localeCompare(b[0]));
     const currentVal = sel.value;
     sel.innerHTML = `<option value="todos">${labelTodos} (${fichas.length})</option>`;
     sorted.forEach(([v, c]) => {
@@ -254,7 +258,7 @@
 
   function populateAllSelects(fichas) {
     populateSelect("sel-estado",     fichas, f => extraerEstado(f),    "Todos los estados");
-    populateSelect("sel-operacion",  fichas, f => extraerOperacion(f), "Venta y alquiler");
+    populateSelect("sel-operacion",  fichas, f => extraerOperacion(f), "Todas las operaciones");
     populateSelect("sel-tipo",       fichas, f => f.tipo,              "Todos los tipos");
     populateSelect("sel-municipio",  fichas, f => f._municipio,        "Todos los municipios");
     populateSelect("sel-zona",       fichas, f => extraerZona(f),      "Todas las áreas");
@@ -272,7 +276,7 @@
 
   function doPopulateAllSelects(fichas) {
     populateSelect("sel-estado",     fichas, f => extraerEstado(f),    "Todos los estados");
-    populateSelect("sel-operacion",  fichas, f => extraerOperacion(f), "Venta y alquiler");
+    populateSelect("sel-operacion",  fichas, f => extraerOperacion(f), "Todas las operaciones");
     populateSelect("sel-tipo",       fichas, f => f.tipo,              "Todos los tipos");
     populateSelect("sel-municipio",  fichas, f => f._municipio,        "Todos los municipios");
     populateSelect("sel-zona",       fichas, f => extraerZona(f),      "Todas las áreas");
@@ -283,9 +287,9 @@
     const sel = document.getElementById(id);
     const vals = {};
     fichas.forEach(f => { const v = getValue(f); if (v) vals[v] = (vals[v] || 0) + 1; });
-    const sorted = Object.entries(vals).sort((a,b) => a[0].localeCompare(b[0]));
+    const sorted = Object.entries(vals).filter(([v, c]) => id !== "sel-zona" || c >= 3).sort((a,b) => a[0].localeCompare(b[0]));
     // LIMITE: máx 200 opciones para no saturar DOM
-    const limited = sorted.slice(0, 200);
+    const limited = sorted.slice(0, 800);
     const currentVal = sel.value;
     sel.innerHTML = `<option value="todos">${labelTodos} (${fichas.length})</option>`;
     limited.forEach(([v, c]) => {
