@@ -96,6 +96,16 @@ npm run analizar || fallar "Fallo analisis"
 
 # --- Zonas con el Llama propio (InstaBox). Nunca detiene el pipeline ---
 log "🗺️ Zonas (Llama propio)..."
+# Despertar la caja si esta dormida y esperar su /health (nunca detiene el pipeline)
+LLAMA_ORIGEN="${ARI_LLAMA_ORIGEN:-http://100.107.119.89:8080}"
+if ! curl -s -m 15 -f -o /dev/null "$LLAMA_ORIGEN/health"; then
+    log "Caja no responde; intentando despertarla (instabox wake mi-llama)..."
+    HOME=/root timeout 120 instabox wake mi-llama >/dev/null 2>&1 || log "⚠️ instabox wake fallo o no esta disponible"
+    for _i in $(seq 1 12); do
+        if curl -s -m 15 -f -o /dev/null "$LLAMA_ORIGEN/health"; then log "Caja lista"; break; fi
+        sleep 5
+    done
+fi
 ZONAS_LOG="${ARI_ZONAS_LOG:-/var/log/ari-zonas.log}"
 ZH_ANTES=$(md5sum data/zona-ia-cache.json 2>/dev/null | cut -d' ' -f1) || true
 CACHE_DIR="$ARI_DIR/data" timeout 1200 node scripts/zona-llama.js > "$ZONAS_LOG" 2>&1 || log "⚠️ Zonas incompletas (caja dormida, error o tiempo): quedan para la siguiente entrega"
