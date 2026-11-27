@@ -27,8 +27,8 @@ const https = require("https");
 const path = require("path");
 
 const DATA_DIR = path.join(__dirname, "..", "data");
-const UMBRAL_GANGA = 0.35; // 35% por debajo de la mediana = verde (subido de 25% el 27-nov)
-const UMBRAL_SOBREVALORADA = 0.35; // 35% por encima de la mediana = rojo (subido de 25% el 27-nov)
+const UMBRAL_GANGA = 0.25; // 25% por debajo del promedio = verde (más estricto, menos falsos positivos)
+const UMBRAL_SOBREVALORADA = 0.25; // 25% por encima del promedio = rojo
 
 // Estados en los que trabaja Arenas Realty Group. Cualquier ficha que no
 // caiga en uno de estos se descarta ANTES del análisis: los scrapers pueden
@@ -600,39 +600,6 @@ async function main() {
     }
 
   // 2) Con la zona ya resuelta (incluyendo fallback a estado), decidir semáforo
-  // --- ARREGLO 27-nov (2): zona canónica para el filtro (une mayúsculas, acentos y espacios) ---
-  {
-    const _kz = (s) => String(s).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/\s+/g, " ").trim();
-    const NO_ZONA_F = ["distrito capital", "miranda", "vargas", "venezuela", "otros"];
-    const _zonaCruda = (f) => {
-      let z = f.zona_corta;
-      if (!z && f.zona) z = String(f.zona).split(",")[0].trim();
-      if (!z && f.ubicacion) z = String(f.ubicacion).split(",")[0].trim();
-      if (!z) return null;
-      z = z.replace(/\s+/g, " ").trim();
-      if (NO_ZONA_F.includes(z.toLowerCase()) || /^\d/.test(z)) return null;
-      return z;
-    };
-    const _variantes = new Map();
-    for (const f of fichas) {
-      const z = _zonaCruda(f);
-      if (!z) continue;
-      const k = _kz(z);
-      if (!_variantes.has(k)) _variantes.set(k, new Map());
-      const m = _variantes.get(k);
-      m.set(z, (m.get(z) || 0) + 1);
-    }
-    const _canon = new Map();
-    for (const [k, m] of _variantes) {
-      const orden = [...m.entries()].sort((a, b) => (/[^\x00-\x7f]/.test(b[0]) - /[^\x00-\x7f]/.test(a[0])) || (b[1] - a[1]));
-      _canon.set(k, orden[0][0]);
-    }
-    for (const f of fichas) {
-      const z = _zonaCruda(f);
-      f.zona_filtro = z ? _canon.get(_kz(z)) : null;
-    }
-    console.log(`  zona_filtro: ${_variantes.size} zonas únicas`);
-  }
   // --- ARREGLO 27-nov: repetidos, promedio robusto (mediana) y datos dudosos ---
   const _vistos = new Set();
   const fichasUnicas = fichas.filter((f) => {
