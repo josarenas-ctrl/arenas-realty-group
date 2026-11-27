@@ -224,7 +224,31 @@ function extraerEstado(ubicacion) {
         return null;
           }
 
-        function extraerMunicipio(ubicacion) {
+        function extraerMunicipioNuevo(ubicacion) {
+  // El municipio es el penúltimo elemento de la dirección (el último es el estado).
+  // Se saltan números, códigos de ubicación, "Otros" y nombres de estado.
+  if (!ubicacion) return null;
+  const partes = String(ubicacion).split(",").map((s) => s.trim()).filter(Boolean);
+  if (partes.length < 2) return null;
+  const NO_MUNICIPIO = new Set(["distrito capital", "miranda", "vargas", "venezuela", "capital district", "otros", "otro"]);
+  for (let i = partes.length - 2; i >= Math.max(0, partes.length - 4); i--) {
+    let c = partes[i];
+    if (/^\d/.test(c) || /^[A-Z0-9]{4}\+[A-Z0-9]{2,3}/i.test(c)) continue;
+    if (NO_MUNICIPIO.has(c.toLowerCase())) continue;
+    c = limpiarMunicipio(c);
+    if (!c) continue;
+    const m = c.match(/^Caracas\s*-\s*([^(]+?)\s*(?:\(.*\))?$/i);
+    if (m) c = m[1].trim();
+    c = c.replace(/\s+(De|Del)\s+/g, (x, w) => " " + w.toLowerCase() + " ");
+    if (/^\d/.test(c)) continue;
+    return c;
+  }
+  return null;
+}
+function extraerMunicipio(ubicacion) {
+  return extraerMunicipioNuevo(ubicacion);
+}
+function extraerMunicipioViejo(ubicacion) {
           // Extrae el municipio/ciudad: la parte antes de la última coma.
           // "Altamira, Distrito Capital" → "Altamira"
           // "San Antonio de Los Altos, Miranda" → "San Antonio de Los Altos"
@@ -347,7 +371,7 @@ function normalizarTipo(tipo, titulo) {
   // distintas ("CASA", "Casa", "casa") — sin esto, el promedio y los
   // filtros los tratan como categorías separadas por error.
   if (tipo) {
-    const limpio = tipo.trim().toLowerCase();
+    const limpio = tipo.trim().toLowerCase().replace(/\s+en\s+(venta|alquiler|arriendo|arrendamiento)\s*$/, '');
     // Fusionar "local" → "local comercial" (son lo mismo)
     if (limpio === 'local') return 'Local comercial';
     return limpio.charAt(0).toUpperCase() + limpio.slice(1);
@@ -559,7 +583,48 @@ async function main() {
     }
 
   // 2) Con la zona ya resuelta (incluyendo fallback a estado), decidir semáforo
-  const fichasAnalizadas = fichas.map((ficha) => {
+  // --- ARREGLO 27-nov: repetidos, promedio robusto (mediana) y datos dudosos ---
+  const _vistos = new Set();
+  const fichasUnicas = fichas.filter((f) => {
+    const k = f.enlace_principal;
+    if (!k) return true;
+    if (_vistos.has(k)) return false;
+    _vistos.add(k);
+    return true;
+  });
+  console.log(`  dedupe por enlace: ${fichas.length - fichasUnicas.length} repetidas quitadas`);
+
+  const MIN_GRUPO_MUNICIPIO = 30;
+  const MIN_GRUPO_ESTADO = 10;
+  const DESCUENTO_MAXIMO_CREIBLE = 0.70; // más de 70% bajo la mediana: casi siempre dato roto
+  const EXCESO_MAXIMO_CREIBLE = 2.0;     // más de 200% sobre la mediana: casi siempre dato roto
+  const _mediana = (arr) => {
+    const s = [...arr].sort((a, b) => a - b);
+    const m = Math.floor(s.length / 2);
+    return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2;
+  };
+  const _gruposPrecio = new Map();
+  for (const f of fichasUnicas) {
+    if (!f._precio_m2 || !f.tipo || !f._estado) continue;
+    const base = claveGrupo(f.tipo, f._estado, extraerOperacion(f));
+    const claves = [base];
+    if (f._municipio) claves.push(base + "||" + f._municipio);
+    for (const k of claves) {
+      if (!_gruposPrecio.has(k)) _gruposPrecio.set(k, []);
+      _gruposPrecio.get(k).push(f._precio_m2);
+    }
+  }
+  const promedioRobusto = (f) => {
+    if (!f.tipo || !f._estado) return null;
+    const base = claveGrupo(f.tipo, f._estado, extraerOperacion(f));
+    const am = f._municipio ? _gruposPrecio.get(base + "||" + f._municipio) : null;
+    if (am && am.length >= MIN_GRUPO_MUNICIPIO) return _mediana(am);
+    const ae = _gruposPrecio.get(base);
+    if (ae && ae.length >= MIN_GRUPO_ESTADO) return _mediana(ae);
+    return null;
+  };
+
+  const fichasAnalizadas = fichasUnicas.map((ficha) => {
     const zona = ficha.zona || extraerZona(ficha.ubicacion);
     const condicion = extraerCondicion(ficha);
     const contacto = extraerContacto(ficha);
@@ -571,7 +636,7 @@ async function main() {
     const clave = ficha.tipo && _estado
               ? claveGrupo(ficha.tipo, _estado, extraerOperacion(ficha))
               : null;
-      const promedioGrupo = clave ? promedioPorGrupo.get(clave) : null;
+      const promedioGrupo = promedioRobusto(ficha);
 
       if (!_precio_m2 || !promedioGrupo) {
               // Intentar estimar con el promedio de m² del grupo. El umbral
@@ -608,6 +673,10 @@ async function main() {
       // una "impecable" cara no está sobrevalorada (es premium).
       const factor = FACTOR_CONDICION[condicion] || 1.0;
       const precioAjustado = _precio_m2 / factor;
+      const _difCruda = (precioAjustado - promedioGrupo) / promedioGrupo;
+      if (_difCruda <= -DESCUENTO_MAXIMO_CREIBLE || _difCruda >= EXCESO_MAXIMO_CREIBLE) {
+        return { ...resto, _estado, zona: zonaFinal, condicion, contacto, precio_m2: null, promedio_m2_tipo_zona: null, semaforo: "sin_datos_suficientes", dato_dudoso: true };
+      }
       const diferencia = (precioAjustado - promedioGrupo) / promedioGrupo; // negativo = más barato que el promedio ajustado
 
     let semaforo;

@@ -117,6 +117,8 @@ compuerta() {
     sin_t=$(jq '[.fichas[] | select((.titulo // "") == "")] | length' "$f")
     sin_u=$(jq '[.fichas[] | select((.ubicacion // "") == "")] | length' "$f")
     est=$(jq '[.fichas[] | select(.m2_estimado == true)] | length' "$f")
+    mun_mal=$(jq '[.fichas[] | select((._municipio // "") | test("^[0-9]|\\+"))] | length' "$f")
+    verdes=$(jq '[.fichas[] | select(.semaforo == "verde")] | length' "$f")
     prev=$(git -C "$REPO_DIR" show "HEAD:ari/data/ultimo-analisis.json" 2>/dev/null | jq '.fichas | length' 2>/dev/null || echo 0)
     prev="${prev:-0}"
 
@@ -136,6 +138,12 @@ compuerta() {
     fi
     if [ "$prev" -gt 0 ] && [ $((total * 100)) -lt $((prev * MIN_PCT_VS_ANTERIOR)) ]; then
         log "Compuerta: cayo demasiado frente a lo publicado ($total vs $prev, minimo ${MIN_PCT_VS_ANTERIOR}%)"; ok=1
+    fi
+    if [ $((mun_mal * 100)) -gt $((total * 1)) ]; then
+        log "Compuerta: municipios invalidos (numeros o codigos): $mun_mal de $total, maximo 1%"; ok=1
+    fi
+    if [ $((verdes * 100)) -gt $((total * 40)) ]; then
+        log "Compuerta: demasiadas gangas ($verdes de $total, maximo 40%): revisar promedios"; ok=1
     fi
     return "$ok"
 }
