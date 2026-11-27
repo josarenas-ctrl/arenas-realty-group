@@ -100,7 +100,7 @@ log "🗺️ Zonas (Llama propio)..."
 LLAMA_ORIGEN="${ARI_LLAMA_ORIGEN:-http://100.107.119.89:8080}"
 if ! curl -s -m 15 -f -o /dev/null "$LLAMA_ORIGEN/health"; then
     log "Caja no responde; intentando despertarla (instabox wake mi-llama)..."
-    HOME=/root timeout 120 instabox wake mi-llama >/dev/null 2>&1 || log "⚠️ instabox wake fallo o no esta disponible"
+    HOME=/root timeout 120 /root/.local/bin/instabox wake mi-llama >/dev/null 2>&1 || log "⚠️ instabox wake fallo o no esta disponible"
     for _i in $(seq 1 12); do
         if curl -s -m 15 -f -o /dev/null "$LLAMA_ORIGEN/health"; then log "Caja lista"; break; fi
         sleep 5
