@@ -166,6 +166,9 @@
     <h3>Portal de origen</h3>
     <select id="sel-portal" autocomplete="off"><option value="todos">Todos los portales</option></select>
 
+    <h3>Buscar palabras</h3>
+    <input type="text" id="buscar-texto" placeholder="ej: chacao + chacaito" autocomplete="off">
+
     <h3>Precio (USD)</h3>
     <div class="precio-pair">
       <input type="number" id="precio-min" placeholder="Mín" autocomplete="off">
@@ -300,6 +303,14 @@
     else sel.value = "todos";
   }
 
+  function quitarAcentosBusqueda(s) {
+    return String(s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/\s+/g, " ").trim();
+  }
+  function coincideBusqueda(f, palabras) {
+    const pajar = quitarAcentosBusqueda([f.titulo, f.ubicacion, f.zona, f.zona_corta, f.zona_filtro, f._municipio].filter(Boolean).join(" "));
+    return palabras.every(p => pajar.includes(p));
+  }
+
   function filtrar() {
     // RESET paginaActual al cambiar filtros
     paginaActual = 1;
@@ -337,6 +348,10 @@
         return true;
       });
     }
+
+    // Palabras clave separadas por "+": deben aparecer todas (sin distinguir mayusculas ni acentos)
+    const palabrasBusqueda = document.getElementById("buscar-texto").value.split("+").map(quitarAcentosBusqueda).filter(Boolean);
+    if (palabrasBusqueda.length) fichas = fichas.filter(f => coincideBusqueda(f, palabrasBusqueda));
 
     // Repopulate dropdowns (show only possible values) - DIFERIDO
     populateAllSelects(fichas);
@@ -444,6 +459,11 @@
   document.getElementById("sel-tipo").addEventListener("change", filtrar);
   document.getElementById("sel-municipio").addEventListener("change", filtrar);
   document.getElementById("sel-zona").addEventListener("change", filtrar);
+  let temporizadorBuscar = null;
+  document.getElementById("buscar-texto").addEventListener("input", () => {
+    clearTimeout(temporizadorBuscar);
+    temporizadorBuscar = setTimeout(filtrar, 250);
+  });
 
   let precioTimeout;
   document.getElementById("precio-min").addEventListener("input", () => {
@@ -464,6 +484,7 @@
     document.getElementById("sel-portal").value = "todos";
     document.getElementById("precio-min").value = "";
     document.getElementById("precio-max").value = "";
+    document.getElementById("buscar-texto").value = "";
     filtroSemaforo = "todos";
     document.querySelectorAll("#filtros-semaforo .chip").forEach(c => c.classList.remove("activo"));
     document.querySelector('[data-filtro="todos"]').classList.add("activo");
@@ -484,6 +505,7 @@
     document.getElementById("sel-portal").value = "todos";
     document.getElementById("precio-min").value = "";
     document.getElementById("precio-max").value = "";
+    document.getElementById("buscar-texto").value = "";
 
     filtrar();
   }
@@ -510,6 +532,7 @@
         document.getElementById("sel-portal").value = "todos";
         document.getElementById("precio-min").value = "";
         document.getElementById("precio-max").value = "";
+        document.getElementById("buscar-texto").value = "";
 
         filtrar();
       })
