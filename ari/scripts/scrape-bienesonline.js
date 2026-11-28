@@ -186,6 +186,10 @@ async function main() {
 
   for (const busqueda of busquedasBienesOnline) {
     try {
+      if (busqueda.zona === "la-guaira" && busqueda.operacion === "venta") {
+        console.log("  ! la-guaira/venta omitida: el portal devuelve anuncios de otras zonas");
+        continue;
+      }
       const resultado = await scrapeBusqueda(busqueda);
       if (!resultado) continue;
       if (resultado.total === 0) {
@@ -194,7 +198,7 @@ async function main() {
       }
 
       const fecha = new Date().toISOString().slice(0, 10);
-      const nombreArchivo = `${busqueda.zona}-${busqueda.portal}-${fecha}.json`;
+      const nombreArchivo = `${busqueda.zona}-${busqueda.portal}${busqueda.operacion === "venta" ? "-venta" : ""}-${fecha}.json`;
       const rutaSalida = path.join(DATA_DIR, nombreArchivo);
 
       fs.writeFileSync(rutaSalida, JSON.stringify(resultado, null, 2), "utf-8");
