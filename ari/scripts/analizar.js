@@ -763,6 +763,36 @@ async function main() {
       return precioA - precioB;
     });
 
+  function marcarSimilares(fichas) {
+    const RE = /(?<![0-9])[0-9]{2}-[0-9]{3,5}(?![0-9])/g;
+    const aNum = (t) => { const n = Number(String(t || "").replace(/^[^0-9]*/, "").replace(/[.,](?=[0-9]{3}(?![0-9]))/g, "")); return n > 0 ? n : null; };
+    const grupos = new Map();
+    fichas.forEach((f, i) => {
+      if (!f._municipio) return;
+      const cods = new Set(((f.titulo || "") + " " + (f.enlace_principal || "")).match(RE) || []);
+      for (const k of cods) {
+        const clave = [k, f.operacion, f.tipo, f._municipio].join("|");
+        if (!grupos.has(clave)) grupos.set(clave, []);
+        grupos.get(clave).push(i);
+      }
+    });
+    const similares = new Map();
+    for (const idx of grupos.values()) {
+      if (idx.length < 2 || idx.length > 5) continue;
+      const p = idx.map((i) => aNum(fichas[i].precio_texto));
+      if (p.some((x) => x === null) || Math.max(...p) / Math.min(...p) > 1.2) continue;
+      for (const i of idx) {
+        if (!similares.has(i)) similares.set(i, new Map());
+        for (const j of idx) if (j !== i) similares.get(i).set(j, true);
+      }
+    }
+    for (const [i, set] of similares) {
+      fichas[i].similares = [...set.keys()].map((j) => ({ precio_texto: fichas[j].precio_texto, portal: fichas[j].portal_principal, enlace: fichas[j].enlace_principal }));
+    }
+    return similares.size;
+  }
+  console.log(`  similares: ${marcarSimilares(fichasAnalizadas)} fichas con anuncios del mismo inmueble`);
+
   const conteo = fichasAnalizadas.reduce((acc, f) => {
     acc[f.semaforo] = (acc[f.semaforo] || 0) + 1;
     return acc;
