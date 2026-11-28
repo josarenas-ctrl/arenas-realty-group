@@ -212,33 +212,13 @@ function parsearNumero(raw) {
 const causas = {};
 function causa(k) { causas[k] = (causas[k] || 0) + 1; }
 
-const INICIO = Date.now();
-const LIMITE_MS = 15 * 60 * 1000;
-const MAX_REINTENTOS = 2;
-let pausaMs = 100;
-
 async function scrapearPagina(url, estado) {
   try {
-    let resp;
-    for (let intento = 0; ; intento++) {
-      resp = await axios.get(url, {
-        headers: HEADERS,
-        timeout: 15000,
-        validateStatus: () => true,
-      });
-      if (resp.status === 429) {
-        pausaMs = Math.min(pausaMs + 100, 1000);
-        const ra = parseInt(resp.headers && resp.headers["retry-after"], 10);
-        const espera = Math.min(Math.max(isNaN(ra) ? 5000 : ra * 1000, 3000), 20000);
-        if (intento < MAX_REINTENTOS && Date.now() + espera < INICIO + LIMITE_MS) {
-          causa("reintento_429");
-          await new Promise(r => setTimeout(r, espera));
-          continue;
-        }
-      }
-      break;
-    }
-    if (resp.status === 200) pausaMs = Math.max(100, pausaMs - 20);
+    const resp = await axios.get(url, {
+      headers: HEADERS,
+      timeout: 15000,
+      validateStatus: () => true,
+    });
     if (resp.status !== 200) { causa("http_" + resp.status); return null; }
 
     const html = resp.data;
@@ -298,8 +278,7 @@ async function main() {
     const datos = await scrapearPagina(url, estado);
     
     // Pequeña pausa para no saturar el servidor (100ms entre requests)
-    await new Promise(r => setTimeout(r, pausaMs));
-    if (Date.now() > INICIO + LIMITE_MS) { causa("cortado_por_tiempo"); console.log("  Limite de tiempo alcanzado; se guarda lo obtenido"); break; }
+    await new Promise(r => setTimeout(r, 100));
 
     if (datos && datos.titulo) {
       if (datos.metros_cuadrados) conM2++;
@@ -357,7 +336,6 @@ async function main() {
       con_hab: conHab,
       con_banos: conBanos,
       causas_fallo: causas,
-      pausa_final_ms: pausaMs,
     },
   };
 
