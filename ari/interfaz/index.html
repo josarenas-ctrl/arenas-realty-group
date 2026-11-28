@@ -400,6 +400,9 @@
       const dupLinea = f.total_publicaciones_encontradas > 1
         ? `<span class="dup">Publicada ${f.total_publicaciones_encontradas} veces</span>` : "";
 
+      const simLinea = f.similares && f.similares.length
+        ? `<span class="dup">Mismo inmueble en ${f.similares.length} anuncio${f.similares.length > 1 ? "s" : ""} más: ${f.similares.filter(s => /^https?:\/\//.test(s.enlace || "")).map(s => `<a href="${s.enlace}" target="_blank" rel="noopener">${s.precio_texto || "ver"} · ${s.portal || "enlace"}</a>`).join(" · ")}</span>` : "";
+
       const condicionTag = f.condicion && f.condicion !== "estandar"
         ? `<span class="condicion-tag ${f.condicion}">${NOMBRES_CONDICION[f.condicion] || f.condicion}</span>` : "";
 
@@ -419,6 +422,7 @@
         <div class="detalle">${specs || "Sin specs detalladas"} · ${[extraerZona(f), extraerEstado(f)].filter(Boolean).join(", ") || f.ubicacion || ""}</div>
         ${m2linea}
         ${dupLinea}
+        ${simLinea}
         ${f.ultima_vez ? `<span class="dup">Visto por última vez: ${f.ultima_vez.split("-").reverse().join("/")}</span>` : ""}
         ${amenitiesHtml}
         <div class="acciones">
