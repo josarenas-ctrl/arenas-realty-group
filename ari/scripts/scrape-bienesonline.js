@@ -188,6 +188,10 @@ async function main() {
     try {
       const resultado = await scrapeBusqueda(busqueda);
       if (!resultado) continue;
+      if (resultado.total === 0) {
+        console.log(`  ! 0 anuncios en ${busqueda.zona}/${busqueda.portal} (HTTP ${resultado.diagnostico.ultimo_http_status}); no se guarda para no pisar datos buenos`);
+        continue;
+      }
 
       const fecha = new Date().toISOString().slice(0, 10);
       const nombreArchivo = `${busqueda.zona}-${busqueda.portal}-${fecha}.json`;
