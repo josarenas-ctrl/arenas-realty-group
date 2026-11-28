@@ -209,6 +209,9 @@ function parsearNumero(raw) {
   return isNaN(num) ? null : num;
 }
 
+const causas = {};
+function causa(k) { causas[k] = (causas[k] || 0) + 1; }
+
 async function scrapearPagina(url, estado) {
   try {
     const resp = await axios.get(url, {
@@ -216,13 +219,13 @@ async function scrapearPagina(url, estado) {
       timeout: 15000,
       validateStatus: () => true,
     });
-    if (resp.status !== 200) return null;
+    if (resp.status !== 200) { causa("http_" + resp.status); return null; }
 
     const html = resp.data;
 
     // 1. Título (como antes)
     const tituloMatch = html.match(/<title>(.*?)<\/title>/);
-    if (!tituloMatch) return null;
+    if (!tituloMatch) { causa("sin_title"); return null; }
     const datos = parsearTitulo(tituloMatch[1]);
 
     // 2. Meta description (NUEVO: m², hab, baños)
@@ -242,6 +245,7 @@ async function scrapearPagina(url, estado) {
       estado_url: estado,
     };
   } catch (err) {
+    causa("error_" + (err.code || err.name || "desconocido"));
     return null;
   }
 }
@@ -301,6 +305,7 @@ async function main() {
       exitos++;
     } else {
       fallos++;
+      causa("sin_titulo_parseado");
     }
 
     if ((i + 1) % 50 === 0) {
@@ -330,6 +335,7 @@ async function main() {
       con_m2: conM2,
       con_hab: conHab,
       con_banos: conBanos,
+      causas_fallo: causas,
     },
   };
 
