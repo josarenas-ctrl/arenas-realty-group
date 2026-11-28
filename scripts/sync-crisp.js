@@ -73,6 +73,7 @@ function construirContenidoCompleto(){
     }
     if(!data || typeof data !== 'object') return;
     if(data.publicada === false) return; // Solo propiedades activas/publicadas
+    if(["vendida","alquilada"].includes(data.estado)) return; // las vendidas y alquiladas no se ofrecen en el chat
 
     bloques.push(bloquePropiedad(slug, data));
   });

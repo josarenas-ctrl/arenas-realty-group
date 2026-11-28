@@ -273,6 +273,7 @@ ${fotoOG ? `<meta property="og:image" content="${esc(fotoOG)}">` : ''}
   @keyframes g-shimmer{to{transform:translateX(100%);}}
   .gallery-item.g-error::after{content:"Foto no disponible";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--clay-soft);font-size:0.85rem;z-index:2;}
   .gallery-empty{width:100%;aspect-ratio:16/9;background:var(--sand);margin-bottom:28px;}
+  .cintillo{display:inline-block;font-size:0.8rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:6px 14px;margin:0 8px 14px 0;color:#fff;background:#c0392b;}.cintillo-reservada{background:#c9820a;}.cintillo-alquilada{background:#55677a;}
   .badge{display:inline-block;font-size:0.78rem;font-weight:600;padding:5px 12px;border-radius:20px;background:var(--terracotta);color:var(--clay);margin-bottom:14px;}
   h1{font-size:clamp(1.6rem,3.6vw,2.2rem);margin-bottom:10px;}
   .price{font-size:1.25rem;color:var(--terracotta);font-weight:600;margin-bottom:4px;}
@@ -300,7 +301,7 @@ ${LIGHTBOX_CSS}
 <header><div class="wrap"><a href="/">← Arenas Realty Group</a></div></header>
 <main><div class="wrap">
   ${galeriaHTML(d.fotos)}
-  <span class="badge">${esc(d.operacion)} · ${esc(d.tipo)}</span>
+  ${cintilloHTML(d)}<span class="badge">${esc(d.operacion)} · ${esc(d.tipo)}</span>
   <h1>${titulo}</h1>
   <div class="price">${precioFormateado}</div>
   <div class="loc">${esc(d.ubicacion)}${mapaLink ? ` · <a href="${esc(mapaLink)}" target="_blank" rel="noopener">📍 Ver ubicación en el mapa</a>` : ''}</div>
@@ -382,6 +383,7 @@ ${fotoOG ? `<meta property="og:image" content="${esc(fotoOG)}">` : ''}
   @keyframes g-shimmer{to{transform:translateX(100%);}}
   .gallery-item.g-error::after{content:"Foto no disponible";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--clay-soft);font-size:0.85rem;z-index:2;}
   .gallery-empty{width:100%;aspect-ratio:16/9;background:var(--sand);margin-bottom:28px;}
+  .cintillo{display:inline-block;font-size:0.8rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:6px 14px;margin:0 8px 14px 0;color:#fff;background:#c0392b;}.cintillo-reservada{background:#c9820a;}.cintillo-alquilada{background:#55677a;}
   .badge{display:inline-block;font-size:0.78rem;font-weight:600;padding:5px 12px;border-radius:20px;background:var(--terracotta);color:var(--clay);margin-bottom:14px;}
   h1{font-size:clamp(1.6rem,3.6vw,2.2rem);margin-bottom:10px;margin-top:20px;}
   .price{font-size:1.25rem;color:var(--terracotta);font-weight:600;margin-bottom:4px;}
@@ -411,7 +413,7 @@ ${LIGHTBOX_CSS}
 <main><div class="wrap">
   <button class="btn-pdf no-print" onclick="window.print()">📄 Descargar como PDF</button>
   ${galeriaHTML(d.fotos)}
-  <span class="badge">${esc(d.operacion)} · ${esc(d.tipo)}</span>
+  ${cintilloHTML(d)}<span class="badge">${esc(d.operacion)} · ${esc(d.tipo)}</span>
   <h1>${titulo}</h1>
   <div class="price">${precioFormateado}</div>
   <div class="loc">${esc(d.ubicacion)}${mapaLink ? ` · <a href="${esc(mapaLink)}" target="_blank" rel="noopener">📍 Ver ubicación en el mapa</a>` : ''}</div>
@@ -425,6 +427,11 @@ ${LIGHTBOX_JS}
 </html>`;
 }
 
+const ETIQUETAS_ESTADO = { reservada: "Reservada", vendida: "Vendida", alquilada: "Alquilada" };
+function cintilloHTML(d){
+  const e = d.estado;
+  return ETIQUETAS_ESTADO[e] ? `<span class="cintillo cintillo-${e}">${ETIQUETAS_ESTADO[e]}</span>` : "";
+}
 function tarjetaHTML(slug, d){
   const foto = (d.fotos && d.fotos[0]) ? esc(d.fotos[0]) : '';
   const imgBlock = foto
@@ -436,6 +443,7 @@ function tarjetaHTML(slug, d){
       </div>`
     : `<div class="thumb-wrap"></div>`;
   return `<a class="prop-card" href="/propiedades/${slug}.html">
+    ${cintilloHTML(d)}
     ${imgBlock}
     <div class="body">
       <span class="badge">${esc(d.tipo)}</span>
@@ -517,6 +525,7 @@ function main(){
       .filter(f => typeof f === 'string' && f.trim());
 
     if(data.publicada === false) return;
+    data.estado = ["reservada","vendida","alquilada"].includes(data.estado) ? data.estado : "activa";
 
     publicables.push({ slug, data });
   });

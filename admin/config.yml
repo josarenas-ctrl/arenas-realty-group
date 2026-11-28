@@ -56,3 +56,13 @@ collections:
       - { label: "Nombre del asesor", name: "asesor", widget: "string" }
       - { label: "WhatsApp del asesor", name: "whatsapp_asesor", widget: "string" }
       - { label: "Publicada", name: "publicada", widget: "boolean", default: true }
+      - label: "Estado"
+        name: "estado"
+        widget: "select"
+        default: "activa"
+        hint: "Si se marca Vendida, Reservada o Alquilada, la propiedad sigue visible con un cintillo."
+        options:
+          - { label: "Activa", value: "activa" }
+          - { label: "Reservada", value: "reservada" }
+          - { label: "Vendida", value: "vendida" }
+          - { label: "Alquilada", value: "alquilada" }

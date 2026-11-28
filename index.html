@@ -206,6 +206,10 @@
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
   .prop-card:hover{ transform: translateY(-3px); box-shadow: 0 10px 24px rgba(11,42,74,0.12); }
+  .prop-card{ position: relative; }
+  .prop-card .cintillo{ position:absolute; top:16px; left:0; z-index:3; padding:6px 14px; font-size:0.74rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#fff; background:#c0392b; box-shadow:0 2px 6px rgba(0,0,0,0.25); pointer-events:none; }
+  .prop-card .cintillo-reservada{ background:#c9820a; }
+  .prop-card .cintillo-alquilada{ background:#55677a; }
 .prop-card .thumb-wrap{
     position: relative; width:100%; aspect-ratio: 4/3; overflow:hidden; background: var(--sand);
   }
