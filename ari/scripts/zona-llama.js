@@ -42,7 +42,7 @@ function guardar(c) {
   process.on("SIGTERM", () => process.exit(143));
 
   try {
-    const r = await fetch(new URL(URL_API).origin + "/health", { signal: AbortSignal.timeout(15000) });
+    const r = await fetch(new URL(URL_API).origin + "/health", { signal: AbortSignal.timeout(45000) });
     if (!r.ok) throw new Error("HTTP " + r.status);
   } catch (e) {
     console.log("La caja no responde (" + e.message + "). Pausada? Despiertala con: instabox wake mi-llama. No se hizo nada.");
